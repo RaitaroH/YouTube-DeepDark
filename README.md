@@ -38,9 +38,10 @@ Channel card
 
 ![alt tag](https://i.imgur.com/0xUX5xD.png)
 
-Youtube+ (and every other icons) adjusted for the dark theme
+Youtube+ (and every other icons) adjusted for the dark theme. (YouTube+ here https://greasyfork.org/en/scripts/9932-youtube)
 
 ![alt tag](https://i.imgur.com/rs9XeBR.png)
 
-Youtube+ settings page (I cannot change the color of the text in that button because Youtube+ has !important in the css)
+YouTube+ settings page (I cannot change the color of the text in that button because YouTube+ has !important in the css. Also the way the button is "checked" is from your operating system theme and not from YouTube itself)
+
 ![alt tag](https://i.imgur.com/6tUwBJg.png)

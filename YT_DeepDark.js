@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name          YT DeepDark
-// @namespace     http://userstyles.org
-// @author        Raijin3
-// @homepage      https://userstyles.org/styles/135385
+// @namespace     https://github.com/
+// @author        RaitaroH
+// @homepage      https://github.com/RaitaroH/YouTube-DeepDark
 // @include http://youtube.com/* 
 // @include https://youtube.com/* 
 // @include http://*.youtube.com/* 

@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          YT DeepDark
+// @name          YouTube DeepDark
 // @namespace     https://github.com/
 // @author        RaitaroH
 // @homepage      https://github.com/RaitaroH/YouTube-DeepDark

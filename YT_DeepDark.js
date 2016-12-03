@@ -12,7 +12,7 @@
 // @include       http://*.apis.google.com/* 
 // @include       https://*.apis.google.com/*
 // @run-at        document-start
-// @version       0.20161119161322
+// @version       1.2.1
 // @grant         GM_getValue
 // @grant         GM_setValue
 // ==/UserScript==

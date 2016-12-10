@@ -16,7 +16,7 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.2.5-1
+// @version       1.2.5.1
 // @grant         GM_getValue
 // @grant         GM_setValue
 // Changelog: 1.2.5-1 youtube logo back to 100%

@@ -16,7 +16,7 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.2.5
+// @version       1.2.5-1
 // @grant         GM_getValue
 // @grant         GM_setValue
 // Changelog: 1.2.5 footer fix, excluded some stuff I am not gonna theme
@@ -49,7 +49,7 @@
 	"	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/",
 	"    #masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo{",
 	"    background: no-repeat url(https://i.imgur.com/9wGydcv.png) !important;",
-	"    background-size: 70% !important;",
+	"    background-size: 100% !important;",
 	"    opacity: 0.65 !important;",
 	"}",
 	"	/*Many many things*/",

@@ -19,6 +19,7 @@
 // @version       1.2.5-1
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.2.5-1 youtube logo back to 100%
 // Changelog: 1.2.5 footer fix, excluded some stuff I am not gonna theme
 // Changelog: 1.2.4 70% logo style thx to youtube rewind,special hover for video titles suggested+in playlists (I was really annoying to get this working, thx YouTube),button text changed to white (BUT SERIOUSLLY YOUTUBE CAN"T YOU HAVE ONE DAMN KIND OF BUTTON),show more hover background color,added to watch later icon succes fix,g-hovercard fix,change white to a 95% for a softer look&feel,removed blue text-shadow,changed some text to #ccc,choose language alert fix,button fix,youtube html5 page background
 // Changelog: 1.2.3 youtube html5 page fixes,dashboard makeover,html5 video title link hover fix,notifications fix, hover for footer links

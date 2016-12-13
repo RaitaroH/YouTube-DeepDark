@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.2.8
+// @version       1.2.9
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.2.9 fixed cricle being cutoff in the channels page,circle for channels in the search results,removing completly the (the case for bubble menus)
 // Changelog: 1.2.8 opacity on hover for thumbnails and avatars,circle avatars (Well let's do it before YouTube does it),cards text,youtube+ tweaks
 // Changelog: 1.2.7 better code layout,small fixes
 // Changelog: 1.2.6 upload makeover,comments in live stream makeover
@@ -32,7 +33,7 @@
 
 (function() {var css = [
   "/*Hiding some crap section*/",
-	"	   .yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
+	"	   .yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
 	"		 display:none !important;",
 	"	}",
 	"/* Why YT has box shadows beats me*/",
@@ -114,10 +115,6 @@
 	"	}", 
 	"		#hide-live-comments .yt-uix-button-expander{",
 	"			border: 0px;",
-	"	}", 
-	"		  .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical{",
-	"			border-bottom-color: #111 !important;",
-	"			border-right-color: #111 !important;",
 	"	}", 
 	"		.yt-card.yt-uix-expander .yt-uix-button-expander{",
 	"			border-top: 1px solid #444 !important;",
@@ -221,7 +218,7 @@
 	"   color: rgba(255, 255, 255, .95)  !important;",
 	"		text-shadow: none  !important;",
 	"	}",
-	"		.ytp-ce-channel-metadata,.yt-uix-button-subscribe-branded + .yt-subscription-button-subscriber-count-branded-horizontal, .yt-uix-button-subscribe-unbranded + .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-uix-button-subscribe-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal, .yt-uix-button-subscribed-branded + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed, .yt-uix-button-subscribed-unbranded + .yt-subscription-button-subscriber-count-unbranded-horizontal.subscribed, .yt-uix-button-subscribed-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.analytics-sparkline-card .infos .title,.dashboard-widget-header h2,.vm-video-actions-delete-warning,#video-settings-section,.iph-dialog-content,.yt-default h1, .yt-default h2, .yt-default h3, .yt-default h4, .yt-default h5, .yt-default h6, h1.yt, h2.yt, h3.yt, h4.yt, h5.yt, h6.yt,.audio-ui-featured-row td,.enhance-effect .slider-readout, .enhance-effect .property-title,#player-and-info-pane #video-info dd,#player-and-info-pane #video-info dt,.HPHGCHB-W-q .HPHGCHB-W-F,.HPHGCHB-ob-d,.HPHGCHB-P-e h3,.metadata-share-text,.upload-other-options-list .upload-option-text,.Zm-Ob-pi > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2),.live-chat-widget .comment-text,.pl-video-annotation-container,.yt-uix-expander-collapsed .yt-uix-expander-collapsed-body,#yt-lang-alert-content,.idle-message, .no-results-message,.audio-library-tab-subtitle,.audiolibrary-column-title, .audiolibrary-column-title-expand,.HPHGCHB-O-b h3,.HPHGCHB-K-f .HPHGCHB-K-j input,.HPHGCHB-g-f,#comment-settings .comment-settings-label,.account-settings-info,h3.account-section-header,.account-settings-item .account-settings-label,.yt-uix-form-input-select-element option,.yt-uix-form-input-select-content,.account-status-copyright-status-v2-details-table-type-column, .account-status-copyright-status-v2-details-table-event-column, .account-status-copyright-status-v2-details-table-content-column, .account-status-copyright-status-v2-title, .account-status-community-guidelines-status-v2-details-table-type-column, .account-status-community-guidelines-status-v2-details-table-event-column, .account-status-community-guidelines-status-v2-details-table-content-column, .account-status-community-guidelines-status-v2-title, .account-status-v2-strike-type-label,#comment-settings .comment-settings-title,.yt-alert-naked .yt-alert-content,.subscription-confirmation-dialog .subscription-confirmation-display-name,.yt-dialog-base .yt-dialog-header .yt-dialog-title,#watch7-sidebar .watch-sidebar-head,.secondary-header-contents .nav-text,#yt-uix-videoactionmenu-menu h3,.yt-subscription-button-subscriber-count-branded-horizontal,.add-to-widget .create-playlist-item,.yt-ui-menu-item,.yt-uix-button-menu .yt-uix-button-menu-item,.ytp-cards-teaser .ytp-cards-teaser-text,.yt-uix-button-subscribed-branded + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.yt-uix-button-subscribed-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.yt-uix-button.yt-uix-button-subscribed-branded,.exp-wn-font-14 .related-list-item span.title,#eow-description,.exp-responsive #content .yt-uix-button-subscription-container .yt-subscriber-count,#body #uploaded-videos,yt-card .yt-uix-button-expander,yt-card .yt-uix-button-expander:hover,hr, html, i, iframe, img, ins, kbd, label, legend, li, menu, object, ol, p, pre, q, s, samp, small, strike, strong, sub,a, abbr, acronym, address, applet, b, big, blockquote,.comment-section-header-renderer,div.yt-ui-ellipsis:nth-child(1),.yt-uix-form-input-text,.iv-card h2,.ytp-ce-website-title{",
+	"		.yt-uix-clickcard-card-content, .yt-uix-hovercard-card-content,.ytp-ce-channel-metadata,.yt-uix-button-subscribe-branded + .yt-subscription-button-subscriber-count-branded-horizontal, .yt-uix-button-subscribe-unbranded + .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-uix-button-subscribe-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal, .yt-uix-button-subscribed-branded + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed, .yt-uix-button-subscribed-unbranded + .yt-subscription-button-subscriber-count-unbranded-horizontal.subscribed, .yt-uix-button-subscribed-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.analytics-sparkline-card .infos .title,.dashboard-widget-header h2,.vm-video-actions-delete-warning,#video-settings-section,.iph-dialog-content,.yt-default h1, .yt-default h2, .yt-default h3, .yt-default h4, .yt-default h5, .yt-default h6, h1.yt, h2.yt, h3.yt, h4.yt, h5.yt, h6.yt,.audio-ui-featured-row td,.enhance-effect .slider-readout, .enhance-effect .property-title,#player-and-info-pane #video-info dd,#player-and-info-pane #video-info dt,.HPHGCHB-W-q .HPHGCHB-W-F,.HPHGCHB-ob-d,.HPHGCHB-P-e h3,.metadata-share-text,.upload-other-options-list .upload-option-text,.Zm-Ob-pi > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2),.live-chat-widget .comment-text,.pl-video-annotation-container,.yt-uix-expander-collapsed .yt-uix-expander-collapsed-body,#yt-lang-alert-content,.idle-message, .no-results-message,.audio-library-tab-subtitle,.audiolibrary-column-title, .audiolibrary-column-title-expand,.HPHGCHB-O-b h3,.HPHGCHB-K-f .HPHGCHB-K-j input,.HPHGCHB-g-f,#comment-settings .comment-settings-label,.account-settings-info,h3.account-section-header,.account-settings-item .account-settings-label,.yt-uix-form-input-select-element option,.yt-uix-form-input-select-content,.account-status-copyright-status-v2-details-table-type-column, .account-status-copyright-status-v2-details-table-event-column, .account-status-copyright-status-v2-details-table-content-column, .account-status-copyright-status-v2-title, .account-status-community-guidelines-status-v2-details-table-type-column, .account-status-community-guidelines-status-v2-details-table-event-column, .account-status-community-guidelines-status-v2-details-table-content-column, .account-status-community-guidelines-status-v2-title, .account-status-v2-strike-type-label,#comment-settings .comment-settings-title,.yt-alert-naked .yt-alert-content,.subscription-confirmation-dialog .subscription-confirmation-display-name,.yt-dialog-base .yt-dialog-header .yt-dialog-title,#watch7-sidebar .watch-sidebar-head,.secondary-header-contents .nav-text,#yt-uix-videoactionmenu-menu h3,.yt-subscription-button-subscriber-count-branded-horizontal,.add-to-widget .create-playlist-item,.yt-ui-menu-item,.yt-uix-button-menu .yt-uix-button-menu-item,.ytp-cards-teaser .ytp-cards-teaser-text,.yt-uix-button-subscribed-branded + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.yt-uix-button-subscribed-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.yt-uix-button.yt-uix-button-subscribed-branded,.exp-wn-font-14 .related-list-item span.title,#eow-description,.exp-responsive #content .yt-uix-button-subscription-container .yt-subscriber-count,#body #uploaded-videos,yt-card .yt-uix-button-expander,yt-card .yt-uix-button-expander:hover,hr, html, i, iframe, img, ins, kbd, label, legend, li, menu, object, ol, p, pre, q, s, samp, small, strike, strong, sub,a, abbr, acronym, address, applet, b, big, blockquote,.comment-section-header-renderer,div.yt-ui-ellipsis:nth-child(1),.yt-uix-form-input-text,.iv-card h2,.ytp-ce-website-title{",
 	"		color: #ccc !important;",
 	"	}",
 	"/*Hover for links*/",
@@ -237,13 +234,13 @@
 	
 	"/*Going full circle section*/",	
   "/*Make avatars circles (50% or more) or squares (0). Also added opacity change on hover.*/",	
-	"	  .not-yt-legacy-css .yt-masthead-picker-photo-wrapper img,#yt-masthead-user .yt-masthead-user-icon,.yt-thumb-46,.yt-thumb-20,.comment-author-thumbnail,.yt-thumb-48,.yt-thumb-110,.channel-header-profile-image-container,.channel-header-profile-image,#appbar-nav .appbar-nav-avatar{",
+	"	  .yt-lockup-channel > div:nth-child(1) > a:nth-child(1) > div:nth-child(1),.xta .dOc,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img,#yt-masthead-user .yt-masthead-user-icon,.yt-thumb-46,.yt-thumb-20,.comment-author-thumbnail,.yt-thumb-48,.yt-thumb-110,.channel-header-profile-image-container,.channel-header-profile-image,#appbar-nav .appbar-nav-avatar{",
 	"		border-radius: 100% !important;",
 	"	  background: transparent !important;",
 	"	  border-color: transparent !important;",	
 	"	  opacity: 0.9;",	
 	"	}",
-	"	  .not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{",
+	"	  .xta .dOc:hover,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{",
 	"	  opacity: 1 !important;",	
 	"	}",
   "/*Remove a stupid border around  the circle (the background) */",
@@ -255,6 +252,10 @@
   "/*For the icon in the channel banner*/",
 	"	  .channel-header-profile-image-container{",
 	"		top: 10px !important;",
+	"	}",
+  "/*Circle gets cut off in the channels page*/",
+	"	  .channels-content-item.channel-shelf-item{",
+	"		width: 130px !important;",
 	"	}",
 	
 	

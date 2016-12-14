@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.2.9
+// @version       1.3
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.3   yt menu selected hover fix,yt logo hover opacity,opacity for thumbnails in playlists set to 1
 // Changelog: 1.2.9 fixed cricle being cutoff in the channels page,circle for channels in the search results,removing completly the (the case for bubble menus)
 // Changelog: 1.2.8 opacity on hover for thumbnails and avatars,circle avatars (Well let's do it before YouTube does it),cards text,youtube+ tweaks
 // Changelog: 1.2.7 better code layout,small fixes
@@ -63,6 +64,9 @@
 	"    background-size: 100% !important;",
 	"    opacity: 0.65 !important;",
 	"}",
+	"    #masthead-logo:hover,#yt-masthead #logo-container .logo:hover,#footer-logo .footer-logo-icon:hover,.footer-logo:hover{",
+	"    opacity: 0.75 !important;",
+	"}",	
 	
 	
 	"/*Backgrounds section*/",
@@ -214,7 +218,7 @@
 	"		text-decoration: none  !important;",
 	"   text-shadow: none !important;",
 	"	}",
-	"		div.about-metadata-label:nth-child(5) > span:nth-child(1),div.about-metadata-label:nth-child(7) > span:nth-child(1),#creator-sidebar .creator-sidebar-branding h1,.iph-dialog a,.iph-dialog-title,.blur-effect-entry .blur-effect-title,.menu-tab:hover, .menu-tab.selected,#player-and-info-pane #video-info h2,.HPHGCHB-F-d > p:nth-child(1),.metadata-container h3,.metadata-thumbnail-chooser h3,.upload-item-sidebar-text h3,.upload-footer-header,.upload-sidebar-header,.Zm-at-Zb-mi-Yb-Do .Zm-at-Zb-eu,.Zm-Jw-kq-cb,.Zm-ii-tc,#upload-button-text,.yt-picker-header h3.yt,.yt-uix-clickcard-title, .yt-uix-hovercard-title,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.HPHGCHB-P-b,a.yt-uix-button-primary > span:nth-child(1),button.open-banner-image-editor > span:nth-child(2),.yt-uix-button-icon-wrapper + .yt-uix-button-content,button.yt-uix-button-primary:nth-child(2) > span:nth-child(1),.appbar-guide-notification,#creator-sidebar h3, #creator-sidebar h3 a,button.yt-uix-button-primary:nth-child(1) > span:nth-child(1),.account-header h1,.account-info-item .account-info-label,.yt-uix-button-content,#main-title,.live-welcome-intro-copy .headline,#creator-subheader h2,.category-title-wrap:hover .category-title-link .category-title,.category-header .category-title,.comment-simplebox-text, .comment-simplebox-prompt,.guide-item.guide-item-selected:hover,.guide-item.guide-item-selected,.comment-renderer.channel-owner .comment-author-text:hover,.comment-renderer.channel-owner .comment-author-text,.comment-renderer-author-comment-badge.creator .comment-author-text,.html5-video-player a,.branded-page-base-bold-titles .branded-page-module-title,.branded-page-module-title a:visited, .branded-page-module-title a, .epic-nav-item-heading:active,.branded-page-related-channels h3 a, .branded-page-related-channels h3,.epic-nav-item-heading,#eow-title,.yt-consent-banner .yt-consent-content, .yt-lockup-title a,.yt-masthead-picker-name,.ytp-ce-video-title,.yt-card .yt-uix-button-expander,.yt-card .yt-uix-button-expander:hover{",
+	"		#guide-container .guide-item.guide-item-selected:hover,div.about-metadata-label:nth-child(5) > span:nth-child(1),div.about-metadata-label:nth-child(7) > span:nth-child(1),#creator-sidebar .creator-sidebar-branding h1,.iph-dialog a,.iph-dialog-title,.blur-effect-entry .blur-effect-title,.menu-tab:hover, .menu-tab.selected,#player-and-info-pane #video-info h2,.HPHGCHB-F-d > p:nth-child(1),.metadata-container h3,.metadata-thumbnail-chooser h3,.upload-item-sidebar-text h3,.upload-footer-header,.upload-sidebar-header,.Zm-at-Zb-mi-Yb-Do .Zm-at-Zb-eu,.Zm-Jw-kq-cb,.Zm-ii-tc,#upload-button-text,.yt-picker-header h3.yt,.yt-uix-clickcard-title, .yt-uix-hovercard-title,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.HPHGCHB-P-b,a.yt-uix-button-primary > span:nth-child(1),button.open-banner-image-editor > span:nth-child(2),.yt-uix-button-icon-wrapper + .yt-uix-button-content,button.yt-uix-button-primary:nth-child(2) > span:nth-child(1),.appbar-guide-notification,#creator-sidebar h3, #creator-sidebar h3 a,button.yt-uix-button-primary:nth-child(1) > span:nth-child(1),.account-header h1,.account-info-item .account-info-label,.yt-uix-button-content,#main-title,.live-welcome-intro-copy .headline,#creator-subheader h2,.category-title-wrap:hover .category-title-link .category-title,.category-header .category-title,.comment-simplebox-text, .comment-simplebox-prompt,.guide-item.guide-item-selected:hover,.guide-item.guide-item-selected,.comment-renderer.channel-owner .comment-author-text:hover,.comment-renderer.channel-owner .comment-author-text,.comment-renderer-author-comment-badge.creator .comment-author-text,.html5-video-player a,.branded-page-base-bold-titles .branded-page-module-title,.branded-page-module-title a:visited, .branded-page-module-title a, .epic-nav-item-heading:active,.branded-page-related-channels h3 a, .branded-page-related-channels h3,.epic-nav-item-heading,#eow-title,.yt-consent-banner .yt-consent-content, .yt-lockup-title a,.yt-masthead-picker-name,.ytp-ce-video-title,.yt-card .yt-uix-button-expander,.yt-card .yt-uix-button-expander:hover{",
 	"   color: rgba(255, 255, 255, .95)  !important;",
 	"		text-shadow: none  !important;",
 	"	}",
@@ -261,7 +265,7 @@
 	
   "/*Thumbnails opacity section*/",	
   "/*Opacity for thumbnails. For watched is 0.9 on hover because by default they are 0.7 so I want to keep a drustic change on hover to the minimum.*/",		
-	"	 .yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{",
+	"	  #player-playlist .playlist-video .video-thumb,.yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{",
   "	  opacity: 1 !important;",	
 	"	}",
 	"	  .watched .video-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb{",

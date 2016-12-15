@@ -16,10 +16,11 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.3
+// @version       1.3.1
 // @grant         GM_getValue
 // @grant         GM_setValue
-// Changelog: 1.3   yt menu selected hover fix,yt logo hover opacity,opacity for thumbnails in playlists set to 1
+// Changelog: 1.3.1 opacity tweaked for a softer feel,fullscreen playlist author color,changed border color for cards on hover
+// Changelog: 1.3.0 yt menu selected hover fix,yt logo hover opacity,opacity for thumbnails in playlists set to 1
 // Changelog: 1.2.9 fixed cricle being cutoff in the channels page,circle for channels in the search results,removing completly the (the case for bubble menus)
 // Changelog: 1.2.8 opacity on hover for thumbnails and avatars,circle avatars (Well let's do it before YouTube does it),cards text,youtube+ tweaks
 // Changelog: 1.2.7 better code layout,small fixes
@@ -33,6 +34,8 @@
 // ==/UserScript==
 
 (function() {var css = [
+"/*1.3.1*/",
+	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
 	"		 display:none !important;",
@@ -152,7 +155,7 @@
 	"			background: #00adee !important;",
 	"			border-color: #00adee !important;",
 	"	}",
-	"		  .Zm-at-Zb-mi-Yb-Do .a-mi-w,.Zm-at-Zb-mi-Yb-Do .a-mi-v,.creator-editor-nav-tabs li.selected > a, .creator-editor-nav-tabs li:hover > a,.yt-uix-button-subscribe-unbranded:hover,.yt-uix-button.yt-uix-button-subscribe-branded:hover, .yt-uix-button.yt-uix-button-subscribed-branded:hover,.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled,a.yt-uix-button.yt-uix-button-epic-nav-item:hover,.tabs .tab-header:hover,.tabs .tab-header.selected,.yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before,.epic-nav-item-heading,.epic-nav-item-heading:hover{",
+	"		  .ytp-ce-element.ytp-ce-element-show:hover,.Zm-at-Zb-mi-Yb-Do .a-mi-w,.Zm-at-Zb-mi-Yb-Do .a-mi-v,.creator-editor-nav-tabs li.selected > a, .creator-editor-nav-tabs li:hover > a,.yt-uix-button-subscribe-unbranded:hover,.yt-uix-button.yt-uix-button-subscribe-branded:hover, .yt-uix-button.yt-uix-button-subscribed-branded:hover,.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled,a.yt-uix-button.yt-uix-button-epic-nav-item:hover,.tabs .tab-header:hover,.tabs .tab-header.selected,.yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before,.epic-nav-item-heading,.epic-nav-item-heading:hover{",
 	"			border-color: #00adee !important;",
 	"	}",
 	"	/*Inverting icon images*/",
@@ -213,7 +216,7 @@
 	
 	"/*Colors and text section*/",
 	"	/*Permanently highlighted*/",
-	"		.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
+	"		.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
 	"		color: rgba(0,173,238,.9)  !important;",
 	"		text-decoration: none  !important;",
 	"   text-shadow: none !important;",
@@ -242,7 +245,7 @@
 	"		border-radius: 100% !important;",
 	"	  background: transparent !important;",
 	"	  border-color: transparent !important;",	
-	"	  opacity: 0.9;",	
+	"	  opacity: 0.95;",	
 	"	}",
 	"	  .xta .dOc:hover,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{",
 	"	  opacity: 1 !important;",	
@@ -251,7 +254,7 @@
 	"	  .yt-thumb{",
 	"	  background: transparent !important;",
 	"	  border-color: transparent !important;",	
-  "	  opacity: 0.9;",
+  "	  opacity: 0.95;",
 	"	}",
   "/*For the icon in the channel banner*/",
 	"	  .channel-header-profile-image-container{",
@@ -268,10 +271,13 @@
 	"	  #player-playlist .playlist-video .video-thumb,.yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{",
   "	  opacity: 1 !important;",	
 	"	}",
-	"	  .watched .video-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb{",
-  "	  opacity: 0.9 !important;",	
+	"	  .exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb{",
+  "	  opacity: 0.93 !important;",	
 	"	}",
-	
+  "/*Special opacity for watched videos*/",
+	"	  .watched .video-thumb:hover{",
+  "	  opacity: 0.80 !important;",	
+	"	}",	
 	
 	"/*Video section*/",
 	"	/*Video title hover in html5 video*/",

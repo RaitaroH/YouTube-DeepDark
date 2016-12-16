@@ -16,10 +16,11 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.3.2
+// @version       1.3.2-1
 // @grant         GM_getValue
 // @grant         GM_setValue
-// Changelog: 1.3.2 some div background in big resolution fix (see comment here http://forum.userstyles.org/discussion/52943/x),searchbar results fix,youtube logo responsive hidden,welcome for youtube+ background,cinema mode black bars removed,while watching element fix in fullscreen playlist view
+// Changelog: 1.3.2-1 very small fix
+// Changelog: 1.3.2 some div background in big resolution fix (see comment here http://forum.userstyles.org/discussion/52943/x),,searchbar results fix,youtube logo responsive hidden,welcome for youtube+ background,cinema mode black bars removed,while watching element fix in fullscreen playlist view
 // Changelog: 1.3.1 opacity tweaked for a softer feel,fullscreen playlist author color,changed border color for cards on hover
 // Changelog: 1.3.0 yt menu selected hover fix,yt logo hover opacity,opacity for thumbnails in playlists set to 1
 // Changelog: 1.2.9 fixed cricle being cutoff in the channels page,circle for channels in the search results,removing completly the (the case for bubble menus)
@@ -38,7 +39,7 @@
 "/*1.3.2*/",
 	
   "/*Hiding some crap section*/",
-	"	   .exp-responsive #yt-masthead #logo-container,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
+	"	   .yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
 	"		 display:none !important;",
 	"	}",
 	"/* Why YT has box shadows beats me*/",
@@ -63,12 +64,12 @@
 
 	
 	"	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/",
-	"    #masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo{",
+	"    .exp-responsive #yt-masthead #logo-container,#masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo{",
 	"    background: no-repeat url(https://i.imgur.com/9wGydcv.png) !important;",
 	"    background-size: 100% !important;",
 	"    opacity: 0.65 !important;",
 	"}",
-	"    #masthead-logo:hover,#yt-masthead #logo-container .logo:hover,#footer-logo .footer-logo-icon:hover,.footer-logo:hover{",
+	"    .exp-responsive #yt-masthead #logo-container:hover,#masthead-logo:hover,#yt-masthead #logo-container .logo:hover,#footer-logo .footer-logo-icon:hover,.footer-logo:hover{",
 	"    opacity: 0.75 !important;",
 	"}",	
 	

@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.4.1
+// @version       1.4.2
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.4.2 fixed dashboard icons
 // Changelog: 1.4.1 removed custom icons for liked buttons entirely
 // Changelog: 1.4.0 dialog text fixes,add description and email fix,welcome video fixes,show more vids in playlist hover,private icon in subscriptions fix,channel settings fixes,playlist settings fixes,removed some box shadows,edit notes color fix,show more color fix,calendar fixes ,studio analytics section fixes,studio message section fixes,channel description fixes,border color for links in the studio menus,border color for links in the community tab,fixed borders in studio,fixed a circle icon in the studio,fixed editable description in playlist,fixed hover on video title in the creation studio, fixed title color in studio,border color fix in the studio
 // Changelog: 1.3.9 added border to upload button,fixed save playlist button, made x button on home page look better
@@ -44,7 +45,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.4.1*/",
+"/*1.4.2*/",
 	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
@@ -67,7 +68,7 @@
 	"	}*/",
 	"	/*Changing buttons in the dashboard*/",
 	"		  #creator-sidebar .studio-icon.creator-sidebar-create.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-create.selected,#creator-sidebar .studio-icon.creator-sidebar-translations-and-transcriptions.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-translations-and-transcriptions.selected,#creator-sidebar .creator-sidebar-analytics.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-analytics.selected,#creator-sidebar .studio-icon.creator-sidebar-channel.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-channel.selected,#creator-sidebar .studio-icon.creator-sidebar-community.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-community.selected,#creator-sidebar .studio-icon.creator-sidebar-live-streaming,#creator-sidebar .studio-icon.creator-sidebar-video-manager.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-video-manager.selected,#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected {",
-	"			background-image: url(http://i.imgur.com/YnWCnom.png) !important;",
+	"			background-image: url(https://i.imgur.com/PgFNJRL.png) !important;",
 	"	}",
 
 	

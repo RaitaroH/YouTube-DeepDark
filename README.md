@@ -22,7 +22,7 @@ HTML5 video colored in blue
 
 Comments
 
-![alt tag](https://i.imgur.com/psjVkBg.png)
+![alt tag](https://i.imgur.com/OZX1PEf.png)
 
 Watched video bar changed in blue
 

@@ -36,13 +36,13 @@ Video cards
 
 ![alt tag](https://i.imgur.com/25iLUU6.png)  ![alt tag](https://i.imgur.com/rbe7IxT.png)
 
-Vide not found (because why not?)
-
-![alt tag](https://i.imgur.com/QMyw2zj.png)
-
 Channel card
 
 ![alt tag](https://i.imgur.com/0xUX5xD.png)
+
+Vide not found (because why not?)
+
+![alt tag](https://i.imgur.com/QMyw2zj.png)
 
 Youtube+ (and every other icons) adjusted for the dark theme. (YouTube+ here https://greasyfork.org/en/scripts/9932-youtube)
 

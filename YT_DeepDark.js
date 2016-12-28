@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.4.2
+// @version       1.4.3
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.4.3 playlists icons,liked buttons icons changed to better blue(readded them),video not found image made blue
 // Changelog: 1.4.2 fixed dashboard icons
 // Changelog: 1.4.1 removed custom icons for liked buttons entirely
 // Changelog: 1.4.0 dialog text fixes,add description and email fix,welcome video fixes,show more vids in playlist hover,private icon in subscriptions fix,channel settings fixes,playlist settings fixes,removed some box shadows,edit notes color fix,show more color fix,calendar fixes ,studio analytics section fixes,studio message section fixes,channel description fixes,border color for links in the studio menus,border color for links in the community tab,fixed borders in studio,fixed a circle icon in the studio,fixed editable description in playlist,fixed hover on video title in the creation studio, fixed title color in studio,border color fix in the studio
@@ -45,7 +46,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.4.2*/",
+"/*1.4.3*/",
 	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
@@ -58,19 +59,47 @@
 	
 	
 	"/*Background image change section*/",
-	"	/*Changing liked button color + other stuff",
-	"		  #player-playlist .yt-uix-button-toggled.yt-uix-playlistlike::before,#pl-header .yt-uix-button-toggled.yt-uix-playlistlike::before,.like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled::before{",
-	"			background-image: url(http://i.imgur.com/IfsGZsr.png) !important;",
-	"	}*/",
-	"	/*Changing liked button color + other stuff",
-	"		  #comment-section-renderer .sprite-like[data-action-on]::before {",
-	"			background-image: url(http://i.imgur.com/Qi9EKin.png) !important;",
-	"	}*/",
+	"	/*Changing liked button color + other stuff*/",
+	"		  .like-button-renderer-like-button.yt-uix-button:active::before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled::before{",
+	"			background: no-repeat url(https://i.imgur.com/E3NuIEu.png) -339px -197px !important;",
+	"			background-size: 435px 425px !important;",
+	"			width: 20px !important;",
+	"			height: 20px !important;",
+	"	}",
+	"	/*Changing liked and disliked button color in the comments*/",
+	"		  #comment-section-renderer .sprite-like[aria-checked=true]::before {",
+	"			background: no-repeat url(https://i.imgur.com/uDVmQBs.png) 0 -116px !important;",
+	"			background-size: 324px 132px !important;",
+	"			width: 14px !important;",
+	"			height: 14px !important;",
+	"	}",
+	"		  #comment-section-renderer .sprite-dislike[aria-checked=true]::before {",
+	"			background: no-repeat url(https://i.imgur.com/uDVmQBs.png) -300px -36px !important;",
+	"			background-size: 324px 132px !important;",
+	"			width: 14px !important;",
+	"			height: 14px !important;",
+	"	}",	
+	"	/*Changing saved button for playlists*/",
+	"		  #pl-header .yt-uix-button-toggled.yt-uix-playlistlike::before{",
+	"			background: no-repeat url(https://i.imgur.com/E3NuIEu.png) -249px -166px !important;",
+	"			background-size: 435px 425px !important;",
+	"			width: 15px !important;",
+	"			height: 15px !important;",
+	"	}",
+	"		  #player-playlist .yt-uix-button-toggled.yt-uix-playlistlike::before{",
+	"			background: no-repeat url(https://i.imgur.com/E3NuIEu.png) -191px -369px !important;",
+	"			background-size: 435px 425px !important;",
+	"			width: 24px !important;",
+	"			height: 24px !important;",
+	"	}",
 	"	/*Changing buttons in the dashboard*/",
 	"		  #creator-sidebar .studio-icon.creator-sidebar-create.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-create.selected,#creator-sidebar .studio-icon.creator-sidebar-translations-and-transcriptions.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-translations-and-transcriptions.selected,#creator-sidebar .creator-sidebar-analytics.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-analytics.selected,#creator-sidebar .studio-icon.creator-sidebar-channel.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-channel.selected,#creator-sidebar .studio-icon.creator-sidebar-community.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-community.selected,#creator-sidebar .studio-icon.creator-sidebar-live-streaming,#creator-sidebar .studio-icon.creator-sidebar-video-manager.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-video-manager.selected,#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected {",
 	"			background-image: url(https://i.imgur.com/PgFNJRL.png) !important;",
 	"	}",
-
+	"	/*Changing icon for unavailable video*/",
+	"		  .player-unavailable div.icon.meh {",
+	"			background-image: url(https://i.imgur.com/2F3NvUl.png) !important;",
+	"	}",
 	
 	"	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/",
 	"    .exp-responsive #yt-masthead #logo-container,#masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo{",

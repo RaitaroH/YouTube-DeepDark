@@ -44,6 +44,10 @@ Vide not found (because why not?)
 
 ![alt tag](https://i.imgur.com/QMyw2zj.png)
 
+404 page (because why not?)
+
+![alt tag](https://i.imgur.com/CdOvw4k.png)
+
 Youtube+ (and every other icons) adjusted for the dark theme. (YouTube+ here https://greasyfork.org/en/scripts/9932-youtube)
 
 ![alt tag](https://i.imgur.com/rs9XeBR.png)

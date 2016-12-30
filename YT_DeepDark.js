@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.4.4
+// @version       1.4.5
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.4.5 404 page makeover
 // Changelog: 1.4.4 hover for post comment fix
 // Changelog: 1.4.3 playlists icons,liked buttons icons changed to better blue(readded them),video not found image made blue
 // Changelog: 1.4.2 fixed dashboard icons
@@ -47,7 +48,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.4.4*/",
+"/*1.4.5*/",
 	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
@@ -100,6 +101,22 @@
 	"	/*Changing icon for unavailable video*/",
 	"		  .player-unavailable div.icon.meh {",
 	"			background-image: url(https://i.imgur.com/2F3NvUl.png) !important;",
+	"	}",
+	"	/*Changing icon for unavailable page (404)*/",
+	"		  #error-page-hh-illustration {",
+	"			display: block !important;",
+	"			-moz-box-sizing: border-box !important;",
+	"			box-sizing: border-box !important;",
+	"			background: url(https://i.imgur.com/2F3NvUl.png) no-repeat !important;",
+	"			width: 140px !important;", 
+	"			height: 100px !important;", 
+	"			padding-left: 140px !important;",
+	"			right: -175px !important;",
+	"			position: relative !important;",
+	"	}",
+	"	/*Some spacing for the logo*/",
+	"		  #yt-masthead #logo-container {",
+	"			margin-right: 20px !important;",
 	"	}",
 	
 	"	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/",
@@ -274,7 +291,7 @@
 	"		 text-decoration: none  !important;",
 	"    text-shadow: none !important;",
 	"	}",
-	"		 .yt-uix-button.yt-uix-button-size-default.yt-uix-button-primary.yt-uix-button-empty.comment-simplebox-submit.yt-uix-sessionlink:hover,.empty-upsell-messages h2,.editor-boolean-setting .setting-label,.casual-channel .channel-settings-editor h3,.casual-channel .channel-settings-editor .yt-dialog-title,h4,.vm-list-view .vm-video-title .vm-video-title-content,.overlay-confirmation-channel-info,.create-playlist-widget-form .yt-uix-form-label,#masthead-search-term,.gssb_m,#guide-container .guide-item.guide-item-selected:hover,div.about-metadata-label:nth-child(5) > span:nth-child(1),div.about-metadata-label:nth-child(7) > span:nth-child(1),#creator-sidebar .creator-sidebar-branding h1,.iph-dialog a,.iph-dialog-title,.blur-effect-entry .blur-effect-title,.menu-tab:hover, .menu-tab.selected,#player-and-info-pane #video-info h2,.HPHGCHB-F-d > p:nth-child(1),.metadata-container h3,.metadata-thumbnail-chooser h3,.upload-item-sidebar-text h3,.upload-footer-header,.upload-sidebar-header,.Zm-at-Zb-mi-Yb-Do .Zm-at-Zb-eu,.Zm-Jw-kq-cb,.Zm-ii-tc,#upload-button-text,.yt-picker-header h3.yt,.yt-uix-clickcard-title, .yt-uix-hovercard-title,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.HPHGCHB-P-b,a.yt-uix-button-primary > span:nth-child(1),button.open-banner-image-editor > span:nth-child(2),.yt-uix-button-icon-wrapper + .yt-uix-button-content,button.yt-uix-button-primary:nth-child(2) > span:nth-child(1),.appbar-guide-notification,#creator-sidebar h3, #creator-sidebar h3 a,button.yt-uix-button-primary:nth-child(1) > span:nth-child(1),.account-header h1,.account-info-item .account-info-label,.yt-uix-button-content,#main-title,.live-welcome-intro-copy .headline,#creator-subheader h2,.category-title-wrap:hover .category-title-link .category-title,.category-header .category-title,.comment-simplebox-text, .comment-simplebox-prompt,.guide-item.guide-item-selected:hover,.guide-item.guide-item-selected,.comment-renderer.channel-owner .comment-author-text:hover,.comment-renderer.channel-owner .comment-author-text,.comment-renderer-author-comment-badge.creator .comment-author-text,.html5-video-player a,.branded-page-base-bold-titles .branded-page-module-title,.branded-page-module-title a:visited, .branded-page-module-title a, .epic-nav-item-heading:active,.branded-page-related-channels h3 a, .branded-page-related-channels h3,.epic-nav-item-heading,#eow-title,.yt-consent-banner .yt-consent-content, .yt-lockup-title a,.yt-masthead-picker-name,.ytp-ce-video-title,.yt-card .yt-uix-button-expander,.yt-card .yt-uix-button-expander:hover{",
+	"		 #error-page-content p,.yt-uix-button.yt-uix-button-size-default.yt-uix-button-primary.yt-uix-button-empty.comment-simplebox-submit.yt-uix-sessionlink:hover,.empty-upsell-messages h2,.editor-boolean-setting .setting-label,.casual-channel .channel-settings-editor h3,.casual-channel .channel-settings-editor .yt-dialog-title,h4,.vm-list-view .vm-video-title .vm-video-title-content,.overlay-confirmation-channel-info,.create-playlist-widget-form .yt-uix-form-label,#masthead-search-term,.gssb_m,#guide-container .guide-item.guide-item-selected:hover,div.about-metadata-label:nth-child(5) > span:nth-child(1),div.about-metadata-label:nth-child(7) > span:nth-child(1),#creator-sidebar .creator-sidebar-branding h1,.iph-dialog a,.iph-dialog-title,.blur-effect-entry .blur-effect-title,.menu-tab:hover, .menu-tab.selected,#player-and-info-pane #video-info h2,.HPHGCHB-F-d > p:nth-child(1),.metadata-container h3,.metadata-thumbnail-chooser h3,.upload-item-sidebar-text h3,.upload-footer-header,.upload-sidebar-header,.Zm-at-Zb-mi-Yb-Do .Zm-at-Zb-eu,.Zm-Jw-kq-cb,.Zm-ii-tc,#upload-button-text,.yt-picker-header h3.yt,.yt-uix-clickcard-title, .yt-uix-hovercard-title,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.HPHGCHB-P-b,a.yt-uix-button-primary > span:nth-child(1),button.open-banner-image-editor > span:nth-child(2),.yt-uix-button-icon-wrapper + .yt-uix-button-content,button.yt-uix-button-primary:nth-child(2) > span:nth-child(1),.appbar-guide-notification,#creator-sidebar h3, #creator-sidebar h3 a,button.yt-uix-button-primary:nth-child(1) > span:nth-child(1),.account-header h1,.account-info-item .account-info-label,.yt-uix-button-content,#main-title,.live-welcome-intro-copy .headline,#creator-subheader h2,.category-title-wrap:hover .category-title-link .category-title,.category-header .category-title,.comment-simplebox-text, .comment-simplebox-prompt,.guide-item.guide-item-selected:hover,.guide-item.guide-item-selected,.comment-renderer.channel-owner .comment-author-text:hover,.comment-renderer.channel-owner .comment-author-text,.comment-renderer-author-comment-badge.creator .comment-author-text,.html5-video-player a,.branded-page-base-bold-titles .branded-page-module-title,.branded-page-module-title a:visited, .branded-page-module-title a, .epic-nav-item-heading:active,.branded-page-related-channels h3 a, .branded-page-related-channels h3,.epic-nav-item-heading,#eow-title,.yt-consent-banner .yt-consent-content, .yt-lockup-title a,.yt-masthead-picker-name,.ytp-ce-video-title,.yt-card .yt-uix-button-expander,.yt-card .yt-uix-button-expander:hover{",
 	"    color: rgba(255, 255, 255, .95)  !important;",
 	"		 text-shadow: none  !important;",
 	"	}",

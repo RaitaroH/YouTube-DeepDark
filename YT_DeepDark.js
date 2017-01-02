@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.4.6
+// @version       1.4.7
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.4.7 frame by frame icon fix for YT+
 // Changelog: 1.4.6 fixes in the analytics and create a video,some borders fixes,checkboxes in YT+,search bars and inputs fixed in the dashboard (if you have a white theme), creator heart avatar changed to circle
 // Changelog: 1.4.5 404 page makeover
 // Changelog: 1.4.4 hover for post comment fix
@@ -49,7 +50,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.4.6*/",
+"/*1.4.7*/",
 	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
@@ -404,7 +405,7 @@
 
 	
 	"/*Youtube+ Section*/",
-	"   .P-impexp,.thumb-svg,#subscription-playlist,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{",
+	"   #framestep-button,.P-impexp,.thumb-svg,#subscription-playlist,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{",
 	"	  filter: invert(100%);",
 	"	}",
 	"		#player-console{",

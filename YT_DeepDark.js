@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.4.7
+// @version       1.4.8
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.4.8 fixed the spacing the menu wich was really bad for some reason
 // Changelog: 1.4.7 frame by frame icon fix for YT+
 // Changelog: 1.4.6 fixes in the analytics and create a video,some borders fixes,checkboxes in YT+,search bars and inputs fixed in the dashboard (if you have a white theme), creator heart avatar changed to circle
 // Changelog: 1.4.5 404 page makeover
@@ -50,7 +51,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.4.7*/",
+"/*1.4.8*/",
 	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
@@ -285,6 +286,15 @@
 	"	 	 .comment-text-toggle{",
 	"		 margin-top: 5px !important;",
 	"	}",
+	
+	"/*Items in the menu had to much padding.*/",
+  "	 	 .polymer-guide-item-height{",
+	"		 height: 28px !important;",
+	"	}",
+  "	 	 .guide-item.has-subtitle{",
+	"		 height: 33px !important;",
+	"	}",
+	
 	
 	"/*Colors and text section*/",
 	"	/*Permanently highlighted*/",

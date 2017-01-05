@@ -19,7 +19,7 @@
 // @version       1.4.8
 // @grant         GM_getValue
 // @grant         GM_setValue
-// Changelog: 1.4.8 fixed the spacing the menu wich was really bad for some reason
+// Changelog: 1.4.8 fixed the spacing the menu which was really bad for some reason
 // Changelog: 1.4.7 frame by frame icon fix for YT+
 // Changelog: 1.4.6 fixes in the analytics and create a video,some borders fixes,checkboxes in YT+,search bars and inputs fixed in the dashboard (if you have a white theme), creator heart avatar changed to circle
 // Changelog: 1.4.5 404 page makeover

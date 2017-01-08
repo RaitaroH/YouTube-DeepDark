@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.5.0
+// @version       1.5.1
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.5.1 removed the fix at 1.5.0 it conflicts with other stuff
 // Changelog: 1.5.0 list view and grid view icons fixed for list view,circle icons in the list view layout,yt+ fixes
 // Changelog: 1.4.9 comment section YT redesign fixes
 // Changelog: 1.4.8 fixed the spacing the menu which was really bad for some reason
@@ -239,9 +240,6 @@
 	"	/*Some buttons don't need to be inverted because they will be orange*/",
 	"	    #player-playlist .yt-uix-playlistlike::before,#comment-section-renderer .sprite-like[aria-checked=true]::before,#comment-section-renderer .sprite-dislike[aria-checked=true]::before,.HPHGCHB-P-g h2 a:hover .HPHGCHB-P-j,.addto-watch-later-button-success::before,#comment-section-renderer .sprite-like[data-action-on]::before,.yt-uix-button-subscribed-branded::before,.addto-watch-later-button-success::before,#player-playlist .yt-uix-button-toggled.yt-uix-playlistlike::before,#pl-header .yt-uix-button-toggled.yt-uix-playlistlike::before,.like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled::before,.exp-comments-refresh #comment-section-renderer .comment-renderer .sprite-comment-actions[data-action-on]::before{",
 	"			filter: invert(0%) !important;",
-	"	}",
-	"		  .yt-uix-button-empty .yt-uix-button-icon-wrapper{",
-	"			filter: invert(50%) !important;",
 	"	}",
 	"	/*Some icons are too white*/",
 	"		  .HPHGCHB-n-c,.creator-bar-item .yt-uix-button-icon-audio,.creator-editor-icon-audio{",

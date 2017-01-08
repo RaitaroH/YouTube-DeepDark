@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.4.9
+// @version       1.5.0
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.5.0 list view and grid view icons fixed for list view,circle icons in the list view layout,yt+ fixes
 // Changelog: 1.4.9 comment section YT redesign fixes
 // Changelog: 1.4.8 fixed the spacing the menu which was really bad for some reason
 // Changelog: 1.4.7 frame by frame icon fix for YT+
@@ -52,7 +53,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.4.9*/",
+"/*1.5.0*/",
 	
   "/*Hiding some crap section*/",
 	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
@@ -239,6 +240,9 @@
 	"	    #player-playlist .yt-uix-playlistlike::before,#comment-section-renderer .sprite-like[aria-checked=true]::before,#comment-section-renderer .sprite-dislike[aria-checked=true]::before,.HPHGCHB-P-g h2 a:hover .HPHGCHB-P-j,.addto-watch-later-button-success::before,#comment-section-renderer .sprite-like[data-action-on]::before,.yt-uix-button-subscribed-branded::before,.addto-watch-later-button-success::before,#player-playlist .yt-uix-button-toggled.yt-uix-playlistlike::before,#pl-header .yt-uix-button-toggled.yt-uix-playlistlike::before,.like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled::before,.exp-comments-refresh #comment-section-renderer .comment-renderer .sprite-comment-actions[data-action-on]::before{",
 	"			filter: invert(0%) !important;",
 	"	}",
+	"		  .yt-uix-button-empty .yt-uix-button-icon-wrapper{",
+	"			filter: invert(50%) !important;",
+	"	}",
 	"	/*Some icons are too white*/",
 	"		  .HPHGCHB-n-c,.creator-bar-item .yt-uix-button-icon-audio,.creator-editor-icon-audio{",
 	"			opacity: 0.60 !important;",
@@ -340,13 +344,13 @@
 	
 	"/*Going full circle section*/",	
   "/*Make avatars circles (50% or more) or squares (0). Also added opacity change on hover.*/",	
-	"	   .creator-heart-background-hearted,.yt-thumb-23,.HPHGCHB-jb-b,.comments .comment-item .user-photo,.channel-autocomplete-list-item-thumb,.video-dds .thumb,.yt-thumb-77,.yt-thumb-34,.yt-lockup-channel > div:nth-child(1) > a:nth-child(1) > div:nth-child(1),.xta .dOc,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img,#yt-masthead-user .yt-masthead-user-icon,.yt-thumb-46,.yt-thumb-20,.comment-author-thumbnail,.yt-thumb-48,.yt-thumb-110,#appbar-nav .appbar-nav-avatar{",
+	"	   .browse-list-item-container .branded-page-module-title .video-thumb,.creator-heart-background-hearted,.yt-thumb-23,.HPHGCHB-jb-b,.comments .comment-item .user-photo,.channel-autocomplete-list-item-thumb,.video-dds .thumb,.yt-thumb-77,.yt-thumb-34,.yt-lockup-channel > div:nth-child(1) > a:nth-child(1) > div:nth-child(1),.xta .dOc,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img,#yt-masthead-user .yt-masthead-user-icon,.yt-thumb-46,.yt-thumb-20,.comment-author-thumbnail,.yt-thumb-48,.yt-thumb-110,#appbar-nav .appbar-nav-avatar{",
 	"		 border-radius: 100% !important;",
 	"	   background: transparent !important;",
 	"	   border-color: transparent !important;",	
 	"	   opacity: 0.9;",	
 	"	}",
-	"	   .creator-heart-background-hearted:hover,.yt-thumb-23:hover,.HPHGCHB-jb-b:hover,.comments .comment-item .user-photo:hover,.channel-autocomplete-list-item-thumb:hover,.video-dds .thumb:hover,.yt-thumb-34:hover,.xta .dOc:hover,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{",
+	"	   .browse-list-item-container .branded-page-module-title .video-thumb:hover,.creator-heart-background-hearted:hover,.yt-thumb-23:hover,.HPHGCHB-jb-b:hover,.comments .comment-item .user-photo:hover,.channel-autocomplete-list-item-thumb:hover,.video-dds .thumb:hover,.yt-thumb-34:hover,.xta .dOc:hover,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{",
 	"	   opacity: 1 !important;",	
 	"	}",
   "/*Remove a stupid border around  the circle (the background) */",
@@ -374,10 +378,10 @@
 	
   "/*Thumbnails opacity section*/",	
   "/*Opacity for thumbnails. For watched is 0.9 on hover because by default they are 0.7 so I want to keep a drustic change on hover to the minimum.*/",		
-	"	   .yt-lockup-grid .yt-lockup-thumbnail:hover,#player-playlist .playlist-video .video-thumb,.yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{",
+	"	   .yt-lockup.yt-lockup-tile .yt-lockup-thumbnail:hover,.yt-lockup-grid .yt-lockup-thumbnail:hover,#player-playlist .playlist-video .video-thumb,.yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{",
   "	   opacity: 1 !important;",	
 	"	}",
-	"	   .yt-lockup-grid .yt-lockup-thumbnail,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb{",
+	"	   .yt-lockup.yt-lockup-tile .yt-lockup-thumbnail,.yt-lockup-grid .yt-lockup-thumbnail,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb{",
   "	   opacity: 0.9 !important;",	
 	"	}",
   "/*Special opacity for watched videos*/",
@@ -453,11 +457,14 @@
 	"   #P-sidebar-list > li:hover,#P-settings option  {",
 	"   background: #3a3a3a !important; ",
 	"}",
-	"/*	I can't change the color here because in the script they put !important*/",
 	"   #P-settings select,#P-content select{",
 	"		background: #00adee !important;",
 	"		border-color: #00adee !important;",
+	"		text-shadow: 0 0 0 #fff !important;",
 	"}",	
+	"   #P-settings .P-select::after  {",
+	"   border-top-color: #fff !important; ",
+	"}",
 	"   #P-content input[type='text'],.P-reset,.P-reset:hover{",
 	"		background: linear-gradient(rgb(50,50,50), rgb(40,40,40)) !important;",
   "		border-color: rgb(0,0,0) !important;",

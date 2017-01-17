@@ -16,9 +16,11 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.5.4
+// @version       1.5.6
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.5.6 added some basic suport for the new material design,I never noticed the links in comments are not blue (now fixed),changed notifications number background to blue as well
+// Changelog: 1.5.5 removed border for numbers of notfications
 // Changelog: 1.5.4 fixed the search bar (new design for YT will brake stuff soon enough),removed the border of the search button because it looked not aligned,removed the box shadow when you use tab to "select" the timeline
 // Changelog: 1.5.3 notifications titled went under the image so I fixed that too,notifications button and dropdown now black (thx YouTube for the new design)
 // Changelog: 1.5.2 changed highlight for text
@@ -57,7 +59,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.5.4*/",
+"/*1.5.6*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -214,7 +216,7 @@
 	"		  a.yt-uix-button-epic-nav-item.partially-selected:hover, button.yt-uix-button-epic-nav-item:hover, button.yt-uix-button-epic-nav-item.selected, button.yt-uix-button-epic-nav-item.yt-uix-button-toggled, .epic-nav-item:hover, .epic-nav-item.selected, .epic-nav-item.yt-uix-button-toggled, .epic-nav-item-heading,.ytp-video-menu-item-thumbnail,.ytp-ce-element.ytp-ce-element-show:hover,.Zm-at-Zb-mi-Yb-Do .a-mi-w,.Zm-at-Zb-mi-Yb-Do .a-mi-v,.creator-editor-nav-tabs li.selected > a, .creator-editor-nav-tabs li:hover > a,.yt-uix-button-subscribe-unbranded:hover,.yt-uix-button.yt-uix-button-subscribe-branded:hover, .yt-uix-button.yt-uix-button-subscribed-branded:hover,.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled,a.yt-uix-button.yt-uix-button-epic-nav-item:hover,.tabs .tab-header:hover,.tabs .tab-header.selected,.yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before,.epic-nav-item-heading,.epic-nav-item-heading:hover{",
 	"			border-color: #00adee !important;",
 	"	}",
-	"		  .comments .comment-item:hover .mod-buttonbar, .comments .comment-item:hover .mod-buttonbar .mod-button{",
+	"		  #yt-masthead-user .sb-notif-on .yt-uix-button-content,.comments .comment-item:hover .mod-buttonbar, .comments .comment-item:hover .mod-buttonbar .mod-button{",
 	"			border-color: transparent !important;",
 	"	}",
 	
@@ -242,7 +244,7 @@
 	"			color: #00adee !important;",
 	"	}",
 	"/* Blue buttons and backgrounds*/",
-	"		  .editor-timeline .timeline-playhead .timeline-playhead-line,.editor-timeline .timeline-playhead .timeline-playhead-time,button.split-button,.yt-uix-form-input-paper-toggle-container.checked .yt-uix-form-input-paper-toggle-bg,.HPHGCHB-g-t:hover,.HPHGCHB-g-t, .HPHGCHB-g-t[disabled],#progress,#part_welcome,.Zm-Fc-Jk-ty-qi .d-u,.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success,.iph-dialog a.iph-dialog-nav-button,.upload-item-main .save-changes-button,.live-chat-widget #live-comments-setting-bottom-scroll,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.track-selection-menu.track-filter-tab.filter-selected,.HPHGCHB-F-e.HPHGCHB-F-m, .HPHGCHB-F-k.HPHGCHB-F-m,.HPHGCHB-P-b,.creator-heart-small-left,.creator-heart-small-right,.comment-renderer.channel-owner .comment-author-text,#appbar-main-guide-notification-container .appbar-guide-notification-content-wrapper,#appbar-main-guide-notification-container .appbar-guide-notification,.appbar-guide-notification,.comment-renderer-author-comment-badge.creator,.yt-uix-button-primary,.guide-item.guide-item-selected, .guide-item.guide-item-selected:hover, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus,.yt-uix-checkbox-on-off input[type=\"checkbox\"]:checked + label,.resume-playback-progress-bar,.video-extras-sparkbar-likes{",
+	"		  #yt-masthead-user .sb-notif-on .yt-uix-button-content,.editor-timeline .timeline-playhead .timeline-playhead-line,.editor-timeline .timeline-playhead .timeline-playhead-time,button.split-button,.yt-uix-form-input-paper-toggle-container.checked .yt-uix-form-input-paper-toggle-bg,.HPHGCHB-g-t:hover,.HPHGCHB-g-t, .HPHGCHB-g-t[disabled],#progress,#part_welcome,.Zm-Fc-Jk-ty-qi .d-u,.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success,.iph-dialog a.iph-dialog-nav-button,.upload-item-main .save-changes-button,.live-chat-widget #live-comments-setting-bottom-scroll,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.track-selection-menu.track-filter-tab.filter-selected,.HPHGCHB-F-e.HPHGCHB-F-m, .HPHGCHB-F-k.HPHGCHB-F-m,.HPHGCHB-P-b,.creator-heart-small-left,.creator-heart-small-right,.comment-renderer.channel-owner .comment-author-text,#appbar-main-guide-notification-container .appbar-guide-notification-content-wrapper,#appbar-main-guide-notification-container .appbar-guide-notification,.appbar-guide-notification,.comment-renderer-author-comment-badge.creator,.yt-uix-button-primary,.guide-item.guide-item-selected, .guide-item.guide-item-selected:hover, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus,.yt-uix-checkbox-on-off input[type=\"checkbox\"]:checked + label,.resume-playback-progress-bar,.video-extras-sparkbar-likes{",
 	"			background: #00adee !important;",
 	"			border-color: #00adee !important;",
 	"	}",
@@ -335,7 +337,7 @@
 	
 	"/*Colors and text section*/",
 	"	/*Permanently highlighted*/",
-	"		 .yt-uix-expander-collapsed .multirow-shelf-expander, .multirow-shelf-collapser,.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
+	"		 .yt-uix-servicelink,.yt-uix-expander-collapsed .multirow-shelf-expander, .multirow-shelf-collapser,.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
 	"		 color: rgba(0,173,238,.9)  !important;",
 	"		 text-decoration: none  !important;",
 	"    text-shadow: none !important;",
@@ -358,7 +360,7 @@
 	"/*Analytics calendar left the background for these white: .HPHGCHB-K-h .datePickerDayIsFiller,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel, .HPHGCHB-K-h .datePickerDay,*/",
 	
 	"/*Hover for links & other stuff*/",
-	"    .compact-shelf .compact-shelf-view-all-card-link:hover h4, .compact-shelf .compact-shelf-view-all-card-link:hover a,.yt-uix-expander-collapsed .multirow-shelf-expander:hover, .multirow-shelf-collapser:hover,.HPHGCHB-K-h .datePickerDayIsToday,.ytp-video-menu-item-now-playing,.yt-uix-sessionlink.spf-link:hover,.yt-picker-region-name:hover,.yt-picker-content strong,.track.loading .audiolibrary-track-head .audiolibrary-column, .track.expanded .audiolibrary-track-head .audiolibrary-column,#footer-links-primary a:hover,#footer-links-secondary a:hover,.spf-link.branded-page-header-title-link.yt-uix-sessionlink:hover,.yt-uix-sessionlink:hover,.category-header .category-title-link:hover .category-title, .category-header .category-count-link:hover .channel-count, .category-header .category-link:hover .all-categories,.ytp-ce-size-853 .ytp-ce-website-title:hover, .ytp-ce-size-853 .ytp-ce-channel-title:hover,.about-channel-link-text:hover,.comment-replies-renderer-view, .comment-replies-renderer-hide:hover,.comment-renderer-author-comment-badge.creator .comment-author-text:hover,.yt-uix-sessionlink.comment-author-text.g-hovercard.spf-link:hover,.video-uploader-byline:hover,.g-hovercard.yt-uix-sessionlink.spf-link:hover,.ytp-ce-size-640 .ytp-ce-channel-title:hover,#body #uploaded-videos:hover,#uploaded-videos:hover,#player-playlist .playlist-title a:hover,a:hover.yt-lockup-title a:hover,.iv-card:hover .iv-card-primary-link,.exp-wn-font-14 .related-list-item span.title:hover,.yt-lockup:hover a,.yt-lockup:hover .yt-lockup-meta a,.yt-lockup:hover .yt-lockup-description a,.branded-page-header-title-link:hover,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1):hover,.g-hovercard:hover,#action-panel-details a:hover,.video-player-view-component .video-detail a:hover,.branded-page-v2-secondary-col .branded-page-related-channels-see-more a:hover{",
+	"    .yt-uix-servicelink:hover,.compact-shelf .compact-shelf-view-all-card-link:hover h4, .compact-shelf .compact-shelf-view-all-card-link:hover a,.yt-uix-expander-collapsed .multirow-shelf-expander:hover, .multirow-shelf-collapser:hover,.HPHGCHB-K-h .datePickerDayIsToday,.ytp-video-menu-item-now-playing,.yt-uix-sessionlink.spf-link:hover,.yt-picker-region-name:hover,.yt-picker-content strong,.track.loading .audiolibrary-track-head .audiolibrary-column, .track.expanded .audiolibrary-track-head .audiolibrary-column,#footer-links-primary a:hover,#footer-links-secondary a:hover,.spf-link.branded-page-header-title-link.yt-uix-sessionlink:hover,.yt-uix-sessionlink:hover,.category-header .category-title-link:hover .category-title, .category-header .category-count-link:hover .channel-count, .category-header .category-link:hover .all-categories,.ytp-ce-size-853 .ytp-ce-website-title:hover, .ytp-ce-size-853 .ytp-ce-channel-title:hover,.about-channel-link-text:hover,.comment-replies-renderer-view, .comment-replies-renderer-hide:hover,.comment-renderer-author-comment-badge.creator .comment-author-text:hover,.yt-uix-sessionlink.comment-author-text.g-hovercard.spf-link:hover,.video-uploader-byline:hover,.g-hovercard.yt-uix-sessionlink.spf-link:hover,.ytp-ce-size-640 .ytp-ce-channel-title:hover,#body #uploaded-videos:hover,#uploaded-videos:hover,#player-playlist .playlist-title a:hover,a:hover.yt-lockup-title a:hover,.iv-card:hover .iv-card-primary-link,.exp-wn-font-14 .related-list-item span.title:hover,.yt-lockup:hover a,.yt-lockup:hover .yt-lockup-meta a,.yt-lockup:hover .yt-lockup-description a,.branded-page-header-title-link:hover,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1):hover,.g-hovercard:hover,#action-panel-details a:hover,.video-player-view-component .video-detail a:hover,.branded-page-v2-secondary-col .branded-page-related-channels-see-more a:hover{",
 	"    color: #00adee !important;",
   "/* text-shadow: 0px 0px 3px rgba(0,173,238,.5) !important;  I removed this because it bleeds in other ellements*/",
 	"	}",
@@ -498,6 +500,110 @@
 	"		background: linear-gradient(rgb(50,50,50), rgb(40,40,40)) !important;",
   "		border-color: rgb(0,0,0) !important;",
 	"   color: #fff !important;",
+	"}",
+	
+	
+	"/*New Material Design for YouTube*/",
+
+	"/*Logo*/",
+	"   .ytd-topbar-logo-renderer-0 #logo-icon.ytd-topbar-logo-renderer #you-path{",
+	"   fill: #ccc !important",
+	"}",
+
+	
+	"/*Background section*/",
+	"   .ytd-app-1 #guide-content.ytd-app,.ytd-app-0 #guide-content.ytd-app,.ytd-browse-0,.ytd-page-manager-0 > .ytd-page-manager {",
+	"   background: #111 !important;",
+	"}",
+	"   .ytd-account-settings-0,.ytd-multi-page-menu-renderer-0,.paper-menu-0{",
+	"   background: #222 !important;",
+	"}",
+	"   .ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-consent-bump-renderer-0,.ytd-masthead-0 #container.ytd-masthead {",
+	"   background: #181818 !important;",
+	"}",
+	"   paper-item.style-scope.ytd-account-settings.x-scope.paper-item-0:hover,.ytd-guide-entry-renderer-0 #endpoint.ytd-guide-entry-renderer:hover{",
+	"   background: #3a3a3a !important;",
+	"}",
+	"   .ytd-badge-supported-renderer-1 .badge-style-type-simple.ytd-badge-supported-renderer {",
+	"   background: transparent !important;",
+	"   color: #00adee !important;",
+	"}",
+
+	
+	"/*Border section*/",
+	"   .ytd-compact-autoplay-renderer-0,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.ytd-video-secondary-info-renderer-0,.ytd-video-primary-info-renderer-0,.ytd-guide-renderer-0 #sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child),.ytd-app-0 app-drawer.ytd-app:not([persistent]) #header.ytd-app,.ytd-section-list-renderer-0 #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child),.ytd-consent-bump-renderer-0 {",
+	"   border-color: #444 !important;",
+	"}",
+
+	
+	"/*Search bar*/",
+	"   .sbsb_a,.sbdd_b,.ytd-searchbox-0 #container.ytd-searchbox {",
+	"   background: #333 !important;",
+	"   border: none !important;",
+	"}",
+	"   .ytd-searchbox-0 #container.ytd-searchbox:hover {",
+	"   background: #444 !important;",
+	"}",
+	"   li.sbsb_c.gsfs:hover{",
+	"   background: #3a3a3a !important;",
+	"}",
+	"   .ytd-searchbox-0  input {",
+	"   color: rgba(255, 255, 255, .95) !important;",
+	"}",
+
+	
+	"/*Buttons section*/",
+	"   #continuations > yt-next-continuation > paper-button,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer {",
+	"		background: linear-gradient(rgb(50,50,50), rgb(40,40,40)) !important;",
+	"		border-color: rgb(0,0,0) !important;",
+	"}",
+	"   #continuations > yt-next-continuation > paper-button:hover,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer:hover {",
+	"		background: linear-gradient(rgb(70,70,70), rgb(60,60,60)) !important;",
+	"		transition: .1s ease-in !important;",
+	"}",
+	"   .paper-button-0  *,.iron-icon-2,.ytd-topbar-logo-renderer-0 #guide-icon.ytd-topbar-logo-renderer, .iron-icon-1 {",
+	"   fill: #ccc !important;",
+	"}",
+	"   .ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
+	"   color: #ccc !important;",
+	"}",
+	"   .ytd-guide-entry-renderer-0[active] .guide-icon.ytd-guide-entry-renderer {",
+	"   color: #00adee !important;",
+	"}",
+
+	"/*Blue buttons*/",
+	"   .ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
+	"   background: rgba(0,173,238,.9) !important;",
+	"}                                 ",
+	"   .ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
+	"   background: rgba(0,173,238,1) !important;",
+	"} ",
+
+	"/*Auto play slider*/",
+	"   .paper-toggle-button-0[checked]:not([disabled]) .toggle-button.paper-toggle-button,.paper-toggle-button-0[checked]:not([disabled]) .toggle-bar.paper-toggle-button{",
+	"   background: #00adee !important;",
+	"}",
+	"   .paper-toggle-button-0 .toggle-button.paper-toggle-button,.paper-toggle-button-0 .toggle-bar.paper-toggle-button{",
+	"   background-color: #ccc !important;",
+	"}",
+
+	
+	"/*Colors for link and such*/",
+	"   .ytd-guide-entry-renderer-0 .title.ytd-guide-entry-renderer,.ytd-button-renderer-2 #button.ytd-button-renderer,.ytd-video-primary-info-renderer-0 .title.ytd-video-primary-info-renderer,.ytd-video-secondary-info-renderer-0 .content.ytd-video-secondary-info-renderer,.ytd-comment-renderer-0 .content-text.ytd-comment-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-button-renderer-0 #button.ytd-button-renderer,.ytd-account-settings-0 paper-item.ytd-account-settings,.paper-button-1  *,.ytd-button-renderer-1 #button.ytd-button-renderer,.ytd-consent-bump-renderer-0 #alert-message.ytd-consent-bump-renderer{",
+	"   color: rgba(255, 255, 255, .95) !important;",
+	"   text-shadow: none  !important;",
+	"}",
+	"   .ytd-comment-action-buttons-renderer-0 #vote-count.ytd-comment-action-buttons-renderer,.ytd-guide-section-renderer-0 #guide-section-title.ytd-guide-section-renderer{",
+	"   color: #00adee !important;",
+	"}",
+	"   .ytd-video-meta-block-0 #byline.ytd-video-meta-block,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer,.yt-endpoint-1,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer {",
+	"   color: rgba(0,173,238,.9) !important;",
+	"}                                 ",
+	"   .ytd-video-meta-block-0 #byline.ytd-video-meta-block:hover,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer:hover,.paper-button-3:hover,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer:hover, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer:hover,.yt-endpoint-1:hover,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer:hover {",
+	"   color: rgba(0,173,238,1) !important;",
+	"} ",
+	"   .ytd-comment-renderer-0 .more-button.ytd-comment-renderer,.paper-button-3,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.yt-dropdown-menu-0 #icon-label.yt-dropdown-menu,.ytd-comments-header-renderer-0 yt-formatted-string.ytd-comments-header-renderer,.yt-view-count-renderer-0 yt-formatted-string.yt-view-count-renderer,.ytd-video-secondary-info-renderer-0 .date.ytd-video-secondary-info-renderer,.ytd-guide-signin-promo-renderer-0 yt-formatted-string.ytd-guide-signin-promo-renderer{",
+	"   color: #ccc !important;",
 	"}"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {

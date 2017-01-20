@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.5.6
+// @version       1.5.7
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.5.7 new chat fixed (damn YouTube you are going to introduce one thing at the time don't you? Well better for me because I have the time to make them dark)
 // Changelog: 1.5.6 added some basic suport for the new material design,I never noticed the links in comments are not blue (now fixed),changed notifications number background to blue as well
 // Changelog: 1.5.5 removed border for numbers of notfications
 // Changelog: 1.5.4 fixed the search bar (new design for YT will brake stuff soon enough),removed the border of the search button because it looked not aligned,removed the box shadow when you use tab to "select" the timeline
@@ -59,7 +60,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.5.6*/",
+"/*1.5.7*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -512,7 +513,7 @@
 
 	
 	"/*Background section*/",
-	"   .ytd-app-1 #guide-content.ytd-app,.ytd-app-0 #guide-content.ytd-app,.ytd-browse-0,.ytd-page-manager-0 > .ytd-page-manager {",
+	"   .yt-live-chat-renderer-0,.yt-live-chat-header-renderer-0,#watch-sidebar-live-chat .yt-uix-expander-collapsed,.yt-live-chat-message-input-renderer-0,.ytd-app-1 #guide-content.ytd-app,.ytd-app-0 #guide-content.ytd-app,.ytd-browse-0,.ytd-page-manager-0 > .ytd-page-manager {",
 	"   background: #111 !important;",
 	"}",
 	"   .ytd-account-settings-0,.ytd-multi-page-menu-renderer-0,.paper-menu-0{",
@@ -521,23 +522,30 @@
 	"   .ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-consent-bump-renderer-0,.ytd-masthead-0 #container.ytd-masthead {",
 	"   background: #181818 !important;",
 	"}",
-	"   paper-item.style-scope.ytd-account-settings.x-scope.paper-item-0:hover,.ytd-guide-entry-renderer-0 #endpoint.ytd-guide-entry-renderer:hover{",
+	"   .ytd-menu-navigation-item-renderer-0 a.ytd-menu-navigation-item-renderer:hover,.ytd-menu-service-item-renderer-0:hover,paper-item.style-scope.ytd-account-settings.x-scope.paper-item-0:hover,.ytd-guide-entry-renderer-0 #endpoint.ytd-guide-entry-renderer:hover{",
 	"   background: #3a3a3a !important;",
 	"}",
-	"   .ytd-badge-supported-renderer-1 .badge-style-type-simple.ytd-badge-supported-renderer {",
+	"   .yt-emoji-picker-category-renderer-0 yt-formatted-string.yt-emoji-picker-category-renderer,.ytd-badge-supported-renderer-1 .badge-style-type-simple.ytd-badge-supported-renderer {",
 	"   background: transparent !important;",
 	"   color: #00adee !important;",
 	"}",
-
+	"   .yt-live-chat-message-renderer-0,.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer {",
+	"   background: transparent !important;",
+	"}",
 	
 	"/*Border section*/",
 	"   .ytd-compact-autoplay-renderer-0,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.ytd-video-secondary-info-renderer-0,.ytd-video-primary-info-renderer-0,.ytd-guide-renderer-0 #sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child),.ytd-app-0 app-drawer.ytd-app:not([persistent]) #header.ytd-app,.ytd-section-list-renderer-0 #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child),.ytd-consent-bump-renderer-0 {",
 	"   border-color: #444 !important;",
 	"}",
-
+	"   .yt-live-chat-text-input-field-renderer-0 #unfocused.yt-live-chat-text-input-field-renderer {",
+	"   background: #444 !important;",
+	"}",
+	"   .yt-live-chat-text-input-field-renderer-0 #focused.yt-live-chat-text-input-field-renderer {",
+	"   background: #00adee !important;",
+	"}",
 	
 	"/*Search bar*/",
-	"   .sbsb_a,.sbdd_b,.ytd-searchbox-0 #container.ytd-searchbox {",
+	"   .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer,.sbsb_a,.sbdd_b,.ytd-searchbox-0 #container.ytd-searchbox {",
 	"   background: #333 !important;",
 	"   border: none !important;",
 	"}",
@@ -547,7 +555,7 @@
 	"   li.sbsb_c.gsfs:hover{",
 	"   background: #3a3a3a !important;",
 	"}",
-	"   .ytd-searchbox-0  input {",
+	"   .paper-input-container-0 .input-content.paper-input-container input, .paper-input-container-0 .input-content.paper-input-container textarea, .paper-input-container-0 .input-content.paper-input-container iron-autogrow-textarea, .paper-input-container-0 .input-content.paper-input-container .paper-input-input,.ytd-searchbox-0  input {",
 	"   color: rgba(255, 255, 255, .95) !important;",
 	"}",
 
@@ -564,7 +572,7 @@
 	"   .paper-button-0  *,.iron-icon-2,.ytd-topbar-logo-renderer-0 #guide-icon.ytd-topbar-logo-renderer, .iron-icon-1 {",
 	"   fill: #ccc !important;",
 	"}",
-	"   .ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
+	"   .yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0 #action-buttons.yt-live-chat-header-renderer > *.yt-live-chat-header-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer,.ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
 	"   color: #ccc !important;",
 	"}",
 	"   .ytd-guide-entry-renderer-0[active] .guide-icon.ytd-guide-entry-renderer {",
@@ -572,10 +580,10 @@
 	"}",
 
 	"/*Blue buttons*/",
-	"   .ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
+	"   .ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
 	"   background: rgba(0,173,238,.9) !important;",
 	"}                                 ",
-	"   .ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
+	"   .ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
 	"   background: rgba(0,173,238,1) !important;",
 	"} ",
 
@@ -589,7 +597,7 @@
 
 	
 	"/*Colors for link and such*/",
-	"   .ytd-guide-entry-renderer-0 .title.ytd-guide-entry-renderer,.ytd-button-renderer-2 #button.ytd-button-renderer,.ytd-video-primary-info-renderer-0 .title.ytd-video-primary-info-renderer,.ytd-video-secondary-info-renderer-0 .content.ytd-video-secondary-info-renderer,.ytd-comment-renderer-0 .content-text.ytd-comment-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-button-renderer-0 #button.ytd-button-renderer,.ytd-account-settings-0 paper-item.ytd-account-settings,.paper-button-1  *,.ytd-button-renderer-1 #button.ytd-button-renderer,.ytd-consent-bump-renderer-0 #alert-message.ytd-consent-bump-renderer{",
+	"   .yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer,.ytd-menu-navigation-item-renderer-0 yt-formatted-string.ytd-menu-navigation-item-renderer,.ytd-menu-service-item-renderer-0 yt-formatted-string.ytd-menu-service-item-renderer,.yt-live-chat-text-message-renderer-0 #message.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0,.yt-live-chat-renderer-0,.ytd-guide-entry-renderer-0 .title.ytd-guide-entry-renderer,.ytd-button-renderer-2 #button.ytd-button-renderer,.ytd-video-primary-info-renderer-0 .title.ytd-video-primary-info-renderer,.ytd-video-secondary-info-renderer-0 .content.ytd-video-secondary-info-renderer,.ytd-comment-renderer-0 .content-text.ytd-comment-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-button-renderer-0 #button.ytd-button-renderer,.ytd-account-settings-0 paper-item.ytd-account-settings,.paper-button-1  *,.ytd-button-renderer-1 #button.ytd-button-renderer,.ytd-consent-bump-renderer-0 #alert-message.ytd-consent-bump-renderer{",
 	"   color: rgba(255, 255, 255, .95) !important;",
 	"   text-shadow: none  !important;",
 	"}",
@@ -599,10 +607,10 @@
 	"   .ytd-video-meta-block-0 #byline.ytd-video-meta-block,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer,.yt-endpoint-1,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer {",
 	"   color: rgba(0,173,238,.9) !important;",
 	"}                                 ",
-	"   .ytd-video-meta-block-0 #byline.ytd-video-meta-block:hover,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer:hover,.paper-button-3:hover,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer:hover, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer:hover,.yt-endpoint-1:hover,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer:hover {",
+	"   .yt-live-chat-text-message-renderer-0 #content.yt-live-chat-text-message-renderer,.ytd-video-meta-block-0 #byline.ytd-video-meta-block:hover,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer:hover,.paper-button-3:hover,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer:hover, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer:hover,.yt-endpoint-1:hover,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer:hover {",
 	"   color: rgba(0,173,238,1) !important;",
 	"} ",
-	"   .ytd-comment-renderer-0 .more-button.ytd-comment-renderer,.paper-button-3,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.yt-dropdown-menu-0 #icon-label.yt-dropdown-menu,.ytd-comments-header-renderer-0 yt-formatted-string.ytd-comments-header-renderer,.yt-view-count-renderer-0 yt-formatted-string.yt-view-count-renderer,.ytd-video-secondary-info-renderer-0 .date.ytd-video-secondary-info-renderer,.ytd-guide-signin-promo-renderer-0 yt-formatted-string.ytd-guide-signin-promo-renderer{",
+	"   .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer,.paper-button-3,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.yt-dropdown-menu-0 #icon-label.yt-dropdown-menu,.ytd-comments-header-renderer-0 yt-formatted-string.ytd-comments-header-renderer,.yt-view-count-renderer-0 yt-formatted-string.yt-view-count-renderer,.ytd-video-secondary-info-renderer-0 .date.ytd-video-secondary-info-renderer,.ytd-guide-signin-promo-renderer-0 yt-formatted-string.ytd-guide-signin-promo-renderer{",
 	"   color: #ccc !important;",
 	"}"
 ].join("\n");

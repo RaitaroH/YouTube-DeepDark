@@ -52,3 +52,8 @@ Youtube+ (and every other icons) adjusted for the dark theme. (YouTube+ here htt
 YouTube+ settings page (I cannot change the color of the text in that button because YouTube+ has !important in the css. Also the way the button is "checked" is from your operating system theme and not from YouTube itself)
 
 ![alt tag](https://i.imgur.com/LtFx5qx.png)
+
+Here is a composite image of different colors you can use in the stylish version
+
+![alt tag](https://i.imgur.com/tm76ftu.png)
+

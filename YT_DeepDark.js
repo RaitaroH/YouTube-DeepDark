@@ -16,9 +16,12 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.5.7
+// @version       1.6.0
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.6.0 added color picker in the stylish version (not avaible here)
+// Changelog: 1.5.9 adjusted theme in order to add "pick color" option for stylish, fixed opacity for the new edit watched playlist icon
+// Changelog: 1.5.8 login button in chat
 // Changelog: 1.5.7 new chat fixed (damn YouTube you are going to introduce one thing at the time don't you? Well better for me because I have the time to make them dark)
 // Changelog: 1.5.6 added some basic suport for the new material design,I never noticed the links in comments are not blue (now fixed),changed notifications number background to blue as well
 // Changelog: 1.5.5 removed border for numbers of notfications
@@ -60,7 +63,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.5.7*/",
+"/*1.6.0*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -261,7 +264,7 @@
 	"		  background: none !important;",
 	"	}",	
 	"	/*Some icons are too white*/",
-	"		  .HPHGCHB-n-c,.creator-bar-item .yt-uix-button-icon-audio,.creator-editor-icon-audio{",
+	"		  #player-playlist .yt-uix-button-icon-playlist-edit,.HPHGCHB-n-c,.creator-bar-item .yt-uix-button-icon-audio,.creator-editor-icon-audio{",
 	"			opacity: 0.60 !important;",
 	"	}",
   "	/*It looks better this way*/",
@@ -339,7 +342,9 @@
 	"/*Colors and text section*/",
 	"	/*Permanently highlighted*/",
 	"		 .yt-uix-servicelink,.yt-uix-expander-collapsed .multirow-shelf-expander, .multirow-shelf-collapser,.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
-	"		 color: rgba(0,173,238,.9)  !important;",
+	"		 /*color: rgba(0,173,238,.9)  !important;*/",
+	"		 color: #00adee !important;",
+	"		 opacity: 0.9 !important;",
 	"		 text-decoration: none  !important;",
 	"    text-shadow: none !important;",
 	"	}",
@@ -363,11 +368,13 @@
 	"/*Hover for links & other stuff*/",
 	"    .yt-uix-servicelink:hover,.compact-shelf .compact-shelf-view-all-card-link:hover h4, .compact-shelf .compact-shelf-view-all-card-link:hover a,.yt-uix-expander-collapsed .multirow-shelf-expander:hover, .multirow-shelf-collapser:hover,.HPHGCHB-K-h .datePickerDayIsToday,.ytp-video-menu-item-now-playing,.yt-uix-sessionlink.spf-link:hover,.yt-picker-region-name:hover,.yt-picker-content strong,.track.loading .audiolibrary-track-head .audiolibrary-column, .track.expanded .audiolibrary-track-head .audiolibrary-column,#footer-links-primary a:hover,#footer-links-secondary a:hover,.spf-link.branded-page-header-title-link.yt-uix-sessionlink:hover,.yt-uix-sessionlink:hover,.category-header .category-title-link:hover .category-title, .category-header .category-count-link:hover .channel-count, .category-header .category-link:hover .all-categories,.ytp-ce-size-853 .ytp-ce-website-title:hover, .ytp-ce-size-853 .ytp-ce-channel-title:hover,.about-channel-link-text:hover,.comment-replies-renderer-view, .comment-replies-renderer-hide:hover,.comment-renderer-author-comment-badge.creator .comment-author-text:hover,.yt-uix-sessionlink.comment-author-text.g-hovercard.spf-link:hover,.video-uploader-byline:hover,.g-hovercard.yt-uix-sessionlink.spf-link:hover,.ytp-ce-size-640 .ytp-ce-channel-title:hover,#body #uploaded-videos:hover,#uploaded-videos:hover,#player-playlist .playlist-title a:hover,a:hover.yt-lockup-title a:hover,.iv-card:hover .iv-card-primary-link,.exp-wn-font-14 .related-list-item span.title:hover,.yt-lockup:hover a,.yt-lockup:hover .yt-lockup-meta a,.yt-lockup:hover .yt-lockup-description a,.branded-page-header-title-link:hover,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1):hover,.g-hovercard:hover,#action-panel-details a:hover,.video-player-view-component .video-detail a:hover,.branded-page-v2-secondary-col .branded-page-related-channels-see-more a:hover{",
 	"    color: #00adee !important;",
+	"		 opacity: 1 !important;",
   "/* text-shadow: 0px 0px 3px rgba(0,173,238,.5) !important;  I removed this because it bleeds in other ellements*/",
 	"	}",
 	"/*Hover for titles in watch later (edit mode) and when title is to the right of the image (when you watch a video and hover an image of a video suggested on the right side). Oh, it took me a while to do this because YouTube can't decide to add just one hover rule but several, thx for that btw.*/",
 	"    .pl-video.yt-uix-dragdrop-draggable-item:hover + .pl-video-title-link.yt-uix-tile-link.yt-uix-sessionlink.spf-link,.pl-video:hover .pl-video-title-link, .pl-video:hover .pl-video-owner a,.pl-video-title-link.yt-uix-tile-link.yt-uix-sessionlink.spf-link:hover,#watch7-sidebar .video-list-item:hover .title, #watch7-sidebar .video-list-item:hover .title .yt-deemphasized-text,#watch7-sidebar .video-list-item a:hover .title,.video-list-item:hover + .exp-wn-font-14 .related-list-item span.title,.exp-wn-big-thumbs-v3 .related-list-item .yt-uix-simple-thumb-related:hover + .exp-wn-font-14 .related-list-item span.title,.exp-wn-big-thumbs-v3 .related-list-item .yt-uix-simple-thumb-related:hover + .video-list .video-list-item .title,.video-list-item:hover + .video-list .video-list-item .title{",
 	"    color: #00adee !important;",
+	"		 opacity: 1 !important;",
 	"}",
 	
 	
@@ -580,11 +587,15 @@
 	"}",
 
 	"/*Blue buttons*/",
-	"   .ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
-	"   background: rgba(0,173,238,.9) !important;",
+	"   .ytd-button-renderer-1.style-dark[is-paper-button],.ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
+	"  /* background: rgba(0,173,238,.9) !important;*/",
+	"   background: #00adee !important;",	
+	"   opacity: 0.9 !important;",
 	"}                                 ",
-	"   .ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
-	"   background: rgba(0,173,238,1) !important;",
+	"   .ytd-button-renderer-1.style-dark[is-paper-button]:hover,.ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
+	"  /* background: rgba(0,173,238,1) !important;*/",
+	"   background: #00adee !important;",
+	"   opacity: 1 !important;",
 	"} ",
 
 	"/*Auto play slider*/",
@@ -605,10 +616,14 @@
 	"   color: #00adee !important;",
 	"}",
 	"   .ytd-video-meta-block-0 #byline.ytd-video-meta-block,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer,.yt-endpoint-1,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer {",
-	"   color: rgba(0,173,238,.9) !important;",
+	"  /* color: rgba(0,173,238,.9) !important;*/",
+	"   color: #00adee !important;",	
+	"   opacity: 0.9 !important;",
 	"}                                 ",
 	"   .yt-live-chat-text-message-renderer-0 #content.yt-live-chat-text-message-renderer,.ytd-video-meta-block-0 #byline.ytd-video-meta-block:hover,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer:hover,.paper-button-3:hover,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer:hover, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer:hover,.yt-endpoint-1:hover,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer:hover {",
-	"   color: rgba(0,173,238,1) !important;",
+	"  /* color: rgba(0,173,238,1) !important;*/",
+	"   color: #00adee !important;",
+	"   opacity: 1 !important;",
 	"} ",
 	"   .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer,.paper-button-3,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.yt-dropdown-menu-0 #icon-label.yt-dropdown-menu,.ytd-comments-header-renderer-0 yt-formatted-string.ytd-comments-header-renderer,.yt-view-count-renderer-0 yt-formatted-string.yt-view-count-renderer,.ytd-video-secondary-info-renderer-0 .date.ytd-video-secondary-info-renderer,.ytd-guide-signin-promo-renderer-0 yt-formatted-string.ytd-guide-signin-promo-renderer{",
 	"   color: #ccc !important;",

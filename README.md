@@ -6,19 +6,16 @@ This is a dark theme for YouTube inspired by FT DeepDark https://addons.mozilla.
 You can install it from here https://greasyfork.org/en/scripts/25333-youtube-deepdark
 
 Themes as Stylish styles here https://userstyles.org/users/377182
+For the stylish version I added change color option.
 
 # Screenshots
 Channel page
 
-![alt tag](https://i.imgur.com/6Vv7sLP.png)
-
-Videos
-
-![alt tag](https://i.imgur.com/fA2ea0P.jpg)
+![alt tag](https://i.imgur.com/345bBev.png)
 
 HTML5 video colored in blue
 
-![alt tag](https://i.imgur.com/kU1kchd.png)
+![alt tag](https://i.imgur.com/UGPQusT.png)
 
 Comments
 
@@ -54,4 +51,4 @@ Youtube+ (and every other icons) adjusted for the dark theme. (YouTube+ here htt
 
 YouTube+ settings page (I cannot change the color of the text in that button because YouTube+ has !important in the css. Also the way the button is "checked" is from your operating system theme and not from YouTube itself)
 
-![alt tag](https://i.imgur.com/6tUwBJg.png)
+![alt tag](https://i.imgur.com/LtFx5qx.png)

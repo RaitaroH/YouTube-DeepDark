@@ -53,7 +53,8 @@ YouTube+ settings page (I cannot change the color of the text in that button bec
 
 ![alt tag](https://i.imgur.com/LtFx5qx.png)
 
-Here is a composite image of different colors you can use in the stylish version. IF you want this as a scipt make sure you go to the userstyles page, choose your color (the color will be changed in the code) ant than install as a script.
+Here is a composite image of different colors you can use in the stylish version. 
 
 ![alt tag](https://i.imgur.com/tm76ftu.png)
 
+IF you want this as a scipt make sure you go to the userstyles page, choose your color (the color will be changed in the code) ant then install as a script.

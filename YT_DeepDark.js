@@ -16,9 +16,11 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.0
+// @version       1.6.1
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.6.1 it seems YouTube added some hover opacity for thumnails (are you taking cues from me YouTube?) ,upload icon was too white
+// Changelog: 1.6.0.1 added new images to github and userstyles
 // Changelog: 1.6.0 added color picker in the stylish version (not avaible here)
 // Changelog: 1.5.9 adjusted theme in order to add "pick color" option for stylish, fixed opacity for the new edit watched playlist icon
 // Changelog: 1.5.8 login button in chat
@@ -63,7 +65,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.0*/",
+"/*1.6.1*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -264,7 +266,7 @@
 	"		  background: none !important;",
 	"	}",	
 	"	/*Some icons are too white*/",
-	"		  #player-playlist .yt-uix-button-icon-playlist-edit,.HPHGCHB-n-c,.creator-bar-item .yt-uix-button-icon-audio,.creator-editor-icon-audio{",
+	"		  .yt-uix-button-icon-material-upload,#player-playlist .yt-uix-button-icon-playlist-edit,.HPHGCHB-n-c,.creator-bar-item .yt-uix-button-icon-audio,.creator-editor-icon-audio{",
 	"			opacity: 0.60 !important;",
 	"	}",
   "	/*It looks better this way*/",
@@ -412,17 +414,17 @@
 	"	}",
 	
 	
-  "/*Thumbnails opacity section*/",	
+  "/*Thumbnails opacity section - removed this because it seems youtube implemented it by default*/",	
   "/*Opacity for thumbnails. For watched is 0.9 on hover because by default they are 0.7 so I want to keep a drustic change on hover to the minimum.*/",		
 	"	   .yt-lockup.yt-lockup-tile .yt-lockup-thumbnail:hover,.yt-lockup-grid .yt-lockup-thumbnail:hover,#player-playlist .playlist-video .video-thumb,.yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{",
-  "	   opacity: 1 !important;",	
+  "	  /* opacity: 1 !important;*/",	
 	"	}",
 	"	   .yt-lockup.yt-lockup-tile .yt-lockup-thumbnail,.yt-lockup-grid .yt-lockup-thumbnail,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb{",
-  "	   opacity: 0.9 !important;",	
+  "	   /*opacity: 0.9 !important;  */",
 	"	}",
   "/*Special opacity for watched videos*/",
 	"	   .watched .video-thumb:hover{",
-  "	   opacity: 0.8 !important;",	
+  "	   /*opacity: 0.8 !important;*/",	
 	"	}",	
 	
 	"/*Video section*/",

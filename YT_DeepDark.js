@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.1
+// @version       1.6.2
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.6.2 position of the show more button in the notification aligned,unread notification dot background color adjusted
 // Changelog: 1.6.1 it seems YouTube added some hover opacity for thumnails (are you taking cues from me YouTube?) ,upload icon was too white
 // Changelog: 1.6.0.1 added new images to github and userstyles
 // Changelog: 1.6.0 added color picker in the stylish version (not avaible here)
@@ -65,7 +66,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.1*/",
+"/*1.6.2*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -250,7 +251,7 @@
 	"			color: #00adee !important;",
 	"	}",
 	"/* Blue buttons and backgrounds*/",
-	"		  #yt-masthead-user .sb-notif-on .yt-uix-button-content,.editor-timeline .timeline-playhead .timeline-playhead-line,.editor-timeline .timeline-playhead .timeline-playhead-time,button.split-button,.yt-uix-form-input-paper-toggle-container.checked .yt-uix-form-input-paper-toggle-bg,.HPHGCHB-g-t:hover,.HPHGCHB-g-t, .HPHGCHB-g-t[disabled],#progress,#part_welcome,.Zm-Fc-Jk-ty-qi .d-u,.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success,.iph-dialog a.iph-dialog-nav-button,.upload-item-main .save-changes-button,.live-chat-widget #live-comments-setting-bottom-scroll,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.track-selection-menu.track-filter-tab.filter-selected,.HPHGCHB-F-e.HPHGCHB-F-m, .HPHGCHB-F-k.HPHGCHB-F-m,.HPHGCHB-P-b,.creator-heart-small-left,.creator-heart-small-right,.comment-renderer.channel-owner .comment-author-text,#appbar-main-guide-notification-container .appbar-guide-notification-content-wrapper,#appbar-main-guide-notification-container .appbar-guide-notification,.appbar-guide-notification,.comment-renderer-author-comment-badge.creator,.yt-uix-button-primary,.guide-item.guide-item-selected, .guide-item.guide-item-selected:hover, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus,.yt-uix-checkbox-on-off input[type=\"checkbox\"]:checked + label,.resume-playback-progress-bar,.video-extras-sparkbar-likes{",
+	"		  .yt-lockup-notification .unread-dot,#yt-masthead-user .sb-notif-on .yt-uix-button-content,.editor-timeline .timeline-playhead .timeline-playhead-line,.editor-timeline .timeline-playhead .timeline-playhead-time,button.split-button,.yt-uix-form-input-paper-toggle-container.checked .yt-uix-form-input-paper-toggle-bg,.HPHGCHB-g-t:hover,.HPHGCHB-g-t, .HPHGCHB-g-t[disabled],#progress,#part_welcome,.Zm-Fc-Jk-ty-qi .d-u,.yt-alert-default.yt-alert-success, .yt-alert-actionable.yt-alert-success, .yt-alert-naked.yt-alert-success .yt-alert-icon, .yt-alert-small.yt-alert-success,.iph-dialog a.iph-dialog-nav-button,.upload-item-main .save-changes-button,.live-chat-widget #live-comments-setting-bottom-scroll,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.track-selection-menu.track-filter-tab.filter-selected,.HPHGCHB-F-e.HPHGCHB-F-m, .HPHGCHB-F-k.HPHGCHB-F-m,.HPHGCHB-P-b,.creator-heart-small-left,.creator-heart-small-right,.comment-renderer.channel-owner .comment-author-text,#appbar-main-guide-notification-container .appbar-guide-notification-content-wrapper,#appbar-main-guide-notification-container .appbar-guide-notification,.appbar-guide-notification,.comment-renderer-author-comment-badge.creator,.yt-uix-button-primary,.guide-item.guide-item-selected, .guide-item.guide-item-selected:hover, .yt-uix-button-primary[disabled], .yt-uix-button-primary[disabled]:hover, .yt-uix-button-primary[disabled]:active, .yt-uix-button-primary[disabled]:focus,.yt-uix-checkbox-on-off input[type=\"checkbox\"]:checked + label,.resume-playback-progress-bar,.video-extras-sparkbar-likes{",
 	"			background: #00adee !important;",
 	"			border-color: #00adee !important;",
 	"	}",
@@ -305,6 +306,12 @@
 	"		  margin-left: 5px !important;",
 	"	}",
 	
+	"/*Made the show more button in the notifications to be aligned in the center*/",	
+	"	    .yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.load-more-button.yt-uix-load-more.browse-items-load-more-button.scrolldetect,.yt-uix-button.yt-uix-button-size-default.yt-uix-button-default.load-more-button.yt-uix-load-more.browse-items-load-more-button{",
+	"	    position: relative !important;",
+	"	    left: 38% !important;",
+	"	    margin-bottom: 5px !important;",
+	"	}",
 	
   "/*Resizing section*/",
 	"	    .exp-comments-refresh .comment-renderer-like-count{",

@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.2
+// @version       1.6.3
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.6.3 small fix
 // Changelog: 1.6.2 position of the show more button in the notification aligned,unread notification dot background color adjusted
 // Changelog: 1.6.1 it seems YouTube added some hover opacity for thumnails (are you taking cues from me YouTube?) ,upload icon was too white
 // Changelog: 1.6.0.1 added new images to github and userstyles
@@ -66,7 +67,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.2*/",
+"/*1.6.3*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -83,7 +84,7 @@
 	"		 display:none !important;",
 	"	}",
 	"/* Why YT has box shadows beats me*/",
-	"		  #audio-media-list .scroll-content .audio-original,#video-title,.yt-uix-button-default:active, .yt-uix-button-default.yt-uix-button-toggled, .yt-uix-button-default.yt-uix-button-active, .yt-uix-button-default.yt-uix-button-active:focus, .yt-uix-button-text:active,.HPHGCHB-K-h .datePickerDayIsValue,.yt-gb-shelf-main-content,.gssb_e,.Zm-Zs-jk .Zm-at-Zb-Md,.d-Ib,.audio-ui-featured-row,.masthead-search-terms-borders,.masthead-search-terms-border,.yt-uix-button-default.yt-uix-button-toggled{",
+	"		  .ytp-probably-keyboard-focus .ytp-progress-bar:focus,.ytp-keyboard-focus .ytp-progress-bar:focus,#audio-media-list .scroll-content .audio-original,#video-title,.yt-uix-button-default:active, .yt-uix-button-default.yt-uix-button-toggled, .yt-uix-button-default.yt-uix-button-active, .yt-uix-button-default.yt-uix-button-active:focus, .yt-uix-button-text:active,.HPHGCHB-K-h .datePickerDayIsValue,.yt-gb-shelf-main-content,.gssb_e,.Zm-Zs-jk .Zm-at-Zb-Md,.d-Ib,.audio-ui-featured-row,.masthead-search-terms-borders,.masthead-search-terms-border,.yt-uix-button-default.yt-uix-button-toggled{",
 	"			box-shadow: none !important;",
 	"	}",
 	

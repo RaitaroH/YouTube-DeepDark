@@ -16,10 +16,11 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.4
+// @version       1.6.5
 // @grant         GM_getValue
 // @grant         GM_setValue
-// Changelog: 1.6.4 improvements for the new youtube design (also It seems they youtube offers a dark variant of their own, funny thing)
+// Changelog: 1.6.5 change the logo of the author in the video title to a circle,fixed hover for links
+// Changelog: 1.6.4 improvements for the new youtube design (also youtube offers a dark variant of their own, funny thing)
 // Changelog: 1.6.3 small fix
 // Changelog: 1.6.2 position of the show more button in the notification aligned,unread notification dot background color adjusted
 // Changelog: 1.6.1 it seems YouTube added some hover opacity for thumnails (are you taking cues from me YouTube?) ,upload icon was too white
@@ -68,7 +69,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.4*/",
+"/*1.6.5*/",
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
 	"			background: #00ADEE !important;",
@@ -338,7 +339,7 @@
 	"		 .yt-uix-servicelink,.yt-uix-expander-collapsed .multirow-shelf-expander, .multirow-shelf-collapser,.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
 	"		 /*color: rgba(0,173,238,.9)  !important;*/",
 	"		 color: #00ADEE !important;",
-	"		 /*opacity: 0.9 !important;*/",
+	"		 opacity: 0.9 !important;",
 	"		 text-decoration: none  !important;",
 	"    	 text-shadow: none !important;",
 	"	}",
@@ -400,6 +401,23 @@
 	"	   .channels-content-item.channel-shelf-item{",
 	"		 width: 130px !important;",
 	"	}",
+	"/*Stuff for the author logo in the title of the video*/",
+	"	   .ytp-title-channel-logo{",
+	"		 margin-top: 12px !important;",
+	"		 padding-top: 0 !important;",
+	"		 border-radius: 100% !important;",
+	"	   opacity: 0.9 !important;",
+	"	}",	
+	"	   .ytp-big-mode .ytp-title-channel-logo{",
+	"		 margin-top: 18px !important;",
+	"		 padding-top: 0 !important;",
+	"		 border-radius: 100% !important;",
+	"	   opacity: 0.9 !important;",
+	"	}",
+	"	   .ytp-big-mode .ytp-title-channel-logo:hover,.ytp-title-channel-logo:hover{",
+	"	   opacity: 1 !important;",
+	"	}",
+	
 	"/*Thumbnails opacity section - removed this because it seems youtube implemented it by default*/",
 	"/*Opacity for thumbnails. For watched is 0.9 on hover because by default they are 0.7 so I want to keep a drustic change on hover to the minimum.*/",
 	"/*",

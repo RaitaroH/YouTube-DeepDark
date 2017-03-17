@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.6
+// @version       1.6.7
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.6.7 added some margin to results in the search
 // Changelog: 1.6.6 fixed the color of the video titles because youtube changed the code again
 // Changelog: 1.6.5 change the logo of the author in the video title to a circle,fixed hover for links
 // Changelog: 1.6.4 improvements for the new youtube design (also youtube offers a dark variant of their own, funny thing)
@@ -70,7 +71,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.6*/",
+"/*1.6.7*/",
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
 	"			background: #00ADEE !important;",
@@ -326,6 +327,10 @@
 	"	}",
 	"	 	 .guide-item.has-subtitle{",
 	"		 height: 33px !important;",
+	"	}",
+	"/*Added more margin for video thumbs in the search.*/",
+	"	 	 .part_grid_subs div#browse-items-primary .item-section .feed-item-container, .part_grid_search #results .item-section > li .yt-lockup, .part_grid_search #results .item-section > li .spell-correction{",
+	"		 margin-right: 60px !important;",
 	"	}",
 	"/*Comment like buttons margin*/",
 	"	 	 .comment-renderer .comment-renderer-like-count.off, .comment-renderer.liked .comment-renderer-like-count.on{",

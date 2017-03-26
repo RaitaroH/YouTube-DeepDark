@@ -16,9 +16,10 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.7
+// @version       1.6.8
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.6.8 fixed the new sub/unsub buttons in the cards
 // Changelog: 1.6.7 added some margin to results in the search
 // Changelog: 1.6.6 fixed the color of the video titles because youtube changed the code again
 // Changelog: 1.6.5 change the logo of the author in the video title to a circle,fixed hover for links
@@ -71,7 +72,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.7*/",
+"/*1.6.8*/",
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
 	"			background: #00ADEE !important;",
@@ -332,6 +333,7 @@
 	"	 	 .part_grid_subs div#browse-items-primary .item-section .feed-item-container, .part_grid_search #results .item-section > li .yt-lockup, .part_grid_search #results .item-section > li .spell-correction{",
 	"		 margin-right: 60px !important;",
 	"	}",
+	
 	"/*Comment like buttons margin*/",
 	"	 	 .comment-renderer .comment-renderer-like-count.off, .comment-renderer.liked .comment-renderer-like-count.on{",
 	"		 margin-right: 15px !important;",
@@ -580,18 +582,18 @@
 	"   color: rgba(255, 255, 255, .95) !important;",
 	"}",
 	"/*Buttons section*/",
-	"   #continuations > yt-next-continuation > paper-button,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer {",
+	"   .ytp-sb-unsubscribe,#continuations > yt-next-continuation > paper-button,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer {",
 	"		background: linear-gradient(rgb(50,50,50), rgb(40,40,40)) !important;",
 	"		border-color: rgb(0,0,0) !important;",
 	"}",
-	"   #continuations > yt-next-continuation > paper-button:hover,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer:hover {",
+	"   .ytp-sb-unsubscribe:hover,#continuations > yt-next-continuation > paper-button:hover,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer:hover {",
 	"		background: linear-gradient(rgb(70,70,70), rgb(60,60,60)) !important;",
 	"		transition: .1s ease-in !important;",
 	"}",
 	"   .iron-icon-3,.paper-button-0  *,.iron-icon-2,.ytd-topbar-logo-renderer-0 #guide-icon.ytd-topbar-logo-renderer, .iron-icon-1 {",
 	"   fill: #ccc !important;",
 	"}",
-	"   .yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0 #action-buttons.yt-live-chat-header-renderer > *.yt-live-chat-header-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer,.ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
+	"   .ytp-sb-unsubscribe,.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0 #action-buttons.yt-live-chat-header-renderer > *.yt-live-chat-header-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer,.ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
 	"   color: #ccc !important;",
 	"}",
 	"   .ytd-guide-entry-renderer-0[active] .guide-icon.ytd-guide-entry-renderer {",
@@ -605,13 +607,18 @@
 	"	color: #00ADEE !important;",
 	"}",
 	"",
+	"/*Size for subscribe buttons*/",
+	".ytp-sb-subscribe, .ytp-sb-unsubscribe {",
+	"    padding: 6px 12px !important;",
+	"    font-size: 12px !important;",
+	"}",
 	"/*Blue buttons*/",
-	"   .ytd-button-renderer-3.style-brand[is-paper-button],.ytd-button-renderer-5.style-destructive[is-paper-button],.ytd-button-renderer-3.style-destructive[is-paper-button],.ytd-button-renderer-1.style-dark[is-paper-button],.ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
+	"   .ytp-sb-subscribe,.ytd-button-renderer-3.style-brand[is-paper-button],.ytd-button-renderer-5.style-destructive[is-paper-button],.ytd-button-renderer-3.style-destructive[is-paper-button],.ytd-button-renderer-1.style-dark[is-paper-button],.ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
 	"  /* background: rgba(0,173,238,.9) !important;*/",
 	"   background: #00ADEE !important;",
 	"   opacity: 0.9 !important;",
-	"}                                 ",
-	"   .ytd-button-renderer-3.style-brand[is-paper-button]:hover,.ytd-button-renderer-5.style-destructive[is-paper-button]:hover,.ytd-button-renderer-3.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-dark[is-paper-button]:hover,.ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
+	"}",
+	"   .ytp-sb-subscribe:hover,.ytd-button-renderer-3.style-brand[is-paper-button]:hover,.ytd-button-renderer-5.style-destructive[is-paper-button]:hover,.ytd-button-renderer-3.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-dark[is-paper-button]:hover,.ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
 	"  /* background: rgba(0,173,238,1) !important;*/",
 	"   background: #00ADEE !important;",
 	"   opacity: 1 !important;",

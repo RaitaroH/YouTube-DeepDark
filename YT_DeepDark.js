@@ -16,9 +16,11 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.6.8
+// @version       1.7.0
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.7.0 do you REALLY have to change something so often YouTube?! (themed the sub/unsub buttons AGAIN)
+// Changelog: 1.6.9 adjusted the color in 2 images
 // Changelog: 1.6.8 fixed the new sub/unsub buttons in the cards
 // Changelog: 1.6.7 added some margin to results in the search
 // Changelog: 1.6.6 fixed the color of the video titles because youtube changed the code again
@@ -72,7 +74,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.6.8*/",
+"/*1.7.0*/",
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
 	"			background: #00ADEE !important;",
@@ -83,7 +85,7 @@
 	"			color: #fff !important;",
 	"	}",
 	"/*Hiding some crap section*/",
-	"	   .yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
+	"	   .ytp-sb-classic .ytp-sb-subscribe .ytp-sb-icon,.yt-uix-card-border-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical,.yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal,.yt-uix-clickcard-card-reverse .yt-uix-card-border-arrow-vertical,.yt-uix-button-primary .yt-uix-button-arrow,.iph-dialog-pointer-up,.iph-dialog-pointer-down,.yt-uix-button-subscribe-branded::before,.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer,.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical{",
 	"		 display:none !important;",
 	"	}",
 	"/* Why YT has box shadows beats me*/",
@@ -100,14 +102,14 @@
 	"	}",
 	"	/*Changing liked and disliked button color in the comments*/",
 	"		  #comment-section-renderer .sprite-like[aria-checked=true]::before {",
-	"			background: no-repeat url(https://i.imgur.com/uDVmQBs.png) 0 -116px !important;",
+	"			background: no-repeat url(https://i.imgur.com/aKSNNAd.png) 0 -116px !important;",
 	"			background-size: 324px 132px !important;",
 	"			width: 14px !important;",
 	"			height: 14px !important;",
 	"			opacity: 1 !important;",
 	"	}",
 	"		  #comment-section-renderer .sprite-dislike[aria-checked=true]::before {",
-	"			background: no-repeat url(https://i.imgur.com/uDVmQBs.png) -300px -36px !important;",
+	"			background: no-repeat url(https://i.imgur.com/aKSNNAd.png) -300px -36px !important;",
 	"			background-size: 324px 132px !important;",
 	"			width: 14px !important;",
 	"			height: 14px !important;",
@@ -128,7 +130,7 @@
 	"	}",
 	"	/*Changing buttons in the dashboard*/",
 	"		  #creator-sidebar .studio-icon.creator-sidebar-create.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-create.selected,#creator-sidebar .studio-icon.creator-sidebar-translations-and-transcriptions.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-translations-and-transcriptions.selected,#creator-sidebar .creator-sidebar-analytics.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-analytics.selected,#creator-sidebar .studio-icon.creator-sidebar-channel.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-channel.selected,#creator-sidebar .studio-icon.creator-sidebar-community.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-community.selected,#creator-sidebar .studio-icon.creator-sidebar-live-streaming,#creator-sidebar .studio-icon.creator-sidebar-video-manager.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-video-manager.selected,#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected {",
-	"			background-image: url(https://i.imgur.com/PgFNJRL.png) !important;",
+	"			background-image: url(https://i.imgur.com/L5ldJVQ.png) !important;",
 	"	}",
 	"	/*Changing icon for unavailable video*/",
 	"		  .player-unavailable div.icon.meh {",
@@ -278,7 +280,7 @@
 	"			border: none !important;",
 	"	}",
 	"	/*Removed the border of the search button because it did not look aligned*/",
-	"		  #masthead-search .search-btn-component{",
+	"		  .ytp-sb-classic .ytp-sb-subscribe,#masthead-search .search-btn-component{",
 	"			border: none !important;",
 	"	}",
 	"	   table.gstl_50{",
@@ -568,7 +570,7 @@
 	"   background: #00ADEE !important;",
 	"}",
 	"/*Search bar*/",
-	"   .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer,.sbsb_a,.sbdd_b,.ytd-searchbox-0 #container.ytd-searchbox {",
+	"   .ytp-sb-classic .ytp-sb-count, .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer,.sbsb_a,.sbdd_b,.ytd-searchbox-0 #container.ytd-searchbox {",
 	"   background: #333 !important;",
 	"   border: none !important;",
 	"}",
@@ -582,18 +584,18 @@
 	"   color: rgba(255, 255, 255, .95) !important;",
 	"}",
 	"/*Buttons section*/",
-	"   .ytp-sb-unsubscribe,#continuations > yt-next-continuation > paper-button,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer {",
+	"   .ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text,.ytp-sb-unsubscribe,#continuations > yt-next-continuation > paper-button,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer {",
 	"		background: linear-gradient(rgb(50,50,50), rgb(40,40,40)) !important;",
 	"		border-color: rgb(0,0,0) !important;",
 	"}",
-	"   .ytp-sb-unsubscribe:hover,#continuations > yt-next-continuation > paper-button:hover,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer:hover {",
+	"   .ytp-sb-classic .ytp-sb-unsubscribe:hover,.ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text:hover,.ytp-sb-unsubscribe:hover,#continuations > yt-next-continuation > paper-button:hover,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer:hover {",
 	"		background: linear-gradient(rgb(70,70,70), rgb(60,60,60)) !important;",
 	"		transition: .1s ease-in !important;",
 	"}",
 	"   .iron-icon-3,.paper-button-0  *,.iron-icon-2,.ytd-topbar-logo-renderer-0 #guide-icon.ytd-topbar-logo-renderer, .iron-icon-1 {",
 	"   fill: #ccc !important;",
 	"}",
-	"   .ytp-sb-unsubscribe,.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0 #action-buttons.yt-live-chat-header-renderer > *.yt-live-chat-header-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer,.ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
+	"   .ytp-sb-classic .ytp-sb-count, .ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text,.ytp-sb-unsubscribe,.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0 #action-buttons.yt-live-chat-header-renderer > *.yt-live-chat-header-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer,.ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {",
 	"   color: #ccc !important;",
 	"}",
 	"   .ytd-guide-entry-renderer-0[active] .guide-icon.ytd-guide-entry-renderer {",
@@ -613,12 +615,12 @@
 	"    font-size: 12px !important;",
 	"}",
 	"/*Blue buttons*/",
-	"   .ytp-sb-subscribe,.ytd-button-renderer-3.style-brand[is-paper-button],.ytd-button-renderer-5.style-destructive[is-paper-button],.ytd-button-renderer-3.style-destructive[is-paper-button],.ytd-button-renderer-1.style-dark[is-paper-button],.ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
+	"   .ytp-sb-classic .ytp-sb-subscribe .ytp-sb-text,.ytp-sb-subscribe,.ytd-button-renderer-3.style-brand[is-paper-button],.ytd-button-renderer-5.style-destructive[is-paper-button],.ytd-button-renderer-3.style-destructive[is-paper-button],.ytd-button-renderer-1.style-dark[is-paper-button],.ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {",
 	"  /* background: rgba(0,173,238,.9) !important;*/",
 	"   background: #00ADEE !important;",
 	"   opacity: 0.9 !important;",
 	"}",
-	"   .ytp-sb-subscribe:hover,.ytd-button-renderer-3.style-brand[is-paper-button]:hover,.ytd-button-renderer-5.style-destructive[is-paper-button]:hover,.ytd-button-renderer-3.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-dark[is-paper-button]:hover,.ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
+	"   .ytp-sb-classic .ytp-sb-subscribe .ytp-sb-text:hover,.ytp-sb-subscribe:hover,.ytd-button-renderer-3.style-brand[is-paper-button]:hover,.ytd-button-renderer-5.style-destructive[is-paper-button]:hover,.ytd-button-renderer-3.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-dark[is-paper-button]:hover,.ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{",
 	"  /* background: rgba(0,173,238,1) !important;*/",
 	"   background: #00ADEE !important;",
 	"   opacity: 1 !important;",

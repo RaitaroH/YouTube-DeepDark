@@ -342,10 +342,10 @@
 	"		 margin-right: 15px !important;",
 	"	}",
 	
-	".yt-badge-live{",
-	"color: #ffffff !important;",
+	".yt-badge-live,.yt-badge{",
+	"color: #00ADEE !important;",
 	"padding: 3px !important;",
-	"background-color: #00ADEE !important;",
+	"background-color: transparent !important;",
 	"}",
 	
 	"/*Notifications title size*/",

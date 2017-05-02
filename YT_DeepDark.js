@@ -344,7 +344,7 @@
 	
 	".yt-badge-live,.yt-badge{",
 	"color: #00ADEE !important;",
-	"padding: 3px !important;",
+	"padding: 0px !important;",
 	"background-color: transparent !important;",
 	"}",
 	

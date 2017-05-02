@@ -19,6 +19,7 @@
 // @version       1.7.0
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.7.1 edited live badge
 // Changelog: 1.7.0 do you REALLY have to change something so often YouTube?! (themed the sub/unsub buttons AGAIN)
 // Changelog: 1.6.9 adjusted the color in 2 images
 // Changelog: 1.6.8 fixed the new sub/unsub buttons in the cards
@@ -74,7 +75,7 @@
 // ==/UserScript==
 
 (function() {var css = [
-"/*1.7.0*/",
+"/*1.7.1*/",
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
 	"			background: #00ADEE !important;",
@@ -340,13 +341,20 @@
 	"	 	 .comment-renderer .comment-renderer-like-count.off, .comment-renderer.liked .comment-renderer-like-count.on{",
 	"		 margin-right: 15px !important;",
 	"	}",
+	
+	".yt-badge-live{",
+	"color: #ffffff !important;",
+	"padding: 3px !important;",
+	"background-color: #00ADEE !important;",
+	"}",
+	
 	"/*Notifications title size*/",
 	"	 	 .yt-lockup-tile .yt-lockup-title{",
 	"		 max-width: 270px !important;",
 	"	}",
 	"/*Colors and text section*/",
 	"	/*Permanently highlighted*/",
-	"		 .yt-uix-servicelink,.yt-uix-expander-collapsed .multirow-shelf-expander, .multirow-shelf-collapser,.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.yt-badge,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
+	"		 .yt-uix-servicelink,.yt-uix-expander-collapsed .multirow-shelf-expander, .multirow-shelf-collapser,.ytp-video-menu-item-author,.comment-renderer-like-count,#player-playlist .video-uploader-byline,span.video-uploader-byline:hover,.zvd,.track:hover .audiolibrary-track-head .audiolibrary-column,.ytp-ce-size-853 .ytp-ce-website-title, .ytp-ce-size-853 .ytp-ce-channel-title,.video-list-item .mix-playlist .stat,.guide-item-subtitle,.playlist-title,.comment-replies-renderer-view, .comment-replies-renderer-hide,#player-playlist .video-uploader-byline,span.video-uploader-byline,.ytp-ce-size-640 .ytp-ce-channel-title,.g-hovercard,#pl-header .pl-header-title,li.guide-section h3 a,#player-playlist .playlist-title a,.exp-responsive .yt-lockup-tile .yt-lockup-byline .yt-uix-sessionlink,#item-section-599813 > li:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h3:nth-child(1) > a:nth-child(1),.ytp-ce-website-metadata,.ytp-ce-channel-title,li.guide-section h3,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index,a,#action-panel-details a, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a,.channel-header .branded-page-header-title .branded-page-header-title-link,.branded-page-base-bold-titles .channel-header .branded-page-header-title .branded-page-header-title-link,div.watch-sidebar-body:nth-child(3) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > span:nth-child(3) > span:nth-child(1),.video-player-view-component .video-detail a,.yt-uix-button-subscribe-branded > span:nth-child(1) > span:nth-child(1){",
 	"		 /*color: rgba(0,173,238,.9)  !important;*/",
 	"		 color: #00ADEE !important;",
 	"		 opacity: 0.9 !important;",

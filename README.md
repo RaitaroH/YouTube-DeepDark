@@ -5,10 +5,11 @@ This is a dark theme for YouTube inspired by FT DeepDark https://addons.mozilla.
 
 You can install it from here https://greasyfork.org/en/scripts/25333-youtube-deepdark
 
-Themes as Stylish styles here https://userstyles.org/users/377182
-For the stylish version I added change color option.
+Themes as Stylish styles here https://userstyles.org/styles/135831/youtube-deepdark
 
-# Screenshots
+Material version here https://userstyles.org/styles/144962/youtube-deepdark-material
+
+# Classic Version
 Channel page
 
 ![alt tag](https://i.imgur.com/345bBev.png)
@@ -58,3 +59,20 @@ Here is a composite image of different colors you can use in the stylish version
 ![alt tag](https://i.imgur.com/tm76ftu.png)
 
 IF you want this as a scipt make sure you go to the userstyles page, choose your color (the color will be changed in the code) ant then install as a script.
+
+
+# Material Version
+YouTube introduced a new material design. I do provide a separate userstyle for that:
+https://userstyles.org/styles/144962/youtube-deepdark-material
+
+Video
+
+![alt tag](https://i.imgur.com/eHhQ65i.png)
+
+Channel page
+
+![alt tag](https://i.imgur.com/trOpcVP.png)
+
+Comments
+
+![alt tag](https://i.imgur.com/bxR5KPF.png)

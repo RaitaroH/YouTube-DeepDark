@@ -3,9 +3,9 @@ Videos should only be watched in the dark. May the dark show your way. (YouTube 
 
 This is a dark theme for YouTube inspired by FT DeepDark https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search
 
-You can install it from here https://greasyfork.org/en/scripts/25333-youtube-deepdark
+You can install the .js version for the classic style from here https://greasyfork.org/en/scripts/25333-youtube-deepdark
 
-Themes as Stylish styles here https://userstyles.org/styles/135831/youtube-deepdark
+Theme as a userstyle here https://userstyles.org/styles/135831/youtube-deepdark
 
 Material version here https://userstyles.org/styles/144962/youtube-deepdark-material
 

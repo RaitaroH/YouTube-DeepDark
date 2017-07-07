@@ -76,3 +76,7 @@ Channel page
 Comments
 
 ![alt tag](https://i.imgur.com/bxR5KPF.png)
+
+Video not found page
+
+![alt tag](https://i.imgur.com/vgx1jgB.png)

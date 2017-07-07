@@ -1,0 +1,171 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("youtube.com") {
+ 	
+/*For the new Material Design for YouTube*/
+
+/*1.0*/
+
+  /*Background section*/
+	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer
+	{
+		background-color: #00ADEE !important;
+	}
+	/*For the outline around the channel name*/
+	.style-scope.ytd-comment-renderer.creator
+	{
+		background-color: #00ADEE !important;
+	}
+	.style-scope.ytd-comment-renderer.creator:hover
+	{
+		background-color: #3a3a3a !important;
+	}
+	#name:hover
+	{
+		color: #00ADEE !important;
+	}
+	/*Logo*/
+  #logo-icon.ytd-topbar-logo-renderer #tube-paths
+	{
+		fill:#00ADEE !important;
+	}
+	
+	app-drawer.ytd-app:not([persistent]) #header.ytd-app
+	{
+		border-color: #00ADEE !important;
+	}
+	
+	/*Progress bar*/
+	#progress
+	{
+		background-color: #00ADEE !important;
+		border-color: #00ADEE !important;
+	}
+	
+	/*Buttons*/
+	.ytd-menu-renderer[button-renderer]:hover yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer:hover yt-icon.ytd-menu-renderer,#icon-label.yt-dropdown-menu:hover,ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer:hover,yt-formatted-string.ytd-button-renderer:nth-child(2):hover,ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer,ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:hover,button.style-default-active
+	{
+		color: #00ADEE !important;
+	}
+	
+	/*Subscribe button*/
+	yt-formatted-string.style-destructive
+	{
+		color: #fff !important;
+	}
+	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer
+	{
+		background-color: #00ADEE !important;
+		opacity: 0.9 !important;
+	}
+	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover
+	{
+		opacity: 1 !important;
+	}
+	paper-button.ytd-subscribe-button-renderer[subscribed]
+	{
+		background-color: #333 !important;
+		opacity: 0.9 !important;
+	}
+	.deemphasize.yt-formatted-string,paper-button.ytd-subscribe-button-renderer[subscribed]
+	{
+		color: #ccc !important;
+	}
+	
+	/*Toggle button to play next*/
+	paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button
+	{
+		background-color: #00ADEE !important;
+		opacity: 1 !important;
+	}
+	
+  .badge-style-type-simple.ytd-badge-supported-renderer 
+	{
+		background: transparent;
+		color: #00ADEE;
+		padding-left: 0px !important;
+	}
+
+	
+  /*Hover section*/
+  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover
+  {
+		color: #00ADEE !important;
+		opacity: 1 !important;
+  }
+  
+	/*Permanently colored*/
+	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string,#title.ytd-shelf-renderer,yt-formatted-string.style-brand
+	{
+		color: #00ADEE !important;
+		opacity: 0.9 !important;
+		text-decoration: none  !important;
+		text-shadow: none !important;
+	}
+	
+  /*Avatars and thumbnails opacity */
+  img.yt-img-shadow 
+	{
+		opacity: 0.9 !important;
+	}
+	img.yt-img-shadow:hover
+	{
+		opacity: 1 !important;
+	}
+/*Video section*/
+	/*Video title hover in html5 video*/
+  .html5-video-player a:hover
+  {
+    color: #fff !important;
+    text-shadow: none !important;
+  }
+
+/* Code takken from https://userstyles.org/styles/95280 */
+/* scrubber button */
+    .html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
+  {
+    background: #00ADEE!important;
+  }
+/* progress bar */
+    .html5-play-progress, .ytp-play-progress
+  {
+    background: #00ADEE!important;
+  }
+
+  .ytp-volume-slider-track, .ytp-volume-slider-handle:before
+  {
+    background: #00ADEE!important;
+    z-index: -117;
+  }
+
+  .ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after
+  {
+    background-color: #00ADEE!important;
+  }
+
+  .ytp-swatch-color
+  {
+    color: #00ADEE!important;
+  }
+
+  .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox
+  {
+    background: #00ADEE!important;
+  }
+
+  .ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled="true"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge
+  {
+    fill: #00ADEE!important;
+  }
+
+  .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg
+  {
+    fill: #00ADEE!important;
+  }
+/*Added because of this: https://forum.userstyles.org/discussion/53368/solved-fix-this-annoying-youtube-tab-select-bug-thats-been-there-forever#latest*/
+  .ytp-keyboard-focus .ytp-progress-bar:focus
+  {
+    box-shadow: none !important;
+  }
+
+}

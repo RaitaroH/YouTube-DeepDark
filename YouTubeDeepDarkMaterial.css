@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.0*/
+/*1.1*/
 
   /*Background section*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer
@@ -88,7 +88,7 @@
 
 	
   /*Hover section*/
-  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover
+  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover
   {
 		color: #00ADEE !important;
 		opacity: 1 !important;
@@ -166,6 +166,37 @@
   .ytp-keyboard-focus .ytp-progress-bar:focus
   {
     box-shadow: none !important;
+  }
+	
+  /*Changing icon for unavailable video*/
+  #img.ytd-player-error-message-renderer 
+  {
+    display: block !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    background: url(https://i.imgur.com/2F3NvUl.png) no-repeat !important;
+    width: 140px !important;
+    height: 100px !important;
+    padding-left: 140px !important;
+    position: relative !important;
+  }
+  /*Changing icon for unavailable page (404)*/
+  #error-page-hh-illustration 
+  {
+    display: block !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    background: url(https://i.imgur.com/2F3NvUl.png) no-repeat !important;
+    width: 140px !important;
+    height: 100px !important;
+    padding-left: 140px !important;
+    right: -175px !important;
+    position: relative !important;
+  }
+  /*Some spacing for the logo*/
+  #yt-masthead #logo-container 
+  {
+    margin-right: 20px !important;
   }
 
 }

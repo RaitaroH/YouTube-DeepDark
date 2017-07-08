@@ -53,12 +53,12 @@
 	{
 		color: #fff !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer
+	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe
 	{
 		background-color: #00ADEE !important;
 		opacity: 0.9 !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover
+	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover,.ytp-sb-subscribe, a.ytp-sb-subscribe:hover
 	{
 		opacity: 1 !important;
 	}
@@ -66,10 +66,6 @@
 	{
 		background-color: #333 !important;
 		opacity: 0.9 !important;
-	}
-	.deemphasize.yt-formatted-string,paper-button.ytd-subscribe-button-renderer[subscribed]
-	{
-		color: #ccc !important;
 	}
 	
 	/*Toggle button to play next*/
@@ -223,5 +219,21 @@
 	{
 		color: #ccc;
 	}
+	
+	/*Search bar*/
+	ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox
+	{
+		border-color: #00adee !important;
+	}
 
+	/*Search for channel videos*/
+ 	.unfocused-line.paper-input-container,.focused-line.paper-input-container
+	{
+   	 	background-color: #00adee !important;
+	}
+	
+	iron-icon:hover
+	{
+    		fill: #00adee !important;
+	}
 }

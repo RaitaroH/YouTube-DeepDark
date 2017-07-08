@@ -4,7 +4,19 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.2.5*/
+/*1.2.6*/
+
+  /*Changed text highlight*/
+  ::selection
+  {
+    background: #00ADEE !important;
+    color: #fff !important;
+  }
+  ::-moz-selection
+  {
+    background: #00ADEE !important;
+    color: #fff !important;
+  }
 
   /*Background section*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs

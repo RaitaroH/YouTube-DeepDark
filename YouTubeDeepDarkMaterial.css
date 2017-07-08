@@ -7,7 +7,7 @@
 /*1.1*/
 
   /*Background section*/
-	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer
+	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{
 		background-color: #00ADEE !important;
 	}
@@ -79,7 +79,7 @@
 		opacity: 1 !important;
 	}
 	
-  .badge-style-type-simple.ytd-badge-supported-renderer 
+  .badge-style-type-simple.ytd-badge-supported-renderer,.badge-style-type-disabled.ytd-badge-supported-renderer 
 	{
 		background: transparent;
 		color: #00ADEE;
@@ -88,14 +88,14 @@
 
 	
   /*Hover section*/
-  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover
+  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover
   {
 		color: #00ADEE !important;
 		opacity: 1 !important;
   }
   
 	/*Permanently colored*/
-	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string,#title.ytd-shelf-renderer,yt-formatted-string.style-brand
+	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer
 	{
 		color: #00ADEE !important;
 		opacity: 0.9 !important;
@@ -198,5 +198,25 @@
   {
     margin-right: 20px !important;
   }
+/*Playlist changes*/
+	ytd-playlist-panel-video-renderer:hover 
+	{
+    background-color: #3a3a3a !important;
+	}
+
+	ytd-playlist-panel-video-renderer[selected] #index.ytd-playlist-panel-video-renderer,#byline.ytd-playlist-panel-video-renderer,.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-now-playing,.ytp-video-menu-item-author 
+	{
+    color: #00adee !important;
+	}
+
+	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer 
+	{
+    background-color: #181818 !important;
+	}
+	
+	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail
+	{
+	border-color: #00adee !important;
+	}
 
 }

@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.2.7*/
+/*1.2.8*/
 
   /*Changed text highlight*/
   ::selection
@@ -285,4 +285,16 @@
 		background-color: #3a3a3a !important;
 		color: #00adee !important;
 	}
+	
+	/*Resizing the top bar and it's spacing to get some extra vertical space*/
+	/*
+	ytd-page-manager 
+	{
+		margin-top: 30px !important;
+	}
+	#container.ytd-masthead
+	{
+		height: 40px !important;
+	}
+	*/
 }

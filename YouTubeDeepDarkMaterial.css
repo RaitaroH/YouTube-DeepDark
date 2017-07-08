@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.2.4*/
+/*1.2.5*/
 
   /*Background section*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
@@ -84,7 +84,7 @@
 	}
  	
   /*Hover section*/
-  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover
+  #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover
   {
 		color: #00ADEE !important;
 		opacity: 1 !important;
@@ -254,5 +254,19 @@
 	.sidebar_section
 	{
 		color: #ccc !important;
+	}
+	
+	/*Comments*/
+	/*Show more stuff*/
+	.style-scope.ytd-comment-replies-renderer:hover,.more-button.style-scope.ytd-comment-renderer:hover,.more-button.style-scope.ytd-video-secondary-info-renderer:hover
+	{
+		color: #00adee !important;
+	}
+	
+	/*Show more videos*/
+	.style-scope.yt-next-continuation:hover
+	{
+		background-color: #3a3a3a !important;
+		color: #00adee !important;
 	}
 }

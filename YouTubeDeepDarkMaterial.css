@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.2.6*/
+/*1.2.7*/
 
   /*Changed text highlight*/
   ::selection
@@ -60,8 +60,8 @@
 		color: #00ADEE !important;
 	}
 	
-	/*Subscribe button*/
-	yt-formatted-string.style-destructive
+	/*Subscribe button and comment button*/
+	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string
 	{
 		color: #fff !important;
 	}
@@ -78,6 +78,10 @@
 	{
 		background-color: #333 !important;
 		opacity: 0.9 !important;
+	}
+	ytd-button-renderer.style-primary[is-paper-button]
+	{
+		background-color: transparent !important;
 	}
 	
 	/*Toggle button to play next*/

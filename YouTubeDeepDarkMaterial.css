@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.2.3*/
+/*1.2.4*/
 
   /*Background section*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
@@ -235,5 +235,24 @@
 	iron-icon:hover
 	{
     		fill: #00adee !important;
+	}
+	
+	/*Iridium support, former YouTube+*/
+	#iridium_settings .iri-settings-button.danger,.active_sidebar
+	{
+		background-color: #00adee !important;
+		border-color: #00adee !important;
+	}
+	.feature-link
+	{
+		color: #00adee !important;
+	}
+	.iri-dark-mode-settings .sidebar_section:hover:not(.active_sidebar)
+	{
+		background-color: #3a3a3a !important;
+	}
+	.sidebar_section
+	{
+		color: #ccc !important;
 	}
 }

@@ -4,29 +4,35 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.2.9*/
+/*1.3.0*/
+
+  /*Main color variable*/
+  :root
+  {
+    --main-color: #00ADEE;
+  }
 
   /*Changed text highlight*/
   ::selection
   {
-    background: #00ADEE !important;
+    background: var(--main-color) !important;
     color: #fff !important;
   }
   ::-moz-selection
   {
-    background: #00ADEE !important;
+    background: var(--main-color) !important;
     color: #fff !important;
   }
 
   /*Background section*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{
-		background-color: #00ADEE !important;
+		background-color: var(--main-color) !important;
 	}
 	/*For the outline around the channel name*/
 	.style-scope.ytd-comment-renderer.creator
 	{
-		background-color: #00ADEE !important;
+		background-color: var(--main-color) !important;
 	}
 	.style-scope.ytd-comment-renderer.creator:hover
 	{
@@ -34,30 +40,31 @@
 	}
 	#name:hover
 	{
-		color: #00ADEE !important;
+		color: var(--main-color) !important;
 	}
+	
 	/*Logo*/
   #logo-icon.ytd-topbar-logo-renderer #tube-paths
 	{
-		fill:#00ADEE !important;
+		fill:var(--main-color) !important;
 	}
 	
 	app-drawer.ytd-app:not([persistent]) #header.ytd-app
 	{
-		border-color: #00ADEE !important;
+		border-color: var(--main-color) !important;
 	}
 	
 	/*Progress bar*/
 	#progress
 	{
-		background-color: #00ADEE !important;
-		border-color: #00ADEE !important;
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 	
 	/*Buttons*/
 	.ytd-menu-renderer[button-renderer]:hover yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer:hover yt-icon.ytd-menu-renderer,#icon-label.yt-dropdown-menu:hover,ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer:hover,yt-formatted-string.ytd-button-renderer:nth-child(2):hover,ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer,ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:hover,button.style-default-active
 	{
-		color: #00ADEE !important;
+		color: var(--main-color) !important;
 	}
 	
 	/*Subscribe button and comment button*/
@@ -67,7 +74,7 @@
 	}
 	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe
 	{
-		background-color: #00ADEE !important;
+		background-color: var(--main-color) !important;
 		opacity: 0.9 !important;
 	}
 	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover,.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover
@@ -88,14 +95,14 @@
 	/*Toggle button to play next*/
 	paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button
 	{
-		background-color: #00ADEE !important;
+		background-color: var(--main-color) !important;
 		opacity: 1 !important;
 	}
 	
   .badge-style-type-simple.ytd-badge-supported-renderer,.badge-style-type-disabled.ytd-badge-supported-renderer, yt-icon.ytd-badge-supported-renderer
 	{
-		background: transparent;
-		color: #00ADEE;
+		background: transparent !important;
+		color: var(--main-color) !important;
 		padding-left: 0px !important;
 		opacity: .7 !important;
 	}
@@ -103,21 +110,21 @@
   /*Hover section*/
   #video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover
   {
-		color: #00ADEE !important;
+		color: var(--main-color) !important;
 		opacity: 1 !important;
   }
   
 	/*Permanently colored*/
 	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer
 	{
-		color: #00ADEE !important;
+		color: var(--main-color) !important;
 		opacity: 0.9 !important;
 		text-decoration: none  !important;
 		text-shadow: none !important;
 	}
 	
   /*Avatars and thumbnails opacity */
-  img.yt-img-shadow 
+	img.yt-img-shadow 
 	{
 		opacity: 0.9 !important;
 	}
@@ -125,55 +132,55 @@
 	{
 		opacity: 1 !important;
 	}
-/*Video section*/
-	/*Video title hover in html5 video*/
-  .html5-video-player a:hover
-  {
-    color: #fff !important;
-    text-shadow: none !important;
-  }
+  /*Video section*/
+  /*Video title hover in html5 video*/
+  	.html5-video-player a:hover
+  	{
+ 		color: #fff !important;
+		text-shadow: none !important;
+  	}
 
 /* Code takken from https://userstyles.org/styles/95280 */
 /* scrubber button */
     .html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
   {
-    background: #00ADEE!important;
+    background: var(--main-color) !important;
   }
 /* progress bar */
     .html5-play-progress, .ytp-play-progress
   {
-    background: #00ADEE!important;
+    background: var(--main-color) !important;
   }
 
   .ytp-volume-slider-track, .ytp-volume-slider-handle:before
   {
-    background: #00ADEE!important;
+    background: var(--main-color) !important;
     z-index: -117;
   }
 
   .ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after
   {
-    background-color: #00ADEE!important;
+    background-color: var(--main-color) !important;
   }
 
   .ytp-swatch-color
   {
-    color: #00ADEE!important;
+    color: var(--main-color) !important;
   }
 
   .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox
   {
-    background: #00ADEE!important;
+    background: var(--main-color) !important;
   }
 
   .ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled="true"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge
   {
-    fill: #00ADEE!important;
+    fill: var(--main-color) !important;
   }
 
   .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg
   {
-    fill: #00ADEE!important;
+    fill: var(--main-color) !important;
   }
 /*Added because of this: https://forum.userstyles.org/discussion/53368/solved-fix-this-annoying-youtube-tab-select-bug-thats-been-there-forever#latest*/
   .ytp-keyboard-focus .ytp-progress-bar:focus
@@ -219,7 +226,7 @@
 
 	ytd-playlist-panel-video-renderer[selected] #index.ytd-playlist-panel-video-renderer,#byline.ytd-playlist-panel-video-renderer,.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-now-playing,.ytp-video-menu-item-author 
 	{
-    color: #00adee !important;
+    color: var(--main-color) !important;
 	}
 
 	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer 
@@ -229,7 +236,7 @@
 	
 	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail
 	{
-	border-color: #00adee !important;
+	border-color: var(--main-color) !important;
 	}
 	
 	#video-title.ytd-playlist-panel-video-renderer
@@ -240,29 +247,29 @@
 	/*Search bar*/
 	ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox
 	{
-		border-color: #00adee !important;
+		border-color: var(--main-color) !important;
 	}
 
 	/*Search for channel videos*/
  	.unfocused-line.paper-input-container,.focused-line.paper-input-container
 	{
-   	 	background-color: #00adee !important;
+   	 	background-color: var(--main-color) !important;
 	}
 	
 	iron-icon:hover
 	{
-    		fill: #00adee !important;
+    		fill: var(--main-color) !important;
 	}
 	
 	/*Iridium support, former YouTube+*/
 	#iridium_settings .iri-settings-button.danger,.active_sidebar
 	{
-		background-color: #00adee !important;
-		border-color: #00adee !important;
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 	.feature-link
 	{
-		color: #00adee !important;
+		color: var(--main-color) !important;
 	}
 	.iri-dark-mode-settings .sidebar_section:hover:not(.active_sidebar)
 	{
@@ -277,14 +284,14 @@
 	/*Show more stuff*/
 	.style-scope.ytd-comment-replies-renderer:hover,.more-button.style-scope.ytd-comment-renderer:hover,.more-button.style-scope.ytd-video-secondary-info-renderer:hover
 	{
-		color: #00adee !important;
+		color: var(--main-color) !important;
 	}
 	
 	/*Show more videos*/
 	.style-scope.yt-next-continuation:hover
 	{
 		background-color: #3a3a3a !important;
-		color: #00adee !important;
+		color: var(--main-color) !important;
 	}
 	
 	/*Resizing the top bar and it's spacing to get some extra vertical space*/
@@ -298,4 +305,14 @@
 		height: 40px !important;
 	}
 	*/
+	
+	/*Notification stuff*/
+	#notification-count.ytd-notification-topbar-button-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
+ 	#button:hover 
+  	{
+  		color: var(--main-color) !important;
+  	}	
 }

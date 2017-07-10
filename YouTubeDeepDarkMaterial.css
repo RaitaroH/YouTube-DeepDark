@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.1*/
+/*1.3.2*/
 
 	/*Main color variable*/
 	:root
@@ -311,6 +311,7 @@
 	#notification-count.ytd-notification-topbar-button-renderer
 	{
 		background-color: var(--main-color) !important;
+		box-shadow: -1px 1px #222;
 	}
  	#button:hover 
   	{

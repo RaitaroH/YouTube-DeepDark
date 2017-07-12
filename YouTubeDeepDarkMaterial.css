@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.3*/
+/*1.3.4*/
 
 	/*Main color variables*/
 	:root
@@ -50,7 +50,7 @@
 	/*Logo*/
 	#logo-icon.ytd-topbar-logo-renderer #tube-paths
 	{
-		fill:var(--main-color) !important;
+		fill: var(--main-color) !important;
 	}
 	
 	app-drawer.ytd-app:not([persistent]) #header.ytd-app
@@ -69,6 +69,12 @@
 	.ytd-menu-renderer[button-renderer]:hover yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer:hover yt-icon.ytd-menu-renderer,#icon-label.yt-dropdown-menu:hover,ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer:hover,yt-formatted-string.ytd-button-renderer:nth-child(2):hover,ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer,ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:hover,button.style-default-active,ytd-button-renderer.style-scope:nth-child(3):hover yt-formatted-string.ytd-button-renderer:nth-child(2)
 	{
 		color: var(--main-color) !important;
+	}
+	
+	/*Sidebar button hover*/
+	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app
+	{
+   		fill: var(--main-color) !important;
 	}
 	
 	/*Subscribe button and comment button*/

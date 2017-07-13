@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.4*/
+/*1.3.5*/
 
 	/*Main color variables*/
 	:root
@@ -71,8 +71,8 @@
 		color: var(--main-color) !important;
 	}
 	
-	/*Sidebar button hover*/
-	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app
+	/*Button hover*/
+	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu
 	{
    		fill: var(--main-color) !important;
 	}
@@ -139,7 +139,7 @@
 		color: var(--main-color) !important;
 	}
 	/*Title hover in menus*/
- 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer
+ 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu
 	{
 		color: var(--main-color) !important;
 	}

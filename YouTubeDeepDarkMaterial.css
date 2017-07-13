@@ -11,7 +11,8 @@
 	{
 		--main-color: #00ADEE;
 	}
-	.ytd-menu-renderer[button-renderer]:hover {
+	.ytd-menu-renderer[button-renderer]:hover 
+	{
    		--yt-button-color: var(--main-color);
   	}
 

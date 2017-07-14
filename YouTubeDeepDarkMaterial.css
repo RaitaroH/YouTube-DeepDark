@@ -9,7 +9,7 @@
 	/*Main color variables*/
 	:root
 	{
-		--main-color: #00ADEE;
+		--main-color: /*[[picker]]*/; /*by default this will be #00ADEE*/
 	}
 	.ytd-menu-renderer[button-renderer]:hover 
 	{

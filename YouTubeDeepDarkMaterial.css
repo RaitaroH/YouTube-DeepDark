@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.5*/
+/*1.3.6*/
 
 	/*Main color variables*/
 	:root
@@ -126,7 +126,7 @@
 	}
   
 	/*Permanently colored*/
-	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer
+	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer, #author-text.yt-simple-endpoint.ytd-comment-renderer,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer
 	{
 		color: var(--main-color) !important;
 		opacity: 0.9 !important;

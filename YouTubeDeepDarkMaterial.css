@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.9*/
+/*1.4.0*/
 
 	/*Main color variables*/
 	:root
@@ -352,6 +352,10 @@
   	{
   		color: var(--main-color) !important;
   	}
+	ytd-notification-renderer.unseen #new.ytd-notification-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
 
 	/*Cards*/
 	.iv-card-content,.ytp-ce-expanding-overlay-background,.ytp-cards-teaser .ytp-cards-teaser-text

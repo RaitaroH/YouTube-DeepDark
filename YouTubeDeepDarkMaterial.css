@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.6*/
+/*1.3.7*/
 
 	/*Main color variables*/
 	:root
@@ -119,14 +119,14 @@
 	}
  	
 	/*Hover section*/
-	#video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover
+	#video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;
 	}
   
 	/*Permanently colored*/
-	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer, #author-text.yt-simple-endpoint.ytd-comment-renderer,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer
+	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer, #author-text.yt-simple-endpoint.ytd-comment-renderer,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string
 	{
 		color: var(--main-color) !important;
 		opacity: 0.9 !important;

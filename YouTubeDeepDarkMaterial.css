@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.3.7*/
+/*1.3.8*/
 
 	/*Main color variables*/
 	:root
@@ -316,6 +316,13 @@
 		background-color: #3a3a3a !important;
 		color: var(--main-color) !important;
 	}
+	
+	/*Heart icon in comments*/
+	#hearted-border.ytd-creator-heart-renderer,#hearted.ytd-creator-heart-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	
 	
 	/*Resizing the top bar and it's spacing to get some extra vertical space*/
 	/*

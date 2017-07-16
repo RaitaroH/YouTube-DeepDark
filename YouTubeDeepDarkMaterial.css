@@ -73,7 +73,7 @@
 	}
 	
 	/*Button hover*/
-	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu
+	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu,button.ytd-expandable-tab-renderer:hover .style-scope.ytd-expandable-tab-renderer
 	{
    		fill: var(--main-color) !important;
 	}
@@ -135,12 +135,12 @@
 	}
 	
 	/*Title hover*/
-	#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,#dismissable.ytd-compact-video-renderer:hover h3.ytd-compact-video-renderer,#content.ytd-playlist-video-renderer:hover #video-title.ytd-playlist-video-renderer,ytd-playlist-panel-video-renderer:hover #video-title.ytd-playlist-panel-video-renderer,ytd-playlist-panel-video-renderer:hover #index.ytd-playlist-panel-video-renderer,#items.yt-horizontal-list-renderer > .yt-horizontal-list-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,ytd-notification-renderer:hover .text.ytd-notification-renderer
+	#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,#dismissable.ytd-compact-video-renderer:hover h3.ytd-compact-video-renderer,#content.ytd-playlist-video-renderer:hover #video-title.ytd-playlist-video-renderer,ytd-playlist-panel-video-renderer:hover #video-title.ytd-playlist-panel-video-renderer,ytd-playlist-panel-video-renderer:hover #index.ytd-playlist-panel-video-renderer,#items.yt-horizontal-list-renderer > .yt-horizontal-list-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,ytd-notification-renderer:hover .text.ytd-notification-renderer,ytd-grid-playlist-renderer:hover #video-title.ytd-grid-playlist-renderer
 	{
 		color: var(--main-color) !important;
 	}
 	/*Title hover in menus*/
- 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu
+ 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu
 	{
 		color: var(--main-color) !important;
 	}

@@ -4,29 +4,81 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.4.1*/
+/*1.4.2*/
 
 	/*Main color variables*/
 	:root
 	{
+		/*DeepDark variants*/
 		--main-color: /*[[picker]]*/; /*by default this will be #00ADEE*/
+		--main-background: #111111;
+		--second-background: rgb(35,35,35);
+		--hover-background: #3a3a3a;
+		--main-text: #fff;
+		--dimer-text: #ccc;
+		
+		/*KDE variants*/
+		/*
+		--main-color: #3DAEE9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimer-text: #bdc3c7;
+		*/
+				
+		/*Vertex Dark variants*/
+		/*
+		--main-color: #4080fb;
+		--main-background: #2B2B2C;
+		--second-background: #353638;
+		--hover-background: #353638;
+		--main-text: #F3F3F5;
+		--dimer-text: #AEAFB0;
+		*/
+		
+		/*Arc Dark Vairnats*/
+		/*
+		--main-color: #5294E2;
+		--main-background: #343944;
+		--second-background: #383C4A;
+		--hover-background: #414A59;
+		--main-text: #C1C8D1;
+		--dimer-text: #B3BAC5;
+		*/
 	}
 	.ytd-menu-renderer[button-renderer]:hover 
 	{
    		--yt-button-color: var(--main-color);
   	}
+	
+	/*Background color for the header (contains search bar)*/
+	#masthead 
+	{
+   		--yt-swatch-primary: var(--second-background) !important;
+ 	 }
+	/*Main color for the background*/
+	ytd-watch
+	{
+		--yt-main-app-background-tmp: var(--main-background) !important;
+	}
+  	/*Search bar*/
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox 
+	{
+    		--yt-searchbox-background: var(--main-background) !important;
+	}
 
-
+	
 	/*Changed text highlight*/
 	::selection
 	{
 		background: var(--main-color) !important;
-		color: #fff !important;
+		color: var(--main-text) !important;
 	}
 	::-moz-selection
 	{
 		background: var(--main-color) !important;
-		color: #fff !important;
+		color: var(--main-text) !important;
 	}
 	
 	/*Outline for links*/
@@ -52,7 +104,7 @@
 	}
 	.style-scope.ytd-comment-renderer.creator:hover
 	{
-		background-color: #3a3a3a !important;
+		background-color: var(--hover-background) !important;
 	}
 	#name:hover
 	{
@@ -92,7 +144,7 @@
 	/*Subscribe button and comment button*/
 	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string
 	{
-		color: #fff !important;
+		color: var(--main-text) !important;
 	}
 	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe
 	{
@@ -105,8 +157,8 @@
 	}
 	paper-button.ytd-subscribe-button-renderer[subscribed],.ytp-sb-unsubscribe
 	{
-		background-color: #333 !important;
-		color: #fff !important;
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
 		opacity: 0.9 !important;
 	}
 	ytd-button-renderer.style-primary[is-paper-button]
@@ -176,7 +228,7 @@
 	/*Video title hover in html5 video*/
   	.html5-video-player a:hover
   	{
- 		color: #fff !important;
+ 		color: var(--main-text) !important;
 		text-shadow: none !important;
   	}
 
@@ -258,10 +310,11 @@
 	{
 		margin-right: 20px !important;
 	}
+	
 	/*Playlist changes*/
 	ytd-playlist-panel-video-renderer:hover 
 	{
-		background-color: #3a3a3a !important;
+		background-color: var(--hover-background) !important;
 	}
 
 	ytd-playlist-panel-video-renderer[selected] #index.ytd-playlist-panel-video-renderer,#byline.ytd-playlist-panel-video-renderer,.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-now-playing,.ytp-video-menu-item-author 
@@ -271,7 +324,7 @@
 
 	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer 
 	{
-		background-color: #181818 !important;
+		background-color: var(--second-background) !important;
 	}
 	
 	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail
@@ -281,7 +334,7 @@
 	
 	#video-title.ytd-playlist-panel-video-renderer
 	{
-		color: #ccc;
+		color: var(--dimer-text) !important;
 	}
 	
 	/*Search bar*/
@@ -313,11 +366,11 @@
 	}
 	.iri-dark-mode-settings .sidebar_section:hover:not(.active_sidebar)
 	{
-		background-color: #3a3a3a !important;
+		background-color: var(--hover-background) !important;
 	}
 	.sidebar_section
 	{
-		color: #ccc !important;
+		color: var(--dimer-text) !important;
 	}
 	
 	/*Comments*/
@@ -330,7 +383,7 @@
 	/*Show more videos*/
 	.style-scope.yt-next-continuation:hover
 	{
-		background-color: #3a3a3a !important;
+		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
 	
@@ -357,7 +410,7 @@
 	#notification-count.ytd-notification-topbar-button-renderer
 	{
 		background-color: var(--main-color) !important;
-		box-shadow: -1px 1px #222;
+		box-shadow: -1px 1px var(--main-background);
 	}
  	#button:hover 
   	{
@@ -371,7 +424,7 @@
 	/*Cards*/
 	.iv-card-content,.ytp-ce-expanding-overlay-background,.ytp-cards-teaser .ytp-cards-teaser-text
 	{
-		background-color: #181818 !important;
+		background-color: var(--second-background) !important;
 	}
 	.ytp-cards-teaser .ytp-cards-teaser-box,.iv-card-image
 	{
@@ -379,7 +432,7 @@
 	}
 	.iv-card-content > :first-child,.html5-video-player a,.iv-card h2,.ytp-cards-teaser .ytp-cards-teaser-text
 	{
-		color: #fff !important;
+		color: var(--main-text) !important;
 	}
 	.iv-card:hover .iv-card-primary-link,.ytp-ce-website-title
 	{
@@ -401,6 +454,6 @@
 	}
 	.ytp-ce-channel-metadata.yt-ui-ellipsis.yt-ui-ellipsis-3 {
 		background: transparent;
-		color: #ccc;
+		color: var(--dimer-text);
 	}
 }

@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.4.0*/
+/*1.4.1*/
 
 	/*Main color variables*/
 	:root
@@ -27,6 +27,17 @@
 	{
 		background: var(--main-color) !important;
 		color: #fff !important;
+	}
+	
+	/*Outline for links*/
+	a
+	{
+    		outline-color: var(--main-color) !important;
+	}
+	/*Outline for comments*/
+	#content-text.ytd-comment-renderer
+	{
+    		outline: none !important;
 	}
 
 	/*Background section*/

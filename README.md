@@ -80,3 +80,10 @@ Comments
 Video not found page
 
 ![alt tag](https://i.imgur.com/vgx1jgB.png)
+
+Colors Showcase (the colors are available in the code; different colors can be used)
+
+![alt tag](https://i.imgur.com/T4v2wxQ.png)
+![alt tag](https://i.imgur.com/Za1RRqR.png)
+![alt tag](https://i.imgur.com/Jm124rA.png)
+![alt tag](https://i.imgur.com/ulVksrQ.png)

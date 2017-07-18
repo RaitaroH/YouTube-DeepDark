@@ -4,7 +4,7 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.4.3*/
+/*1.4.4*/
 
 	/*Main color variables*/
 	:root
@@ -115,6 +115,15 @@
 	ytd-add-to-playlist-renderer
 	{
 		--yt-dialog-background: var(--second-background) !important;
+	}
+	/*Channel page variables*/
+	#channel-container.ytd-c4-tabbed-header-renderer, #tabs-container.ytd-c4-tabbed-header-renderer 
+	{
+		--yt-app-background: var(--hover-background) !important;
+	}
+	ytd-browse[page-subtype="channels"] 
+	{
+		--yt-main-app-background-tmp: var(--main-background) !important;
 	}
 	
 	/*Changed text highlight*/

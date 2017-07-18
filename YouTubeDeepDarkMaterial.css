@@ -4,18 +4,18 @@
  	
 /*For the new Material Design for YouTube*/
 
-/*1.4.2*/
+/*1.4.3*/
 
 	/*Main color variables*/
 	:root
 	{
 		/*DeepDark variants*/
-		--main-color: /*[[picker]]*/; /*by default this will be #00ADEE*/
-		--main-background: #111111;
-		--second-background: rgb(35,35,35);
-		--hover-background: #3a3a3a;
-		--main-text: #fff;
-		--dimer-text: #ccc;
+		--main-color: /*[[main-color]]*/; 			/*by default this will be #00ADEE*/
+		--main-background: /*[[main-background]]*/; 		/*by default this will be #111111*/
+		--second-background: /*[[second-background]]*/; 	/*by default this will be #232323*/
+		--hover-background: /*[[hover-background]]*/; 		/*by default this will be #3a3a3a*/
+		--main-text: /*[[main-text]]*/; 			/*by default this will be #fff*/
+		--dimer-text: /*[[dimer-text]]*/; 			/*by default this will be #ccc*/
 		
 		/*KDE variants*/
 		/*
@@ -47,11 +47,12 @@
 		--dimer-text: #B3BAC5;
 		*/
 	}
+	
+	/*Variable changes*/
 	.ytd-menu-renderer[button-renderer]:hover 
 	{
    		--yt-button-color: var(--main-color);
   	}
-	
 	/*Background color for the header (contains search bar)*/
 	#masthead 
 	{
@@ -67,7 +68,54 @@
 	{
     		--yt-searchbox-background: var(--main-background) !important;
 	}
-
+	/*Sidebar menu background*/
+	#guide-content.ytd-app
+	{
+    		--yt-guide-background: var(--main-background) !important;
+	}
+	/*Background for home*/
+	ytd-app 
+	{
+    		--yt-main-app-background: var(--main-background) !important;
+	}
+	/*Playlist*/
+	ytd-playlist-sidebar-renderer 
+	{
+		--yt-playlist-sidebar-background: var(--hover-background) !important;
+	}
+	ytd-browse[page-subtype="playlist"] ytd-two-column-browse-results-renderer.ytd-browse
+	{
+		--yt-app-background: var(--main-background) !important;
+	}
+	/*Background for the entirere page*/
+	html
+	{
+		background-color: var(--main-background) !important;
+	}
+	/*Notifications*/
+	ytd-simple-menu-header-renderer
+	{
+		--yt-simple-menu-header-background: var(--hover-background) !important;
+	}
+	ytd-multi-page-menu-renderer
+	{
+		--yt-dialog-background: var(--second-background) !important;
+	}
+	#items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover
+	{
+		--yt-guide-entry-hover-background-color: var(--hover-background) !important;
+	}
+	/*Menus*/
+	paper-menu
+	{
+		--paper-menu-background-color: var(--second-background) !important;
+		--paper-menu-color: var(--main-text) !important;
+		--primary-text-color: var(--main-text) !important;
+	}
+	ytd-add-to-playlist-renderer
+	{
+		--yt-dialog-background: var(--second-background) !important;
+	}
 	
 	/*Changed text highlight*/
 	::selection
@@ -92,7 +140,7 @@
     		outline: none !important;
 	}
 
-	/*Background section*/
+	/*Backgrounds*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{
 		background-color: var(--main-color) !important;

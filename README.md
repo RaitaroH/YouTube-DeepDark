@@ -86,4 +86,5 @@ Colors Showcase (the colors are available in the code; different colors can be u
 ![alt tag](https://i.imgur.com/T4v2wxQ.png)
 ![alt tag](https://i.imgur.com/rweJK1S.png)
 ![alt tag](https://i.imgur.com/Jm124rA.png)
+![alt tag](https://i.imgur.com/aEH3I2S.png)
 ![alt tag](https://i.imgur.com/exDFRcI.png)

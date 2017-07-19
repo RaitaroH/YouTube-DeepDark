@@ -164,7 +164,7 @@
 		outline-color: var(--main-color) !important;
 	}
 	
-	/*Background for the entirere page*/
+	/*Background for the entire page*/
 	html
 	{
 		background-color: var(--main-background) !important;

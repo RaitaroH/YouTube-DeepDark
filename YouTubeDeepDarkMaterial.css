@@ -10,12 +10,12 @@
 	:root
 	{
 		/*User variants*/
-		--main-color: /*[[main-color]]*/;
-		--main-background: /*[[main-background]]*/;
-		--second-background: /*[[second-background]]*/;
-		--hover-background: /*[[hover-background]]*/;
-		--main-text: /*[[main-text]]*/;
-		--dimer-text: /*[[dimer-text]]*/;
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimer-text: /*[[dimerText]]*/;
 		
 		/*DeepDark variants*/
 		/*

@@ -5,12 +5,12 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.4.5*/
+/*1.4.6*/
 
 	/*Main color variables*/
 	:root
 	{
-		/*User variants*/
+		/*User colors*/
 		--main-color: /*[[mainColor]]*/;
 		--main-background: /*[[mainBackground]]*/;
 		--second-background: /*[[secondBackground]]*/;
@@ -18,7 +18,7 @@
 		--main-text: /*[[mainText]]*/;
 		--dimer-text: /*[[dimerText]]*/;
 		
-		/*DeepDark variants*/
+		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
 		--main-background: #111111;
@@ -28,7 +28,7 @@
 		--dimer-text: #CCCCCC;
 		*/
 		
-		/*KDE variants*/
+		/*KDE colors*/
 		/*
 		--main-color: #3DAEE9;
 		--main-background: #232629;
@@ -38,7 +38,7 @@
 		--dimer-text: #bdc3c7;
 		*/
 				
-		/*Vertex Dark variants*/
+		/*Vertex Dark colors*/
 		/*
 		--main-color: #4080fb;
 		--main-background: #2B2B2C;
@@ -48,7 +48,7 @@
 		--dimer-text: #AEAFB0;
 		*/
 		
-		/*Arc Dark Vairnats*/
+		/*Arc Dark colors*/
 		/*
 		--main-color: #5294E2;
 		--main-background: #343944;
@@ -56,6 +56,16 @@
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
 		--dimer-text: #B3BAC5;
+		*/
+		
+		/*Firefox Dark colors*/
+		/*
+		--main-color: #5675B9;
+		--main-background: #181D20;
+		--second-background: #272B35;
+		--hover-background: #353A44;
+		--main-text: #E3EEF9;
+		--dimer-text: #606376;
 		*/
 	}
 	

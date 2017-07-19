@@ -82,8 +82,8 @@
 		--yt-commentbox-border-active: hsla(0, 100%, 100%, .88);
 		--yt-paper-button-ink-color: hsla(0, 0%, 100%, .2);
 		--yt-icon-color: hsla(0, 100%, 100%, .5);
-		--yt-icon-hover-color: (--main-color) !important;
-		--yt-icon-active-color: (--main-color) !important;
+		--yt-icon-hover-color: var(--main-color) !important;
+		--yt-icon-active-color: var(--main-color) !important;
 		--yt-icon-disabled-color: hsla(0, 100%, 100%, .26);
 		--yt-endpoint-color: hsl(0, 0%, 53.3%);
 		--yt-expand-color: hsla(0, 0%, 100%, .6);

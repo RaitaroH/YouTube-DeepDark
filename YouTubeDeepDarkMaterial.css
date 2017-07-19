@@ -182,11 +182,6 @@
 		color: var(--main-text) !important;
 	}
 	
-	/*Outline for links*/
-	a
-	{
-    		outline-color: var(--main-color) !important;
-	}
 	/*Outline for comments*/
 	#content-text.ytd-comment-renderer
 	{
@@ -198,6 +193,7 @@
 	{
 		background-color: var(--main-color) !important;
 	}
+	
 	/*For the outline around the channel name*/
 	.style-scope.ytd-comment-renderer.creator
 	{

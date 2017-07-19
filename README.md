@@ -84,6 +84,6 @@ Video not found page
 Colors Showcase (the colors are available in the code; different colors can be used)
 
 ![alt tag](https://i.imgur.com/T4v2wxQ.png)
-![alt tag](https://i.imgur.com/Za1RRqR.png)
+![alt tag](https://i.imgur.com/rweJK1S.png)
 ![alt tag](https://i.imgur.com/Jm124rA.png)
 ![alt tag](https://i.imgur.com/exDFRcI.png)

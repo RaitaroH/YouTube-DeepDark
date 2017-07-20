@@ -138,7 +138,7 @@
 		--yt-dialog-background: var(--second-background) !important;
 		--yt-searchbox-background: var(--main-background) !important;
 		--yt-channel-header-background:  var(--second-background) !important;
-		--yt-playlist-sidebar-background: var(--hover-background) !important;
+		--yt-playlist-sidebar-background: var(--second-background) !important;
 		--yt-transcript-background: hsl(0, 0%, 11%);
 		--yt-watch-card-secondary-text-color: hsl(0, 0%, 93.3%);
 		--yt-watch-card-album-header-background: hsl(0, 0%, 6.7%);

@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.5.0*/
+/*1.5.1*/
 
 	/*Main color variables*/
 	:root
@@ -493,6 +493,13 @@
 	.sidebar_section
 	{
 		color: var(--dimer-text) !important;
+	}
+	.iri-dark-mode-settings #iridium_settings {
+		background-color: var(--second-background) !important;
+	}
+	.iri-dark-mode-settings #iridium_settings_sidebar, .iri-dark-mode-settings #settings_section, .iri-dark-mode-settings #iridium-text-editor
+	{
+		background-color: var(--main-background) !important;
 	}
 	
 	/*Comments*/

@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.4.8*/
+/*1.4.9*/
 
 	/*Main color variables*/
 	:root
@@ -171,6 +171,8 @@
 		--yt-lightsource-primary-title-color: var(--yt-primary-text-color);
 		--yt-lightsource-secondary-title-color: var(--yt-metadata-color);
 		--paper-tabs-selection-bar-color: var(--yt-lightsource-secondary-title-color);
+		--paper-toggle-button-checked-button-color: rgb(255,255,255);
+		--paper-toggle-button-unchecked-bar-color: var(--hover-background) !important;
 		outline-color: var(--main-color) !important;
 	}
 	

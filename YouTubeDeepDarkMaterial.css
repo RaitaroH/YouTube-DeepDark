@@ -328,6 +328,11 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	/*Chekboxes background*/
+	#checkbox.checked.paper-checkbox
+	{
+		background-color: transparent !important;
+	}
 	
 	/*Avatars and thumbnails opacity */
 	img.yt-img-shadow 

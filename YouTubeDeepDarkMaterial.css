@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.4.6*/
+/*1.4.7*/
 
 	/*Main color variables*/
 	:root
@@ -127,7 +127,7 @@
 		--paper-menu-background-color: var(--second-background) !important;
 		--paper-menu-color: var(--main-text) !important;
 		--primary-text-color: var(--main-text) !important;
-		--yt-simple-menu-header-background: var(--hover-background) !important;
+		--yt-simple-menu-header-background: var(--second-background) !important;
 		--yt-item-section-header-color: hsl(0, 0%, 93.3%);
 		--yt-menu-hover-backgound-color: hsla(0, 100%, 100%, .08);
 		--yt-menu-focus-background-color: hsla(0, 100%, 100%, .26);
@@ -563,4 +563,11 @@
 		background: transparent;
 		color: var(--dimer-text);
 	}
+	
+	/*Account menu header*/
+	ytd-active-account-header-renderer:hover 
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 }

@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.5.2*/
+/*1.5.3*/
 
 	/*Main color variables*/
 	:root
@@ -531,6 +531,22 @@
 	#hearted-border.ytd-creator-heart-renderer,#hearted.ytd-creator-heart-renderer
 	{
 		color: var(--main-color) !important;
+	}
+	
+	/*Chat*/
+	.yt-live-chat-text-input-field-renderer-0 #focused.yt-live-chat-text-input-field-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*Owner name and badge in chat*/
+	.yt-live-chat-text-message-renderer-0 #author-name.yt-live-chat-text-message-renderer[type="owner"],.yt-live-chat-author-badge-renderer-0[type="owner"]
+	{
+		color: var(--main-color) !important;
+	}
+	/*Go down button in chat*/
+	.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer
+	{
+		background-color: var(--hover-background) !important;
 	}
 	
 	

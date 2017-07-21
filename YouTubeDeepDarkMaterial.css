@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.5.5*/
+/*1.5.6*/
 
 	/*Main color variables*/
 	:root
@@ -483,6 +483,12 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*Keyboard icon in the search bar*/
+	#gs_ok50
+	{
+		filter: invert(100%);
+	}
+
 
 	/*Search for channel videos*/
  	.unfocused-line.paper-input-container,.focused-line.paper-input-container

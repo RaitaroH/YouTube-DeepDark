@@ -462,20 +462,24 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b
 	{
 		background: var(--second-background) !important;
 		border: none !important;
 	}
+	/*Text color*/
 	.gsfs
 	{
 		color: var(--dimer-text) !important;
 	}
+	/*Hover and keyboard select background*/
 	.sbsb_c.gsfs:hover,.sbsb_d
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.sbsb_c:hover .sbqs_c
+	/*Keyboard select text color and hover text color*/
+	.sbsb_c:hover .sbqs_c,.sbsb_c.gsfs.sbsb_d .sbqs_c
 	{
 		color: var(--main-color) !important;
 	}

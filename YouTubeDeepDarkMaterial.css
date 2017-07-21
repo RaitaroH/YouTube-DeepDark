@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.5.4*/
+/*1.5.5*/
 
 	/*Main color variables*/
 	:root
@@ -471,9 +471,13 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	.sbsb_c.gsfs:hover
+	.sbsb_c.gsfs:hover,.sbsb_d
 	{
 		background-color: var(--hover-background) !important;
+	}
+	.sbsb_c:hover .sbqs_c
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Search for channel videos*/

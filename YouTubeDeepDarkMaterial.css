@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.7.2*/
+/*1.7.3*/
 
 	/*Main color variables*/
 	:root
@@ -95,7 +95,7 @@
 		--yt-searchbox-legacy-button-color: hsla(0, 0%, 100%, .08) !important;
 		--yt-searchbox-legacy-button-border-color: hsl(0, 0%, 18.82%) !important;
 		--yt-searchbox-legacy-button-focus-color: hsla(0, 0%, 100%, .08) !important;
-		--yt-searchbox-legacy-button-hover-color: hsla(0, 0%, 100%, .08) !important;
+		--yt-searchbox-legacy-button-hover-color: hsla(0, 0%, 100%, .09) !important;
 		--yt-searchbox-legacy-button-hover-border-color: hsl(0, 0%, 18.82%) !important;
 		--yt-searchbox-legacy-button-icon-color: hsla(0, 100%, 100%, .5) !important;
 		--yt-commentbox-border-inactive: hsla(0, 100%, 100%, .5) !important;
@@ -556,6 +556,11 @@
 	ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox
 	{
 		border-color: var(--main-color) !important;
+	}
+	/*Icon hover*/
+	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox
+	{
+		color: var(--main-color) !important;
 	}
 	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b

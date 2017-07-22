@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.9*/
+/*1.7.0*/
 
 	/*Main color variables*/
 	:root
@@ -144,7 +144,7 @@
 		--yt-app-background: var(--main-background) !important;
 		--yt-main-app-background: var(--main-background) !important;
 		--yt-main-app-background-tmp: var(--main-background) !important;
-		--yt-guide-background: var(--main-background) !important;
+		--yt-guide-background: var(--second-background) !important;
 		--yt-dialog-background: var(--second-background) !important;
 		--yt-searchbox-background: var(--main-background) !important;
 		--yt-channel-header-background:  var(--second-background) !important;
@@ -190,6 +190,12 @@
 	html
 	{
 		background-color: var(--main-background) !important;
+	}
+	
+	/*Border for the sidemenu*/
+	#guide-content.ytd-app
+	{
+		border-right: 1px solid var(--yt-border-color) !important;
 	}
 	
 	/*Changed text highlight*/

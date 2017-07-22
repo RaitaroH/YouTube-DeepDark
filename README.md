@@ -77,9 +77,17 @@ Comments
 
 ![alt tag](https://i.imgur.com/bxR5KPF.png)
 
+Search (as of now, YouTube has not rethemed this, so I have)
+
+![alt tag](https://i.imgur.com/zYuNjcY.png)
+
 Video not found page
 
 ![alt tag](https://i.imgur.com/vgx1jgB.png)
+
+Iridium support
+
+![alt tag](https://i.imgur.com/Q1eunsx.png)
 
 Colors Showcase (the colors are available in the code; different colors can be used)
 

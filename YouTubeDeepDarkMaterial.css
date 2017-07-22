@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.6*/
+/*1.6.7*/
 
 	/*Main color variables*/
 	:root
@@ -160,7 +160,7 @@
 		--yt-live-chat-secondary-text-color: rgba(255, 255, 255, 0.7) !important;
 		--yt-live-chat-tertiary-text-color: rgba(255, 255, 255, 0.54) !important;
 		--yt-swatch-primary-darker: rgb(32,32,32) !important;
-		--yt-swatch-primary: var(--hover-background) !important;
+		--yt-swatch-primary: var(--second-background) !important;
 		--yt-swatch-text: rgb(255,255,255) !important;
 		--yt-swatch-input-text: rgba(255,255,255,1) !important;
 		--yt-swatch-textbox-bg: rgba(19,19,19,1) !important;

@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.0*/
+/*1.6.1*/
 
 	/*Main color variables*/
 	:root
@@ -300,6 +300,12 @@
 		--paper-toggle-button-checked-button-color: rgb(255,255,255) !important;
 	}
 	
+	/*Filter active*/
+	paper-button.ytd-toggle-button-renderer
+	{
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+	
 	/*Badges*/
 	.badge-style-type-simple.ytd-badge-supported-renderer,.badge-style-type-disabled.ytd-badge-supported-renderer, yt-icon.ytd-badge-supported-renderer
 	{
@@ -336,7 +342,7 @@
 		color: var(--main-color) !important;
 	}
 	/*Title hover in menus*/
- 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu, ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,ytd-playlist-add-to-option-renderer:hover #label.ytd-playlist-add-to-option-renderer,ytd-playlist-add-to-option-renderer:hover yt-icon.ytd-playlist-add-to-option-renderer
+ 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu, ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,ytd-playlist-add-to-option-renderer:hover #label.ytd-playlist-add-to-option-renderer,ytd-playlist-add-to-option-renderer:hover yt-icon.ytd-playlist-add-to-option-renderer, paper-item.ytd-account-settings:hover .label.ytd-account-settings, paper-item.ytd-account-settings:hover .style-scope.ytd-account-settings, paper-item.style-scope:nth-child(7):hover, paper-item.ytd-account-settings:hover, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -430,6 +436,11 @@
 	.ytp-keyboard-focus .ytp-progress-bar:focus
 	{
 		box-shadow: none !important;
+	}
+	/*Theater mode background*/
+	.html5-video-player, #player-container.ytd-watch
+	{
+		background-color: transparent !important;
 	}
 	
 	/*Popup for when you hover over the channel avatar in the video*/

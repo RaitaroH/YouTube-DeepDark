@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.1*/
+/*1.6.2*/
 
 	/*Main color variables*/
 	:root
@@ -241,7 +241,7 @@
 	}
 	
 	/*Buttons*/
-	.ytd-menu-renderer[button-renderer]:hover yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer:hover yt-icon.ytd-menu-renderer,#icon-label.yt-dropdown-menu:hover,ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer:hover,yt-formatted-string.ytd-button-renderer:nth-child(2):hover,ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer,ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:hover,button.style-default-active,ytd-button-renderer.style-scope:nth-child(3):hover yt-formatted-string.ytd-button-renderer:nth-child(2), ytd-toggle-button-renderer.style-text[is-icon-button]:hover,ytd-button-renderer.style-default[is-icon-button]:hover, ytd-button-renderer.force-icon-button a.ytd-button-renderer:hover ytd-button-renderer #button.ytd-button-renderer
+	.ytd-menu-renderer[button-renderer]:hover yt-icon.ytd-menu-renderer, #button.ytd-menu-renderer:hover yt-icon.ytd-menu-renderer,#icon-label.yt-dropdown-menu:hover,ytd-topbar-menu-button-renderer #button.ytd-topbar-menu-button-renderer:hover,yt-formatted-string.ytd-button-renderer:nth-child(2):hover,ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer,ytd-toggle-button-renderer #button.ytd-toggle-button-renderer:hover,button.style-default-active,ytd-button-renderer.style-scope:nth-child(3):hover yt-formatted-string.ytd-button-renderer:nth-child(2), ytd-toggle-button-renderer.style-text[is-icon-button]:hover,ytd-button-renderer.style-default[is-icon-button]:hover, ytd-button-renderer.force-icon-button a.ytd-button-renderer:hover ytd-button-renderer #button.ytd-button-renderer, .header.ytd-account-settings button.ytd-account-settings:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -437,11 +437,6 @@
 	{
 		box-shadow: none !important;
 	}
-	/*Theater mode background*/
-	.html5-video-player, #player-container.ytd-watch
-	{
-		background-color: transparent !important;
-	}
 	
 	/*Popup for when you hover over the channel avatar in the video*/
 	.iv-branding .branding-context-container-inner
@@ -584,7 +579,7 @@
 	
 	/*Comments*/
 	/*Show more stuff*/
-	.style-scope.ytd-comment-replies-renderer:hover,.more-button.style-scope.ytd-comment-renderer:hover,.more-button.style-scope.ytd-video-secondary-info-renderer:hover
+	.style-scope.ytd-comment-replies-renderer:hover,.more-button.style-scope.ytd-comment-renderer:hover,.more-button.style-scope.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover
 	{
 		color: var(--main-color) !important;
 	}

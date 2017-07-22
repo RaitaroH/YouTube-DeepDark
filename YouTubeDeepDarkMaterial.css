@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.3*/
+/*1.6.4*/
 
 	/*Main color variables*/
 	:root
@@ -706,6 +706,22 @@
 	ytd-active-account-header-renderer:hover 
 	{
 		background-color: var(--hover-background) !important;
+	}
+	
+	/*Wathced videos dark background*/
+	ytd-thumbnail-overlay-playback-status-renderer
+	{
+		background-color: hsla(0, 0%, 6.7%, .4);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		align-items: left;
+		justify-content: left;
+	}
+	ytd-thumbnail-overlay-playback-status-renderer:hover
+	{
+		background-color: hsla(0, 0%, 6.7%, .2);
 	}
 
 }

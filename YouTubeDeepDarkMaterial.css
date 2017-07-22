@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.5.7*/
+/*1.5.8*/
 
 	/*Main color variables*/
 	:root
@@ -173,6 +173,7 @@
 		--paper-tabs-selection-bar-color: var(--yt-lightsource-secondary-title-color);
 		--paper-toggle-button-checked-button-color: rgb(255,255,255);
 		--paper-toggle-button-unchecked-bar-color: var(--hover-background) !important;
+		--paper-radio-button-checked-color: var(--main-color) !important;
 		outline-color: var(--main-color) !important;
 	}
 	
@@ -332,6 +333,20 @@
 	#checkbox.checked.paper-checkbox
 	{
 		background-color: transparent !important;
+	}
+	
+	/*Radio buttons*/
+	paper-radio-button[checked] #offRadio.paper-radio-button
+	{
+		--paper-radio-button-checked-color: var(--main-color) !important;
+	}
+	#onRadio.paper-radio-button 
+	{
+		--paper-radio-button-checked-color: var(--main-color) !important;
+	}
+	#offRadio.paper-radio-button:hover
+	{
+		border-color:  var(--main-color) !important;
 	}
 	
 	/*Avatars and thumbnails opacity */

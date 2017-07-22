@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.8*/
+/*1.6.9*/
 
 	/*Main color variables*/
 	:root
@@ -184,7 +184,6 @@
 		--paper-toggle-button-checked-button-color: rgb(255,255,255) !important;
 		--paper-toggle-button-unchecked-bar-color: var(--hover-background) !important;
 		--paper-radio-button-checked-color: var(--main-color) !important;
-		outline-color: var(--main-color) !important;
 	}
 	
 	/*Background for the entire page*/
@@ -205,6 +204,11 @@
 		color: var(--main-text) !important;
 	}
 	
+	/*Outline for links*/
+ 	a
+ 	{
+     		outline-color: var(--main-color) !important;
+	}
 	/*Outline for comments*/
 	#content-text.ytd-comment-renderer
 	{

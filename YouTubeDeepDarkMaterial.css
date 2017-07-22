@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.6.4*/
+/*1.6.5*/
 
 	/*Main color variables*/
 	:root
@@ -590,9 +590,14 @@
 	}
 	
 	/*Show more videos*/
+	yt-next-continuation.ytd-watch-next-secondary-results-renderer
+	{
+		--paper-button_-_background-color: transparent !important;
+		--paper-button_-_color: var(--dimer-text) !important;
+	}
 	.style-scope.yt-next-continuation:hover
 	{
-		background-color: var(--hover-background) !important;
+		background-color: transparent !important;
 		color: var(--main-color) !important;
 	}
 	yt-formatted-string.ytd-expanded-shelf-contents-renderer

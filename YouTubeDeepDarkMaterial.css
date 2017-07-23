@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.7.5*/
+/*1.7.6*/
 
 	/*Main color variables*/
 	:root
@@ -182,7 +182,7 @@
 		--yt-lightsource-secondary-title-color: var(--yt-metadata-color) !important;
 		--paper-tabs-selection-bar-color: var(--yt-lightsource-secondary-title-color) !important;
 		--paper-toggle-button-checked-button-color: rgb(255,255,255) !important;
-		--paper-toggle-button-unchecked-bar-color: var(--hover-background) !important;
+		--paper-toggle-button-unchecked-bar-color: var(--dimer-text) !important;
 		--paper-radio-button-checked-color: var(--main-color) !important;
 	}
 	
@@ -322,7 +322,7 @@
 	paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button
 	{
 		background-color: var(--main-color) !important;
-		opacity: 1 !important;
+		opacity: 0.9 !important;
 	}
 	paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button
 	{
@@ -331,7 +331,7 @@
 	/*Hover for toggle button*/
 	.toggle-button.paper-toggle-button:hover,paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button:hover
 	{
-		background-color: var(--main-color);
+		background-color: var(--main-color) !important;
 	}
 	
 	/*Filter active*/

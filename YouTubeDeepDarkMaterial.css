@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.7.6*/
+/*1.7.7*/
 
 	/*Main color variables*/
 	:root
@@ -76,6 +76,16 @@
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
 		--dimer-text: #ADA8AA;
+		*/
+		
+		/*YouTube colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimer-text: #7F7F7F;
 		*/
 	}
 	

@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.7.4*/
+/*1.7.5*/
 
 	/*Main color variables*/
 	:root
@@ -761,7 +761,7 @@
 	/*Wathced videos dark background*/
 	ytd-thumbnail-overlay-playback-status-renderer
 	{
-		background-color: hsla(0, 0%, 6.7%, .4);
+		background-color: hsla(0, 0%, 6.7%, .4) !important;
 		top: 0;
 		right: 0;
 		bottom: 0;
@@ -771,7 +771,13 @@
 	}
 	ytd-thumbnail-overlay-playback-status-renderer:hover
 	{
-		background-color: hsla(0, 0%, 6.7%, .2);
+		background-color: hsla(0, 0%, 6.7%, .2) !important;
+	}
+	
+	/*Live background color*/
+	ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"] 
+	{
+    		background-color: var(--main-color) !important;
 	}
 
 }

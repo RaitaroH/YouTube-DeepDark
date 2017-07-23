@@ -4,7 +4,7 @@
 {
 /*Check out my github for more themes https://github.com/RaitaroH*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
-/*1.7.4*/
+/*1.7.5*/
 	
 	:root
 	{
@@ -499,7 +499,7 @@ background-color: transparent !important;
 	}
 	
 /*Youtube+ Section*/
-   #framestep-button,.P-impexp,.thumb-svg,#subscription-playlist,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{
+   #framestep-button,.P-impexp,.thumb-svg,#subscription-playlist svg,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{
 	  filter: invert(100%);
 	}
 		#player-console{

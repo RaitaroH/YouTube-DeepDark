@@ -2,10 +2,12 @@
 
 @-moz-document domain(youtube.com),  domain(apis.google.com)
 {
-/*Check out my github for more themes https://github.com/RaitaroH*/
+
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
+
 /*1.8.1*/
 	
+	/*Main color variables*/
 	:root
 	{
 		/*User colors*/

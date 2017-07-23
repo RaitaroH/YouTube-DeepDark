@@ -4,7 +4,7 @@
 {
 /*Check out my github for more themes https://github.com/RaitaroH*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
-/*1.7.7*/
+/*1.7.8*/
 	
 	:root
 	{
@@ -172,17 +172,17 @@
 		background: var(--main-background) !important;
 		border-color: var(--border-color) !important;
 	}
-	.watch-stage-mode #theater-background,#creator-appbar-actions-bar,body,#page-container,#body-container,#appbar-nav,.share-panel-url,.share-panel-start-at-time,.share-embed-code,.share-email .share-email-recipients, .share-email .share-email-note {
+	.watch-stage-mode #theater-background,#creator-appbar-actions-bar,body,#page-container,#body-container,#appbar-nav,.share-panel-url,.share-panel-start-at-time,.share-embed-code,.share-email .share-email-recipients, .share-email .share-email-note, #player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing {
 		background: var(--second-background) !important;
 	}
 	#yt-masthead-container{
 		background: var(--main-background) !important;
 	}
-	.no-flash-error,#collaboration-settings .collaboration-settings-invite-link.disabled::before,.about-description-editor .c4-module-is-editable:hover, .about-business-email-editor .c4-module-is-editable:hover, .about-metadata-editor .c4-module-is-editable:hover,.pl-header-inlineedit .c4-module-is-editable:hover,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing,.Zm-Jw-kq-Jw-Fo,.Zm-Jw-kq-cb,.timeline-row,.vm-list-view .vm-video-list .vm-video-item,.yt-alert-panel,.html5-compatibility-table li,no-flash-error,.HPHGCHB-r-a,.yt-uix-form-input-select-content,#comment-settings .comment-settings-header,.video-dds .topline,.tabbed-page .tab.active,#creator-sidebar .creator-sidebar-section.selected > a.selected, #creator-sidebar .creator-sidebar-item.selected > a,#creator-sidebar > #creator-sidebar-section-id-dashboard.selected > h3 a, #creator-sidebar > #creator-sidebar-section-id-your-contributions.selected > h3 a,.dashboard-widget-footer .dashboard-widget-view-all-link:hover,.comment-simplebox,.comment-simplebox-text, .comment-simplebox-prompt,.share-email-preview-container,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing,.add-to-widget .create-playlist-item:hover{
+	.no-flash-error,#collaboration-settings .collaboration-settings-invite-link.disabled::before,.about-description-editor .c4-module-is-editable:hover, .about-business-email-editor .c4-module-is-editable:hover, .about-metadata-editor .c4-module-is-editable:hover,.pl-header-inlineedit .c4-module-is-editable:hover,.Zm-Jw-kq-Jw-Fo,.Zm-Jw-kq-cb,.timeline-row,.vm-list-view .vm-video-list .vm-video-item,.yt-alert-panel,.html5-compatibility-table li,no-flash-error,.HPHGCHB-r-a,.yt-uix-form-input-select-content,#comment-settings .comment-settings-header,.video-dds .topline,.tabbed-page .tab.active,#creator-sidebar .creator-sidebar-section.selected > a.selected, #creator-sidebar .creator-sidebar-item.selected > a,#creator-sidebar > #creator-sidebar-section-id-dashboard.selected > h3 a, #creator-sidebar > #creator-sidebar-section-id-your-contributions.selected > h3 a,.dashboard-widget-footer .dashboard-widget-view-all-link:hover,.comment-simplebox,.comment-simplebox-text, .comment-simplebox-prompt,.share-email-preview-container,#player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing,.add-to-widget .create-playlist-item:hover{
 		background: var(--main-background) !important;
 	}
 	/*Hover for menus and such*/
-	.add-widget-menu-item:hover .add-widget-menu-item-contents,.audio-ui-featured-row:hover,.watch-editable:hover,.vm-list-view .vm-video-metrics a:hover,.video-dds .entry:hover .highlight,.yt-uix-form-input-select-element option,#creator-sidebar .creator-sidebar-section a:hover,#player-playlist .playlist-videos-list li:hover,.add-to-widget .addto-playlist-item:hover,.yt-ui-menu-item:active, .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover, .yt-uix-button-menu .yt-uix-button-menu-item.selected, .yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item, .yt-uix-button-menu .yt-uix-button-menu-item:hover{
+	.add-widget-menu-item:hover .add-widget-menu-item-contents,.audio-ui-featured-row:hover,.watch-editable:hover,.vm-list-view .vm-video-metrics a:hover,.video-dds .entry:hover .highlight,.yt-uix-form-input-select-element option,#creator-sidebar .creator-sidebar-section a:hover,#player-playlist .playlist-videos-list li:hover,.add-to-widget .addto-playlist-item:hover,.yt-ui-menu-item:active, .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover, .yt-uix-button-menu .yt-uix-button-menu-item.selected, .yt-uix-button-menu .yt-uix-button-menu-item-highlight .yt-uix-button-menu-item, .yt-uix-button-menu .yt-uix-button-menu-item:hover, #player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing:hover{
 		background: var(--hover-background) !important;
 	}
 	.yt-card .yt-uix-button-expander:hover{

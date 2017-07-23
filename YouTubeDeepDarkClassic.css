@@ -135,7 +135,7 @@
 	}
 	/*Changing buttons in the dashboard*/
 	#creator-sidebar .studio-icon.creator-sidebar-create.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-create.selected,#creator-sidebar .studio-icon.creator-sidebar-translations-and-transcriptions.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-translations-and-transcriptions.selected,#creator-sidebar .creator-sidebar-analytics.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-analytics.selected,#creator-sidebar .studio-icon.creator-sidebar-channel.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-channel.selected,#creator-sidebar .studio-icon.creator-sidebar-community.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-community.selected,#creator-sidebar .studio-icon.creator-sidebar-live-streaming,#creator-sidebar .studio-icon.creator-sidebar-video-manager.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-video-manager.selected,#creator-sidebar .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-dashboard.selected, #creator-sidebar .studio-icon.creator-sidebar-your-contributions.selected, #creator-sidebar a:hover .studio-icon.creator-sidebar-your-contributions.selected {
-		filter: grayscale(100%) invert(100%) !important; !important;
+		filter: grayscale(100%) invert(100%) !important;
 	}
 	/*Changing icon for unavailable video*/
 	.player-unavailable div.icon.meh {

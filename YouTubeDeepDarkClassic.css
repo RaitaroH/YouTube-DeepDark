@@ -4,7 +4,7 @@
 {
 /*Check out my github for more themes https://github.com/RaitaroH*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
-/*1.8.0*/
+/*1.8.1*/
 	
 	:root
 	{
@@ -74,6 +74,16 @@
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
 		--dimer-text: #ADA8AA;
+		*/
+		
+		/*YouTube colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimer-text: #7F7F7F;
 		*/
 		
 		--border-color: var(--hover-background);

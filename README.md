@@ -60,6 +60,11 @@ Here is a composite image of different colors you can use in the stylish version
 
 IF you want this as a scipt make sure you go to the userstyles page, choose your color (the color will be changed in the code) ant then install as a script.
 
+Colors Showcase (the colors are available in the code; different colors can be used)
+Providing KDE colors in the following image.
+![alt tag](https://i.imgur.com/WoskdFg.png)
+
+
 
 # Material Version
 YouTube introduced a new material design. I do provide a separate userstyle for that:

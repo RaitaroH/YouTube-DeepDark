@@ -182,7 +182,7 @@
 		background: var(--main-background) !important;
 	}
 	/*Hover for menus and such*/
-	.add-widget-menu-item:hover .add-widget-menu-item-contents,.audio-ui-featured-row:hover,.watch-editable:hover,.vm-list-view .vm-video-metrics a:hover,.video-dds .entry:hover .highlight,.yt-uix-form-input-select-element option,#creator-sidebar .creator-sidebar-section a:hover,#player-playlist .playlist-videos-list li:hover,.add-to-widget .addto-playlist-item:hover,.yt-ui-menu-item:active{
+	.add-widget-menu-item:hover .add-widget-menu-item-contents,.audio-ui-featured-row:hover,.watch-editable:hover,.vm-list-view .vm-video-metrics a:hover,.video-dds .entry:hover .highlight,.yt-uix-form-input-select-element option,#creator-sidebar .creator-sidebar-section a:hover,#player-playlist .playlist-videos-list li:hover,.add-to-widget .addto-playlist-item:hover,.yt-ui-menu-item:active, .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover{
 		background: var(--hover-background) !important;
 	}
 	.yt-card .yt-uix-button-expander:hover{

@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.7.3*/
+/*1.7.4*/
 
 	/*Main color variables*/
 	:root
@@ -87,16 +87,16 @@
 		--yt-hovered-text-color: hsla(0, 100%, 100%, .74) !important;
 		--yt-secondary-text-color: hsla(0, 100%, 100%, .5) !important;
 		--yt-disabled-text-color: hsla(0, 100%, 100%, .26) !important;
-		--yt-placeholder-text-color: hsla(0, 100%, 100%, .5) !important;
-		--yt-border-color: hsla(0, 100%, 100%, .08) !important;
-		--yt-searchbox-border-color: hsla(0, 0%, 53.3%, .2) !important;
-		--yt-searchbox-legacy-border-color: hsl(0, 0%, 18.82%) !important;
+		--yt-placeholder-text-color: var(--dimer-text) !important;
+		--yt-border-color: var(--hover-background) !important;
+		--yt-searchbox-border-color: var(--main-background) !important;
+		--yt-searchbox-legacy-border-color: var(--main-background) !important;
 		--yt-searchbox-legacy-border-shadow-color: hsla(0, 0%, 0%, 0) !important;
-		--yt-searchbox-legacy-button-color: hsla(0, 0%, 100%, .08) !important;
-		--yt-searchbox-legacy-button-border-color: hsl(0, 0%, 18.82%) !important;
+		--yt-searchbox-legacy-button-color: var(--hover-background) !important;
+		--yt-searchbox-legacy-button-border-color: var(--main-background) !important;
 		--yt-searchbox-legacy-button-focus-color: hsla(0, 0%, 100%, .08) !important;
-		--yt-searchbox-legacy-button-hover-color: hsla(0, 0%, 100%, .09) !important;
-		--yt-searchbox-legacy-button-hover-border-color: hsl(0, 0%, 18.82%) !important;
+		--yt-searchbox-legacy-button-hover-color: var(--hover-background) !important;
+		--yt-searchbox-legacy-button-hover-border-color: var(--main-background) !important;
 		--yt-searchbox-legacy-button-icon-color: hsla(0, 100%, 100%, .5) !important;
 		--yt-commentbox-border-inactive: hsla(0, 100%, 100%, .5) !important;
 		--yt-commentbox-border-active: hsla(0, 100%, 100%, .88) !important;

@@ -4,7 +4,7 @@
 {
 /*Check out my github for more themes https://github.com/RaitaroH*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
-/*1.7.6*/
+/*1.7.7*/
 	
 	:root
 	{
@@ -226,6 +226,7 @@
 	}
 	#subscription-playlist{
 		border-color: var(--main-color) !important;
+		filter: grayscale(100%) invert(100%) !important;
 	}
 	a.yt-uix-button-epic-nav-item.partially-selected:hover, button.yt-uix-button-epic-nav-item:hover, button.yt-uix-button-epic-nav-item.selected, button.yt-uix-button-epic-nav-item.yt-uix-button-toggled, .epic-nav-item:hover, .epic-nav-item.selected, .epic-nav-item.yt-uix-button-toggled, .epic-nav-item-heading,.ytp-video-menu-item-thumbnail,.ytp-ce-element.ytp-ce-element-show:hover,.Zm-at-Zb-mi-Yb-Do .a-mi-w,.Zm-at-Zb-mi-Yb-Do .a-mi-v,.creator-editor-nav-tabs li.selected > a, .creator-editor-nav-tabs li:hover > a,.yt-uix-button-subscribe-unbranded:hover,.yt-uix-button.yt-uix-button-subscribe-branded:hover, .yt-uix-button.yt-uix-button-subscribed-branded:hover,.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled,a.yt-uix-button.yt-uix-button-epic-nav-item:hover,.tabs .tab-header:hover,.tabs .tab-header.selected,.yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before,.epic-nav-item-heading,.epic-nav-item-heading:hover{
 		border-color: var(--main-color) !important;
@@ -396,7 +397,7 @@
 	   	border-color: transparent !important;
 	   	opacity: 0.9;
 	}
-	   .browse-list-item-container .branded-page-module-title .video-thumb:hover,.creator-heart-background-hearted:hover,.yt-thumb-23:hover,.HPHGCHB-jb-b:hover,.comments .comment-item .user-photo:hover,.channel-autocomplete-list-item-thumb:hover,.video-dds .thumb:hover,.yt-thumb-34:hover,.xta .dOc:hover,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{
+	.browse-list-item-container .branded-page-module-title .video-thumb:hover,.creator-heart-background-hearted:hover,.yt-thumb-23:hover,.HPHGCHB-jb-b:hover,.comments .comment-item .user-photo:hover,.channel-autocomplete-list-item-thumb:hover,.video-dds .thumb:hover,.yt-thumb-34:hover,.xta .dOc:hover,.not-yt-legacy-css .yt-masthead-picker-photo-wrapper img:hover,#yt-masthead-user .yt-masthead-user-icon:hover,.yt-thumb-46:hover,.yt-thumb-20:hover,.comment-author-thumbnail:hover,.yt-thumb-48:hover,.yt-thumb-110:hover,.channel-header-profile-image-container:hover,.channel-header-profile-image:hover,#appbar-nav .appbar-nav-avatar{
 	   	opacity: 1 !important;
 	}
 	/*Remove a stupid border around  the circle (the background) */
@@ -405,40 +406,40 @@
 	   	border-color: transparent !important;
 	}
 	/*For the icon in the channel banner*/
-	   .channel-header-profile-image{
+	.channel-header-profile-image{
 	   	opacity: 1;
 		border-radius: 100% !important;
 	   	background: transparent !important;
 	  	 border-color: transparent !important;
 	}
-	   .channel-header-profile-image-container{
+	.channel-header-profile-image-container{
 		 top: 10px !important;
 	   	background: transparent !important;
 	   	border-color: transparent !important;
 	}
-/*Circle gets cut off in the channels page*/
-	   .channels-content-item.channel-shelf-item{
+	/*Circle gets cut off in the channels page*/
+	.channels-content-item.channel-shelf-item{
 		 width: 130px !important;
 	}
-/*Stuff for the author logo in the title of the video*/
-	   .ytp-title-channel-logo{
+	/*Stuff for the author logo in the title of the video*/
+	.ytp-title-channel-logo{
 		 margin-top: 12px !important;
 		 padding-top: 0 !important;
 		 border-radius: 100% !important;
-	   opacity: 0.9 !important;
+	opacity: 0.9 !important;
 	}
-	   .ytp-big-mode .ytp-title-channel-logo{
+	.ytp-big-mode .ytp-title-channel-logo{
 		 margin-top: 18px !important;
 		 padding-top: 0 !important;
 		 border-radius: 100% !important;
-	   opacity: 0.9 !important;
+		opacity: 0.9 !important;
 	}
-	   .ytp-big-mode .ytp-title-channel-logo:hover,.ytp-title-channel-logo:hover{
-	   opacity: 1 !important;
+	.ytp-big-mode .ytp-title-channel-logo:hover,.ytp-title-channel-logo:hover{
+		opacity: 1 !important;
 	}
-/*Thumbnails opacity section - removed this because it seems youtube implemented it by default*/
-/*Opacity for thumbnails. For watched is 0.9 on hover because by default they are 0.7 so I want to keep a drustic change on hover to the minimum.*/
-/*
+	/*Thumbnails opacity section - removed this because it seems youtube implemented it by default*/
+	/*Opacity for thumbnails. For watched is 0.9 on hover because by default they are 0.7 so I want to keep a drustic change on hover to the minimum.*/
+	/*
 	   .yt-uix-simple-thumb-related > img:hover, .yt-lockup.yt-lockup-tile .yt-lockup-thumbnail:hover,.yt-lockup-grid .yt-lockup-thumbnail:hover,#player-playlist .playlist-video .video-thumb,.yt-thumb:hover,.exp-wn-big-thumbs-v3 .related-list-item .thumb-wrapper:hover,.exp-wn-big-thumbs-v3 .related-list-item .yt-pl-thumb .yt-thumb:hover{
 	  opacity: 1 !important;
 	}
@@ -449,24 +450,24 @@
 	   opacity: 0.8 !important;
 	}
 */
-/*Video section*/
+	/*Video section*/
 	/*Video title hover in html5 video*/
-		 .html5-video-player a:hover{
-    color: var(--main-text) !important;
-    text-shadow: none !important;
+	.html5-video-player a:hover{
+    		color: var(--main-text) !important;
+    		text-shadow: none !important;
 	}
-/* Code takken from https://userstyles.org/styles/95280 */
-/* scrubber button */
-    .html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .ytp-swatch-background-color, .ytp-swatch-background-color-secondary {
-    background: var(--main-color) !important;
-}
-/* progress bar */
-    .html5-play-progress, .ytp-play-progress {
-    background: var(--main-color) !important; 
-}
-   .ytp-volume-slider-track, .ytp-volume-slider-handle:before {
-   background: var(--main-color) !important;
-   z-index: -117;
+	/* Code takken from https://userstyles.org/styles/95280 */
+	/* scrubber button */
+	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .ytp-swatch-background-color, .ytp-swatch-background-color-secondary {
+    		background: var(--main-color) !important;
+	}
+	/* progress bar */
+	.html5-play-progress, .ytp-play-progress {
+    		background: var(--main-color) !important; 
+	}
+	.ytp-volume-slider-track, .ytp-volume-slider-handle:before {
+  		background: var(--main-color) !important;
+   		z-index: -117;
 }
    .ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after {
    background-color: var(--main-color) !important;
@@ -542,135 +543,6 @@
 		background: var(--second-background) !important;
 		border-color: var(--main-background) !important;
    color: var(--main-text) !important;
-}
-/*New Material Design for YouTube*/
-/*Logo, ahh...*/
-   #you-path,path#you-path,.ytd-topbar-logo-renderer-0 #logo-icon.ytd-topbar-logo-renderer,.ytd-topbar-logo-renderer-0 #logo-icon.ytd-topbar-logo-renderer #you-path{
-   fill: var(--dimer-text) !important;
-}
-#tube-paths > path:nth-child(2),.ytd-topbar-logo-renderer-0 #logo-icon.ytd-topbar-logo-renderer   #tube-paths {
-    fill: var(--main-color) !important;
-}
-.ytd-topbar-logo-renderer-1 #logo-icon.ytd-topbar-logo-renderer   #tube-paths,.ytd-topbar-logo-renderer-0 #logo-icon.ytd-topbar-logo-renderer   #tube-paths {
-  fill: var(--main-color) !important;
-}
-
-.ytd-topbar-logo-renderer-1 #logo-icon.ytd-topbar-logo-renderer   #you-path,.ytd-topbar-logo-renderer-0 #logo-icon.ytd-topbar-logo-renderer   #you-path {
-  fill: var(--dimer-text) !important;
-}
-/*Background section*/
-   .yt-live-chat-renderer-0,.yt-live-chat-header-renderer-0,#watch-sidebar-live-chat .yt-uix-expander-collapsed,.yt-live-chat-message-input-renderer-0,.ytd-app-1 #guide-content.ytd-app,.ytd-app-0 #guide-content.ytd-app,.ytd-browse-0,.ytd-page-manager-0 > .ytd-page-manager {
-   background: var(--main-background) !important;
-}
-   .ytd-sharing-renderer-0,.ytd-modal-with-title-and-button-renderer-0,.ytd-account-settings-0,.ytd-multi-page-menu-renderer-0,.paper-menu-0{
-   background: var(--main-background) !important;
-}
-   .ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-consent-bump-renderer-0,.ytd-masthead-0 #container.ytd-masthead {
-   background: var(--second-background) !important;
-}
-   .ytd-menu-navigation-item-renderer-0 a.ytd-menu-navigation-item-renderer:hover,.ytd-menu-service-item-renderer-0:hover,paper-item.style-scope.ytd-account-settings.x-scope.paper-item-0:hover,.ytd-guide-entry-renderer-0 #endpoint.ytd-guide-entry-renderer:hover{
-   background: var(--hover-background) !important;
-}
-   .ytd-badge-supported-renderer-0 .badge-style-type-simple.ytd-badge-supported-renderer,.yt-emoji-picker-category-renderer-0 yt-formatted-string.yt-emoji-picker-category-renderer,.ytd-badge-supported-renderer-1 .badge-style-type-simple.ytd-badge-supported-renderer {
-   background: transparent !important;
-   color: var(--main-color) !important;
-}
-   .yt-live-chat-message-renderer-0,.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer {
-   background: transparent !important;
-}
-/*Border section*/
-   .ytd-sharing-renderer-0 #share-target-wrapper.ytd-sharing-renderer,.ytd-sharing-renderer-0 #start-at-wrapper.ytd-sharing-renderer,.ytd-modal-with-title-and-button-renderer-0 .buttons.ytd-modal-with-title-and-button-renderer,.ytd-search-sub-menu-renderer-0,.ytd-app-1 app-drawer.ytd-app:not([persistent]) #header.ytd-app,.ytd-compact-autoplay-renderer-0,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.ytd-video-secondary-info-renderer-0,.ytd-video-primary-info-renderer-0,.ytd-guide-renderer-0 #sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child),.ytd-app-0 app-drawer.ytd-app:not([persistent]) #header.ytd-app,.ytd-section-list-renderer-0 #contents.ytd-section-list-renderer > *.ytd-section-list-renderer:not(:last-child),.ytd-consent-bump-renderer-0, .caption-queue td, .caption-queue th {
-   border-color: var(--border-color) !important;
-}
-   .yt-live-chat-text-input-field-renderer-0 #unfocused.yt-live-chat-text-input-field-renderer {
-   background: var(--border-color) !important;
-}
-   .paper-input-container-1 .focused-line.paper-input-container,.paper-input-container-2 .focused-line.paper-input-container,.yt-live-chat-text-input-field-renderer-0 #focused.yt-live-chat-text-input-field-renderer {
-   background: var(--main-color) !important;
-}
-/*Search bar*/
-   .ytp-sb-classic .ytp-sb-count, .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer,.sbsb_a,.sbdd_b,.ytd-searchbox-0 #container.ytd-searchbox {
-   background: var(--main-background) !important;
-   border: none !important;
-}
-   .ytd-searchbox-0 #container.ytd-searchbox:hover {
-   background: var(--border-color) !important;
-}
-   li.sbsb_c.gsfs:hover{
-   background: var(--hover-background) !important;
-}
-   .paper-input-container-0 .input-content.paper-input-container input, .paper-input-container-0 .input-content.paper-input-container textarea, .paper-input-container-0 .input-content.paper-input-container iron-autogrow-textarea, .paper-input-container-0 .input-content.paper-input-container .paper-input-input,.ytd-searchbox-0  input {
-   color: var(--dim-white) !important;
-}
-/*Buttons section*/
-   .ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text,.ytp-sb-unsubscribe,#continuations > yt-next-continuation > paper-button,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer {
-		background: var(--second-background) !important;
-		border-color: var(--main-background) !important;
-}
-   .ytp-sb-classic .ytp-sb-unsubscribe:hover,.ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text:hover,.ytp-sb-unsubscribe:hover,#continuations > yt-next-continuation > paper-button:hover,.yt-horizontal-list-renderer-0 .arrow.yt-horizontal-list-renderer:hover {
-		background: var(--hover-background) !important;
-		transition: .1s ease-in !important;
-}
-   .iron-icon-3,.paper-button-0  *,.iron-icon-2,.ytd-topbar-logo-renderer-0 #guide-icon.ytd-topbar-logo-renderer, .iron-icon-1 {
-   fill: var(--dimer-text) !important;
-}
-   .ytp-sb-classic .ytp-sb-count, .ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text,.ytp-sb-unsubscribe,.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0 #action-buttons.yt-live-chat-header-renderer > *.yt-live-chat-header-renderer, .yt-live-chat-header-renderer-0 #overflow.yt-live-chat-header-renderer,.ytd-video-meta-block-0 #metadata-line.ytd-video-meta-block {
-   color: var(--dimer-text) !important;
-}
-   .ytd-guide-entry-renderer-0[active] .guide-icon.ytd-guide-entry-renderer {
-   color: var(--main-color) !important;
-}
-/*For the hover in the menus*/
-.ytd-guide-entry-renderer-0 .title.ytd-guide-entry-renderer {
-    line-height: 4.0rem !important;
-}
-.ytd-guide-entry-renderer-0 .title.ytd-guide-entry-renderer:hover {
-	color: var(--main-color) !important;
-}
-
-/*Size for subscribe buttons*/
-.ytp-sb-subscribe, .ytp-sb-unsubscribe {
-    padding: 6px 12px !important;
-    font-size: 12px !important;
-}
-/*Blue buttons*/
-   .ytp-sb-classic .ytp-sb-subscribe .ytp-sb-text,.ytp-sb-subscribe,.ytd-button-renderer-3.style-brand[is-paper-button],.ytd-button-renderer-5.style-destructive[is-paper-button],.ytd-button-renderer-3.style-destructive[is-paper-button],.ytd-button-renderer-1.style-dark[is-paper-button],.ytd-button-renderer-2.style-dark[is-paper-button],.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer,.ytd-button-renderer-2.style-brand[is-paper-button],.ytd-button-renderer-2.style-destructive[is-paper-button],.ytd-button-renderer-1.style-brand[is-paper-button],.ytd-button-renderer-0.style-destructive[is-paper-button] {
-  /* background: rgba(0,173,238,.9) !important;*/
-   background: var(--main-color) !important;
-   opacity: 0.9 !important;
-}
-   .ytp-sb-classic .ytp-sb-subscribe .ytp-sb-text:hover,.ytp-sb-subscribe:hover,.ytd-button-renderer-3.style-brand[is-paper-button]:hover,.ytd-button-renderer-5.style-destructive[is-paper-button]:hover,.ytd-button-renderer-3.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-dark[is-paper-button]:hover,.ytd-button-renderer-2.style-dark[is-paper-button]:hover,.yt-live-chat-item-list-renderer-1 paper-icon-button.yt-live-chat-item-list-renderer:hover,.ytd-button-renderer-2.style-brand[is-paper-button]:hover,.ytd-button-renderer-2.style-destructive[is-paper-button]:hover,.ytd-button-renderer-1.style-brand[is-paper-button]:hover,.ytd-button-renderer-0.style-destructive[is-paper-button]:hover{
-  /* background: rgba(0,173,238,1) !important;*/
-   background: var(--main-color) !important;
-   opacity: 1 !important;
-} 
-/*Auto play slider*/
-   .paper-toggle-button-0[checked]:not([disabled]) .toggle-button.paper-toggle-button,.paper-toggle-button-0[checked]:not([disabled]) .toggle-bar.paper-toggle-button{
-   background: var(--main-color) !important;
-}
-   .paper-toggle-button-0 .toggle-button.paper-toggle-button,.paper-toggle-button-0 .toggle-bar.paper-toggle-button{
-   background-color: var(--dimer-text) !important;
-}
-/*Colors for links and such*/
-   a,.ytd-sharing-renderer-0 yt-formatted-string.ytd-sharing-renderer,.ytd-modal-with-title-and-button-renderer-0 #content.ytd-modal-with-title-and-button-renderer,.ytd-metadata-row-renderer-0 .content.ytd-metadata-row-renderer,.paper-button-2,.ytd-compact-autoplay-renderer-0 #upnext.ytd-compact-autoplay-renderer,.ytd-search-sub-menu-renderer-0 #result-count.ytd-search-sub-menu-renderer,.yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer,.paper-button-3,.ytd-comment-simplebox-renderer-0 #simplebox-placeholder.ytd-comment-simplebox-renderer,.yt-dropdown-menu-0 #icon-label.yt-dropdown-menu,.ytd-comments-header-renderer-0 yt-formatted-string.ytd-comments-header-renderer,.yt-view-count-renderer-0 yt-formatted-string.yt-view-count-renderer,.ytd-video-secondary-info-renderer-0 .date.ytd-video-secondary-info-renderer,.ytd-guide-signin-promo-renderer-0 yt-formatted-string.ytd-guide-signin-promo-renderer, .caption-queue{
-   color: var(--dimer-text) !important;
-}
-   .paper-input-container-2 .input-content.paper-input-container  input,.ytd-sharing-renderer-0 .action-button.ytd-sharing-renderer,.paper-input-container-1 .input-content.paper-input-container  input, .paper-input-container-1 .input-content.paper-input-container  textarea, .paper-input-container-1 .input-content.paper-input-container  iron-autogrow-textarea, .paper-input-container-1 .input-content.paper-input-container  .paper-input-input,.ytd-sharing-renderer-0 #share-label.ytd-sharing-renderer,.ytd-modal-with-title-and-button-renderer-0 #title.ytd-modal-with-title-and-button-renderer,.yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer,.ytd-menu-navigation-item-renderer-0 yt-formatted-string.ytd-menu-navigation-item-renderer,.ytd-menu-service-item-renderer-0 yt-formatted-string.ytd-menu-service-item-renderer,.yt-live-chat-text-message-renderer-0 #message.yt-live-chat-text-message-renderer,.yt-live-chat-header-renderer-0,.yt-live-chat-renderer-0,.ytd-guide-entry-renderer-0 .title.ytd-guide-entry-renderer,.ytd-button-renderer-2 #button.ytd-button-renderer,.ytd-video-primary-info-renderer-0 .title.ytd-video-primary-info-renderer,.ytd-video-secondary-info-renderer-0 .content.ytd-video-secondary-info-renderer,.ytd-comment-renderer-0 .content-text.ytd-comment-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-search-filter-renderer-0 yt-formatted-string.ytd-search-filter-renderer,.ytd-button-renderer-0 #button.ytd-button-renderer,.ytd-account-settings-0 paper-item.ytd-account-settings,.paper-button-1  *,.ytd-button-renderer-1 #button.ytd-button-renderer,.ytd-consent-bump-renderer-0 #alert-message.ytd-consent-bump-renderer, .caption-queue > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1){
-   color: var(--dim-white) !important;
-   text-shadow: none  !important;
-}
-   .ytd-sharing-renderer-0 .action-button.ytd-sharing-renderer:hover,a:hover,.ytd-comment-action-buttons-renderer-0 #vote-count.ytd-comment-action-buttons-renderer,.ytd-guide-section-renderer-0 #guide-section-title.ytd-guide-section-renderer{
-   color: var(--main-color) !important;
-}
-   .yt-endpoint-2,.yt-endpoint-5,.ytd-shelf-renderer-0 #title.ytd-shelf-renderer,.ytd-video-meta-block-0 #byline.ytd-video-meta-block,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer,.yt-endpoint-1,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer {
-  /* color: rgba(0,173,238,.9) !important;*/
-   color: var(--main-color) !important;
-   opacity: 0.9 !important;
-}                                 
-   .ytd-compact-video-renderer-0 #video-title.ytd-compact-video-renderer:hover,.yt-endpoint-2:hover,.yt-endpoint-5:hover,.yt-live-chat-text-message-renderer-0 #content.yt-live-chat-text-message-renderer,.ytd-video-meta-block-0 #byline.ytd-video-meta-block:hover,.ytd-comment-renderer-0 .more-button.ytd-comment-renderer:hover,.paper-button-3:hover,.ytd-video-secondary-info-renderer-0 .more-button.ytd-video-secondary-info-renderer:hover, .ytd-video-secondary-info-renderer-0 .less-button.ytd-video-secondary-info-renderer:hover,.yt-endpoint-1:hover,.ytd-comment-renderer-0 .author-text.ytd-comment-renderer:hover, table.contribution-sections td span.status {
-  /* color: rgba(0,173,238,1) !important;*/
-   color: var(--main-color) !important;
-   opacity: 1 !important;
 }
 
 }

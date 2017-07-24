@@ -5,7 +5,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.8.4*/
+/*1.8.5*/
 	
 	/*Main color variables*/
 	:root
@@ -238,7 +238,7 @@
 	}
 	#subscription-playlist{
 		border-color: var(--main-color) !important;
-		filter: grayscale(100%) invert(100%) !important;
+		/*filter: grayscale(100%) invert(100%) !important;*/
 	}
 	a.yt-uix-button-epic-nav-item.partially-selected:hover, button.yt-uix-button-epic-nav-item:hover, button.yt-uix-button-epic-nav-item.selected, button.yt-uix-button-epic-nav-item.yt-uix-button-toggled, .epic-nav-item:hover, .epic-nav-item.selected, .epic-nav-item.yt-uix-button-toggled, .epic-nav-item-heading,.ytp-video-menu-item-thumbnail,.ytp-ce-element.ytp-ce-element-show:hover,.Zm-at-Zb-mi-Yb-Do .a-mi-w,.Zm-at-Zb-mi-Yb-Do .a-mi-v,.creator-editor-nav-tabs li.selected > a, .creator-editor-nav-tabs li:hover > a,.yt-uix-button-subscribe-unbranded:hover,.yt-uix-button.yt-uix-button-subscribe-branded:hover, .yt-uix-button.yt-uix-button-subscribed-branded:hover,.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled,a.yt-uix-button.yt-uix-button-epic-nav-item:hover,.tabs .tab-header:hover,.tabs .tab-header.selected,.yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before,.epic-nav-item-heading,.epic-nav-item-heading:hover{
 		border-color: var(--main-color) !important;

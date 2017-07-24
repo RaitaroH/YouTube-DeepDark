@@ -16,9 +16,12 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.8.0
+// @version       1.7.7
 // @grant         GM_getValue
 // @grant         GM_setValue
+// Changelog: 1.8.3 swich account background fix
+// Changelog: 1.8.2 video section update
+// Changelog: 1.8.1 added youtube colors
 // Changelog: 1.8.0 fixing more new stuff YouTube changes
 // Changelog: 1.7.9 background color changed for appbar-nav
 // Changelog: 1.7.8 hover for currently watching fixed
@@ -83,11 +86,11 @@
 // Changelog: What about the earlier versions? I released the code at 1.2.1
 // ==/UserScript==
 (function() {var css = [
-	"@namespace url(http://www.w3.org/1999/xhtml);",
-	"/*Check out my github for more themes https://github.com/RaitaroH*/",
-	"/*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/",
-	"/*1.8.0*/",
+"/*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/",
+	"",
+	"/*1.8.3*/",
 	"	",
+	"	/*Main color variables*/",
 	"	:root",
 	"	{",
 	"		/*User colors*/",
@@ -156,6 +159,16 @@
 	"		--hover-background: #484B51;",
 	"		--main-text: #FFFFFF;",
 	"		--dimer-text: #ADA8AA;",
+	"		*/",
+	"		",
+	"		/*YouTube colors*/",
+	"		/*",
+	"		--main-color: #E52117;",
+	"		--main-background: #111111;",
+	"		--second-background: #232323;",
+	"		--hover-background: #343434;",
+	"		--main-text: #E1E1E1;",
+	"		--dimer-text: #7F7F7F;",
 	"		*/",
 	"		",
 	"		--border-color: var(--hover-background);",
@@ -566,7 +579,17 @@
 	"   .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg {",
 	"   fill: var(--main-color) !important;",
 	"}",
-	"/*Added because of this: https://forum.userstyles.org/discussion/53368/solved-fix-this-annoying-youtube-tab-select-bug-thats-been-there-forever#latest*/",
+	"	.resume-playback-progress-bar",
+	"	{",
+	"		background: var(--main-color) !important;",
+	"	}",
+	"  	.ytp-chrome-controls .ytp-button[aria-pressed]::after",
+	"	{",
+	"		background-color: var(--main-color) !important;",
+	"	}",
+	"	",
+	"",
+	"	/*Added because of this: https://forum.userstyles.org/discussion/53368/solved-fix-this-annoying-youtube-tab-select-bug-thats-been-there-forever#latest*/",
 	"		.ytp-keyboard-focus .ytp-progress-bar:focus{",
 	"		box-shadow: none !important;",
 	"	}",
@@ -625,7 +648,17 @@
 	"		background: var(--second-background) !important;",
 	"		border-color: var(--main-background) !important;",
 	"   color: var(--main-text) !important;",
-	"}"
+	"}",
+	"	",
+	"	/*Swich account*/",
+	"	.yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header, .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header,.yt-masthead-account-picker-option",
+	"	{",
+	"   		background-color: var(--second-background) !important;",
+	"	}",
+	"	.yt-masthead-account-picker-option:hover ",
+	"	{",
+	"    		background: var(--hover-background) !important;",
+	"	}"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);

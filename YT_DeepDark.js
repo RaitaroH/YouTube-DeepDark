@@ -16,7 +16,7 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
-// @version       1.7.7
+// @version       1.8.3
 // @grant         GM_getValue
 // @grant         GM_setValue
 // Changelog: 1.8.3 swich account background fix

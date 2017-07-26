@@ -5,7 +5,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.8.6*/
+/*1.8.7*/
 	
 	/*Main color variables*/
 	:root
@@ -502,7 +502,12 @@
 	{
 		background-color: var(--main-color) !important;
 	}
-	
+	/*Text*/
+	.iv-branding .iv-branding-context-name, .ytp-menuitem-label, .ytp-menuitem-label-count, .ytp-menuitem-content, .ytp-menu-label-secondary, .ytp-panel-header
+	{
+		color: var(--main-text) !important;
+		text-shadow: none !important;
+	}
 
 	/*Added because of this: https://forum.userstyles.org/discussion/53368/solved-fix-this-annoying-youtube-tab-select-bug-thats-been-there-forever#latest*/
 		.ytp-keyboard-focus .ytp-progress-bar:focus{

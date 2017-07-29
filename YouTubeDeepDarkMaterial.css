@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.8.4*/
+/*1.8.5*/
 
 	/*Main color variables*/
 	:root
@@ -517,7 +517,7 @@
 		color: var(--main-color) !important;
 	}
 	/*Title hover in menus*/
- 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu, ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,ytd-playlist-add-to-option-renderer:hover #label.ytd-playlist-add-to-option-renderer,ytd-playlist-add-to-option-renderer:hover yt-icon.ytd-playlist-add-to-option-renderer, paper-item.ytd-account-settings:hover .label.ytd-account-settings, paper-item.ytd-account-settings:hover .style-scope.ytd-account-settings, paper-item.style-scope:nth-child(7):hover, paper-item.ytd-account-settings:hover, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover
+ 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu, ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,ytd-playlist-add-to-option-renderer:hover #label.ytd-playlist-add-to-option-renderer,ytd-playlist-add-to-option-renderer:hover yt-icon.ytd-playlist-add-to-option-renderer, paper-item.ytd-account-settings:hover .label.ytd-account-settings, paper-item.ytd-account-settings:hover .style-scope.ytd-account-settings, paper-item.style-scope:nth-child(7):hover, paper-item.ytd-account-settings:hover, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover, #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover, #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover yt-icon.ytd-toggle-theme-compact-link-renderer
 	{
 		color: var(--main-color) !important;
 	}

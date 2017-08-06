@@ -5,7 +5,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.8.9*/
+/*1.9.0*/
 	
 	/*Main color variables*/
 	:root
@@ -87,6 +87,16 @@
 		--main-text: #E1E1E1;
 		--dimer-text: #7F7F7F;
 		*/
+		
+		/*Mint-Y-Dark colors*/
+		/*
+		--main-color: #9AB87C;
+		--main-background: #2F2F2F;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #FFFFFF;
+		--dimer-text: #D5DADA;
+		*/		
 		
 		--border-color: var(--hover-background);
 		--dim-white: rgba(255, 255, 255, .95);

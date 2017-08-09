@@ -871,7 +871,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-input-field-renderer-1 #label.yt-live-chat-text-input-field-renderer
+	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-input-field-renderer-1 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #timestamp.yt-live-chat-text-message-renderer
 	{
 		color: var(--dimer-text) !important;
 	}

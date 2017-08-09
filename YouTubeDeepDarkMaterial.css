@@ -897,7 +897,7 @@
 	{
 		border-color: var(--main-color);
 	}
-	/*Sing in chat*/
+	/*Sign in chat*/
 	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1
 	{
 		color: var(--main-text) !important;

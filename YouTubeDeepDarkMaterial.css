@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.8.7*/
+/*1.8.8*/
 
 	/*Main color variables*/
 	:root
@@ -897,7 +897,25 @@
 	{
 		border-color: var(--main-color);
 	}
-	
+	/*Sgin in chat*/
+	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1
+	{
+		color: var(--main-text) !important;
+		background-color: var(--second-background) !important;
+	}
+	.yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer, .yt-live-chat-message-renderer-1 #subtext.yt-live-chat-message-renderer
+	{
+		color: var(--dimer-text) !important;
+	}
+	.ytd-button-renderer-1.style-dark[is-paper-button]:hover, .ytd-button-renderer-0.style-dark[is-paper-button]:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.ytd-button-renderer-1.style-dark[is-paper-button], .ytd-button-renderer-0.style-dark[is-paper-button]
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}	
 	
 	/*Resizing the top bar and it's spacing to get some extra vertical space*/
 	/*

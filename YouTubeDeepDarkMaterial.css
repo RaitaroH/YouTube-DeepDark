@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.8.8*/
+/*1.8.9*/
 
 	/*Main color variables*/
 	:root
@@ -139,7 +139,7 @@
 		--yt-icon-disabled-color: hsla(0, 100%, 100%, .26) !important;
 		--yt-endpoint-color: hsl(0, 0%, 53.3%) !important;
 		--yt-expand-color: hsla(0, 0%, 100%, .6) !important;
-		--yt-metadata-color: hsl(0, 0%, 53.3%) !important;
+		--yt-metadata-color: var(--dimer-text) !important;
 		--yt-channel-owner: hsla(0, 100%, 100%, .88) !important;
 		--yt-autoplay-toggle: hsl(0, 0%, 93.3%) !important;
 		--yt-playlist-background-header: hsla(0, 0%, 53.3%, .4) !important;
@@ -216,6 +216,17 @@
 		--paper-toggle-button-checked-button-color: rgb(255,255,255) !important;
 		--paper-toggle-button-unchecked-bar-color: var(--dimer-text) !important;
 		--paper-radio-button-checked-color: var(--main-color) !important;
+		--yt-disabled-text-color: var(--dimer-text) !important;
+		--yt-disabled-paper-button-color: var(--yt-disabled-text-color);
+		--yt-brand-paper-button-color: var(--main-color) !important;
+		--yt-paper-radio-button-checked-color: var(--dimer-text) !important;
+		--yt-toggle-color: var(--main-color) !important;
+		--yt-formatted-string-deemphasize-color: var(--dimer-text) !important;
+		--yt-moderation-panel-likely-spam-divider: var(--hover-background) !important;
+		--yt-backstage-cancel-background-color: var(--main-text) !important;
+		--yt-backstage-cancel-color: var(--main-text) !important;
+		--yt-offer-background-color: var(--dimer-text) !important;
+
 	}
 	
 	/*If you would like a light theme uncomment this code, comment the code above and use the YouTube light (comment user, uncomment youtube light colors)*/
@@ -251,7 +262,7 @@
 		--yt-icon-active-color: var(--main-color) !important;
 		--yt-icon-disabled-color: hsla(0, 0%, 6.7%, .6) !important;
 		--yt-expand-color: hsla(0, 0%, 6.7%, .6) !important;
-		--yt-metadata-color: hsla(0, 0%, 6.7%, .6) !important;
+		--yt-metadata-color: var(--dimer-text) !important;
 		--yt-toggle-color: hsl(206.1, 79.3%, 52.7%) !important;
 		--yt-playlist-background-header: hsl(0, 0%, 93.3%) !important;
 		--yt-playlist-background-item: hsla(0, 0%, 93.3%, .6) !important;
@@ -323,11 +334,20 @@
 		--yt-swatch-logo-override: rgb(136, 136, 136) !important;
 		--yt-lightsource-section1-color: var(--yt-channel-header-background) !important;
 		--yt-lightsource-primary-title-color: var(--yt-primary-text-color) !important;
-		--yt-lightsource-secondary-title-color: var(--yt-metadata-color) !important;
-		--paper-tabs-selection-bar-color: var(--yt-lightsource-secondary-title-color) !important;
 		--paper-toggle-button-checked-button-color: var(--main-text) !important;
 		--paper-toggle-button-unchecked-bar-color: var(--dimer-text) !important;
 		--paper-radio-button-checked-color: var(--main-color) !important;
+		--yt-featured-channel-title-text-color: var(--dimer-text) !important;
+		--yt-disabled-text-color: var(--dimer-text) !important;
+		--yt-disabled-paper-button-color: var(--yt-disabled-text-color);
+		--yt-brand-paper-button-color: var(--main-color) !important;
+		--yt-paper-radio-button-checked-color: var(--dimer-text) !important;
+		--yt-toggle-color: var(--main-color) !important;
+		--yt-formatted-string-deemphasize-color: var(--dimer-text) !important;
+		--yt-moderation-panel-likely-spam-divider: var(--hover-background) !important;
+		--yt-backstage-cancel-background-color: var(--main-text) !important;
+		--yt-backstage-cancel-color: var(--main-text) !important;
+		--yt-offer-background-color: var(--dimer-text) !important;
   }
 	*/
 	
@@ -506,7 +526,7 @@
 	}
  	
 	/*Hover section*/
-	#video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,ytd-search-filter-renderer yt-formatted-string.ytd-search-filter-renderer:hover, #footer.ytd-guide-renderer #guide-links-primary a:hover, #footer.ytd-guide-renderer #guide-links-secondary a:hover, #name.ytd-author-comment-badge-renderer:hover
+	#video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,ytd-search-filter-renderer yt-formatted-string.ytd-search-filter-renderer:hover, #footer.ytd-guide-renderer #guide-links-primary a:hover, #footer.ytd-guide-renderer #guide-links-secondary a:hover, #name.ytd-author-comment-badge-renderer:hover, .title.ytd-mini-channel-renderer:hover
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;

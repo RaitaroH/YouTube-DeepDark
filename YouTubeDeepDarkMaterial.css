@@ -5,7 +5,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.0*/
+/*1.9.1*/
 
 	/*Main color variables*/
 	:root
@@ -882,9 +882,10 @@
 		color: var(--main-color) !important;
 		opacity: 1 !important;
 	}
-	.ytp-ce-channel-metadata.yt-ui-ellipsis.yt-ui-ellipsis-3 {
+	.ytp-ce-channel-metadata.yt-ui-ellipsis.yt-ui-ellipsis-3
+	{
 		background: transparent;
-		color: var(--dimer-text);
+		color: var(--dimer-text) !important;
 	}
 	/*cards border color*/
 	.iv-card-message
@@ -919,5 +920,11 @@
 	{
     		background-color: var(--main-color) !important;
 	}
+	
 
+	/*Recolored sidepane icons and filter button*/
+	.guide-icon.ytd-guide-entry-renderer, paper-button.ytd-toggle-button-renderer
+	{
+		color: var(--dimer-text) !important;
+	}
 }

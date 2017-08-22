@@ -922,8 +922,8 @@
 	}
 	
 
-	/*Recolored sidepane icons and filter button*/
-	.guide-icon.ytd-guide-entry-renderer, paper-button.ytd-toggle-button-renderer
+	/*Recolored sidepane icons, menu icons and filter button*/
+	.guide-icon.ytd-guide-entry-renderer, paper-button.ytd-toggle-button-renderer, yt-icon.ytd-compact-link-renderer, yt-icon.ytd-toggle-theme-compact-link-renderer
 	{
 		color: var(--dimer-text) !important;
 	}

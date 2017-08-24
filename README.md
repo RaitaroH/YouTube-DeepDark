@@ -9,7 +9,7 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 Code also taken from [youtube-custom-colors-video-progress-bar
 ](https://userstyles.org/styles/95280/youtube-custom-colors-video-progress-bar) for the video theming.
 
-You can install the .js version for the classic style from [here](https://greasyfork.org/en/scripts/25333-youtube-deepdark).
+You can install the .js version for the classic style from [greasyfork](https://greasyfork.org/en/scripts/25333-youtube-deepdark) or from [github](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_DeepDark.js).
 
 Theme as a userstyle [here](https://userstyles.org/styles/135831/youtube-deepdark).
 

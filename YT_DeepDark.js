@@ -16,12 +16,9 @@
 // @exclude       https://www.youtube.com/yt/*
 // @exclude       https://www.youtube.com/t/*
 // @run-at        document-start
+// @version       1.9.4
 // @grant         GM_getValue
 // @grant         GM_setValue
-// @grant         GM_addStyle
-// @updateURL     https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_DeepDark.js
-// @downloadURL   https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_DeepDark.js
-// @version       1.9.4
 // Changelog: 1.9.4 youtube red logo
 // Changelog: 1.9.3 rethemed login in chat
 // Changelog: 1.9.2 rethemed the chat (for the 4th time; come on youtube)

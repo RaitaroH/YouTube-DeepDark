@@ -15,6 +15,9 @@ Theme as a userstyle [here](https://userstyles.org/styles/135831/youtube-deepdar
 
 Material version [here](https://userstyles.org/styles/144962/youtube-deepdark-material).
 
+### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
+
+
 # Classic Version
 Channel page
 

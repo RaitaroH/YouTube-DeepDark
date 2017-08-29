@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.2*/
+/*1.9.3*/
 
 	/*Main color variables*/
 	:root
@@ -595,6 +595,11 @@
 		margin-right: 20px !important;
 	}
 	
+	/*New logo*/
+	#lozenge-path
+	{
+		fill: var(--main-color) !important;
+	}
 	/*Logo hover*/
 	#logo-icon:hover 
 	{

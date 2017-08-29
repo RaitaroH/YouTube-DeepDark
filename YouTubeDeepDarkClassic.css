@@ -3,7 +3,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.5*/
+/*1.9.6*/
 	
 	/*Main color variables*/
 	:root
@@ -180,8 +180,13 @@
 	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/
 		.exp-responsive #yt-masthead #logo-container,#masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo{
 		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Logo.png) !important;
-		background-size: 100% !important;
+		background-size: 75% !important;
+		background-position: right !important;
 		opacity: 0.65 !important;
+	}
+	#yt-masthead .yt-masthead-logo-container #logo-container
+	{
+		margin-left: -20px !important;
 	}
 	.exp-responsive #yt-masthead #logo-container:hover,#masthead-logo:hover,#yt-masthead #logo-container .logo:hover,#footer-logo .footer-logo-icon:hover,.footer-logo:hover{
     		opacity: 0.75 !important;

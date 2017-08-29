@@ -3,7 +3,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.6*/
+/*1.9.7*/
 	
 	/*Main color variables*/
 	:root
@@ -485,7 +485,7 @@
 	   .watched .video-thumb:hover{
 	   opacity: 0.8 !important;
 	}
-*/
+	*/
 	/*Video section*/
 	/*Video title hover in html5 video*/
 	.html5-video-player a:hover{
@@ -504,22 +504,26 @@
 	.ytp-volume-slider-track, .ytp-volume-slider-handle:before {
   		background: var(--main-color) !important;
    		z-index: -117;
-}
-   .ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after {
-   background-color: var(--main-color) !important;
-}
-   .ytp-swatch-color {
-   color: var(--main-color) !important;
-}
-   .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
-   background: var(--main-color) !important;
-}
-   .ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled="true"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge {
-   fill: var(--main-color) !important;
-}
-   .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg {
-   fill: var(--main-color) !important;
-}
+	}
+	.ytp-settings-button.ytp-hd-quality-badge::after, .ytp-settings-button.ytp-4k-quality-badge::after, .ytp-settings-button.ytp-5k-quality-badge::after, .ytp-settings-button.ytp-8k-quality-badge::after, .ytp-settings-button.ytp-3d-badge::after {
+	   background-color: var(--main-color) !important;
+	}
+	.ytp-swatch-color {
+	   color: var(--main-color) !important;
+	}
+	.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+	   background: var(--main-color) !important;
+	}
+	.ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled="true"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge {
+	   fill: var(--main-color) !important;
+	}
+	.ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg {
+	   fill: var(--main-color) !important;
+	}
+	.ytp-large-play-button.ytp-button.ytp-red2:hover
+	{
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;
+	}
 	.resume-playback-progress-bar
 	{
 		background: var(--main-color) !important;
@@ -550,51 +554,51 @@
 		background-color: var(--hover-background) !important;
 	}
 	
-/*Youtube+ Section*/
-   #framestep-button,.P-impexp,.thumb-svg,#subscription-playlist svg,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{
-	  filter: invert(100%);
+	/*Youtube+ Section*/
+	#framestep-button,.P-impexp,.thumb-svg,#subscription-playlist svg,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{
+		filter: invert(100%);
 	}
-		#player-console{
+	#player-console{
 		top: 20px !important;
 	}
-   #P-content h2,#P-content h3,.P-implang,#P-settings option{
-   color: var(--dimer-text) !important;
-}
-   #P-content input + label::before,.P-horz {
-   border-color: var(--border-color) !important; 
-}
-   #P-content input:checked + label::before {
-   border-color: var(--main-color) !important; 
-}
-   #P-settings {
-   background: var(--main-background) !important; 
-}
-   #exp-cont,#P-content {
-   background: var(--main-background) !important; 
-}
-   #player .player-api{
-   background: var(--second-background) !important; 
-}
-   #P-sidebar-list > li.selected,#P-settings option:hover,.P-save{
-   background: var(--main-color) !important; 
-   color: var(--main-text) !important;
-}
-   #P-sidebar-list > li:hover,#P-settings option  {
-   background: var(--hover-background) !important; 
-}
-   #P-settings select,#P-content select{
+	#P-content h2,#P-content h3,.P-implang,#P-settings option{
+		color: var(--dimer-text) !important;
+	}
+	#P-content input + label::before,.P-horz {
+		border-color: var(--border-color) !important; 
+	}
+	#P-content input:checked + label::before {
+		border-color: var(--main-color) !important; 
+	}
+	#P-settings {
+		background: var(--main-background) !important; 
+	}
+	#exp-cont,#P-content {
+		background: var(--main-background) !important; 
+	}
+	#player .player-api{
+		background: var(--second-background) !important; 
+	}
+	#P-sidebar-list > li.selected,#P-settings option:hover,.P-save{
+		background: var(--main-color) !important; 
+		color: var(--main-text) !important;
+	}
+	#P-sidebar-list > li:hover,#P-settings option  {
+		background: var(--hover-background) !important; 
+	}
+	#P-settings select,#P-content select{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 		text-shadow: 0 0 0 var(--main-text) !important;
-}
-   #P-settings .P-select::after  {
-   border-top-color: var(--main-text) !important; 
-}
-   #P-content input[type='text'],.P-reset,.P-reset:hover{
+	}
+	#P-settings .P-select::after  {
+		border-top-color: var(--main-text) !important; 
+	}
+	#P-content input[type='text'],.P-reset,.P-reset:hover{
 		background: var(--second-background) !important;
 		border-color: var(--main-background) !important;
-   color: var(--main-text) !important;
-}
+		color: var(--main-text) !important;
+	}
 	
 	/*Swich account*/
 	.yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header, .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header,.yt-masthead-account-picker-option

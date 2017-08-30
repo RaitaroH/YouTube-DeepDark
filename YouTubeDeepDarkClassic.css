@@ -3,7 +3,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.7*/
+/*1.9.7b*/
 	
 	/*Main color variables*/
 	:root
@@ -520,7 +520,7 @@
 	.ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg, .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg {
 	   fill: var(--main-color) !important;
 	}
-	.ytp-large-play-button.ytp-button.ytp-red2:hover
+	.ytp-large-play-button.ytp-button.ytp-red2:hover, .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2
 	{
 		background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;
 	}

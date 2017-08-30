@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.4*/
+/*1.9.5*/
 
 	/*Main color variables*/
 	:root
@@ -522,7 +522,9 @@
 	}
 	.ytp-large-play-button.ytp-button.ytp-red2:hover, .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2
 	{
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;
+		/*background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
+		background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
+		filter: invert(100%) brightness(300%);
 	}
 	.resume-playback-progress-bar
 	{

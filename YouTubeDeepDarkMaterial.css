@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.5*/
+/*1.9.6*/
 
 	/*Main color variables*/
 	:root
@@ -602,7 +602,7 @@
 	}
 	
 	/*New logo*/
-	#lozenge-path
+	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}

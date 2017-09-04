@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.6*/
+/*1.9.7*/
 
 	/*Main color variables*/
 	:root
@@ -685,6 +685,10 @@
 	iron-icon:hover
 	{
     		fill: var(--main-color) !important;
+	}
+	#description-text.ytd-video-renderer
+	{
+		color: var(--dimer-text) !important;
 	}
 	
 	/*Iridium support, former YouTube+*/

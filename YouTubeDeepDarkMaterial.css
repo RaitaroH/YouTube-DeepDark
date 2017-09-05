@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.7*/
+/*1.9.8*/
 
 	/*Main color variables*/
 	:root
@@ -411,7 +411,7 @@
 	}
   
 	/*Permanently colored*/
-	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer, #author-text.yt-simple-endpoint.ytd-comment-renderer,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer,.yt-simple-endpoint.style-scope.yt-formatted-string
+	#byline.ytd-video-meta-block,#author-text.yt-simple-endpoint.ytd-comment-renderer, #author-text.yt-simple-endpoint.ytd-comment-renderer,#title.ytd-shelf-renderer,yt-formatted-string.style-brand,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer
 	{
 		color: var(--main-color) !important;
 		opacity: 0.9 !important;
@@ -602,7 +602,7 @@
 	}
 	
 	/*New logo*/
-	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
+	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -716,6 +716,16 @@
 	{
 		background-color: var(--main-background) !important;
 	}
+	.iri-video-count
+	{
+		color: var(--dimer-text) !important;
+		opacity: .7;
+	}
+	.iri-video-count:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1 !important;
+	}
 	
 	/*Comments*/
 	/*Show more stuff*/
@@ -739,11 +749,24 @@
 	{
 		color: var(--dimer-text) !important;
 	}
+	#published-time-text.ytd-comment-renderer
+	{
+		--yt-endpoint-color: var(--dimer-text) !important;
+		opacity: .7;
+	}
 	yt-formatted-string.ytd-expanded-shelf-contents-renderer:hover
 	{
 		color: var(--main-color) !important;
 	}
-	
+	#name.ytd-author-comment-badge-renderer
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	#name.ytd-author-comment-badge-renderer:hover
+	{
+		opacity: 1;
+	}
 	/*Heart icon in comments*/
 	#hearted-border.ytd-creator-heart-renderer,#hearted.ytd-creator-heart-renderer
 	{
@@ -856,6 +879,16 @@
 	{
 		background-color: var(--main-color) !important;
 	}
+	.metadata.ytd-notification-renderer
+	{
+		color: var(--dimer-text) !important;
+		opacity: .7;
+	}
+	.metadata.ytd-notification-renderer:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1 !important;
+	}
 	
 	/*Confirmantion popup*/
 	paper-toast 
@@ -939,5 +972,12 @@
 	.guide-icon.ytd-guide-entry-renderer, paper-button.ytd-toggle-button-renderer, yt-icon.ytd-compact-link-renderer, yt-icon.ytd-toggle-theme-compact-link-renderer
 	{
 		color: var(--dimer-text) !important;
+	}
+	
+	/*Autoplay text*/
+	#autoplay.ytd-compact-autoplay-renderer
+	{
+		color: var(--dimer-text) !important;
+		opacity: .7;
 	}
 }

@@ -762,15 +762,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	#name.ytd-author-comment-badge-renderer
-	{
-		color: var(--main-color) !important;
-		opacity: .9;
-	}
-	#name.ytd-author-comment-badge-renderer:hover
-	{
-		opacity: 1;
-	}
+
 	/*Heart icon in comments*/
 	#hearted-border.ytd-creator-heart-renderer,#hearted.ytd-creator-heart-renderer
 	{

@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.8*/
+/*1.9.9*/
 
 	/*Main color variables*/
 	:root
@@ -725,6 +725,10 @@
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;
+	}
+	.iri-add-to-blacklist:hover svg
+	{
+		fill: var(--main-color) !important;
 	}
 	
 	/*Comments*/

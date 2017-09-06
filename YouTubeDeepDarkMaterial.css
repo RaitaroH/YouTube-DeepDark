@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.0*/
+/*2.0.1*/
 
 	/*Main color variables*/
 	:root
@@ -139,7 +139,7 @@
 		--yt-endpoint-color: var(--hover-background) !important;
 		--yt-expand-color: var(--dimer-text) !important;
 		--yt-metadata-color: var(--dimer-text) !important;
-		--yt-channel-owner: var(--main-text) !important;
+		--yt-channel-owner: var(--main-color) !important;
 		--yt-autoplay-toggle: var(--main-text) !important;
 		--yt-playlist-background-header: var(--hover-background) !important;
 		--yt-playlist-background-item: var(--second-background) !important;
@@ -402,6 +402,12 @@
 	{
 		fill: var(--main-color) !important;
 	}
+	/*Live now badge*/
+	.badge-style-type-live-now.ytd-badge-supported-renderer
+	{
+		color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
  	
 	/*Hover section*/
 	#video-title:hover,#byline.ytd-video-meta-block:hover,#author-text.yt-simple-endpoint.ytd-comment-renderer:hover,ytd-button-renderer #button.ytd-button-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,#title.ytd-shelf-renderer:hover,#footer.ytd-guide-renderer #guide-links-primary a:hover:not(:last-child), #footer.ytd-guide-renderer #guide-links-secondary a:hover:not(:last-child),yt-formatted-string.style-brand:hover,#channel-title.ytd-channel-renderer:hover,paper-tab.ytd-c4-tabbed-header-renderer:hover,#link-list-container.ytd-channel-about-metadata-renderer yt-formatted-string.ytd-channel-about-metadata-renderer:hover,#title.ytd-grid-channel-renderer:hover,.content-text.style-scope.ytd-metadata-with-image-row-renderer:hover,.yt-simple-endpoint.style-scope.yt-formatted-string:hover,ytd-search-filter-renderer yt-formatted-string.ytd-search-filter-renderer:hover, #footer.ytd-guide-renderer #guide-links-primary a:hover, #footer.ytd-guide-renderer #guide-links-secondary a:hover, #name.ytd-author-comment-badge-renderer:hover, .title.ytd-mini-channel-renderer:hover, yt-formatted-string[ellipsis-truncate] a.yt-formatted-string:hover
@@ -643,6 +649,10 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover
+	{
+		border: 1px solid var(--main-color) !important;
+	}
 	/*Icon hover*/
 	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox
 	{
@@ -820,15 +830,6 @@
 	{
 		background: transparent !important;
 	}
-	/*Live badge*/
-	.badge-style-type-live-now.ytd-badge-supported-renderer
-	{
-		color: var(--main-color);
-	}
-	.badge-style-type-live-now.ytd-badge-supported-renderer
-	{
-		border-color: var(--main-color);
-	}
 	/*Sign in chat*/
 	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1
 	{
@@ -975,5 +976,22 @@
 	{
 		color: var(--dimer-text) !important;
 		opacity: .7;
+	}
+	
+	/*Links in video description*/
+	.description.ytd-video-secondary-info-renderer a
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	
+	/*Author name*/
+	#owner-name.ytd-video-owner-renderer
+	{
+		opacity: .9;
+	}
+	#owner-name.ytd-video-owner-renderer:hover
+	{
+		opacity: 1 !important;	
 	}
 }

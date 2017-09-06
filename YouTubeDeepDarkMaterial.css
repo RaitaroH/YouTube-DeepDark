@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.3*/
+/*2.0.4*/
 
 	/*Main color variables*/
 	:root
@@ -744,9 +744,20 @@
 	{
 		fill: var(--dimer-text) !important;
 	}
-	#iri-quick-controls button:hover svg, #iri-quick-controls button[enabled] svg, #iri-quick-controls button[enabled]:hover svg
+	#iri-quick-controls button[enabled] svg
 	{
 		fill: var(--main-color) !important;
+		opacity: .9;
+	}
+	#iri-quick-controls button:hover svg, #iri-quick-controls button[enabled]:hover svg
+	{
+		fill: var(--main-color) !important;
+		opacity: 1 !important;
+	}
+	#iri-quick-controls
+	{
+		margin-bottom: 45px !important;
+		margin-top: -85px !important;
 	}
 	
 	/*Comments*/

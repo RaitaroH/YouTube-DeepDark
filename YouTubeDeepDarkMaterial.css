@@ -744,7 +744,11 @@
 	{
 		fill: var(--dimer-text) !important;
 	}
-	#iri-quick-controls button:hover svg
+	#iri-quick-controls button[enabled] svg
+	{
+		fill: var(--main-text) !important;
+	}
+	#iri-quick-controls button:hover svg, #iri-quick-controls button[enabled]:hover svg
 	{
 		fill: var(--main-color) !important;
 	}

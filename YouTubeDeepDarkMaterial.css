@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.5*/
+/*2.0.6*/
 
 	/*Main color variables*/
 	:root
@@ -1007,5 +1007,12 @@
 	#owner-name.ytd-video-owner-renderer:hover
 	{
 		opacity: 1 !important;	
+	}
+	
+	/*Set a memento*/
+	ytd-toggle-button-renderer.style-compact-gray[is-paper-button]
+	{
+		background-color: var(--second-background) !important;
+		color: var(--dimer-text) !important;
 	}
 }

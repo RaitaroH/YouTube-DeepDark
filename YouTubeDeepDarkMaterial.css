@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.6*/
+/*2.0.7*/
 
 	/*Main color variables*/
 	:root
@@ -1014,5 +1014,12 @@
 	{
 		background-color: var(--second-background) !important;
 		color: var(--dimer-text) !important;
+	}
+	
+	/*Series name*/
+	.super-title.ytd-video-primary-info-renderer a
+	{
+		color: var(--dimer-text) !important;
+		opacity: .7;
 	}
 }

@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.8*/
+/*2.0.9*/
 
 	/*Main color variables*/
 	:root
@@ -576,6 +576,10 @@
 	{
     		fill: var(--main-color) !important;
 	}
+	ytd-thumbnail-overlay-toggle-button-renderer:focus yt-icon.ytd-thumbnail-overlay-toggle-button-renderer
+	{
+		outline-color: var(--main-color) !important;
+	}
 
 	/*Popup for when you hover over the channel avatar in the video*/
 	.iv-branding .branding-context-container-inner
@@ -647,6 +651,11 @@
 	}
 	
 	#video-title.ytd-playlist-panel-video-renderer
+	{
+		color: var(--dimer-text) !important;
+	}
+	
+	#index.ytd-playlist-video-renderer
 	{
 		color: var(--dimer-text) !important;
 	}
@@ -951,10 +960,20 @@
 		background: transparent;
 		color: var(--dimer-text) !important;
 	}
-	/*cards border color*/
+	/*Cards border color*/
 	.iv-card-message
 	{
 		border-bottom: 1px solid var(--main-color) !important;
+	}
+	
+	/*Poll*/
+	.iv-card-poll label, .iv-card-poll.iv-card-poll-voted label.iv-card-poll-choice-checked, .iv-card-poll.iv-card-poll-voted label
+	{
+		color: var(--main-text) !important;
+	}
+	.iv-card-poll .iv-card-poll-result .iv-card-poll-result-bar
+	{
+		background-color: var(--main-color) !important;
 	}
 	
 	/*Account menu header*/

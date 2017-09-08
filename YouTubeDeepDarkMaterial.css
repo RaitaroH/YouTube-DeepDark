@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.7*/
+/*2.0.8*/
 
 	/*Main color variables*/
 	:root
@@ -105,11 +105,19 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #D5DADA;
 		*/
+		
+		/*9anime colors*/
+		/*
+		--main-color: #723f8c;
+		--main-background: #0B0A0D;
+		--second-background: #17151C;
+		--hover-background: #1E1C25;
+		--main-text: #B4B4B4;
+		--dimer-text: #747474;
+		*/
 	}
 	
 	/*Variable changes*/
-	
-	/*DARK theme variables*/
 	:not([style-scope]):not(.style-scope) 
 	{
 		--yt-primary-color: var(--main-text) !important;
@@ -227,7 +235,6 @@
 		--yt-backstage-cancel-color: var(--main-text) !important;
 		--yt-offer-background-color: var(--hover-background) !important;
 	}
-	
 	
 	/*Background for the entire page*/
 	html

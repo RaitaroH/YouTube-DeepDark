@@ -3,7 +3,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*1.9.8*/
+/*1.9.9*/
 	
 	/*Main color variables*/
 	:root
@@ -95,6 +95,16 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #D5DADA;
 		*/		
+		
+		/*9anime colors*/
+		/*
+		--main-color: #723f8c;
+		--main-background: #0B0A0D;
+		--second-background: #17151C;
+		--hover-background: #1E1C25;
+		--main-text: #B4B4B4;
+		--dimer-text: #747474;
+		*/
 		
 		--border-color: var(--hover-background);
 		--dim-white: rgba(255, 255, 255, .95);

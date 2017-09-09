@@ -811,22 +811,22 @@
 	{
 		color: var(--main-color) !important;
 	}
-	/*Links in description*/
+	/*Links in description and published date for comments*/
 	#content.ytd-expander a
 	{
 		color: var(--main-color) !important;
 		opacity: 0.9;
-	}
-	#content.ytd-expander a:hover
-	{
-		color: var(--main-color) !important;
-		opacity: 1 !important;
 	}
 	#published-time-text.ytd-comment-renderer, #published-time-text.ytd-comment-renderer a
 	{
 		--yt-endpoint-color: var(--dimer-text) !important;
 		color: var(--dimer-text) !important;
 		opacity: .7;
+	}
+	#content.ytd-expander a:hover, #published-time-text.ytd-comment-renderer a:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1 !important;
 	}
 	
 	/*Heart icon in comments*/

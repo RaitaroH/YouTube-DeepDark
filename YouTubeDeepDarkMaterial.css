@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.0*/
+/*2.1.1*/
 
 	/*Main color variables*/
 	:root
@@ -816,7 +816,18 @@
 	{
 		color: var(--main-color) !important;
 	}
-
+	/*Links in description*/
+	#content.ytd-expander a
+	{
+		color: var(--main-color) !important;
+		opacity: 0.9;
+	}
+	#content.ytd-expander a:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1 !important;
+	}
+	
 	/*Heart icon in comments*/
 	#hearted-border.ytd-creator-heart-renderer,#hearted.ytd-creator-heart-renderer
 	{

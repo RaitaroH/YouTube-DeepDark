@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.2*/
+/*2.1.3*/
 
 	/*Main color variables*/
 	:root
@@ -807,11 +807,6 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	#published-time-text.ytd-comment-renderer
-	{
-		--yt-endpoint-color: var(--dimer-text) !important;
-		opacity: .7;
-	}
 	yt-formatted-string.ytd-expanded-shelf-contents-renderer:hover
 	{
 		color: var(--main-color) !important;
@@ -826,6 +821,12 @@
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;
+	}
+	#published-time-text.ytd-comment-renderer, #published-time-text.ytd-comment-renderer a
+	{
+		--yt-endpoint-color: var(--dimer-text) !important;
+		color: var(--dimer-text) !important;
+		opacity: .7;
 	}
 	
 	/*Heart icon in comments*/

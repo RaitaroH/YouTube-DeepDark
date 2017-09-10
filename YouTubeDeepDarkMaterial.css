@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.6*/
+/*2.1.7*/
 
 	/*Main color variables*/
 	:root
@@ -329,6 +329,13 @@
 	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu,button.ytd-expandable-tab-renderer:hover .style-scope.ytd-expandable-tab-renderer
 	{
    		fill: var(--main-color) !important;
+	}
+	
+	/*Button tooltips*/
+	#tooltip.paper-tooltip
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
 	}
 	
 	/*Active grid icon*/
@@ -792,6 +799,11 @@
 	{
 		fill: var(--main-color) !important;
 		opacity: 1 !important;
+	}
+	.iri-quick-controls-tooltip, .iri-tooltip, 
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
 	}
 	
 	/*Comments*/

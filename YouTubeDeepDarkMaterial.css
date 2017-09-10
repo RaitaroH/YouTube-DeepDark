@@ -800,7 +800,7 @@
 		fill: var(--main-color) !important;
 		opacity: 1 !important;
 	}
-	.iri-quick-controls-tooltip, .iri-tooltip, 
+	.iri-quick-controls-tooltip, .iri-tooltip 
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;

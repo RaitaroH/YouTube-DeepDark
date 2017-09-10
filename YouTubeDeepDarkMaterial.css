@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.4*/
+/*2.1.5*/
 
 	/*Main color variables*/
 	:root
@@ -714,7 +714,16 @@
 	{
 		filter: invert(100%);
 	}
-
+	
+	/*Search results correction*/
+	.style-scope.yt-search-query-correction
+	{
+		color: var(--main-text) !important;
+	}
+	.style-scope.yt-search-query-correction .italic.yt-formatted-string, .style-scope.yt-search-query-correction:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*Search for channel videos*/
  	.unfocused-line.paper-input-container,.focused-line.paper-input-container

@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.5*/
+/*2.1.6*/
 
 	/*Main color variables*/
 	:root
@@ -768,7 +768,7 @@
 	.iri-video-count
 	{
 		color: var(--dimer-text) !important;
-		opacity: .7;
+		opacity: .8;
 	}
 	.iri-video-count:hover
 	{
@@ -948,7 +948,7 @@
 	.metadata.ytd-notification-renderer
 	{
 		color: var(--dimer-text) !important;
-		opacity: .7;
+		opacity: .8;
 	}
 	.metadata.ytd-notification-renderer:hover
 	{
@@ -1054,7 +1054,7 @@
 	#autoplay.ytd-compact-autoplay-renderer
 	{
 		color: var(--dimer-text) !important;
-		opacity: .7;
+		opacity: .8;
 	}
 	
 	/*Links in video description*/
@@ -1082,9 +1082,9 @@
 	}
 	
 	/*Series name*/
-	.super-title.ytd-video-primary-info-renderer a
+	.super-title.ytd-video-primary-info-renderer a, #additional-metadata-line.ytd-video-meta-block
 	{
 		color: var(--dimer-text) !important;
-		opacity: .7;
+		opacity: .8;
 	}
 }

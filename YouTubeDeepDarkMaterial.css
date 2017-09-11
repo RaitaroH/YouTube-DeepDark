@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.7*/
+/*2.1.8*/
 
 	/*Main color variables*/
 	:root
@@ -976,7 +976,7 @@
 	}
 
 	/*Cards*/
-	.iv-card-content,.ytp-ce-expanding-overlay-background,.ytp-cards-teaser .ytp-cards-teaser-text
+	.iv-card-content,.ytp-ce-expanding-overlay-background,.ytp-cards-teaser .ytp-cards-teaser-text, .ytp-cards-teaser .ytp-cards-teaser-box
 	{
 		background-color: var(--main-background) !important;
 	}

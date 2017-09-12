@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.1.9*/
+/*2.2.0*/
 
 	/*Main color variables*/
 	:root
@@ -803,6 +803,10 @@
 	.iri-quick-controls-tooltip, .iri-tooltip 
 	{
 		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	#iri-show-comments:hover
+	{
 		color: var(--main-color) !important;
 	}
 	

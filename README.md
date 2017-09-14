@@ -1,6 +1,6 @@
 # YouTube-DeepDark
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/YT%20-%20DeepDark.png)
-Videos should only be watched in the dark. May the dark show your way. (YouTube dark theme)
+Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 
 These are dark themes for YouTube inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search). 
 

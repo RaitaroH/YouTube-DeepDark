@@ -3,7 +3,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.0*/
+/*2.0.1*/
 	
 	/*Main color variables*/
 	:root
@@ -64,6 +64,16 @@
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
 		--dimer-text: #606376;
+		*/
+		
+		/*Firefox57 Dark colors*/
+		/*
+		--main-color: #4080FB;
+		--main-background: #0C0C0D;
+		--second-background: #252526;
+		--hover-background: #323234;
+		--main-text: #F9F9FA;
+		--dimer-text: #D0D0D0;
 		*/
 		
 		/*Discord colors*/

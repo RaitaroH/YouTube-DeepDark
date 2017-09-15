@@ -109,7 +109,7 @@ Colors Showcase (the colors are available in the code; different colors can be u
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/DeepDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/DiscordColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/FirefoxColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Firefox57aColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Firefox57Colors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/VertexColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Mint-Y-DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/YoutubeColors.png)

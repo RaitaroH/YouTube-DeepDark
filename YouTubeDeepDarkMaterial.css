@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.1*/
+/*2.2.2*/
 
 	/*Main color variables*/
 	:root
@@ -1042,6 +1042,10 @@
 	.iv-card-message
 	{
 		border-bottom: 1px solid var(--main-color) !important;
+	}
+	.ytp-ce-channel-this .ytp-ce-channel-metadata
+	{
+		border-color: var(--hover-background) !important;
 	}
 	
 	/*Poll*/

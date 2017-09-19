@@ -905,7 +905,7 @@
 
 	
 	/*Chat again because youtube has nothing better to do. YouTube, WHY?!*/
-	.yt-live-chat-header-renderer-1, .yt-live-chat-message-input-renderer-1, .yt-live-chat-header-renderer-0, .yt-live-chat-message-input-renderer-0, .paper-menu-0, .paper-menu-1, .yt-live-chat-ticker-renderer-0,.yt-live-chat-ticker-renderer-1
+	.yt-live-chat-header-renderer-1, .yt-live-chat-message-input-renderer-1, .yt-live-chat-header-renderer-0, .yt-live-chat-message-input-renderer-0, .paper-menu-0, .paper-menu-1, .yt-live-chat-ticker-renderer-0,.yt-live-chat-ticker-renderer-1,.yt-live-chat-renderer
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -913,7 +913,7 @@
 	{
 		background-color: var(--main-background) !important;
 	}
-	.yt-live-chat-text-message-renderer-1:hover, .yt-live-chat-text-message-renderer-0:hover, .ytd-menu-service-item-renderer-0:hover, .ytd-menu-navigation-item-renderer-0 a.ytd-menu-navigation-item-renderer:hover, .ytd-menu-navigation-item-renderer-1 a.ytd-menu-navigation-item-renderer:hover, .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-renderer-1 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-category-renderer-0 yt-formatted-string.yt-emoji-picker-category-renderer, .yt-emoji-picker-category-renderer-1 yt-formatted-string.yt-emoji-picker-category-renderer
+	.yt-live-chat-text-message-renderer-1:hover, .yt-live-chat-text-message-renderer-0:hover, .ytd-menu-service-item-renderer-0:hover, .ytd-menu-navigation-item-renderer-0 a.ytd-menu-navigation-item-renderer:hover, .ytd-menu-navigation-item-renderer-1 a.ytd-menu-navigation-item-renderer:hover, .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-renderer-1 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-category-renderer-0 yt-formatted-string.yt-emoji-picker-category-renderer, .yt-emoji-picker-category-renderer-1 yt-formatted-string.yt-emoji-picker-category-renderer,.yt-button-renderer
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -921,11 +921,11 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-input-field-renderer-1 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #timestamp.yt-live-chat-text-message-renderer
+	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-input-field-renderer-1 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-message-input-field-renderer #label.yt-live-chat-text-input-field-renderer
 	{
 		color: var(--dimer-text) !important;
 	}
-	.iron-icon-0, .ytd-button-renderer-0 #button.ytd-button-renderer
+	.iron-icon-0, .ytd-button-renderer-0 #button.ytd-button-renderer, .iron-icon
 	{
 		fill: var(--main-text) !important;
 		color: var(--main-text) !important;

@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.3*/
+/*2.2.4*/
 
 	/*Main color variables*/
 	:root
@@ -1062,6 +1062,16 @@
 	ytd-active-account-header-renderer:hover 
 	{
 		background-color: var(--hover-background) !important;
+	}
+	
+	paper-item.ytd-account-settings
+	{
+		color: var(--dimer-text) !important;
+		opacity: .8;
+	}
+	paper-item.ytd-account-settings:hover
+	{
+		opacity: 1 !important;
 	}
 	
 	/*Wathced videos dark background*/

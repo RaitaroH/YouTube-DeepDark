@@ -78,32 +78,29 @@ Providing KDE colors in the following image.
 YouTube introduced a new material design. I do provide a separate userstyle for that:
 https://userstyles.org/styles/144962/youtube-deepdark-material
 
-Video
+You don't need to activate the dark mode for this to work.
 
+![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Dark_Off.png)
+
+Video
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Video.png)
 
 Channel page
-
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Channel%20page.png)
-
 Comments
-
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Comments.png)
 
 Search (as of now, YouTube has not rethemed this, so I have)
-
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Search.png)
 
 Video not found page
-
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Video%20not%20found%20page.png)
 
 Iridium support
-
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Iridium.png)
 
+# Colors
 Colors Showcase (the colors are available in the code; different colors can be used)
-
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/ArcColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/BreezeColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/DeepDarkColors.png)

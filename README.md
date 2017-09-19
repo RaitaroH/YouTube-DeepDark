@@ -17,6 +17,8 @@ Material version [here](https://userstyles.org/styles/144962/youtube-deepdark-ma
 
 
 # Classic Version
+**Note: This images may be out-of-date.**
+
 Channel page
 
 ![alt tag](https://i.imgur.com/345bBev.png)
@@ -53,7 +55,7 @@ Vide not found (because why not?)
 
 ![alt tag](https://i.imgur.com/CdOvw4k.png)
 
-Youtube+ (and every other icons) adjusted for the dark theme. (YouTube+ here https://greasyfork.org/en/scripts/9932-youtube)
+Youtube+ (and every other icon) adjusted for the dark theme. (YouTube+ here https://greasyfork.org/en/scripts/9932-youtube)
 
 ![alt tag](https://i.imgur.com/rs9XeBR.png)
 
@@ -87,7 +89,9 @@ Video
 
 Channel page
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Channel%20page.png)
+
 Comments
+
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Comments.png)
 
 Search (as of now, YouTube has not rethemed this, so I have)

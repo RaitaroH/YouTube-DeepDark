@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.4*/
+/*2.2.5*/
 
 	/*Main color variables*/
 	:root
@@ -913,7 +913,7 @@
 	{
 		background-color: var(--main-background) !important;
 	}
-	.yt-live-chat-text-message-renderer-1:hover, .yt-live-chat-text-message-renderer-0:hover, .ytd-menu-service-item-renderer-0:hover, .ytd-menu-navigation-item-renderer-0 a.ytd-menu-navigation-item-renderer:hover, .ytd-menu-navigation-item-renderer-1 a.ytd-menu-navigation-item-renderer:hover, .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-renderer-1 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-category-renderer-0 yt-formatted-string.yt-emoji-picker-category-renderer, .yt-emoji-picker-category-renderer-1 yt-formatted-string.yt-emoji-picker-category-renderer,.yt-button-renderer
+	.yt-live-chat-text-message-renderer-1:hover, .yt-live-chat-text-message-renderer-0:hover, .ytd-menu-service-item-renderer-0:hover, .ytd-menu-navigation-item-renderer-0 a.ytd-menu-navigation-item-renderer:hover, .ytd-menu-navigation-item-renderer-1 a.ytd-menu-navigation-item-renderer:hover, .yt-emoji-picker-renderer-0 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-renderer-1 #search-panel.yt-emoji-picker-renderer, .yt-emoji-picker-category-renderer-0 yt-formatted-string.yt-emoji-picker-category-renderer, .yt-emoji-picker-category-renderer-1 yt-formatted-string.yt-emoji-picker-category-renderer, #unfocused.yt-live-chat-text-input-field-renderer
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -921,7 +921,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-input-field-renderer-1 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-message-input-field-renderer #label.yt-live-chat-text-input-field-renderer
+	.yt-live-chat-text-input-field-renderer-0 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-input-field-renderer-1 #label.yt-live-chat-text-input-field-renderer, .yt-live-chat-text-message-renderer-0 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer #timestamp.yt-live-chat-text-message-renderer, .yt-live-chat-message-input-field-renderer #label.yt-live-chat-text-input-field-renderer, #deleted-state.yt-live-chat-text-message-renderer, #show-original.yt-live-chat-text-message-renderer, yt-live-chat-text-message-renderer[is-deleted] #message.yt-live-chat-text-message-renderer
 	{
 		color: var(--dimer-text) !important;
 	}
@@ -930,11 +930,15 @@
 		fill: var(--main-text) !important;
 		color: var(--main-text) !important;
 	}
-	.yt-live-chat-text-message-renderer-0 #author-name.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #author-name.yt-live-chat-text-message-renderer
+	#menu.yt-live-chat-text-message-renderer:hover .style-scope.iron-icon, #overflow.yt-live-chat-header-renderer:hover .style-scope.iron-icon, paper-icon-button:hover .style-scope.iron-icon
+	{
+		fill: var(--main-color) !important;
+	}
+	.yt-live-chat-text-message-renderer-0 #author-name.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #author-name.yt-live-chat-text-message-renderer, #author-name.yt-live-chat-text-message-renderer
 	{
 		color: var(--main-color) !important;
 	}
-	.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #menu.yt-live-chat-text-message-renderer
+	.yt-live-chat-text-message-renderer-0 #menu.yt-live-chat-text-message-renderer, .yt-live-chat-text-message-renderer-1 #menu.yt-live-chat-text-message-renderer, #menu.yt-live-chat-text-message-renderer, yt-button-renderer #button.yt-button-renderer
 	{
 		background: transparent !important;
 	}
@@ -944,19 +948,27 @@
 		color: var(--main-text) !important;
 		background-color: var(--second-background) !important;
 	}
-	.yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer, .yt-live-chat-message-renderer-1 #subtext.yt-live-chat-message-renderer
+	.yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer, .yt-live-chat-message-renderer-1 #subtext.yt-live-chat-message-renderer, #label.yt-live-chat-text-input-field-renderer, .input-content.paper-input-container input, .input-content.paper-input-container textarea, .input-content.paper-input-container iron-autogrow-textarea, .input-content.paper-input-container .paper-input-input
 	{
 		color: var(--dimer-text) !important;
 	}
-	.ytd-button-renderer-1.style-dark[is-paper-button]:hover, .ytd-button-renderer-0.style-dark[is-paper-button]:hover
+	.ytd-button-renderer-1.style-dark[is-paper-button]:hover, .ytd-button-renderer-0.style-dark[is-paper-button]:hover, #search-panel.yt-emoji-picker-renderer
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.ytd-button-renderer-1.style-dark[is-paper-button], .ytd-button-renderer-0.style-dark[is-paper-button]
+	.ytd-button-renderer-1.style-dark[is-paper-button], .ytd-button-renderer-0.style-dark[is-paper-button], paper-icon-button.yt-live-chat-item-list-renderer, #focused.yt-live-chat-text-input-field-renderer
 	{
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
-	}	
+	}
+	paper-icon-button.yt-live-chat-item-list-renderer
+	{
+		opacity: .9;
+	}
+	paper-icon-button.yt-live-chat-item-list-renderer:hover
+	{
+		opacity: 1 !important;
+	}
 	
 	/*Resizing the top bar and it's spacing to get some extra vertical space*/
 	/*

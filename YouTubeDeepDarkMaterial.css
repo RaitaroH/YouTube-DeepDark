@@ -961,13 +961,15 @@
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
+	/*Go down button in chat*/
 	paper-icon-button.yt-live-chat-item-list-renderer
 	{
 		opacity: .9;
 	}
-	paper-icon-button.yt-live-chat-item-list-renderer:hover
+	paper-icon-button.yt-live-chat-item-list-renderer:hover, paper-icon-button.yt-live-chat-item-list-renderer:hover .style-scope.iron-icon 
 	{
 		opacity: 1 !important;
+		fill: var(--main-text) !important;
 	}
 	
 	/*Resizing the top bar and it's spacing to get some extra vertical space*/

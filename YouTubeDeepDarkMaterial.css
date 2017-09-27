@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.5*/
+/*2.2.6*/
 
 	/*Main color variables*/
 	:root
@@ -740,6 +740,11 @@
 	.style-scope.yt-search-query-correction .italic.yt-formatted-string, .style-scope.yt-search-query-correction:hover
 	{
 		color: var(--main-color) !important;
+	}
+	/*Similar results*/
+	#title.ytd-exploratory-results-renderer
+	{
+		color: var(--dimer-text) !important;
 	}
 
 	/*Search for channel videos*/

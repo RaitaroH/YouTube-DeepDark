@@ -3,7 +3,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.0.1*/
+/*2.0.2*/
 	
 	/*Main color variables*/
 	:root
@@ -407,10 +407,6 @@
 		color: var(--main-color) !important;
 		padding: 0px !important;
 		background-color: transparent !important;
-	}
-	/*Notifications title size*/
-	.yt-lockup-tile .yt-lockup-title{
-		 max-width: 270px !important;
 	}
 	/*Colors and text section*/
 	/*Permanently highlighted*/

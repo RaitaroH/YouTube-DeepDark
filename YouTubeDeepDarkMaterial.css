@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.6*/
+/*2.2.7*/
 
 	/*Main color variables*/
 	:root
@@ -948,7 +948,7 @@
 		background: transparent !important;
 	}
 	/*Sign in chat*/
-	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1
+	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1, yt-button-renderer.style-dark[is-paper-button]
 	{
 		color: var(--main-text) !important;
 		background-color: var(--second-background) !important;

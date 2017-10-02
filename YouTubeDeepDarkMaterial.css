@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.7*/
+/*2.2.8*/
 
 	/*Main color variables*/
 	:root
@@ -309,6 +309,16 @@
 		background-color: var(--hover-background) !important;
 	}
 	#name:hover
+	{
+		color: var(--main-color) !important;
+	}
+	
+	/*Accounts*/
+	yt-formatted-string.ytd-account-item-section-header-renderer a
+	{
+		color: var(--dimer-text) !important;
+	}
+	.style-scope.ytd-account-item-section-renderer:hover #channel-title.ytd-account-item-renderer
 	{
 		color: var(--main-color) !important;
 	}

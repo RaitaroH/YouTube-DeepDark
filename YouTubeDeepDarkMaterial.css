@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.8*/
+/*2.2.9*/
 
 	/*Main color variables*/
 	:root
@@ -128,7 +128,7 @@
 	}
 	
 	/*Variable changes*/
-	:not([style-scope]):not(.style-scope) 
+	:not([style-scope]):not(.style-scope), html:not([style-scope]):not(.style-scope):not([color-exp]) *, html[color-exp]:not([style-scope]):not(.style-scope)
 	{
 		--yt-primary-color: var(--main-text) !important;
 		--yt-primary-text-color: var(--main-text) !important;
@@ -474,6 +474,11 @@
 	#name.ytd-author-comment-badge-renderer
 	{
 		color: var(--main-text) !important;
+	}
+	#owner-name.ytd-video-owner-renderer a
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
 	}
 	
 	/*Checkbox hover*/
@@ -1131,6 +1136,17 @@
 	{
 		color: var(--dimer-text) !important;
 	}
+	
+	/*Sidepane titles*/
+	#guide-section-title a
+	{
+		color: var(--dimer-text) !important;
+	}
+	#guide-section-title a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	
 	
 	/*Autoplay text*/
 	#autoplay.ytd-compact-autoplay-renderer

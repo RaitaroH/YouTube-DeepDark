@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.2.9*/
+/*2.3.0*/
 
 	/*Main color variables*/
 	:root
@@ -441,6 +441,11 @@
 	{
 		color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+	}
+	
+	.yt-simple-endpoint.style-scope.yt-formatted-string
+	{
+		color: var(--dimer-text);
 	}
  	
 	/*Hover section*/

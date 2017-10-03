@@ -128,7 +128,7 @@
 	}
 	
 	/*Variable changes*/
-	:not([style-scope]):not(.style-scope) 
+  html:not([style-scope]):not(.style-scope):not([color-exp]) *, html[color-exp]:not([style-scope]):not(.style-scope)
 	{
 		--yt-primary-color: var(--main-text) !important;
 		--yt-primary-text-color: var(--main-text) !important;
@@ -154,7 +154,8 @@
 		--yt-icon-hover-color: var(--main-color) !important;
 		--yt-icon-active-color: var(--main-color) !important;
 		--yt-icon-disabled-color: var(--hover-background) !important;
-		--yt-endpoint-color: var(--hover-background) !important;
+		/* --yt-endpoint-color: var(--hover-background) !important; */
+		--yt-endpoint-color: var(--main-color) !important;
 		--yt-expand-color: var(--dimer-text) !important;
 		--yt-metadata-color: var(--dimer-text) !important;
 		--yt-channel-owner: var(--main-color) !important;

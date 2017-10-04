@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.3.0*/
+/*2.3.1*/
 
 	/*Main color variables*/
 	:root
@@ -346,7 +346,7 @@
 	}
 	
 	/*Button hover*/
-	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu,button.ytd-expandable-tab-renderer:hover .style-scope.ytd-expandable-tab-renderer
+	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu,button.ytd-expandable-tab-renderer:hover .style-scope.ytd-expandable-tab-renderer, .style-scope.ytd-menu-renderer.style-text.force-icon-button:hover .style-scope.yt-icon, .style-scope.ytd-menu-renderer.force-icon-button.style-default:hover .style-scope.yt-icon
 	{
    		fill: var(--main-color) !important;
 	}

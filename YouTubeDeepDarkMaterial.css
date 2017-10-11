@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.3.2*/
+/*2.3.3*/
 
 	/*Main color variables*/
 	:root
@@ -670,7 +670,7 @@
 	}
 	
 	/*New logo*/
-	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
+	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}

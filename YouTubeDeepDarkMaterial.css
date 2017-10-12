@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.3.4*/
+/*2.3.5*/
 
 	/*Main color variables*/
 	:root
@@ -124,6 +124,56 @@
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
 		--dimer-text: #747474;
+		*/
+		
+		/*Black and white*/
+		/*
+		--main-color: #ffffff;
+		--main-background: #000000;
+		--second-background: #0a0a0a;
+		--hover-background: #0f0f0f;
+		--main-text: #b4b4b4;
+		--dimer-text: #828282;
+		*/
+		
+		/*Yellow (colors from petrocompletions)*/
+		/*
+		--main-color: #FFC700;
+		--main-background: #141414;
+		--second-background: #202222;
+		--hover-background: #353838;
+		--main-text: #EFF0F1;
+		--dimer-text: #9F9999;
+		*/
+		
+		/*Yellow 2*/
+		/*
+		--main-color: #ffc700;
+		--main-background: #0a0800;
+		--second-background: #0c0a04;
+		--hover-background: #0f0d05;
+		--main-text: #fffdf5;
+		--dimer-text: #fff8e1;
+		*/
+		
+		/*Orange*/
+		/*
+		--main-color: #ff6905;
+		--main-background: #0a0400;
+		--second-background: #0e0702;
+		--hover-background: #110903;
+		--main-text: #fff9f5;
+		--dimer-text: #ffede1;
+		*/
+		
+		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
+		/*
+		--main-color: #EF7D6C;
+		--main-background: #332222;
+		--second-background: #2A1B1B;
+		--hover-background: #863B2F;
+		--main-text: #EFB26C;
+		--dimer-text: #986E3F;
 		*/
 	}
 	

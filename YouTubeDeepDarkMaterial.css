@@ -2,8 +2,10 @@
  	
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
+	
+/*GNU General Public License v3.0.*/
 
-/*2.3.6*/
+/*2.3.7*/
 
 	/*Main color variables*/
 	:root
@@ -154,6 +156,26 @@
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
 		--dimer-text: #fff8e1;
+		*/
+		
+		/*Ubuntu grey colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #312D2A;
+		--second-background: #3D3C38; 
+		--hover-background: #59564D;
+		--main-text: #F2F1EF;
+		--dimer-text: #E6E5E3;
+		*/
+		
+		/*Ubuntu purple colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #2C071A;
+		--second-background: #430B28; 
+		--hover-background: #520D30;
+		--main-text: #F2F1EF;
+		--dimer-text: #E6E5E3;
 		*/
 		
 		/*Orange*/

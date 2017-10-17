@@ -3,7 +3,7 @@
 /*For the new Material Design for YouTube*/
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
-/*2.3.5*/
+/*2.3.6*/
 
 	/*Main color variables*/
 	:root
@@ -196,6 +196,15 @@
 		--yt-searchbox-legacy-button-hover-color: var(--hover-background) !important;
 		--yt-searchbox-legacy-button-hover-border-color: var(--main-background) !important;
 		--yt-searchbox-legacy-button-icon-color: var(--dimer-text) !important;
+		--ytd-searchbox-border-color: var(--main-background) !important;
+		--ytd-searchbox-legacy-border-color: var(--main-background) !important;
+		--ytd-searchbox-legacy-border-shadow-color: var(--second-background) !important;
+		--ytd-searchbox-legacy-button-color: var(--hover-background) !important;
+		--ytd-searchbox-legacy-button-border-color: var(--main-background) !important;
+		--ytd-searchbox-legacy-button-focus-color: var(--second-background) !important;
+		--ytd-searchbox-legacy-button-hover-color: var(--hover-background) !important;
+		--ytd-searchbox-legacy-button-hover-border-color: var(--main-background) !important;
+		--ytd-searchbox-legacy-button-icon-color: var(--dimer-text) !important;
 		--yt-commentbox-border-inactive: var(--dimer-text) !important;
 		--yt-commentbox-border-active: var(--main-text) !important;
 		--yt-paper-button-ink-color: var(--hover-background) !important;
@@ -229,10 +238,15 @@
 		--yt-primary-disabled-button-text-color: var(--hover-background) !important;
 		--yt-badge-background: var(--hover-background) !important;
 		--yt-badge-disabled-color: var(--hover-background) !important;
+		--ytd-badge-background: var(--hover-background) !important;
+		--ytd-badge-disabled-color: var(--hover-background) !important;
 		--yt-collection-badge-color: var(--dimer-text) !important;
 		--yt-owner-badge-color: var(--hover-background) !important;
+		--ytd-owner-badge-color: var(--hover-background) !important;
 		--yt-simple-badge-color: var(--dimer-text) !important;
 		--yt-ad-badge-text-color: var(--main-background) !important;
+		--ytd-simple-badge-color: var(--dimer-text) !important;
+		--ytd-ad-badge-text-color: var(--main-background) !important;
 		--paper-menu-background-color: var(--second-background) !important;
 		--paper-menu-color: var(--main-text) !important;
 		--primary-text-color: var(--main-text) !important;
@@ -251,17 +265,30 @@
 		--yt-transcript-background: var(--second-background) !important;
 		--yt-watch-card-secondary-text-color: var(--main-text) !important;
 		--yt-watch-card-album-header-background: var(--main-background) !important;
+		--ytd-watch-card-secondary-text-color: var(--main-text) !important;
+		--ytd-watch-card-album-header-background: var(--main-background) !important;
 		--yt-comment-text-color: var(--main-text) !important;
 		--yt-comment-metadata-text-color: var(--hover-background) !important;
+		--ytd-comment-text-color: var(--main-text) !important;
+		--ytd-comment-metadata-text-color: var(--hover-background) !important;
 		--yt-moderation-panel-background: var(--second-background) !important;
 		--yt-moderation-panel-hover: var(--second-background) !important;
 		--yt-moderation-panel-comment-text: var(--dimer-text) !important;
 		--yt-moderation-panel-comment-metadata-text: var(--dimer-text) !important;
 		--yt-moderation-icon-color: var(--dimer-text) !important;
 		--yt-moderation-icon-hover-color: var(--dimer-text) !important;
+		--ytd-moderation-panel-background: var(--second-background) !important;
+		--ytd-moderation-panel-hover: var(--second-background) !important;
+		--ytd-moderation-panel-comment-text: var(--dimer-text) !important;
+		--ytd-moderation-panel-comment-metadata-text: var(--dimer-text) !important;
+		--ytd-moderation-icon-color: var(--dimer-text) !important;
+		--ytd-moderation-icon-hover-color: var(--dimer-text) !important;
 		--yt-backstage-metadata-text-color: var(--main-text) !important;
 		--yt-backstage-video-link-background-color: var(--second-background) !important;
 		--yt-backstage-image-alert-color: var(--main-text) !important;
+		--ytd-backstage-metadata-text-color: var(--main-text) !important;
+		--ytd-backstage-video-link-background-color: var(--second-background) !important;
+		--ytd-backstage-image-alert-color: var(--main-text) !important;
 		--yt-shopping-product-info: var(--dimer-text) !important;
 		--yt-live-chat-action-panel-background-color: var(--second-background) !important;
 		--yt-live-chat-action-panel-background-color-transparent: var(--second-background) !important;
@@ -720,7 +747,7 @@
 	}
 	
 	/*New logo*/
-	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
+	ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(2) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1), ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -762,9 +789,10 @@
 	}
 		
 	/*Search bar*/
-	ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox
+	ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="legacy"] #container.ytd-searchbox
 	{
 		border-color: var(--main-color) !important;
+		box-shadow: none !important;
 	}
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover
 	{

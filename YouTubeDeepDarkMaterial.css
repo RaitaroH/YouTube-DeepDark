@@ -789,14 +789,15 @@
 	}
 		
 	/*Search bar*/
-	ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="legacy"] #container.ytd-searchbox
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox
 	{
-		border-color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
 		box-shadow: none !important;
 	}
-	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox
 	{
 		border: 1px solid var(--main-color) !important;
+		box-shadow: none !important;
 	}
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox input.ytd-searchbox
 	{

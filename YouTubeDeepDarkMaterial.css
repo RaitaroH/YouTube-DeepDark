@@ -5,7 +5,7 @@
 	
 /*GNU General Public License v3.0.*/
 
-/*2.3.8*/
+/*2.3.9*/
 
 	/*Main color variables*/
 	:root
@@ -424,6 +424,17 @@
 		--ytd-backstage-cancel-background-color: var(--main-text) !important;
 		--ytd-backstage-cancel-color: var(--main-text) !important;
 		--ytd-offer-background-color: var(--hover-background) !important;
+	}
+	
+	/*Scrollbar fix for chrome*/
+	body::-webkit-scrollbar-thumb
+	{
+		height: 56px;
+		background: hsla(0, 0%, 53.3%, .4);
+	}
+	body::-webkit-scrollbar
+	{
+		width: 8px;
 	}
 	
 	/*Background for the entire page*/

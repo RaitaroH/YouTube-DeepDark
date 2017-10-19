@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.0.7*/
+/*2.0.8*/
 	
 	/*Main color variables*/
 	:root
@@ -189,6 +189,22 @@
 		
 		--border-color: var(--hover-background);
 		--dim-white: rgba(255, 255, 255, .95);
+	}
+	
+	/*Scrollbar fix for chrome*/
+	body::-webkit-scrollbar-thumb
+	{
+		height: 150px;
+		background: hsl(0, 0%, 56%);
+	}
+	body::-webkit-scrollbar-thumb:hover
+	{
+		background: hsl(0, 0%, 11%);
+	}
+	body::-webkit-scrollbar
+	{
+		width: 10px;
+		background: hsl(0, 0%, 26%);
 	}
 	
 	/*Changed text highlight*/

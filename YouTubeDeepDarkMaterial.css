@@ -5,7 +5,7 @@
 	
 /*GNU General Public License v3.0.*/
 
-/*2.3.9*/
+/*2.4.0*/
 
 	/*Main color variables*/
 	:root
@@ -424,6 +424,7 @@
 		--ytd-backstage-cancel-background-color: var(--main-text) !important;
 		--ytd-backstage-cancel-color: var(--main-text) !important;
 		--ytd-offer-background-color: var(--hover-background) !important;
+		--paper-tabs-selection-bar-color: var(--main-color) !important;
 	}
 	
 	/*Scrollbar fix for chrome*/

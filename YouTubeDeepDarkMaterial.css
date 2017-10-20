@@ -5,7 +5,7 @@
 	
 /*GNU General Public License v3.0.*/
 
-/*2.4.0*/
+/*2.4.1*/
 
 	/*Main color variables*/
 	:root
@@ -1393,4 +1393,15 @@
 	{
     		border-color: var(--main-color) !important;
 	}
+	
+	/*YouTube Apps*/
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#F00"], 
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#f00"], 
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#FF8983"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#E23229"], 
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#C7322A"]
+	{
+		fill: var(--main-color) !important;
+	}
+
 }

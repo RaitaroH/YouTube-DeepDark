@@ -1388,4 +1388,9 @@
 		color: var(--dimer-text) !important;
 		opacity: .8;
 	}
+	
+	#selectionBar.paper-tabs
+	{
+    		border-color: var(--main-color) !important;
+	}
 }

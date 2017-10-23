@@ -1410,4 +1410,14 @@
 		filter: grayscale(100%);
 	}
 
+	/* Promo page */
+	.yt-new-promo-page-section-text, .yt-new-promo-page-header{
+		color: var(--dimer-text);
+	}
+
+	/* crude fix */
+	.yt-new-promo-page-logo{
+		filter: invert(87.5%);
+	}
+
 }

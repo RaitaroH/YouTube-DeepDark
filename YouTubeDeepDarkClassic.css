@@ -813,4 +813,8 @@
 	{
 		filter: grayscale(100%) invert(100%);
 	}
+	/* Subscription button hover fix */
+	.yt-uix-subscription-button:hover + .yt-uix-subscription-preferences-button{
+		border-left-color: var(--main-color) !important;
+	}
 }

@@ -285,7 +285,7 @@
 		margin-right: 20px !important;
 	}
 	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/
-		.exp-responsive #yt-masthead #logo-container,#masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo, .yt-new-promo-page-logo{
+		.exp-responsive #yt-masthead #logo-container,#masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo {
 		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Logo.png) !important;
 		background-size: 75% !important;
 		background-position: right !important;
@@ -783,4 +783,29 @@
 		opacity: 1 !important;
 		fill: var(--main-text) !important;
 	}	
+	
+	/* Promo page */
+	body.yt-new-promo-page-use-launched-copy .yt-new-promo-page-header
+	{
+		background: var(--main-background) !important;
+	}
+	.yt-new-promo-page-section-text, .yt-new-promo-page-header
+	{
+		color: var(--dimer-text);
+	}
+	.yt-new-promo-page-button
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.yt-new-promo-page-button:hover
+	{
+		opacity: 1;
+	}
+	/* Crude logo fix */
+	.yt-new-promo-page-logo
+	{
+		filter: grayscale(100%) invert(100%);
+	}
 }

@@ -364,7 +364,7 @@
 		border-bottom: 4px solid var(--main-color) !important;
 	}
 	#hide-live-comments .yt-uix-button-expander{
-		border: 0px;
+		border: 0px !important;
 	}
 	.yt-card.yt-uix-expander .yt-uix-button-expander{
 		border-top: 1px solid var(--border-color) !important;

@@ -784,6 +784,11 @@
 		fill: var(--main-text) !important;
 	}	
 	
+	/* "Show chat" button background */
+	#watch-sidebar-live-chat .yt-uix-expander-collapsed {
+	  background: inherit;
+  }
+
 	/* Promo page */
 	body.yt-new-promo-page-use-launched-copy .yt-new-promo-page-header
 	{

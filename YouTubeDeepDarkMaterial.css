@@ -5,7 +5,7 @@
 	
 /*GNU General Public License v3.0.*/
 
-/*2.4.6*/
+/*2.4.7*/
 
 	/*Main color variables*/
 	:root
@@ -1411,13 +1411,28 @@
 	}
 
 	/* Promo page */
-	.yt-new-promo-page-section-text, .yt-new-promo-page-header{
+	body.yt-new-promo-page-use-launched-copy .yt-new-promo-page-header
+	{
+		background: var(--main-background) !important;
+	}
+	.yt-new-promo-page-section-text, .yt-new-promo-page-header
+	{
 		color: var(--dimer-text);
 	}
-
-	/* crude fix */
-	.yt-new-promo-page-logo{
-		filter: invert(87.5%);
+	.yt-new-promo-page-button
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.yt-new-promo-page-button:hover
+	{
+		opacity: 1;
+	}
+	/* Crude logo fix */
+	.yt-new-promo-page-logo
+	{
+		filter: grayscale(100%) invert(100%);
 	}
 
 }

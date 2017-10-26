@@ -731,7 +731,7 @@
 	{
 		background-color: var(--main-background) !important;
 	}
-	.yt-live-chat-text-message-renderer-1, .yt-live-chat-text-message-renderer-0, .yt-live-chat-item-list-renderer-1 #item-scroller.yt-live-chat-item-list-renderer, .yt-live-chat-item-list-renderer-0 #item-scroller.yt-live-chat-item-list-renderer
+	.yt-live-chat-text-message-renderer-1, .yt-live-chat-text-message-renderer-0, .yt-live-chat-item-list-renderer-1 #item-scroller.yt-live-chat-item-list-renderer, .yt-live-chat-item-list-renderer-0 #item-scroller.yt-live-chat-item-list-renderer, #header.yt-live-chat-participant-list-renderer
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -764,7 +764,7 @@
 	{
 		background: transparent !important;
 	}
-  yt-formatted-string.ytd-menu-service-item-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.yt-options-renderer, #title.yt-report-form-modal-renderer, #scroller.yt-confirm-dialog-renderer{
+  yt-formatted-string.ytd-menu-service-item-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.yt-options-renderer, #title.yt-report-form-modal-renderer, #scroller.yt-confirm-dialog-renderer, yt-live-chat-participant-list-renderer, #author-name.yt-live-chat-participant-renderer{
 		color: var(--main-text);
 	}
 	ytd-menu-navigation-item-renderer:hover yt-formatted-string, ytd-menu-service-item-renderer:hover yt-formatted-string, #submit-button a, #confirm-button a{

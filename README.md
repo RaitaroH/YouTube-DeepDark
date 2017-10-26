@@ -13,6 +13,8 @@ Theme as a userstyle [here](https://userstyles.org/styles/135831/youtube-deepdar
 
 Material version [here](https://userstyles.org/styles/144962/youtube-deepdark-material).
 
+**Many thanks to [@MechaLynx](https://github.com/MechaLynx) for his contributions.**
+
 ### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
 
 

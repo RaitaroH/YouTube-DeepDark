@@ -364,11 +364,15 @@
 		border-bottom: 4px solid var(--main-color) !important;
 	}
 	#hide-live-comments .yt-uix-button-expander{
-		border: 0px !important;
+		border: 0px;
 	}
 	.yt-card.yt-uix-expander .yt-uix-button-expander{
 		border-top: 1px solid var(--border-color) !important;
 	}
+	/* Retain no border on "Show Chat" button */
+  #watch-sidebar-live-chat .yt-uix-expander-collapsed-body {
+    border-top: none !important;
+  }
 	#subscription-playlist{
 		border-color: var(--main-color) !important;
 		/*filter: grayscale(100%) invert(100%) !important;*/

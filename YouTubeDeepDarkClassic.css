@@ -764,14 +764,17 @@
 	{
 		background: transparent !important;
 	}
-  yt-formatted-string.ytd-menu-service-item-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.yt-options-renderer, #title.yt-report-form-modal-renderer, #scroller.yt-confirm-dialog-renderer, yt-live-chat-participant-list-renderer, #author-name.yt-live-chat-participant-renderer{
+  yt-formatted-string.ytd-menu-service-item-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.yt-options-renderer, #title.yt-report-form-modal-renderer, #scroller.yt-confirm-dialog-renderer, yt-live-chat-participant-list-renderer, #author-name.yt-live-chat-participant-renderer
+  {
 		color: var(--main-text);
 	}
-	ytd-menu-navigation-item-renderer:hover yt-formatted-string, ytd-menu-service-item-renderer:hover yt-formatted-string, #submit-button a, #confirm-button a{
+	ytd-menu-navigation-item-renderer:hover yt-formatted-string, ytd-menu-service-item-renderer:hover yt-formatted-string, #submit-button a, #confirm-button a
+  {
 		color: var(--main-color) !important;
 	}
   /* chat dialog radio button style */
-	#onRadio.paper-radio-button {
+	#onRadio.paper-radio-button
+  {
 		--paper-radio-button-checked-color: var(--main-color) !important;
   }
 	/*Sign in chat*/

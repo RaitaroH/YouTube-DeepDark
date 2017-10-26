@@ -5,7 +5,7 @@
 /*GNU General Public License v3.0.*/
 
 /*2.1.4*/
-	
+
 	/*Main color variables*/
 	:root
 	{
@@ -16,17 +16,17 @@
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
 		--dimer-text: /*[[dimerText]]*/;
-		
+
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
 		--main-background: #111111;
-		--second-background: #181818; 
+		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
 		--dimer-text: #CCCCCC;
 		*/
-		
+
 		/*KDE colors*/
 		/*
 		--main-color: #3DAEE9;
@@ -36,7 +36,7 @@
 		--main-text: #eff0f1;
 		--dimer-text: #bdc3c7;
 		*/
-				
+
 		/*Vertex Dark colors*/
 		/*
 		--main-color: #4080fb;
@@ -46,7 +46,7 @@
 		--main-text: #F3F3F5;
 		--dimer-text: #AEAFB0;
 		*/
-		
+
 		/*Arc Dark colors*/
 		/*
 		--main-color: #5294E2;
@@ -56,7 +56,7 @@
 		--main-text: #C1C8D1;
 		--dimer-text: #B3BAC5;
 		*/
-		
+
 		/*Firefox Dark colors*/
 		/*
 		--main-color: #5675B9;
@@ -66,7 +66,7 @@
 		--main-text: #E3EEF9;
 		--dimer-text: #606376;
 		*/
-		
+
 		/*Firefox57 Dark colors*/
 		/*
 		--main-color: #4080FB;
@@ -76,7 +76,7 @@
 		--main-text: #F9F9FA;
 		--dimer-text: #D0D0D0;
 		*/
-		
+
 		/*Discord colors*/
 		/*
 		--main-color: #7289DA;
@@ -86,7 +86,7 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #ADA8AA;
 		*/
-		
+
 		/*YouTube colors*/
 		/*
 		--main-color: #E52117;
@@ -96,7 +96,7 @@
 		--main-text: #E1E1E1;
 		--dimer-text: #7F7F7F;
 		*/
-		
+
 		/*Mint-Y-Dark colors*/
 		/*
 		--main-color: #9AB87C;
@@ -105,8 +105,8 @@
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
 		--dimer-text: #D5DADA;
-		*/		
-		
+		*/
+
 		/*9anime colors*/
 		/*
 		--main-color: #723f8c;
@@ -116,7 +116,7 @@
 		--main-text: #B4B4B4;
 		--dimer-text: #747474;
 		*/
-		
+
 		/*Black and white*/
 		/*
 		--main-color: #ffffff;
@@ -126,7 +126,7 @@
 		--main-text: #b4b4b4;
 		--dimer-text: #828282;
 		*/
-		
+
 		/*Yellow (colors from petrocompletions)*/
 		/*
 		--main-color: #FFC700;
@@ -136,7 +136,7 @@
 		--main-text: #EFF0F1;
 		--dimer-text: #9F9999;
 		*/
-		
+
 		/*Yellow 2*/
 		/*
 		--main-color: #ffc700;
@@ -146,27 +146,27 @@
 		--main-text: #fffdf5;
 		--dimer-text: #fff8e1;
 		*/
-		
+
 		/*Ubuntu grey colors*/
 		/*
 		--main-color: #EF7847;
 		--main-background: #312D2A;
-		--second-background: #3D3C38; 
+		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
 		--dimer-text: #E6E5E3;
 		*/
-		
+
 		/*Ubuntu purple colors*/
 		/*
 		--main-color: #EF7847;
 		--main-background: #2C071A;
-		--second-background: #430B28; 
+		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
 		--dimer-text: #E6E5E3;
 		*/
-		
+
 		/*Orange*/
 		/*
 		--main-color: #ff6905;
@@ -176,7 +176,7 @@
 		--main-text: #fff9f5;
 		--dimer-text: #ffede1;
 		*/
-		
+
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
 		/*
 		--main-color: #EF7D6C;
@@ -186,11 +186,11 @@
 		--main-text: #EFB26C;
 		--dimer-text: #986E3F;
 		*/
-		
+
 		--border-color: var(--hover-background);
 		--dim-white: rgba(255, 255, 255, .95);
 	}
-	
+
 	/*Scrollbar fix for chrome*/
 	body::-webkit-scrollbar-thumb
 	{
@@ -206,7 +206,7 @@
 		width: 10px;
 		background: hsl(0, 0%, 26%);
 	}
-	
+
 	/*Changed text highlight*/
 	::selection {
 		background: var(--main-color) !important;
@@ -310,7 +310,7 @@
 		opacity: 0.75 !important;
 	}
 	/*
-	
+
 	/*Backgrounds section*/
 	/*Many many things*/
 	 #yt-masthead-notifications-content,#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis,.yt-uix-form-input-text,.yt-uix-form-input-fluid .yt-uix-form-input-text, .yt-uix-form-input-fluid .yt-uix-form-input-textarea,#comment-settings .comment-settings-control .yt-uix-form-input-textarea,#browse-items-primary .item-section > li:last-child > .yt-lockup-tile, .branded-page-v2-primary-col .branded-page-box:last-child, .section-list li:last-child .item-section li:last-child .branded-page-box,#playlist-settings-editor .yt-dialog-footer,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel,.ac-renderer,.channel-autocomplete-list-item,.dashboard-widget-videos .video-list-item .video-title a:hover,#subscription-manager-container tbody td,.create-playlist-widget-form .create-playlist-bottom-section,#pl-header .pl-header-description-text:hover,#pl-header .pl-header-title:hover,.gssb_i td,#appbar-content,td:hover,.Zm-ct-Md,.timedtext-content,.multitrack-timeline,.iph-dialog, .iph-dialog-iframe,.annotator-endscreen-splash,#audio-ui-search-input-field,#featured-tracks-header,#inline-editor-main,.metadata-editor-container .video-settings-form,.live-comments-emoji-picker-tab-row,.live-chat-widget .comment.alternate-row,.live-chat-widget .comment,.yt-rtl,.yt-ltr,.footer-container,#footer .yt-picker,.xta .obc,.nbc,.part_hide_footer,.howto-promo-container,.social-connector,.account-container,#storyboard,storyboard *,.track-list li.track .audiolibrary-track-head,.yt-uix-overlay-actions,.HPHGCHB-F-j,.HPHGCHB-b-d,.live-welcome-intro,.account-feature-v2-grid-items li,.video-dds .list,.tabbed-page .tab,#vm-pagination,.advanced-search-footer,#non-appbar-vm-video-actions-bar .vm-video-actions-inner, .view-all-playlists #non-appbar-vm-video-actions-bar .vm-video-actions-inner,.related-item-dismissed-container,#dashboard-header-stats li,.analytics-sparkline-card.yt-uix-sessionlink,.dashboard-widget-header:hover .dashboard-widget-overlay-icon, .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls, .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls,.dashboard-widget.notification, .dashboard-widget .dashboard-widget-content, .dashboard-widget .dashboard-widget-config,.dashboard-widget-header:hover, .dashboard-widget .dashboard-widget-config .dashboard-widget-header, .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header, .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header,.subscription-preferences-overlay-content .yt-uix-overlay-actions,.nbc,.yt-dialog-fg, .yt-uix-overlay-fg ,.yt-ui-menu-item,.pl-video,.watch-stage-mode #player-playlist .player-height,#player-playlist .playlist-header,#player-playlist .playlist-videos-list,.yt-uix-button-c4-view-action,.show-guide #appbar-guide-menu,.yt-uix-button-nakedicon,#player-playlist .playlist-videos-list li,.channel-header .secondary-header-contents,.channel-header .primary-header-contents, #guide-container,.branded-page-v2-primary-col .branded-page-box.video-player-view-component:last-child, .branded-page-v2-primary-col .branded-page-box.c4-featured-content:last-child, .branded-page-v2-primary-col .branded-page-box.c4-featured-content-editor:last-child, .branded-page-v2-primary-col .branded-page-box.welcome:last-child,.branded-page-v2-secondary-col .yt-card,#browse-items-primary .item-section > li > .yt-lockup-tile, #browse-items-primary .item-section > li > .multirow-shelf, .browse-list-item-container.feed-item-container.branded-page-box, .compact-shelf.branded-page-box,.guide-pinned .guide-pinning-enabled #appbar-guide-menu,body #footer-container,.branded-page-v2-top-row #channel-subheader,.yt-uix-expander-collapsed .yt-ui-ellipsis.yt-ui-ellipsis-10,.video-player-view-component .description,.yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a,.video-player-view-component .video-detail .title,.branded-page-v2-subnav-container,#channels-browse-content-grid.grid-lockups-container,.yt-card,.yt-ui-ellipsis,#watch8-action-buttons, .yt-card .yt-uix-expander .yt-uix-button-expander,.comment-simplebox-renderer-collapsed-content,.exp-comments-refresh .comment-thread-renderer:not(:last-of-type) .comment-replies-renderer,.sitewide-consent-visible .yt-consent-banner,.comment-simplebox-renderer,.yt-uix-button-menu,.yt-ui-menu-content,.search-header,.yt-masthead-account-picker.yt-uix-clickcard-card-content,.yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border,.yt-masthead-picker-footer,.iv-card-content,.ytp-ce-expanding-overlay-background, #appbar-nav{
@@ -612,7 +612,7 @@
 	}
 	/* progress bar */
 	.html5-play-progress, .ytp-play-progress {
-    		background: var(--main-color) !important; 
+    		background: var(--main-color) !important;
 	}
 	.ytp-volume-slider-track, .ytp-volume-slider-handle:before {
   		background: var(--main-color) !important;
@@ -664,11 +664,11 @@
 		background: var(--second-background) !important;
 		opacity: .9 !important;
 	}
-	.ytp-menuitem:hover:not([aria-disabled="true"]) 
+	.ytp-menuitem:hover:not([aria-disabled="true"])
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
+
 	/*Youtube+ Section*/
 	#framestep-button,.P-impexp,.thumb-svg,#subscription-playlist svg,#console-button,#autoplay-button,#loop-button,#save-thumbnail-button,#screenshot-button,#popout-button,#fullbrowser-button,#cinemamode-button,#shortcuts-button,#yt-masthead #P{
 		filter: invert(100%);
@@ -680,26 +680,26 @@
 		color: var(--dimer-text) !important;
 	}
 	#P-content input + label::before,.P-horz {
-		border-color: var(--border-color) !important; 
+		border-color: var(--border-color) !important;
 	}
 	#P-content input:checked + label::before {
-		border-color: var(--main-color) !important; 
+		border-color: var(--main-color) !important;
 	}
 	#P-settings {
-		background: var(--main-background) !important; 
+		background: var(--main-background) !important;
 	}
 	#exp-cont,#P-content {
-		background: var(--main-background) !important; 
+		background: var(--main-background) !important;
 	}
 	#player .player-api{
-		background: var(--second-background) !important; 
+		background: var(--second-background) !important;
 	}
 	#P-sidebar-list > li.selected,#P-settings option:hover,.P-save{
-		background: var(--main-color) !important; 
+		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
 	#P-sidebar-list > li:hover,#P-settings option  {
-		background: var(--hover-background) !important; 
+		background: var(--hover-background) !important;
 	}
 	#P-settings select,#P-content select{
 		background: var(--hover-background) !important;
@@ -707,25 +707,25 @@
 		text-shadow: 0 0 0 var(--main-text) !important;
 	}
 	#P-settings .P-select::after  {
-		border-top-color: var(--main-text) !important; 
+		border-top-color: var(--main-text) !important;
 	}
 	#P-content input[type='text'],.P-reset,.P-reset:hover{
 		background: var(--second-background) !important;
 		border-color: var(--main-background) !important;
 		color: var(--main-text) !important;
 	}
-	
+
 	/*Swich account*/
 	.yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-picker-header, .yt-uix-clickcard-card.yt-masthead-multilogin .yt-masthead-multilogin-users-header,.yt-masthead-account-picker-option
 	{
    		background-color: var(--second-background) !important;
 	}
-	.yt-masthead-account-picker-option:hover 
+	.yt-masthead-account-picker-option:hover
 	{
     		background: var(--hover-background) !important;
 	}
 
-	
+
 	/*Chat again because youtube has nothing better to do. YouTube, WHY?!*/
 	.yt-live-chat-header-renderer-1, .yt-live-chat-message-input-renderer-1, .yt-live-chat-header-renderer-0, .yt-live-chat-message-input-renderer-0, .paper-menu-0, .paper-menu-1, .yt-live-chat-ticker-renderer-0,.yt-live-chat-ticker-renderer-1,.yt-live-chat-renderer
 	{
@@ -801,12 +801,12 @@
 	{
 		opacity: .9;
 	}
-	paper-icon-button.yt-live-chat-item-list-renderer:hover, paper-icon-button.yt-live-chat-item-list-renderer:hover .style-scope.iron-icon 
+	paper-icon-button.yt-live-chat-item-list-renderer:hover, paper-icon-button.yt-live-chat-item-list-renderer:hover .style-scope.iron-icon
 	{
 		opacity: 1 !important;
 		fill: var(--main-text) !important;
-	}	
-	
+	}
+
 	/* "Show chat" button background */
 	#watch-sidebar-live-chat .yt-uix-expander-collapsed {
 	  background: inherit;

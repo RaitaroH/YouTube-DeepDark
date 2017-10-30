@@ -5,7 +5,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.4.8*/
+/*2.4.9*/
 
 	/*Main color variables*/
 	:root
@@ -965,6 +965,24 @@
 		color: var(--dimer-text) !important;
 	}
 
+	#watch-card-header.ytd-generic-watch-card, #img-endpoint.ytd-watch-card-collage-renderer #overlay-button.ytd-watch-card-collage-renderer
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	paper-tab.iron-selected.ytd-generic-watch-card
+	{
+		color: var(--main-color) !important;
+	}
+	#img-endpoint.ytd-watch-card-collage-renderer #overlay-button.ytd-watch-card-collage-renderer
+	{
+		opacity: .9;
+	}
+	#img-endpoint.ytd-watch-card-collage-renderer #overlay-button.ytd-watch-card-collage-renderer:hover
+	{
+		opacity: 1 !important;
+	}
+	
 	/*Search for channel videos*/
  	.unfocused-line.paper-input-container,.focused-line.paper-input-container
 	{

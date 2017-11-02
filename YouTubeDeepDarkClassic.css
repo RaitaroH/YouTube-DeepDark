@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.1.7*/
+/*2.1.8*/
 
 	/*Main color variables*/
 	:root
@@ -521,11 +521,11 @@
 		 color: var(--dimer-text) !important;
 	}
 	/*New titles*/
-	.yt-lockup .yt-lockup-byline a, .pl-video-owner a, .video-list .video-list-item .stat.attribution {
+	.yt-lockup .yt-lockup-byline a, .pl-video-owner a, .video-list .video-list-item .stat.attribution, .comment-author-text {
 		color: var(--main-color) !important;
 		opacity: 0.9 !important;
 	}
-	.yt-lockup .yt-lockup-byline a:hover, .pl-video-owner a:hover, .video-list .video-list-item .stat.attribution:hover {
+	.yt-lockup .yt-lockup-byline a:hover, .pl-video-owner a:hover, .video-list .video-list-item .stat.attribution:hover, .comment-author-text:hover {
 		color: var(--main-color) !important;
 		opacity: 1 !important;
 	}

@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.1.8*/
+/*2.1.9*/
 
 	/*Main color variables*/
 	:root
@@ -521,17 +521,28 @@
 		 color: var(--dimer-text) !important;
 	}
 	/*New titles*/
-	.yt-lockup .yt-lockup-byline a, .pl-video-owner a, .video-list .video-list-item .stat.attribution, .comment-author-text {
+	.yt-lockup .yt-lockup-byline a, .pl-video-owner a, .video-list .video-list-item .stat.attribution, .comment-author-text, .lohp-video-metadata .yt-user-name, span[class="about-channel-link-text"] {
 		color: var(--main-color) !important;
 		opacity: 0.9 !important;
 	}
-	.yt-lockup .yt-lockup-byline a:hover, .pl-video-owner a:hover, .video-list .video-list-item .stat.attribution:hover, .comment-author-text:hover {
+	.yt-lockup .yt-lockup-byline a:hover, .pl-video-owner a:hover, .video-list .video-list-item .stat.attribution:hover, .comment-author-text:hover, .lohp-video-metadata .yt-user-name:hover, .comment-renderer-header .comment-renderer-time a:hover, span[class="about-channel-link-text"]:hover {
 		color: var(--main-color) !important;
 		opacity: 1 !important;
 	}
 	#translate-setting-container{
 		 color: var(--hover-background) !important;
 	}
+	/*New metadata*/
+	.comment-renderer-header .comment-renderer-time a, .lohp-video-metadata span[class="username-prepend"], span[class="business-email-label"] {
+		color: var(--dimer-text) !important;
+		opacity: .8;
+	}
+	.lohp-video-metadata, .lohp-video-metadata .view-count, .shelf-description, .shelf-annotation, .about-stats > *, .about-metadata-label {
+
+		color: var(--dimer-text) !important;
+		opacity: 1 !important;
+	}
+	
 	/*Calendar in the analytics*/
 	.HPHGCHB-K-h .datePickerDayIsFiller,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel, .HPHGCHB-K-h .datePickerDay,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel{
 		 color: var(--main-background) !important;

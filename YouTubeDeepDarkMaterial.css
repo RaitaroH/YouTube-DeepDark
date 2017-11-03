@@ -557,7 +557,7 @@
 	}
 
 	/*Subscribe button and comment button*/
-	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover yt-formatted-string[class="style-scope ytd-button-renderer style-compact-gray"]
+	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover yt-formatted-string[class="style-scope ytd-button-renderer style-compact-gray"], yt-formatted-string[class="style-scope ytd-button-renderer style-compact-gray"]
 	{
 		color: var(--main-text) !important;
 	}

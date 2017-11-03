@@ -5,7 +5,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.4.9*/
+/*2.5.0*/
 
 	/*Main color variables*/
 	:root
@@ -557,16 +557,16 @@
 	}
 
 	/*Subscribe button and comment button*/
-	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string
+	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover yt-formatted-string[class="style-scope ytd-button-renderer style-compact-gray"]
 	{
 		color: var(--main-text) !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed])
+	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), #button[class="style-scope ytd-button-renderer style-compact-gray"]
 	{
 		background-color: var(--main-color) !important;
 		opacity: 0.9 !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover,.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover
+	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover,.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover
 	{
 		opacity: 1 !important;
 	}

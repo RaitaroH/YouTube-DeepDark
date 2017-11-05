@@ -1,10 +1,10 @@
-@-moz-document domain(youtube.com),  domain(apis.google.com) {
+@-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/.*'),  domain(apis.google.com) {
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
 /*GNU General Public License v3.0.*/
 
-/*2.1.9*/
+/*2.2.0*/
 
 	/*Main color variables*/
 	:root

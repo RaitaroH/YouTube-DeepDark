@@ -5,7 +5,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.1*/
+/*2.5.2*/
 
 	/*Main color variables*/
 	:root
@@ -425,6 +425,10 @@
 		--ytd-backstage-cancel-color: var(--main-text) !important;
 		--ytd-offer-background-color: var(--hover-background) !important;
 		--paper-tabs-selection-bar-color: var(--main-color) !important;
+		/*New search bar*/
+		--yt-material-searchbox-inactive: var(--main-background) !important;
+		--yt-material-searchbox-active: var(--hover-background) !important;
+		--yt-swatch-icon-color: var(--dimer-text) !important;
 	}
 
 	/*Scrollbar fix for chrome*/
@@ -909,7 +913,7 @@
 		border-color: var(--hover-background) !important;
 		box-shadow: none !important;
 	}
-	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="material-left"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox
 	{
 		border: 1px solid var(--main-color) !important;
 		box-shadow: none !important;
@@ -919,7 +923,7 @@
 		color: var(--main-text) !important;
 	}
 	/*Icon hover*/
-	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox
+	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox, #search-icon.ytd-searchbox:hover
 	{
 		color: var(--main-color) !important;
 	}

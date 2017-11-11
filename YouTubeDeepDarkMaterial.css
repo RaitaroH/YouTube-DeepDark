@@ -1456,5 +1456,12 @@
 	{
 		filter: grayscale(100%) invert(100%);
 	}
+  /* Fix for active like/dislike buttons */
+	ytd-toggle-button-renderer.style-grey-text[is-icon-button] {
+		color: var(--yt-button-color);
+	}
+	ytd-toggle-button-renderer #button.ytd-toggle-button-renderer {
+		color: inherit;
+	}
 
 }

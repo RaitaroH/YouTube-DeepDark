@@ -857,4 +857,12 @@
 	.yt-uix-subscription-button:hover + .yt-uix-subscription-preferences-button{
 		border-left-color: var(--main-color) !important;
 	}
+  /* Account settings colors */
+  .desktop-notifications .browser{
+    border: 1px solid var(--dimer-text);
+    background: transparent;
+	}
+	.account-content, #creator-sidebar.single-section .creator-sidebar-section .creator-sidebar-item-link, h2.account-section-header{
+			color: var(--dimer-text);
+	}
 }

@@ -529,9 +529,6 @@
 		color: var(--main-color) !important;
 		opacity: 1 !important;
 	}
-	#translate-setting-container{
-		 color: var(--hover-background) !important;
-	}
 	/*New metadata*/
 	.comment-renderer-header .comment-renderer-time a, .lohp-video-metadata span[class="username-prepend"], span[class="business-email-label"] {
 		color: var(--dimer-text) !important;
@@ -542,7 +539,7 @@
 		color: var(--dimer-text) !important;
 		opacity: 1 !important;
 	}
-	
+
 	/*Calendar in the analytics*/
 	.HPHGCHB-K-h .datePickerDayIsFiller,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel, .HPHGCHB-K-h .datePickerDay,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel{
 		 color: var(--main-background) !important;

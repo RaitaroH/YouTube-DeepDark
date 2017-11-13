@@ -5,7 +5,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.3*/
+/*2.5.4*/
 
 	/*Main color variables*/
 	:root
@@ -661,7 +661,7 @@
 	}
 
 	/*Title hover*/
-	#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,#dismissable.ytd-compact-video-renderer:hover h3.ytd-compact-video-renderer,#content.ytd-playlist-video-renderer:hover #video-title.ytd-playlist-video-renderer,ytd-playlist-panel-video-renderer:hover #video-title.ytd-playlist-panel-video-renderer,ytd-playlist-panel-video-renderer:hover #index.ytd-playlist-panel-video-renderer,#items.yt-horizontal-list-renderer > .yt-horizontal-list-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,ytd-notification-renderer:hover .text.ytd-notification-renderer,ytd-grid-playlist-renderer:hover #video-title.ytd-grid-playlist-renderer,#dismissable.ytd-video-renderer:hover #video-title.ytd-video-renderer,ytd-channel-renderer:hover #channel-title.ytd-channel-renderer, ytd-grid-channel-renderer:hover #title.ytd-grid-channel-renderer
+	#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,#dismissable.ytd-compact-video-renderer:hover h3.ytd-compact-video-renderer,#content.ytd-playlist-video-renderer:hover #video-title.ytd-playlist-video-renderer,ytd-playlist-panel-video-renderer:hover #video-title.ytd-playlist-panel-video-renderer,ytd-playlist-panel-video-renderer:hover #index.ytd-playlist-panel-video-renderer,#items.yt-horizontal-list-renderer > .yt-horizontal-list-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,ytd-notification-renderer:hover .text.ytd-notification-renderer,ytd-grid-playlist-renderer:hover #video-title.ytd-grid-playlist-renderer,#dismissable.ytd-video-renderer:hover #video-title.ytd-video-renderer,ytd-channel-renderer:hover #channel-title.ytd-channel-renderer, ytd-grid-channel-renderer:hover #title.ytd-grid-channel-renderer, ytd-compact-video-renderer:hover #video-title.ytd-compact-video-renderer
 	{
 		color: var(--main-color) !important;
 	}

@@ -5,7 +5,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.4*/
+/*2.5.5*/
 
 	/*Main color variables*/
 	:root
@@ -429,6 +429,8 @@
 		--yt-material-searchbox-inactive: var(--main-background) !important;
 		--yt-material-searchbox-active: var(--hover-background) !important;
 		--yt-swatch-icon-color: var(--dimer-text) !important;
+		
+		--yt-sidebar-background: var(--second-background) !important;
 	}
 
 	/*Scrollbar fix for chrome*/

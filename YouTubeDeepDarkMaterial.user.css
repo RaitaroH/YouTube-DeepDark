@@ -1,3 +1,136 @@
+/* ==UserStyle==
+@name YouTube DeepDark Material
+@namespace github.com/RaitaroH/YouTube-DeepDark
+@homepageURL https://github.com/RaitaroH/YouTube-DeepDark
+@version 2.5.6
+@updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
+@description YouTube dark theme for the Material version of YouTube (2017)
+@author RaitaroH
+@license GNU-V3.0
+
+@preprocessor uso
+@var select mainColor 'Main color' {
+	"DeepDark": "#00adee",
+	"BreezeDark": "#3DAEE9",
+	"Vertex Dark": "#4080fb",
+	"Arc Dark": "#5294E2",
+	"Firefox Dark": "#5675B9",
+	"Firefox57": "#4080FB",
+	"Discord": "#7289DA",
+	"YouTubeDark": "#E52117",
+	"Mint-Y-Dark": "#9AB87C",
+	"9anime": "#723f8c",
+	"Black&White": "#ffffff",
+	"Yellow_petrocompletions": "#FFC700",
+	"Yellow2": "#FFC700",
+	"Ubuntu_grey": "#EF7847",
+	"Ubuntu_purple": "#EF7847",
+	"Orange": "#ff6905",
+	"YouTube_夜明け":  "#EF7D6C"
+}
+
+@var select mainBackground 'Main background color' {
+	"DeepDark": "#111111",
+	"BreezeDark": "#232629",
+	"Vertex Dark": "#2B2B2C",
+	"Arc Dark": "#343944",
+	"Firefox Dark": "#272B35",
+	"Firefox57": "#0C0C0D",
+	"Discord": "#1E2124",
+	"YouTubeDark": "#111111",
+	"Mint-Y-Dark": "#2F2F2F",
+	"9anime": "#0B0A0D",
+	"Black&White": "#000000",
+	"Yellow_petrocompletions": "#141414",
+	"Yellow2": "#0a0800",
+	"Ubuntu_grey": "#312D2A",
+	"Ubuntu_purple": "#2C071A",
+	"Orange": "#0a0400",
+	"YouTube_夜明け":  "#332222"
+}
+
+@var select secondBackground 'Second background color' {
+	"DeepDark": "#181818",
+	"BreezeDark": "#2a2e32",
+	"Vertex Dark": "#353638",
+	"Arc Dark": "#383C4A",
+	"Firefox Dark": "#181D20",
+	"Firefox57": "#252526",
+	"Discord": "#2F3136",
+	"YouTubeDark": "#232323",
+	"Mint-Y-Dark": "#383838",
+	"9anime": "#17151C",
+	"Black&White": "#0a0a0a",
+	"Yellow_petrocompletions": "#202222",
+	"Yellow2": "#0c0a04",
+	"Ubuntu_grey": "#3D3C38",
+	"Ubuntu_purple": "#430B28",
+	"Orange": "#0e0702",
+	"YouTube_夜明け":  "#2A1B1B"
+}
+
+@var select hoverBackground 'Hover background color' {
+	"DeepDark": "#232323",
+	"BreezeDark": "#31363b",
+	"Vertex Dark": "#515254",
+	"Arc Dark": "#414A59",
+	"Firefox Dark": "#353A44",
+	"Firefox57": "#323234",
+	"Discord": "#484B51",
+	"YouTubeDark": "#343434",
+	"Mint-Y-Dark": "#404040",
+	"9anime": "#1E1C25",
+	"Black&White": "#0f0f0f",
+	"Yellow_petrocompletions": "#353838",
+	"Yellow2": "#0f0d05",
+	"Ubuntu_grey": "#59564D",
+	"Ubuntu_purple": "#520D30",
+	"Orange": "#110903",
+	"YouTube_夜明け":  "#863B2F"
+}
+
+@var select mainText 'Main text color' {
+	"DeepDark": "#eff0f1",
+	"BreezeDark": "#eff0f1",
+	"Vertex Dark": "#F3F3F5",
+	"Arc Dark": "#C1C8D1",
+	"Firefox Dark": "#E3EEF9",
+	"Firefox57": "#F9F9FA",
+	"Discord": "#FFFFFF",
+	"YouTubeDark": "#E1E1E1",
+	"Mint-Y-Dark": "#FFFFFF",
+	"9anime": "#B4B4B4",
+	"Black&White": "#b4b4b4",
+	"Yellow_petrocompletions": "#EFF0F1",
+	"Yellow2": "#fffdf5",
+	"Ubuntu_grey": "#F2F1EF",
+	"Ubuntu_purple": "#F2F1EF",
+	"Orange": "#fff9f5",
+	"YouTube_夜明け":  "#EFB26C"
+}
+
+@var select dimerText 'Secondary text color' {
+	"DeepDark": "#CCCCCC",
+	"BreezeDark": "#bdc3c7",
+	"Vertex Dark": "#AEAFB0",
+	"Arc Dark": "#B3BAC5",
+	"Firefox Dark": "#606376",
+	"Firefox57": "#D0D0D0",
+	"Discord": "#ADA8AA",
+	"YouTubeDark": "#7F7F7F",
+	"Mint-Y-Dark": "#D5DADA",
+	"9anime": "#747474",
+	"Black&White": "#828282",
+	"Yellow_petrocompletions": "#9F9999",
+	"Yellow2": "#fff8e1",
+	"Ubuntu_grey": "#E6E5E3",
+	"Ubuntu_purple": "#E6E5E3",
+	"Orange": "#ffede1",
+	"YouTube_夜明け":  "#986E3F"
+}
+
+==/UserStyle== */
+
 @-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/.*') {
 
 /*For the new Material Design for YouTube*/
@@ -5,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.5*/
+/*2.5.6*/
 
 	/*Main color variables*/
 	:root

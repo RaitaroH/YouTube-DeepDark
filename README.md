@@ -9,6 +9,10 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 Code also taken from [youtube-custom-colors-video-progress-bar
 ](https://userstyles.org/styles/95280/youtube-custom-colors-video-progress-bar) for the video theming.
 
+**Install from github using Stylus:**
+> [classic](https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css),
+> [material](https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css).
+
 Theme as a userstyle [here](https://userstyles.org/styles/135831/youtube-deepdark).
 
 Material version [here](https://userstyles.org/styles/144962/youtube-deepdark-material).

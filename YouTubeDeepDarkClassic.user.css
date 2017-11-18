@@ -26,7 +26,7 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"YouTube_夜明け":  "#EF7D6C"
+	"Jisho_夜明け":  "#EF7D6C"
 }
 
 @var select mainBackground 'Main background color' {
@@ -46,7 +46,7 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"YouTube_夜明け":  "#332222"
+	"Jisho_夜明け":  "#332222"
 }
 
 @var select secondBackground 'Second background color' {
@@ -66,7 +66,7 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"YouTube_夜明け":  "#2A1B1B"
+	"Jisho_夜明け":  "#2A1B1B"
 }
 
 @var select hoverBackground 'Hover background color' {
@@ -86,7 +86,7 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"YouTube_夜明け":  "#863B2F"
+	"Jisho_夜明け":  "#863B2F"
 }
 
 @var select mainText 'Main text color' {
@@ -106,7 +106,7 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"YouTube_夜明け":  "#EFB26C"
+	"Jisho_夜明け":  "#EFB26C"
 }
 
 @var select dimerText 'Secondary text color' {
@@ -126,7 +126,7 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"YouTube_夜明け":  "#986E3F"
+	"Jisho_夜明け":  "#986E3F"
 }
 
 ==/UserStyle== */

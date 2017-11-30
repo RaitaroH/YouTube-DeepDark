@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.2.3
+@version 2.2.4
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css
 @description YouTube dark theme for the Classic YouTube
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.2.3*/
+/*2.2.4*/
 
 	/*Main color variables*/
 	:root
@@ -509,10 +509,10 @@
 		border-top: 1px solid var(--border-color) !important;
 	}
 	/* Retain no border on "Show Chat" button */
-  #watch-sidebar-live-chat .yt-uix-expander-collapsed-body {
-    border-top: none !important;
-  }
-	#subscription-playlist{
+	#watch-sidebar-live-chat .yt-uix-expander-collapsed-body {
+		border-top: none !important;
+	}
+	#subscription-playlist {
 		border-color: var(--main-color) !important;
 		/*filter: grayscale(100%) invert(100%) !important;*/
 	}
@@ -671,6 +671,11 @@
 
 		color: var(--dimer-text) !important;
 		opacity: 1 !important;
+	}
+
+	.yt-lockup-description.yt-ui-ellipsis.yt-ui-ellipsis-2, .yt-lockup-description.yt-ui-ellipsis.yt-ui-ellipsis-2 {
+		color: var(--dimer-text);
+		opacity: .8;
 	}
 
 	/*Calendar in the analytics*/
@@ -914,19 +919,22 @@
 	{
 		background: transparent !important;
 	}
-  yt-formatted-string.ytd-menu-service-item-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.yt-options-renderer, #title.yt-report-form-modal-renderer, #scroller.yt-confirm-dialog-renderer, yt-live-chat-participant-list-renderer, #author-name.yt-live-chat-participant-renderer
-  {
+
+	yt-formatted-string.ytd-menu-service-item-renderer, yt-formatted-string.ytd-menu-navigation-item-renderer, yt-formatted-string.yt-options-renderer, #title.yt-report-form-modal-renderer, #scroller.yt-confirm-dialog-renderer, yt-live-chat-participant-list-renderer, #author-name.yt-live-chat-participant-renderer
+	{
 		color: var(--main-text);
 	}
 	ytd-menu-navigation-item-renderer:hover yt-formatted-string, ytd-menu-service-item-renderer:hover yt-formatted-string, #submit-button a, #confirm-button a
-  {
+	{
 		color: var(--main-color) !important;
 	}
-  /* chat dialog radio button style */
+	
+	/*chat dialog radio button style */
 	#onRadio.paper-radio-button
-  {
+	{
 		--paper-radio-button-checked-color: var(--main-color) !important;
-  }
+	}
+	
 	/*Sign in chat*/
 	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1, yt-button-renderer.style-dark[is-paper-button]
 	{
@@ -959,8 +967,8 @@
 
 	/* "Show chat" button background */
 	#watch-sidebar-live-chat .yt-uix-expander-collapsed {
-	  background: inherit;
-  }
+		background: inherit;
+	}
 
 	/* Promo page */
 	body.yt-new-promo-page-use-launched-copy .yt-new-promo-page-header
@@ -990,12 +998,22 @@
 	.yt-uix-subscription-button:hover + .yt-uix-subscription-preferences-button{
 		border-left-color: var(--main-color) !important;
 	}
-  /* Account settings colors */
-  .desktop-notifications .browser{
-    border: 1px solid var(--dimer-text);
-    background: transparent;
+	/* Account settings colors */
+	.desktop-notifications .browser{
+		border: 1px solid var(--dimer-text);
+		background: transparent;
 	}
 	.account-content, #creator-sidebar.single-section .creator-sidebar-section .creator-sidebar-item-link, h2.account-section-header{
-			color: var(--dimer-text);
+		color: var(--dimer-text);
+	}
+
+
+	/*Text and link color for S?-E? */
+	.standalone-collection-badge-renderer-text, .standalone-collection-badge-renderer-text a {
+		color: var(--dimer-text);
+	}
+	.standalone-collection-badge-renderer-text {
+		color: var(--dimer-text);
+		opacity: .8;
 	}
 }

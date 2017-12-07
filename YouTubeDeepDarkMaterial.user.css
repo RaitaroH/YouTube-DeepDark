@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.5.6
+@version 2.5.7
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description YouTube dark theme for the Material version of YouTube (2017)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.6*/
+/*2.5.7*/
 
 	/*Main color variables*/
 	:root
@@ -1009,6 +1009,11 @@
 	#logo-icon:hover
 	{
 		--yt-swatch-logo-override: var(--main-color) !important;
+	}
+	/*Rewind logo*/
+	#animated-yoodle
+	{
+		filter: invert(90%) grayscale(1);
 	}
 
 	/*Playlist changes*/

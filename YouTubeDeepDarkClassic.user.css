@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.2.4
+@version 2.2.5
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css
 @description YouTube dark theme for the Classic YouTube
 @author RaitaroH
@@ -928,13 +928,13 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*chat dialog radio button style */
 	#onRadio.paper-radio-button
 	{
 		--paper-radio-button-checked-color: var(--main-color) !important;
 	}
-	
+
 	/*Sign in chat*/
 	.yt-live-chat-message-renderer-0, .yt-live-chat-message-renderer-1, yt-button-renderer.style-dark[is-paper-button]
 	{
@@ -1016,4 +1016,187 @@
 		color: var(--dimer-text);
 		opacity: .8;
 	}
+
+  /*
+   * Fixes for Creator Studio, preferences and uploading UI
+   */
+
+	/* Upload UI */
+
+  .upload-time-remaining, .tabs a, .item-title.upload-cursor-pointer, #creator-editor-title-link{
+    color: var(--main-text) !important;
+  }
+  .progress-bar-progress{
+    filter: grayscale(100%) invert(100%) brightness(300%);
+    border: none !important;
+  }
+  .progress-bar-uploading{
+    border: 1px solid var(--main-background) !important;
+  }
+  .progress-bar-text, .progress-bar-text-done, .progress-bar-text-upload-queued{
+    color: var(--dimer-text) !important;
+  }
+  .progress-bar-background{
+    border: none;
+  }
+  .yt-uix-form-input-textarea-container textarea, .yt-uix-form-input-placeholder-container input, #insight input, #insight button{
+    color: var(--main-text);
+    background-color: var(--main-background);
+  }
+
+  /* Analytics */
+
+  /* text color */
+  .yt-uix-sessionlink, .comment-comment, .vm-video-side-view-count a, .advanced-text-input.clearfix, #vm-view-filter-label, a.tab, .tab a, .creator-subheader-help-text, .yt-user-name, .account-status-copyright-status-v2-details, .account-status-community-guidelines-status-v2-details, span[class^="account-features"] a, .creator-onboarding-column, #creator-onboarding-container h1, .C2KYWWB-N-g h2 a{
+    color: var(--main-text) !important;
+  }
+  /* text shadow */
+  [class^="dashboard-stat"], .add-widget-button-label, .yt-uix-form-input-select{
+    text-shadow: 0 1px 0 var(--hover-background) !important;
+  }
+
+  /* comment box - probably just add to existing comment box rules */
+  .comment-footer-action.yt-commentbox-show-reply{
+    color: var(--main-text) !important;
+  }
+  .mod-button-content.yt-uix-tooltip button, .yt-uix-creator-heart-button, .sprite_delete, .sprite_flag{
+    filter: invert(100%);
+  }
+  [contenteditable="true"]{
+    border-color: var(--hover-background);
+    color: var(--main-text);
+    background-color: var(--main-background);
+  }
+
+  /* icons */
+
+  /* restore original image */
+  .add-widget-button{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-videomanager-vfl84Xb-i.png) 0 -359px !important;
+  }
+  .vm-video-title-badges .yt-uix-tooltip{
+    filter: invert(100%);
+  }
+
+  /* input */
+
+  /* fix for messed up stacking order due to filter */
+  .yt-uix-form-input-checkbox-element{
+    pointer-events: none;
+  }
+  #vm-myvideos-search-box, #vm-myvideos-search-btn{
+    border: 1px solid var(--second-background) !important;
+  }
+
+  /* background */
+  .C2KYWWB-N-m span, #creator-sidebar li.creator-sidebar-item.selected > a{
+    background: var(--main-color) !important;
+    color: var(--main-text) !important;
+  }
+
+  /* buttons */
+  .vm-improve-video-button-group:hover .vm-improve-video-button, .vm-improve-video-button-group:hover .vm-improve-video-close-button, .vm-video-suggestion:hover .vm-video-suggestion-button, .vm-video-suggestion:hover .vm-video-suggestion-close-button {
+    border: 1px solid var(--main-color) !important;
+  }
+  .vm-improve-video-button img, .live-welcome-webcam-icon, .live-welcome-engage-icon, .live-welcome-controls-icon{
+    /* may need some adjusting because of lighter color sets */
+    filter: invert(100%);
+  }
+  .vm-improve-video-button:hover, .vm-improve-video-close-button:hover, .vm-video-suggestion-button:hover, .vm-video-suggestion-close-button:hover {
+    color: var(--main-text);
+    background-color: var(--second-background);
+  }
+
+  /* colors */
+  .status-scale-great{
+    filter: invert(100%) hue-rotate(180deg) saturate(300%);
+  }
+
+  .C2KYWWB-N-o, .C2KYWWB-N-n, .C2KYWWB-a-a, .C2KYWWB-b-d, .C2KYWWB-ib-p, .C2KYWWB-f-a.C2KYWWB-f-b, .gwt-HTML.C2KYWWB-f-f, .C2KYWWB-P-c, .C2KYWWB-P-C, .C2KYWWB-P-x, .C2KYWWB-P-v .C2KYWWB-P-w, .C2KYWWB-P-s .C2KYWWB-P-y, .C2KYWWB-P-s .C2KYWWB-P-B, .popupContent ul, .popupContent li, .C2KYWWB-lb-d, .C2KYWWB-R-l tr, .C2KYWWB-ab-F.C2KYWWB-R-n, .C2KYWWB-Q-o, .C2KYWWB-Q-n, .C2KYWWB-Q-p, .C2KYWWB-Q-j, .C2KYWWB-ab-E.C2KYWWB-ab-z, .C2KYWWB-ab-F, .C2KYWWB-ab-G, .C2KYWWB-ab-H, .C2KYWWB-ab-v, .C2KYWWB-vb-c, .C2KYWWB-vb-a.C2KYWWB-vb-h.C2KYWWB-vb-b, .C2KYWWB-vb-g.C2KYWWB-vb-h td, .C2KYWWB-fb-b, .gwt-viz-container, .C2KYWWB-F-j.C2KYWWB-M-b, .C2KYWWB-O-c, .C2KYWWB-F-d, .C2KYWWB-cb-a, .C2KYWWB-cb-a li{
+      background-color: var(--main-background) !important;
+      color: var(--main-text) !important;
+  }
+  .C2KYWWB-F-d p, #gwt-debug-missingDataPanel > div p{
+    color: var(--main-background) !important;
+  }
+  .C2KYWWB-F-d{
+    background: transparent !important;
+  }
+  .C2KYWWB-Q-i{
+    background: var(--main-background) !important;
+  }
+
+  .C2KYWWB-Q-j:hover {
+    background-color: var(--second-background);
+    background-image: linear-gradient(-180deg,var(--second-background) 0%,var(--hover-background) 100%);
+  }
+
+  .C2KYWWB-g-f, .C2KYWWB-g-v:hover, .C2KYWWB-g-f:hover, .C2KYWWB-g-w:hover {
+    border-color: var(--hover-background);
+    background-image: linear-gradient(top, var(--second-background) 0, var(--hover-background) 100%);
+    background-image: -webkit-linear-gradient(top,var(--second-background) 0,var(--hover-background) 100%);
+    background-image: -moz-linear-gradient(top,var(--second-background) 0,var(--hover-background) 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,var(--second-background)),color-stop(100%,var(--hover-background)));
+  }
+  .C2KYWWB-g-f:focus, .C2KYWWB-g-v:focus, .C2KYWWB-g-w:focus {
+    border-color: var(--main-color);
+    -moz-box-shadow: 0 0 5px rgba(63,118,183,0.5),inset 0 0 10px var(--main-background) !important;
+    -webkit-box-shadow: 0 0 5px rgba(63,118,183,0.5),inset 0 0 10px var(--main-background) !important;
+    box-shadow: 0 0 5px rgba(63,118,183,0.5),inset 0 0 10px var(--main-background) !important;
+  }
+  .C2KYWWB-g-f {
+    text-shadow: 0 1px 0 var(--second-background);
+    background-color: var(--second-background);
+  }
+  input.C2KYWWB-l-f {
+    color: var(--main-text);
+    border: 1px solid var(--hover-background);
+    border-top-color: var(--hover-background);
+  }
+  .C2KYWWB-H-h img, #gwt-debug-settings-button img, .C2KYWWB-ib-b, .C2KYWWB-u-a.C2KYWWB-Q-m, .C2KYWWB-u-a, .C2KYWWB-F-g img, .C2KYWWB-cb-a li img{
+    filter: invert(100%);
+  }
+  .C2KYWWB-X-e.C2KYWWB-a-a, .C2KYWWB-t-a, .C2KYWWB-P-C .C2KYWWB-P-x, .C2KYWWB-P-m, .C2KYWWB-P-x.C2KYWWB-P-v.C2KYWWB-P-p, .C2KYWWB-P-z, .C2KYWWB-P-x, .C2KYWWB-P-c, .C2KYWWB-ib-d tr, .C2KYWWB-ib-m tr, .C2KYWWB-ib-y, .C2KYWWB-Q-i, .C2KYWWB-Q-j, .C2KYWWB-W-e, .C2KYWWB-W-a, .C2KYWWB-ab-v, .C2KYWWB-ab-E, .C2KYWWB-cb-a, .C2KYWWB-cb-a li{
+    border-color: var(--hover-background) !important;
+  }
+  .C2KYWWB-cb-a li:hover {
+    background-image: linear-gradient(top,var(--second-background) 0,var(--second-background) 100%);
+    background-image: -webkit-linear-gradient(top,var(--second-background) 0,var(--second-background) 100%);
+    background-image: -moz-linear-gradient(top,var(--second-background) 0,var(--second-background) 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,var(--second-background)),color-stop(100%,var(--second-background)));
+  }
+  .C2KYWWB-ib-d tr, .C2KYWWB-ib-m tr, .C2KYWWB-ib-y, .C2KYWWB-ib-e tr{
+    background-color: var(--main-background) !important;
+  }
+  .C2KYWWB-g-v:active, .C2KYWWB-g-f:active, .C2KYWWB-g-w:active, .C2KYWWB-g-f.C2KYWWB-g-y {
+    border-color: var(--hover-background);
+    background-color: var(--second-background);
+  }
+
+  /* graphs */
+  svg rect[fill="#ffffff"]{
+    fill: var(--main-background) !important;
+  }
+  svg text[fill="#333333"]{
+    fill: var(--main-text) !important;
+  }
+  svg rect[fill="#cccccc"]{
+    fill: var(--second-background);
+  }
+  svg text[fill="#444444"]{
+    fill: var(--dimer-text);
+    stroke: none;
+  }
+  svg g text{
+    fill: var(--main-text) !important;
+    stroke: none !important;
+  }
+
+  /* .google-visualization-tooltip */
+  svg path[fill="#ffffff"][stroke="#cccccc"] ~ g text[fill="#333333"]{
+    fill: var(--main-background) !important;
+  }
+  svg path[fill="#ffffff"][stroke="#cccccc"] ~ g text[fill="#000000"]{
+    fill: var(--main-background) !important;
+  }
 }

@@ -1072,7 +1072,7 @@
 
   /* restore original image */
   .add-widget-button{
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-videomanager-vfl84Xb-i.png) 0 -359px !important;
+    background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-videomanager-vfl84Xb-i.png) 0 -359px !important;
   }
   .vm-video-title-badges .yt-uix-tooltip{
     filter: invert(100%);

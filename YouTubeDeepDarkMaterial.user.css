@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.5.7
+@version 2.5.8
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description YouTube dark theme for the Material version of YouTube (2017)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.7*/
+/*2.5.8*/
 
 	/*Main color variables*/
 	:root
@@ -1596,12 +1596,21 @@
 	{
 		filter: grayscale(100%) invert(100%);
 	}
-  /* Fix for active like/dislike buttons */
+	/* Fix for active like/dislike buttons */
 	ytd-toggle-button-renderer.style-grey-text[is-icon-button] {
 		color: var(--yt-button-color);
 	}
 	ytd-toggle-button-renderer #button.ytd-toggle-button-renderer {
 		color: inherit;
+	}
+	/*like/dislike buttons in nested replies*/
+	.style-scope.ytd-toggle-button-renderer svg
+	{
+		fill: var(--dimer-text) !important;
+	}
+	.style-scope.ytd-toggle-button-renderer yt-icon-button.style-default-active svg
+	{
+		fill: var(--main-color) !important;
 	}
 
 }

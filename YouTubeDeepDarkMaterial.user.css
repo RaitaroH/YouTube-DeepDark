@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.5.8
+@version 2.5.9
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description YouTube dark theme for the Material version of YouTube (2017)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.8*/
+/*2.5.9*/
 
 	/*Main color variables*/
 	:root
@@ -1048,12 +1048,12 @@
 	}
 
 	/*Search bar*/
-	ytd-searchbox[mode="legacy"] #container.ytd-searchbox
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox
 	{
 		border-color: var(--hover-background) !important;
 		box-shadow: none !important;
 	}
-	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="material-left"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="material-left"] #container.ytd-searchbox, ytd-searchbox.style-scope[has-focus=""] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"]:hover #container.ytd-searchbox
 	{
 		border: 1px solid var(--main-color) !important;
 		box-shadow: none !important;

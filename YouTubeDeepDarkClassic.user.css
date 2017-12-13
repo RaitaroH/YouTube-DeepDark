@@ -1059,7 +1059,7 @@
   .comment-footer-action.yt-commentbox-show-reply{
     color: var(--main-text) !important;
   }
-  .mod-button-content.yt-uix-tooltip button, .yt-uix-creator-heart-button, .sprite_delete, .sprite_flag{
+  .mod-button-content.yt-uix-tooltip button, #creator-page-content .yt-uix-creator-heart-button, .sprite_delete, .sprite_flag{
     filter: invert(100%);
   }
   [contenteditable="true"]{

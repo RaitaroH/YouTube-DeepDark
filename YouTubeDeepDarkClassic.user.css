@@ -1047,7 +1047,7 @@
   /* Analytics */
 
   /* text color */
-  .yt-uix-sessionlink, .comment-comment, .vm-video-side-view-count a, .advanced-text-input.clearfix, #vm-view-filter-label, a.tab, .tab a, .creator-subheader-help-text, .yt-user-name, .account-status-copyright-status-v2-details, .account-status-community-guidelines-status-v2-details, span[class^="account-features"] a, .creator-onboarding-column, #creator-onboarding-container h1, .C2KYWWB-N-g h2 a{
+  .yt-uix-sessionlink, .comment-comment, .vm-video-side-view-count a, .advanced-text-input.clearfix, #vm-view-filter-label, a.tab, .tab a, .creator-subheader-help-text, .yt-user-name, .account-status-copyright-status-v2-details, .account-status-community-guidelines-status-v2-details, span[class^="account-features"] a, .creator-onboarding-column, #creator-onboarding-container h1, .C2KYWWB-N-g h2 a, .yt-chip{
     color: var(--main-text) !important;
   }
   /* text shadow */
@@ -1062,7 +1062,7 @@
   .mod-button-content.yt-uix-tooltip button, #creator-page-content .yt-uix-creator-heart-button, .sprite_delete, .sprite_flag{
     filter: invert(100%);
   }
-  [contenteditable="true"], .C2KYWWB-h-i{
+  [contenteditable="true"], .C2KYWWB-h-i, .video-settings-add-tag{
     border-color: var(--hover-background);
     color: var(--main-text);
     background-color: var(--main-background);

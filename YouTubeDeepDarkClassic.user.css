@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.2.6
+@version 2.2.7
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css
 @description YouTube dark theme for the Classic YouTube
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.2.5*/
+/*2.2.7*/
 
 	/*Main color variables*/
 	:root
@@ -1199,4 +1199,17 @@
   svg path[fill="#ffffff"][stroke="#cccccc"] ~ g text[fill="#000000"]{
     fill: var(--main-background) !important;
   }
+	/*Send message*/
+	.yt-channel-msg-dialog .user-box
+	{
+		border: none !important;
+	}
+	.yt-channel-msg-dialog .yt-dialog-footer
+	{
+		background: var(--main-background) !important;
+	}
+	.yt-channel-msg-dialog .compose-message
+	{
+		border-color: var(--hover-background) !important;
+	}
 }

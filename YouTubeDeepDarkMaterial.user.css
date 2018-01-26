@@ -2,12 +2,11 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.5.9
+@version 2.6.0
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
 @license GNU-V3.0
-
 @preprocessor uso
 @var select mainColor 'Main color' {
 	"DeepDark": "#00adee",
@@ -26,9 +25,8 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"Jisho_夜明け":  "#EF7D6C"
+	"Jisho_夜明け": "#EF7D6C"
 }
-
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
 	"BreezeDark": "#232629",
@@ -46,9 +44,8 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"Jisho_夜明け":  "#332222"
+	"Jisho_夜明け": "#332222"
 }
-
 @var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
 	"BreezeDark": "#2a2e32",
@@ -66,9 +63,8 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け":  "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B"
 }
-
 @var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
 	"BreezeDark": "#31363b",
@@ -86,9 +82,8 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"Jisho_夜明け":  "#863B2F"
+	"Jisho_夜明け": "#863B2F"
 }
-
 @var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
 	"BreezeDark": "#eff0f1",
@@ -106,9 +101,8 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"Jisho_夜明け":  "#EFB26C"
+	"Jisho_夜明け": "#EFB26C"
 }
-
 @var select dimerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
@@ -126,9 +120,8 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"Jisho_夜明け":  "#986E3F"
+	"Jisho_夜明け": "#986E3F"
 }
-
 ==/UserStyle== */
 
 @-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/.*') {
@@ -138,7 +131,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.5.9*/
+/*2.6.0*/
 
 	/*Main color variables*/
 	:root
@@ -333,7 +326,7 @@
 	}
 
 	/*Variable changes*/
-	:not([style-scope]):not(.style-scope), html:not([style-scope]):not(.style-scope):not([color-exp]) *, html[color-exp]:not([style-scope]):not(.style-scope)
+	html:not([dark]):not([style-scope]):not(.style-scope), [dark]:not([style-scope]):not(.style-scope) *:not([style-scope]):not(.style-scope)
 	{
 		--yt-primary-color: var(--main-text) !important;
 		--yt-primary-text-color: var(--main-text) !important;
@@ -401,7 +394,7 @@
 		--yt-guide-background: var(--second-background) !important;
 		--yt-dialog-background: var(--second-background) !important;
 		--yt-searchbox-background: var(--main-background) !important;
-		--yt-channel-header-background:  var(--second-background) !important;
+		--yt-channel-header-background: var(--second-background) !important;
 		--yt-playlist-sidebar-background: var(--second-background) !important;
 		--yt-transcript-background: var(--second-background) !important;
 		--yt-watch-card-secondary-text-color: var(--main-text) !important;
@@ -513,7 +506,7 @@
 		--ytd-guide-background: var(--second-background) !important;
 		--ytd-dialog-background: var(--second-background) !important;
 		--ytd-searchbox-background: var(--main-background) !important;
-		--ytd-channel-header-background:  var(--second-background) !important;
+		--ytd-channel-header-background: var(--second-background) !important;
 		--ytd-playlist-sidebar-background: var(--second-background) !important;
 		--ytd-transcript-background: var(--second-background) !important;
 		--ytd-watch-card-secondary-text-color: var(--main-text) !important;
@@ -562,7 +555,7 @@
 		--yt-material-searchbox-inactive: var(--main-background) !important;
 		--yt-material-searchbox-active: var(--hover-background) !important;
 		--yt-swatch-icon-color: var(--dimer-text) !important;
-		
+
 		--yt-sidebar-background: var(--second-background) !important;
 	}
 
@@ -581,6 +574,12 @@
 	html
 	{
 		background-color: var(--main-background) !important;
+	}
+
+	/*Background for the masthead container*/
+	ytd-masthead
+	{
+		background: var(--second-background) !important;
 	}
 
 	/*Border for the sidemenu*/
@@ -602,14 +601,14 @@
 	}
 
 	/*Outline for links*/
- 	a
- 	{
-     		outline-color: var(--main-color) !important;
+	a
+	{
+		outline-color: var(--main-color) !important;
 	}
 	/*Outline for comments*/
 	#content-text.ytd-comment-renderer
 	{
-    		outline: none !important;
+		outline: none !important;
 	}
 
 	/*Backgrounds*/
@@ -617,7 +616,6 @@
 	{
 		background-color: var(--main-color) !important;
 	}
-
 
 	/*Border color for terms and conditions*/
 	ytd-consent-bump-renderer
@@ -679,7 +677,7 @@
 	/*Button hover*/
 	#guide-button.ytd-masthead:hover #guide-icon.ytd-masthead,#guide-button.ytd-app:hover #guide-icon.ytd-app,#label.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu,button.ytd-expandable-tab-renderer:hover .style-scope.ytd-expandable-tab-renderer, .style-scope.ytd-menu-renderer.style-text.force-icon-button:hover .style-scope.yt-icon, .style-scope.ytd-menu-renderer.force-icon-button.style-default:hover .style-scope.yt-icon
 	{
-   		fill: var(--main-color) !important;
+		fill: var(--main-color) !important;
 	}
 
 	/*Button tooltips*/
@@ -714,7 +712,7 @@
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		opacity: 0.9 !important;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)  !important;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 	}
 	ytd-button-renderer.style-primary[is-paper-button]
 	{
@@ -791,7 +789,7 @@
 	{
 		color: var(--main-color) !important;
 		opacity: 0.9 !important;
-		text-decoration: none  !important;
+		text-decoration: none !important;
 		text-shadow: none !important;
 	}
 
@@ -801,7 +799,7 @@
 		color: var(--main-color) !important;
 	}
 	/*Title hover in menus*/
- 	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu, ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,ytd-playlist-add-to-option-renderer:hover #label.ytd-playlist-add-to-option-renderer,ytd-playlist-add-to-option-renderer:hover yt-icon.ytd-playlist-add-to-option-renderer, paper-item.ytd-account-settings:hover .label.ytd-account-settings, paper-item.ytd-account-settings:hover .style-scope.ytd-account-settings, paper-item.style-scope:nth-child(7):hover, paper-item.ytd-account-settings:hover, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover, #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover, #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover yt-icon.ytd-toggle-theme-compact-link-renderer
+	ytd-guide-entry-renderer:hover .title.ytd-guide-entry-renderer,ytd-guide-entry-renderer:hover .guide-icon.ytd-guide-entry-renderer,ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer,paper-item:hover .item.yt-dropdown-menu,#label.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu,yt-dropdown-menu:hover #label-text.yt-dropdown-menu, ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,ytd-playlist-add-to-option-renderer:hover #label.ytd-playlist-add-to-option-renderer,ytd-playlist-add-to-option-renderer:hover yt-icon.ytd-playlist-add-to-option-renderer, paper-item.ytd-account-settings:hover .label.ytd-account-settings, paper-item.ytd-account-settings:hover .style-scope.ytd-account-settings, paper-item.style-scope:nth-child(7):hover, paper-item.ytd-account-settings:hover, #more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover, #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover, #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:hover yt-icon.ytd-toggle-theme-compact-link-renderer
 	{
 		color: var(--main-color) !important;
 	}
@@ -839,7 +837,7 @@
 	}
 	#offRadio.paper-radio-button:hover
 	{
-		border-color:  var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 
 	/*Avatars and thumbnails opacity */
@@ -859,11 +857,11 @@
 
 	/*Video section*/
 	/*Video title hover in html5 video*/
-  	.html5-video-player a:hover
-  	{
- 		color: var(--main-text) !important;
+	.html5-video-player a:hover
+	{
+		color: var(--main-text) !important;
 		text-shadow: none !important;
-  	}
+	}
 
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
@@ -911,7 +909,7 @@
 	{
 		background: var(--main-color) !important;
 	}
-  	.ytp-chrome-controls .ytp-button[aria-pressed]::after
+	.ytp-chrome-controls .ytp-button[aria-pressed]::after
 	{
 		background-color: var(--main-color) !important;
 	}
@@ -956,7 +954,7 @@
 	/*Watch later svg*/
 	.style-scope.ytd-thumbnail-overlay-toggle-button-renderer:hover
 	{
-    		fill: var(--main-color) !important;
+		fill: var(--main-color) !important;
 	}
 	ytd-thumbnail-overlay-toggle-button-renderer:focus yt-icon.ytd-thumbnail-overlay-toggle-button-renderer
 	{
@@ -969,8 +967,8 @@
 		background-color: var(--main-background) !important;
 	}
 
-  	/*Changing icon for unavailable video*/
-  	#img.ytd-player-error-message-renderer
+	/*Changing icon for unavailable video*/
+	#img.ytd-player-error-message-renderer
 	{
 		display: block !important;
 		-moz-box-sizing: border-box !important;
@@ -1126,16 +1124,16 @@
 	{
 		opacity: 1 !important;
 	}
-	
+
 	/*Search for channel videos*/
- 	.unfocused-line.paper-input-container,.focused-line.paper-input-container
+	.unfocused-line.paper-input-container,.focused-line.paper-input-container
 	{
-   	 	background-color: var(--main-color) !important;
+		background-color: var(--main-color) !important;
 	}
 
 	iron-icon:hover
 	{
-    		fill: var(--main-color) !important;
+		fill: var(--main-color) !important;
 	}
 	#description-text.ytd-video-renderer
 	{
@@ -1160,7 +1158,8 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	.iri-dark-mode-settings #iridium_settings {
+	.iri-dark-mode-settings #iridium_settings
+	{
 		background-color: var(--second-background) !important;
 	}
 	.iri-dark-mode-settings #iridium_settings_sidebar, .iri-dark-mode-settings #settings_section, .iri-dark-mode-settings #iridium-text-editor
@@ -1271,7 +1270,6 @@
 		opacity: 0.5;
 	}
 
-
 	/*Chat*/
 	.yt-live-chat-text-input-field-renderer-0 #focused.yt-live-chat-text-input-field-renderer
 	{
@@ -1287,7 +1285,6 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-
 
 	/*Chat again because youtube has nothing better to do. YouTube, WHY?!*/
 	.yt-live-chat-header-renderer-1, .yt-live-chat-message-input-renderer-1, .yt-live-chat-header-renderer-0, .yt-live-chat-message-input-renderer-0, .paper-menu-0, .paper-menu-1, .yt-live-chat-ticker-renderer-0,.yt-live-chat-ticker-renderer-1,.yt-live-chat-renderer
@@ -1375,10 +1372,10 @@
 		background-color: var(--main-color) !important;
 		box-shadow: -1px 1px var(--main-background);
 	}
- 	#button:hover
-  	{
-  		color: var(--main-color) !important;
-  	}
+	#button:hover
+	{
+		color: var(--main-color) !important;
+	}
 	ytd-notification-renderer.unseen #new.ytd-notification-renderer
 	{
 		background-color: var(--main-color) !important;
@@ -1492,9 +1489,8 @@
 	/*Live background color*/
 	ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"]
 	{
-    		background-color: var(--main-color) !important;
+		background-color: var(--main-color) !important;
 	}
-
 
 	/*Recolored sidepane icons, menu icons and filter button*/
 	.guide-icon.ytd-guide-entry-renderer, paper-button.ytd-toggle-button-renderer, yt-icon.ytd-compact-link-renderer, yt-icon.ytd-toggle-theme-compact-link-renderer
@@ -1511,7 +1507,6 @@
 	{
 		color: var(--main-color) !important;
 	}
-
 
 	/*Autoplay text*/
 	#autoplay.ytd-compact-autoplay-renderer
@@ -1553,7 +1548,7 @@
 
 	#selectionBar.paper-tabs
 	{
-    		border-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 
 	/*YouTube Apps*/
@@ -1597,10 +1592,12 @@
 		filter: grayscale(100%) invert(100%);
 	}
 	/* Fix for active like/dislike buttons */
-	ytd-toggle-button-renderer.style-grey-text[is-icon-button] {
+	ytd-toggle-button-renderer.style-grey-text[is-icon-button]
+	{
 		color: var(--yt-button-color);
 	}
-	ytd-toggle-button-renderer #button.ytd-toggle-button-renderer {
+	ytd-toggle-button-renderer #button.ytd-toggle-button-renderer
+	{
 		color: inherit;
 	}
 	/*like/dislike buttons in nested replies*/
@@ -1612,5 +1609,4 @@
 	{
 		fill: var(--main-color) !important;
 	}
-
 }

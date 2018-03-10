@@ -1473,7 +1473,7 @@
 		opacity: 1 !important;
 	}
 
-	/*Wathced videos dark background*/
+	/*Watched videos dark background*/
 	ytd-thumbnail-overlay-playback-status-renderer
 	{
 		background-color: hsla(0, 0%, 6.7%, .4) !important;

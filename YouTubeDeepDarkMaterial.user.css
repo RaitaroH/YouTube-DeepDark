@@ -1567,10 +1567,10 @@
 	}
 
 	/*"Best" of YouTube icons in sidepane*/
-	.style-scope.ytd-guide-entry-renderer.no-transition
+	/*.style-scope.ytd-guide-entry-renderer.no-transition
 	{
 		filter: grayscale(100%);
-	}
+	}*/
 
 	/* Promo page */
 	body.yt-new-promo-page-use-launched-copy .yt-new-promo-page-header

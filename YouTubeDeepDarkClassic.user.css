@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.2.7
+@version 2.2.8
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme) 
 @author RaitaroH
@@ -131,13 +131,13 @@
 
 ==/UserStyle== */
 
-@-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/.*'),  domain(apis.google.com) {
+@-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/(?!live_chat).*'),  domain(apis.google.com) {
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
 /*GNU General Public License v3.0.*/
 
-/*2.2.7*/
+/*2.2.8*/
 
 	/*Main color variables*/
 	:root

@@ -1214,7 +1214,7 @@
 	}
 
   /* fix for video title color conflict when enabled on Material layout */
-  #video-title{
-    color: initial !important;
+  a#video-title{
+    color: var(--main-text) !important;
   }
 }

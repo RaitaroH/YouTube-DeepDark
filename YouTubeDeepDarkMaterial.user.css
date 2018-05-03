@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.6.3
+@version 2.6.4
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.6.3*/
+/*2.6.4*/
 
 	/*Main color variables*/
 	:root
@@ -1623,7 +1623,7 @@
       background-color: var(--main-background);
   }
 
-  ytd-masthead.shell [class*='skeleton'], #watch-page-skeleton [class*='skeleton'], #related-skeleton [class*='skeleton'], #meta-skeleton [class*='skeleton'], #masthead-skeleton-icons [class*='skeleton'], #info-skeleton [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color{
+  ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color{
       background-color: var(--hover-background) !important;
       border-color: var(--hover-background) !important;
   }

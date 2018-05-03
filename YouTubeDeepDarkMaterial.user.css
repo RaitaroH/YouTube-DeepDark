@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.6.0
+@version 2.6.1
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.6.0*/
+/*2.6.1*/
 
 	/*Main color variables*/
 	:root
@@ -340,7 +340,6 @@
 		--yt-hovered-text-color: var(--dimer-text) !important;
 		--yt-secondary-text-color: var(--dimer-text) !important;
 		--yt-disabled-text-color: var(--hover-background) !important;
-		--yt-placeholder-text-color: var(--dimer-text) !important;
 		--yt-border-color: var(--hover-background) !important;
 		--yt-searchbox-border-color: var(--main-background) !important;
 		--yt-searchbox-legacy-border-color: var(--main-background) !important;
@@ -377,7 +376,6 @@
 		--yt-copyright-text: var(--dimer-text) !important;
 		--yt-guide-entry-hover-background-color: var(--hover-background) !important;
 		--yt-survey-button-color: var(--yt-primary-text-color) !important;
-		--yt-thumbnail-placeholder-color: var(--second-background) !important;
 		--yt-transcript-cue-hover-background-color: var(--hover-background) !important;
 		--yt-transcript-toolbar-background-color: var(--hover-background) !important;
 		--yt-transcript-toolbar-text: var(--main-text) !important;
@@ -455,7 +453,6 @@
 		--ytd-hovered-text-color: var(--dimer-text) !important;
 		--ytd-secondary-text-color: var(--dimer-text) !important;
 		--ytd-disabled-text-color: var(--hover-background) !important;
-		--ytd-placeholder-text-color: var(--dimer-text) !important;
 		--ytd-border-color: var(--hover-background) !important;
 		--ytd-searchbox-border-color: var(--main-background) !important;
 		--ytd-searchbox-legacy-border-color: var(--main-background) !important;
@@ -492,7 +489,6 @@
 		--ytd-copyright-text: var(--dimer-text) !important;
 		--ytd-guide-entry-hover-background-color: var(--hover-background) !important;
 		--ytd-survey-button-color: var(--ytd-primary-text-color) !important;
-		--ytd-thumbnail-placeholder-color: var(--second-background) !important;
 		--ytd-transcript-cue-hover-background-color: var(--hover-background) !important;
 		--ytd-transcript-toolbar-background-color: var(--hover-background) !important;
 		--ytd-transcript-toolbar-text: var(--main-text) !important;
@@ -564,6 +560,11 @@
 		--yt-swatch-icon-color: var(--dimer-text) !important;
 		
 		--yt-sidebar-background: var(--second-background) !important;
+
+		/*Placeholder crap*/
+		--yt-placeholder-text-color: var(--hover-background) !important;
+ 		--yt-placeholder-text: var(--hover-background) !important;
+ 		--yt-thumbnail-placeholder-color: var(--hover-background) !important;
 	}
 
 	/*Scrollbar fix for chrome*/
@@ -806,6 +807,11 @@
 		color: var(--main-color) !important;
 	}
 
+	/*Dropdown*/
+	.dropdown-content.style-scope.ytd-popup-container > *
+	{
+		background: var(--second-background) !important;
+	}
 	/*Author name*/
 	#name.ytd-author-comment-badge-renderer
 	{
@@ -1135,7 +1141,7 @@
 
 	iron-icon:hover
 	{
-    		fill: var(--main-color) !important;
+    	fill: var(--main-color) !important;
 	}
 	#description-text.ytd-video-renderer
 	{

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.6.4
+@version 2.6.5
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.6.4*/
+/*2.6.5*/
 
 	/*Main color variables*/
 	:root
@@ -823,10 +823,14 @@
 		opacity: .9;
 	}
 
-	/*Checkbox hover*/
+	/*Checkbox*/
 	ytd-playlist-add-to-option-renderer:hover #checkbox.paper-checkbox,#checkboxContainer.paper-checkbox:hover #checkbox.paper-checkbox
 	{
 		border-color: var(--main-color) !important;
+	}
+	#checkbox.paper-checkbox
+	{
+		border-color: var(--main-text) !important;
 	}
 	/*Chekboxes background*/
 	#checkbox.checked.paper-checkbox
@@ -1212,6 +1216,12 @@
 	}
 
 	/*Comments*/
+    /*Text box*/
+    #simplebox-placeholder.ytd-comment-simplebox-renderer
+    {
+		color: var(--dimer-text) !important;
+	}
+    
 	/*Show more stuff*/
 	.style-scope.ytd-comment-replies-renderer:hover,.more-button.style-scope.ytd-comment-renderer:hover,.more-button.style-scope.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover, .more-button.ytd-comment-renderer:hover, .less-button.ytd-comment-renderer:hover
 	{
@@ -1567,7 +1577,14 @@
 	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#f00"],
 	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#FF8983"],
 	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#E23229"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#C7322A"]
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#C7322A"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g  circle[fill="red"]
+	{
+		fill: var(--main-color) !important;
+	}
+	/*Upload*/
+	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#6f6f6f"],
+	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#f80000"]
 	{
 		fill: var(--main-color) !important;
 	}
@@ -1627,4 +1644,11 @@
       background-color: var(--hover-background) !important;
       border-color: var(--hover-background) !important;
   }
+    
+    /*Share*/  
+    #bar.ytd-copy-link-renderer
+    {
+       background-color: var(--hover-background) !important;
+      border-color: var(--hover-background) !important;
+    }
 }

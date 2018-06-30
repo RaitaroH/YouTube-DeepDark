@@ -751,7 +751,8 @@
 	#subscribe-button:hover ytd-button-renderer yt-formatted-string.ytd-button-renderer, #subscribe-button ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	#subscribe-button:hover .deemphasize.yt-formatted-string, #subscribe-button .deemphasize.yt-formatted-string,
 	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
-	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer
+	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
+	.deemphasize.yt-formatted-string
 	{
 		color: var(--main-text) !important;
 	}

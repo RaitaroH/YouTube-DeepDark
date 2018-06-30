@@ -400,6 +400,29 @@
 	{
 		fill: var(--main-text) !important;
 	}
+	
+	/*YouTube Apps*/
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#F00"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#f00"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#FF8983"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#E23229"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#C7322A"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g  circle[fill="red"]
+	{
+		fill: var(--main-color) !important;
+	}
+	/*Upload*/
+	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#6f6f6f"],
+	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#f80000"]
+	{
+		fill: var(--main-color) !important;
+	}
+	#sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child)
+	{
+    	border-color: var(--hover-background) !important;
+	}
+	
+	
 	/*Backgrounds*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{
@@ -446,9 +469,111 @@
 	}
 
 	/*Main page*/
-	ytd-browse, ytd-watch, ytd-search
+	ytd-browse, ytd-watch, ytd-search, ytd-app
 	{
 		background: var(--main-background) !important;
+	}
+	
+	/*Channel page*/
+	/*header*/
+	#channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer
+	{
+		background: var(--hover-background) !important;
+	}
+	#channel-title.ytd-c4-tabbed-header-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#subscriber-count.ytd-c4-tabbed-header-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.tab-content.paper-tab
+	{
+		color: var(--main-text) !important;
+	}
+	paper-tab:hover .tab-content.paper-tab
+	{
+		color: var(--main-color) !important;
+	}
+	/*search*/
+	.input-content.paper-input-container label, .input-content.paper-input-container .paper-input-label,
+	#subtitle
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*side channels*/
+	#title
+	{
+		color: var(--main-text) !important;
+	}
+	.title
+	{
+		color: var(--main-text) !important;
+	}
+	.title:hover
+	{
+		color: var(--main-color) !important;
+	}
+	#contents > .ytd-browse-secondary-contents-renderer:not(:first-child)
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*videos - uploads*/
+	#label-text.yt-dropdown-menu
+	{
+		color: var(--main-text) !important;
+	}
+	paper-menu-button.yt-dropdown-menu:hover #label-text.yt-dropdown-menu,
+	paper-menu-button.yt-dropdown-menu:hover #label-icon.yt-dropdown-menu svg,
+	paper-menu-button.yt-dropdown-menu:hover #icon-label.yt-dropdown-menu
+	{
+		color: var(--main-color) !important;
+		fill: var(--main-color) !important;
+	}
+	/*community*/
+	#message.ytd-message-renderer, #content-text.ytd-backstage-post-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#author-text,
+	.more-button, .less-button,
+	.align-by-text.ytd-backstage-comments-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.more-button:hover, .less-button:hover,
+	.align-by-text.ytd-backstage-comments-renderer:hover
+	{
+		color: var(--main-color) !important;
+	}
+	#content-attachment ytd-video-renderer
+	{
+		background: var(--hover-background) !important;
+	}
+	/*about*/
+	.subheadline, #right-column .subheadline
+	{
+		color: var(--main-text) !important;
+	}
+	#description, #bio, #right-column > yt-formatted-string
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#right-column > yt-formatted-string,
+	#description-container.ytd-channel-about-metadata-renderer, #bio-container.ytd-channel-about-metadata-renderer, 
+	#photos-container.ytd-channel-about-metadata-renderer, #details-container.ytd-channel-about-metadata-renderer, 
+	#links-container.ytd-channel-about-metadata-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#link-list-container a
+	{
+		color: var(--main-color) !important;
+	}
+	#link-list-container:hover a
+	{
+		filter: brightness(110%);
 	}
 	
 	/*Video page*/
@@ -466,6 +591,10 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.content-text.ytd-metadata-with-image-row-renderer
+	{
+		color: var(--main-text) !important;
+	}
 	
 	/*Video cards*/
 	/*ttile*/
@@ -473,14 +602,18 @@
 	ytd-compact-video-renderer.use-ellipsis #video-title.ytd-compact-video-renderer,
 	#video-title.ytd-video-renderer,
 	h3.ytd-playlist-renderer,
-	#video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer
+	#video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer,
+	#video-title
 	{
 		color: var(--main-text) !important;
 	}
 	#items.yt-horizontal-list-renderer > .yt-horizontal-list-renderer:hover a.ytd-grid-video-renderer,
 	ytd-compact-video-renderer:hover #video-title.ytd-compact-video-renderer,
 	ytd-video-renderer:hover #video-title.ytd-video-renderer,
-	ytd-playlist-renderer:hover h3.ytd-playlist-renderer
+	ytd-playlist-renderer:hover h3.ytd-playlist-renderer,
+	#content.ytd-playlist-video-renderer:hover #video-title,
+	a.yt-simple-endpoint.ytd-playlist-panel-video-renderer:hover #video-title,
+	.style-scope.ytd-grid-renderer.use-ellipsis:hover #video-title
 	{
 		color: var(--main-color) !important;
 	}
@@ -495,7 +628,8 @@
 	}
 	/*metadata*/
 	#metadata-line.ytd-grid-video-renderer, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block,
-	#metadata.ytd-channel-renderer, #description.ytd-channel-renderer
+	#metadata.ytd-channel-renderer, #description.ytd-channel-renderer,
+	#thumbnail-attribution.ytd-grid-channel-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -946,12 +1080,47 @@
 		filter: invert(90%) grayscale(1);
 	}
 
+	/*Playlist page*/
+	/*sidebar*/
+	ytd-playlist-sidebar-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	#stats.ytd-playlist-sidebar-primary-info-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#items.ytd-playlist-sidebar-renderer > .ytd-playlist-sidebar-renderer:not(:last-child)
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#primary.ytd-two-column-browse-results-renderer
+	{
+		background-color: var(--main-background) !important;
+	}
+	ytd-button-renderer[is-paper-button] yt-icon.ytd-button-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	a.yt-simple-endpoint.ytd-button-renderer:hover *
+	{
+		color: var(--main-color) !important;
+	}
+	#content.ytd-playlist-video-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*playlist page*/
+	.index-message.ytd-playlist-panel-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	
 	/*Playlist changes*/
 	ytd-playlist-panel-video-renderer:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
-
 	ytd-playlist-panel-video-renderer[selected] #index.ytd-playlist-panel-video-renderer,#byline.ytd-playlist-panel-video-renderer,.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-now-playing,.ytp-video-menu-item-author
 	{
 		color: var(--main-color) !important;
@@ -965,11 +1134,6 @@
 	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail
 	{
 		border-color: var(--main-color) !important;
-	}
-
-	#video-title.ytd-playlist-panel-video-renderer
-	{
-		color: var(--dimmer-text) !important;
 	}
 
 	#index.ytd-playlist-video-renderer, #index.ytd-playlist-panel-video-renderer
@@ -1219,12 +1383,12 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-    /*text box*/
-    #simplebox-placeholder.ytd-comment-simplebox-renderer
-    {
+	/*text box*/
+	#simplebox-placeholder.ytd-comment-simplebox-renderer
+	{
 		color: var(--dimmer-text) !important;
 	}
-    #placeholder-area.ytd-comment-simplebox-renderer
+	#placeholder-area.ytd-comment-simplebox-renderer
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -1641,27 +1805,6 @@
     	border-color: var(--main-color) !important;
 	}
 
-	/*YouTube Apps*/
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#F00"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#f00"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#FF8983"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#E23229"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#C7322A"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g  circle[fill="red"]
-	{
-		fill: var(--main-color) !important;
-	}
-	/*Upload*/
-	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#6f6f6f"],
-	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#f80000"]
-	{
-		fill: var(--main-color) !important;
-	}
-	#sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child)
-	{
-    	border-color: var(--hover-background) !important;
-	}
-
 	/*"Best" of YouTube icons in sidepane*/
 	/*.style-scope.ytd-guide-entry-renderer.no-transition
 	{
@@ -1708,20 +1851,22 @@
 	{
 		fill: var(--main-color) !important;
 	}
-  /* Fix for placeholders/skeletons */
-  ytd-masthead.shell{
-      background-color: var(--main-background);
-  }
+	/* Fix for placeholders/skeletons */
+	ytd-masthead.shell
+	{
+		background-color: var(--main-background);
+	}
 
-  ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color{
-      background-color: var(--hover-background) !important;
-      border-color: var(--hover-background) !important;
-  }
+	ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
     
-    /*Share*/  
-    #bar.ytd-copy-link-renderer
-    {
-       background-color: var(--hover-background) !important;
-      border-color: var(--hover-background) !important;
-    }
+	/*Share*/  
+	#bar.ytd-copy-link-renderer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
 }

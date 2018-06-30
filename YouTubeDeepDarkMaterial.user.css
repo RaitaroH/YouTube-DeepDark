@@ -597,6 +597,46 @@
 		color: var(--main-text) !important;
 	}
 
+	/*Share*/
+	paper-dialog
+	{
+		background: var(--main-background) !important;
+	}
+	#share-url
+	{
+		color: var(--main-text) !important;
+	}
+	#copy-button:hover #text
+	{
+		color: var(--main-color) !important;
+	}
+	#bar.ytd-copy-link-renderer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	ytd-third-party-network-section-renderer ytd-copy-link-renderer.ytd-third-party-network-section-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	yt-formatted-string.ytd-start-at-renderer
+	{
+		color: var(--main-text) !important;
+	}
+
+	/*Playlist creation*/
+	.yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer, .yt-live-chat-message-renderer-1 #subtext.yt-live-chat-message-renderer,
+	#label.yt-live-chat-text-input-field-renderer, .input-content.paper-input-container input,
+	.input-content.paper-input-container textarea, .input-content.paper-input-container iron-autogrow-textarea,
+	.input-content.paper-input-container .paper-input-input
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.add-on-content.is-highlighted.paper-input-container *, paper-input-char-counter
+	{
+		color: var(--dimmer-text) !important;
+	}
+
 	/*Video cards*/
 	/*ttile*/
 	ytd-grid-video-renderer.use-ellipsis #details.ytd-grid-video-renderer a.ytd-grid-video-renderer,
@@ -689,7 +729,8 @@
 		border-color: var(--hover-background) !important;
 	}
 	/*Next and prev buttons*/
-	.arrow.yt-horizontal-list-renderer
+	.arrow.yt-horizontal-list-renderer,
+	#scroll-button-forward
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -751,8 +792,7 @@
 	#subscribe-button:hover ytd-button-renderer yt-formatted-string.ytd-button-renderer, #subscribe-button ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	#subscribe-button:hover .deemphasize.yt-formatted-string, #subscribe-button .deemphasize.yt-formatted-string,
 	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
-	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
-	.deemphasize.yt-formatted-string
+	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -1387,12 +1427,12 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	/*text box*/
-	#simplebox-placeholder.ytd-comment-simplebox-renderer
-	{
+    /*text box*/
+    #simplebox-placeholder.ytd-comment-simplebox-renderer
+    {
 		color: var(--dimmer-text) !important;
 	}
-	#placeholder-area.ytd-comment-simplebox-renderer
+    #placeholder-area.ytd-comment-simplebox-renderer
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -1864,13 +1904,6 @@
 	}
 
 	ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color
-	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}
-
-	/*Share*/
-	#bar.ytd-copy-link-renderer
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;

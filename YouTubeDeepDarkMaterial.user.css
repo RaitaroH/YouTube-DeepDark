@@ -382,7 +382,7 @@
 	{
     		outline: none !important;
 	}
-	
+
 	/*Nav bar*/
 	ytd-masthead
 	{
@@ -400,7 +400,7 @@
 	{
 		fill: var(--main-text) !important;
 	}
-	
+
 	/*YouTube Apps*/
 	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#F00"],
 	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#f00"],
@@ -421,8 +421,8 @@
 	{
     	border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Backgrounds*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{
@@ -430,11 +430,11 @@
 	}
 
 	/*Sidebar*/
-	#guide-content.ytd-app
+	#guide-content.ytd-app, #contentContainer.app-drawer
 	{
 		background: var(--second-background) !important;
 	}
-	#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer
+	#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer, #guide-section-title.ytd-guide-section-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -448,7 +448,8 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	#guide-links-primary.ytd-guide-renderer > a, #guide-links-secondary.ytd-guide-renderer > a, #footer.ytd-guide-renderer > #copyright
+	#guide-links-primary.ytd-guide-renderer > a, #guide-links-secondary.ytd-guide-renderer > a, #footer.ytd-guide-renderer > #copyright,
+	yt-formatted-string.ytd-guide-signin-promo-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -473,7 +474,7 @@
 	{
 		background: var(--main-background) !important;
 	}
-	
+
 	/*Channel page*/
 	/*header*/
 	#channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer
@@ -561,8 +562,8 @@
 		color: var(--dimmer-text) !important;
 	}
 	#right-column > yt-formatted-string,
-	#description-container.ytd-channel-about-metadata-renderer, #bio-container.ytd-channel-about-metadata-renderer, 
-	#photos-container.ytd-channel-about-metadata-renderer, #details-container.ytd-channel-about-metadata-renderer, 
+	#description-container.ytd-channel-about-metadata-renderer, #bio-container.ytd-channel-about-metadata-renderer,
+	#photos-container.ytd-channel-about-metadata-renderer, #details-container.ytd-channel-about-metadata-renderer,
 	#links-container.ytd-channel-about-metadata-renderer
 	{
 		border-color: var(--hover-background) !important;
@@ -575,7 +576,7 @@
 	{
 		filter: brightness(110%);
 	}
-	
+
 	/*Video page*/
 	/*title*/
 	.title.ytd-video-primary-info-renderer yt-formatted-string.ytd-video-primary-info-renderer
@@ -595,7 +596,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	
+
 	/*Video cards*/
 	/*ttile*/
 	ytd-grid-video-renderer.use-ellipsis #details.ytd-grid-video-renderer a.ytd-grid-video-renderer,
@@ -663,7 +664,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
+
 	/*Recommandation page*/
 	/*author*/
 	#title.ytd-shelf-renderer
@@ -692,7 +693,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
+
 	/*For the outline around the channel name*/
 	.style-scope.ytd-comment-renderer.creator
 	{
@@ -747,18 +748,20 @@
 	}
 
 	/*Subscribe button and comment button*/
-	yt-formatted-string.style-destructive,paper-button.ytd-subscribe-button-renderer,paper-button.ytd-subscribe-button-renderer[subscribed],.deemphasize.style-scope.yt-formatted-string, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover yt-formatted-string[class="style-scope ytd-button-renderer style-compact-gray"], yt-formatted-string[class="style-scope ytd-button-renderer style-compact-gray"], ytd-button-renderer.style-suggestive[is-paper-button] #text
+	#subscribe-button:hover ytd-button-renderer yt-formatted-string.ytd-button-renderer, #subscribe-button ytd-button-renderer yt-formatted-string.ytd-button-renderer,
+	#subscribe-button:hover .deemphasize.yt-formatted-string, #subscribe-button .deemphasize.yt-formatted-string,
+	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
+	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer
 	{
 		color: var(--main-text) !important;
 	}
 	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), #button[class="style-scope ytd-button-renderer style-compact-gray"], ytd-button-renderer.style-suggestive[is-paper-button]
 	{
 		background-color: var(--main-color) !important;
-		opacity: 0.9 !important;
 	}
 	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover,.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover, ytd-button-renderer.style-suggestive[is-paper-button]:hover
 	{
-		opacity: 1 !important;
+		filter: brightness(110%) !important;
 	}
 	paper-button.ytd-subscribe-button-renderer[subscribed],.ytp-sb-unsubscribe
 	{
@@ -1115,7 +1118,7 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	
+
 	/*Playlist changes*/
 	ytd-playlist-panel-video-renderer:hover
 	{
@@ -1253,7 +1256,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	#more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover, 
+	#more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover,
 	#all.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer:hover
 	{
 		color: var(--main-color) !important;
@@ -1266,7 +1269,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*filter*/
 	a.yt-simple-endpoint.ytd-toggle-button-renderer:hover *
 	{
@@ -1278,7 +1281,7 @@
 		color: var(--main-text) !important;
 		border-color: var(--hover-background) !important;
 	}
-	
+
 	iron-icon:hover
 	{
     	fill: var(--main-color) !important;
@@ -1362,7 +1365,7 @@
 		color: var(--main-text) !important;
 		fill: var(--main-text) !important;
 	}
-	yt-sort-filter-sub-menu-renderer.ytd-comments-header-renderer:hover #icon-label.yt-dropdown-menu, 
+	yt-sort-filter-sub-menu-renderer.ytd-comments-header-renderer:hover #icon-label.yt-dropdown-menu,
 	yt-sort-filter-sub-menu-renderer.ytd-comments-header-renderer:hover #label-icon.yt-dropdown-menu
 	{
 		color: var(--main-color) !important;
@@ -1415,8 +1418,8 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.more-button.style-scope.ytd-comment-replies-renderer:hover paper-button.ytd-comment-replies-renderer, 
-	.more-button.style-scope.ytd-comment-replies-renderer:hover yt-next-continuation.ytd-comment-replies-renderer, 
+	.more-button.style-scope.ytd-comment-replies-renderer:hover paper-button.ytd-comment-replies-renderer,
+	.more-button.style-scope.ytd-comment-replies-renderer:hover yt-next-continuation.ytd-comment-replies-renderer,
 	.more-button.style-scope.ytd-comment-replies-renderer:hover yt-icon.ytd-comment-replies-renderer
 	{
 		color: var(--main-color) !important;
@@ -1836,10 +1839,12 @@
 		filter: grayscale(100%) invert(100%);
 	}
 	/* Fix for active like/dislike buttons */
-	ytd-toggle-button-renderer.style-grey-text[is-icon-button] {
+	ytd-toggle-button-renderer.style-grey-text[is-icon-button]
+	{
 		color: var(--yt-button-color);
 	}
-	ytd-toggle-button-renderer #button.ytd-toggle-button-renderer {
+	ytd-toggle-button-renderer #button.ytd-toggle-button-renderer
+	{
 		color: inherit;
 	}
 	/*like/dislike buttons in nested replies*/
@@ -1862,11 +1867,16 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-    
-	/*Share*/  
+
+	/*Share*/
 	#bar.ytd-copy-link-renderer
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+
+	#alert-message.ytd-consent-bump-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 }

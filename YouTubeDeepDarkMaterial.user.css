@@ -576,6 +576,27 @@
 	{
 		filter: brightness(110%);
 	}
+	/*private message*/
+	ytd-form-popup-renderer[dialog][dialog][dialog]
+	{
+		background: var(--main-background) !important;
+	}
+	#buttons.ytd-form-popup-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	ytd-toggle-menu-service-item-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-toggle-menu-service-item-renderer:hover .style-scope.ytd-toggle-menu-service-item-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	ytd-toggle-menu-service-item-renderer:hover
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/*Video page*/
 	/*title*/

@@ -1227,7 +1227,7 @@
 		box-shadow: none !important;
 	}
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox input.ytd-searchbox,
-	#container.ytd-searchbox > input
+	#container.ytd-searchbox > input, ytd-searchbox input
 	{
 		color: var(--main-text) !important;
 	}

@@ -1671,6 +1671,19 @@
 	}	
 
 	/*Notification*/
+	#notification-count.ytd-notification-topbar-button-renderer,
+	ytd-notification-renderer.unseen #new.ytd-notification-renderer
+	{
+		background: var(--main-color) !important;
+	}
+	.text.ytd-notification-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.metadata.ytd-notification-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
 	ytd-watch:not([flexy-fit-to-video_]) #chat.ytd-watch, ytd-watch:not([flexy-fit-to-video_]) #transcript.ytd-watch
 	{
 		padding-left: 0 !important;

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.3.2
+@version 2.3.3
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme) 
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.3.2*/
+/*2.3.3*/
 
 	/*Main color variables*/
 	:root
@@ -1229,5 +1229,32 @@
 	#footer-links-primary a, #footer a
 	{
 		color: var(--dimer-text) !important;
+	}
+
+	/*Search suggestions (from material)*/
+	.sbsb_a,.sbdd_b
+	{
+		background: var(--second-background) !important;
+		border: none !important;
+	}
+	/*Text color*/
+	.gsfs
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*Hover and keyboard select background*/
+	.sbsb_c.gsfs:hover,.sbsb_d
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*Keyboard select text color and hover text color*/
+	.sbsb_c:hover .sbqs_c,.sbsb_c.gsfs.sbsb_d .sbqs_c
+	{
+		color: var(--main-color) !important;
+	}
+	/*Keyboard icon in the search bar*/
+	#gs_ok50
+	{
+		filter: invert(100%);
 	}
 }

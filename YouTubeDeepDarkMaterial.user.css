@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.7.1
+@version 2.7.2
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.7.1*/
+/*2.7.2*/
 
 	/*Main color variables*/
 	:root
@@ -863,6 +863,28 @@
 	.toggle-button.paper-toggle-button:hover,paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button:hover
 	{
 		background-color: var(--main-color) !important;
+	}
+	yt-bubble-hint-renderer
+	{
+		background: var(--hover-background) !important;
+	}
+	yt-bubble-hint-renderer::after
+	{
+		border-top-color: var(--second-background) !important;
+	}
+	#text.yt-bubble-hint-renderer
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	#details-text.yt-bubble-hint-renderer
+	{
+		background: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.buttons.yt-bubble-hint-renderer
+	{
+		border-color: var(--hover-background) !important;
 	}
 
 	/*Filter active*/

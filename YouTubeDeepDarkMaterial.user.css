@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.7.2
+@version 2.7.3
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.7.2*/
+/*2.7.3*/
 
 	/*Main color variables*/
 	:root
@@ -842,6 +842,68 @@
 	{
 		background-color: transparent !important;
 	}
+
+	/*Sponsor button*/
+	ytd-modal-with-title-and-button-renderer
+	{
+		background: var(--second-background) !important;
+	}
+	#content.ytd-modal-with-title-and-button-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.buttons.ytd-modal-with-title-and-button-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*sponsor popup*/
+	#sponsor-button.ytd-membership-offer-renderer ytd-button-renderer.ytd-membership-offer-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
+	#sponsor-button.ytd-membership-offer-renderer ytd-button-renderer.ytd-membership-offer-renderer:hover
+	{
+		filter: brightness(110%) !important;
+	}
+	#header.ytd-membership-offer-renderer
+	{
+		background: var(--main-background) !important;
+	}
+	ytd-perks-section-renderer, ytd-membership-offer-renderer[dialog][dialog][dialog],
+	paper-dialog-scrollable.can-scroll:not(.scrolled-to-bottom):not(:last-child)::after,
+	paper-dialog-scrollable.is-scrolled:not(:first-child)::before
+	{
+		background: var(--second-background) !important;
+	}
+	.extra-content.ytd-offer-perk-extra
+	{
+		border-color: var(--hover-background) !important;
+		background: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.footer.ytd-membership-offer-renderer
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	ytd-membership-offer-renderer *
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.price.ytd-membership-offer-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	.style-title.ytd-offer-text-item, .style-subtitle.ytd-offer-text-item,
+	.payment-clause.ytd-membership-offer-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.perk-item-title.ytd-perk-item-renderer, .perk-item-public-description.ytd-perk-item-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	
 
 	/*Edit button in channel page*/
 	#edit-buttons.ytd-c4-tabbed-header-renderer ytd-button-renderer.ytd-c4-tabbed-header-renderer

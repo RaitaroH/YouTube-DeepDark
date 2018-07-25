@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.7.5
+@version 2.7.6
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -138,7 +138,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*2.7.5*/
+/*2.7.6*/
 
 	/*Main color variables*/
 	:root
@@ -422,7 +422,54 @@
     	border-color: var(--hover-background) !important;
 	}
 
-
+	/*Chat in the header*/
+	ytd-conversation-switcher-item-renderer
+	{
+    	border-color: var(--hover-background) !important;
+	}
+	#last-post.ytd-conversation-switcher-item-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*invite friends*/
+	#bar.ytd-copy-connection-invite-url-renderer
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	#icon.ytd-copy-connection-invite-url-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*chat popup*/
+	ytd-conversation-section-renderer
+	{
+		background: var(--second-background) !important;
+	}
+	#title-bar.ytd-conversation-section-renderer
+	{
+    	border-color: var(--hover-background) !important;
+	}
+	ytd-conversation-text-item-renderer[justification-style="JUSTIFICATION_START"] #post-text.ytd-conversation-text-item-renderer,
+	ytd-conversation-link-item-renderer[justification-style="JUSTIFICATION_START"] #link.ytd-conversation-link-item-renderer,
+	#bar.ytd-conversation-link-item-renderer, #thumbnail.ytd-inline-playback-renderer, #video-data.ytd-inline-playback-renderer
+	{
+		border-color: var(--hover-background) !important;
+		background: var(--hover-background) !important;
+	}
+	#post-text.ytd-conversation-text-item-renderer, textarea.iron-autogrow-textarea
+	{
+		color: var(--main-text) !important;
+	}
+	#displayed-text.ytd-conversation-link-item-renderer, #icon.ytd-conversation-link-item-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#metadata.ytd-conversation-metadata-item-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	
 	/*Backgrounds*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{

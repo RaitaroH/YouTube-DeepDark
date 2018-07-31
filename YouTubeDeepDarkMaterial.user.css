@@ -880,16 +880,27 @@
 	{
 		color: var(--main-text) !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button],paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), #button[class="style-scope ytd-button-renderer style-compact-gray"], ytd-button-renderer.style-suggestive[is-paper-button]
+	ytd-button-renderer.style-destructive[is-paper-button],
+	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, 
+	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), 
+	#button[class="style-scope ytd-button-renderer style-compact-gray"], 
+	ytd-button-renderer.style-suggestive[is-paper-button],
+	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
 	{
 		background-color: var(--main-color) !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button]:hover,paper-button.ytd-subscribe-button-renderer:hover,paper-button.ytd-subscribe-button-renderer[subscribed]:hover,.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover, #button[class="style-scope ytd-button-renderer style-compact-gray"]:hover, ytd-button-renderer.style-suggestive[is-paper-button]:hover
+	ytd-button-renderer.style-destructive[is-paper-button]:hover,
+	paper-button.ytd-subscribe-button-renderer:hover,
+	paper-button.ytd-subscribe-button-renderer[subscribed]:hover,
+	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover, 
+	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover, 
+	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover, 
+	ytd-button-renderer.style-suggestive[is-paper-button]:hover,
+	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover
 	{
 		filter: brightness(110%) !important;
 	}
-	paper-button.ytd-subscribe-button-renderer[subscribed],.ytp-sb-unsubscribe,
-    ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
+	paper-button.ytd-subscribe-button-renderer[subscribed],.ytp-sb-unsubscribe
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;

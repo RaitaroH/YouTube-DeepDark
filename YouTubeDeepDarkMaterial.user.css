@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 2.7.9
+@version 2.8.0
 @updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -26,8 +26,10 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"Jisho_夜明け": "#EF7D6C"
+	"Jisho_夜明け": "#EF7D6C",
+	"Custom": "/*[[custom-main-color]]*\/"
 }
+@var color custom-main-color "Custom main color" #00adee"
 
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
@@ -46,8 +48,10 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"Jisho_夜明け": "#332222"
+	"Jisho_夜明け": "#332222",
+	"Custom": "/*[[custom-main-background]]*\/"
 }
+@var color custom-main-background "Custom main background" "#111111"
 
 @var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
@@ -66,8 +70,10 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B",
+	"Custom": "/*[[custom-second-background]]*\/"
 }
+@var color custom-second-background "Custom second background" "#181818"
 
 @var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
@@ -86,8 +92,10 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F"
+	"Jisho_夜明け": "#863B2F",
+	"Custom": "/*[[custom-hover-background]]*\/"
 }
+@var color custom-hover-background "Custom hover background" "#232323"
 
 @var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
@@ -106,8 +114,10 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"Jisho_夜明け": "#EFB26C"
+	"Jisho_夜明け": "#EFB26C",
+	"Custom": "/*[[custom-main-text]]*\/"
 }
+@var color custom-main-text "main-text" "#eff0f1"
 
 @var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
@@ -126,8 +136,10 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"Jisho_夜明け": "#986E3F"
+	"Jisho_夜明け": "#986E3F",
+	"Custom": "/*[[custom-dimmer-text]]*\/"
 }
+@var color custom-dimmer-text "dimmer-text" "#CCCCCC"
 
 ==/UserStyle== */
 
@@ -137,8 +149,6 @@
 /*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
 
 /*GNU General Public License v3.0.*/
-
-/*2.7.9*/
 
 	/*Main color variables*/
 	:root

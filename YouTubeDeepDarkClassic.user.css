@@ -370,21 +370,21 @@
 	/*Background image change section*/
 	/*Changing liked button color + other stuff*/
 	.like-button-renderer-like-button.yt-uix-button:active::before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled::before{
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VariousIcons.png) -339px -197px !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VariousIcons.png) -339px -197px !important;
 		background-size: 435px 425px !important;
 		width: 20px !important;
 		height: 20px !important;
 	}
 	/*Changing liked and disliked button color in the comments*/
 		#comment-section-renderer .sprite-like[aria-checked=true]::before {
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Like.png) 0 -116px !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Like.png) 0 -116px !important;
 		background-size: 324px 132px !important;
 		width: 14px !important;
 		height: 14px !important;
 		opacity: 1 !important;
 	}
 	#comment-section-renderer .sprite-dislike[aria-checked=true]::before {
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Like.png) -300px -36px !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Like.png) -300px -36px !important;
 		background-size: 324px 132px !important;
 		width: 14px !important;
 		height: 14px !important;
@@ -392,13 +392,13 @@
 	}
 	/*Changing saved button for playlists*/
 	#pl-header .yt-uix-button-toggled.yt-uix-playlistlike::before{
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VariousIcons.png) -249px -166px !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VariousIcons.png) -249px -166px !important;
 		background-size: 435px 425px !important;
 		width: 15px !important;
 		height: 15px !important;
 	}
 	#player-playlist .yt-uix-button-toggled.yt-uix-playlistlike::before{
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VariousIcons.png) -191px -369px !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VariousIcons.png) -191px -369px !important;
 		background-size: 435px 425px !important;
 		width: 24px !important;
 		height: 24px !important;
@@ -409,14 +409,14 @@
 	}
 	/*Changing icon for unavailable video*/
 	.player-unavailable div.icon.meh {
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) !important;
+		background-image: url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) !important;
 	}
 	/*Changing icon for unavailable page (404)*/
 	#error-page-hh-illustration {
 		display: block !important;
 		-moz-box-sizing: border-box !important;
 		box-sizing: border-box !important;
-		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
+		background: url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
 		width: 140px !important;
 		height: 100px !important;
 		padding-left: 140px !important;
@@ -429,7 +429,7 @@
 	}
 	/*Youtube logo - change size to 100% if is too small - 70% is for YT Rewind*/
 		.exp-responsive #yt-masthead #logo-container,#masthead-logo, #yt-masthead #logo-container .logo, #footer-logo .footer-logo-icon, .footer-logo {
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Logo.png) !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Logo.png) !important;
 		background-size: 75% !important;
 		background-position: right !important;
 		opacity: 0.65 !important;
@@ -444,7 +444,7 @@
 	/*For youtube red. Please comment above and uncomment bellow for proper effect*/
 	/*
 	#yt-masthead #logo-container .logo-red {
-		background: no-repeat url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Logo.png) !important;
+		background: no-repeat url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Logo.png) !important;
 		background-size: 75% !important;
 		opacity: 0.65 !important;
 	}
@@ -800,7 +800,7 @@
 	}
 	.ytp-large-play-button.ytp-button.ytp-red2:hover, .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2
 	{
-		/*background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
+		/*background-image: url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
 		background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
 		filter: invert(100%) brightness(300%);
 	}

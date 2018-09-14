@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name YouTube DeepDark Material
-@namespace github.com/RaitaroH/YouTube-DeepDark
-@homepageURL https://github.com/RaitaroH/YouTube-DeepDark
+@namespace gitlab.com/RaitaroH/YouTube-DeepDark
+@homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
 @version 2.8.0
-@updateURL https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
+@updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
 @license GNU-V3.0
@@ -146,7 +146,7 @@
 @-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/(?!premium).*$') {
 
 /*For the new Material Design for YouTube*/
-/*Theme made by RaitaroH @https://github.com/RaitaroH/YouTube-DeepDark*/
+/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/YouTube-DeepDark*/
 
 /*GNU General Public License v3.0.*/
 
@@ -1214,7 +1214,7 @@
 	}
 	.ytp-large-play-button.ytp-button.ytp-red2:hover, .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2
 	{
-		/*background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
+		/*background-image: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
 		background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
 		filter: invert(100%) brightness(300%);
 	}
@@ -1286,7 +1286,7 @@
 		display: block !important;
 		-moz-box-sizing: border-box !important;
 		box-sizing: border-box !important;
-		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/404.png) no-repeat !important;
+		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
 		width: 140px !important;
 		height: 100px !important;
 		padding-left: 140px !important;
@@ -1298,7 +1298,7 @@
 		display: block !important;
 		-moz-box-sizing: border-box !important;
 		box-sizing: border-box !important;
-		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/404.png) no-repeat !important;
+		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
 		width: 140px !important;
 		height: 100px !important;
 		padding-left: 140px !important;

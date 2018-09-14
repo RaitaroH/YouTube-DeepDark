@@ -1,5 +1,5 @@
 # YouTube-DeepDark
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/YT%20-%20DeepDark.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/YT%20-%20DeepDark.png)
 Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 
 These are dark themes for YouTube inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search). 
@@ -10,8 +10,8 @@ Code also taken from [youtube-custom-colors-video-progress-bar
 ](https://userstyles.org/styles/95280/youtube-custom-colors-video-progress-bar) for the video theming.
 
 ![alt tag](https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg)
-> [classic](https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkClassic.user.css),
-> [material](https://rawgit.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css).
+> [classic](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkClassic.user.css),
+> [material](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css).
 
 Theme as a userstyle [here](https://userstyles.org/styles/135831/youtube-deepdark).
 
@@ -22,7 +22,7 @@ Material version [here](https://userstyles.org/styles/144962/youtube-deepdark-ma
 
 Many thanks to [@MechaLynx](https://github.com/MechaLynx) for his contributions.
 
-### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
+### **You can also install all my themes at once from [here](https://gitlab.com/RaitaroH/Import-All-Deepdark).**
 
 
 # Classic Version
@@ -85,42 +85,42 @@ Providing KDE colors in the following image.
 
 
 # Material Version
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/YT%20-%20DeepDarkMaterial.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/YT%20-%20DeepDarkMaterial.png)
 YouTube introduced a new material design. I do provide a separate userstyle for that:
 https://userstyles.org/styles/144962/youtube-deepdark-material
 
 You don't need to activate the dark mode for this to work.
 
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Dark_Off.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Dark_Off.png)
 
 Video
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Video.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Video.png)
 
 Channel page
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Channel%20page.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Channel%20page.png)
 
 Comments
 
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Comments.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Comments.png)
 
 Search (as of now, YouTube has not rethemed this, so I have)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Search.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Search.png)
 
 Video not found page
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Video%20not%20found%20page.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Video%20not%20found%20page.png)
 
 Iridium support
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Iridium.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Iridium.png)
 
 # Colors
 Colors Showcase (the colors are available in the code; different colors can be used)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/ArcColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/BreezeColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/DeepDarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/DiscordColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/FirefoxColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Firefox57Colors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/VertexColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Mint-Y-DarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/YoutubeColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/9animeColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/ArcColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/BreezeColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/DeepDarkColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/DiscordColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/FirefoxColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Firefox57Colors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/VertexColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/Mint-Y-DarkColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/YoutubeColors.png)
+![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/9animeColors.png)

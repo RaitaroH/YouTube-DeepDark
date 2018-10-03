@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.4.2
+@version 2.4.3
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkClassic.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme) 
 @author RaitaroH
@@ -463,6 +463,9 @@
 	}
 	.watch-stage-mode #theater-background,#creator-appbar-actions-bar,body,#page-container,#body-container,.share-panel-url,.share-panel-start-at-time,.share-embed-code,.share-email .share-email-recipients, .share-email .share-email-note, #player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing {
 		background: var(--second-background) !important;
+	}
+	.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen, .player-api, ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
+		background: transparent !important;
 	}
 	#yt-masthead-container{
 		background: var(--main-background) !important;

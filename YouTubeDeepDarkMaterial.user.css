@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.8.5
+@version 2.8.6
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -779,21 +779,25 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	.content.content-line-height-override.style-scope.ytd-metadata-row-renderer
+	.content.content-line-height-override.style-scope.ytd-metadata-row-renderer, .content.ytd-metadata-row-header-renderer
 	{
 		color: var(--main-text) !important;
 	}
 	/*show more*/
-	.more-button, .less-button
+	.more-button, .less-button,
+	#show-more-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer,
+	#show-less-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer
 	{
 		color: var(--main-text) !important;
 	}
-	.more-button:hover, .less-button:hover
+	.more-button:hover, .less-button:hover,
+	#show-more-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer:hover,
+	#show-less-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer:hover
 	{
 		color: var(--main-color) !important;
 	}
 	/*section borders*/
-	ytd-video-secondary-info-renderer
+	ytd-video-secondary-info-renderer, ytd-metadata-row-header-renderer[has-divider-line]
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -2088,6 +2092,34 @@
 	{
 		color: var(--main-color) !important;
 	}
+
+	/*Tour/ticket cards*/
+	ytd-ticket-shelf-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#primary-event.ytd-ticket-shelf-renderer #meta.ytd-ticket-shelf-renderer #tickets-button.ytd-ticket-shelf-renderer
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	#primary-event.ytd-ticket-shelf-renderer #meta-info.ytd-ticket-shelf-renderer #nearest.ytd-ticket-shelf-renderer,
+	#primary-event.ytd-ticket-shelf-renderer #meta-info.ytd-ticket-shelf-renderer #subtitle1.ytd-ticket-shelf-renderer,
+	#primary-event.ytd-ticket-shelf-renderer #meta-info.ytd-ticket-shelf-renderer #subtitle2.ytd-ticket-shelf-renderer,
+	.where-column-td.ytd-ticket-shelf-renderer .where-column.ytd-ticket-shelf-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.when-date-column.ytd-ticket-shelf-renderer, .link.ytd-ticket-shelf-renderer, .when-weekday-column.ytd-ticket-shelf-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	/*separator*/
+	#seperator.ytd-ticket-shelf-renderer, ytd-ticket-shelf-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	
 
 	/*Author name*/
 	#owner-name.ytd-video-owner-renderer

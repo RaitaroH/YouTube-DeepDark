@@ -29,7 +29,7 @@
 	"Jisho_夜明け": "#EF7D6C",
 	"Custom": "/*[[custom-main-color]]*\/"
 }
-@var color custom-main-color "Custom main color" #00adee"
+@var color custom-main-color "Custom main color" "#00adee"
 
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
@@ -479,7 +479,7 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	
+
 	/*Backgrounds*/
 	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
 	{
@@ -895,9 +895,9 @@
 		color: var(--main-text) !important;
 	}
 	ytd-button-renderer.style-destructive[is-paper-button],
-	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe, 
-	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), 
-	#button[class="style-scope ytd-button-renderer style-compact-gray"], 
+	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
+	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
+	#button[class="style-scope ytd-button-renderer style-compact-gray"],
 	ytd-button-renderer.style-suggestive[is-paper-button],
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
 	{
@@ -907,9 +907,9 @@
 	ytd-button-renderer.style-destructive[is-paper-button]:hover,
 	paper-button.ytd-subscribe-button-renderer:hover,
 	paper-button.ytd-subscribe-button-renderer[subscribed]:hover,
-	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover, 
-	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover, 
-	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover, 
+	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover,
+	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover,
+	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover,
 	ytd-button-renderer.style-suggestive[is-paper-button]:hover,
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover
 	{
@@ -987,7 +987,7 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	
+
 
 	/*Edit button in channel page*/
 	#edit-buttons.ytd-c4-tabbed-header-renderer ytd-button-renderer.ytd-c4-tabbed-header-renderer
@@ -1877,7 +1877,7 @@
 	#search-empty
 	{
 		color: var(--dimmer-text) !important;
-	}	
+	}
 
 	/*Notification*/
 	#notification-count.ytd-notification-topbar-button-renderer,
@@ -2119,7 +2119,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
+
 
 	/*Author name*/
 	#owner-name.ytd-video-owner-renderer

@@ -4,7 +4,7 @@
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
 @version 2.4.3
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkClassic.user.css
-@description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme) 
+@description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
 @license GNU-V3.0
 
@@ -29,7 +29,7 @@
 	"Jisho_夜明け": "#EF7D6C",
 	"Custom": "/*[[custom-main-color]]*\/"
 }
-@var color custom-main-color "Custom main color" #00adee"
+@var color custom-main-color "Custom main color" "#00adee"
 
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
@@ -1240,7 +1240,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
+
 	/* fix for video title color conflict when enabled on Material layout */
 	a#video-title{
 		color: var(--main-text) !important;

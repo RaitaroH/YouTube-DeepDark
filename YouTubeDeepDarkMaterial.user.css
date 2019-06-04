@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.8.8
+@version 2.8.9
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -514,7 +514,41 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*Compact sidebar fix*/
+	ytd-mini-guide-renderer, a.ytd-mini-guide-entry-renderer,
+	a.ytd-mini-guide-entry-renderer:hover, a.ytd-mini-guide-entry-renderer:focus
+	{
+        background-color: var(--second-background) !important;
+	}
+	ytd-mini-guide-entry-renderer[active_] .guide-icon.ytd-mini-guide-entry-renderer,
+	a.ytd-mini-guide-entry-renderer:hover .guide-icon
+	{
+		color: var(--main-color) !important;
+	}
 
+	/*Latest YouTube posts*/
+	ytd-post-renderer[surface_="backstage-surface-type-home"]
+	{
+		background-color: var(--second-background) !important;
+	}
+	ytd-post-renderer[surface_="backstage-surface-type-home"] #home-content-text.ytd-post-renderer, 
+	ytd-post-renderer[surface_="backstage-surface-type-home"][attachment="poll"] #vote-count-text.ytd-post-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-post-renderer[surface_="backstage-surface-type-home"] #author-text.yt-simple-endpoint.ytd-post-renderer
+	{
+		color: var(--main-color) !important;
+	
+	}
+	/* poll results */
+	.text-area.ytd-backstage-poll-renderer, 
+	paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer, 
+	.progress-bar.ytd-backstage-poll-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
+	
 	/*Border color for terms and conditions*/
 	ytd-consent-bump-renderer
 	{
@@ -1491,9 +1525,13 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	paper-tab.iron-selected.ytd-generic-watch-card
+	paper-tab, paper-tab.iron-selected.ytd-generic-watch-card
 	{
 		color: var(--main-color) !important;
+	}
+	paper-item:hover
+	{
+		background-color: var(--second-background) !important;
 	}
 	#img-endpoint.ytd-watch-card-collage-renderer #overlay-button.ytd-watch-card-collage-renderer
 	{
@@ -1646,7 +1684,8 @@
 	}
 
 	/*Comments*/
-	yt-formatted-string.ytd-comments-header-renderer
+	yt-formatted-string.ytd-comments-header-renderer,
+	#contenteditable-root.yt-formatted-string[aria-label].yt-formatted-string:empty::before
 	{
 		color: var(--dimmer-text) !important;
 	}

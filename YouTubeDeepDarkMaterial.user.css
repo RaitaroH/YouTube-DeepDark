@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.8.10
+@version 2.9.0
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -379,8 +379,8 @@
 
 	/*Outline for links*/
 	a
- 	{
-			outline-color: var(--main-color) !important;
+	{
+		outline-color: var(--main-color) !important;
 	}
 	a:hover
 	{
@@ -390,7 +390,7 @@
 	/*Outline for comments*/
 	#content-text.ytd-comment-renderer
 	{
-			outline: none !important;
+		outline: none !important;
 	}
 
 	/*Nav bar*/
@@ -539,8 +539,8 @@
 	ytd-post-renderer[surface_="backstage-surface-type-home"] #author-text.yt-simple-endpoint.ytd-post-renderer
 	{
 		color: var(--main-color) !important;
-
 	}
+
 	/* poll results */
 	.text-area.ytd-backstage-poll-renderer,
 	paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer,
@@ -777,7 +777,8 @@
 	#content.ytd-playlist-video-renderer:hover #video-title,
 	a.yt-simple-endpoint.ytd-playlist-panel-video-renderer:hover #video-title,
 	.style-scope.ytd-grid-renderer.use-ellipsis:hover #video-title,
-	#video-title:hover
+	#video-title:hover,
+	ytd-grid-video-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer
 	{
 		color: var(--main-color) !important;
 	}
@@ -798,7 +799,8 @@
 		color: var(--dimmer-text) !important;
 	}
 	/*action buttons*/
-	a.yt-simple-endpoint.ytd-toggle-button-renderer, ytd-button-renderer yt-formatted-string.ytd-button-renderer
+	a.yt-simple-endpoint.ytd-toggle-button-renderer, ytd-button-renderer yt-formatted-string.ytd-button-renderer,
+	ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer /*likes*/
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -812,6 +814,7 @@
 		fill: var(--main-color) !important;
 	}
 	ytd-toggle-button-renderer.style-text[is-icon-button]:hover *, /*like/dislike*/
+	ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer:hover #text.ytd-toggle-button-renderer,
 	ytd-button-renderer[is-icon-button]:hover *, /*share*/
 	button.yt-icon-button:hover * /*bell*/
 	{
@@ -902,6 +905,16 @@
 	app-drawer.ytd-app:not([persistent]) #header.ytd-app
 	{
 		border-color: var(--main-color) !important;
+	}
+
+	/*You are not logged in tooltip*/
+	yt-tooltip-renderer
+	{
+		background-color: var(--main-background) !important;
+	}
+	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]::before
+	{
+		border-color: transparent transparent var(--main-background) transparent !important;
 	}
 
 	/*Progress bar*/
@@ -1030,7 +1043,6 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-
 
 	/*Edit button in channel page*/
 	#edit-buttons.ytd-c4-tabbed-header-renderer ytd-button-renderer.ytd-c4-tabbed-header-renderer
@@ -1313,7 +1325,8 @@
 	}
 
 	/*Miniplayer*/
-	#info-bar.ytd-miniplayer .metadata.ytd-miniplayer
+	#info-bar.ytd-miniplayer .metadata.ytd-miniplayer,
+	#info-bar.ytd-miniplayer
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -1329,7 +1342,7 @@
 	/*Watch later svg*/
 	.style-scope.ytd-thumbnail-overlay-toggle-button-renderer:hover
 	{
-			fill: var(--main-color) !important;
+		fill: var(--main-color) !important;
 	}
 	ytd-thumbnail-overlay-toggle-button-renderer:focus yt-icon.ytd-thumbnail-overlay-toggle-button-renderer
 	{
@@ -1457,7 +1470,8 @@
 
 	/*Search bar*/
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,
-	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,
+	#container.ytd-searchbox
 	{
 		background: var(--main-background) !important;
 		border-color: var(--main-background) !important;
@@ -1552,7 +1566,8 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	paper-tab.iron-selected.ytd-generic-watch-card
+	paper-tab,
+  paper-tab.iron-selected.ytd-generic-watch-card
 	{
 		color: var(--main-color) !important;
 	}
@@ -1858,7 +1873,6 @@
 		fill: var(--main-color) !important;
 		opacity: 0.5;
 	}
-
 
 	/*Chat*/
 	/*header*/
@@ -2274,10 +2288,12 @@
 	{
 		fill: var(--main-color) !important;
 	}*/
-	ytd-toggle-button-renderer.ytd-comment-action-buttons-renderer #button.ytd-toggle-button-renderer {
+	ytd-toggle-button-renderer.ytd-comment-action-buttons-renderer #button.ytd-toggle-button-renderer
+	{
 		color: var(--yt-button-color);
 	}
-	ytd-toggle-button-renderer.ytd-comment-action-buttons-renderer .style-default-active {
+	ytd-toggle-button-renderer.ytd-comment-action-buttons-renderer .style-default-active
+	{
 		color: var(--main-color) !important;
 	}
 
@@ -2295,7 +2311,8 @@
 
 	ytd-masthead.shell [class*='skeleton'],
 	.shelf-videos,
-	.skeleton-bg-color {
+	.skeleton-bg-color
+	{
 	    background-color: var(--hover-background) !important;
 	    border-color: var(--hover-background) !important;
 	}
@@ -2479,19 +2496,18 @@
 	}
 
 	/*Enhancer for YouTube*/
-	#enhancer-for-youtube-unpin-player {
+	#enhancer-for-youtube-unpin-player
+	{
 		color: var(--main-text) !important;
 	}
-	#enhancer-for-youtube-progress {
+	#enhancer-for-youtube-progress
+	{
 		-webkit-appearance: none !important;
 	}
-	#enhancer-for-youtube-progress::-webkit-progress-value {
-		background-color: var(--main-color) !important;
-	}
-	#enhancer-for-youtube-progress::-moz-progress-bar {
-		background-color: var(--main-color) !important;
-	}
-	#enhancer-for-youtube-progress::-ms-fill {
+	#enhancer-for-youtube-progress::-webkit-progress-value,
+	#enhancer-for-youtube-progress::-moz-progress-bar,
+	#enhancer-for-youtube-progress::-ms-fill
+	{
 		background-color: var(--main-color) !important;
 	}
 }

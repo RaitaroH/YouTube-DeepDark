@@ -518,7 +518,7 @@
 	ytd-mini-guide-renderer, a.ytd-mini-guide-entry-renderer,
 	a.ytd-mini-guide-entry-renderer:hover, a.ytd-mini-guide-entry-renderer:focus
 	{
-        background-color: var(--second-background) !important;
+		background-color: var(--second-background) !important;
 	}
 	ytd-mini-guide-entry-renderer[active_] .guide-icon.ytd-mini-guide-entry-renderer,
 	a.ytd-mini-guide-entry-renderer:hover .guide-icon
@@ -1567,7 +1567,7 @@
 		color: var(--main-text) !important;
 	}
 	paper-tab,
-  paper-tab.iron-selected.ytd-generic-watch-card
+	paper-tab.iron-selected.ytd-generic-watch-card
 	{
 		color: var(--main-color) !important;
 	}
@@ -1759,12 +1759,12 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-    /*text box*/
-    #simplebox-placeholder.ytd-comment-simplebox-renderer
-    {
+	/*text box*/
+	#simplebox-placeholder.ytd-comment-simplebox-renderer
+	{
 		color: var(--dimmer-text) !important;
 	}
-    #placeholder-area.ytd-comment-simplebox-renderer
+	#placeholder-area.ytd-comment-simplebox-renderer
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -1911,8 +1911,8 @@
 	/*paid messages*/
 	#content.yt-live-chat-paid-message-renderer #message
 	{
-        color: black !important;
-    }
+		color: black !important;
+	}
 	#message.yt-live-chat-text-message-renderer a.yt-live-chat-text-message-renderer
 	{
 		color: var(--main-color) !important;
@@ -2313,23 +2313,23 @@
 	.shelf-videos,
 	.skeleton-bg-color
 	{
-	    background-color: var(--hover-background) !important;
-	    border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 	.skeleton-light-border-bottom
 	{
-	    border-bottom: 1px solid var(--hover-background) !important;
+		border-bottom: 1px solid var(--hover-background) !important;
 	}
 	html[dark] ytd-masthead.shell,
 	html[dark] .shelf-videos,
 	html[dark] .skeleton-bg-color
 	{
-	    background-color: var(--hover-background) !important;
-	    border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 	html[dark] .skeleton-light-border-bottom
 	{
-	    border-bottom: 1px solid var(--hover-background) !important;
+		border-bottom: 1px solid var(--hover-background) !important;
 	}
 
 	#alert-message.ytd-consent-bump-renderer

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.0
+@version 2.9.1
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -354,7 +354,7 @@
 	}
 
 	/*Background for the entire page*/
-	html, ytd-browse, ytd-watch, ytd-search, ytd-app, [class*="ytd-watch-flexy"]
+	html, ytd-browse, ytd-watch, ytd-search, ytd-app, [class*="ytd-watch-flexy"], .style-scope.ytd-page-manager.hide-skeleton
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -2509,5 +2509,33 @@
 	#enhancer-for-youtube-progress::-ms-fill
 	{
 		background-color: var(--main-color) !important;
+	}
+
+	/*New TOS*/
+	yt-alert-with-actions-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	#text.yt-alert-with-actions-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	yt-button-renderer yt-formatted-string.yt-button-renderer,
+	#icon.yt-alert-with-actions-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	/*actual page for TOS*/
+	#yts-article.ltr #article-container.ytg-box #summary
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.separator, .with-divider, .header, #yts-article #header, #yts-nav
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#yts-nav .indented .sub-level a, #yts-nav .top-level a, #yts-article #header
+	{
+		color: var(--main-text) !important;
 	}
 }

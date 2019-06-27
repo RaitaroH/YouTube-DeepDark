@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.2
+@version 2.9.3
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -954,7 +954,7 @@
 	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
 	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
-	ytd-button-renderer.style-suggestive[is-paper-button],
+	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
 	{
 		background-color: var(--main-color) !important;
@@ -966,7 +966,7 @@
 	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover,
 	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover,
 	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover,
-	ytd-button-renderer.style-suggestive[is-paper-button]:hover,
+	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer:hover,
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover
 	{
 		filter: brightness(110%) !important;

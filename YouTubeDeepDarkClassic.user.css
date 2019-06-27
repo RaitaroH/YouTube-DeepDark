@@ -2,7 +2,7 @@
 @name YouTube DeepDark Classic
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.4.3
+@version 2.4.4
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkClassic.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -955,6 +955,13 @@
 	ytd-menu-navigation-item-renderer:hover yt-formatted-string, ytd-menu-service-item-renderer:hover yt-formatted-string, #submit-button a, #confirm-button a
 	{
 		color: var(--main-color) !important;
+	}
+
+	/*channel messages*/
+	yt-live-chat-text-message-renderer[author-is-owner]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 
 	/*chat dialog radio button style */

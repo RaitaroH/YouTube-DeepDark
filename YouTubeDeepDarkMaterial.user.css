@@ -2532,7 +2532,7 @@
 		color: var(--main-color) !important;
 	}
 	/*actual page for TOS*/
-	#yts-article.ltr #article-container.ytg-box #summary
+	#yts-article #article-container.ytg-box #summary
 	{
 		background-color: var(--hover-background) !important;
 	}

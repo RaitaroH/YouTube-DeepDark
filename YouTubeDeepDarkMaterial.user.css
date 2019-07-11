@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.3
+@version 2.9.4
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -589,7 +589,7 @@
 		color: var(--dimmer-text) !important;
 	}
 	/*side channels*/
-	#title
+	#title:not([class*="ytd-labs"]):not([class*="upsell-offer"])
 	{
 		color: var(--main-text) !important;
 	}
@@ -658,7 +658,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	#description, #bio, #right-column > yt-formatted-string
+	#description:not([class*="yt-music"]), #bio, #right-column > yt-formatted-string
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -873,7 +873,9 @@
 	}
 	/*Next and prev buttons*/
 	.arrow.yt-horizontal-list-renderer,
-	#scroll-button-forward
+	#scroll-button-forward,
+	.arrow.ytd-horizontal-card-list-renderer,
+	.ytd-horizontal-card-list-renderer[arrow]
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -949,6 +951,10 @@
 	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer
 	{
 		color: var(--main-text) !important;
+	}
+	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer.style-blue-text
+	{
+		color: var(--main-color) !important;
 	}
 	ytd-button-renderer.style-destructive[is-paper-button],
 	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
@@ -1101,6 +1107,10 @@
 		color: var(--main-color) !important;
 		padding-left: 0px !important;
 		opacity: .7 !important;
+	}
+	.badge-style-type-simple-strikethrough.ytd-badge-supported-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 	/*Trending badge*/
 	.badge-style-type-featured.ytd-badge-supported-renderer
@@ -2006,7 +2016,7 @@
 	{
 		background: var(--second-background) !important;
 	}
-	.promo-message.ytd-background-promo-renderer, #message
+	.promo-message.ytd-background-promo-renderer, #message:not([class*="yt-music"])
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -2308,7 +2318,6 @@
 	{
 		background-color: var(--main-background);
 	}
-
 	ytd-masthead.shell [class*='skeleton'], [id*='skeleton'] [class*='skeleton'], [id*='skeleton'], .shelf-videos, .skeleton-bg-color
 	{
 		background-color: var(--hover-background) !important;
@@ -2466,7 +2475,8 @@
 	{
 		background: #262626 !important; /*the matching color resulted due to the filter*/
 	}
-	.ytd-banner-promo-renderer-title.ytd-banner-promo-renderer
+	.ytd-banner-promo-renderer-title.ytd-banner-promo-renderer,
+	.ytd-banner-promo-renderer-promo-text.ytd-banner-promo-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -2509,9 +2519,17 @@
 	#enhancer-for-youtube-progress
 	{
 		-webkit-appearance: none !important;
+		color: var(--main-color) !important;
 	}
-	#enhancer-for-youtube-progress::-webkit-progress-value,
-	#enhancer-for-youtube-progress::-moz-progress-bar,
+	/*Do not join these lines otherwise it does not work as expected!*/
+	#enhancer-for-youtube-progress::-webkit-progress-value
+	{
+		background-color: var(--main-color) !important;
+	}
+	#enhancer-for-youtube-progress::-moz-progress-bar
+	{
+		background-color: var(--main-color) !important;
+	}
 	#enhancer-for-youtube-progress::-ms-fill
 	{
 		background-color: var(--main-color) !important;
@@ -2543,5 +2561,61 @@
 	#yts-nav .indented .sub-level a, #yts-nav .top-level a, #yts-article #header
 	{
 		color: var(--main-text) !important;
+	}
+
+	/*Premium page (https://www.youtube.com/premium)*/
+	yt-button-renderer#manage-subscription-button yt-formatted-string.yt-button-renderer
+	{
+		color: inherit !important;
+	}
+	.yt-unlimited-page-header-renderer a.yt-simple-endpoint.yt-formatted-string
+	{
+		color: var(--main-color) !important;
+	}
+	#header.yt-music-pass-small-feature-info-renderer,
+	.question.yt-generic-faq-question-renderer,
+	.answer-arrow.yt-generic-faq-question-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#description.yt-music-pass-small-feature-info-renderer,
+	.container.yt-faq-section-renderer,
+	.answer.yt-generic-faq-question-renderer,
+	.text.ytd-simple-text-section-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	yt-generic-faq-question-renderer .yt-simple-endpoint.style-scope.yt-formatted-string,
+	yt-generic-faq-question-renderer a.yt-simple-endpoint.yt-formatted-string:only-of-type,
+	.text.ytd-simple-text-section-renderer a.yt-simple-endpoint.yt-formatted-string:only-of-type
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Paid memberships*/
+	paper-card.yt-subscription-product-upsell-offer-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#title.yt-subscription-product-upsell-offer-renderer,
+	#description.yt-subscription-product-upsell-offer-renderer,
+	#additional-info.yt-subscription-product-upsell-offer-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+
+	/*Gaming page (https://www.youtube.com/gaming) and gaming channels*/
+	#channel-details.ytd-carousel-header-renderer,
+	#channel-header-container.ytd-topic-channel-details-renderer
+	{
+		background-color: var(--main-background) !important;
+	}
+	#bg.ytd-interactive-tabbed-header-renderer
+	{
+		fill: var(--main-background) !important;
+	}
+	#tabs-inner-container.ytd-interactive-tabbed-header-renderer
+	{
+		background-color: transparent !important;
 	}
 }

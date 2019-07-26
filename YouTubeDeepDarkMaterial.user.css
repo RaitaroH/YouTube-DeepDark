@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.4
+@version 2.9.5
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -919,6 +919,12 @@
 		border-color: transparent transparent var(--main-background) transparent !important;
 	}
 
+	/*Join button tooltip*/
+	yt-bubble-hint-renderer[position-type="OPEN_POPUP_POSITION_LEFT"][style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]::before
+	{
+		border-color: transparent transparent transparent var(--main-background) !important;
+	}
+
 	/*Progress bar*/
 	#progress
 	{
@@ -1649,6 +1655,32 @@
 	{
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
+	}
+
+	/*Search results related to item searched*/
+	a.ytd-search-refinement-card-renderer
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		border-radius: 8px !important;
+	}
+	a.ytd-search-refinement-card-renderer:hover #card-title.ytd-search-refinement-card-renderer div.ytd-search-refinement-card-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#card-title.ytd-search-refinement-card-renderer div.ytd-search-refinement-card-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*Next button*/
+	.center-aligned.ytd-horizontal-card-list-renderer
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.center-aligned.ytd-horizontal-card-list-renderer:hover
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*filter*/

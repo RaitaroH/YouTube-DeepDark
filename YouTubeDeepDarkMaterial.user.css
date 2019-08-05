@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.0
+@version 3.0.1
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -933,10 +933,33 @@
 		border-color: var(--main-color) !important;
 	}
 
+	/*How is youtube today*/
+	ytd-single-option-survey-renderer[dialog][dialog][dialog], ytd-single-option-survey-renderer,
+	ytd-survey-follow-up-renderer[dialog][dialog][dialog], ytd-survey-follow-up-renderer
+	/*TODO: forgot to test if the [dialog] is even needed*/
+	{
+		background-color: var(--hover-background) !important;
+		box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13); /*TODO: move to --shadow*/
+	}
+	#header.ytd-single-option-survey-renderer,
+	#header.ytd-survey-follow-up-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	ytd-single-option-survey-option-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-single-option-survey-option-renderer:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
 	/*You are not logged in tooltip*/
 	yt-tooltip-renderer
 	{
 		background-color: var(--main-background) !important;
+		box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13); /*TODO: move to --shadow*/
 	}
 	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]::before
 	{
@@ -944,9 +967,13 @@
 	}
 
 	/*Join button tooltip*/
+	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]
+	{
+		box-shadow: 0 1px 0.5px rgba(0, 0, 0, .13); /*TODO: move to --shadow*/
+	}
 	yt-bubble-hint-renderer[position-type="OPEN_POPUP_POSITION_LEFT"][style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]::before
 	{
-		border-color: transparent transparent transparent var(--main-background) !important;
+		border-color: transparent transparent transparent var(--hover-background) !important;
 	}
 	/*window*/
 	ytd-sponsorships-offer-with-video-renderer[dialog][dialog][dialog]

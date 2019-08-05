@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.7
+@version 3.0.0
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -354,7 +354,8 @@
 	}
 
 	/*Background for the entire page*/
-	html, ytd-browse, ytd-watch, ytd-search, ytd-app, [class*="ytd-watch-flexy"], .style-scope.ytd-page-manager.hide-skeleton
+	html, ytd-browse, ytd-watch, ytd-search, ytd-app, [class*="ytd-watch-flexy"], .style-scope.ytd-page-manager.hide-skeleton,
+	.account-container
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -394,9 +395,11 @@
 	}
 
 	/*Nav bar*/
-	ytd-masthead
+	ytd-masthead,
+	#yt-masthead-container, #masthead-positioner-height-offset /*account page*/
 	{
 		background-color: var(--second-background) !important;
+		border-bottom-color: var(--hover-background) !important;
 	}
 	yt-icon-button svg
 	{
@@ -409,6 +412,21 @@
 	#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
 	{
 		fill: var(--main-text) !important;
+	}
+	/*acount settings page*/
+	/*logo*/
+	.exp-invert-logo.inverted-hdpi #header::before, .exp-invert-logo.inverted-hdpi .ypc-join-family-header .logo, .exp-invert-logo.inverted-hdpi #footer-logo .footer-logo-icon, .exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo, .exp-invert-logo.inverted-hdpi #masthead #logo-container, .exp-invert-logo.inverted-hdpi .admin-masthead-logo a, .exp-invert-logo.inverted-hdpi #yt-sidebar-styleguide-logo #logo
+	{
+		filter: invert(1) grayscale(1);
+	}
+	/*buttons*/
+	#yt-masthead-creation-button
+	{
+		filter: brightness(220%);
+	}
+	#yt-masthead-notifications .yt-uix-button-icon-bell
+	{
+		filter: invert(1) brightness(720%);
 	}
 
 	/*YouTube Apps*/
@@ -1415,8 +1433,8 @@
 		background-color: var(--main-background) !important;
 	}
 
-  	/*Changing icon for unavailable video*/
-  	#img.ytd-player-error-message-renderer
+  /*Changing icon for unavailable video*/
+  #img.ytd-player-error-message-renderer
 	{
 		display: block !important;
 		-moz-box-sizing: border-box !important;
@@ -1531,7 +1549,8 @@
 	/*Search bar*/
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,
-	#container.ytd-searchbox
+	#container.ytd-searchbox,
+	#masthead-search-terms /*account settings page*/
 	{
 		background: var(--main-background) !important;
 		border-color: var(--main-background) !important;
@@ -1548,10 +1567,15 @@
 		color: var(--main-text) !important;
 	}
 	/*Search icon*/
-	#search-icon-legacy.ytd-searchbox
+	#search-icon-legacy.ytd-searchbox,
+	#masthead-search .search-btn-component, #masthead-search .search-btn-component .start /*account*/
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	#masthead-search .search-btn-component .yt-uix-button-content /*account*/
+	{
+		filter: invert(1);
 	}
 	#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox
 	{
@@ -2678,5 +2702,245 @@
 	#tabs-inner-container.ytd-interactive-tabbed-header-renderer
 	{
 		background-color: transparent !important;
+	}
+
+	/*Acount page specific*/
+	/*Sidebar*/
+	#creator-page.account-page
+	{
+		background-color: var(--second-background) !important;
+	}
+	.exp-kevlar-settings .account-page #creator-sidebar h3
+	{
+		color: var(--main-text) !important;
+	}
+	.exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item a
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item.selected > a, .exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item.selected > a:hover,
+	.exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item:hover a
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	/*Burger sidebar*/
+	#appbar-guide-menu, .guide-flyout
+	{
+		background-color: var(--second-background) !important;
+	}
+	#guide-container .guide-item
+	{
+		color: var(--main-text) !important;
+	}
+	#guide-container .guide-item:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	/*headers*/
+	.exp-invert-logo li.guide-section h3, .exp-invert-logo li.guide-section h3 a
+	{
+		color: var(--main-color) !important;
+	}
+	.guide-section-separator /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*Contents - account*/
+	.account-page-header
+	{
+		color: var(--main-color) !important;
+	}
+	#account-page-header-title, h2.account-section-header
+	{
+		color: var(--main-text) !important;
+	}
+	.exp-kevlar-settings #account-page-header-subtitle, .account-info-item .account-info-label,
+	.account-section .account-email, .account-content, .account-section-subtext
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.yt-horizontal-rule /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.account-info .account-photo .yt-thumb /*avatar*/
+	{
+		border-radius: 100%;
+	}
+	.account-content a, .account-header a /*various links*/
+	{
+		color: var(--main-color) !important;
+	}
+	.yt-thumb
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*Notifications*/
+	.setting-reminder, h3.account-section-header
+	{
+		color: var(--main-text) !important;
+	}
+	.yt-uix-form-input-checkbox-container input:checked + .yt-uix-form-input-checkbox-element
+	{
+		border-color: #000;
+		filter: invert(1);
+	}
+	.desktop-notifications .browser
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.desktop-notifications .browser .yt-uix-button.turn-on, .desktop-notifications .browser .yt-uix-button.turn-off, .resume-setting-button, .undo-setting-button-section, .resume-all-settings-button /*turn off*/
+	{
+		background: var(--main-background) !important;
+		border-color: var(--main-background) !important;
+		color: var(--main-color) !important;
+	}
+	.yt-uix-form-input-select /*dropdowns*/
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*Playback*/
+	.yt-help-icon
+	{
+		filter: invert(1);
+	}
+	.yt-uix-clickcard-card-content, .yt-uix-hovercard-card-content
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal
+	{
+		border-right-color: var(--hover-background) !important;
+	}
+	.exp-kevlar-settings .account-page .yt-uix-button /*save buttons*/
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.exp-kevlar-settings .account-page .yt-uix-button:hover
+	{
+		opacity: 1 !important;
+	}
+	/*Social*/
+	.social-connector
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*TV*/
+	.howto-circle
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.howto-text
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.remote-icon
+	{
+		filter: invert(1) brightness(200%);
+	}
+	h3.pairing-section-header
+	{
+		color: var(--main-text)
+	}
+	.yt-uix-form-input-select, .yt-uix-form-input-text, .yt-uix-form-input-textarea
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#account-page-header-avatar.howto-promo-image
+	{
+		filter: invert(1) grayscale(1);
+	}
+	/*Footer*/
+	body #footer-container
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	#footer-main /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*links*/
+	#footer-links-primary a
+	{
+		color: var(--main-text) !important;
+	}
+	#footer-links-secondary a
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#footer-links-primary a:hover, #footer-links-secondary a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*buttons*/
+	#footer .yt-uix-button-group .yt-uix-button,
+	#footer .pickers li, #footer .footer-history, #footer #google-help
+	{
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		box-shadow: none !important;
+	}
+	.yt-uix-button-default.yt-uix-button-toggled:hover
+	{
+		box-shadow: none !important;
+	}
+	#footer .yt-uix-button-icon-footer-language, #footer .yt-uix-button-icon-footer-history, #footer .yt-uix-button-icon-questionmark
+	{
+		filter: invert(1);
+	}
+	.yt-uix-button-arrow
+	{
+		border-top-color: var(--main-text) !important;
+	}
+	#yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer
+	{
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.yt-picker-header, #safety-form p.safety-submit /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.yt-picker-header h3.yt, .yt-picker-content strong
+	{
+		color: var(--main-text) !important;
+	}
+	#yt-picker-country-footer .yt-default .yt-notes, p.yt-notes,
+	#safety-mode-description li
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#yt-picker-country-footer .yt-picker-content a, .yt-picker-content button
+	{
+		color: var(--main-color) !important;
+	}
+	#yt-picker-safetymode-footer button /*save*/
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
 	}
 }

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.6
+@version 2.9.7
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -929,6 +929,44 @@
 	yt-bubble-hint-renderer[position-type="OPEN_POPUP_POSITION_LEFT"][style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]::before
 	{
 		border-color: transparent transparent transparent var(--main-background) !important;
+	}
+	/*window*/
+	ytd-sponsorships-offer-with-video-renderer[dialog][dialog][dialog]
+	{
+		background-color: var(--main-background) !important;
+	}
+	#top-bar.ytd-sponsorships-offer-with-video-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.title-container.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.channel-title.ytd-sponsorships-offer-with-video-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	.title-container.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-with-video-renderer,
+	.disclaimer.ytd-sponsorships-tier-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*prices*/
+	.offer-overview-item.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-with-video-renderer,
+	#above-purchase-button-text.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	yt-button-renderer.style-primary[is-paper-button] /*save button*/
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*perks*/
+	.style-included-perks.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer, .style-unspecified.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#expansion_call_to_action.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Progress bar*/

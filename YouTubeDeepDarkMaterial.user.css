@@ -948,6 +948,44 @@
 	{
 		border-color: transparent transparent transparent var(--main-background) !important;
 	}
+	/*window*/
+	ytd-sponsorships-offer-with-video-renderer[dialog][dialog][dialog]
+	{
+		background-color: var(--main-background) !important;
+	}
+	#top-bar.ytd-sponsorships-offer-with-video-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.title-container.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.channel-title.ytd-sponsorships-offer-with-video-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	.title-container.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-with-video-renderer,
+	.disclaimer.ytd-sponsorships-tier-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*prices*/
+	.offer-overview-item.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-with-video-renderer,
+	#above-purchase-button-text.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	yt-button-renderer.style-primary[is-paper-button] /*save button*/
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*perks*/
+	.style-included-perks.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer, .style-unspecified.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#expansion_call_to_action.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*Progress bar*/
 	#progress

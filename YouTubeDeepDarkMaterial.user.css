@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.2
+@version 3.0.3
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -14,7 +14,7 @@
 	"Deep-Dark",
 	"Inspired-Dark",
 	"Breeze-Dark",
-  "HavocOS",
+	"HavocOS",
 	"Arc-Dark",
 	"Vertex-Dark",
 	"Mint-Y-Dark",
@@ -49,6 +49,8 @@
 	"Gruvbox Light Intense",
 	"Custom"
 ]
+
+@var checkbox join-color "Use dark join button" 0
 
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
@@ -1135,6 +1137,14 @@
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+	}
+	if join-color /*overwriting the above*/
+	{
+		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer
+		{
+			background-color: var(--second-background) !important;
+			border-color: var(--second-background) !important;
+		}
 	}
 	ytd-button-renderer.style-destructive[is-paper-button]:hover,
 	paper-button.ytd-subscribe-button-renderer:hover,

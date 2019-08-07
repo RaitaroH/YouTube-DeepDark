@@ -72,11 +72,10 @@
 ==/UserStyle== */
 
 @-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/(?!premium).*$') {
-
-/*For the new Material Design for YouTube*/
-/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/YouTube-DeepDark*/
-
-/*GNU General Public License v3.0.*/
+	/* Author     : Theme made by RaitaroH */
+	/* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
+	/* Home       : https://github.com/RaitaroH/YouTube-DeepDark */
+	/* Licence    : GNU General Public License v3.0 */
 
 	/*Main color variables*/
 	:root

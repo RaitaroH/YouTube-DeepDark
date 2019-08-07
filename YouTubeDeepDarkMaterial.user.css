@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.3
+@version 3.0.4
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2199,17 +2199,26 @@
 
 	/*Notification*/
 	#notification-count.ytd-notification-topbar-button-renderer,
-	ytd-notification-renderer.unseen #new.ytd-notification-renderer
+	ytd-notification-renderer.unread #new.ytd-notification-renderer,
+	.yt-lockup-notification .unread-dot /*account settings*/
 	{
 		background: var(--main-color) !important;
 	}
-	.text.ytd-notification-renderer
+	.text.ytd-notification-renderer,
+	.message.ytd-notification-renderer
+	#yt-masthead-notifications-title, .yt-lockup-notification .yt-lockup-title a /*account settings*/
+	h2.yt-multi-page-menu-section-renderer /*comments and notifications headers*/
 	{
 		color: var(--main-text) !important;
 	}
-	.metadata.ytd-notification-renderer
+	.metadata.ytd-notification-renderer,
+	.exp-responsive .yt-lockup-tile .yt-lockup-byline /*account settings*/
 	{
 		color: var(--dimmer-text) !important;
+	}
+	ytd-notification-renderer:hover .message.ytd-notification-renderer
+	{
+		color: var(--main-color) !important;
 	}
 	ytd-watch:not([flexy-fit-to-video_]) #chat.ytd-watch, ytd-watch:not([flexy-fit-to-video_]) #transcript.ytd-watch
 	{
@@ -2224,13 +2233,51 @@
 		color: var(--main-text) !important;
 	}
 	#sections.ytd-multi-page-menu-renderer > ytd-background-promo-renderer.ytd-multi-page-menu-renderer,
-	ytd-multi-page-menu-renderer
+	ytd-multi-page-menu-renderer,
+	#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis, /*account settings*/
+	#yt-masthead-notifications-content /*bottom thing - account settings*/
 	{
 		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+	}
+	.browse-items-load-more-button
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.browse-items-load-more-button:hover
+	{
+		color: var(--main-color) !important;
 	}
 	.promo-message.ytd-background-promo-renderer, #message:not([class*="yt-music"])
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*triangle*/
+	.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical /*account settings*/
+	{
+		border-bottom-color: var(--hover-background) !important;
+	}
+	/*menu*/
+	.yt-ui-menu-content /*account settings*/
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.yt-ui-menu-item /*account settings*/
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.yt-ui-menu-item:hover /*account settings*/
+	{
+		color: var(--main-color) !important;
+	}
+	/*gear icon*/
+	.yt-uix-button-icon-icon-account-settings /*account settings*/
+	{
+		filter: brightness(250%) invert(1);
 	}
 
 	/*Cards*/

@@ -40,15 +40,6 @@
 	"Jisho",
 	"Custom"
 ]
-@var select colorRGB "Custom RGB color" [
-	"Default",
-	"Solarized",
-	"Gruvbox Dark",
-	"Gruvbox Dark Intense",
-	"Gruvbox Light",
-	"Gruvbox Light Intense",
-	"Custom"
-]
 
 @var checkbox join-color "Use dark join button" 0
 
@@ -59,15 +50,6 @@
 @var color mainText "Custom main text" "#eee"
 @var color dimmerText "Custom second text" "#ccc"
 @var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
-@var color colorRed "Custom red color" "#ff6666"
-@var color colorYellow "Custom yellow color" "#ffb266"
-@var color colorOrange "Custom orange color" "#f79a63"
-@var color colorGreen "Custom green color" "#27ae60"
-@var color colorCyan "Custom cyan color" "#1abc9c"
-@var color colorBlue "Custom blue color" "#2980b9"
-@var color colorPurple "Custom purple color" "#60459f"
-@var color colorPink "Custom pink color" "#fe9ead"
-@var color colorGray "Custom gray color" "#c3c3c3"
 
 ==/UserStyle== */
 
@@ -331,91 +313,6 @@
 			--main-text: mainText;
 			--dimmer-text: dimmerText;
 			--shadow: 0 1px 0.5px colorShadow;
-		}
-
-		if colorRGB == "Default"
-		{
-			--red: #da4453;
-			--yellow: #fdbc4b;
-			--orange: #F79A63;
-			--green: #27AE60;
-			--cyan: #1abc9c;
-			--blue: #2980b9;
-			--purple: #60459F;
-			--pink: #FE9EAD;
-			--gray: #c3c3c3;
-		}
-		else if colorRGB == "Solarized"
-		{
-			--red: #dc322f;
-			--yellow: #b58900;
-			--orange: #cb4b16;
-			--green: #859900;
-			--cyan: #2aa198;
-			--blue: #268bd2;
-			--purple: #6c71c4;
-			--pink: #d33682;
-			--gray: #93A1A1;
-		}
-		else if colorRGB == "Gruvbox Dark"
-		{
-			--red: #cc241d;
-			--yellow: #d79921;
-			--orange: #d65d0e;
-			--green: #98971a;
-			--cyan: #689d6a;
-			--blue: #458588;
-			--purple: #b16286;
-			--pink: #b16286;
-			--gray: #a89984;
-		}
-		else if colorRGB == "Gruvbox Dark Intense"
-		{
-			--red: #fb4934;
-			--yellow: #fabd2f;
-			--orange: #fe8019;
-			--green: #b8bb26;
-			--cyan: #8ec07c;
-			--blue: #83a598;
-			--purple: #d3869b;
-			--pink: #d3869b;
-			--gray: #928374;
-		}
-		else if colorRGB == "Gruvbox Light"
-		{
-			--red: #cc241d;
-			--yellow: #d79921;
-			--orange: #d65d0e;
-			--green: #98971a;
-			--cyan: #689d6a;
-			--blue: #458588;
-			--purple: #b16286;
-			--pink: #b16286;
-			--gray: #7c6f64;
-		}
-		else if colorRGB == "Gruvbox Light Intense"
-		{
-			--red: #9d0006;
-			--yellow: #b57614;
-			--orange: #af3a03;
-			--green: #79740e;
-			--cyan: #427b58;
-			--blue: #076678;
-			--purple: #8f3f71;
-			--pink: #8f3f71;
-			--gray: #928374;
-		}
-		else if colorRGB == "Custom"
-		{
-			--red: colorRed;
-			--yellow: colorYellow;
-			--orange: colorOrange;
-			--green: colorGreen;
-			--cyan: colorCyan;
-			--blue: colorBlue;
-			--purple: colorPurple;
-			--pink: colorPink;
-			--gray: colorGray;
 		}
 	}
 	/*Scrollbar fix for chrome*/

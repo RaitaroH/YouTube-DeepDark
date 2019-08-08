@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.4
+@version 3.0.5
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -728,7 +728,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	#bar.ytd-copy-link-renderer
+	#bar.yt-copy-link-renderer
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -737,7 +737,17 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	yt-formatted-string.ytd-start-at-renderer
+	yt-formatted-string.yt-start-at-renderer,
+	#text.ytd-sender-id-section-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*search for people*/
+	#to-field-header.ytd-contact-search-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#name.ytd-suggested-contact-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -871,7 +881,8 @@
 	.arrow.yt-horizontal-list-renderer,
 	#scroll-button-forward,
 	.arrow.ytd-horizontal-card-list-renderer,
-	.ytd-horizontal-card-list-renderer[arrow]
+	.ytd-horizontal-card-list-renderer[arrow],
+	.scroll-button.yt-third-party-share-target-section-renderer /*share link*/
 	{
 		background-color: var(--hover-background) !important;
 	}

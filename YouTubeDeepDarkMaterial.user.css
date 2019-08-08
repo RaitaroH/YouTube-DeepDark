@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.5
+@version 3.0.6
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -42,6 +42,7 @@
 ]
 
 @var checkbox join-color "Use dark join button" 0
+@var checkbox subscribe-color "Use dark subscribe button" 0
 
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
@@ -1039,15 +1040,28 @@
 	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
 	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
-	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
+	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
+	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer /*join button*/
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 	}
 	if join-color /*overwriting the above*/
 	{
 		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer
+		{
+			background-color: var(--second-background) !important;
+			border-color: var(--second-background) !important;
+		}
+	}
+	if subscribe-color /*overwriting the above*/
+	{
+		ytd-button-renderer.style-destructive[is-paper-button],
+		paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
+		a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
+		#button[class="style-scope ytd-button-renderer style-compact-gray"],
+		ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
 		{
 			background-color: var(--second-background) !important;
 			border-color: var(--second-background) !important;
@@ -1069,10 +1083,6 @@
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		opacity: 0.9 !important;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
-	}
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer /*join button*/
-	{
 		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
 	}
 	ytd-button-renderer.style-primary[is-paper-button]

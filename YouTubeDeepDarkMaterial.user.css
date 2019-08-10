@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.9
+@version 3.1.0
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2370,6 +2370,24 @@
 		color: var(--main-color) !important;
 	}
 
+	/*Movie cards*/
+	#header.ytd-movie-offer-module-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	ytd-button-renderer.ytd-movie-offer-module-renderer.style-primary[is-paper-button] {
+		background-color: var(--main-color) !important;
+	}
+	#wide-clickable-area.ytd-movie-offer-module-renderer {
+		background-color: var(--hover-background) !important;
+	}
+	#info.ytd-movie-offer-module-renderer {
+		color: var(--main-text) !important;
+	}
+	h3.ytd-compact-movie-renderer {
+		color: var(--main-text) !important;
+	}
+
 	/*Tour/ticket cards*/
 	ytd-ticket-shelf-renderer
 	{
@@ -2518,6 +2536,14 @@
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
 
+	ytd-alert-with-button-renderer[type="INFO"]
+	{
+		background-color: var(--hover-background) !important;
+	}
+	ytd-alert-with-button-renderer[type="INFO"] #text.ytd-alert-with-button-renderer
+	{
+		color: var(--main-text) !important;
+	}
 	#alert-message.ytd-consent-bump-renderer
 	{
 		color: var(--dimmer-text) !important;

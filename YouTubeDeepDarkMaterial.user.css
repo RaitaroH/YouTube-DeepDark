@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.8
+@version 3.0.9
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -994,11 +994,6 @@
 	{
 		color: var(--main-color) !important;
 	}
-	yt-button-renderer.style-primary[is-paper-button] /*save button*/
-	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}
 	/*perks*/
 	.style-included-perks.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer, .style-unspecified.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer
 	{
@@ -1039,7 +1034,8 @@
 	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
 	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
-	paper-button.ytd-subscribe-button-renderer
+	paper-button.ytd-subscribe-button-renderer,
+	ytd-sponsorships-tier-renderer yt-button-renderer yt-formatted-string.yt-button-renderer /*join button in join window*/
 	{
 		color: var(--main-text) !important;
 	}
@@ -1052,7 +1048,8 @@
 	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer /*join button*/
+	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
+	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
@@ -1060,7 +1057,8 @@
 	}
 	if join-color /*overwriting the above*/
 	{
-		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer
+		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
+		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 		{
 			background-color: var(--second-background) !important;
 			border-color: var(--second-background) !important;
@@ -1084,8 +1082,9 @@
 	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover,
 	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover,
 	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover,
+	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover,
 	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer:hover, /*join button*/
-	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover
+	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button]:hover /*join button in join window*/
 	{
 		filter: brightness(110%) !important;
 	}

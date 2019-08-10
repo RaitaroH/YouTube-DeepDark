@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.0.7
+@version 3.0.8
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -942,22 +942,33 @@
 	/*You are not logged in tooltip*/
 	yt-tooltip-renderer
 	{
-		background-color: var(--main-background) !important;
+		background-color: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
 	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]::before
 	{
-		border-color: transparent transparent var(--main-background) transparent !important;
+		border-color: transparent transparent var(--second-background) transparent !important;
+	}
+	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"] #text.yt-bubble-hint-renderer:not(:empty),
+	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"] #details-text.yt-bubble-hint-renderer
+	{
+		background-color: var(--second-background) !important;
 	}
 
 	/*Join button tooltip*/
 	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]
 	{
+		background-color: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
+	}
+	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"] #text.yt-bubble-hint-renderer:not(:empty),
+	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"] #details-text.yt-bubble-hint-renderer
+	{
+		background-color: var(--second-background) !important;
 	}
 	yt-bubble-hint-renderer[position-type="OPEN_POPUP_POSITION_LEFT"][style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]::before
 	{
-		border-color: transparent transparent transparent var(--hover-background) !important;
+		border-color: transparent transparent transparent var(--second-background) !important;
 	}
 	/*window*/
 	ytd-sponsorships-offer-with-video-renderer[dialog][dialog][dialog]

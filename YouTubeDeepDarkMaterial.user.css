@@ -1590,6 +1590,28 @@
 		color: var(--dimmer-text) !important;
 	}
 
+	/*Playlist creation*/
+	#create-playlist-form .input-content.paper-input-container label
+	{
+		color: var(--main-text) !important;
+	}
+	#create-playlist-form input.style-scope.paper-input::placeholder
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#create-playlist-form .underline.is-highlighted.paper-input-container .focused-line.paper-input-container
+	{
+			border-bottom-color: var(--main-text) !important;
+	}
+	#create-playlist-form #label.ytd-privacy-dropdown-item-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#create-playlist-form ytd-privacy-dropdown-item-renderer.iron-selected
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 	/*Search bar*/
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,

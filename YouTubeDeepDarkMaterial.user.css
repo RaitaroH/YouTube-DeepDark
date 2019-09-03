@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.1.5
+@version 3.1.6
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -317,12 +317,12 @@
 		}
 	}
 	/*Scrollbar fix for chrome*/
-	html:not([hide-scrollbar]) body::-webkit-scrollbar-thumb
+	html:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
 	{
 		height: 56px;
 		background: hsla(0, 0%, 53.3%, .4);
 	}
-	html:not([hide-scrollbar]) body::-webkit-scrollbar
+	html:not([hide-scrollbar]) ::-webkit-scrollbar
 	{
 		width: 8px;
 	}
@@ -1296,19 +1296,23 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	#playlists.ytd-add-to-playlist-renderer:hover *, paper-item.ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,
+	paper-item.ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,
 	paper-item.ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer
 	{
 		color: var(--main-color) !important;
 		fill: var(--main-color) !important;
 	}
+	ytd-playlist-add-to-option-renderer paper-checkbox:hover #label.ytd-playlist-add-to-option-renderer,
+	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #label.ytd-playlist-add-to-option-renderer,
 	yt-icon.ytd-playlist-add-to-option-renderer
 	{
 		color: var(--main-color) !important;
 	}
 
 	/*Checkbox*/
-	ytd-playlist-add-to-option-renderer:hover #checkbox.paper-checkbox,#checkboxContainer.paper-checkbox:hover #checkbox.paper-checkbox
+	ytd-playlist-add-to-option-renderer paper-checkbox:hover #checkbox.paper-checkbox,
+	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #checkbox.paper-checkbox,
+	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #checkmark.paper-checkbox
 	{
 		border-color: var(--main-color) !important;
 	}
@@ -1599,7 +1603,7 @@
 	}
 	#create-playlist-form .underline.is-highlighted.paper-input-container .focused-line.paper-input-container
 	{
-			border-bottom-color: var(--main-text) !important;
+		border-bottom-color: var(--main-text) !important;
 	}
 	#create-playlist-form #label.ytd-privacy-dropdown-item-renderer
 	{

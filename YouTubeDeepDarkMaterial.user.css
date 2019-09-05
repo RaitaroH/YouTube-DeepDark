@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.1.6
+@version 3.1.7
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1033,6 +1033,7 @@
 	/*Subscribe button and comment button*/
 	#subscribe-button:hover ytd-button-renderer yt-formatted-string.ytd-button-renderer, #subscribe-button ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	#subscribe-button:hover .deemphasize.yt-formatted-string, #subscribe-button .deemphasize.yt-formatted-string,
+	paper-button.ytd-subscribe-button-renderer[subscribed] yt-formatted-string.ytd-subscribe-button-renderer .deemphasize.yt-formatted-string,
 	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
 	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
@@ -1531,7 +1532,9 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	#stats.ytd-playlist-sidebar-primary-info-renderer
+	#stats.ytd-playlist-sidebar-primary-info-renderer,
+	#description.ytd-playlist-sidebar-primary-info-renderer .bold.yt-formatted-string,
+	#owner-sub-count.ytd-video-owner-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1547,18 +1550,42 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	a.yt-simple-endpoint.ytd-button-renderer:hover *
-	{
-		color: var(--main-color) !important;
-	}
 	#content.ytd-playlist-video-renderer
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/*buttons*/
+	ytd-playlist-sidebar-renderer ytd-toggle-button-renderer.style-suggestive[is-paper-button],
+	ytd-playlist-sidebar-renderer paper-button.ytd-toggle-button-renderer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	a.yt-simple-endpoint.ytd-button-renderer:hover *,
+	ytd-playlist-sidebar-renderer ytd-button-renderer #button.ytd-button-renderer:hover,
+	ytd-playlist-sidebar-renderer ytd-button-renderer #button.ytd-button-renderer:hover > yt-formatted-string.ytd-button-renderer
+	{
+		color: var(--main-color) !important;
+	}
 	/*playlist page*/
-	.index-message.ytd-playlist-panel-renderer
+	ytd-browse[page-subtype="playlist"] ytd-two-column-browse-results-renderer.ytd-browse
+	{
+		background-color: var(--main-background) !important;
+	}
+	.index-message.ytd-playlist-panel-renderer,
+	.light-text.ytd-playlist-segment-renderer,
+	#contributor.ytd-playlist-video-renderer
 	{
 		color: var(--dimmer-text) !important;
+	}
+	#title-container.ytd-playlist-segment-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#title-container.ytd-playlist-segment-renderer:hover #title.ytd-playlist-segment-renderer
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Playlist changes*/

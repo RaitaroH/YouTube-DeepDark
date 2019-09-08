@@ -6,6 +6,16 @@
   "commit": false,
   "contributors": [
     {
+      "login": "MechaLynx",
+      "name": "MechaLynx",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/8427257?v=4",
+      "profile": "http://mechalynx.github.io",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+     },
+     {
       "login": "MaximeRF",
       "name": "Maxime RF",
       "avatar_url": "https://avatars2.githubusercontent.com/u/12028968?v=4",

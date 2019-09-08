@@ -1,4 +1,5 @@
 # YouTube-DeepDark
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 ![alt tag](https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/YT%20-%20DeepDark.png)
 Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 
@@ -117,3 +118,19 @@ IF you want this as a scipt make sure you go to the userstyles page, choose your
 Colors Showcase (the colors are available in the code; different colors can be used)
 Providing KDE colors in the following image.
 ![alt tag](https://i.imgur.com/WoskdFg.png)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.mrfdev.com"><img src="https://avatars2.githubusercontent.com/u/12028968?v=4" width="100px;" alt="Maxime RF"/><br /><sub><b>Maxime RF</b></sub></a><br /><a href="https://github.com/RaitaroH/YouTube-DeepDark/issues?q=author%3AMaximeRF" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/YouTube-DeepDark/commits?author=MaximeRF" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "MaximeRF",
+      "name": "Maxime RF",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12028968?v=4",
+      "profile": "https://www.mrfdev.com",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "YouTube-DeepDark",
+  "projectOwner": "RaitaroH",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}

@@ -1,3 +1,4 @@
+#copy paste the below js in your console 
 (function() {var css = [
    
 	"::placeholder {",

@@ -2216,8 +2216,8 @@
 	#creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer,
 	#nonprofit-title.ytd-donation-shelf-renderer
 	{
-		background-color: var(--second-background);
-		border-color: var(--hover-background);
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 	#campaign-title.ytd-donation-shelf-renderer,
 	.creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer, .creator-message-name.ytd-donation-shelf-renderer,

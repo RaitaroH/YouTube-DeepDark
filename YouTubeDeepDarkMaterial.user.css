@@ -2193,6 +2193,59 @@
 		color: var(--dimmer-text) !important;
 	}
 
+	/*Fund raiser*/
+	#header-section.ytd-donation-shelf-renderer,
+	#collapse-controls-section.ytd-donation-shelf-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	#header-text.ytd-donation-shelf-renderer,
+	#collapse-controls-section.ytd-donation-shelf-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#collapse-controls-section.ytd-donation-shelf-renderer:hover
+	{
+		color: var(--main-color) !important;
+	}		
+	#header-section.ytd-donation-shelf-renderer .style-scope.ytd-donation-shelf-renderer.no-transition
+	{
+		filter: invert(.8);
+	}
+	#donate-section.ytd-donation-shelf-renderer,
+	#creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer,
+	#nonprofit-title.ytd-donation-shelf-renderer
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	#campaign-title.ytd-donation-shelf-renderer,
+	.creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer, .creator-message-name.ytd-donation-shelf-renderer,
+	#nonprofit-title.ytd-donation-shelf-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer,
+	#nonprofit-subtitle.ytd-donation-shelf-renderer,
+	#nonprofit-description.ytd-donation-shelf-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#amount-raised.ytd-donation-shelf-renderer,
+	#nonprofit-title.ytd-donation-shelf-renderer yt-icon.ytd-donation-shelf-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#nonprofit-link.ytd-donation-shelf-renderer .inline-icon.ytd-donation-shelf-renderer
+	{
+		fill: var(--main-color) !important;
+	}
+	/*donate button*/
+	#donate-section.ytd-donation-shelf-renderer ytd-button-renderer.style-primary[is-paper-button]
+	{
+		background-color: var(--main-color) !important;
+	}
+
 	/*Notification*/
 	#notification-count.ytd-notification-topbar-button-renderer,
 	ytd-notification-renderer.unread #new.ytd-notification-renderer,

@@ -2240,10 +2240,135 @@
 	{
 		fill: var(--main-color) !important;
 	}
-	/*donate button*/
-	#donate-section.ytd-donation-shelf-renderer ytd-button-renderer.style-primary[is-paper-button]
+	/*progress*/
+	#progress-bar-start.ytd-donation-shelf-renderer, #progress-bar-end.ytd-donation-shelf-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#progress-bar.ytd-donation-shelf-renderer
+	{
+		background-color: var(--dimmer-text) !important;
+	}
+	#progress-bar-fill.ytd-donation-shelf-renderer
 	{
 		background-color: var(--main-color) !important;
+	}
+	/*donate button*/
+	#donate-section.ytd-donation-shelf-renderer ytd-button-renderer.style-primary[is-paper-button],
+	.b3-button.jfk-button, .b3-button.jfk-button.jfk-button-action
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*donate window*/
+	#top-box.ytd-donation-amount-picker-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#campaign-title.ytd-donation-amount-picker-renderer,
+	#nonprofit-title.ytd-donation-amount-picker-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#campaign-subtitle.ytd-donation-amount-picker-renderer,
+	#nonprofit-subtitle.ytd-donation-amount-picker-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*Payment window*/
+	.popup-mode .b3-page-header
+	{
+		background-color: var(--main-background) !important;
+	}
+	.b3-line-items-mundane-items-container, .b3-line-items-mundane-items-container
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.b3-separator
+	{
+		display: none !important;
+	}
+	.b3-line-item-value
+	{
+		color: var(--main-color) !important;
+	}
+	.b3-line-item-name, .b3-line-item-infomessage, .b3-line-item-subvalue
+	{
+		color: var(--main-text) !important;
+	}
+	.b3-single-option-form-selector-option-content .b3-existing-instrument-option-label-without-image,
+	.b3-dropdown-form-selector .b3-existing-instrument-option-label-without-image,
+	.b3-single-option-form-selector-option-content .b3-additional-instrument-option-label, .b3-dropdown-form-selector .b3-additional-instrument-option-label,
+	.b3-input.focused .b3-input-label, .b3-input.focused .b3-input-label-text,
+	.b3-input input[type="tel"], .b3-input input[type="text"], .b3-input input[type="password"], .b3-input input[type="email"],
+	.b3-input.populated .b3-input-label, .b3-input.invalid .b3-input-label, .b3-input.autofilled .b3-input-label,
+	.b3-input-field > .b3-input-label, .b3-input-field > .b3-input-label.accessible,
+	.b3-collapsing-form-placeholder-text
+	{
+		color: var(--main-text) !important;
+	}
+	.countryselector .goog-flat-menu-button-caption, .countryselector .goog-flat-menu-button-caption .goog-menuitem-content
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*icons*/
+	.b3-single-option-form-selector-icon,
+	.b3-collapsing-form-icon
+	{
+		fill: var(--main-text) !important;
+	}
+	.b3-collapsing-form.focused .b3-collapsing-form-icon
+	{
+		fill: var(--main-color) !important;
+	}
+	.b3-tooltip-icon
+	{
+		filter: invert(1) !important;
+	}
+	/*border*/
+	.b3-input-status-indicator
+	{
+		background-color: var(--main-color) !important;
+	}
+	.b3-input-accent
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*tooltip*/
+	.b3-inline-tooltip-popup-wrapper, .help-Helpwidgets-TooltipWidget-content-html
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.b3-inline-tooltip-popup-wrapper a, .help-Helpwidgets-TooltipWidget-content-html a
+	{
+		color: var(--main-color) !important;
+	}
+	/*country choice*/
+	.goog-menu, .goog-menuitem:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.goog-menuitem, .goog-tristatemenuitem, .goog-filterobsmenuitem
+	{
+		color: var(--main-text) !important;
+	}
+	.goog-menuitem-highlight .goog-menuitem-content
+	{
+		color: var(--main-color) !important;
+	}
+	.goog-menuitem .countryselector-flag
+	{
+		border-radius: 4px !important; /*hiding ugly white corners*/
+	}
+	/*footer*/
+	.b3-legal-message-content, .b3-info-message-list.b3-buyflow-extra-messages .b3-info-message-component.b3-info-message-unknown,
+	.b3-info-message-component.b3-info-message-unknown.b3-buyflow-extra-messages .b3-info-message-html
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.b3-legal-message-content a, .b3-info-message-component.b3-info-message-unknown.b3-buyflow-extra-messages .b3-info-message-html a
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Notification*/

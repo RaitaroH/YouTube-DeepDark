@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.2.0
+@version 3.2.1
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1056,7 +1056,7 @@
 	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
+	#sponsor-button.ytd-video-owner-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
 	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 	{
 		background-color: var(--main-color) !important;
@@ -1065,7 +1065,7 @@
 	}
 	if join-color /*overwriting the above*/
 	{
-		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
+		#sponsor-button.ytd-video-owner-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
 		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 		{
 			background-color: var(--second-background) !important;
@@ -1768,10 +1768,16 @@
 		opacity: 1 !important;
 	}
 
-	/*Search for channel videos*/
-	.unfocused-line.paper-input-container,.focused-line.paper-input-container
+	/*Buttom border for different fields*/
+	.unfocused-line.paper-input-container
+	{
+   	 	background-color: var(--hover-background) !important;
+			border-color: var(--hover-background) !important;
+	}
+	.focused-line.paper-input-container
 	{
    	 	background-color: var(--main-color) !important;
+			border-color: var(--main-color) !important;
 	}
 
 	/*Search page*/
@@ -2274,6 +2280,25 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/*amount buttons*/
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer
+	{
+		border-color: var(--second-background) !important;
+	}
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[selected]
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*curency for other amount*/
+	.prefix.paper-input-container > *  /*FIX ME: might cause problems elsewhere, but also is not themed elsewhere either*/
+	{
+		color: var(--main-text) !important;
+	}
+
 	/*Payment window*/
 	.popup-mode .b3-page-header
 	{

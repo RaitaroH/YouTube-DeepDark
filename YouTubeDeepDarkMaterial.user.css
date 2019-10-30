@@ -2213,7 +2213,7 @@
 	#collapse-controls-section.ytd-donation-shelf-renderer:hover
 	{
 		color: var(--main-color) !important;
-	}		
+	}
 	#header-section.ytd-donation-shelf-renderer .style-scope.ytd-donation-shelf-renderer.no-transition
 	{
 		filter: invert(.8);
@@ -2281,20 +2281,22 @@
 		color: var(--main-text) !important;
 	}
 	/*amount buttons*/
-	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[is-paper-button] paper-button.ytd-button-renderer
 	{
 		background-color: var(--second-background) !important;
 	}
-	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[is-paper-button] paper-button.ytd-button-renderer
 	{
+		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
 	}
-	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[selected]
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[is-paper-button][selected] paper-button.ytd-button-renderer,
+	.ytd-donation-amount-picker-renderer ytd-button-renderer.style-primary[is-paper-button]
 	{
 		background-color: var(--main-color) !important;
 	}
 	/*curency for other amount*/
-	.prefix.paper-input-container > *  /*FIX ME: might cause problems elsewhere, but also is not themed elsewhere either*/
+	span.prefix.style-scope.paper-input-container > div.ytd-donation-amount-picker-renderer
 	{
 		color: var(--main-text) !important;
 	}

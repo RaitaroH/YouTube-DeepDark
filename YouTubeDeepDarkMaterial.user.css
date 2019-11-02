@@ -2100,7 +2100,7 @@
 
 	/*Chat*/
 	/*header*/
-	yt-live-chat-header-renderer, #header.yt-live-chat-participant-list-renderer, yt-live-chat-message-renderer
+	yt-live-chat-header-renderer, #header.yt-live-chat-participant-list-renderer, yt-live-chat-message-renderer, yt-live-chat-ticker-renderer
 	{
 		background: var(--hover-background) !important;
 	}

@@ -2,359 +2,334 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.9.4
+@version 3.2.1
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
 @license GNU-V3.0
 
-@preprocessor uso
-@var select mainColor 'Main color' {
-	"DeepDark": "#00adee",
-	"BreezeDark": "#3DAEE9",
-	"Vertex Dark": "#4080fb",
-	"Arc Dark": "#5294E2",
-	"Firefox Dark": "#5675B9",
-	"Firefox57": "#4080FB",
-	"Discord": "#7289DA",
-	"YouTubeDark": "#E52117",
-	"Mint-Y-Dark": "#9AB87C",
-	"9anime": "#723f8c",
-	"Black&White": "#ffffff",
-	"Yellow_petrocompletions": "#FFC700",
-	"Yellow2": "#FFC700",
-	"Ubuntu_grey": "#EF7847",
-	"Ubuntu_purple": "#EF7847",
-	"Orange": "#ff6905",
-	"Jisho_夜明け": "#EF7D6C",
-	"Custom": "/*[[custom-main-color]]*\/"
-}
-@var color custom-main-color "Custom main color" "#00adee"
+@preprocessor stylus
 
-@var select mainBackground 'Main background color' {
-	"DeepDark": "#111111",
-	"BreezeDark": "#232629",
-	"Vertex Dark": "#2B2B2C",
-	"Arc Dark": "#343944",
-	"Firefox Dark": "#272B35",
-	"Firefox57": "#0C0C0D",
-	"Discord": "#1E2124",
-	"YouTubeDark": "#111111",
-	"Mint-Y-Dark": "#2F2F2F",
-	"9anime": "#0B0A0D",
-	"Black&White": "#000000",
-	"Yellow_petrocompletions": "#141414",
-	"Yellow2": "#0a0800",
-	"Ubuntu_grey": "#312D2A",
-	"Ubuntu_purple": "#2C071A",
-	"Orange": "#0a0400",
-	"Jisho_夜明け": "#332222",
-	"Custom": "/*[[custom-main-background]]*\/"
-}
-@var color custom-main-background "Custom main background" "#111111"
+@var select stylus-deepdark-style "Preset themes" [
+	"Deep-Dark",
+	"Inspired-Dark",
+	"Breeze-Dark",
+	"HavocOS",
+	"Arc-Dark",
+	"Vertex-Dark",
+	"Mint-Y-Dark",
+	"Adapta-Nokto",
+	"Adapta-Breath-Nokto",
+	"Gruvbox-Dark",
+	"Gruvbox-Light",
+	"NierAutomata-Dark",
+	"NierAutomata-Light",
+	"Solarized-Dark",
+	"Solarized-Light",
+	"9anime",
+	"Firefox-Dark",
+	"Firefox-57",
+	"Discord",
+	"YouTube-Dark",
+	"Black-and-White",
+	"Yellow",
+	"Yellow-2",
+	"Ubuntu-Grey",
+	"Ubuntu-Purple",
+	"Orange",
+	"Jisho",
+	"Custom"
+]
 
-@var select secondBackground 'Second background color' {
-	"DeepDark": "#181818",
-	"BreezeDark": "#2a2e32",
-	"Vertex Dark": "#353638",
-	"Arc Dark": "#383C4A",
-	"Firefox Dark": "#181D20",
-	"Firefox57": "#252526",
-	"Discord": "#2F3136",
-	"YouTubeDark": "#232323",
-	"Mint-Y-Dark": "#383838",
-	"9anime": "#17151C",
-	"Black&White": "#0a0a0a",
-	"Yellow_petrocompletions": "#202222",
-	"Yellow2": "#0c0a04",
-	"Ubuntu_grey": "#3D3C38",
-	"Ubuntu_purple": "#430B28",
-	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B",
-	"Custom": "/*[[custom-second-background]]*\/"
-}
-@var color custom-second-background "Custom second background" "#181818"
+@var checkbox join-color "Use dark join button" 0
+@var checkbox subscribe-color "Use dark subscribe button" 0
 
-@var select hoverBackground 'Hover background color' {
-	"DeepDark": "#232323",
-	"BreezeDark": "#31363b",
-	"Vertex Dark": "#515254",
-	"Arc Dark": "#414A59",
-	"Firefox Dark": "#353A44",
-	"Firefox57": "#323234",
-	"Discord": "#484B51",
-	"YouTubeDark": "#343434",
-	"Mint-Y-Dark": "#404040",
-	"9anime": "#1E1C25",
-	"Black&White": "#0f0f0f",
-	"Yellow_petrocompletions": "#353838",
-	"Yellow2": "#0f0d05",
-	"Ubuntu_grey": "#59564D",
-	"Ubuntu_purple": "#520D30",
-	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F",
-	"Custom": "/*[[custom-hover-background]]*\/"
-}
-@var color custom-hover-background "Custom hover background" "#232323"
-
-@var select mainText 'Main text color' {
-	"DeepDark": "#eff0f1",
-	"BreezeDark": "#eff0f1",
-	"Vertex Dark": "#F3F3F5",
-	"Arc Dark": "#C1C8D1",
-	"Firefox Dark": "#E3EEF9",
-	"Firefox57": "#F9F9FA",
-	"Discord": "#FFFFFF",
-	"YouTubeDark": "#E1E1E1",
-	"Mint-Y-Dark": "#FFFFFF",
-	"9anime": "#B4B4B4",
-	"Black&White": "#b4b4b4",
-	"Yellow_petrocompletions": "#EFF0F1",
-	"Yellow2": "#fffdf5",
-	"Ubuntu_grey": "#F2F1EF",
-	"Ubuntu_purple": "#F2F1EF",
-	"Orange": "#fff9f5",
-	"Jisho_夜明け": "#EFB26C",
-	"Custom": "/*[[custom-main-text]]*\/"
-}
-@var color custom-main-text "main-text" "#eff0f1"
-
-@var select dimmerText 'Secondary text color' {
-	"DeepDark": "#CCCCCC",
-	"BreezeDark": "#bdc3c7",
-	"Vertex Dark": "#AEAFB0",
-	"Arc Dark": "#B3BAC5",
-	"Firefox Dark": "#606376",
-	"Firefox57": "#D0D0D0",
-	"Discord": "#ADA8AA",
-	"YouTubeDark": "#7F7F7F",
-	"Mint-Y-Dark": "#D5DADA",
-	"9anime": "#747474",
-	"Black&White": "#828282",
-	"Yellow_petrocompletions": "#9F9999",
-	"Yellow2": "#fff8e1",
-	"Ubuntu_grey": "#E6E5E3",
-	"Ubuntu_purple": "#E6E5E3",
-	"Orange": "#ffede1",
-	"Jisho_夜明け": "#986E3F",
-	"Custom": "/*[[custom-dimmer-text]]*\/"
-}
-@var color custom-dimmer-text "dimmer-text" "#CCCCCC"
+@var color mainColor "Custom main color" "#367bf0"
+@var color mainBackground "Custom main background" "#22242d"
+@var color secondBackground "Custom second background" "#242730"
+@var color hoverBackground "Custom hover background" "#4e5467"
+@var color mainText "Custom main text" "#eee"
+@var color dimmerText "Custom second text" "#ccc"
+@var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
 
 ==/UserStyle== */
 
-@-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/(?!premium).*$') {
-
-/*For the new Material Design for YouTube*/
-/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/YouTube-DeepDark*/
-
-/*GNU General Public License v3.0.*/
+@-moz-document regexp('https?:\/\/(?!gaming\.)(?!studio\.).*youtube\.com\/(?!premium).*$') {
+	/* Author     : Theme made by RaitaroH */
+	/* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
+	/* Home       : https://github.com/RaitaroH/YouTube-DeepDark */
+	/* Licence    : GNU General Public License v3.0 */
 
 	/*Main color variables*/
 	:root
 	{
-		/*User colors*/
-		--main-color: /*[[mainColor]]*/;
-		--main-background: /*[[mainBackground]]*/;
-		--second-background: /*[[secondBackground]]*/;
-		--hover-background: /*[[hoverBackground]]*/;
-		--main-text: /*[[mainText]]*/;
-		--dimmer-text: /*[[dimmerText]]*/;
-
-		/*DeepDark colors*/
-		/*
-		--main-color: #00adee;
-		--main-background: #111111;
-		--second-background: #181818;
-		--hover-background: #232323;
-		--main-text: #eff0f1;
-		--dimmer-text: #CCCCCC;
-		*/
-
-		/*KDE colors*/
-		/*
-		--main-color: #3DAEE9;
-		--main-background: #232629;
-		--second-background: #2a2e32;
-		--hover-background: #31363b;
-		--main-text: #eff0f1;
-		--dimmer-text: #bdc3c7;
-		*/
-
-		/*Vertex Dark colors*/
-		/*
-		--main-color: #4080fb;
-		--main-background: #2B2B2C;
-		--second-background: #353638;
-		--hover-background: #515254;
-		--main-text: #F3F3F5;
-		--dimmer-text: #AEAFB0;
-		*/
-
-		/*Arc Dark colors*/
-		/*
-		--main-color: #5294E2;
-		--main-background: #343944;
-		--second-background: #383C4A;
-		--hover-background: #414A59;
-		--main-text: #C1C8D1;
-		--dimmer-text: #B3BAC5;
-		*/
-
-		/*Firefox Dark colors*/
-		/*
-		--main-color: #5675B9;
-		--main-background: #272B35;
-		--second-background: #181D20;
-		--hover-background: #353A44;
-		--main-text: #E3EEF9;
-		--dimmer-text: #606376;
-		*/
-
-		/*Firefox57 Dark colors*/
-		/*
-		--main-color: #4080FB;
-		--main-background: #0C0C0D;
-		--second-background: #252526;
-		--hover-background: #323234;
-		--main-text: #F9F9FA;
-		--dimmer-text: #D0D0D0;
-		*/
-
-		/*Discord colors*/
-		/*
-		--main-color: #7289DA;
-		--main-background: #1E2124;
-		--second-background: #2F3136;
-		--hover-background: #484B51;
-		--main-text: #FFFFFF;
-		--dimmer-text: #ADA8AA;
-		*/
-
-		/*YouTube dark colors*/
-		/*
-		--main-color: #E52117;
-		--main-background: #111111;
-		--second-background: #232323;
-		--hover-background: #343434;
-		--main-text: #E1E1E1;
-		--dimmer-text: #7F7F7F;
-		*/
-
-		/*YouTube light colors*/
-		/*
-		--main-color: #E52117;
-		--main-background: #F9F9F9;
-		--second-background: #FFFFFF;
-		--hover-background: #EAEAEA;
-		--main-text: #111111;
-		--dimmer-text: #43434B;
-		*/
-
-		/*Mint-Y-Dark colors*/
-		/*
-		--main-color: #9AB87C;
-		--main-background: #2F2F2F;
-		--second-background: #383838;
-		--hover-background: #404040;
-		--main-text: #FFFFFF;
-		--dimmer-text: #D5DADA;
-		*/
-
-		/*9anime colors*/
-		/*
-		--main-color: #723f8c;
-		--main-background: #0B0A0D;
-		--second-background: #17151C;
-		--hover-background: #1E1C25;
-		--main-text: #B4B4B4;
-		--dimmer-text: #747474;
-		*/
-
-		/*Black and white*/
-		/*
-		--main-color: #ffffff;
-		--main-background: #000000;
-		--second-background: #0a0a0a;
-		--hover-background: #0f0f0f;
-		--main-text: #b4b4b4;
-		--dimmer-text: #828282;
-		*/
-
-		/*Yellow (colors from petrocompletions)*/
-		/*
-		--main-color: #FFC700;
-		--main-background: #141414;
-		--second-background: #202222;
-		--hover-background: #353838;
-		--main-text: #EFF0F1;
-		--dimmer-text: #9F9999;
-		*/
-
-		/*Yellow 2*/
-		/*
-		--main-color: #ffc700;
-		--main-background: #0a0800;
-		--second-background: #0c0a04;
-		--hover-background: #0f0d05;
-		--main-text: #fffdf5;
-		--dimmer-text: #fff8e1;
-		*/
-
-		/*Ubuntu grey colors*/
-		/*
-		--main-color: #EF7847;
-		--main-background: #312D2A;
-		--second-background: #3D3C38;
-		--hover-background: #59564D;
-		--main-text: #F2F1EF;
-		--dimmer-text: #E6E5E3;
-		*/
-
-		/*Ubuntu purple colors*/
-		/*
-		--main-color: #EF7847;
-		--main-background: #2C071A;
-		--second-background: #430B28;
-		--hover-background: #520D30;
-		--main-text: #F2F1EF;
-		--dimmer-text: #E6E5E3;
-		*/
-
-		/*Orange*/
-		/*
-		--main-color: #ff6905;
-		--main-background: #0a0400;
-		--second-background: #0e0702;
-		--hover-background: #110903;
-		--main-text: #fff9f5;
-		--dimmer-text: #ffede1;
-		*/
-
-		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
-		/*
-		--main-color: #EF7D6C;
-		--main-background: #332222;
-		--second-background: #2A1B1B;
-		--hover-background: #863B2F;
-		--main-text: #EFB26C;
-		--dimmer-text: #986E3F;
-		*/
+		if stylus-deepdark-style == "Deep-Dark" {
+			--main-color: #00adee;
+			--main-background: #111;
+			--second-background: #181818;
+			--hover-background: #232323;
+			--main-text: #eff0f1;
+			--dimmer-text: #ccc;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .3);
+		}
+		else if stylus-deepdark-style == "Inspired-Dark" {
+			--main-color: #5e8acc;
+			--main-background: #232629;
+			--second-background: #181818;
+			--hover-background: #515254;
+			--main-text: #eee;
+			--dimmer-text: #ccc;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Breeze-Dark" {
+			--main-color: #3daee9;
+			--main-background: #232629;
+			--second-background: #2a2e32;
+			--hover-background: #31363b;
+			--main-text: #eff0f1;
+			--dimmer-text: #bdc3c7;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Vertex-Dark" {
+			--main-color: #4080fb;
+			--main-background: #2b2b2c;
+			--second-background: #353638;
+			--hover-background: #515254;
+			--main-text: #f3f3f5;
+			--dimmer-text: #aeafb0;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Arc-Dark" {
+			--main-color: #5294e2;
+			--main-background: #343944;
+			--second-background: #383c4a;
+			--hover-background: #414a59;
+			--main-text: #c1c8d1;
+			--dimmer-text: #b3bac5;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Firefox-Dark" {
+			--main-color: #5675b9;
+			--main-background: #272b35;
+			--second-background: #181d20;
+			--hover-background: #353a44;
+			--main-text: #e3eef9;
+			--dimmer-text: #bec0cc;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Firefox-57" {
+			--main-color: #4080fb;
+			--main-background: #0c0c0d;
+			--second-background: #252526;
+			--hover-background: #323234;
+			--main-text: #f9f9fa;
+			--dimmer-text: #d0d0d0;
+			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		}
+		else if stylus-deepdark-style ==  "Discord" {
+			--main-color: #7289da;
+			--main-background: #1e2124;
+			--second-background: #2f3136;
+			--hover-background: #484b51;
+			--main-text: #fff;
+			--dimmer-text: #ada8aa;
+			--shadow: 0 1px 0.5px rgba(47, 49, 54, .23);
+		}
+		else if stylus-deepdark-style == "YouTube-Dark" {
+			--main-color: #e52117;
+			--main-background: #111;
+			--second-background: #232323;
+			--hover-background: #343434;
+			--main-text: #e1e1e1;
+			--dimmer-text: #7f7f7f;
+			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		}
+		else if stylus-deepdark-style == "Mint-Y-Dark" {
+			--main-color: #9ab87c;
+			--main-background: #2f2f2f;
+			--second-background: #383838;
+			--hover-background: #404040;
+			--main-text: #fff;
+			--dimmer-text: #d5dada;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "9anime" {
+			--main-color: #723f8c;
+			--main-background: #0b0a0d;
+			--second-background: #17151c;
+			--hover-background: #1E1c25;
+			--main-text: #f9f6fb;
+			--dimmer-text: #cac0cf;
+			--shadow: 0 1px 0.5px rgba(54, 54, 54, .13);
+		}
+		else if stylus-deepdark-style == "Black-and-White" {
+			--main-color: #fff;
+			--main-background: #000;
+			--second-background: #1e1e1e;
+			--hover-background: #313131;
+			--main-text: #fff;
+			--dimmer-text: #aaa;
+			--shadow: 0 1px 0.5px rgba(54 ,54 ,54, .2);
+		}
+		else if stylus-deepdark-style == "Yellow" {
+			--main-color: #ffc700;
+			--main-background: #141414;
+			--second-background: #202222;
+			--hover-background: #353838;
+			--main-text: #eff0f1;
+			--dimmer-text: #9f9999;
+			--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+		}
+		else if stylus-deepdark-style == "Yellow-2" {
+			--main-color: #ffc700;
+			--main-background: #0a0800;
+			--second-background: #0c0a04;
+			--hover-background: #0f0d05;
+			--main-text: #fffdf5;
+			--dimmer-text: #fff8e1;
+			--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+		}
+		else if stylus-deepdark-style == "Ubuntu-Grey" {
+			--main-color: #ef7847;
+			--main-background: #312d2a;
+			--second-background: #3d3c38;
+			--hover-background: #59564d;
+			--main-text: #f2f1ef;
+			--dimmer-text: #e6e5e3;
+			--shadow: 0 1px 0.5px rgba(89, 86, 77, .12);
+		}
+		else if stylus-deepdark-style == "Ubuntu-Purple" {
+			--main-color: #ef7847;
+			--main-background: #2c071a;
+			--second-background: #430b28;
+			--hover-background: #520D30;
+			--main-text: #f2f1ef;
+			--dimmer-text: #e6e5e3;
+			--shadow: 0 1px 0.5px rgba(82, 13, 48, .2);
+		}
+		else if stylus-deepdark-style == "Orange" {
+			--main-color: #ff6905;
+			--main-background: #0a0400;
+			--second-background: #0e0702;
+			--hover-background: #110903;
+			--main-text: #fff9f5;
+			--dimmer-text: #ffede1;
+			--shadow: 0 1px 0.5px rgba(255, 105, 5, .1);
+		}
+		else if stylus-deepdark-style == "Jisho" {
+			--main-color: #ef7d6c;
+			--main-background: #332222;
+			--second-background: #2a1b1b;
+			--hover-background: #863b2f;
+			--main-text: #EFB26C;
+			--dimmer-text: #986E3F;
+			--shadow: 0 1px 0.5px rgba(37, 19, 5, .19);
+		}
+		else if stylus-deepdark-style == "Adapta-Nokto" {
+			--main-color: #00bcd4;
+			--main-background: #222d32;
+			--second-background: #263238;
+			--hover-background: #2a353b;
+			--main-text: #fff;
+			--dimmer-text: #9b9b9b;
+			--shadow: 0 1px 0.5px  rgba(61, 77, 86, .2);
+		}
+		else if stylus-deepdark-style == "Adapta-Breath-Nokto" {
+			--main-color: #1abc9c;
+			--main-background: #222d32;
+			--second-background: #263238;
+			--hover-background: #2a353b;
+			--main-text: #fff;
+			--dimmer-text: #9b9b9b;
+			--shadow: 0 1px 0.5px  rgba(42, 53, 59, .32);
+		}
+		else if stylus-deepdark-style == "Solarized-Dark" {
+			--main-color: #268bd2;
+			--main-background: #073642;
+			--second-background: #03303c;
+			--hover-background: #002b36;
+			--main-text: #fdf6E3;
+			--dimmer-text: #eee8d5;
+			--shadow: 0 1px 0.5px  rgba(0, 43, 54, .3);
+		}
+		else if stylus-deepdark-style == "Solarized-Light" {
+			--main-color: #268bd2;
+			--main-background: #fdf6e3;
+			--second-background: #f5efdc;
+			--hover-background: #eee8d5;
+			--main-text: #073642;
+			--dimmer-text: #586e75;
+			--shadow: 0 1px 0.5px  rgba(222, 216, 196, .2);
+		}
+		else if stylus-deepdark-style == "Gruvbox-Dark" {
+			--main-color: #fe8019;
+			--main-background: #1d2021;
+			--second-background: #282828;
+			--hover-background: #3c3836;
+			--main-text: #fbf1c7;
+			--dimmer-text: #ebdbb2;
+			--shadow: 0 1px 0.5px  rgba(60, 56, 54, .22);
+		}
+		else if stylus-deepdark-style == "Gruvbox-Light" {
+			--main-color: #af3a03;
+			--main-background: #f9f5d7;
+			--second-background: #fbf1c7;
+			--hover-background: #ebdbb2;
+			--main-text: #282828;
+			--dimmer-text: #3c3836;
+			--shadow: 0 1px 0.5px  rgba(235, 219, 178, .33);
+		}
+		else if stylus-deepdark-style == "NierAutomata-Dark" {
+			--main-color: #fe8019;
+			--main-background: #33302a;
+			--second-background: #48453c;
+			--hover-background: #7c6f64;
+			--main-text: #dad4bb;
+			--dimmer-text: #bab5a1;
+			--shadow: 0 1px 0.5px  rgba(124, 111, 100, .15);
+		}
+		else if stylus-deepdark-style == "NierAutomata-Light" {
+			--main-color: #fe8019;
+			--main-background: #d1cdb7;
+			--second-background: #dcd8c0;
+			--hover-background: #bab5a1;
+			--main-text: #48453c;
+			--dimmer-text: #33302a;
+			--shadow: 0 1px 0.5px rgba(186, 181, 161, 2);
+		}
+		else if stylus-deepdark-style == "HavocOS" {
+			--main-color: #0794d4;
+			--main-background: #141618;
+			--second-background: #1c1e20;
+			--hover-background: #212528;
+			--main-text: #fff;
+			--dimmer-text: #b9baba;
+			--shadow: 0 1px 0.5px rgba(185, 186, 186, .04);
+		}
+		else if stylus-deepdark-style == "Custom" {
+			--main-color: mainColor;
+			--main-background: mainBackground;
+			--second-background: secondBackground;
+			--hover-background: hoverBackground;
+			--main-text: mainText;
+			--dimmer-text: dimmerText;
+			--shadow: 0 1px 0.5px colorShadow;
+		}
 	}
-
 	/*Scrollbar fix for chrome*/
-	html:not([hide-scrollbar]) body::-webkit-scrollbar-thumb
+	html:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
 	{
 		height: 56px;
 		background: hsla(0, 0%, 53.3%, .4);
 	}
-	html:not([hide-scrollbar]) body::-webkit-scrollbar
+	html:not([hide-scrollbar]) ::-webkit-scrollbar
 	{
 		width: 8px;
 	}
 
 	/*Background for the entire page*/
-	html, ytd-browse, ytd-watch, ytd-search, ytd-app, [class*="ytd-watch-flexy"], .style-scope.ytd-page-manager.hide-skeleton
+	html, ytd-browse, ytd-watch, ytd-search, ytd-app, [class*="ytd-watch-flexy"], .style-scope.ytd-page-manager.hide-skeleton,
+	.account-container
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -394,12 +369,13 @@
 	}
 
 	/*Nav bar*/
-	ytd-masthead
+	ytd-masthead,
+	#yt-masthead-container, #masthead-positioner-height-offset /*account page*/
 	{
 		background-color: var(--second-background) !important;
+		border-bottom-color: var(--hover-background) !important;
 	}
-	yt-icon-button svg
-	{
+	yt-icon-button svg {
 		fill: var(--dimmer-text) !important;
 	}
 	yt-icon-button:hover svg
@@ -409,6 +385,21 @@
 	#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
 	{
 		fill: var(--main-text) !important;
+	}
+	/*acount settings page*/
+	/*logo*/
+	.exp-invert-logo.inverted-hdpi #header::before, .exp-invert-logo.inverted-hdpi .ypc-join-family-header .logo, .exp-invert-logo.inverted-hdpi #footer-logo .footer-logo-icon, .exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo, .exp-invert-logo.inverted-hdpi #masthead #logo-container, .exp-invert-logo.inverted-hdpi .admin-masthead-logo a, .exp-invert-logo.inverted-hdpi #yt-sidebar-styleguide-logo #logo
+	{
+		filter: invert(1) grayscale(1);
+	}
+	/*buttons*/
+	#yt-masthead-creation-button
+	{
+		filter: brightness(220%);
+	}
+	#yt-masthead-notifications .yt-uix-button-icon-bell
+	{
+		filter: invert(1) brightness(720%);
 	}
 
 	/*YouTube Apps*/
@@ -520,10 +511,16 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-	ytd-mini-guide-entry-renderer[active_] .guide-icon.ytd-mini-guide-entry-renderer,
-	a.ytd-mini-guide-entry-renderer:hover .guide-icon
+	ytd-mini-guide-entry-renderer[active] .guide-icon.ytd-mini-guide-entry-renderer,
+	a.ytd-mini-guide-entry-renderer:hover .guide-icon,
+	a.ytd-mini-guide-entry-renderer:hover .title.ytd-mini-guide-entry-renderer,
+	ytd-mini-guide-entry-renderer[active] .title.ytd-mini-guide-entry-renderer
 	{
 		color: var(--main-color) !important;
+	}
+	#newness-dot.ytd-guide-entry-renderer
+	{
+		background-color: var(--main-color) !important;
 	}
 
 	/*Latest YouTube posts*/
@@ -710,6 +707,11 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
+	/*published date*/
+	#date.ytd-video-primary-info-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
 	ytd-video-primary-info-renderer
 	{
 		border-color: var(--hover-background) !important;
@@ -732,7 +734,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	#bar.ytd-copy-link-renderer
+	#bar.yt-copy-link-renderer
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -741,7 +743,17 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	yt-formatted-string.ytd-start-at-renderer
+	yt-formatted-string.yt-start-at-renderer,
+	#text.ytd-sender-id-section-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*search for people*/
+	#to-field-header.ytd-contact-search-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#name.ytd-suggested-contact-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -783,11 +795,9 @@
 		color: var(--main-color) !important;
 	}
 	/*author*/
-	yt-formatted-string[ellipsis-truncate] a.yt-formatted-string:last-child, #byline.ytd-video-meta-block
-	{
-		color: var(--main-color) !important;
-	}
-	#channel-title.ytd-channel-renderer span.ytd-channel-renderer
+	yt-formatted-string[ellipsis-truncate] a.yt-formatted-string:last-child, #byline.ytd-video-meta-block,
+	#channel-title.ytd-channel-renderer span.ytd-channel-renderer,
+	#text.ytd-channel-name
 	{
 		color: var(--main-color) !important;
 	}
@@ -875,7 +885,8 @@
 	.arrow.yt-horizontal-list-renderer,
 	#scroll-button-forward,
 	.arrow.ytd-horizontal-card-list-renderer,
-	.ytd-horizontal-card-list-renderer[arrow]
+	.ytd-horizontal-card-list-renderer[arrow],
+	.scroll-button.yt-third-party-share-target-section-renderer /*share link*/
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -888,6 +899,10 @@
 	.style-scope.ytd-comment-renderer.creator:hover
 	{
 		background-color: var(--hover-background) !important;
+	}
+	#name.ytd-author-comment-badge-renderer
+	{
+		color: var(--main-text) !important;
 	}
 	#name:hover
 	{
@@ -909,14 +924,91 @@
 		border-color: var(--main-color) !important;
 	}
 
+	/*How is youtube today*/
+	ytd-single-option-survey-renderer[dialog][dialog][dialog], ytd-single-option-survey-renderer,
+	ytd-survey-follow-up-renderer[dialog][dialog][dialog], ytd-survey-follow-up-renderer
+	/*TODO: forgot to test if the [dialog] is even needed*/
+	{
+		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	#header.ytd-single-option-survey-renderer,
+	#header.ytd-survey-follow-up-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	ytd-single-option-survey-option-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-single-option-survey-option-renderer:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 	/*You are not logged in tooltip*/
 	yt-tooltip-renderer
 	{
-		background-color: var(--main-background) !important;
+		background-color: var(--second-background) !important;
+		box-shadow: var(--shadow) !important;
 	}
 	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]::before
 	{
-		border-color: transparent transparent var(--main-background) transparent !important;
+		border-color: transparent transparent var(--second-background) transparent !important;
+	}
+	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"] #text.yt-bubble-hint-renderer:not(:empty),
+	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"] #details-text.yt-bubble-hint-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+
+	/*Join button tooltip*/
+	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]
+	{
+		background-color: var(--second-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"] #text.yt-bubble-hint-renderer:not(:empty),
+	yt-bubble-hint-renderer[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"] #details-text.yt-bubble-hint-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	yt-bubble-hint-renderer[position-type="OPEN_POPUP_POSITION_LEFT"][style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"]::before
+	{
+		border-color: transparent transparent transparent var(--second-background) !important;
+	}
+	/*window*/
+	ytd-sponsorships-offer-with-video-renderer[dialog][dialog][dialog]
+	{
+		background-color: var(--main-background) !important;
+	}
+	#top-bar.ytd-sponsorships-offer-with-video-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.title-container.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.channel-title.ytd-sponsorships-offer-with-video-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	.title-container.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-with-video-renderer,
+	.disclaimer.ytd-sponsorships-tier-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*prices*/
+	.offer-overview-item.ytd-sponsorships-offer-with-video-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-with-video-renderer,
+	#above-purchase-button-text.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	/*perks*/
+	.style-included-perks.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer, .style-unspecified.ytd-sponsorships-expandable-message-renderer .text.ytd-sponsorships-expandable-message-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#expansion_call_to_action.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Progress bar*/
@@ -946,9 +1038,12 @@
 	/*Subscribe button and comment button*/
 	#subscribe-button:hover ytd-button-renderer yt-formatted-string.ytd-button-renderer, #subscribe-button ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	#subscribe-button:hover .deemphasize.yt-formatted-string, #subscribe-button .deemphasize.yt-formatted-string,
+	paper-button.ytd-subscribe-button-renderer[subscribed] yt-formatted-string.ytd-subscribe-button-renderer .deemphasize.yt-formatted-string,
 	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
 	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
-	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer
+	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
+	paper-button.ytd-subscribe-button-renderer,
+	ytd-sponsorships-tier-renderer yt-button-renderer yt-formatted-string.yt-button-renderer /*join button in join window*/
 	{
 		color: var(--main-text) !important;
 	}
@@ -960,11 +1055,34 @@
 	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
 	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
-	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
+	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
+	#sponsor-button.ytd-video-owner-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
+	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	if join-color /*overwriting the above*/
+	{
+		#sponsor-button.ytd-video-owner-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
+		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
+		{
+			background-color: var(--second-background) !important;
+			border-color: var(--second-background) !important;
+		}
+	}
+	if subscribe-color /*overwriting the above*/
+	{
+		ytd-button-renderer.style-destructive[is-paper-button],
+		paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
+		a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
+		#button[class="style-scope ytd-button-renderer style-compact-gray"],
+		ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
+		{
+			background-color: var(--second-background) !important;
+			border-color: var(--second-background) !important;
+		}
 	}
 	ytd-button-renderer.style-destructive[is-paper-button]:hover,
 	paper-button.ytd-subscribe-button-renderer:hover,
@@ -972,17 +1090,18 @@
 	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover,
 	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover,
 	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover,
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer:hover,
-	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover
+	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover,
+	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer:hover, /*join button*/
+	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button]:hover /*join button in join window*/
 	{
 		filter: brightness(110%) !important;
 	}
-	paper-button.ytd-subscribe-button-renderer[subscribed],.ytp-sb-unsubscribe
+	paper-button.ytd-subscribe-button-renderer[subscribed], .ytp-sb-unsubscribe
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		opacity: 0.9 !important;
-		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)  !important;
+		box-shadow: var(--shadow) !important;
 	}
 	ytd-button-renderer.style-primary[is-paper-button]
 	{
@@ -1183,19 +1302,23 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	#playlists.ytd-add-to-playlist-renderer:hover *, paper-item.ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,
+	paper-item.ytd-compact-link-renderer:hover #label.ytd-compact-link-renderer,
 	paper-item.ytd-compact-link-renderer:hover yt-icon.ytd-compact-link-renderer
 	{
 		color: var(--main-color) !important;
 		fill: var(--main-color) !important;
 	}
+	ytd-playlist-add-to-option-renderer paper-checkbox:hover #label.ytd-playlist-add-to-option-renderer,
+	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #label.ytd-playlist-add-to-option-renderer,
 	yt-icon.ytd-playlist-add-to-option-renderer
 	{
 		color: var(--main-color) !important;
 	}
 
 	/*Checkbox*/
-	ytd-playlist-add-to-option-renderer:hover #checkbox.paper-checkbox,#checkboxContainer.paper-checkbox:hover #checkbox.paper-checkbox
+	ytd-playlist-add-to-option-renderer paper-checkbox:hover #checkbox.paper-checkbox,
+	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #checkbox.paper-checkbox,
+	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #checkmark.paper-checkbox
 	{
 		border-color: var(--main-color) !important;
 	}
@@ -1292,10 +1415,6 @@
 	{
 		background: var(--main-color) !important;
 	}
-  	.ytp-chrome-controls .ytp-button[aria-pressed]::after
-	{
-		background-color: var(--main-color) !important;
-	}
 
 	/*Added because of this: https://forum.userstyles.org/discussion/53368/solved-fix-this-annoying-youtube-tab-select-bug-thats-been-there-forever#latest*/
 	.ytp-keyboard-focus .ytp-progress-bar:focus
@@ -1365,8 +1484,8 @@
 		background-color: var(--main-background) !important;
 	}
 
-  	/*Changing icon for unavailable video*/
-  	#img.ytd-player-error-message-renderer
+  /*Changing icon for unavailable video*/
+	#img.ytd-player-error-message-renderer
 	{
 		display: block !important;
 		-moz-box-sizing: border-box !important;
@@ -1418,7 +1537,9 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	#stats.ytd-playlist-sidebar-primary-info-renderer
+	#stats.ytd-playlist-sidebar-primary-info-renderer,
+	#description.ytd-playlist-sidebar-primary-info-renderer .bold.yt-formatted-string,
+	#owner-sub-count.ytd-video-owner-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1434,18 +1555,42 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	a.yt-simple-endpoint.ytd-button-renderer:hover *
-	{
-		color: var(--main-color) !important;
-	}
 	#content.ytd-playlist-video-renderer
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/*buttons*/
+	ytd-playlist-sidebar-renderer ytd-toggle-button-renderer.style-suggestive[is-paper-button],
+	ytd-playlist-sidebar-renderer paper-button.ytd-toggle-button-renderer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	a.yt-simple-endpoint.ytd-button-renderer:hover *,
+	ytd-playlist-sidebar-renderer ytd-button-renderer #button.ytd-button-renderer:hover,
+	ytd-playlist-sidebar-renderer ytd-button-renderer #button.ytd-button-renderer:hover > yt-formatted-string.ytd-button-renderer
+	{
+		color: var(--main-color) !important;
+	}
 	/*playlist page*/
-	.index-message.ytd-playlist-panel-renderer
+	ytd-browse[page-subtype="playlist"] ytd-two-column-browse-results-renderer.ytd-browse
+	{
+		background-color: var(--main-background) !important;
+	}
+	.index-message.ytd-playlist-panel-renderer,
+	.light-text.ytd-playlist-segment-renderer,
+	#contributor.ytd-playlist-video-renderer
 	{
 		color: var(--dimmer-text) !important;
+	}
+	#title-container.ytd-playlist-segment-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#title-container.ytd-playlist-segment-renderer:hover #title.ytd-playlist-segment-renderer
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Playlist changes*/
@@ -1473,15 +1618,39 @@
 		border-color: var(--main-color) !important;
 	}
 
-	#index.ytd-playlist-video-renderer, #index.ytd-playlist-panel-video-renderer
+	#index.ytd-playlist-video-renderer, #index.ytd-playlist-panel-video-renderer,
+	.badge-style-type-medium-grey.ytd-badge-supported-renderer /*unlisted*/
 	{
 		color: var(--dimmer-text) !important;
+	}
+
+	/*Playlist creation*/
+	#create-playlist-form .input-content.paper-input-container label
+	{
+		color: var(--main-text) !important;
+	}
+	#create-playlist-form input.style-scope.paper-input::placeholder
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#create-playlist-form .underline.is-highlighted.paper-input-container .focused-line.paper-input-container
+	{
+		border-bottom-color: var(--main-text) !important;
+	}
+	#create-playlist-form #label.ytd-privacy-dropdown-item-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#create-playlist-form ytd-privacy-dropdown-item-renderer.iron-selected
+	{
+		background-color: var(--hover-background) !important;
 	}
 
 	/*Search bar*/
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,
-	#container.ytd-searchbox
+	#container.ytd-searchbox,
+	#masthead-search-terms /*account settings page*/
 	{
 		background: var(--main-background) !important;
 		border-color: var(--main-background) !important;
@@ -1498,10 +1667,15 @@
 		color: var(--main-text) !important;
 	}
 	/*Search icon*/
-	#search-icon-legacy.ytd-searchbox
+	#search-icon-legacy.ytd-searchbox,
+	#masthead-search .search-btn-component, #masthead-search .search-btn-component .start /*account*/
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	#masthead-search .search-btn-component .yt-uix-button-content /*account*/
+	{
+		filter: invert(1);
 	}
 	#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox
 	{
@@ -1594,10 +1768,16 @@
 		opacity: 1 !important;
 	}
 
-	/*Search for channel videos*/
- 	.unfocused-line.paper-input-container,.focused-line.paper-input-container
+	/*Buttom border for different fields*/
+	.unfocused-line.paper-input-container
+	{
+   	 	background-color: var(--hover-background) !important;
+			border-color: var(--hover-background) !important;
+	}
+	.focused-line.paper-input-container
 	{
    	 	background-color: var(--main-color) !important;
+			border-color: var(--main-color) !important;
 	}
 
 	/*Search page*/
@@ -1649,6 +1829,32 @@
 	{
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
+	}
+
+	/*Search results related to item searched*/
+	a.ytd-search-refinement-card-renderer
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		border-radius: 8px !important;
+	}
+	a.ytd-search-refinement-card-renderer:hover #card-title.ytd-search-refinement-card-renderer div.ytd-search-refinement-card-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#card-title.ytd-search-refinement-card-renderer div.ytd-search-refinement-card-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*Next button*/
+	.center-aligned.ytd-horizontal-card-list-renderer
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.center-aligned.ytd-horizontal-card-list-renderer:hover
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*filter*/
@@ -1787,6 +1993,10 @@
 	{
 		color: var(--main-color) !important;
 	}
+	ytd-author-comment-badge-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
 	#content-text.ytd-comment-renderer
 	{
 		color: var(--dimmer-text) !important;
@@ -1821,6 +2031,10 @@
 	{
 		--paper-button_-_background-color: transparent !important;
 		--paper-button_-_color: var(--dimmer-text) !important;
+	}
+	.style-scope.yt-next-continuation
+	{
+		border-color: transparent !important;
 	}
 	.style-scope.yt-next-continuation:hover
 	{
@@ -1985,19 +2199,227 @@
 		color: var(--dimmer-text) !important;
 	}
 
-	/*Notification*/
-	#notification-count.ytd-notification-topbar-button-renderer,
-	ytd-notification-renderer.unseen #new.ytd-notification-renderer
+	/*Fund raiser*/
+	#header-section.ytd-donation-shelf-renderer,
+	#collapse-controls-section.ytd-donation-shelf-renderer
 	{
-		background: var(--main-color) !important;
+		background-color: var(--hover-background) !important;
 	}
-	.text.ytd-notification-renderer
+	#header-text.ytd-donation-shelf-renderer,
+	#collapse-controls-section.ytd-donation-shelf-renderer
 	{
 		color: var(--main-text) !important;
 	}
-	.metadata.ytd-notification-renderer
+	#collapse-controls-section.ytd-donation-shelf-renderer:hover
+	{
+		color: var(--main-color) !important;
+	}
+	#header-section.ytd-donation-shelf-renderer .style-scope.ytd-donation-shelf-renderer.no-transition
+	{
+		filter: invert(.8);
+	}
+	#donate-section.ytd-donation-shelf-renderer,
+	#creator-messages-section.ytd-donation-shelf-renderer, #nonprofit-section.ytd-donation-shelf-renderer,
+	#nonprofit-title.ytd-donation-shelf-renderer
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	#campaign-title.ytd-donation-shelf-renderer,
+	.creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer, .creator-message-name.ytd-donation-shelf-renderer,
+	#nonprofit-title.ytd-donation-shelf-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.creator-message.ytd-donation-shelf-renderer, #campaign-subtitle.ytd-donation-shelf-renderer,
+	#nonprofit-subtitle.ytd-donation-shelf-renderer,
+	#nonprofit-description.ytd-donation-shelf-renderer
 	{
 		color: var(--dimmer-text) !important;
+	}
+	#amount-raised.ytd-donation-shelf-renderer,
+	#nonprofit-title.ytd-donation-shelf-renderer yt-icon.ytd-donation-shelf-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#nonprofit-link.ytd-donation-shelf-renderer .inline-icon.ytd-donation-shelf-renderer
+	{
+		fill: var(--main-color) !important;
+	}
+	/*progress*/
+	#progress-bar-start.ytd-donation-shelf-renderer, #progress-bar-end.ytd-donation-shelf-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#progress-bar.ytd-donation-shelf-renderer
+	{
+		background-color: var(--dimmer-text) !important;
+	}
+	#progress-bar-fill.ytd-donation-shelf-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*donate button*/
+	#donate-section.ytd-donation-shelf-renderer ytd-button-renderer.style-primary[is-paper-button],
+	.b3-button.jfk-button, .b3-button.jfk-button.jfk-button-action
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*donate window*/
+	#top-box.ytd-donation-amount-picker-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#campaign-title.ytd-donation-amount-picker-renderer,
+	#nonprofit-title.ytd-donation-amount-picker-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	#campaign-subtitle.ytd-donation-amount-picker-renderer,
+	#nonprofit-subtitle.ytd-donation-amount-picker-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*amount buttons*/
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[is-paper-button] paper-button.ytd-button-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[is-paper-button] paper-button.ytd-button-renderer
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+	}
+	#suggested-amount-buttons-row.ytd-donation-amount-picker-renderer ytd-button-renderer.ytd-donation-amount-picker-renderer[is-paper-button][selected] paper-button.ytd-button-renderer,
+	.ytd-donation-amount-picker-renderer ytd-button-renderer.style-primary[is-paper-button]
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*curency for other amount*/
+	span.prefix.style-scope.paper-input-container > div.ytd-donation-amount-picker-renderer
+	{
+		color: var(--main-text) !important;
+	}
+
+	/*Payment window*/
+	.popup-mode .b3-page-header
+	{
+		background-color: var(--main-background) !important;
+	}
+	.b3-line-items-mundane-items-container, .b3-line-items-mundane-items-container
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.b3-separator
+	{
+		display: none !important;
+	}
+	.b3-line-item-value
+	{
+		color: var(--main-color) !important;
+	}
+	.b3-line-item-name, .b3-line-item-infomessage, .b3-line-item-subvalue
+	{
+		color: var(--main-text) !important;
+	}
+	.b3-single-option-form-selector-option-content .b3-existing-instrument-option-label-without-image,
+	.b3-dropdown-form-selector .b3-existing-instrument-option-label-without-image,
+	.b3-single-option-form-selector-option-content .b3-additional-instrument-option-label, .b3-dropdown-form-selector .b3-additional-instrument-option-label,
+	.b3-input.focused .b3-input-label, .b3-input.focused .b3-input-label-text,
+	.b3-input input[type="tel"], .b3-input input[type="text"], .b3-input input[type="password"], .b3-input input[type="email"],
+	.b3-input.populated .b3-input-label, .b3-input.invalid .b3-input-label, .b3-input.autofilled .b3-input-label,
+	.b3-input-field > .b3-input-label, .b3-input-field > .b3-input-label.accessible,
+	.b3-collapsing-form-placeholder-text
+	{
+		color: var(--main-text) !important;
+	}
+	.countryselector .goog-flat-menu-button-caption, .countryselector .goog-flat-menu-button-caption .goog-menuitem-content
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*icons*/
+	.b3-single-option-form-selector-icon,
+	.b3-collapsing-form-icon
+	{
+		fill: var(--main-text) !important;
+	}
+	.b3-collapsing-form.focused .b3-collapsing-form-icon
+	{
+		fill: var(--main-color) !important;
+	}
+	.b3-tooltip-icon
+	{
+		filter: invert(1) !important;
+	}
+	/*border*/
+	.b3-input-status-indicator
+	{
+		background-color: var(--main-color) !important;
+	}
+	.b3-input-accent
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*tooltip*/
+	.b3-inline-tooltip-popup-wrapper, .help-Helpwidgets-TooltipWidget-content-html
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.b3-inline-tooltip-popup-wrapper a, .help-Helpwidgets-TooltipWidget-content-html a
+	{
+		color: var(--main-color) !important;
+	}
+	/*country choice*/
+	.goog-menu, .goog-menuitem:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.goog-menuitem, .goog-tristatemenuitem, .goog-filterobsmenuitem
+	{
+		color: var(--main-text) !important;
+	}
+	.goog-menuitem-highlight .goog-menuitem-content
+	{
+		color: var(--main-color) !important;
+	}
+	.goog-menuitem .countryselector-flag
+	{
+		border-radius: 4px !important; /*hiding ugly white corners*/
+	}
+	/*footer*/
+	.b3-legal-message-content, .b3-info-message-list.b3-buyflow-extra-messages .b3-info-message-component.b3-info-message-unknown,
+	.b3-info-message-component.b3-info-message-unknown.b3-buyflow-extra-messages .b3-info-message-html
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.b3-legal-message-content a, .b3-info-message-component.b3-info-message-unknown.b3-buyflow-extra-messages .b3-info-message-html a
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Notification*/
+	#notification-count.ytd-notification-topbar-button-renderer,
+	ytd-notification-renderer.unread #new.ytd-notification-renderer,
+	.yt-lockup-notification .unread-dot /*account settings*/
+	{
+		background: var(--main-color) !important;
+	}
+	.text.ytd-notification-renderer,
+	.message.ytd-notification-renderer
+	#yt-masthead-notifications-title, .yt-lockup-notification .yt-lockup-title a /*account settings*/
+	h2.yt-multi-page-menu-section-renderer /*comments and notifications headers*/
+	{
+		color: var(--main-text) !important;
+	}
+	.metadata.ytd-notification-renderer,
+	.exp-responsive .yt-lockup-tile .yt-lockup-byline /*account settings*/
+	{
+		color: var(--dimmer-text) !important;
+	}
+	ytd-notification-renderer:hover .message.ytd-notification-renderer
+	{
+		color: var(--main-color) !important;
 	}
 	ytd-watch:not([flexy-fit-to-video_]) #chat.ytd-watch, ytd-watch:not([flexy-fit-to-video_]) #transcript.ytd-watch
 	{
@@ -2012,13 +2434,51 @@
 		color: var(--main-text) !important;
 	}
 	#sections.ytd-multi-page-menu-renderer > ytd-background-promo-renderer.ytd-multi-page-menu-renderer,
-	ytd-multi-page-menu-renderer
+	ytd-multi-page-menu-renderer,
+	#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis, /*account settings*/
+	#yt-masthead-notifications-content /*bottom thing - account settings*/
 	{
 		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+	}
+	.browse-items-load-more-button
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.browse-items-load-more-button:hover
+	{
+		color: var(--main-color) !important;
 	}
 	.promo-message.ytd-background-promo-renderer, #message:not([class*="yt-music"])
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*triangle*/
+	.yt-uix-clickcard-card-reverse .yt-uix-card-body-arrow-vertical, .yt-uix-hovercard-card-reverse .yt-uix-card-body-arrow-vertical /*account settings*/
+	{
+		border-bottom-color: var(--hover-background) !important;
+	}
+	/*menu*/
+	.yt-ui-menu-content /*account settings*/
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.yt-ui-menu-item /*account settings*/
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.yt-ui-menu-item:hover /*account settings*/
+	{
+		color: var(--main-color) !important;
+	}
+	/*gear icon*/
+	.yt-uix-button-icon-icon-account-settings /*account settings*/
+	{
+		filter: brightness(250%) invert(1);
 	}
 
 	/*Cards*/
@@ -2128,21 +2588,6 @@
 		color: var(--main-color) !important;
 	}
 
-	/*Watched videos dark background*/
-	ytd-thumbnail-overlay-playback-status-renderer
-	{
-		background-color: hsla(0, 0%, 6.7%, .4) !important;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		justify-content: left;
-	}
-	ytd-thumbnail-overlay-playback-status-renderer:hover
-	{
-		background-color: hsla(0, 0%, 6.7%, .2) !important;
-	}
-
 	/*Live background color*/
 	ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"]
 	{
@@ -2197,6 +2642,24 @@
 	#title.ytd-rich-metadata-renderer, #call-to-action.ytd-rich-metadata-renderer:hover
 	{
 		color: var(--main-color) !important;
+	}
+
+	/*Movie cards*/
+	#header.ytd-movie-offer-module-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	ytd-button-renderer.ytd-movie-offer-module-renderer.style-primary[is-paper-button] {
+		background-color: var(--main-color) !important;
+	}
+	#wide-clickable-area.ytd-movie-offer-module-renderer {
+		background-color: var(--hover-background) !important;
+	}
+	#info.ytd-movie-offer-module-renderer {
+		color: var(--main-text) !important;
+	}
+	h3.ytd-compact-movie-renderer {
+		color: var(--main-text) !important;
 	}
 
 	/*Tour/ticket cards*/
@@ -2347,6 +2810,14 @@
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
 
+	ytd-alert-with-button-renderer[type="INFO"]
+	{
+		background-color: var(--hover-background) !important;
+	}
+	ytd-alert-with-button-renderer[type="INFO"] #text.ytd-alert-with-button-renderer
+	{
+		color: var(--main-text) !important;
+	}
 	#alert-message.ytd-consent-bump-renderer
 	{
 		color: var(--dimmer-text) !important;
@@ -2617,5 +3088,244 @@
 	#tabs-inner-container.ytd-interactive-tabbed-header-renderer
 	{
 		background-color: transparent !important;
+	}
+
+	/*Acount page specific*/
+	/*Sidebar*/
+	#creator-page.account-page
+	{
+		background-color: var(--second-background) !important;
+	}
+	.exp-kevlar-settings .account-page #creator-sidebar h3
+	{
+		color: var(--main-text) !important;
+	}
+	.exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item a
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item.selected > a, .exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item.selected > a:hover,
+	.exp-kevlar-settings .account-page #creator-sidebar .creator-sidebar-item:hover a
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	/*Burger sidebar*/
+	#appbar-guide-menu, .guide-flyout
+	{
+		background-color: var(--second-background) !important;
+	}
+	#guide-container .guide-item
+	{
+		color: var(--main-text) !important;
+	}
+	#guide-container .guide-item:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	/*headers*/
+	.exp-invert-logo li.guide-section h3, .exp-invert-logo li.guide-section h3 a
+	{
+		color: var(--main-color) !important;
+	}
+	.guide-section-separator /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*Contents - account*/
+	.account-page-header
+	{
+		color: var(--main-color) !important;
+	}
+	#account-page-header-title, h2.account-section-header
+	{
+		color: var(--main-text) !important;
+	}
+	.exp-kevlar-settings #account-page-header-subtitle, .account-info-item .account-info-label,
+	.account-section .account-email, .account-content, .account-section-subtext
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.yt-horizontal-rule /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.account-info .account-photo .yt-thumb /*avatar*/
+	{
+		border-radius: 100%;
+	}
+	.account-content a, .account-header a /*various links*/
+	{
+		color: var(--main-color) !important;
+	}
+	.yt-thumb
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*Notifications*/
+	.setting-reminder, h3.account-section-header
+	{
+		color: var(--main-text) !important;
+	}
+	.yt-uix-form-input-checkbox-container input:checked + .yt-uix-form-input-checkbox-element
+	{
+		border-color: #000;
+		filter: invert(1);
+	}
+	.desktop-notifications .browser
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.desktop-notifications .browser .yt-uix-button.turn-on, .desktop-notifications .browser .yt-uix-button.turn-off, .resume-setting-button, .undo-setting-button-section, .resume-all-settings-button /*turn off*/
+	{
+		background: var(--main-background) !important;
+		border-color: var(--main-background) !important;
+		color: var(--main-color) !important;
+	}
+	.yt-uix-form-input-select /*dropdowns*/
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*Playback*/
+	.yt-help-icon
+	{
+		filter: invert(1);
+	}
+	.yt-uix-clickcard-card-content, .yt-uix-hovercard-card-content
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.yt-uix-clickcard-card-flip .yt-uix-card-body-arrow-horizontal, .yt-uix-hovercard-card-flip .yt-uix-card-body-arrow-horizontal
+	{
+		border-right-color: var(--hover-background) !important;
+	}
+	.exp-kevlar-settings .account-page .yt-uix-button /*save buttons*/
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.exp-kevlar-settings .account-page .yt-uix-button:hover
+	{
+		opacity: 1 !important;
+	}
+	/*Social*/
+	.social-connector
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	/*TV*/
+	.howto-circle
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.howto-text
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.remote-icon
+	{
+		filter: invert(1) brightness(200%);
+	}
+	h3.pairing-section-header
+	{
+		color: var(--main-text)
+	}
+	.yt-uix-form-input-select, .yt-uix-form-input-text, .yt-uix-form-input-textarea
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#account-page-header-avatar.howto-promo-image
+	{
+		filter: invert(1) grayscale(1);
+	}
+	/*Footer*/
+	body #footer-container {
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	#footer-main /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*links*/
+	#footer-links-primary a
+	{
+		color: var(--main-text) !important;
+	}
+	#footer-links-secondary a
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#footer-links-primary a:hover, #footer-links-secondary a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*buttons*/
+	#footer .yt-uix-button-group .yt-uix-button,
+	#footer .pickers li, #footer .footer-history, #footer #google-help
+	{
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		box-shadow: none !important;
+	}
+	.yt-uix-button-default.yt-uix-button-toggled:hover
+	{
+		box-shadow: none !important;
+	}
+	#footer .yt-uix-button-icon-footer-language, #footer .yt-uix-button-icon-footer-history, #footer .yt-uix-button-icon-questionmark
+	{
+		filter: invert(1);
+	}
+	.yt-uix-button-arrow
+	{
+		border-top-color: var(--main-text) !important;
+	}
+	#yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer
+	{
+		background: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.yt-picker-header, #safety-form p.safety-submit /*divider*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.yt-picker-header h3.yt, .yt-picker-content strong
+	{
+		color: var(--main-text) !important;
+	}
+	#yt-picker-country-footer .yt-default .yt-notes, p.yt-notes,
+	#safety-mode-description li
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#yt-picker-country-footer .yt-picker-content a, .yt-picker-content button
+	{
+		color: var(--main-color) !important;
+	}
+	#yt-picker-safetymode-footer button /*save*/
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
 	}
 }

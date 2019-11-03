@@ -2613,7 +2613,7 @@
 
 
 	/*Autoplay text*/
-	#upnext.ytd-compact-autoplay-renderer
+	#upnext.ytd-compact-autoplay-renderer, #autoplay.ytd-compact-autoplay-renderer
 	{
 		color: var(--dimmer-text) !important;
 		opacity: .8;
@@ -2621,6 +2621,12 @@
 	ytd-compact-autoplay-renderer
 	{
 		border-color: var(--hover-background) !important;
+	}
+	
+	/*Video was removed by user - not interested*/
+	#text.ytd-notification-multi-action-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Links in video description*/

@@ -1056,7 +1056,7 @@
 	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
-	#sponsor-button.ytd-video-owner-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
+	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
 	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 	{
 		background-color: var(--main-color) !important;
@@ -1065,7 +1065,7 @@
 	}
 	if join-color /*overwriting the above*/
 	{
-		#sponsor-button.ytd-video-owner-renderer ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
+		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
 		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
 		{
 			background-color: var(--second-background) !important;
@@ -2250,6 +2250,10 @@
 	#progress-bar-start.ytd-donation-shelf-renderer, #progress-bar-end.ytd-donation-shelf-renderer
 	{
 		color: var(--main-text) !important;
+	}
+	#matching-label.ytd-donation-shelf-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 	#progress-bar.ytd-donation-shelf-renderer
 	{

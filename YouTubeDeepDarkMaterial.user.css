@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 3.2.2
+@version 3.2.3
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -559,17 +559,25 @@
 
 	/*Channel page*/
 	/*header*/
-	#channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer
+	ytd-settings-sidebar-renderer
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 	}
-	#channel-title.ytd-c4-tabbed-header-renderer
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active], 
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active]:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*title of the page*/
+	#name.ytd-page-introduction-renderer,
+	#name.ytd-channel-options-renderer,
+	ytd-settings-options-renderer .yt-formatted-string:not(a).bold
 	{
 		color: var(--main-text) !important;
 	}
-	#subscriber-count.ytd-c4-tabbed-header-renderer
+	ytd-section-list-renderer[page-subtype="account-settings"] a.yt-simple-endpoint.yt-formatted-string
 	{
-		color: var(--dimmer-text) !important;
+		color: var(--main-color) !important;
 	}
 	.tab-content.paper-tab
 	{
@@ -578,6 +586,14 @@
 	paper-tab:hover .tab-content.paper-tab
 	{
 		color: var(--main-color) !important;
+	}
+	/*other text*/
+	#text.ytd-page-introduction-renderer, /*email*/
+	#text.ytd-settings-options-renderer, /*descriptions, metadata, below text*/
+	#label.ytd-settings-checkbox-renderer, #label.ytd-settings-radio-option-renderer /*playback*/
+	#text.ytd-connected-app-renderer /*connected accounts*/
+	{
+		color: var(--dimmer-text) !important;
 	}
 	/*search*/
 	.input-content.paper-input-container label, .input-content.paper-input-container .paper-input-label,
@@ -3263,6 +3279,13 @@
 	#account-page-header-avatar.howto-promo-image
 	{
 		filter: invert(1) grayscale(1);
+	}
+	/*TV code*/
+	.yt-uix-form-input-select, .yt-uix-form-input-text, .yt-uix-form-input-textarea
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 	/*Footer*/
 	body #footer-container {

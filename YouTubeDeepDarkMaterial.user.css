@@ -778,7 +778,7 @@
 	#video-title.ytd-video-renderer,
 	h3.ytd-playlist-renderer,
 	#video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer,
-	#video-title, #length, #details
+	#video-title, #unplayableText, #length, #details
 	{
 		color: var(--main-text) !important;
 	}
@@ -788,6 +788,7 @@
 	ytd-playlist-renderer:hover h3.ytd-playlist-renderer,
 	#content.ytd-playlist-video-renderer:hover #video-title,
 	a.yt-simple-endpoint.ytd-playlist-panel-video-renderer:hover #video-title,
+	a.yt-simple-endpoint.ytd-playlist-panel-video-renderer:hover #unplayableText,
 	.style-scope.ytd-grid-renderer.use-ellipsis:hover #video-title,
 	#video-title:hover,
 	ytd-grid-video-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer

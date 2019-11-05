@@ -3173,7 +3173,7 @@
 	/*other text*/
 	#text.ytd-page-introduction-renderer, /*email*/
 	#text.ytd-settings-options-renderer, /*descriptions, metadata, below text*/
-	#label.ytd-settings-checkbox-renderer, #label.ytd-settings-radio-option-renderer /*playback*/
+	#label.ytd-settings-checkbox-renderer, #label.ytd-settings-radio-option-renderer, /*playback*/
 	#text.ytd-connected-app-renderer /*connected accounts*/
 	{
 		color: var(--dimmer-text) !important;

@@ -3103,7 +3103,7 @@
 
 	/*Acount page specific*/
 	/*Sidebar*/
-	#creator-page.account-page
+	#creator-page.account-page, ytd-settings-sidebar-renderer
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -3120,6 +3120,11 @@
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
+	}
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active], 
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active]:hover
+	{
+		background-color: var(--hover-background) !important;
 	}
 	/*Burger sidebar*/
 	#appbar-guide-menu, .guide-flyout
@@ -3145,7 +3150,8 @@
 		border-color: var(--hover-background) !important;
 	}
 	/*Contents - account*/
-	.account-page-header
+	.account-page-header,
+	ytd-section-list-renderer[page-subtype="account-settings"] a.yt-simple-endpoint.yt-formatted-string
 	{
 		color: var(--main-color) !important;
 	}
@@ -3153,8 +3159,23 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/*title of the page*/
+	#name.ytd-page-introduction-renderer,
+	#name.ytd-channel-options-renderer,
+	ytd-settings-options-renderer .yt-formatted-string:not(a).bold
+	{
+		color: var(--main-text) !important;
+	}
 	.exp-kevlar-settings #account-page-header-subtitle, .account-info-item .account-info-label,
 	.account-section .account-email, .account-content, .account-section-subtext
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*other text*/
+	#text.ytd-page-introduction-renderer, /*email*/
+	#text.ytd-settings-options-renderer, /*descriptions, metadata, below text*/
+	#label.ytd-settings-checkbox-renderer, #label.ytd-settings-radio-option-renderer, /*playback*/
+	#text.ytd-connected-app-renderer /*connected accounts*/
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -3264,6 +3285,13 @@
 	#account-page-header-avatar.howto-promo-image
 	{
 		filter: invert(1) grayscale(1);
+	}
+	/*TV code*/
+	.yt-uix-form-input-select, .yt-uix-form-input-text, .yt-uix-form-input-textarea
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 	/*Footer*/
 	body #footer-container {

@@ -9,8 +9,7 @@
 @license GNU-V3.0
 
 @preprocessor uso
-@var select mainColor 'Main color'
-{
+@var select mainColor 'Main color' {
 	"DeepDark": "#00adee",
 	"BreezeDark": "#3DAEE9",
 	"Vertex Dark": "#4080fb",
@@ -32,8 +31,7 @@
 }
 @var color custom-main-color "Custom main color" "#00adee"
 
-@var select mainBackground 'Main background color'
-{
+@var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
 	"BreezeDark": "#232629",
 	"Vertex Dark": "#2B2B2C",
@@ -55,8 +53,7 @@
 }
 @var color custom-main-background "Custom main background" "#111111"
 
-@var select secondBackground 'Second background color'
-{
+@var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
 	"BreezeDark": "#2a2e32",
 	"Vertex Dark": "#353638",
@@ -78,8 +75,7 @@
 }
 @var color custom-second-background "Custom second background" "#181818"
 
-@var select hoverBackground 'Hover background color'
-{
+@var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
 	"BreezeDark": "#31363b",
 	"Vertex Dark": "#515254",
@@ -101,8 +97,7 @@
 }
 @var color custom-hover-background "Custom hover background" "#232323"
 
-@var select mainText 'Main text color'
-{
+@var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
 	"BreezeDark": "#eff0f1",
 	"Vertex Dark": "#F3F3F5",
@@ -124,8 +119,7 @@
 }
 @var color custom-main-text "main-text" "#eff0f1"
 
-@var select dimmerText 'Secondary text color'
-{
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -149,8 +143,7 @@
 
 ==/UserStyle== */
 
-@-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/(?!live_chat).*'), domain(apis.google.com)
-{
+@-moz-document regexp('https?:\/\/(?!gaming\.).*youtube\.com\/(?!live_chat).*'), domain(apis.google.com) {
 
 /*Theme made by RaitaroH @https://gitlab.com/RaitaroH/YouTube-DeepDark*/
 

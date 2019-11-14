@@ -2,144 +2,45 @@
 @name YouTube DeepDark Classic
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/YouTube-DeepDark
-@version 2.4.7
+@version 2.5.0
 @updateURL https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YouTubeDeepDarkClassic.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
 @license GNU-V3.0
 
-@preprocessor uso
-@var select mainColor 'Main color' {
-	"DeepDark": "#00adee",
-	"BreezeDark": "#3DAEE9",
-	"Vertex Dark": "#4080fb",
-	"Arc Dark": "#5294E2",
-	"Firefox Dark": "#5675B9",
-	"Firefox57": "#4080FB",
-	"Discord": "#7289DA",
-	"YouTubeDark": "#E52117",
-	"Mint-Y-Dark": "#9AB87C",
-	"9anime": "#723f8c",
-	"Black&White": "#ffffff",
-	"Yellow_petrocompletions": "#FFC700",
-	"Yellow2": "#FFC700",
-	"Ubuntu_grey": "#EF7847",
-	"Ubuntu_purple": "#EF7847",
-	"Orange": "#ff6905",
-	"Jisho_夜明け": "#EF7D6C",
-	"Custom": "/*[[custom-main-color]]*\/"
-}
-@var color custom-main-color "Custom main color" "#00adee"
+@preprocessor stylus
+@var select stylus-deepdark-style "Preset themes" [
+	"Deep-Dark",
+	"Inspired-Dark",
+	"Breeze-Dark",
+	"HavocOS",
+	"Arc-Dark",
+	"Vertex-Dark",
+	"Mint-Y-Dark",
+	"Adapta-Nokto",
+	"Adapta-Breath-Nokto",
+	"Gruvbox-Dark",
+	"Gruvbox-Light",
+	"NierAutomata-Dark",
+	"NierAutomata-Light",
+	"Solarized-Dark",
+	"Solarized-Light",
+	"9anime",
+	"Firefox-Dark",
+	"Firefox-57",
+	"Discord",
+	"YouTube-Dark",
+	"Black-and-White",
+	"Yellow",
+	"Yellow-2",
+	"Ubuntu-Grey",
+	"Ubuntu-Purple",
+	"Orange",
+	"Jisho",
+	"Custom"
+]
 
-@var select mainBackground 'Main background color' {
-	"DeepDark": "#111111",
-	"BreezeDark": "#232629",
-	"Vertex Dark": "#2B2B2C",
-	"Arc Dark": "#343944",
-	"Firefox Dark": "#272B35",
-	"Firefox57": "#0C0C0D",
-	"Discord": "#1E2124",
-	"YouTubeDark": "#111111",
-	"Mint-Y-Dark": "#2F2F2F",
-	"9anime": "#0B0A0D",
-	"Black&White": "#000000",
-	"Yellow_petrocompletions": "#141414",
-	"Yellow2": "#0a0800",
-	"Ubuntu_grey": "#312D2A",
-	"Ubuntu_purple": "#2C071A",
-	"Orange": "#0a0400",
-	"Jisho_夜明け": "#332222",
-	"Custom": "/*[[custom-main-background]]*\/"
-}
-@var color custom-main-background "Custom main background" "#111111"
-
-@var select secondBackground 'Second background color' {
-	"DeepDark": "#181818",
-	"BreezeDark": "#2a2e32",
-	"Vertex Dark": "#353638",
-	"Arc Dark": "#383C4A",
-	"Firefox Dark": "#181D20",
-	"Firefox57": "#252526",
-	"Discord": "#2F3136",
-	"YouTubeDark": "#232323",
-	"Mint-Y-Dark": "#383838",
-	"9anime": "#17151C",
-	"Black&White": "#0a0a0a",
-	"Yellow_petrocompletions": "#202222",
-	"Yellow2": "#0c0a04",
-	"Ubuntu_grey": "#3D3C38",
-	"Ubuntu_purple": "#430B28",
-	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B",
-	"Custom": "/*[[custom-second-background]]*\/"
-}
-@var color custom-second-background "Custom second background" "#181818"
-
-@var select hoverBackground 'Hover background color' {
-	"DeepDark": "#232323",
-	"BreezeDark": "#31363b",
-	"Vertex Dark": "#515254",
-	"Arc Dark": "#414A59",
-	"Firefox Dark": "#353A44",
-	"Firefox57": "#323234",
-	"Discord": "#484B51",
-	"YouTubeDark": "#343434",
-	"Mint-Y-Dark": "#404040",
-	"9anime": "#1E1C25",
-	"Black&White": "#0f0f0f",
-	"Yellow_petrocompletions": "#353838",
-	"Yellow2": "#0f0d05",
-	"Ubuntu_grey": "#59564D",
-	"Ubuntu_purple": "#520D30",
-	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F",
-	"Custom": "/*[[custom-hover-background]]*\/"
-}
-@var color custom-hover-background "Custom hover background" "#232323"
-
-@var select mainText 'Main text color' {
-	"DeepDark": "#eff0f1",
-	"BreezeDark": "#eff0f1",
-	"Vertex Dark": "#F3F3F5",
-	"Arc Dark": "#C1C8D1",
-	"Firefox Dark": "#E3EEF9",
-	"Firefox57": "#F9F9FA",
-	"Discord": "#FFFFFF",
-	"YouTubeDark": "#E1E1E1",
-	"Mint-Y-Dark": "#FFFFFF",
-	"9anime": "#B4B4B4",
-	"Black&White": "#b4b4b4",
-	"Yellow_petrocompletions": "#EFF0F1",
-	"Yellow2": "#fffdf5",
-	"Ubuntu_grey": "#F2F1EF",
-	"Ubuntu_purple": "#F2F1EF",
-	"Orange": "#fff9f5",
-	"Jisho_夜明け": "#EFB26C",
-	"Custom": "/*[[custom-main-text]]*\/"
-}
-@var color custom-main-text "main-text" "#eff0f1"
-
-@var select dimmerText 'Secondary text color' {
-	"DeepDark": "#CCCCCC",
-	"BreezeDark": "#bdc3c7",
-	"Vertex Dark": "#AEAFB0",
-	"Arc Dark": "#B3BAC5",
-	"Firefox Dark": "#606376",
-	"Firefox57": "#D0D0D0",
-	"Discord": "#ADA8AA",
-	"YouTubeDark": "#7F7F7F",
-	"Mint-Y-Dark": "#D5DADA",
-	"9anime": "#747474",
-	"Black&White": "#828282",
-	"Yellow_petrocompletions": "#9F9999",
-	"Yellow2": "#fff8e1",
-	"Ubuntu_grey": "#E6E5E3",
-	"Ubuntu_purple": "#E6E5E3",
-	"Orange": "#ffede1",
-	"Jisho_夜明け": "#986E3F",
-	"Custom": "/*[[custom-dimmer-text]]*\/"
-}
-@var color custom-dimmer-text "dimmer-text" "#CCCCCC"
+@var checkbox black-bars "Make black bars transparent" 0
 
 ==/UserStyle== */
 
@@ -152,183 +53,258 @@
 	/*Main color variables*/
 	:root
 	{
-		/*User colors*/
-		--main-color: /*[[mainColor]]*/;
-		--main-background: /*[[mainBackground]]*/;
-		--second-background: /*[[secondBackground]]*/;
-		--hover-background: /*[[hoverBackground]]*/;
-		--main-text: /*[[mainText]]*/;
-		--dimmer-text: /*[[dimmerText]]*/;
-
-		/*DeepDark colors*/
-		/*
-		--main-color: #00adee;
-		--main-background: #111111;
-		--second-background: #181818;
-		--hover-background: #232323;
-		--main-text: #eff0f1;
-		--dimmer-text: #CCCCCC;
-		*/
-
-		/*KDE colors*/
-		/*
-		--main-color: #3DAEE9;
-		--main-background: #232629;
-		--second-background: #2a2e32;
-		--hover-background: #31363b;
-		--main-text: #eff0f1;
-		--dimmer-text: #bdc3c7;
-		*/
-
-		/*Vertex Dark colors*/
-		/*
-		--main-color: #4080fb;
-		--main-background: #2B2B2C;
-		--second-background: #353638;
-		--hover-background: #515254;
-		--main-text: #F3F3F5;
-		--dimmer-text: #AEAFB0;
-		*/
-
-		/*Arc Dark colors*/
-		/*
-		--main-color: #5294E2;
-		--main-background: #343944;
-		--second-background: #383C4A;
-		--hover-background: #414A59;
-		--main-text: #C1C8D1;
-		--dimmer-text: #B3BAC5;
-		*/
-
-		/*Firefox Dark colors*/
-		/*
-		--main-color: #5675B9;
-		--main-background: #272B35;
-		--second-background: #181D20;
-		--hover-background: #353A44;
-		--main-text: #E3EEF9;
-		--dimmer-text: #606376;
-		*/
-
-		/*Firefox57 Dark colors*/
-		/*
-		--main-color: #4080FB;
-		--main-background: #0C0C0D;
-		--second-background: #252526;
-		--hover-background: #323234;
-		--main-text: #F9F9FA;
-		--dimmer-text: #D0D0D0;
-		*/
-
-		/*Discord colors*/
-		/*
-		--main-color: #7289DA;
-		--main-background: #1E2124;
-		--second-background: #2F3136;
-		--hover-background: #484B51;
-		--main-text: #FFFFFF;
-		--dimmer-text: #ADA8AA;
-		*/
-
-		/*YouTube colors*/
-		/*
-		--main-color: #E52117;
-		--main-background: #111111;
-		--second-background: #232323;
-		--hover-background: #343434;
-		--main-text: #E1E1E1;
-		--dimmer-text: #7F7F7F;
-		*/
-
-		/*Mint-Y-Dark colors*/
-		/*
-		--main-color: #9AB87C;
-		--main-background: #2F2F2F;
-		--second-background: #383838;
-		--hover-background: #404040;
-		--main-text: #FFFFFF;
-		--dimmer-text: #D5DADA;
-		*/
-
-		/*9anime colors*/
-		/*
-		--main-color: #723f8c;
-		--main-background: #0B0A0D;
-		--second-background: #17151C;
-		--hover-background: #1E1C25;
-		--main-text: #B4B4B4;
-		--dimmer-text: #747474;
-		*/
-
-		/*Black and white*/
-		/*
-		--main-color: #ffffff;
-		--main-background: #000000;
-		--second-background: #0a0a0a;
-		--hover-background: #0f0f0f;
-		--main-text: #b4b4b4;
-		--dimmer-text: #828282;
-		*/
-
-		/*Yellow (colors from petrocompletions)*/
-		/*
-		--main-color: #FFC700;
-		--main-background: #141414;
-		--second-background: #202222;
-		--hover-background: #353838;
-		--main-text: #EFF0F1;
-		--dimmer-text: #9F9999;
-		*/
-
-		/*Yellow 2*/
-		/*
-		--main-color: #ffc700;
-		--main-background: #0a0800;
-		--second-background: #0c0a04;
-		--hover-background: #0f0d05;
-		--main-text: #fffdf5;
-		--dimmer-text: #fff8e1;
-		*/
-
-		/*Ubuntu grey colors*/
-		/*
-		--main-color: #EF7847;
-		--main-background: #312D2A;
-		--second-background: #3D3C38;
-		--hover-background: #59564D;
-		--main-text: #F2F1EF;
-		--dimmer-text: #E6E5E3;
-		*/
-
-		/*Ubuntu purple colors*/
-		/*
-		--main-color: #EF7847;
-		--main-background: #2C071A;
-		--second-background: #430B28;
-		--hover-background: #520D30;
-		--main-text: #F2F1EF;
-		--dimmer-text: #E6E5E3;
-		*/
-
-		/*Orange*/
-		/*
-		--main-color: #ff6905;
-		--main-background: #0a0400;
-		--second-background: #0e0702;
-		--hover-background: #110903;
-		--main-text: #fff9f5;
-		--dimmer-text: #ffede1;
-		*/
-
-		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
-		/*
-		--main-color: #EF7D6C;
-		--main-background: #332222;
-		--second-background: #2A1B1B;
-		--hover-background: #863B2F;
-		--main-text: #EFB26C;
-		--dimmer-text: #986E3F;
-		*/
+		if stylus-deepdark-style == "Deep-Dark" {
+			--main-color: #00adee;
+			--main-background: #111;
+			--second-background: #181818;
+			--hover-background: #232323;
+			--main-text: #eff0f1;
+			--dimmer-text: #ccc;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .3);
+		}
+		else if stylus-deepdark-style == "Inspired-Dark" {
+			--main-color: #5e8acc;
+			--main-background: #232629;
+			--second-background: #181818;
+			--hover-background: #515254;
+			--main-text: #eee;
+			--dimmer-text: #ccc;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Breeze-Dark" {
+			--main-color: #3daee9;
+			--main-background: #232629;
+			--second-background: #2a2e32;
+			--hover-background: #31363b;
+			--main-text: #eff0f1;
+			--dimmer-text: #bdc3c7;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Vertex-Dark" {
+			--main-color: #4080fb;
+			--main-background: #2b2b2c;
+			--second-background: #353638;
+			--hover-background: #515254;
+			--main-text: #f3f3f5;
+			--dimmer-text: #aeafb0;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Arc-Dark" {
+			--main-color: #5294e2;
+			--main-background: #343944;
+			--second-background: #383c4a;
+			--hover-background: #414a59;
+			--main-text: #c1c8d1;
+			--dimmer-text: #b3bac5;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Firefox-Dark" {
+			--main-color: #5675b9;
+			--main-background: #272b35;
+			--second-background: #181d20;
+			--hover-background: #353a44;
+			--main-text: #e3eef9;
+			--dimmer-text: #bec0cc;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Firefox-57" {
+			--main-color: #4080fb;
+			--main-background: #0c0c0d;
+			--second-background: #252526;
+			--hover-background: #323234;
+			--main-text: #f9f9fa;
+			--dimmer-text: #d0d0d0;
+			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		}
+		else if stylus-deepdark-style ==  "Discord" {
+			--main-color: #7289da;
+			--main-background: #1e2124;
+			--second-background: #2f3136;
+			--hover-background: #484b51;
+			--main-text: #fff;
+			--dimmer-text: #ada8aa;
+			--shadow: 0 1px 0.5px rgba(47, 49, 54, .23);
+		}
+		else if stylus-deepdark-style == "YouTube-Dark" {
+			--main-color: #e52117;
+			--main-background: #111;
+			--second-background: #232323;
+			--hover-background: #343434;
+			--main-text: #e1e1e1;
+			--dimmer-text: #7f7f7f;
+			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		}
+		else if stylus-deepdark-style == "Mint-Y-Dark" {
+			--main-color: #9ab87c;
+			--main-background: #2f2f2f;
+			--second-background: #383838;
+			--hover-background: #404040;
+			--main-text: #fff;
+			--dimmer-text: #d5dada;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "9anime" {
+			--main-color: #723f8c;
+			--main-background: #0b0a0d;
+			--second-background: #17151c;
+			--hover-background: #1E1c25;
+			--main-text: #f9f6fb;
+			--dimmer-text: #cac0cf;
+			--shadow: 0 1px 0.5px rgba(54, 54, 54, .13);
+		}
+		else if stylus-deepdark-style == "Black-and-White" {
+			--main-color: #fff;
+			--main-background: #000;
+			--second-background: #1e1e1e;
+			--hover-background: #313131;
+			--main-text: #fff;
+			--dimmer-text: #aaa;
+			--shadow: 0 1px 0.5px rgba(54 ,54 ,54, .2);
+		}
+		else if stylus-deepdark-style == "Yellow" {
+			--main-color: #ffc700;
+			--main-background: #141414;
+			--second-background: #202222;
+			--hover-background: #353838;
+			--main-text: #eff0f1;
+			--dimmer-text: #9f9999;
+			--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+		}
+		else if stylus-deepdark-style == "Yellow-2" {
+			--main-color: #ffc700;
+			--main-background: #0a0800;
+			--second-background: #0c0a04;
+			--hover-background: #0f0d05;
+			--main-text: #fffdf5;
+			--dimmer-text: #fff8e1;
+			--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+		}
+		else if stylus-deepdark-style == "Ubuntu-Grey" {
+			--main-color: #ef7847;
+			--main-background: #312d2a;
+			--second-background: #3d3c38;
+			--hover-background: #59564d;
+			--main-text: #f2f1ef;
+			--dimmer-text: #e6e5e3;
+			--shadow: 0 1px 0.5px rgba(89, 86, 77, .12);
+		}
+		else if stylus-deepdark-style == "Ubuntu-Purple" {
+			--main-color: #ef7847;
+			--main-background: #2c071a;
+			--second-background: #430b28;
+			--hover-background: #520D30;
+			--main-text: #f2f1ef;
+			--dimmer-text: #e6e5e3;
+			--shadow: 0 1px 0.5px rgba(82, 13, 48, .2);
+		}
+		else if stylus-deepdark-style == "Orange" {
+			--main-color: #ff6905;
+			--main-background: #0a0400;
+			--second-background: #0e0702;
+			--hover-background: #110903;
+			--main-text: #fff9f5;
+			--dimmer-text: #ffede1;
+			--shadow: 0 1px 0.5px rgba(255, 105, 5, .1);
+		}
+		else if stylus-deepdark-style == "Jisho" {
+			--main-color: #ef7d6c;
+			--main-background: #332222;
+			--second-background: #2a1b1b;
+			--hover-background: #863b2f;
+			--main-text: #EFB26C;
+			--dimmer-text: #986E3F;
+			--shadow: 0 1px 0.5px rgba(37, 19, 5, .19);
+		}
+		else if stylus-deepdark-style == "Adapta-Nokto" {
+			--main-color: #00bcd4;
+			--main-background: #222d32;
+			--second-background: #263238;
+			--hover-background: #2a353b;
+			--main-text: #fff;
+			--dimmer-text: #9b9b9b;
+			--shadow: 0 1px 0.5px  rgba(61, 77, 86, .2);
+		}
+		else if stylus-deepdark-style == "Adapta-Breath-Nokto" {
+			--main-color: #1abc9c;
+			--main-background: #222d32;
+			--second-background: #263238;
+			--hover-background: #2a353b;
+			--main-text: #fff;
+			--dimmer-text: #9b9b9b;
+			--shadow: 0 1px 0.5px  rgba(42, 53, 59, .32);
+		}
+		else if stylus-deepdark-style == "Solarized-Dark" {
+			--main-color: #268bd2;
+			--main-background: #073642;
+			--second-background: #03303c;
+			--hover-background: #002b36;
+			--main-text: #fdf6E3;
+			--dimmer-text: #eee8d5;
+			--shadow: 0 1px 0.5px  rgba(0, 43, 54, .3);
+		}
+		else if stylus-deepdark-style == "Solarized-Light" {
+			--main-color: #268bd2;
+			--main-background: #fdf6e3;
+			--second-background: #f5efdc;
+			--hover-background: #eee8d5;
+			--main-text: #073642;
+			--dimmer-text: #586e75;
+			--shadow: 0 1px 0.5px  rgba(222, 216, 196, .2);
+		}
+		else if stylus-deepdark-style == "Gruvbox-Dark" {
+			--main-color: #fe8019;
+			--main-background: #1d2021;
+			--second-background: #282828;
+			--hover-background: #3c3836;
+			--main-text: #fbf1c7;
+			--dimmer-text: #ebdbb2;
+			--shadow: 0 1px 0.5px  rgba(60, 56, 54, .22);
+		}
+		else if stylus-deepdark-style == "Gruvbox-Light" {
+			--main-color: #af3a03;
+			--main-background: #f9f5d7;
+			--second-background: #fbf1c7;
+			--hover-background: #ebdbb2;
+			--main-text: #282828;
+			--dimmer-text: #3c3836;
+			--shadow: 0 1px 0.5px  rgba(235, 219, 178, .33);
+		}
+		else if stylus-deepdark-style == "NierAutomata-Dark" {
+			--main-color: #fe8019;
+			--main-background: #33302a;
+			--second-background: #48453c;
+			--hover-background: #7c6f64;
+			--main-text: #dad4bb;
+			--dimmer-text: #bab5a1;
+			--shadow: 0 1px 0.5px  rgba(124, 111, 100, .15);
+		}
+		else if stylus-deepdark-style == "NierAutomata-Light" {
+			--main-color: #fe8019;
+			--main-background: #d1cdb7;
+			--second-background: #dcd8c0;
+			--hover-background: #bab5a1;
+			--main-text: #48453c;
+			--dimmer-text: #33302a;
+			--shadow: 0 1px 0.5px rgba(186, 181, 161, 2);
+		}
+		else if stylus-deepdark-style == "HavocOS" {
+			--main-color: #0794d4;
+			--main-background: #141618;
+			--second-background: #1c1e20;
+			--hover-background: #212528;
+			--main-text: #fff;
+			--dimmer-text: #b9baba;
+			--shadow: 0 1px 0.5px rgba(185, 186, 186, .04);
+		}
+		else if stylus-deepdark-style == "Custom" {
+			--main-color: mainColor;
+			--main-background: mainBackground;
+			--second-background: secondBackground;
+			--hover-background: hoverBackground;
+			--main-text: mainText;
+			--dimmer-text: dimmerText;
+			--shadow: 0 1px 0.5px colorShadow;
+		}
 
 		--border-color: var(--hover-background);
 		/*--dim-white: rgba(255, 255, 255, .95);*/
@@ -475,15 +451,21 @@
 	#yt-masthead-notifications-content,#yt-masthead-notifications-content .item-section > li > .yt-lockup-tile, #yt-masthead-notifications-content .yt-ui-ellipsis,.yt-uix-form-input-text,.yt-uix-form-input-fluid .yt-uix-form-input-text, .yt-uix-form-input-fluid .yt-uix-form-input-textarea,#comment-settings .comment-settings-control .yt-uix-form-input-textarea,#browse-items-primary .item-section > li:last-child > .yt-lockup-tile, .branded-page-v2-primary-col .branded-page-box:last-child, .section-list li:last-child .item-section li:last-child .branded-page-box,#playlist-settings-editor .yt-dialog-footer,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel,.ac-renderer,.channel-autocomplete-list-item,.dashboard-widget-videos .video-list-item .video-title a:hover,#subscription-manager-container tbody td,.create-playlist-widget-form .create-playlist-bottom-section,#pl-header .pl-header-description-text:hover,#pl-header .pl-header-title:hover,.gssb_i td,#appbar-content,td:hover,.Zm-ct-Md,.timedtext-content,.multitrack-timeline,.iph-dialog, .iph-dialog-iframe,.annotator-endscreen-splash,#audio-ui-search-input-field,#featured-tracks-header,#inline-editor-main,.metadata-editor-container .video-settings-form,.live-comments-emoji-picker-tab-row,.live-chat-widget .comment.alternate-row,.live-chat-widget .comment,.yt-rtl,.yt-ltr,.footer-container,#footer .yt-picker,.xta .obc,.nbc,.part_hide_footer,.howto-promo-container,.social-connector,.account-container,#storyboard,storyboard *,.track-list li.track .audiolibrary-track-head,.yt-uix-overlay-actions,.HPHGCHB-F-j,.HPHGCHB-b-d,.live-welcome-intro,.account-feature-v2-grid-items li,.video-dds .list,.tabbed-page .tab,#vm-pagination,.advanced-search-footer,#non-appbar-vm-video-actions-bar .vm-video-actions-inner, .view-all-playlists #non-appbar-vm-video-actions-bar .vm-video-actions-inner,.related-item-dismissed-container,#dashboard-header-stats li,.analytics-sparkline-card.yt-uix-sessionlink,.dashboard-widget-header:hover .dashboard-widget-overlay-icon, .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls, .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls,.dashboard-widget.notification, .dashboard-widget .dashboard-widget-content, .dashboard-widget .dashboard-widget-config,.dashboard-widget-header:hover, .dashboard-widget .dashboard-widget-config .dashboard-widget-header, .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header, .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header,.subscription-preferences-overlay-content .yt-uix-overlay-actions,.nbc,.yt-dialog-fg, .yt-uix-overlay-fg ,.yt-ui-menu-item,.pl-video,.watch-stage-mode #player-playlist .player-height,#player-playlist .playlist-header,#player-playlist .playlist-videos-list,.yt-uix-button-c4-view-action,.show-guide #appbar-guide-menu,.yt-uix-button-nakedicon,#player-playlist .playlist-videos-list li,.channel-header .secondary-header-contents,.channel-header .primary-header-contents, #guide-container,.branded-page-v2-primary-col .branded-page-box.video-player-view-component:last-child, .branded-page-v2-primary-col .branded-page-box.c4-featured-content:last-child, .branded-page-v2-primary-col .branded-page-box.c4-featured-content-editor:last-child, .branded-page-v2-primary-col .branded-page-box.welcome:last-child,.branded-page-v2-secondary-col .yt-card,#browse-items-primary .item-section > li > .yt-lockup-tile, #browse-items-primary .item-section > li > .multirow-shelf, .browse-list-item-container.feed-item-container.branded-page-box, .compact-shelf.branded-page-box,.guide-pinned .guide-pinning-enabled #appbar-guide-menu,body #footer-container,.branded-page-v2-top-row #channel-subheader,.yt-uix-expander-collapsed .yt-ui-ellipsis.yt-ui-ellipsis-10,.video-player-view-component .description,.yt-lockup-title a, .yt-lockup:hover a, .yt-lockup:hover .yt-lockup-meta a, .yt-lockup:hover .yt-lockup-description a,.video-player-view-component .video-detail .title,.branded-page-v2-subnav-container,#channels-browse-content-grid.grid-lockups-container,.yt-card,.yt-ui-ellipsis,#watch8-action-buttons, .yt-card .yt-uix-expander .yt-uix-button-expander,.comment-simplebox-renderer-collapsed-content,.exp-comments-refresh .comment-thread-renderer:not(:last-of-type) .comment-replies-renderer,.sitewide-consent-visible .yt-consent-banner,.comment-simplebox-renderer,.yt-uix-button-menu,.yt-ui-menu-content,.search-header,.yt-masthead-account-picker.yt-uix-clickcard-card-content,.yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border,.yt-masthead-picker-footer,.iv-card-content,.ytp-ce-expanding-overlay-background, #appbar-nav
 	{
 		background: var(--main-background) !important;
-		border-color: var(--border-color) !important;
+		border-color: var(--hover-background) !important;
 	}
 	.watch-stage-mode #theater-background,#creator-appbar-actions-bar,html:not(.wf-active) body:not(.index):not(.home-page):not(.press-page):not(.copyright-page):not(.policies-page):not([class*="date-"]):not([ng-app="ytdev"]), body:not([class*="date-"]) #page-container, body:not([class*="date-"]) #body-container,.share-panel-url,.share-panel-start-at-time,.share-embed-code,.share-email .share-email-recipients, .share-email .share-email-note, #player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing
 	{
 		background: var(--second-background) !important;
 	}
-	.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen, .player-api, ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy
+	.html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen, .player-api, ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy
 	{
 		background: transparent !important;
+	}
+    if black-bars {
+        .html5-video-player:not(.ytp-transparent)
+        {
+			background-color: transparent !important;
+		}
 	}
 	#yt-masthead-container
 	{
@@ -516,7 +498,7 @@
 	}
 	.vm-list-view .vm-video-item-content-horizontal-divider
 	{
-		background: var(--border-color) !important;
+		background: var(--hover-background) !important;
 	}
 	.comment-renderer.channel-owner .comment-author-text:hover,.comment-renderer-author-comment-badge.creator:hover
 	{
@@ -539,11 +521,11 @@
 	/*Borders section*/
 	.exp-comments-refresh .comment-thread-renderer:last-of-type,#audio-media-list .scroll-content .audio-original:hover,#advertising-note,.HPHGCHB-T-d,.HPHGCHB-r-h,.HPHGCHB-r-a,.add-widget-menu-content li,.yt-video-picker-scroll-container,#browse-items-primary .item-section > li > .yt-lockup-tile, .branded-page-v2-primary-col .branded-page-box, .section-list li .item-section .branded-page-box,.branded-page-v2-primary-col .yt-uix-inlineedit-view-container .branded-page-box,.branded-page-v2-subnav-container,.yt-uix-languagepicker-search-container,.yt-ui-menu-content li.yt-ui-menu-new-section-separator,.translation-editor-header .translation-editor-column-half, .translation-editor-header .translation-editor-column-divider,.HPHGCHB-K-h .datePickerWeekdayLabel, .HPHGCHB-K-h .datePickerWeekendLabel,.HPHGCHB-K-f .HPHGCHB-K-j input,.HPHGCHB-K-h,.HPHGCHB-r-a,.HPHGCHB-H-g .HPHGCHB-H-d.HPHGCHB-H-e,.HPHGCHB-t-a,.HPHGCHB-ab-e,.account-feature-v2-grid-items .account-features-v2-grid-item-title,.about-metadata-label-border-top,.acl-target-list-container[data-which=moderator],.yt-uix-button-menu .yt-uix-button-menu-item,.add-to-widget .playlists,.comment-video-link,#video-title,#top-bar,.account-content .account-section.account-bordered-section,.yt-uix-form-input-select, .yt-uix-form-input-text, .yt-uix-form-input-textarea,.yt-uix-form-input-select:hover, .yt-uix-form-input-text:hover, .yt-uix-form-input-textarea:hover,.yt-uix-form-input-fluid .yt-uix-form-input-text, .yt-uix-form-input-fluid .yt-uix-form-input-textarea,.account-status-v2,.account-status-scales,.commenthub .comment-search,.yt-uix-form-input-checkbox-container:hover .yt-uix-form-input-checkbox-element, .yt-uix-form-input-radio-container:hover .yt-uix-form-input-radio-element,.yt-uix-form-input-radio-element, .yt-uix-form-input-checkbox-element,#vm-myvideos-search-box, #vm-playlists-search-box, #vm-tags-search-box,.yt-gb-shelf-main-content,#pl-header .privacy-icon-present .pl-header-details::before,.gssb_e,.Zm-Jw-kq-Jw-Fo,.Zm-Jw-kq-cb,.Zm-Zs-jk .Zm-at-Zb-Md,.d-Ib,.creator-editor-header,.audio-ui-featured-row,.vm-list-view .vm-video-list .vm-video-item,.top-menu,.track-list li.track,#creator-subheader,.yt-horizontal-rule,.guide-section-separator,#yt-masthead .yt-masthead-logo-container,#yt-masthead-container,#appbar-nav,#masthead-appbar,#watch7-sidebar .watch-sidebar-separation-line,.pl-video,#pl-header,.progress-bar-uploading .progress-bar-progress,.live-chat-widget #comments-scroller,.html5-compatibility-table li,.tabbed-page .options-bar,#comment-settings .comment-settings-section,#comment-settings,#comment-settings .comment-settings-item,.video-dds,.tabbed-page .tabs-wrapper,.tabbed-page .tabs-area,.dashboard-widget:hover .dashboard-widget-display-title, .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-display-title, .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-display-title,.feed-header,.yt-lockup-playlist-item,.ytp-cards-teaser .ytp-cards-teaser-box,#c4-header-bg-container,#footer-main,div.about-metadata-label:nth-child(7),div.about-metadata-label:nth-child(9),.yt-card .yt-uix-tabs, .watch-card-list tr td, .search-shelf, .search-refinements, .search-exploratory-line
 	{
-		border-color: var(--border-color) !important;
+		border-color: var(--hover-background) !important;
 	}
 	#creator-sidebar-separator
 	{
-		color: var(--border-color) !important;
+		color: var(--hover-background) !important;
 	}
 	.tabbed-page .tab.active
 	{
@@ -559,7 +541,7 @@
 	}
 	.yt-card.yt-uix-expander .yt-uix-button-expander
 	{
-		border-top: 1px solid var(--border-color) !important;
+		border-top: 1px solid var(--hover-background) !important;
 	}
 	/* Retain no border on "Show Chat" button */
 	#watch-sidebar-live-chat .yt-uix-expander-collapsed-body
@@ -734,7 +716,7 @@
 	}
 	#yt-masthead-notifications-title,#video-title,.mediapicker-audio.audio-track .audio-title,#error-page-content p,.yt-uix-button.yt-uix-button-size-default.yt-uix-button-primary.yt-uix-button-empty.comment-simplebox-submit.yt-uix-sessionlink:hover,.empty-upsell-messages h2,.editor-boolean-setting .setting-label,.casual-channel .channel-settings-editor h3,.casual-channel .channel-settings-editor .yt-dialog-title,body:not([class*="date-"]) h4,.vm-list-view .vm-video-title .vm-video-title-content,.overlay-confirmation-channel-info,.create-playlist-widget-form .yt-uix-form-label,#masthead-search-term,.gssb_m,#guide-container .guide-item.guide-item-selected:hover,div.about-metadata-label:nth-child(5) > span:nth-child(1),div.about-metadata-label:nth-child(7) > span:nth-child(1),#creator-sidebar .creator-sidebar-branding h1,.iph-dialog a,.iph-dialog-title,.blur-effect-entry .blur-effect-title,.menu-tab:hover, .menu-tab.selected,#player-and-info-pane #video-info h2,.HPHGCHB-F-d > p:nth-child(1),.metadata-container h3,.metadata-thumbnail-chooser h3,.upload-item-sidebar-text h3,.upload-footer-header,.upload-sidebar-header,.Zm-at-Zb-mi-Yb-Do .Zm-at-Zb-eu,.Zm-Jw-kq-cb,.Zm-ii-tc,#upload-button-text,.yt-picker-header h3.yt,.yt-uix-clickcard-title, .yt-uix-hovercard-title,.yt-alert-default.yt-alert-info, .yt-alert-actionable.yt-alert-info, .yt-alert-naked.yt-alert-info .yt-alert-icon, .yt-alert-small.yt-alert-info,.HPHGCHB-P-b,a.yt-uix-button-primary > span:nth-child(1),button.open-banner-image-editor > span:nth-child(2),.yt-uix-button-icon-wrapper + .yt-uix-button-content,button.yt-uix-button-primary:nth-child(2) > span:nth-child(1),.appbar-guide-notification,#creator-sidebar h3, #creator-sidebar h3 a,button.yt-uix-button-primary:nth-child(1) > span:nth-child(1),.account-header h1,.account-info-item .account-info-label,.yt-uix-button-content,#main-title,.live-welcome-intro-copy .headline,#creator-subheader h2,.category-title-wrap:hover .category-title-link .category-title,.category-header .category-title,.comment-simplebox-text, .comment-simplebox-prompt,.guide-item.guide-item-selected:hover,.guide-item.guide-item-selected,.comment-renderer.channel-owner .comment-author-text:hover,.comment-renderer.channel-owner .comment-author-text,.comment-renderer-author-comment-badge.creator .comment-author-text,.html5-video-player a,.branded-page-base-bold-titles .branded-page-module-title,.branded-page-module-title a:visited, .branded-page-module-title a, .epic-nav-item-heading:active,.branded-page-related-channels h3 a, .branded-page-related-channels h3,.epic-nav-item-heading,#eow-title,.yt-consent-banner .yt-consent-content, .yt-lockup-title a,.yt-masthead-picker-name,.ytp-ce-video-title,.yt-card .yt-uix-button-expander,.yt-card .yt-uix-button-expander:hover, .pl-video-title-link, .ytp-sb-classic .ytp-sb-count, .ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text, .ytp-sb-classic .ytp-sb-count, .ytp-sb-classic .ytp-sb-unsubscribe .ytp-sb-text, #dashboard-header h3, #dashboard-header h2 a, .dashboard-widget-header h2 a
 	{
-		color: var(--dim-white) !important;
+		color: var(--main-text) !important;
 		text-shadow: none !important;
 	}
 	.yt-dialog-content,.yt-video-picker-modal h3,#collaboration-settings .revoke-links-container > *,#collaboration-settings .create-invite-link > *,.yt-uix-form-input-fluid .yt-uix-form-input-text, .yt-uix-form-input-fluid .yt-uix-form-input-textarea,.country-inline,.HPHGCHB-K-h .datePickerMonth,#pl-header .pl-header-description-text,.yt-uix-clickcard-card-content, .yt-uix-hovercard-card-content,.ytp-ce-channel-metadata,.yt-uix-button-subscribe-branded + .yt-subscription-button-subscriber-count-branded-horizontal, .yt-uix-button-subscribe-unbranded + .yt-subscription-button-subscriber-count-unbranded-horizontal, .yt-uix-button-subscribe-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal, .yt-uix-button-subscribed-branded + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed, .yt-uix-button-subscribed-unbranded + .yt-subscription-button-subscriber-count-unbranded-horizontal.subscribed, .yt-uix-button-subscribed-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.analytics-sparkline-card .infos .title,.dashboard-widget-header h2,.vm-video-actions-delete-warning,#video-settings-section,.iph-dialog-content,.yt-default h1, .yt-default h2, .yt-default h3, .yt-default h4, .yt-default h5, .yt-default h6, h1.yt, h2.yt, h3.yt, h4.yt, h5.yt, h6.yt,.audio-ui-featured-row td,.enhance-effect .slider-readout, .enhance-effect .property-title,#player-and-info-pane #video-info dd,#player-and-info-pane #video-info dt,.HPHGCHB-W-q .HPHGCHB-W-F,.HPHGCHB-ob-d,.HPHGCHB-P-e h3,.metadata-share-text,.upload-other-options-list .upload-option-text,.Zm-Ob-pi > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2),.live-chat-widget .comment-text,.pl-video-annotation-container,.yt-uix-expander-collapsed .yt-uix-expander-collapsed-body,#yt-lang-alert-content,.idle-message, .no-results-message,.audio-library-tab-subtitle,.audiolibrary-column-title, .audiolibrary-column-title-expand,.HPHGCHB-O-b h3,.HPHGCHB-K-f .HPHGCHB-K-j input,.HPHGCHB-g-f,#comment-settings .comment-settings-label,.account-settings-info,h3.account-section-header,.account-settings-item .account-settings-label,.yt-uix-form-input-select-element option,.yt-uix-form-input-select-content,.account-status-copyright-status-v2-details-table-type-column, .account-status-copyright-status-v2-details-table-event-column, .account-status-copyright-status-v2-details-table-content-column, .account-status-copyright-status-v2-title, .account-status-community-guidelines-status-v2-details-table-type-column, .account-status-community-guidelines-status-v2-details-table-event-column, .account-status-community-guidelines-status-v2-details-table-content-column, .account-status-community-guidelines-status-v2-title, .account-status-v2-strike-type-label,#comment-settings .comment-settings-title,.yt-alert-naked .yt-alert-content,.subscription-confirmation-dialog .subscription-confirmation-display-name,.yt-dialog-base .yt-dialog-header .yt-dialog-title,#watch7-sidebar .watch-sidebar-head,.secondary-header-contents .nav-text,#yt-uix-videoactionmenu-menu h3,.yt-subscription-button-subscriber-count-branded-horizontal,.add-to-widget .create-playlist-item,.yt-ui-menu-item,.yt-uix-button-menu .yt-uix-button-menu-item,.ytp-cards-teaser .ytp-cards-teaser-text,.yt-uix-button-subscribed-branded + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.yt-uix-button-subscribed-branded + .yt-uix-subscription-preferences-button + .yt-subscription-button-subscriber-count-branded-horizontal.subscribed,.yt-uix-button.yt-uix-button-subscribed-branded,.exp-wn-font-14 .related-list-item span.title,#eow-description,.exp-responsive #content .yt-uix-button-subscription-container .yt-subscriber-count,#body #uploaded-videos,yt-card .yt-uix-button-expander,yt-card .yt-uix-button-expander:hover,hr, html, i, iframe, img, ins, kbd, label, legend, html:not(.wf-active) body:not(.index):not([class*="date-"]) li, menu, object, html:not(.wf-active) body:not([class*="date-"]) ol, html:not(.wf-active) body:not(.index):not(.home-page):not(.press-page):not(.copyright-page):not(.policies-page):not([class*="date-"]):not([ng-app="ytdev"]) p, pre, q, s, samp, small, strike, body:not([class*="date-"]) strong, sub, abbr, acronym, address, applet,body:not([class*="date-"]) b, big, html:not(.wf-active) blockquote,.comment-section-header-renderer,div.yt-ui-ellipsis:nth-child(1),.yt-uix-form-input-text,.iv-card h2,.ytp-ce-website-title, .guide-item, .yt-uix-button, .yt-new-promo-page-header h1, .yt-new-promo-page-section-text h2, .yt-lockup .yt-lockup-meta a, .yt-lockup .yt-lockup-description a, .yt-lockup .yt-lockup-byline a, .pl-video-owner a, .pl-video-added-by, .pl-video-added-by a, .video-list .video-list-item .description, .video-list .video-list-item .stat, .comment-history-entry-renderer-content, .watch-view-count
@@ -964,7 +946,7 @@
 	}
 	#P-content input + label::before,.P-horz
 	{
-		border-color: var(--border-color) !important;
+		border-color: var(--hover-background) !important;
 	}
 	#P-content input:checked + label::before
 	{
@@ -1162,7 +1144,7 @@
 	.account-page-header,
 	#account-page-header-title
 	{
-		color: var(--dim-white) !important;
+		color: var(--main-text) !important;
 	}
 	#account-page-header-subtitle
 	{
@@ -1395,8 +1377,7 @@
 		fill: var(--dimmer-text);
 		stroke: none;
 	}
-	svg g text
-	{
+	svg g text {
 		fill: var(--main-text) !important;
 		stroke: none !important;
 	}

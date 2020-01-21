@@ -330,7 +330,7 @@
 	/*Background for the entire page*/
 	html, ytd-browse, ytd-watch, ytd-search, ytd-app, ytd-app[is-watch-page], [class*="ytd-watch-flexy"],
 	.style-scope.ytd-page-manager.hide-skeleton,
-	.account-container, 
+	.account-container
 	{
 		background-color: var(--main-background) !important;
 	}

@@ -3051,7 +3051,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	#text.yt-alert-with-actions-renderer
+	#text.yt-alert-with-actions-renderer, #alert-message.yt-alert-with-actions-renderer
 	{
 		color: var(--main-text) !important;
 	}

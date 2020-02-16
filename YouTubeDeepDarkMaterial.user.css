@@ -2128,6 +2128,23 @@
 	{
 		background: var(--second-background) !important;
 	}
+	/*show mode was enabled*/
+	#container.yt-live-chat-restricted-participation-renderer
+	{
+		background: var(--main-background) !important;
+	}
+	#contents.yt-live-chat-mode-change-message-renderer
+	{
+		background: var(--hover-background) !important;
+	}
+	#contents.yt-live-chat-mode-change-message-renderer, #subtext.yt-live-chat-mode-change-message-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	yt-live-chat-toast-renderer[is-showing-message] /*info for show mode*/
+	{
+		background: var(--hover-background) !important;
+	}	
 	/*dropmenu*/
 	#menu.yt-live-chat-text-message-renderer
 	{

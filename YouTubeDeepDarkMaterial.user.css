@@ -2131,7 +2131,7 @@
 	/*show mode was enabled*/
 	#container.yt-live-chat-restricted-participation-renderer
 	{
-		background: var(--main-background) !important;
+		background: var(--second-background) !important;
 	}
 	#contents.yt-live-chat-mode-change-message-renderer
 	{

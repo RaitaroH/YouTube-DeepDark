@@ -376,8 +376,7 @@
 		background-color: var(--second-background) !important;
 		border-bottom-color: var(--hover-background) !important;
 	}
-	yt-icon-button svg
-	{
+	yt-icon-button svg {
 		fill: var(--dimmer-text) !important;
 	}
 	yt-icon-button:hover svg
@@ -3403,8 +3402,7 @@
 		color: var(--main-text) !important;
 	}
 	/*Footer*/
-	body #footer-container
-	{
+	body #footer-container {
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;

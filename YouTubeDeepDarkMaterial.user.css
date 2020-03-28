@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.2.9
+@version 3.2.10
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -376,7 +376,8 @@
 		background-color: var(--second-background) !important;
 		border-bottom-color: var(--hover-background) !important;
 	}
-	yt-icon-button svg {
+	yt-icon-button svg
+	{
 		fill: var(--dimmer-text) !important;
 	}
 	yt-icon-button:hover svg
@@ -492,6 +493,10 @@
 	{
 		color: var(--main-color) !important;
 		fill: var(--main-color) !important;
+	}
+	ytd-guide-entry-renderer[active]
+	{
+		background-color: var(--hover-background) !important;
 	}
 	#sections.ytd-guide-renderer > .ytd-guide-renderer:not(:last-child), #guide-links-primary.ytd-guide-renderer, #guide-content.ytd-app
 	{
@@ -947,7 +952,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
+
 	/*info warning - covid19*/
 	ytd-clarification-renderer
 	{
@@ -1633,9 +1638,36 @@
 		background-color: var(--second-background) !important;
 	}
 
-	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer
+	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer,
+	#header.ytd-engagement-panel-title-header-renderer,
+	#content.ytd-engagement-panel-section-list-renderer,
+	ytd-transcript-footer-renderer[panel]
 	{
 		background-color: var(--second-background) !important;
+	}
+	.cue.ytd-transcript-body-renderer,
+	.cue-group-start-offset.ytd-transcript-body-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	ytd-transcript-body-renderer[refresh] .cue-group.active.ytd-transcript-body-renderer
+	{
+		border-left-color: var(--main-color) !important;
+		background-color: var(--hover-background) !important;
+	}
+	ytd-transcript-body-renderer[refresh] .cue-group.active.ytd-transcript-body-renderer .cue-group-start-offset.ytd-transcript-body-renderer,
+	.cue.ytd-transcript-body-renderer.active
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-transcript-body-renderer[refresh] .cue-group.ytd-transcript-body-renderer:hover .cue-group-start-offset.ytd-transcript-body-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	.cue.ytd-transcript-body-renderer:hover, ytd-transcript-body-renderer:not([refresh]) .cue.active.ytd-transcript-body-renderer
+	{
+		background-color: transparent !important;
+		color: var(--main-color) !important
 	}
 
 	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail
@@ -2000,6 +2032,14 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
+	paper-listbox.yt-dropdown-menu .yt-dropdown-menu.iron-selected
+	{
+		background-color: var(--second-background) !important;
+	}
+	paper-listbox.yt-dropdown-menu .yt-dropdown-menu.iron-selected .item.yt-dropdown-menu
+	{
+		color: var(--main-color) !important;
+	}
 	/*text box*/
 	#simplebox-placeholder.ytd-comment-simplebox-renderer
 	{
@@ -2158,7 +2198,7 @@
 	yt-live-chat-toast-renderer[is-showing-message] /*info for show mode*/
 	{
 		background: var(--hover-background) !important;
-	}	
+	}
 	/*dropmenu*/
 	#menu.yt-live-chat-text-message-renderer
 	{
@@ -2659,6 +2699,15 @@
 		background-color: var(--main-color) !important;
 	}
 
+	.guide-entry-badge.ytd-guide-entry-renderer
+	{
+		color: var(--main-color) !important;
+		fill: var(--main-color) !important;
+	}
+	.ytp-live-badge[disabled]:before
+	{
+		background: var(--main-color) !important;
+	}
 
 	/*Recolored sidepane icons, menu icons and filter button*/
 	.guide-icon.ytd-guide-entry-renderer, paper-button.ytd-toggle-button-renderer, yt-icon.ytd-compact-link-renderer, yt-icon.ytd-toggle-theme-compact-link-renderer
@@ -2687,7 +2736,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
+
 	/*Video was removed by user - not interested*/
 	#text.ytd-notification-multi-action-renderer
 	{
@@ -3181,7 +3230,7 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active], 
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active],
 	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-settings-sidebar"][active]:hover
 	{
 		background-color: var(--hover-background) !important;
@@ -3354,7 +3403,8 @@
 		color: var(--main-text) !important;
 	}
 	/*Footer*/
-	body #footer-container {
+	body #footer-container
+	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;

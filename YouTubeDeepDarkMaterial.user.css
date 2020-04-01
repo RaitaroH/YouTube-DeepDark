@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.3.0
+@version 3.3.1
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -932,18 +932,21 @@
 
 	/*How is youtube today*/
 	ytd-single-option-survey-renderer[dialog][dialog][dialog], ytd-single-option-survey-renderer,
-	ytd-survey-follow-up-renderer[dialog][dialog][dialog], ytd-survey-follow-up-renderer
+	ytd-survey-follow-up-renderer[dialog][dialog][dialog], ytd-survey-follow-up-renderer,
+	ytd-checkbox-survey-renderer[dialog][dialog][dialog]
 	/*TODO: forgot to test if the [dialog] is even needed*/
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
 	#header.ytd-single-option-survey-renderer,
-	#header.ytd-survey-follow-up-renderer
+	#header.ytd-survey-follow-up-renderer,
+	#header.ytd-checkbox-survey-renderer
 	{
 		color: var(--main-color) !important;
 	}
-	ytd-single-option-survey-option-renderer
+	ytd-single-option-survey-option-renderer,
+	#checkboxLabel.paper-checkbox
 	{
 		color: var(--main-text) !important;
 	}

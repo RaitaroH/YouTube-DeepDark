@@ -1852,6 +1852,11 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/*no results*/
+	.promo-title.ytd-background-promo-renderer, .promo-body-text.ytd-background-promo-renderer
+	{
+		color: var(--main-text) !important;
+	}
 	/*show more*/
 	#more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, #all.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer
 	{

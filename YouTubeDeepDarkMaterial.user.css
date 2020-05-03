@@ -316,6 +316,13 @@
 			--shadow: 0 1px 0.5px colorShadow;
 		}
 	}
+	/*Error page*/
+	#error-page
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+
 	/*Scrollbar fix for chrome*/
 	html:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
 	{
@@ -1719,13 +1726,15 @@
 		border-color: var(--main-background) !important;
 		box-shadow: none !important;
 	}
-	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="material-left"] #container.ytd-searchbox, ytd-searchbox.style-scope[has-focus=""] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"]:hover #container.ytd-searchbox
+	ytd-searchbox[mode="legacy"] #container.ytd-searchbox:hover, ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode="material-left"] #container.ytd-searchbox, ytd-searchbox.style-scope[has-focus=""] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"]:hover #container.ytd-searchbox,
+	#masthead-search-terms.masthead-search-terms-border /*error page*/
 	{
 		border: 1px solid var(--main-color) !important;
 		box-shadow: none !important;
 	}
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox input.ytd-searchbox,
-	#container.ytd-searchbox > input, ytd-searchbox input
+	#container.ytd-searchbox > input, ytd-searchbox input,
+	#masthead-search-terms.masthead-search-terms-border input /*error page*/
 	{
 		color: var(--main-text) !important;
 	}

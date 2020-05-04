@@ -549,6 +549,32 @@
 	{
 		color: var(--main-color) !important;
 	}
+	
+	/*Feed filter*/
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected],
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]
+	{
+		background-color: var(--hover-background) !important;
+	}
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"],
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"],
+	ytd-feed-filter-chip-bar-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#text.yt-chip-cloud-chip-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	
+	/*Covid19 big posts aka rich shelves*/
+	/*also other borders*/
+	ytd-rich-shelf-renderer, #show-more-button.ytd-rich-shelf-renderer,
+	#contents.ytd-rich-shelf-renderer,
+	ytd-compact-promoted-item-renderer[view-style="COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID"] #dismissable.ytd-compact-promoted-item-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
 
 	/* poll results */
 	.text-area.ytd-backstage-poll-renderer,

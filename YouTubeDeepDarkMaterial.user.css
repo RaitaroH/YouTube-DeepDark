@@ -797,7 +797,7 @@
 	}
 
 	/*Playlist creation*/
-	.yt-live-chat-message-renderer-0 #subtext.yt-live-chat-message-renderer, .yt-live-chat-message-renderer-1 #subtext.yt-live-chat-message-renderer,
+	#subtext.yt-live-chat-message-renderer
 	#label.yt-live-chat-text-input-field-renderer, .input-content.paper-input-container input,
 	.input-content.paper-input-container textarea, .input-content.paper-input-container iron-autogrow-textarea,
 	.input-content.paper-input-container .paper-input-input
@@ -2255,7 +2255,7 @@
 		background: var(--second-background) !important;
 	}
 	yt-icon.ytd-menu-navigation-item-renderer, yt-icon.ytd-menu-service-item-renderer, #header.yt-live-chat-participant-list-renderer,
-	#author-name.yt-live-chat-author-chip, .style-scope.yt-live-chat-ninja-message-renderer, #subtext.yt-live-chat-message-renderer
+	#author-name.yt-live-chat-author-chip, .style-scope.yt-live-chat-ninja-message-renderer
 	{
 		color: var(--main-text) !important;
 	}

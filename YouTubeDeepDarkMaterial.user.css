@@ -797,7 +797,7 @@
 	}
 
 	/*Playlist creation*/
-	#subtext.yt-live-chat-message-renderer
+	#subtext.yt-live-chat-message-renderer,
 	#label.yt-live-chat-text-input-field-renderer, .input-content.paper-input-container input,
 	.input-content.paper-input-container textarea, .input-content.paper-input-container iron-autogrow-textarea,
 	.input-content.paper-input-container .paper-input-input

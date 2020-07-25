@@ -991,6 +991,41 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+    
+	/*rate a video to improve youtube*/
+	#star-survey.ytd-inline-survey-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	#inline-survey-compact-video-renderer.ytd-inline-survey-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	ytd-primetime-promo-renderer.ytd-rich-section-renderer, ytd-inline-survey-renderer.ytd-rich-section-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*not sure tell us why followup*/
+	#title.ytd-inline-survey-renderer, #follow-up-title.ytd-inline-survey-renderer,
+	#selected-response-text.ytd-rating-survey-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	/*background and close button*/
+	ytd-inline-survey-renderer[expanded] #dismissable.ytd-inline-survey-renderer,
+	#dismiss-button.ytd-inline-survey-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	paper-checkbox.ytd-checkbox-survey-option-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*thanks*/
+	#dismissed.ytd-inline-survey-renderer ytd-message-renderer.ytd-inline-survey-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
 
 	/*info warning - covid19*/
 	ytd-clarification-renderer

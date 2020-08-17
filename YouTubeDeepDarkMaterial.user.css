@@ -1481,7 +1481,7 @@
 	}
 	.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox
 	{
-		background: var(--main-color) !important;
+		background-color: var(--main-color) !important;
 	}
 	.ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled="true"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge
 	{

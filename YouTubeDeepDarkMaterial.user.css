@@ -570,6 +570,10 @@
 	{
 		color: var(--main-text) !important;
 	}
+	#scroll-container.ytd-feed-filter-chip-bar-renderer::after, #scroll-container.ytd-feed-filter-chip-bar-renderer::before
+	{
+		background: transparent !important;
+	}
 	
 	/*Covid19 big posts aka rich shelves*/
 	/*also other borders*/
@@ -1572,6 +1576,13 @@
 	{
 		outline-color: var(--main-color) !important;
 	}
+	
+	/*This channel is watched by others*/
+	ytd-thumbnail-overlay-endorsement-renderer
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
 
 	/*Popup for when you hover over the channel avatar in the video*/
 	.iv-branding .branding-context-container-inner
@@ -1579,7 +1590,7 @@
 		background-color: var(--main-background) !important;
 	}
 
-  /*Changing icon for unavailable video*/
+	/*Changing icon for unavailable video*/
 	#img.ytd-player-error-message-renderer
 	{
 		display: block !important;

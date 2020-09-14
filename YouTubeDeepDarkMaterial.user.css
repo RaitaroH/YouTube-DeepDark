@@ -1036,6 +1036,11 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	ytd-clarification-renderer[has-action-button] .content.ytd-clarification-renderer,
+	ytd-clarification-renderer[background-style="info"]
+	{
+		border-color: var(--hover-background) !important;
+	}
 	.content-title.ytd-clarification-renderer
 	{
 		color: var(--main-text) !important;
@@ -1047,6 +1052,10 @@
 	.source.ytd-clarification-renderer
 	{
 		color: var(--main-color) !important;
+	}
+	ytd-clarification-renderer yt-button-renderer.style-suggestive[is-paper-button] paper-button.yt-button-renderer
+	{
+		border-color: var(--main-color) !important;
 	}
 
 	/*You are not logged in tooltip*/

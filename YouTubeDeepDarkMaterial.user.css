@@ -551,20 +551,18 @@
 	}
 	
 	/*Feed filter*/
-	yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected],
-	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]
-	{
-		background-color: var(--hover-background) !important;
-	}
-	ytd-feed-filter-chip-bar-renderer
+	#chips-wrapper.ytd-feed-filter-chip-bar-renderer
 	{
 		background-color: var(--main-background) !important;
-	}
-	yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"],
-	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"],
-	ytd-feed-filter-chip-bar-renderer
-	{
 		border-color: var(--hover-background) !important;
+	}
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:not([selected])
+	{
+		background-color: var(--second-background) !important;
+	}
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:hover
+	{
+		background-color: var(--hover-background) !important;
 	}
 	#text.yt-chip-cloud-chip-renderer
 	{

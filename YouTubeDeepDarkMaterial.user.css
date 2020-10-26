@@ -574,15 +574,11 @@
 	}
 	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--main-background) !important;
 	}
-	#right-arrow.ytd-feed-filter-chip-bar-renderer::before
+	#left-arrow.ytd-feed-filter-chip-bar-renderer::after, #right-arrow.ytd-feed-filter-chip-bar-renderer::before
 	{
-    background: linear-gradient(to left, var(--second-background) 20%, var(--main-background) 80%);
-	} 
-	#left-arrow.ytd-feed-filter-chip-bar-renderer::after
-	{
-    background: linear-gradient(to left, var(--main-background) 20%, var(--second-background) 80%);
+		background: transparent;
 	}
 	
 	/*Covid19 big posts aka rich shelves*/

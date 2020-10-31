@@ -1794,6 +1794,51 @@
 		background-color: var(--hover-background) !important;
 	}
 
+	/*Chapters*/
+	/*title*/
+	h4.ytd-macro-markers-list-item-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	/*timestamp*/
+	#time.ytd-macro-markers-list-item-renderer
+	{
+		color: var(--main-color) !important;
+		background-color: transparent !important;
+		padding: 0px !important;
+	}
+	/*show current chapter*/
+	#sync-button.ytd-macro-markers-list-renderer
+	{
+		background-color: var(--main-background) !important;
+	}
+	#sync-button.ytd-macro-markers-list-renderer:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*active indicators*/
+	ytd-macro-markers-list-item-renderer[active] #thumbnail.ytd-macro-markers-list-item-renderer
+	{
+		outline-color: var(--main-color) !important;
+	}
+	#active-indicator.ytd-macro-markers-list-item-renderer
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*hover for item*/
+	ytd-macro-markers-list-item-renderer:hover, ytd-macro-markers-list-item-renderer[active]
+	{
+		background-color: var(--hover-background) !important;
+	}
+	ytd-macro-markers-list-item-renderer:hover
+	{
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+	}
+	ytd-macro-markers-list-item-renderer:hover h4.ytd-macro-markers-list-item-renderer
+	{
+		color: var(--main-color) !important;
+	}
+
 	/*Search bar*/
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,

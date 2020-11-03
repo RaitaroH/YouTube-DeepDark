@@ -2205,7 +2205,8 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	#content-text.ytd-comment-renderer
+	#content-text.ytd-comment-renderer,
+	ytd-expander[should-use-number-of-lines][collapsed] > #content.ytd-expander
 	{
 		color: var(--dimmer-text) !important;
 	}

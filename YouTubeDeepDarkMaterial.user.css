@@ -1962,6 +1962,16 @@
 	{
 		opacity: 1 !important;
 	}
+	
+	/*album*/
+	#watch-card-subtitle.ytd-watch-card-rich-header-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.duration.ytd-watch-card-compact-video-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
 
 	/*Buttom border for different fields*/
 	.unfocused-line.paper-input-container
@@ -2396,6 +2406,15 @@
 	{
 		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
+	}
+	/*pinned*/
+	yt-live-chat-banner-manager[has-visible-banner]
+	{
+		background: var(--second-background) !important;
+	}
+	#contents.yt-live-chat-banner-renderer > .yt-live-chat-banner-renderer
+	{
+		background: transparent !important;
 	}
 	/*Confirmantion popup*/
 	paper-toast

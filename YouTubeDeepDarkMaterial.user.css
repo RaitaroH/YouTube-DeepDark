@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.4.0
+@version 3.4.1
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -556,11 +556,12 @@
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:not([selected])
+	yt-chip-cloud-chip-renderer:not([selected])
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
 	}
-	yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:hover
+	yt-chip-cloud-chip-renderer[selected], yt-chip-cloud-chip-renderer:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -572,7 +573,8 @@
 	{
 		background: transparent !important;
 	}
-	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer
+	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer,
+	#left-arrow.yt-chip-cloud-renderer, #right-arrow.yt-chip-cloud-renderer
 	{
 		background-color: var(--main-background) !important;
 	}

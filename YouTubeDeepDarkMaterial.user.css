@@ -2335,6 +2335,12 @@
 		opacity: 0.5;
 	}
 
+	/*Fundraiser message*/
+	#wrapper.ytd-donation-unavailable-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 	/*Chat*/
 	/*header*/
 	yt-live-chat-header-renderer, #header.yt-live-chat-participant-list-renderer, yt-live-chat-message-renderer, yt-live-chat-ticker-renderer

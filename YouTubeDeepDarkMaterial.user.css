@@ -1639,9 +1639,15 @@
 	}
 
 	/*New logo*/
-	#logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"]
+	#logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"],
+	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path
 	{
 		fill: var(--main-color) !important;
+	}
+	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(2) > g,
+	#country-code.ytd-topbar-logo-renderer
+	{
+		color: var(--main-text) !important;
 	}
 	/*Logo hover*/
 	#logo-icon:hover

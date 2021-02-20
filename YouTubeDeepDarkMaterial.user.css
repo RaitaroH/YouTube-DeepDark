@@ -486,7 +486,7 @@
 	}
 
 	/*Sidebar*/
-	#guide-content.ytd-app, #contentContainer.app-drawer
+	#guide-content.ytd-app, #contentContainer.app-drawer, #guide-wrapper.ytd-app
 	{
 		background: var(--second-background) !important;
 	}

@@ -3551,6 +3551,16 @@
 	{
 		opacity: 1 !important;
 	}
+	/*checkboxes playback and performance*/
+	#checkbox.checked.tp-yt-paper-checkbox
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	yt-icon.ytd-settings-checkbox-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
 	/*Social*/
 	.social-connector
 	{

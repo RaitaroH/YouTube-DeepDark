@@ -549,7 +549,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*Feed filter*/
 	#chips-wrapper.ytd-feed-filter-chip-bar-renderer
 	{
@@ -582,7 +582,7 @@
 	{
 		background: transparent;
 	}
-	
+
 	/*Covid19 big posts aka rich shelves*/
 	/*also other borders*/
 	ytd-rich-shelf-renderer, #show-more-button.ytd-rich-shelf-renderer,
@@ -1003,7 +1003,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-    
+
 	/*rate a video to improve youtube*/
 	#star-survey.ytd-inline-survey-renderer
 	{
@@ -1593,7 +1593,7 @@
 	{
 		outline-color: var(--main-color) !important;
 	}
-	
+
 	/*This channel is watched by others*/
 	ytd-thumbnail-overlay-endorsement-renderer
 	{
@@ -1927,7 +1927,7 @@
 	{
 		filter: invert(100%);
 	}
-	
+
 	/*Microphone search*/
 	ytd-voice-search-dialog-renderer[dialog]
 	{
@@ -3289,30 +3289,6 @@
 	#buttons.ytd-dismissal-follow-up-renderer
 	{
 		border-top-color: var(--hover-background) !important;
-	}
-
-	/*Enhancer for YouTube*/
-	#enhancer-for-youtube-unpin-player
-	{
-		color: var(--main-text) !important;
-	}
-	#enhancer-for-youtube-progress
-	{
-		-webkit-appearance: none !important;
-		color: var(--main-color) !important;
-	}
-	/*Do not join these lines otherwise it does not work as expected!*/
-	#enhancer-for-youtube-progress::-webkit-progress-value
-	{
-		background-color: var(--main-color) !important;
-	}
-	#enhancer-for-youtube-progress::-moz-progress-bar
-	{
-		background-color: var(--main-color) !important;
-	}
-	#enhancer-for-youtube-progress::-ms-fill
-	{
-		background-color: var(--main-color) !important;
 	}
 
 	/*New TOS*/

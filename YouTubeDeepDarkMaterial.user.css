@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.4.3
+@version 3.4.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -549,7 +549,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*Feed filter*/
 	#chips-wrapper.ytd-feed-filter-chip-bar-renderer
 	{
@@ -582,7 +582,7 @@
 	{
 		background: transparent;
 	}
-	
+
 	/*Covid19 big posts aka rich shelves*/
 	/*also other borders*/
 	ytd-rich-shelf-renderer, #show-more-button.ytd-rich-shelf-renderer,
@@ -1003,7 +1003,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-    
+
 	/*rate a video to improve youtube*/
 	#star-survey.ytd-inline-survey-renderer
 	{
@@ -1438,6 +1438,11 @@
 	{
 		background-color: transparent !important;
 	}
+	#checkbox.checked.tp-yt-paper-checkbox
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
 
 	/*Radio buttons*/
 	paper-radio-button[checked] #offRadio.paper-radio-button
@@ -1478,12 +1483,13 @@
 
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
-	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
+	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
 	{
 		background: var(--main-color) !important;
 	}
 	/* progress bar */
-	.html5-play-progress, .ytp-play-progress
+	.html5-video-player:not(.ytp-color-party) .html5-play-progress,
+	.html5-video-player:not(.ytp-color-party) .ytp-play-progress
 	{
 		background: var(--main-color) !important;
 	}
@@ -1593,7 +1599,7 @@
 	{
 		outline-color: var(--main-color) !important;
 	}
-	
+
 	/*This channel is watched by others*/
 	ytd-thumbnail-overlay-endorsement-renderer
 	{
@@ -1927,7 +1933,7 @@
 	{
 		filter: invert(100%);
 	}
-	
+
 	/*Microphone search*/
 	ytd-voice-search-dialog-renderer[dialog]
 	{
@@ -1982,7 +1988,7 @@
 	{
 		opacity: 1 !important;
 	}
-	
+
 	/*album*/
 	#watch-card-subtitle.ytd-watch-card-rich-header-renderer
 	{
@@ -3291,30 +3297,6 @@
 		border-top-color: var(--hover-background) !important;
 	}
 
-	/*Enhancer for YouTube*/
-	#enhancer-for-youtube-unpin-player
-	{
-		color: var(--main-text) !important;
-	}
-	#enhancer-for-youtube-progress
-	{
-		-webkit-appearance: none !important;
-		color: var(--main-color) !important;
-	}
-	/*Do not join these lines otherwise it does not work as expected!*/
-	#enhancer-for-youtube-progress::-webkit-progress-value
-	{
-		background-color: var(--main-color) !important;
-	}
-	#enhancer-for-youtube-progress::-moz-progress-bar
-	{
-		background-color: var(--main-color) !important;
-	}
-	#enhancer-for-youtube-progress::-ms-fill
-	{
-		background-color: var(--main-color) !important;
-	}
-
 	/*New TOS*/
 	yt-alert-with-actions-renderer
 	{
@@ -3550,16 +3532,6 @@
 	.exp-kevlar-settings .account-page .yt-uix-button:hover
 	{
 		opacity: 1 !important;
-	}
-	/*checkboxes playback and performance*/
-	#checkbox.checked.tp-yt-paper-checkbox
-	{
-		background-color: var(--main-color) !important;
-		border-color: var(--main-color) !important;
-	}
-	yt-icon.ytd-settings-checkbox-renderer
-	{
-		color: var(--dimmer-text) !important;
 	}
 	/*Social*/
 	.social-connector

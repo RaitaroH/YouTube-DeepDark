@@ -1478,12 +1478,13 @@
 
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
-	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
+	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
 	{
 		background: var(--main-color) !important;
 	}
 	/* progress bar */
-	.html5-play-progress, .ytp-play-progress
+	.html5-video-player:not(.ytp-color-party) .html5-play-progress,
+	.html5-video-player:not(.ytp-color-party) .ytp-play-progress
 	{
 		background: var(--main-color) !important;
 	}

@@ -44,6 +44,9 @@
 @var checkbox join-color "Use dark join button" 0
 @var checkbox subscribe-color "Use dark subscribe button" 0
 
+@var text scrollbar_width "Scrollbar width" 8px
+@var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
+
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
 @var color secondBackground "Custom second background" "#242730"
@@ -323,15 +326,26 @@
 		color: var(--main-text) !important;
 	}
 
+	html
+	{
+		scrollbar-color: var(--main-color) scrollbar_track;
+		scrollbar-width: thin;
+	}
 	/*Scrollbar fix for chrome*/
 	html:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
 	{
-		height: 56px;
-		background: hsla(0, 0%, 53.3%, .4);
+		background: var(--main-color);
 	}
 	html:not([hide-scrollbar]) ::-webkit-scrollbar
 	{
-		width: 8px;
+		width: scrollbar_width;
+	}
+	/*Scrollbar fix for firefox*/
+	::-webkit-scrollbar-track {
+		background: scrollbar_track;
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--main-color);
 	}
 
 	/*Background for the entire page*/

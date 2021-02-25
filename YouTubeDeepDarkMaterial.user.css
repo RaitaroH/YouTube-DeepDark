@@ -1081,19 +1081,11 @@
 	}
 
 	/*You are not logged in tooltip*/
-	yt-tooltip-renderer
+	#tooltip.tp-yt-paper-tooltip
 	{
 		background-color: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
-	}
-	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]::before
-	{
-		border-color: transparent transparent var(--second-background) transparent !important;
-	}
-	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"] #text.yt-bubble-hint-renderer:not(:empty),
-	yt-tooltip-renderer[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"] #details-text.yt-bubble-hint-renderer
-	{
-		background-color: var(--second-background) !important;
+		color: var(--main-color) !important;
 	}
 
 	/*Join button tooltip*/
@@ -1484,11 +1476,11 @@
 
 	/*Video section*/
 	/*Video title hover in html5 video*/
-  	.html5-video-player a:hover
-  	{
- 		color: var(--main-text) !important;
+	.html5-video-player a:hover
+	{
+		color: var(--main-text) !important;
 		text-shadow: none !important;
-  	}
+	}
 
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
@@ -1997,7 +1989,7 @@
 	{
 		opacity: 1 !important;
 	}
-	
+
 	/*album*/
 	#watch-card-subtitle.ytd-watch-card-rich-header-renderer
 	{
@@ -2011,13 +2003,13 @@
 	/*Buttom border for different fields*/
 	.unfocused-line.paper-input-container
 	{
-   	 	background-color: var(--hover-background) !important;
-			border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 	.focused-line.paper-input-container
 	{
-   	 	background-color: var(--main-color) !important;
-			border-color: var(--main-color) !important;
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 
 	/*Search page*/

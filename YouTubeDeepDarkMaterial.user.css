@@ -3540,7 +3540,8 @@
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
-	yt-icon.ytd-settings-checkbox-renderer
+	yt-icon.ytd-settings-checkbox-renderer,
+	yt-icon.ytd-settings-radio-option-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}

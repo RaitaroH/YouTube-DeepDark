@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.4.6
+@version 3.4.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1380,9 +1380,11 @@
 	}
 
 	/*Dropdown*/
-	.dropdown-content.style-scope.ytd-popup-container > *
+	.dropdown-content.style-scope.ytd-popup-container > *,
+	tp-yt-paper-listbox, ytd-menu-popup-renderer
 	{
 		background: var(--second-background) !important;
+		color: var(--main-text) !important;
 	}
 	ytd-menu-service-item-renderer:hover, a.ytd-menu-navigation-item-renderer:hover
 	{

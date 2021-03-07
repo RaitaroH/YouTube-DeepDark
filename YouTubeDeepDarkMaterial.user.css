@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace gitlab.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.4.7
+@version 3.4.8
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1386,7 +1386,9 @@
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	ytd-menu-service-item-renderer:hover, a.ytd-menu-navigation-item-renderer:hover
+	ytd-menu-service-item-renderer:hover, a.ytd-menu-navigation-item-renderer:hover,
+	tp-yt-paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu,
+	ytd-menu-service-item-renderer[is-selected]
 	{
 		background: var(--hover-background) !important;
 	}
@@ -1395,7 +1397,8 @@
 		color: var(--main-text) !important;
 	}
 	ytd-menu-service-item-renderer:hover yt-formatted-string.ytd-menu-service-item-renderer,
-	a.ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer
+	a.ytd-menu-navigation-item-renderer:hover yt-formatted-string.ytd-menu-navigation-item-renderer,
+	tp-yt-paper-listbox a.yt-simple-endpoint.yt-dropdown-menu:hover .item.yt-dropdown-menu
 	{
 		color: var(--main-color) !important;
 	}

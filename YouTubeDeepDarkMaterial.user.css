@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.5.3
+@version 3.5.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -557,18 +557,29 @@
 	}
 
 	/*Latest YouTube posts*/
-	ytd-post-renderer[surface_="backstage-surface-type-home"]
+	ytd-post-renderer[surface_="backstage-surface-type-home"],
+	ytd-post-renderer[uses-compact-lockup]
 	{
 		background-color: var(--second-background) !important;
 	}
 	ytd-post-renderer[surface_="backstage-surface-type-home"] #home-content-text.ytd-post-renderer,
-	ytd-post-renderer[surface_="backstage-surface-type-home"][attachment="poll"] #vote-count-text.ytd-post-renderer
+	ytd-post-renderer[surface_="backstage-surface-type-home"][attachment="poll"] #vote-count-text.ytd-post-renderer,
+	ytd-post-renderer[uses-compact-lockup] #home-content-text.ytd-post-renderer
 	{
 		color: var(--main-text) !important;
 	}
 	ytd-post-renderer[surface_="backstage-surface-type-home"] #author-text.yt-simple-endpoint.ytd-post-renderer
 	{
 		color: var(--main-color) !important;
+	}
+	ytd-post-renderer[uses-compact-lockup][attachment="poll"] #vote-count-text.ytd-post-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*vote now button*/
+	ytd-post-renderer[uses-compact-lockup] ytd-button-renderer.style-suggestive[is-paper-button] #button.ytd-button-renderer
+	{
+		background-color: var(--main-color) !important;
 	}
 
 	/*Feed filter*/
@@ -2257,6 +2268,15 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	#input-container.ytd-commentbox, ytd-commentbox
+	{
+		--paper-input-container-underline-color: var(--hover-background) !important;
+		--paper-input-container-underline-focus-color: var(--main-color) !important;
+	}
+	.focused-line.tp-yt-paper-input-container
+	{
+		border-color: var(--main-color) !important;
+	}
 	/*comments themselves*/
 	#author-text.yt-simple-endpoint.ytd-comment-renderer
 	{
@@ -2861,9 +2881,21 @@
 	{
 		color: var(--main-text) !important;
 	}
+	#vote-info.ytd-backstage-poll-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
 	.iv-card-poll .iv-card-poll-result .iv-card-poll-result-bar
 	{
 		background-color: var(--main-color) !important;
+	}
+	ytd-backstage-post-thread-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	ytd-backstage-poll-renderer[show-poll-choice-border] .choice-info.ytd-backstage-poll-renderer
+	{
+		border-color: transparent !important;
 	}
 
 	/*Account menu header*/

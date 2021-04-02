@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.5.5
+@version 3.5.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -326,7 +326,7 @@
 		color: var(--main-text) !important;
 	}
 
-	*
+	*, html:not(.style-scope)[standardized-themed-scrollbar]
 	{
 		scrollbar-color: var(--main-color) scrollbar_track;
 		scrollbar-width: thin;
@@ -1876,6 +1876,7 @@
 	#sync-button.ytd-macro-markers-list-renderer
 	{
 		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
 	}
 	#sync-button.ytd-macro-markers-list-renderer:hover
 	{
@@ -2923,14 +2924,17 @@
 		color: var(--dimmer-text) !important;
 	}
 	/*subentries*/
-	#label.ytd-toggle-theme-compact-link-renderer
+	#label.ytd-toggle-theme-compact-link-renderer,
+	tp-yt-paper-item.ytd-compact-link-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
 	ytd-toggle-theme-compact-link-renderer:hover #label.ytd-toggle-theme-compact-link-renderer,
 	ytd-toggle-theme-compact-link-renderer:hover yt-icon,
 	paper-item.ytd-compact-link-renderer:hover #subtitle,
-	paper-item.ytd-compact-link-renderer:hover .deemphasize.yt-formatted-string
+	paper-item.ytd-compact-link-renderer:hover .deemphasize.yt-formatted-string,
+	tp-yt-paper-item.ytd-compact-link-renderer:hover *, 
+	tp-yt-paper-item.ytd-compact-link-renderer:hover #subtitle.ytd-compact-link-renderer
 	{
 		color: var(--main-color) !important;
 	}
@@ -2954,6 +2958,20 @@
 	paper-item.ytd-account-settings:hover
 	{
 		color: var(--main-color) !important;
+	}
+	/*swich account*/
+	yt-formatted-string.ytd-account-item-renderer[secondary]
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#selected.ytd-account-item-renderer
+	{
+		color: var(--main-color) !important;
+	}
+	/*theme*/
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-disclaimer"] #label.ytd-compact-link-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Live background color*/

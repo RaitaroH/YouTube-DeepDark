@@ -2226,6 +2226,28 @@
 		color: var(--main-color) !important;
 	}
 
+	/*SponsorBlock*/
+	#sponsorBlockPopupContainer .smallLink
+	{
+		color: var(--main-text) !important;
+	}
+	#sponsorBlockPopupContainer .smallLink:hover
+	{
+		color: var(--main-color) !important;
+	}
+	#sponsorBlockPopupContainer .switchBg.green
+	{
+		background: var(--main-color) !important;
+	}
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton
+	{
+		background: var(--main-color) !important;
+	}
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton:hover
+	{
+		filter: brightness(110%);
+	}
+
 	/*Comments*/
 	yt-formatted-string.ytd-comments-header-renderer,
 	#contenteditable-root.yt-formatted-string[aria-label].yt-formatted-string:empty::before,

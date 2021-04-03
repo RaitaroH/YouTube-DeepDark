@@ -3836,4 +3836,12 @@
 		color: var(--main-text) !important;
 		opacity: .9;
 	}
+
+	/*Notification buttom corner - for settings, watch later etc*/
+	tp-yt-paper-toast
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		box-shadow: var(--shadow) !important;
+	}
 }

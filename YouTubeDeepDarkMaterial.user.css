@@ -3648,6 +3648,30 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
+	/*checkboxes*/
+	tp-yt-paper-toggle-button[checked]:not([disabled]) .toggle-bar.tp-yt-paper-toggle-button
+	{
+		background-color: var(--main-color) !important;
+		opacity: 1 !important;
+	}
+	tp-yt-paper-toggle-button[checked]:not([disabled]) .toggle-button.tp-yt-paper-toggle-button
+	{
+		background-color: var(--main-text) !important;
+	}
+	/*language*/
+	ytd-dropdown-renderer[has-background] tp-yt-paper-dropdown-menu-light.ytd-dropdown-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	label.label-is-floating.tp-yt-paper-dropdown-menu-light,
+	#label.ytd-dropdown-item-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	#input.tp-yt-paper-dropdown-menu-light
+	{
+		color: var(--dimmer-text) !important;
+	}
 	/*Playback*/
 	.yt-help-icon
 	{
@@ -3688,6 +3712,15 @@
 	yt-icon.ytd-settings-radio-option-renderer
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*radio button*/
+	tp-yt-paper-radio-button[checked] #offRadio.tp-yt-paper-radio-button
+	{
+		border-color: var(--main-color) !important;
+	}
+	tp-yt-paper-radio-button[checked] #onRadio.tp-yt-paper-radio-button
+	{
+		background-color: var(--main-color) !important;
 	}
 	/*Social*/
 	.social-connector

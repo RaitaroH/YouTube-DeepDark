@@ -673,8 +673,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	tp-yt-paper-tabs.ytd-c4-tabbed-header-renderer,
-	tp-yt-paper-tabs.ytd-topic-channel-details-renderer
+	tp-yt-paper-tabs
 	{
 		--paper-tabs-selection-bar-color: var(--main-color) !important;
 	}

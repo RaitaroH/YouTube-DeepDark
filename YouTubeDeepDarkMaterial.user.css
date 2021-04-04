@@ -1839,7 +1839,7 @@
 
 	#container.ytd-playlist-panel-renderer
 	{
-		border-color: transparent !important;
+		border-color: var(--second-background) !important;
 	}
 
 	/*Playlist creation*/

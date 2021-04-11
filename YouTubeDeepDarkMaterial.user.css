@@ -1571,7 +1571,7 @@
 	}
 	.ytp-large-play-button.ytp-button.ytp-red2:hover, .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2
 	{
-		/*background-image: url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
+		/*background-image: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/
 		background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;
 		filter: invert(100%) brightness(300%);
 	}
@@ -1670,7 +1670,7 @@
 		display: block !important;
 		-moz-box-sizing: border-box !important;
 		box-sizing: border-box !important;
-		background: url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
+		background: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
 		width: 140px !important;
 		height: 100px !important;
 		padding-left: 140px !important;
@@ -1682,7 +1682,7 @@
 		display: block !important;
 		-moz-box-sizing: border-box !important;
 		box-sizing: border-box !important;
-		background: url(https://gitlab.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
+		background: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/404.png) no-repeat !important;
 		width: 140px !important;
 		height: 100px !important;
 		padding-left: 140px !important;

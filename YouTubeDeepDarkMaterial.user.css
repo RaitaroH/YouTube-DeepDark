@@ -2261,6 +2261,29 @@
 	{
 		filter: brightness(110%);
 	}
+	/*logo change*/
+	#sponsorBlockPopupLogo, .sponsorSkipLogo
+	{
+		display: block !important;
+		-moz-box-sizing: border-box !important;
+		box-sizing: border-box !important;
+		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/IconSponsorBlocker256px.png) top left no-repeat !important;
+		background-size: 100% !important;
+		position: relative !important;
+	}
+	#sponsorBlockPopupLogo
+	{
+		width: 40px !important;
+		height: 40px !important;
+		padding-left: 40px !important;
+	}
+	/*for overlays*/
+	.sponsorSkipLogo
+	{
+		width: 18px !important;
+		height: 18px !important;
+		padding-left: 18px !important;
+	}
 
 	/*Comments*/
 	yt-formatted-string.ytd-comments-header-renderer,

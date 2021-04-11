@@ -2253,6 +2253,11 @@
 	{
 		background: var(--main-color) !important;
 	}
+	#sponsorBlockPopupContainer .switchBg.white
+	{
+		background-color: var(--paper-toggle-button-unchecked-bar-color, #000000) !important;
+		opacity: 0.4 !important;
+	}
 	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton
 	{
 		background: var(--main-color) !important;

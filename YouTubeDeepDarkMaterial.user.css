@@ -1200,7 +1200,10 @@
 	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
 	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
 	paper-button.ytd-subscribe-button-renderer,
-	ytd-sponsorships-tier-renderer yt-button-renderer yt-formatted-string.yt-button-renderer /*join button in join window*/
+	ytd-sponsorships-tier-renderer yt-button-renderer yt-formatted-string.yt-button-renderer, /*join button in join window*/
+	/*as of april 2021*/
+	tp-yt-paper-button.ytd-subscribe-button-renderer,
+	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -1214,7 +1217,10 @@
 	#button[class="style-scope ytd-button-renderer style-compact-gray"],
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
 	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
-	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
+	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button], /*join button in join window*/
+	/*as of april 2021*/
+	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer,
+	tp-yt-paper-button.ytd-subscribe-button-renderer
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
@@ -1223,7 +1229,8 @@
 	if join-color /*overwriting the above*/
 	{
 		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
-		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button] /*join button in join window*/
+		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button], /*join button in join window*/
+		ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer /*as of april 2021*/
 		{
 			background-color: var(--second-background) !important;
 			border-color: var(--second-background) !important;
@@ -1235,7 +1242,8 @@
 		paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
 		a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
 		#button[class="style-scope ytd-button-renderer style-compact-gray"],
-		ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer
+		ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
+		tp-yt-paper-button.ytd-subscribe-button-renderer /*as of april 2021*/
 		{
 			background-color: var(--second-background) !important;
 			border-color: var(--second-background) !important;
@@ -1249,11 +1257,15 @@
 	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover,
 	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover,
 	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer:hover, /*join button*/
-	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button]:hover /*join button in join window*/
+	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button]:hover, /*join button in join window*/
+	/*as of april 2021*/
+	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer:hover,
+	tp-yt-paper-button.ytd-subscribe-button-renderer:hover
 	{
 		filter: brightness(110%) !important;
 	}
-	paper-button.ytd-subscribe-button-renderer[subscribed], .ytp-sb-unsubscribe
+	paper-button.ytd-subscribe-button-renderer[subscribed], .ytp-sb-unsubscribe,
+	tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] /*as of april 2021*/
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;

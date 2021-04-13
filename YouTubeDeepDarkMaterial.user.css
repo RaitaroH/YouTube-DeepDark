@@ -3500,6 +3500,10 @@
 	{
 		background: transparent !important;
 	}
+	.badge-style-type-premium.ytd-badge-supported-renderer span.ytd-badge-supported-renderer
+	{
+		color: var(--main-text) !important;
+	}
 
 	ytd-grid-video-renderer[is-dismissed] #dismissed
 	{

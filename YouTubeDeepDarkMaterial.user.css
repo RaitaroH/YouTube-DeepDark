@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.3
+@version 3.6.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1125,11 +1125,16 @@
 	}
 
 	/*You are not logged in tooltip*/
-	#tooltip.tp-yt-paper-tooltip
+	#tooltip.tp-yt-paper-tooltip,
+	yt-tooltip-renderer
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
-		color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	yt-tooltip-renderer::before
+	{
+		border-color: transparent transparent var(--hover-background) transparent !important;
 	}
 
 	/*Join button tooltip*/
@@ -3015,7 +3020,7 @@
 	ytd-toggle-theme-compact-link-renderer:hover yt-icon,
 	paper-item.ytd-compact-link-renderer:hover #subtitle,
 	paper-item.ytd-compact-link-renderer:hover .deemphasize.yt-formatted-string,
-	tp-yt-paper-item.ytd-compact-link-renderer:hover *, 
+	tp-yt-paper-item.ytd-compact-link-renderer:hover *,
 	tp-yt-paper-item.ytd-compact-link-renderer:hover #subtitle.ytd-compact-link-renderer
 	{
 		color: var(--main-color) !important;

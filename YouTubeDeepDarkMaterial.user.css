@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.4
+@version 3.6.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -330,6 +330,7 @@
 	{
 		scrollbar-color: var(--main-color) scrollbar_track !important;
 		scrollbar-width: thin !important;
+		--yt-spec-text-secondary: var(--dimmer-text) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -679,7 +680,8 @@
 	}
 	/*search*/
 	.input-content.paper-input-container label, .input-content.paper-input-container .paper-input-label,
-	#subtitle
+	#subtitle,
+	.style-scope.tp-yt-paper-input
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -2371,6 +2373,10 @@
 	.focused-line.tp-yt-paper-input-container
 	{
 		border-color: var(--main-color) !important;
+	}
+	.unfocused-line.tp-yt-paper-input-container
+	{
+		border-color: var(--dimmer-text) !important;
 	}
 	/*comments themselves*/
 	#author-text.yt-simple-endpoint.ytd-comment-renderer

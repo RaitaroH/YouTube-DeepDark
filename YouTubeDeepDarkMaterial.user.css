@@ -330,6 +330,7 @@
 	{
 		scrollbar-color: var(--main-color) scrollbar_track !important;
 		scrollbar-width: thin !important;
+		--yt-spec-text-primary: var(--main-text) !important;
 		--yt-spec-text-secondary: var(--dimmer-text) !important;
 	}
 	/*Scrollbar fix for chrome*/
@@ -870,6 +871,30 @@
 	#name.ytd-suggested-contact-renderer
 	{
 		color: var(--main-text) !important;
+	}
+
+	/*Make a clip*/
+	input.yt-clip-creation-scrubber-renderer /*time*/
+	{
+		border-color: var(--hover-background) !important;
+	}
+	#handles.yt-clip-creation-scrubber-view, .handle.yt-clip-creation-scrubber-view /*preview*/
+	{
+		border-color: var(--main-color) !important;
+	}
+	/*buttons*/
+	#footer.yt-clip-creation-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	yt-clip-section-renderer yt-button-renderer.style-primary[is-paper-button],
+	yt-button-renderer.style-primary[disabled][is-paper-button]
+	{
+		background-color: transparent !important;
+	}
+	yt-button-renderer.style-primary[disabled][is-paper-button] yt-formatted-string.yt-button-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Playlist creation*/

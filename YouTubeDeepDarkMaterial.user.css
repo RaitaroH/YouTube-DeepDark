@@ -874,13 +874,21 @@
 	}
 
 	/*Make a clip*/
+	#container.yt-clip-creation-renderer
+	{
+		background-color: transparent !important;
+	}
 	input.yt-clip-creation-scrubber-renderer /*time*/
 	{
-		border-color: var(--hover-background) !important;
+		border-color: var(--dimmer-text) !important;
 	}
-	#handles.yt-clip-creation-scrubber-view, .handle.yt-clip-creation-scrubber-view /*preview*/
+	#handles.yt-clip-creation-scrubber-view /*preview*/
 	{
 		border-color: var(--main-color) !important;
+	}
+	.handle.yt-clip-creation-scrubber-view /*preview*/
+	{
+		background-color: var(--main-color) !important;
 	}
 	/*buttons*/
 	#footer.yt-clip-creation-renderer

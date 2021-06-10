@@ -896,7 +896,8 @@
 		background-color: var(--second-background) !important;
 	}
 	yt-clip-section-renderer yt-button-renderer.style-primary[is-paper-button],
-	yt-button-renderer.style-primary[disabled][is-paper-button]
+	yt-clip-creation-renderer yt-button-renderer.style-primary[is-paper-button],
+	yt-clip-section-footer-renderer yt-button-renderer.style-primary[is-paper-button]
 	{
 		background-color: transparent !important;
 	}

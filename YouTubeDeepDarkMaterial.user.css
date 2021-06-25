@@ -623,6 +623,15 @@
 	{
 		display: none;
 	}
+	/*new to you filter on video*/
+	#content-wrapper.ytd-feed-nudge-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	yt-chip-cloud-chip-renderer[chip-style="STYLE_REFRESH_TO_NOVEL_CHIP"][selected]
+	{
+		background-image: none !important;
+	}
 
 	/*Covid19 big posts aka rich shelves*/
 	/*also other borders*/
@@ -3984,5 +3993,15 @@
 	#metadata.ytd-interactive-tabbed-header-renderer
 	{
 		color: var(--dimmer-text) !important;
+	}
+
+	/*Keyboard shortcuts Shift-/ */
+	ytd-hotkey-dialog-renderer[dialog][dialog][dialog]
+	{
+		background-color: var(--main-background) !important;
+	}
+	ytd-hotkey-dialog-section-option-renderer
+	{
+		border-color: var(--hover-background) !important;
 	}
 }

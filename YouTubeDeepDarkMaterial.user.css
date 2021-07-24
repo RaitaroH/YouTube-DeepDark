@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.5
+@version 3.6.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1218,6 +1218,26 @@
 		color: var(--main-color) !important;
 	}
 
+	/*Super Thanks donations*/
+	ytd-pdg-buy-flow-renderer
+	{
+		background-color: var(--main-background) !important;
+	}
+	/*remove white image in the header*/
+	yt-pdg-buy-flow-header-renderer
+	{
+		background: transparent !important;
+	}
+	#container.ytd-pdg-comment-preview-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*bonus*/
+	#title-background.ytd-pdg-comment-preview-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 	/*Progress bar*/
 	#progress
 	{
@@ -1863,7 +1883,7 @@
 	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer,
 	#header.ytd-engagement-panel-title-header-renderer,
 	#content.ytd-engagement-panel-section-list-renderer,
-	ytd-transcript-footer-renderer[panel]
+	ytd-transcript-footer-renderer
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -1872,17 +1892,18 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	ytd-transcript-body-renderer[refresh] .cue-group.active.ytd-transcript-body-renderer
+	.cue-group.active.ytd-transcript-body-renderer
 	{
 		border-left-color: var(--main-color) !important;
 		background-color: var(--hover-background) !important;
 	}
-	ytd-transcript-body-renderer[refresh] .cue-group.active.ytd-transcript-body-renderer .cue-group-start-offset.ytd-transcript-body-renderer,
+	.cue-group.active.ytd-transcript-body-renderer .cue-group-start-offset.ytd-transcript-body-renderer,
 	.cue.ytd-transcript-body-renderer.active
 	{
 		color: var(--main-text) !important;
 	}
-	ytd-transcript-body-renderer[refresh] .cue-group.ytd-transcript-body-renderer:hover .cue-group-start-offset.ytd-transcript-body-renderer
+	.cue-group.ytd-transcript-body-renderer:hover .cue-group-start-offset.ytd-transcript-body-renderer,
+	.cue-group.ytd-transcript-body-renderer:hover .cue.ytd-transcript-body-renderer
 	{
 		color: var(--main-color) !important;
 	}

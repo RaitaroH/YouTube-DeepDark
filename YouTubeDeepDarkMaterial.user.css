@@ -2038,6 +2038,12 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*Voice search icon*/
+	#button.ytd-button-renderer
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
 	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b
 	{

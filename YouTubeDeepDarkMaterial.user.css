@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.6
+@version 3.6.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2577,6 +2577,10 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	yt-live-chat-banner-manager[has-active-banner]
+	{
+		background: linear-gradient(var(--hover-background) 0%, var(--second-background) 100%) !important;
+	}
 	/*live replay*/
 	#card.yt-live-chat-viewer-engagement-message-renderer, yt-live-chat-text-message-renderer[is-highlighted]
 	{
@@ -2711,6 +2715,25 @@
 	#search-empty
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*donations superchats cards*/
+	#card.yt-live-chat-donation-announcement-renderer
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	#menu.yt-live-chat-donation-announcement-renderer
+	{
+		background: transparent !important;
+	}
+	/*for actually donating*/
+	#subtext.yt-live-chat-product-button-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#container.yt-live-chat-product-button-renderer .yt-icon
+	{
+		fill: var(--dimmer-text) !important;
 	}
 
 	/*Fund raiser*/

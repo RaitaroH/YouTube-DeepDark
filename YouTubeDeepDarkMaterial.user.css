@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.7
+@version 3.6.8
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -29,6 +29,7 @@
 	"9anime",
 	"Firefox-Dark",
 	"Firefox-57",
+	"Firefox-Alpenglow-Dark",
 	"Discord",
 	"YouTube-Dark",
 	"Black-and-White",
@@ -128,6 +129,15 @@
 			--main-text: #f9f9fa;
 			--dimmer-text: #d0d0d0;
 			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		}
+		else if stylus-deepdark-style == "Firefox-Alpenglow-Dark" {
+			--main-color: #ac70ff;
+			--main-background: #2f2554;
+			--second-background: #231641;
+			--hover-background: #3c1f7b;
+			--main-text: #ffffff;
+			--dimmer-text: #e3e3e3;
+			--shadow: 0 1px .5px rgba(35, 22, 65, .5);
 		}
 		else if stylus-deepdark-style ==  "Discord" {
 			--main-color: #7289da;
@@ -2037,6 +2047,10 @@
 	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox, #search-icon.ytd-searchbox:hover
 	{
 		color: var(--main-color) !important;
+	}
+	ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead
+	{
+		background-color: var(--main-background) !important;
 	}
 	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b

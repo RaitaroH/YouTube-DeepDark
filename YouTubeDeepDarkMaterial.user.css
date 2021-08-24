@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.8
+@version 3.6.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -17,6 +17,7 @@
 	"HavocOS",
 	"Arc-Dark",
 	"Vertex-Dark",
+	"Dracula",
 	"Mint-Y-Dark",
 	"Adapta-Nokto",
 	"Adapta-Breath-Nokto",
@@ -29,6 +30,8 @@
 	"9anime",
 	"Firefox-Dark",
 	"Firefox-57",
+	"Firefox-Dark-91",
+	"Firefox-Alpenglow-Dark",
 	"Discord",
 	"YouTube-Dark",
 	"Black-and-White",
@@ -111,6 +114,15 @@
 			--dimmer-text: #b3bac5;
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
 		}
+		else if stylus-deepdark-style == "Dracula" {
+			--main-color: #bd93f9;                      /*Purple*/
+			--main-background: hsl(231, 15%, 18%);      /*Background*/
+			--second-background: hsl(231, 15%, 22%);    /*Manually generated from Background*/
+			--hover-background: #44475a;                /*Selection*/
+			--main-text:#f8f8f2;                        /*Foreground*/
+			--dimmer-text: #bcc2cd;                     /*From .app-title https://draculatheme.com/*/
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .15);
+		}
 		else if stylus-deepdark-style == "Firefox-Dark" {
 			--main-color: #5675b9;
 			--main-background: #272b35;
@@ -128,6 +140,24 @@
 			--main-text: #f9f9fa;
 			--dimmer-text: #d0d0d0;
 			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		}
+		else if stylus-deepdark-style == "Firefox-Dark-91" {
+			--main-color: #00ddff;
+			--main-background: #1c1b22;
+			--second-background: #23222b;
+			--hover-background: #2b2a33;
+			--main-text: #fbfbfe;
+			--dimmer-text: #b8b7bb;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		}
+		else if stylus-deepdark-style == "Firefox-Alpenglow-Dark" {
+			--main-color: #C488FC;
+			--main-background: #21133d;
+			--second-background: #2a1e52;
+			--hover-background: #2d245b;
+			--main-text: #ffffff;
+			--dimmer-text: #E3DBFA;
+			--shadow: 0 1px .5px rgba(35, 22, 65, .5);
 		}
 		else if stylus-deepdark-style ==  "Discord" {
 			--main-color: #7289da;

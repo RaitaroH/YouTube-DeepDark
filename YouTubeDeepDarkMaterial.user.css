@@ -2071,7 +2071,7 @@
 	}
 	ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead
 	{
-		background-color: var(--main-background) !important;
+		background-color: var(--hover-background) !important;
 	}
 	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b
@@ -3413,9 +3413,9 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}*/
-
-	ytd-masthead.shell [class*='skeleton'],
-	.shelf-videos,
+	.masthead-skeleton-icon,
+	/*ytd-masthead.shell [class*='skeleton'],
+	.shelf-videos,*/
 	.skeleton-bg-color
 	{
 		background-color: var(--hover-background) !important;
@@ -3425,8 +3425,9 @@
 	{
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
-	html[dark] ytd-masthead.shell,
-	html[dark] .shelf-videos,
+	html[dark] .masthead-skeleton-icon,
+	/*html[dark] ytd-masthead.shell,
+	html[dark] .shelf-videos,*/
 	html[dark] .skeleton-bg-color
 	{
 		background-color: var(--hover-background) !important;

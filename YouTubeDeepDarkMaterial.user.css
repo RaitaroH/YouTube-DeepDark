@@ -3413,26 +3413,31 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}*/
-	.masthead-skeleton-icon,
-	/*ytd-masthead.shell [class*='skeleton'],
-	.shelf-videos,*/
-	.skeleton-bg-color
+	/*homepage skeleton*/
+	#home-container-skeleton, html[dark] #home-container-skeleton
+	{
+		background-color: var(--main-background) !important;
+	}
+	/*sidebar skeleton*/
+	#guide-skeleton, html[dark] #guide-skeleton
+	{
+		background-color: var(--second-background) !important;
+	}
+	/*homepage videos skeleton*/
+	#home-page-skeleton .skeleton-bg-color,
+	html[dark] #home-page-skeleton .skeleton-bg-color
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.masthead-skeleton-icon, html[dark] .masthead-skeleton-icon,
+	/*ytd-masthead.shell [class*='skeleton'], html[dark] ytd-masthead.shell,
+	.shelf-videos, html[dark] .shelf-videos,*/
+	.skeleton-bg-color, html[dark] .skeleton-bg-color
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.skeleton-light-border-bottom
-	{
-		border-bottom: 1px solid var(--hover-background) !important;
-	}
-	html[dark] .masthead-skeleton-icon,
-	/*html[dark] ytd-masthead.shell,
-	html[dark] .shelf-videos,*/
-	html[dark] .skeleton-bg-color
-	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}
+	.skeleton-light-border-bottom,
 	html[dark] .skeleton-light-border-bottom
 	{
 		border-bottom: 1px solid var(--hover-background) !important;

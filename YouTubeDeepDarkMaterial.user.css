@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.6.9
+@version 3.7.0
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -362,6 +362,7 @@
 		scrollbar-width: thin !important;
 		--yt-spec-text-primary: var(--main-text) !important;
 		--yt-spec-text-secondary: var(--dimmer-text) !important;
+		--paper-spinner-color: var(--dimmer-text) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -2974,11 +2975,18 @@
 	}
 
 	/*Notification*/
+	/*load spinner - also for comments*/
+	.spinner-layer.layer-1.tp-yt-paper-spinner, .spinner-layer.layer-2.tp-yt-paper-spinner, 
+	.spinner-layer.layer-3.tp-yt-paper-spinner, .spinner-layer.layer-4.tp-yt-paper-spinner
+	{
+		color: var(--dimmer-text) !important;
+	}
 	#notification-count.ytd-notification-topbar-button-renderer,
 	ytd-notification-renderer.unread #new.ytd-notification-renderer,
 	.yt-lockup-notification .unread-dot /*account settings*/
 	{
 		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 	.text.ytd-notification-renderer,
 	.message.ytd-notification-renderer

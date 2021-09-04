@@ -2069,10 +2069,6 @@
 	{
 		color: var(--main-color) !important;
 	}
-	ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead
-	{
-		background-color: var(--main-background) !important;
-	}
 	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b
 	{
@@ -2114,6 +2110,10 @@
 	}
 
 	/*Microphone search*/
+	ytd-masthead #voice-search-button.ytd-masthead
+	{
+		background-color: var(--hover-background) !important;
+	}
 	ytd-voice-search-dialog-renderer[dialog]
 	{
 		background-color: var(--second-background) !important;
@@ -3413,25 +3413,31 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}*/
-
-	ytd-masthead.shell [class*='skeleton'],
-	.shelf-videos,
-	.skeleton-bg-color
+	/*homepage skeleton*/
+	#home-container-skeleton, html[dark] #home-container-skeleton
+	{
+		background-color: var(--main-background) !important;
+	}
+	/*sidebar skeleton*/
+	#guide-skeleton, html[dark] #guide-skeleton
+	{
+		background-color: var(--second-background) !important;
+	}
+	/*homepage videos skeleton*/
+	#home-page-skeleton .skeleton-bg-color,
+	html[dark] #home-page-skeleton .skeleton-bg-color
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.masthead-skeleton-icon, html[dark] .masthead-skeleton-icon,
+	/*ytd-masthead.shell [class*='skeleton'], html[dark] ytd-masthead.shell,
+	.shelf-videos, html[dark] .shelf-videos,*/
+	.skeleton-bg-color, html[dark] .skeleton-bg-color
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.skeleton-light-border-bottom
-	{
-		border-bottom: 1px solid var(--hover-background) !important;
-	}
-	html[dark] ytd-masthead.shell,
-	html[dark] .shelf-videos,
-	html[dark] .skeleton-bg-color
-	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
-	}
+	.skeleton-light-border-bottom,
 	html[dark] .skeleton-light-border-bottom
 	{
 		border-bottom: 1px solid var(--hover-background) !important;

@@ -2069,10 +2069,6 @@
 	{
 		color: var(--main-color) !important;
 	}
-	ytd-masthead[desktop-mic-background] #voice-search-button.ytd-masthead
-	{
-		background-color: var(--hover-background) !important;
-	}
 	/*Main backgrounds*/
 	.sbsb_a,.sbdd_b
 	{
@@ -2114,6 +2110,10 @@
 	}
 
 	/*Microphone search*/
+	ytd-masthead #voice-search-button.ytd-masthead
+	{
+		background-color: var(--hover-background) !important;
+	}
 	ytd-voice-search-dialog-renderer[dialog]
 	{
 		background-color: var(--second-background) !important;

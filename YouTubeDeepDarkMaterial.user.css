@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.7.1
+@version 3.7.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1914,7 +1914,7 @@
 	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer,
 	#header.ytd-engagement-panel-title-header-renderer,
 	#content.ytd-engagement-panel-section-list-renderer,
-	ytd-transcript-footer-renderer
+	ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -1942,6 +1942,32 @@
 	{
 		background-color: transparent !important;
 		color: var(--main-color) !important
+	}
+	.segment-timestamp.ytd-transcript-segment-renderer
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important
+	}
+	/*search transcript*/
+	ytd-transcript-search-panel-renderer,
+	ytd-transcript-search-box-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
+	.input-container.ytd-transcript-search-box-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*magnifing glass icon*/
+	.icon.ytd-transcript-search-box-renderer
+	{
+		--iron-icon-fill-color: var(--dimmer-text) !important;
+		--iron-icon-stroke-color: var(--dimmer-text) !important;
+	}
+	#transcript-search-box-input.ytd-transcript-search-box-renderer
+	{
+    	color: var(--main-text) !important;
+    	caret-color: var(--main-color) !important;
 	}
 
 	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail

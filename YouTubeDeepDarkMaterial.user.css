@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.7.2
+@version 3.7.3
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -363,6 +363,16 @@
 		--yt-spec-text-primary: var(--main-text) !important;
 		--yt-spec-text-secondary: var(--dimmer-text) !important;
 		--paper-spinner-color: var(--dimmer-text) !important;
+		
+		--paper-radio-button-unchecked-color: var(--dimmer-text) !important;
+		--paper-radio-button-unchecked-background-color: transparent !important;
+		--paper-radio-button-checked-color: var(--main-color) !important;
+		--paper-radio-button-checked-ink-color: var(--main-color) !important;
+		
+		--paper-checkbox-unchecked-color: var(--dimmer-text) !important;
+		--paper-checkbox-checked-color: var(--main-color) !important;
+		--paper-checkbox-checkmark-color: none !important;
+		--paper-checkbox-checked-ink-color: var(--main-color) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -1200,6 +1210,17 @@
 		border-color: var(--main-color) !important;
 	}
 
+	/*Change subtitles settings tooltip*/
+	.ytp-promotooltip-container
+	{
+		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+		color: var(--main-text) !important;
+	}
+	.ytp-promotooltip-pointer
+	{
+		border-color: var(--hover-background) !important;
+	}
 	/*You are not logged in tooltip*/
 	#tooltip.tp-yt-paper-tooltip,
 	yt-tooltip-renderer
@@ -1591,37 +1612,6 @@
 		color: var(--main-color) !important;
 	}
 
-	/*Checkbox*/
-	ytd-playlist-add-to-option-renderer paper-checkbox:hover #checkbox.paper-checkbox,
-	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #checkbox.paper-checkbox,
-	ytd-playlist-add-to-option-renderer paper-checkbox[checked] #checkmark.paper-checkbox
-	{
-		border-color: var(--main-color) !important;
-	}
-	#checkbox.paper-checkbox
-	{
-		border-color: var(--main-text) !important;
-	}
-	/*Chekboxes background*/
-	#checkbox.checked.paper-checkbox
-	{
-		background-color: transparent !important;
-	}
-
-	/*Radio buttons*/
-	paper-radio-button[checked] #offRadio.paper-radio-button
-	{
-		--paper-radio-button-checked-color: var(--main-color) !important;
-	}
-	#onRadio.paper-radio-button
-	{
-		--paper-radio-button-checked-color: var(--main-color) !important;
-	}
-	#offRadio.paper-radio-button:hover
-	{
-		border-color:  var(--main-color) !important;
-	}
-
 	/*Avatars and thumbnails opacity */
 	img.yt-img-shadow
 	{
@@ -1966,8 +1956,8 @@
 	}
 	#transcript-search-box-input.ytd-transcript-search-box-renderer
 	{
-    	color: var(--main-text) !important;
-    	caret-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		caret-color: var(--main-color) !important;
 	}
 
 	.ytp-video-menu-item[aria-checked="true"] .ytp-video-menu-item-thumbnail
@@ -3962,26 +3952,6 @@
 	.exp-kevlar-settings .account-page .yt-uix-button:hover
 	{
 		opacity: 1 !important;
-	}
-	/*checkboxes playback and performance*/
-	#checkbox.checked.tp-yt-paper-checkbox
-	{
-		background-color: var(--main-color) !important;
-		border-color: var(--main-color) !important;
-	}
-	yt-icon.ytd-settings-checkbox-renderer,
-	yt-icon.ytd-settings-radio-option-renderer
-	{
-		color: var(--dimmer-text) !important;
-	}
-	/*radio button*/
-	tp-yt-paper-radio-button[checked] #offRadio.tp-yt-paper-radio-button
-	{
-		border-color: var(--main-color) !important;
-	}
-	tp-yt-paper-radio-button[checked] #onRadio.tp-yt-paper-radio-button
-	{
-		background-color: var(--main-color) !important;
 	}
 	/*Social*/
 	.social-connector

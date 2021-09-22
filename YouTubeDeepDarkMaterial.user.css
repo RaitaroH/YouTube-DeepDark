@@ -367,12 +367,14 @@
 		--paper-radio-button-unchecked-color: var(--dimmer-text) !important;
 		--paper-radio-button-unchecked-background-color: transparent !important;
 		--paper-radio-button-checked-color: var(--main-color) !important;
-		--paper-radio-button-checked-ink-color: var(--main-color) !important;
+		--paper-radio-button-checked-ink-color:   var(--main-color) !important;
+		--paper-radio-button-unchecked-ink-color: var(--main-color) !important;
 		
 		--paper-checkbox-unchecked-color: var(--dimmer-text) !important;
 		--paper-checkbox-checked-color: var(--main-color) !important;
 		--paper-checkbox-checkmark-color: none !important;
-		--paper-checkbox-checked-ink-color: var(--main-color) !important;
+		--paper-checkbox-checked-ink-color:   var(--main-color) !important;
+		--paper-checkbox-unchecked-ink-color: var(--main-color) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb

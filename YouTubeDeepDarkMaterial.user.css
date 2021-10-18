@@ -60,7 +60,7 @@
 
 ==/UserStyle== */
 
-@-moz-document regexp('https?:\/\/(?!gaming\.)(?!studio\.).*youtube.*\.com\/(?!premium).*$') {
+@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!studio\\.).*youtube.*\\.com\\/(?!premium|howyoutubeworks).*$') {
 	/* Author     : Theme made by RaitaroH */
 	/* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
 	/* Home       : https://github.com/RaitaroH/YouTube-DeepDark */

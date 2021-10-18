@@ -3489,6 +3489,14 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
+	yt-report-form-modal-renderer[dialog][dialog][dialog]
+	{
+		background: var(--main-background) !important;
+	}
+	yt-options-renderer[increased-tooltip-target] yt-icon.yt-options-renderer
+	{
+		color: var(--main-text) !important;
+	}
 
 	/*Help*/
 	.ghp-header-searchBox, .ghp-autocomplete-label

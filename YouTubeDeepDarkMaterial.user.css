@@ -3567,6 +3567,18 @@
 	}
 
 	/*Music*/
+	/* scrubber button */
+	.tp-yt-paper-slider.style-scope.slider-knob-inner
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	/* progress bar */
+	#primaryProgress
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
 	.flex-container.ytd-compact-station-renderer
 	{
 		background-color: var(--second-background) !important;

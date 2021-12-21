@@ -3453,9 +3453,14 @@
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
 
-	ytd-alert-with-button-renderer[type="INFO"]
+	ytd-alert-with-button-renderer[type="INFO"],
+	#content-wrapper.yt-alert-with-actions-renderer /*TOS*/
 	{
 		background-color: var(--hover-background) !important;
+	}
+	#content-wrapper.yt-alert-with-actions-renderer yt-button-renderer[is-paper-button] yt-icon.yt-button-renderer
+	{
+		color: var(--main-color) !important;
 	}
 	ytd-alert-with-button-renderer[type="INFO"] #text.ytd-alert-with-button-renderer
 	{

@@ -3657,33 +3657,6 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	/*the horrible banner on main page*/
-	ytd-banner-promo-renderer.banner-promo-style-type-masthead-v2 .ytd-banner-promo-renderer-inline-image.ytd-banner-promo-renderer,
-	.ytd-banner-promo-renderer-logo.ytd-banner-promo-renderer yt-img-shadow.ytd-banner-promo-renderer
-	{
-		filter: grayscale(100%) invert(85%);
-	}
-	.ytd-banner-promo-renderer-background.ytd-banner-promo-renderer
-	{
-		background: #262626 !important; /*the matching color resulted due to the filter*/
-	}
-	.ytd-banner-promo-renderer-title.ytd-banner-promo-renderer,
-	.ytd-banner-promo-renderer-promo-text.ytd-banner-promo-renderer
-	{
-		color: var(--dimmer-text) !important;
-	}
-	ytd-banner-promo-renderer.banner-promo-style-type-masthead-v2 ytd-button-renderer#action-button.ytd-banner-promo-renderer
-	{
-		border-color: var(--dimmer-text) !important;
-	}
-	#dismiss-button[is-icon-button].ytd-banner-promo-renderer
-	{
-		background: transparent !important;
-	}
-	.badge-style-type-premium.ytd-badge-supported-renderer span.ytd-badge-supported-renderer
-	{
-		color: var(--main-text) !important;
-	}
 
 	ytd-grid-video-renderer[is-dismissed] #dismissed
 	{

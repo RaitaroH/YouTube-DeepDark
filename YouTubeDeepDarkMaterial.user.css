@@ -470,12 +470,9 @@
 	}
 
 	/*YouTube Apps*/
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#F00"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#f00"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#FF8983"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#E23229"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g path[fill="#C7322A"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a paper-item div yt-icon svg g  circle[fill="red"]
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a tp-yt-paper-item div yt-icon svg g path[fill="#FF0000"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a tp-yt-paper-item div yt-icon svg g circle[fill="#FF0000"],
+	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a tp-yt-paper-item div yt-icon svg g g g path[fill="#F00"]
 	{
 		fill: var(--main-color) !important;
 	}

@@ -435,6 +435,13 @@
 		outline: none !important;
 	}
 
+	/*Placeholder image on pages that need an account - such as Subscriptions*/
+	ytd-background-promo-renderer .image.ytd-background-promo-renderer, 
+	ytd-message-renderer yt-icon.ytd-message-renderer
+	{
+		color: var(--main-text) !important;
+	}
+
 	/*Nav bar*/
 	ytd-masthead,
 	#yt-masthead-container, #masthead-positioner-height-offset /*account page*/

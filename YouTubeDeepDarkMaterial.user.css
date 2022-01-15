@@ -631,6 +631,12 @@
 		background-color: var(--main-color) !important;
 	}
 
+	/*Main page video hover preview*/
+	#video-preview-container.ytd-video-preview
+	{
+		background: var(--second-background) !important;
+	}
+
 	/*Feed filter*/
 	#chips-wrapper.ytd-feed-filter-chip-bar-renderer
 	{
@@ -683,6 +689,7 @@
 	/*Covid19 big posts aka rich shelves*/
 	/*also other borders*/
 	ytd-rich-shelf-renderer, #show-more-button.ytd-rich-shelf-renderer,
+	ytd-rich-shelf-renderer[is-show-more-hidden] #dismissible.ytd-rich-shelf-renderer,
 	#contents.ytd-rich-shelf-renderer,
 	ytd-compact-promoted-item-renderer[view-style="COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID"] #dismissible.ytd-compact-promoted-item-renderer
 	{

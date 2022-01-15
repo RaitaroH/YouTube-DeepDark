@@ -2056,6 +2056,23 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*chapter images in description*/
+	ytd-macro-markers-list-item-renderer[active][layout="MACRO_MARKERS_LIST_ITEM_RENDERER_LAYOUT_VERTICAL"]
+	{
+		border-color: var(--main-color) !important;
+	}
+	ytd-horizontal-card-list-renderer.ytd-structured-description-content-renderer:not(:first-child), 
+	ytd-metadata-row-container-renderer.ytd-structured-description-content-renderer:not(:first-child), 
+	ytd-structured-description-content-renderer[inline-structured-description] ytd-horizontal-card-list-renderer.ytd-structured-description-content-renderer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*chapter times in search description*/
+	.metadata-snippet-container-one-line.ytd-video-renderer #time.ytd-video-renderer
+	{
+		color: var(--main-color) !important;
+		background: var(--second-background) !important;
+	}
 
 	/*Search bar*/
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,

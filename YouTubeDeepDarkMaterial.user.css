@@ -80,7 +80,7 @@
 			--shadow: 0 1px 0.5px rgba(0, 0, 0, .3);
 		}
 		else if stylus-deepdark-style == "Catppuccin" {
-			--main-color: #96CDFB;
+			--main-color: #C9CBFF;
 			--main-background: #1E1E2E;
 			--second-background: #1A1826;
 			--hover-background: #302D41;
@@ -1850,11 +1850,11 @@
 	}
 
 	/*New logo*/
-	#logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"],
+	/*{#logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"],
 	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path:nth-child(1)
-	{
-		fill: var(--main-color) !important;
-	}
+	
+		fill: var(--logo-icon) !important;
+	}*/
 	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path:nth-child(2)
 	{
 		fill: var(--main-text) !important;

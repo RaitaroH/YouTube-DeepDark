@@ -2124,26 +2124,36 @@
 	{
 		color: var(--main-text) !important;
 	}
-	/*Search icon*/
+	/*Right search icon 🔎 */
 	#search-icon-legacy.ytd-searchbox,
 	#masthead-search .search-btn-component, #masthead-search .search-btn-component .start /*account*/
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
+	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox
+	{
+		color: var(--main-color) !important;
+	}
 	#masthead-search .search-btn-component .yt-uix-button-content /*account*/
 	{
 		filter: invert(1);
 	}
-	#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox
+	/*left 🔎 icon - shown on focus*/
+	#search-icon.ytd-searchbox
 	{
 		color: var(--main-text) !important;
 	}
-	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox, #search-icon.ytd-searchbox:hover
+	#search-icon.ytd-searchbox:hover, #search-icon.ytd-searchbox:hover
 	{
 		color: var(--main-color) !important;
 	}
-	/*Main backgrounds*/
+	/*results 🔎 icon*/
+	.sbqs_c::before
+	{
+		filter: invert(1);
+	}
+	/*Results backgrounds*/
 	.sbsb_a,.sbdd_b
 	{
 		background: var(--second-background) !important;

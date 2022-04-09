@@ -4153,3 +4153,62 @@
 		border-color: var(--hover-background) !important;
 	}
 }
+
+@-moz-document url-prefix('https://www.youtube.com/redirect') {
+	/*Are you sure you want to leave YouTube? redirect*/
+	/*seems like youtube will never update this page so, yeah*/
+	#invalid-token-redirect-warning-text /*h1*/
+	{
+		color: var(--main-text) !important;
+	}
+	/*span*/
+	#redirect-main-text
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#redirect-main-text .bolded
+	{
+		color: var(--main-color);
+	}
+	/*search*/
+	#masthead-search-terms-border
+	{
+		border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	#masthead-search-terms
+	{
+		color: var(--main-text);
+	}
+	.search-button
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*🔍 is missing, nice*/
+	.search-button-content
+	{
+		background: no-repeat url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNy4zOTE3IDE2LjgwODNMMTIuNzMzMyAxMi4xNUMxMy42MjUgMTEuMTI1IDE0LjE2NjcgOS43OTE2NyAxNC4xNjY3IDguMzMzMzNDMTQuMTY2NyA1LjEwODMzIDExLjU1ODMgMi41IDguMzMzMzMgMi41QzUuMTA4MzMgMi41IDIuNSA1LjEwODMzIDIuNSA4LjMzMzMzQzIuNSAxMS41NTgzIDUuMTA4MzMgMTQuMTY2NyA4LjMzMzMzIDE0LjE2NjdDOS43OTE2NyAxNC4xNjY3IDExLjEyNSAxMy42MjUgMTIuMTUgMTIuNzQxN0wxNi44MDgzIDE3LjRMMTcuMzkxNyAxNi44MDgzWk04LjMzMzMzIDEzLjMzMzNDNS41NzUgMTMuMzMzMyAzLjMzMzMzIDExLjA5MTcgMy4zMzMzMyA4LjMzMzMzQzMuMzMzMzMgNS41NzUgNS41NzUgMy4zMzMzMyA4LjMzMzMzIDMuMzMzMzNDMTEuMDkxNyAzLjMzMzMzIDEzLjMzMzMgNS41NzUgMTMuMzMzMyA4LjMzMzMzQzEzLjMzMzMgMTEuMDkxNyAxMS4wOTE3IDEzLjMzMzMgOC4zMzMzMyAxMy4zMzMzWiIgZmlsbD0iIzAzMDMwMyIvPjwvc3ZnPg==") !important;
+		filter: invert(1);
+	}
+	#redirect-backto-safety-button:hover
+	{
+		color: var(--main-text) !important;
+	}
+	/*logo icon is also missing, but this __should__ change in the future*/
+	.logo {
+		background: no-repeat url("https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/Logo.png") !important;
+		background-size: 70% !important;
+		padding: 10px;
+		width: 120px !important;
+		height: 33px !important;
+		box-sizing: border-box !important;
+		position: relative;
+		right: -30px;
+	}
+	#logo-container .content-region
+	{
+		color: var(--main-text) !important;
+	}
+}

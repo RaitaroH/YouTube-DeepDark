@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.8.5
+@version 3.8.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2477,14 +2477,26 @@
 		background-color: var(--paper-toggle-button-unchecked-bar-color, #000000) !important;
 		opacity: 0.4 !important;
 	}
-	/*submit button*/
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton
+	/*submit button - keeping both elemnts for some backwards compatiblity*/
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton,
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbMediumButton
 	{
 		background-color: var(--main-color) !important;
 	}
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton:hover
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton:hover,
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbMediumButton:hover
 	{
 		filter: brightness(110%);
+	}
+	/*time slots hover*/
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .segmentSummary:hover
+	{
+		background-color: var(--hover-background) !important
+	}
+	/*help heart icon*/
+	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbHeart
+	{
+		filter: invert(1) grayscale(1);
 	}
 	/*logo change*/
 	#sponsorBlockPopupLogo, .sponsorSkipLogo
@@ -2508,6 +2520,10 @@
 		width: 18px !important;
 		height: 18px !important;
 		padding-left: 18px !important;
+	}
+	.sponsorBlockTooltip
+	{
+		background-color: var(--hover-background) !important;
 	}
 
 	/*Comments*/

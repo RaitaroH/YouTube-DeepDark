@@ -2395,147 +2395,6 @@
 		color: var(--dimmer-text) !important;
 	}
 
-	/*Iridium support, former YouTube+*/
-	#iridium_settings .iri-settings-button.danger,.active_sidebar
-	{
-		background-color: var(--main-color) !important;
-		border-color: var(--main-color) !important;
-	}
-	.feature-link
-	{
-		color: var(--main-color) !important;
-	}
-	.iri-dark-mode-settings .sidebar_section:hover:not(.active_sidebar)
-	{
-		background-color: var(--hover-background) !important;
-	}
-	.sidebar_section
-	{
-		color: var(--dimmer-text) !important;
-	}
-	.iri-dark-mode-settings #iridium_settings {
-		background-color: var(--second-background) !important;
-	}
-	.iri-dark-mode-settings #iridium_settings_sidebar, .iri-dark-mode-settings #settings_section, .iri-dark-mode-settings #iridium-text-editor
-	{
-		background-color: var(--main-background) !important;
-	}
-	.iri-video-count
-	{
-		color: var(--dimmer-text) !important;
-		opacity: .8;
-	}
-	.iri-video-count:hover
-	{
-		color: var(--main-color) !important;
-		opacity: 1 !important;
-	}
-	.iri-add-to-blacklist:hover svg
-	{
-		fill: var(--main-color) !important;
-	}
-	#iri-quick-controls button svg
-	{
-		fill: var(--dimmer-text) !important;
-	}
-	#iri-quick-controls button[enabled] svg
-	{
-		fill: var(--main-color) !important;
-		opacity: .9;
-	}
-	#iri-quick-controls button:hover svg, #iri-quick-controls button[enabled]:hover svg
-	{
-		fill: var(--main-color) !important;
-		opacity: 1 !important;
-	}
-	.iri-quick-controls-tooltip, .iri-tooltip
-	{
-		background-color: var(--hover-background) !important;
-		color: var(--main-color) !important;
-	}
-	#iri-show-comments:hover
-	{
-		color: var(--main-color) !important;
-	}
-
-	/*SponsorBlock*/
-	#sponsorblockPopup, #sponsorBlockPopupBody, #sponsorBlockPopupContainer,
-	#sponsorBlockPopupContainer .sbControlsMenu-item
-	{
-		background-color: var(--second-background) !important;
-	}
-	#sponsorBlockPopupContainer
-	{
-		padding-top: 12px !important;
-		margin-bottom: 20px !important;
-	}
-	#sponsorBlockPopupContainer .smallLink
-	{
-		color: var(--main-text) !important;
-		font-size: 13px !important;
-	}
-	#sponsorBlockPopupContainer .smallLink:hover
-	{
-		color: var(--main-color) !important;
-	}
-	#sponsorBlockPopupContainer .switchBg.green
-	{
-		background: var(--main-color) !important;
-	}
-	#sponsorBlockPopupContainer .switchBg.white
-	{
-		background-color: var(--paper-toggle-button-unchecked-bar-color, #000000) !important;
-		opacity: 0.4 !important;
-	}
-	/*submit button - keeping both elemnts for some backwards compatiblity*/
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton,
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbMediumButton
-	{
-		background-color: var(--main-color) !important;
-	}
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .mediumButton:hover,
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbMediumButton:hover
-	{
-		filter: brightness(110%);
-	}
-	/*time slots hover*/
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .segmentSummary:hover
-	{
-		background-color: var(--hover-background) !important
-	}
-	/*help heart icon*/
-	#sponsorBlockPopupContainer .sponsorBlockPageBody .sbHeart
-	{
-		filter: invert(1) grayscale(1);
-	}
-	/*logo change*/
-	#sponsorBlockPopupLogo, .sponsorSkipLogo
-	{
-		display: block !important;
-		-moz-box-sizing: border-box !important;
-		box-sizing: border-box !important;
-		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/IconSponsorBlocker256px.png) top left no-repeat !important;
-		background-size: 100% !important;
-		position: relative !important;
-	}
-	#sponsorBlockPopupLogo
-	{
-		width: 40px !important;
-		height: 40px !important;
-		padding-left: 40px !important;
-	}
-	/*for overlays*/
-	.sponsorSkipLogo
-	{
-		width: 18px !important;
-		height: 18px !important;
-		padding-left: 18px !important;
-	}
-	.sponsorBlockTooltip
-	{
-		background-color: var(--hover-background) !important;
-	}
-
 	/*Comments*/
 	yt-formatted-string.ytd-comments-header-renderer,
 	#contenteditable-root.yt-formatted-string[aria-label].yt-formatted-string:empty::before,
@@ -4195,6 +4054,36 @@
 	ytd-hotkey-dialog-section-option-renderer
 	{
 		border-color: var(--hover-background) !important;
+	}
+
+
+	/*SponsorBlock*/
+	/*logo change*/
+	#sponsorBlockPopupLogo, .sponsorSkipLogo
+	{
+		display: block !important;
+		-moz-box-sizing: border-box !important;
+		box-sizing: border-box !important;
+		background: url(https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YT_Images/IconSponsorBlocker256px.png) top left no-repeat !important;
+		background-size: 100% !important;
+		position: relative !important;
+	}
+	#sponsorBlockPopupLogo
+	{
+		width: 40px !important;
+		height: 40px !important;
+		padding-left: 40px !important;
+	}
+	/*for overlays*/
+	.sponsorSkipLogo
+	{
+		width: 18px !important;
+		height: 18px !important;
+		padding-left: 18px !important;
+	}
+	.sponsorBlockTooltip
+	{
+		background-color: var(--hover-background) !important;
 	}
 }
 

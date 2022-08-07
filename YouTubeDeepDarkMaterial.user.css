@@ -1074,13 +1074,20 @@
 		color: var(--main-color) !important;
 	}
 	/*description and other metadata*/
-	.date.ytd-video-secondary-info-renderer, .content.ytd-video-secondary-info-renderer, #title.ytd-metadata-row-renderer
+	.date.ytd-video-secondary-info-renderer, .content.ytd-video-secondary-info-renderer, #title.ytd-metadata-row-renderer,
+	#description-inline-expander > div > span > #formatted-snippet-text > span  /*new description*/
 	{
 		color: var(--dimmer-text) !important;
 	}
 	.content.content-line-height-override.style-scope.ytd-metadata-row-renderer, .content.ytd-metadata-row-header-renderer
 	{
 		color: var(--main-text) !important;
+	}
+	/*comment border next to new description*/
+	ytd-comments-entry-point-header-renderer:not([modern-metapanel]),
+	ytd-comments-entry-point-header-renderer:not([modern-metapanel]) #header.ytd-comments-entry-point-header-renderer
+	{
+		border-color: var(--hover-background) !important;
 	}
 	/*show more*/
 	.more-button, .less-button,

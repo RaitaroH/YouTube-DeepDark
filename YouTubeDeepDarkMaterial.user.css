@@ -3243,6 +3243,13 @@
 		color: var(--dimmer-text) !important;
 	}
 
+	/*Video was added/removed to/from a playlist by user*/
+	yt-notification-action-renderer[ui-refresh] #text.yt-notification-action-renderer,
+	yt-notification-action-renderer[ui-refresh] #sub-text.yt-notification-action-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+
 	/*Links in video description*/
 	.description.ytd-video-secondary-info-renderer a
 	{

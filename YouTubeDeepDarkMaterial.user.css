@@ -2635,7 +2635,7 @@
 		background: var(--second-background) !important;
 	}
 	yt-icon.ytd-menu-navigation-item-renderer, yt-icon.ytd-menu-service-item-renderer, #header.yt-live-chat-participant-list-renderer,
-	#author-name.yt-live-chat-author-chip, .style-scope.yt-live-chat-ninja-message-renderer
+	#author-name.yt-live-chat-author-chip:not(.member):not(.moderator), .style-scope.yt-live-chat-ninja-message-renderer
 	{
 		color: var(--main-text) !important;
 	}

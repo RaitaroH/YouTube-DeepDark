@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.9.1
+@version 3.9.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -60,7 +60,7 @@
 
 ==/UserStyle== */
 
-@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
+@-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.)(?!consent\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 	/* Author     : Theme made by RaitaroH */
 	/* Co-authors : https://github.com/MechaLynx https://github.com/MaximeRF */
 	/* Home       : https://github.com/RaitaroH/YouTube-DeepDark */
@@ -377,6 +377,10 @@
 		--paper-checkbox-checkmark-color: none !important;
 		--paper-checkbox-checked-ink-color:   var(--main-color) !important;
 		--paper-checkbox-unchecked-ink-color: var(--main-color) !important;
+		--yt-spec-call-to-action: var(--main-color) !important;
+		--yt-spec-suggested-action: var(--hover-background) !important;
+		--yt-spec-outline: var(--hover-background) !important;
+		--yt-spec-brand-button-background: var(--main-color) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -1829,11 +1833,15 @@
 
 	/*New logo*/
 	#logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"],
-	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path:nth-child(1)
+	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path:nth-child(1),
+	/*cookie version*/
+	svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
-	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path:nth-child(2)
+	ytd-topbar-logo-renderer.style-scope a svg > g > g:nth-child(1) > path:nth-child(2),
+	/*cookie version*/
+	g.ytd-consent-bump-v2-lightbox:nth-child(2) > g:nth-child(1) > *
 	{
 		fill: var(--main-text) !important;
 	}

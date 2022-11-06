@@ -44,8 +44,8 @@
 	"Custom"
 ]
 
-@var checkbox join-color "Use dark join button" 0
-@var checkbox subscribe-color "Use dark subscribe button" 0
+@var checkbox join-color "Use blue join button" 0
+@var checkbox subscribe-color "Use blue subscribe button" 0
 
 @var text scrollbar_width "Scrollbar width" 8px
 @var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
@@ -1051,28 +1051,31 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	/*action buttons*/
-	a.yt-simple-endpoint.ytd-toggle-button-renderer, ytd-button-renderer yt-formatted-string.ytd-button-renderer,
-	ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer /*likes*/
+
+	/*2022 Nov like button*/
+	/*not liked yet*/
+	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(2) > path:nth-child(1),
+	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(4) > path:nth-child(1)
 	{
-		color: var(--dimmer-text) !important;
+		stroke: var(--main-text) !important;
 	}
-	ytd-toggle-button-renderer.style-default-active a.yt-simple-endpoint.ytd-toggle-button-renderer /*active like/dislike buttons count*/
-	{
-		color: var(--main-color) !important;
-	}
-	ytd-toggle-button-renderer yt-icon-button.style-default-active button yt-icon svg, /*active like/dislike buttons icons, active bell icon*/
-	ytd-toggle-button-renderer yt-icon-button[aria-pressed='true'] button yt-icon svg /*active like/dislike buttons icons, active bell icon*/
+	/*liked*/
+	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(1) > path:nth-child(1),
+	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(3) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
-	ytd-toggle-button-renderer.style-text[is-icon-button]:hover *, /*like/dislike*/
-	ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer:hover #text.ytd-toggle-button-renderer,
-	ytd-button-renderer[is-icon-button]:hover *, /*share*/
-	button.yt-icon-button:hover * /*bell*/
+	yt-animated-icon[animated-icon-type="LIKE"]> ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(1) > path:nth-child(2),
+	yt-animated-icon[animated-icon-type="LIKE"]> ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(3) > path:nth-child(2)
 	{
-		color: var(--main-color) !important;
+		stroke: var(--main-color) !important
 	}
+	/*on shorts - so here is filled by default, thus above I am using main-color instead to keep it consistent*/
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled > div > yt-icon > svg > g > path
+	{
+		fill: var(--main-color) !important;
+	}
+
 	/*description and other metadata*/
 	.date.ytd-video-secondary-info-renderer, .content.ytd-video-secondary-info-renderer, #title.ytd-metadata-row-renderer,
 	#description-inline-expander > div > span > #formatted-snippet-text > span  /*new description*/
@@ -1305,6 +1308,11 @@
 	{
 		background-color: var(--main-background) !important;
 	}
+	#background-image-layer.ytd-sponsorships-offer-renderer
+	{
+		background-image: unset !important;
+		background-color: var(--hover-background) !important;
+	}
 	/*title*/
 	#top-bar.ytd-sponsorships-offer-renderer
 	{
@@ -1318,7 +1326,7 @@
 	/*fine print*/
 	.disclaimer.ytd-sponsorships-tier-renderer
 	{
-		color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 
 	/*Super Thanks donations*/
@@ -1365,85 +1373,47 @@
 		color: rgb(255,255,255) !important;
 	}
 
-	/*Subscribe button and comment button*/
-	#subscribe-button:hover ytd-button-renderer yt-formatted-string.ytd-button-renderer, #subscribe-button ytd-button-renderer yt-formatted-string.ytd-button-renderer,
-	#subscribe-button:hover .deemphasize.yt-formatted-string, #subscribe-button .deemphasize.yt-formatted-string,
-	paper-button.ytd-subscribe-button-renderer[subscribed] yt-formatted-string.ytd-subscribe-button-renderer .deemphasize.yt-formatted-string,
-	ytd-button-renderer #button.ytd-button-renderer:hover yt-formatted-string.ytd-button-renderer,
-	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer,
-	ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
-	paper-button.ytd-subscribe-button-renderer,
-	ytd-sponsorships-tier-renderer yt-button-renderer yt-formatted-string.yt-button-renderer, /*join button in join window*/
-	/*as of april 2021*/
-	tp-yt-paper-button.ytd-subscribe-button-renderer,
-	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer
+	/*2022 Nov changes*/
+	/*subscribe button*/
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal  /*NOTE: this affects other material buttons - I would say desired effect*/
 	{
+		background-color: var(--second-background) !important;
+		border-color: var(--second-background) !important;
+		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
-	ytd-button-renderer #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer.style-blue-text
+	/*unsubscribe confirm dialog*/
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text
 	{
 		color: var(--main-color) !important;
 	}
-	ytd-button-renderer.style-destructive[is-paper-button],
-	paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
-	a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
-	#button[class="style-scope ytd-button-renderer style-compact-gray"],
-	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer, /*join button*/
-	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button], /*join button in join window*/
-	/*as of april 2021*/
-	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer,
-	tp-yt-paper-button.ytd-subscribe-button-renderer
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover
 	{
-		background-color: var(--main-color) !important;
-		border-color: var(--main-color) !important;
-		box-shadow: var(--shadow) !important;
+		background-color: var(--yt-spec-10-percent-layer) !important;
+	}
+	/*join button*/
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"],
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled /*in window*/
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--second-background) !important;
 	}
 	if join-color /*overwriting the above*/
 	{
-		ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer,
-		ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button], /*join button in join window*/
-		ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer /*as of april 2021*/
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"]
 		{
-			background-color: var(--second-background) !important;
-			border-color: var(--second-background) !important;
+			background-color: var(--main-color) !important;
+			border-color: var(--main-color) !important;
 		}
 	}
 	if subscribe-color /*overwriting the above*/
 	{
-		ytd-button-renderer.style-destructive[is-paper-button],
-		paper-button.ytd-subscribe-button-renderer,.ytp-sb-subscribe,
-		a.ytp-sb-subscribe, ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]),
-		#button[class="style-scope ytd-button-renderer style-compact-gray"],
-		ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer,
-		tp-yt-paper-button.ytd-subscribe-button-renderer /*as of april 2021*/
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled
 		{
-			background-color: var(--second-background) !important;
-			border-color: var(--second-background) !important;
+			background-color: var(--main-color) !important;
+			border-color: var(--main-color) !important;
 		}
-	}
-	ytd-button-renderer.style-destructive[is-paper-button]:hover,
-	paper-button.ytd-subscribe-button-renderer:hover,
-	paper-button.ytd-subscribe-button-renderer[subscribed]:hover,
-	.ytp-sb-subscribe, a.ytp-sb-subscribe:hover,.ytp-sb-unsubscribe:hover,
-	ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover,
-	#button[class="style-scope ytd-button-renderer style-compact-gray"]:hover,
-	ytd-button-renderer.style-compact-gray[is-paper-button] paper-button.ytd-button-renderer:hover,
-	ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer:hover, /*join button*/
-	ytd-sponsorships-tier-renderer yt-button-renderer.style-primary[is-paper-button]:hover, /*join button in join window*/
-	/*as of april 2021*/
-	ytd-button-renderer.style-suggestive[is-paper-button] tp-yt-paper-button.ytd-button-renderer:hover,
-	tp-yt-paper-button.ytd-subscribe-button-renderer:hover
-	{
-		filter: brightness(110%) !important;
-	}
-	paper-button.ytd-subscribe-button-renderer[subscribed], .ytp-sb-unsubscribe,
-	tp-yt-paper-button.ytd-subscribe-button-renderer[subscribed] /*as of april 2021*/
-	{
-		background-color: var(--second-background) !important;
-		color: var(--main-text) !important;
-		opacity: 0.9 !important;
-		box-shadow: var(--shadow) !important;
 	}
 	ytd-button-renderer.style-primary[is-paper-button]
 	{

@@ -1650,6 +1650,13 @@
 	}
 
 	/*Video section*/
+	/*2022 Nov*/
+	/*this seems to be only in dark mode? */
+	#cinematics.ytd-watch-flexy
+	{
+		display: none !important;
+	}
+
 	/*Video title hover in html5 video*/
 	.html5-video-player a:hover
 	{

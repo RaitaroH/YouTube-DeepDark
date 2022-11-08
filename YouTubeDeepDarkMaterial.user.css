@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.9.2
+@version 3.9.3
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -380,7 +380,7 @@
 		--yt-spec-call-to-action: var(--main-color) !important;
 		--yt-spec-suggested-action: var(--hover-background) !important;
 		--yt-spec-outline: var(--hover-background) !important;
-		--yt-spec-brand-button-background: var(--main-color) !important;
+		--yt-spec-brand-button-background: var(--main-color) !important; /*in incognito this may be used as subscribe button but is inconsistent .yt-spec-button-shape-next--brand.yt-spec-button-shape-next--filled*/
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -1380,7 +1380,10 @@
 	/*2022 Nov changes*/
 	/*subscribe button*/
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal  /*NOTE: this affects other material buttons - I would say desired effect*/
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal,  /*NOTE: this affects other material buttons - I would say desired effect*/
+	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
+	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal:hover, /*on shorts*/
+	.ytp-sb-subscribe, a.ytp-sb-subscribe /*in cards... why yt why*/
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
@@ -1413,7 +1416,9 @@
 	}
 	if subscribe-color /*overwriting the above*/
 	{
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+		.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
+		.ytp-sb-subscribe, a.ytp-sb-subscribe /*in cards*/
 		{
 			background-color: var(--main-color) !important;
 			border-color: var(--main-color) !important;

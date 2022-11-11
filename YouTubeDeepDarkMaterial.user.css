@@ -715,12 +715,6 @@
 		border-color: transparent !important;
 	}
 
-	/*Border color for terms and conditions*/
-	ytd-consent-bump-renderer
-	{
-		border-bottom: 1px solid var(--main-color) !important;
-	}
-
 	#title.ytd-grid-channel-renderer
 	{
 		color: var(--dimmer-text) !important;
@@ -1834,6 +1828,22 @@
 	#yt-masthead #logo-container
 	{
 		margin-right: 20px !important;
+	}
+
+	/*consent page (cookie page)*/
+	/*cookies consent dialog*/
+	ytd-consent-bump-v2-lightbox ytd-button-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
+	{
+		color: var(--main-color) !important;
+	}
+	ytd-consent-bump-v2-lightbox[darker-dark-theme] .loading-overlay.ytd-consent-bump-v2-lightbox
+	{
+		background: var(--hover-background) !important;
+	}
+	/*Border color for terms and conditions*/
+	ytd-consent-bump-renderer
+	{
+		border-bottom: 1px solid var(--main-color) !important;
 	}
 
 	/*New logo*/

@@ -482,19 +482,6 @@
 		filter: invert(1) brightness(720%);
 	}
 
-	/*YouTube Apps*/
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a tp-yt-paper-item div yt-icon svg g path[fill="#FF0000"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a tp-yt-paper-item div yt-icon svg g circle[fill="#FF0000"],
-	yt-multi-page-menu-section-renderer.style-scope div ytd-compact-link-renderer a tp-yt-paper-item div yt-icon svg g g g path[fill="#F00"]
-	{
-		fill: var(--main-color) !important;
-	}
-	/*Upload*/
-	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#6f6f6f"],
-	ytd-compact-link-renderer.style-scope a paper-item div yt-icon svg g path[fill="#f80000"]
-	{
-		fill: var(--main-color) !important;
-	}
 	#sections.ytd-multi-page-menu-renderer > .ytd-multi-page-menu-renderer:not(:last-child)
 	{
 		border-color: var(--hover-background) !important;

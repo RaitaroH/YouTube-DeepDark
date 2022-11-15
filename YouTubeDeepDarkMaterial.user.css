@@ -381,6 +381,8 @@
 		--yt-spec-suggested-action: var(--hover-background) !important;
 		--yt-spec-outline: var(--hover-background) !important;
 		--yt-spec-brand-button-background: var(--main-color) !important; /*in incognito this may be used as subscribe button but is inconsistent .yt-spec-button-shape-next--brand.yt-spec-button-shape-next--filled*/
+		
+		--yt-formatted-string-bold-color: var(--dimmer-text) !important; /*this affects number of views*/
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -1062,38 +1064,24 @@
 	}
 
 	/*description and other metadata*/
-	.date.ytd-video-secondary-info-renderer, .content.ytd-video-secondary-info-renderer, #title.ytd-metadata-row-renderer,
-	#description-inline-expander > div > span > #formatted-snippet-text > span  /*new description*/
+	ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata
 	{
-		color: var(--dimmer-text) !important;
+		background: var(--second-background) !important;
+		/*--yt-spec-button-chip-background-hover*/
 	}
-	.content.content-line-height-override.style-scope.ytd-metadata-row-renderer, .content.ytd-metadata-row-header-renderer
+	ytd-watch-metadata[clickable-description][description-collapsed] #description.ytd-watch-metadata:hover
 	{
-		color: var(--main-text) !important;
+		background: var(--hover-background) !important;
+		/*--yt-spec-badge-chip-background*/
 	}
-	/*comment border next to new description*/
-	ytd-comments-entry-point-header-renderer:not([modern-metapanel]),
-	ytd-comments-entry-point-header-renderer:not([modern-metapanel]) #header.ytd-comments-entry-point-header-renderer
-	{
-		border-color: var(--hover-background) !important;
-	}
-	/*show more*/
-	.more-button, .less-button,
-	#show-more-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer,
-	#show-less-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer
-	{
-		color: var(--main-text) !important;
-	}
-	.more-button:hover, .less-button:hover,
-	#show-more-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer:hover,
-	#show-less-button.ytd-ticket-shelf-renderer > div.ytd-ticket-shelf-renderer:hover
+	ytd-watch-metadata[modern-metapanel] #description.ytd-watch-metadata .yt-simple-endpoint.style-scope.yt-formatted-string
 	{
 		color: var(--main-color) !important;
 	}
-	/*section borders*/
-	ytd-video-secondary-info-renderer, ytd-metadata-row-header-renderer[has-divider-line]
+	/*show more / less*/
+	#expand.ytd-text-inline-expander:hover, #collapse.ytd-text-inline-expander:hover
 	{
-		border-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
 	}
 
 	/*Recommandation page*/

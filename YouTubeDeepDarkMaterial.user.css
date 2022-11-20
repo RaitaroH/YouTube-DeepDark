@@ -365,17 +365,17 @@
 		--paper-spinner-color: var(--dimmer-text) !important;
 
 		--paper-input-container-color: var(--dimmer-text) !important;
-
+		
 		--paper-radio-button-unchecked-color: var(--dimmer-text) !important;
 		--paper-radio-button-unchecked-background-color: transparent !important;
 		--paper-radio-button-checked-color: var(--main-color) !important;
-		--paper-radio-button-checked-ink-color: var(--main-color) !important;
+		--paper-radio-button-checked-ink-color:   var(--main-color) !important;
 		--paper-radio-button-unchecked-ink-color: var(--main-color) !important;
-
+		
 		--paper-checkbox-unchecked-color: var(--dimmer-text) !important;
 		--paper-checkbox-checked-color: var(--main-color) !important;
 		--paper-checkbox-checkmark-color: none !important;
-		--paper-checkbox-checked-ink-color: var(--main-color) !important;
+		--paper-checkbox-checked-ink-color:   var(--main-color) !important;
 		--paper-checkbox-unchecked-ink-color: var(--main-color) !important;
 		--yt-spec-call-to-action: var(--main-color) !important;
 		--yt-spec-suggested-action: var(--hover-background) !important;
@@ -394,12 +394,10 @@
 		width: scrollbar_width !important;
 	}
 	/*Scrollbar fix for firefox*/
-	::-webkit-scrollbar-track
-	{
+	::-webkit-scrollbar-track {
 		background: scrollbar_track !important;
 	}
-	::-webkit-scrollbar-thumb
-	{
+	::-webkit-scrollbar-thumb {
 		background: var(--main-color) !important;
 	}
 
@@ -446,7 +444,7 @@
 	}
 
 	/*Placeholder image on pages that need an account - such as Subscriptions*/
-	ytd-background-promo-renderer .image.ytd-background-promo-renderer,
+	ytd-background-promo-renderer .image.ytd-background-promo-renderer, 
 	ytd-message-renderer yt-icon.ytd-message-renderer
 	{
 		color: var(--main-text) !important;
@@ -1377,30 +1375,6 @@
 		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
 	}
-	/*comment button*/
-	ytd-button-renderer#submit-button.ytd-commentbox .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
-	{
-		background-color: var(--main-color) !important;
-		color: var(--main-text) !important;
-	}
-	/*download panel > get trial button*/
-	/*share panel > copy button*/
-	ytd-offline-promo-renderer.ytd-popup-container yt-button-renderer#action-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
-	yt-third-party-network-section-renderer.ytd-unified-share-panel-renderer yt-button-renderer#copy-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
-	{
-	    background-color: var(--main-color) !important;
-	    color: var(--main-text) !important;
-	}
-	/*Toast notification*/
-	yt-notification-action-renderer yt-button-renderer.yt-notification-action-renderer .yt-spec-button-shape-next--call-to-action-inverse.yt-spec-button-shape-next--text
-	{
-		color: var(--main-color) !important;
-	}
-	/*Toast notification hover*/
-	yt-notification-action-renderer yt-button-renderer.yt-notification-action-renderer .yt-spec-button-shape-next--call-to-action-inverse.yt-spec-button-shape-next--text:hover
-	{
-		background-color: var(--main-background) !important;
-	}
 	if join-color /*overwriting the above*/
 	{
 		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"]
@@ -1580,12 +1554,7 @@
 
 	.yt-simple-endpoint.style-scope.yt-formatted-string
 	{
-		color: var(--dimmer-text) !important;
-	}
-	/*panel links*/
-	tp-yt-paper-dialog.ytd-popup-container .yt-simple-endpoint.style-scope.yt-formatted-string
-	{
-		color: var(--main-color) !important;
+		color: var(--dimmer-text);
 	}
 
 	/*Dropdown*/
@@ -2110,8 +2079,8 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	ytd-horizontal-card-list-renderer.ytd-structured-description-content-renderer:not(:first-child),
-	ytd-metadata-row-container-renderer.ytd-structured-description-content-renderer:not(:first-child),
+	ytd-horizontal-card-list-renderer.ytd-structured-description-content-renderer:not(:first-child), 
+	ytd-metadata-row-container-renderer.ytd-structured-description-content-renderer:not(:first-child), 
 	ytd-structured-description-content-renderer[inline-structured-description] ytd-horizontal-card-list-renderer.ytd-structured-description-content-renderer
 	{
 		border-color: var(--hover-background) !important;
@@ -2979,7 +2948,7 @@
 		color: var(--main-text) !important;
 	}
 	/*load spinner - also for comments*/
-	.spinner-layer.layer-1.tp-yt-paper-spinner, .spinner-layer.layer-2.tp-yt-paper-spinner,
+	.spinner-layer.layer-1.tp-yt-paper-spinner, .spinner-layer.layer-2.tp-yt-paper-spinner, 
 	.spinner-layer.layer-3.tp-yt-paper-spinner, .spinner-layer.layer-4.tp-yt-paper-spinner
 	{
 		color: var(--dimmer-text) !important;

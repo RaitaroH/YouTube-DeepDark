@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.9.6
+@version 3.9.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1797,6 +1797,20 @@
 		background-color: var(--second-background) !important;
 	}
 	#label.ytd-miniplayer-toast
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*queue / playlist panel closed*/
+	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .title.ytd-playlist-panel-renderer,
+	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] #next-video-title.ytd-playlist-panel-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .byline-title.ytd-playlist-panel-renderer,
+	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .publisher.ytd-playlist-panel-renderer,
+	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .publisher.ytd-playlist-panel-renderer:not([is-empty]).ytd-playlist-panel-renderer + .index-message-wrapper.ytd-playlist-panel-renderer::before,
+	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .index-message-wrapper.ytd-playlist-panel-renderer
 	{
 		color: var(--main-color) !important;
 	}

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.9.7
+@version 3.9.8
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1331,6 +1331,10 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	#container.ytd-pdg-comment-preview-renderer:focus-within
+	{
+		border-color: var(--main-color) !important;
+	}
 	/*bonus*/
 	#title-background.ytd-pdg-comment-preview-renderer
 	{
@@ -1400,6 +1404,14 @@
 	/*share panel > copy button*/
 	ytd-offline-promo-renderer.ytd-popup-container yt-button-renderer#action-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
 	yt-third-party-network-section-renderer.ytd-unified-share-panel-renderer yt-button-renderer#copy-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	/*Thanks panel > "Buy and Send" button*/
+	/*Thanks panel > About Super Thanks panel > "Got it" button*/
+	ytd-button-renderer#buy-button.yt-super-vod-buy-flow-content-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
+	yt-button-renderer#confirm-button.yt-confirm-dialog-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
 	{
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;

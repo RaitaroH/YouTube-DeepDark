@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.9.8
+@version 3.9.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -992,6 +992,7 @@
 	ytd-button-renderer.ytd-clip-section-footer-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
 	{
 		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 
 	/*Join this channel panel > Join button,
@@ -2874,10 +2875,10 @@
 		background-color: var(--main-color) !important;
 	}
 	/*donate button*/
-	#donate-section.ytd-donation-shelf-renderer ytd-button-renderer.style-primary[is-paper-button],
-	.b3-button.jfk-button, .b3-button.jfk-button.jfk-button-action
+	.style-scope.ytd-donation-shelf-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
 	{
 		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 	/*donate window*/
 	#top-box.ytd-donation-amount-picker-renderer

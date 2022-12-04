@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 3.9.9
+@version 4.0.0
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1713,7 +1713,8 @@
 	}
 	/* progress bar */
 	.html5-video-player:not(.ytp-color-party) .html5-play-progress,
-	.html5-video-player:not(.ytp-color-party) .ytp-play-progress
+	.html5-video-player:not(.ytp-color-party) .ytp-play-progress,
+	.progress-bar-played.ytd-progress-bar-line /* on shorts*/
 	{
 		background: var(--main-color) !important;
 	}

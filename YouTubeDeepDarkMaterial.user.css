@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.0.2
+@version 4.0.3
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1193,7 +1193,8 @@
 	}
 
 	/*rate a video to improve youtube*/
-	#star-survey.ytd-inline-survey-renderer
+	#star-survey.ytd-inline-survey-renderer,
+	.survey-wrapper.ytd-inline-survey-renderer
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -1205,11 +1206,25 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	#follow-up-survey.ytd-inline-survey-renderer
+	{
+		border-left: 4px solid var(--hover-background) !important;
+	}
+	/*submit button*/
+	#submit-btn-footer.ytd-inline-survey-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
+	{
+		background-color: var(--main-color) !important;
+	}
 	/*not sure tell us why followup*/
 	#title.ytd-inline-survey-renderer, #follow-up-title.ytd-inline-survey-renderer,
 	#selected-response-text.ytd-rating-survey-renderer
 	{
 		color: var(--main-color) !important;
+	}
+	/*checkboxes cards*/
+	tp-yt-paper-checkbox.ytd-checkbox-survey-option-renderer
+	{
+		background-color: var(--hover-background) !important;
 	}
 	/*background and close button*/
 	ytd-inline-survey-renderer[expanded] #dismissable.ytd-inline-survey-renderer,

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.0.4
+@version 4.0.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -696,11 +696,15 @@
 	}
 
 	/* poll results */
-	.text-area.ytd-backstage-poll-renderer,
-	paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer,
-	.progress-bar.ytd-backstage-poll-renderer
+	/*your selection*/
+	tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer
 	{
 		background-color: var(--main-color) !important;
+	}
+	/*other bars*/
+	.progress-bar.ytd-backstage-poll-renderer
+	{
+		background-color: var(--second-background) !important;
 	}
 	ytd-backstage-poll-renderer:not([is-image-poll]) tp-yt-paper-item.ytd-backstage-poll-renderer .choice-info.ytd-backstage-poll-renderer
 	{
@@ -806,7 +810,10 @@
 	{
 		color: var(--main-color) !important;
 	}
-	#content-attachment ytd-video-renderer
+	#content-attachment.ytd-backstage-post-renderer ytd-video-renderer.ytd-backstage-post-renderer,    /*normal video*/
+	#content-attachment.ytd-backstage-post-renderer ytd-playlist-renderer.ytd-backstage-post-renderer, /*playlist*/
+	#content-attachment.ytd-post-renderer ytd-video-renderer.ytd-post-renderer,   /*normal video, but in cards on home page*/
+	#content-attachment.ytd-post-renderer ytd-playlist-renderer.ytd-post-renderer /*playlist, but in cards on home page*/
 	{
 		background: var(--hover-background) !important;
 	}

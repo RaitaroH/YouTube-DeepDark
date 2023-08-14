@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.0.9
+@version 4.1.0
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -48,7 +48,7 @@
 @var checkbox subscribe-color "Use blue subscribe button" 0
 
 @var text scrollbar_width "Scrollbar width" 8px
-@var color scrollbar_track "Scrollbar background" "rgba(0,0,0, 0)"
+@var color scrollbar_track "Scrollbar background" "rgba(79, 80, 85, 1)"
 
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
@@ -358,8 +358,10 @@
 
 	*
 	{
-		scrollbar-color: var(--main-color) scrollbar_track !important;
-		scrollbar-width: thin !important;
+		/*Scrollbar for firefox*/
+		scrollbar-color: scrollbar_track transparent !important;
+		scrollbar-width: scrollbar_width !important;
+
 		--yt-spec-text-primary: var(--main-text) !important;
 		--yt-spec-text-secondary: var(--dimmer-text) !important;
 		--paper-spinner-color: var(--dimmer-text) !important;
@@ -387,16 +389,15 @@
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
 	{
-		background: var(--main-color) !important;
+		background: scrollbar_track !important;
 	}
 	*:not([hide-scrollbar]) ::-webkit-scrollbar
 	{
 		width: scrollbar_width !important;
 	}
-	/*Scrollbar fix for firefox*/
 	::-webkit-scrollbar-track
 	{
-		background: scrollbar_track !important;
+		background: transparent !important;
 	}
 	::-webkit-scrollbar-thumb
 	{

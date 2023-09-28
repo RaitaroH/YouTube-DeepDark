@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.1.0
+@version 4.1.1
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1392,7 +1392,8 @@
 
 	/*2022 Nov changes*/
 	/*subscribe button*/
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled, 
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--outline, /* as of oct 2023 */
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal,  /*NOTE: this affects other material buttons - I would say desired effect*/
 	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
 	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal:hover, /*on shorts*/

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.1.4
+@version 4.1.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1753,14 +1753,15 @@
 
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
-	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color, .ytp-swatch-background-color-secondary
+	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color, .ytp-swatch-background-color-secondary,
+	.PlayerControlsProgressBarHostProgressBarPlayheadDot /*shorts*/
 	{
 		background: var(--main-color) !important;
 	}
 	/* progress bar */
 	.html5-video-player:not(.ytp-color-party) .html5-play-progress,
 	.html5-video-player:not(.ytp-color-party) .ytp-play-progress,
-	.progress-bar-played.ytd-progress-bar-line /* on shorts*/
+	.progress-bar-played.ytd-progress-bar-line, .PlayerControlsProgressBarHostProgressBarPlayed /* on shorts*/
 	{
 		background: var(--main-color) !important;
 	}

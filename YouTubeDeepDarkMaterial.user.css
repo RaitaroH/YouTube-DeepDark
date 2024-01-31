@@ -385,6 +385,10 @@
 		--yt-spec-brand-button-background: var(--main-color) !important; /*in incognito this may be used as subscribe button but is inconsistent .yt-spec-button-shape-next--brand.yt-spec-button-shape-next--filled*/
 
 		--yt-formatted-string-bold-color: var(--dimmer-text) !important; /*this affects number of views*/
+
+		/*clip icon hover*/
+		--yt-spec-icon-active-other: var(--main-text) !important;
+		--iron-icon-fill-color: var(--main-text) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -1416,6 +1420,11 @@
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
 	}
+	/*fix black "personalized" icon*/
+	.yt-spec-button-shape-next--icon-leading-trailing svg > g:nth-child(2) > g > g:nth-child(2) > path:nth-child(2)
+	{
+		fill: var(--main-text) !important;
+	}
 	/* to fix white corners for .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled  */
 	.button-container.ytd-rich-shelf-renderer {
 		background-color: transparent;
@@ -1425,7 +1434,8 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover,
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover
 	{
 		background-color: var(--yt-spec-10-percent-layer) !important;
 	}
@@ -1435,6 +1445,10 @@
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
+	}
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--outline:hover
+	{
+		background-color: var(--yt-spec-10-percent-layer) !important;
 	}
 	/*comment button*/
 	ytd-button-renderer#submit-button.ytd-commentbox .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
@@ -2628,6 +2642,11 @@
 	ytd-button-renderer yt-formatted-string.ytd-button-renderer:hover
 	{
 		color: var(--main-color) !important;
+	}
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text:hover
+	{
+		/*background-color: var(--hover-background) !important;*/
+		background-color: var(--yt-spec-10-percent-layer) !important;
 	}
 	/*Show more videos*/
 	yt-next-continuation.ytd-watch-next-secondary-results-renderer

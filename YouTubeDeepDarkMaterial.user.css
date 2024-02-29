@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.1.6
+@version 4.1.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -385,6 +385,8 @@
 		--yt-spec-brand-button-background: var(--main-color) !important; /*in incognito this may be used as subscribe button but is inconsistent .yt-spec-button-shape-next--brand.yt-spec-button-shape-next--filled*/
 
 		--yt-formatted-string-bold-color: var(--dimmer-text) !important; /*this affects number of views*/
+
+		--yt-lightsource-section1-color: var(--main-background) !important; /* watch history header */
 
 		/*clip icon hover*/
 		--yt-spec-icon-active-other: var(--main-text) !important;
@@ -3745,6 +3747,10 @@
 	}
 
 	/*History*/
+	.page-header-view-model-wiz__page-header-title
+	{
+		color: var(--main-text) !important;
+	}
 	#channel-header.ytd-tabbed-page-header
 	{
 		--yt-lightsource-section1-color: var(--main-background);

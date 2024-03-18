@@ -761,6 +761,11 @@
 		color: var(--main-text);
 		background-color: var(--second-background) !important;
 	}
+	/* vote now / answer now posts */
+	.style-scope.ytd-post-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline
+	{
+		background: var(--hover-background) !important;
+	}
 	/*search*/
 	.input-content.paper-input-container label, .input-content.paper-input-container .paper-input-label,
 	#subtitle,

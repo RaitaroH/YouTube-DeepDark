@@ -391,6 +391,8 @@
 		/*clip icon hover*/
 		--yt-spec-icon-active-other: var(--main-text) !important;
 		--iron-icon-fill-color: var(--main-text) !important;
+		
+		--yt-spec-base-background: var(--second-background) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -757,7 +759,8 @@
 		background-color: var(--main-color) !important;
 	}
 	/* Join button, Sign In, Show Transcript */
-	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline {
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline
+	{
 		color: var(--main-text);
 		background-color: var(--second-background) !important;
 	}
@@ -1426,6 +1429,11 @@
 		border-color: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
 		color: var(--main-text) !important;
+	}
+	/*2024 March*/
+	ytd-live-chat-frame #show-hide-button.ytd-live-chat-frame > ytd-button-renderer.ytd-live-chat-frame
+	{
+		background-color: transparent !important;
 	}
 	/*fix black "personalized" icon*/
 	.yt-spec-button-shape-next--icon-leading-trailing svg > g:nth-child(2) > g > g:nth-child(2) > path:nth-child(2)

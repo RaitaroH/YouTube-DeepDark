@@ -745,6 +745,11 @@
 	}
 
 	/*Channel page*/
+	/*cover art background*/
+	#page-header-container.ytd-tabbed-page-header, #tabs-container.ytd-tabbed-page-header
+	{
+		background-color: var(--main-background) !important;
+	}
 	/*header*/
 	#channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer
 	{
@@ -757,6 +762,15 @@
 	#subscriber-count.ytd-c4-tabbed-header-renderer
 	{
 		color: var(--dimmer-text) !important;
+	}
+	.truncated-text-wiz
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*show more*/
+	.truncated-text-wiz__absolute-button
+	{
+		color: var(--main-color) !important;
 	}
 	.tab-content.paper-tab, .tab-content.tp-yt-paper-tab,
 	.yt-tab-shape-wiz__tab

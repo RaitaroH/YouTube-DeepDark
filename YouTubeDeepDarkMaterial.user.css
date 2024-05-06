@@ -1169,13 +1169,14 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	a.yt-simple-endpoint.yt-formatted-string:only-of-type:hover
-	{
-		color: var(--main-color) !important;
-	}
 	a.yt-simple-endpoint.yt-formatted-string:only-of-type
 	{
 		color: var(--main-text) !important;
+	}
+	a.yt-simple-endpoint.yt-formatted-string:only-of-type:hover,
+	#text.ytd-channel-name a.yt-simple-endpoint.yt-formatted-string:only-of-type
+	{
+		color: var(--main-color) !important;
 	}
 	/*Borders*/
 	#contents.ytd-section-list-renderer > .ytd-section-list-renderer:not(:last-child):not(ytd-page-introduction-renderer)

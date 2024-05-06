@@ -1127,9 +1127,14 @@
 		stroke: var(--main-color) !important
 	}
 	/*on shorts - so here is filled by default, thus above I am using main-color instead to keep it consistent*/
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled > div > yt-icon > svg > g > path
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled .style-scope.yt-icon
 	{
-		fill: var(--main-color) !important;
+		color: var(--main-color) !important;
+	}
+	.yt-spec-button-shape-next--overlay-dark.yt-spec-button-shape-next--filled
+	{
+		color: var(--main-color) !important;
+		background-color: var(--second-background) !important;
 	}
 
 	/*description and other metadata*/

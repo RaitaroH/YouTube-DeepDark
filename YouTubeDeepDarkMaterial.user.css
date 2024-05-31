@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.2.1
+@version 4.2.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -397,6 +397,9 @@
 
 		/*unlock special perks and other such dialogs*/
 		--yt-spec-raised-background: var(--hover-background) !important;
+
+		/*2024-05-31 logo*/
+		/*--yt-spec-wordmark-text: var(--main-text) !important;*/
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -2018,12 +2021,14 @@
 	/*New logo*/
 	#logo-icon-container.ytd-topbar-logo-renderer svg g path[fill*="#FF0000"],
 	ytd-topbar-logo-renderer.style-scope > a > div > ytd-logo > yt-icon > yt-icon-shape > icon-shape > div > svg > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1),
+	#yt-logo-updated_yt2 > g:nth-child(1) > path:nth-child(1),
 	/*cookie version*/
 	svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
-	ytd-topbar-logo-renderer.style-scope > a > div > ytd-logo > yt-icon > yt-icon-shape > icon-shape > div > svg > svg:nth-child(1) > g:nth-child(2)
+	ytd-topbar-logo-renderer.style-scope > a > div > ytd-logo > yt-icon > yt-icon-shape > icon-shape > div > svg > svg:nth-child(1) > g:nth-child(2),
+	#youtube-paths_yt2,
 	/*cookie version*/
 	g.ytd-consent-bump-v2-lightbox:nth-child(2) > g:nth-child(1) > *
 	{

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.2.3
+@version 4.2.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1944,6 +1944,28 @@
 	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .publisher.ytd-playlist-panel-renderer,
 	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .publisher.ytd-playlist-panel-renderer:not([is-empty]).ytd-playlist-panel-renderer + .index-message-wrapper.ytd-playlist-panel-renderer::before,
 	ytd-playlist-panel-renderer[collapsible][collapsed][use-color-palette] .index-message-wrapper.ytd-playlist-panel-renderer
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*queue dropdown*/
+	ytd-playlist-panel-renderer.ytd-watch-flexy ytd-playlist-panel-video-renderer yt-icon
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-playlist-panel-renderer.ytd-watch-flexy ytd-playlist-panel-video-renderer yt-icon:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*download button*/
+	ytd-menu-service-item-download-renderer yt-icon {
+		color: var(--main-text) !important;
+	}
+	tp-yt-paper-item.ytd-menu-service-item-download-renderer:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	tp-yt-paper-item.ytd-menu-service-item-download-renderer:hover yt-formatted-string.ytd-menu-service-item-download-renderer
 	{
 		color: var(--main-color) !important;
 	}

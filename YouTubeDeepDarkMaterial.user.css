@@ -400,6 +400,9 @@
 
 		/*2024-05-31 logo*/
 		/*--yt-spec-wordmark-text: var(--main-text) !important;*/
+
+		/*2024-06-12 new layout*/
+		--yt-spec-outline-inverse-medium: var(--second-background) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb

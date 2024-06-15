@@ -3838,6 +3838,20 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
+	/*Music info under videos*/
+	.yt-video-attribute-view-model__title
+	{
+		color: var(--main-text) !important;
+	}
+	.yt-video-attribute-view-model__subtitle,
+	.yt-video-attribute-view-model:hover .yt-video-attribute-view-model__title
+	{
+		color: var(--main-color) !important;
+	}
+	.yt-video-attribute-view-model__secondary-subtitle
+	{
+		color: var(--dimmer-text) !important;
+	}
 
 	/*Gaming*/
 	#live-viewers-count.ytd-game-details-renderer

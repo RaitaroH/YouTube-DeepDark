@@ -1008,6 +1008,14 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/*icons*/
+	yt-icon.ytd-unified-share-panel-renderer > span > div, /*close icon*/
+	#scroll-button-forward > button > yt-icon > span > div, /*next arrow*/
+	#scroll-button-back > button > yt-icon > span > div,
+	yt-share-target-renderer.style-scope:nth-child(5) > button > yt-icon > span > div /*email icon*/
+	{
+		color: var(--main-text) !important;
+	}
 	/*share embed*/
 	#embed-panel.yt-sharing-embed-renderer
 	{

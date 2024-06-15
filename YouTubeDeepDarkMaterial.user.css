@@ -1010,8 +1010,11 @@
 	}
 	/*icons*/
 	yt-icon.ytd-unified-share-panel-renderer > span > div, /*close icon*/
+	yt-icon.ytd-unified-share-panel-renderer > yt-icon-shape > icon-shape > div,
 	#scroll-button-forward > button > yt-icon > span > div, /*next arrow*/
+	#scroll-button-forward > button > yt-icon> yt-icon-shape > icon-shape > div,
 	#scroll-button-back > button > yt-icon > span > div,
+	#scroll-button-back > button > yt-icon> yt-icon-shape > icon-shape > div,
 	yt-share-target-renderer.style-scope:nth-child(5) > button > yt-icon > span > div /*email icon*/
 	{
 		color: var(--main-text) !important;

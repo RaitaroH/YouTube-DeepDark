@@ -1595,6 +1595,21 @@
 		background-color: transparent !important;
 	}
 
+	/*2024-07 subscribe dropdown*/
+	.yt-contextual-sheet-layout-wiz
+	{
+		background-color: var(--second-background) !important;
+	}
+	.yt-list-item-view-model-wiz__title
+	{
+		color: var(--main-text) !important;
+	}
+	.yt-list-item-view-model-wiz__accessory
+	{
+		color: var(--main-text) !important;
+	}
+	/*checkmark left unthemed, is a png for now*/
+
 	/*Sponsor button*/
 	ytd-modal-with-title-and-button-renderer
 	{

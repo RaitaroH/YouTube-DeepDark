@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.2.7
+@version 4.2.8
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -3239,7 +3239,9 @@
 	/*bell icon itself*/
 	button.yt-icon-button:hover .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge,
 	/*2024-06-01 - why do they use a mask now*/
-	div.yt-spec-icon-badge-shape.yt-spec-icon-badge-shape--type-notification div.yt-spec-icon-badge-shape__icon yt-icon yt-icon-shape.style-scope.yt-icon icon-shape.yt-spec-icon-shape div
+	div.yt-spec-icon-badge-shape.yt-spec-icon-badge-shape--type-notification div.yt-spec-icon-badge-shape__icon yt-icon yt-icon-shape.style-scope.yt-icon icon-shape.yt-spec-icon-shape div,
+	/*2024-08-01*/
+	div.yt-spec-icon-badge-shape--type-notification > .yt-spec-icon-badge-shape__icon > yt-icon > span:nth-child(1) > div:nth-child(1)
 	{
 		color: var(--main-text) !important;
 	}

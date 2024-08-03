@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.2.9
+@version 4.3.0
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1171,7 +1171,9 @@
 		stroke: var(--main-color) !important
 	}
 	/*on shorts - so here is filled by default, thus above I am using main-color instead to keep it consistent*/
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled .style-scope.yt-icon
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled .style-scope.yt-icon,
+	/*2024-08-03*/
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled > .yt-spec-button-shape-next__icon
 	{
 		color: var(--main-color) !important;
 	}
@@ -2125,7 +2127,9 @@
 	/*on home page*/
 	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer  yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
 	/*on video page*/
-	yt-icon.ytd-reel-shelf-renderer > yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1)
+	yt-icon.ytd-reel-shelf-renderer > yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
+	/*2024-08-03*/
+	yt-icon#icon.style-scope.ytd-reel-shelf-renderer span.yt-icon-shape.yt-spec-icon-shape div svg g path
 	{
 		fill: var(--main-color) !important;
 	}

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.2.8
+@version 4.2.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2081,7 +2081,13 @@
 	svg.ytd-consent-bump-v2-lightbox > g:nth-child(1) > g:nth-child(1) > path:nth-child(1),
 	/*2024-06-15*/
 	#yt-logo-updated_yt3 > g:nth-child(1) > path:nth-child(1),
-	#yt-logo-updated_yt4 > g:nth-child(1) > path:nth-child(1)
+	#yt-logo-updated_yt4 > g:nth-child(1) > path:nth-child(1),
+	/*2024-08-02*/
+	#yt-logo-updated-svg_yt1.external-icon svg#yt-logo-updated_yt1 > g:nth-child(1) > path:nth-child(1),
+	#yt-logo-updated-svg_yt2.external-icon svg#yt-logo-updated_yt2 > g:nth-child(1) > path:nth-child(1),
+	#yt-logo-updated-svg_yt3.external-icon svg#yt-logo-updated_yt3 > g:nth-child(1) > path:nth-child(1),
+	#yt-logo-updated-svg_yt4.external-icon svg#yt-logo-updated_yt4 > g:nth-child(1) > path:nth-child(1),
+	#yt-logo-updated-svg_yt5.external-icon svg#yt-logo-updated_yt5 > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -2090,7 +2096,13 @@
 	/*cookie version*/
 	g.ytd-consent-bump-v2-lightbox:nth-child(2) > g:nth-child(1) > *,
 	/*2024-06-15*/
-	ytd-topbar-logo-renderer.style-scope > a:nth-child(1) > div:nth-child(1) > ytd-logo:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1)
+	ytd-topbar-logo-renderer.style-scope > a:nth-child(1) > div:nth-child(1) > ytd-logo:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1),
+	/*204-08-03*/
+	#yt-logo-updated-svg_yt1.external-icon svg#yt-logo-updated_yt1 > g:nth-child(2),
+	#yt-logo-updated-svg_yt2.external-icon svg#yt-logo-updated_yt2 > g:nth-child(2),
+	#yt-logo-updated-svg_yt3.external-icon svg#yt-logo-updated_yt3 > g:nth-child(2),
+	#yt-logo-updated-svg_yt4.external-icon svg#yt-logo-updated_yt4 > g:nth-child(2),
+	#yt-logo-updated-svg_yt5.external-icon svg#yt-logo-updated_yt5 > g:nth-child(2)
 	{
 		fill: var(--main-text) !important;
 	}

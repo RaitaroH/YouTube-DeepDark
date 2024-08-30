@@ -1120,7 +1120,8 @@
 	#video-title.ytd-video-renderer,
 	h3.ytd-playlist-renderer,
 	#video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer,
-	#video-title, #unplayableText, #length, #details
+	#video-title, #unplayableText, #length, #details,
+	.ShortsLockupViewModelHostOutsideMetadataEndpoint
 	{
 		color: var(--main-text) !important;
 	}
@@ -1147,7 +1148,8 @@
 	/*metadata*/
 	#metadata-line.ytd-grid-video-renderer, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block,
 	#metadata.ytd-channel-renderer, #description.ytd-channel-renderer,
-	#thumbnail-attribution.ytd-grid-channel-renderer
+	#thumbnail-attribution.ytd-grid-channel-renderer,
+	.ShortsLockupViewModelHostOutsideMetadataSubhead
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1867,6 +1869,24 @@
 		text-shadow: none !important;
 	}
 
+	/*shorts metadata - on title click*/
+	.YtwFactoidRendererValue
+	{
+		color: var(--main-text) !important;
+	}
+	.YtwFactoidRendererLabel
+	{
+		color: var(--dimmer-text) !important;
+	}
+
+	/*2024-08-30*/
+	/*youtube shorts scrubber, progress bar*/
+	.YtProgressBarLineProgressBarPlayed,
+	.YtProgressBarPlayheadProgressBarPlayheadDot
+	{
+		background-color: var(--main-color) !important;
+	}
+
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
 	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color, .ytp-swatch-background-color-secondary,
@@ -2117,7 +2137,8 @@
 	}
 	/*Shorts logo*/
 	/*on home page*/
-	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer  yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
+	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
+	#rich-shelf-header.ytd-rich-shelf-renderer h2.ytd-rich-shelf-renderer > yt-icon > span > div > svg > g > path:nth-child(1)
 	/*on video page*/
 	yt-icon.ytd-reel-shelf-renderer > yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
 	/*2024-08-03*/

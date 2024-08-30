@@ -3788,11 +3788,19 @@
 	}
 
 	/*Reporting*/
-	.introduction-header
+	.introduction-header,
+	.ytWebReportFormReasonSelectPageViewModelHeader,
+	.yt-report-form-confirmation-page-view-model__header,
+	.yt-report-form-confirmation-page-view-model__expect-header
 	{
 		color: var(--main-text) !important;
 	}
-	.introduction-body, .introduction-bullet-items
+	.introduction-body, .introduction-bullet-items,
+	.ytWebReportFormReasonSelectPageViewModelBody,
+	.yt-report-form-confirmation-page-view-model__body,
+	.yt-report-form-confirmation-page-view-model__law-enforcement-text,
+	.yt-report-form-confirmation-page-view-model__next-step-text,
+	.radio-shape-wiz__label
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -3800,7 +3808,9 @@
 	{
 		background: var(--main-background) !important;
 	}
-	yt-options-renderer[increased-tooltip-target] yt-icon.yt-options-renderer
+	yt-options-renderer[increased-tooltip-target] yt-icon.yt-options-renderer,
+	.radio-shape-wiz__radio--radio-default-style,
+	.yt-report-form-confirmation-page-view-model__icon
 	{
 		color: var(--main-text) !important;
 	}

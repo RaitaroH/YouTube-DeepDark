@@ -1154,18 +1154,11 @@
 		color: var(--dimmer-text) !important;
 	}
 
-  /*Continue watching*/
-  ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.previously-watched-video ytd-thumbnail::before {
-    content: "CONTINUE WATCHING";
-    position: absolute;
-    bottom: -24px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    color: var(--main-text) !important;
-    font-size: 9pt;
-    font-weight: bold;
-  }
+	/*Continue watching*/
+	ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.previously-watched-video ytd-thumbnail::before 
+	{
+		color: var(--main-text) !important;
+	}
 
 	/*2022 Nov like button*/
 	/*not liked yet*/

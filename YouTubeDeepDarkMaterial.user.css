@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.3.3
+@version 4.3.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2413,7 +2413,8 @@
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="material-centered"] #container.ytd-searchbox,
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,
 	#container.ytd-searchbox,
-	#masthead-search-terms /*account settings page*/
+	#masthead-search-terms /*account settings page*/,
+	.YtSearchboxComponentInputBox
 	{
 		background: var(--main-background) !important;
 		border-color: var(--main-background) !important;
@@ -2433,12 +2434,18 @@
 	}
 	/*Right search icon 🔎 */
 	#search-icon-legacy.ytd-searchbox,
-	#masthead-search .search-btn-component, #masthead-search .search-btn-component .start /*account*/
+	#masthead-search .search-btn-component, #masthead-search .search-btn-component .start /*account*/,
+	.YtSearchboxComponentSearchButton
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox
+	.YtSearchboxComponentSearchButton .yt-spec-icon-shape
+	{
+		color: var(--main-text) !important;
+	}
+	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox,
+	.YtSearchboxComponentSearchButton:hover .yt-spec-icon-shape
 	{
 		color: var(--main-color) !important;
 	}
@@ -2447,7 +2454,8 @@
 		filter: invert(1);
 	}
 	/*left 🔎 icon - shown on focus*/
-	#search-icon.ytd-searchbox
+	#search-icon.ytd-searchbox,
+	.YtSearchboxComponentInnerSearchIcon
 	{
 		color: var(--main-text) !important;
 	}
@@ -2460,19 +2468,27 @@
 	{
 		filter: invert(1);
 	}
+	.YtSuggestionComponentIcon
+	{
+		color: var(--main-text) !important;
+	}
 	/*Results backgrounds*/
-	.sbsb_a,.sbdd_b
+	.sbsb_a,.sbdd_b,
+	.YtSearchboxComponentSuggestionsContainer
 	{
 		background: var(--second-background) !important;
 		border: none !important;
 	}
 	/*Text color*/
-	.gsfs
+	.gsfs,
+	.YtSuggestionComponentLeftContainer,
+	.YtSearchboxComponentReportButton
 	{
 		color: var(--dimmer-text) !important;
 	}
 	/*Hover and keyboard select background*/
-	.sbsb_c.gsfs:hover,.sbsb_d
+	.sbsb_c.gsfs:hover,.sbsb_d,
+	.YtSuggestionComponentSuggestion:hover
 	{
 		background-color: var(--hover-background) !important;
 	}

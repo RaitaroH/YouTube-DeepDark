@@ -2110,7 +2110,18 @@
 	#yt-logo-updated_yt3 > g:nth-child(1) > path:nth-child(1),
 	#yt-logo-updated_yt4 > g:nth-child(1) > path:nth-child(1),
 	/*2024-08-02*/
-	#logo-icon > span > div > svg > svg > g:nth-child(1) > path:nth-child(1)
+	#logo-icon > span > div > svg > svg > g:nth-child(1) > path:nth-child(1),
+	/*2024-10-23*/
+	#yt-ringo2-svg_yt1 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt2 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt3 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt4 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt5 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt6 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt7 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt8 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt9 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt10 > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -2147,7 +2158,9 @@
 	/*on video page*/
 	yt-icon.ytd-reel-shelf-renderer > yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
 	/*2024-08-03*/
-	yt-icon#icon.style-scope.ytd-reel-shelf-renderer span.yt-icon-shape.yt-spec-icon-shape div svg g path
+	yt-icon#icon.style-scope.ytd-reel-shelf-renderer span.yt-icon-shape.yt-spec-icon-shape div svg g path,
+	/*2024-10-23*/
+	ytd-reel-shelf-renderer.style-scope:nth-child(3) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -3136,9 +3149,11 @@
 	{
 		background-color: var(--dimmer-text) !important;
 	}
-	#progress-bar-fill.ytd-donation-shelf-renderer
+	#progress-bar-fill.ytd-donation-shelf-renderer,
+	/*2024-10-23 video progress*/
+	ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer
 	{
-		background-color: var(--main-color) !important;
+		background: var(--main-color) !important;
 	}
 	/*donate button*/
 	.style-scope.ytd-donation-shelf-renderer .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled

@@ -1154,10 +1154,11 @@
 		color: var(--dimmer-text) !important;
 	}
 
-  /*Continue watching*/
-  ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.previously-watched-video ytd-thumbnail::before {
-    color: var(--main-text) !important;
-  }
+	/*Continue watching*/
+	ytd-watch-next-secondary-results-renderer #items ytd-compact-video-renderer.previously-watched-video ytd-thumbnail::before
+	{
+		color: var(--main-text) !important;
+	}
 
 	/*2022 Nov like button*/
 	/*not liked yet*/
@@ -1166,9 +1167,15 @@
 	{
 		stroke: var(--main-text) !important;
 	}
+	ytd-menu-renderer.ytd-watch-metadata > div:nth-child(1) > segmented-like-dislike-button-view-model:nth-child(1) > yt-smartimation:nth-child(1) > div:nth-child(1) > div:nth-child(1) > like-button-view-model:nth-child(1) > toggle-button-view-model:nth-child(1) > button-view-model:nth-child(1) > button:nth-child(1) > div:nth-child(1) > yt-icon:nth-child(1) > yt-animated-icon:nth-child(1) > ytd-lottie-player:nth-child(1) > lottie-component:nth-child(1) > svg:nth-child(1) > g:nth-child(2) > g:nth-child(1) > g:nth-child(6) > g:nth-child(2) > path:nth-child(1)
+	{
+		fill: var(--main-text) !important;
+	}
 	/*liked*/
 	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(1) > path:nth-child(1),
-	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(3) > path:nth-child(1)
+	yt-animated-icon[animated-icon-type="LIKE"] > ytd-lottie-player > lottie-component > svg > g:nth-child(2) > g:nth-child(2) > g:nth-child(3) > path:nth-child(1),
+	/*2024-10-24*/
+	like-button-view-model > toggle-button-view-model ytd-lottie-player > lottie-component > svg path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}

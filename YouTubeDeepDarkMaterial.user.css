@@ -1476,6 +1476,13 @@
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
+	html[refresh]:not(.style-scope) {
+  		--paper-input-container-invalid-color: var(--main-color) !important;
+	}
+	yt-page-navigation-progress[enable-refresh-signature-moments-web] #progress.yt-page-navigation-progress
+	{
+		background: var(--main-color) !important;
+	}
 	yt-page-navigation-progress
 	{
 		background-color: transparent !important;

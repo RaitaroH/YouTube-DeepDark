@@ -2160,7 +2160,29 @@
 	#yt-ringo2-svg_yt7 > g:nth-child(1) > path:nth-child(1),
 	#yt-ringo2-svg_yt8 > g:nth-child(1) > path:nth-child(1),
 	#yt-ringo2-svg_yt9 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt10 > g:nth-child(1) > path:nth-child(1)
+	#yt-ringo2-svg_yt10 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt11 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt12 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt13 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt14 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt15 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt16 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt17 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt18 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt19 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt20 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt21 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt22 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt23 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt24 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt25 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt26 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt27 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt28 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt29 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt30 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt34 > g:nth-child(1) > path:nth-child(1),
+	#yt-ringo2-svg_yt35 > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -2199,7 +2221,11 @@
 	/*2024-08-03*/
 	yt-icon#icon.style-scope.ytd-reel-shelf-renderer span.yt-icon-shape.yt-spec-icon-shape div svg g path,
 	/*2024-10-23*/
-	ytd-reel-shelf-renderer.style-scope:nth-child(3) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1), ytd-reel-shelf-renderer.style-scope:nth-child(2) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
+	ytd-reel-shelf-renderer.style-scope:nth-child(3) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
+	ytd-reel-shelf-renderer.style-scope:nth-child(2) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
+	/*on history*/
+	ytd-section-list-renderer.ytd-two-column-browse-results-renderer > div:nth-child(2) > ytd-item-section-renderer:nth-child(1) > div:nth-child(3) > ytd-reel-shelf-renderer:nth-child(1) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
+	ytd-item-section-renderer.ytd-section-list-renderer:nth-child(2) > div:nth-child(3) > ytd-reel-shelf-renderer:nth-child(1) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}

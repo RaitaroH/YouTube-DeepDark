@@ -1901,9 +1901,13 @@
 	/*2024-08-30*/
 	/*youtube shorts scrubber, progress bar*/
 	.YtProgressBarLineProgressBarPlayed,
-	.YtProgressBarPlayheadProgressBarPlayheadDot
+	.YtProgressBarPlayheadProgressBarPlayheadDot,
+	/*2024-10-23 video progress*/
+	ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer,
+	/*2024-10-27/
+	.YtProgressBarLineProgressBarPlayedRefresh /*on home page hover & shorts*/
 	{
-		background-color: var(--main-color) !important;
+		background: var(--main-color) !important;
 	}
 
 	/* Code takken from https://userstyles.org/styles/95280 */
@@ -3163,9 +3167,7 @@
 	{
 		background-color: var(--dimmer-text) !important;
 	}
-	#progress-bar-fill.ytd-donation-shelf-renderer,
-	/*2024-10-23 video progress*/
-	ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer
+	#progress-bar-fill.ytd-donation-shelf-renderer
 	{
 		background: var(--main-color) !important;
 	}

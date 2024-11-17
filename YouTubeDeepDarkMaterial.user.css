@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.3.7
+@version 4.3.8
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1142,7 +1142,9 @@
 	h3.ytd-playlist-renderer,
 	#video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer,
 	#video-title, #unplayableText, #length, #details,
-	.ShortsLockupViewModelHostOutsideMetadataEndpoint
+	.ShortsLockupViewModelHostOutsideMetadataEndpoint,
+	/*home page titles - 2024-11-17*/
+	.yt-lockup-metadata-view-model-wiz__title
 	{
 		color: var(--main-text) !important;
 	}
@@ -1155,7 +1157,9 @@
 	a.yt-simple-endpoint.ytd-playlist-panel-video-renderer:hover #unplayableText,
 	.style-scope.ytd-grid-renderer.use-ellipsis:hover #video-title,
 	#video-title:hover,
-	ytd-grid-video-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer
+	ytd-grid-video-renderer:hover #video-title.yt-simple-endpoint.ytd-grid-video-renderer,
+	/*home page titles - 2024-11-17*/
+	.yt-lockup-metadata-view-model-wiz__title:hover
 	{
 		color: var(--main-color) !important;
 	}

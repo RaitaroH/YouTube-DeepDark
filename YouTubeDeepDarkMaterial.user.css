@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.3.9
+@version 4.4.0
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1143,6 +1143,7 @@
 	#video-title.ytd-child-video-renderer, #length.ytd-child-video-renderer,
 	#video-title, #unplayableText, #length, #details,
 	.ShortsLockupViewModelHostOutsideMetadataEndpoint,
+	.shortsLockupViewModelHostOutsideMetadataEndpoint,
 	/*home page titles - 2024-11-17*/
 	.yt-lockup-metadata-view-model-wiz__title
 	{
@@ -1174,7 +1175,8 @@
 	#metadata-line.ytd-grid-video-renderer, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block,
 	#metadata.ytd-channel-renderer, #description.ytd-channel-renderer,
 	#thumbnail-attribution.ytd-grid-channel-renderer,
-	.ShortsLockupViewModelHostOutsideMetadataSubhead
+	.ShortsLockupViewModelHostOutsideMetadataSubhead,
+	.shortsLockupViewModelHostOutsideMetadataSubhead
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1914,23 +1916,24 @@
 	}
 
 	/*shorts metadata - on title click*/
-	.YtwFactoidRendererValue
+	.YtwFactoidRendererValue, .ytwFactoidRendererValue
 	{
 		color: var(--main-text) !important;
 	}
-	.YtwFactoidRendererLabel
+	.YtwFactoidRendererLabel, .ytwFactoidRendererLabel
 	{
 		color: var(--dimmer-text) !important;
 	}
 
 	/*2024-08-30*/
 	/*youtube shorts scrubber, progress bar*/
-	.YtProgressBarLineProgressBarPlayed,
-	.YtProgressBarPlayheadProgressBarPlayheadDot,
+	.YtProgressBarLineProgressBarPlayed, .ytProgressBarLineProgressBarPlayed,
+	.YtProgressBarPlayheadProgressBarPlayheadDot, .ytProgressBarPlayheadProgressBarPlayheadDot,
 	/*2024-10-23 video progress*/
 	ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer,
-	/*2024-10-27/
-	.YtProgressBarLineProgressBarPlayedRefresh /*on home page hover & shorts*/
+	/*2024-10-27*/
+	/*on home page hover & shorts*/
+	.YtProgressBarLineProgressBarPlayedRefresh, .ytProgressBarLineProgressBarPlayedRefresh
 	{
 		background: var(--main-color) !important;
 	}
@@ -2513,7 +2516,7 @@
 	ytd-searchbox[mode="legacy"] #container.ytd-searchbox, ytd-searchbox[mode="legacy-centered"] #container.ytd-searchbox,
 	#container.ytd-searchbox,
 	#masthead-search-terms /*account settings page*/,
-	.YtSearchboxComponentInputBox
+	.YtSearchboxComponentInputBox, .ytSearchboxComponentInputBox
 	{
 		background: var(--main-background) !important;
 		border-color: var(--main-background) !important;
@@ -2534,17 +2537,19 @@
 	/*Right search icon 🔎 */
 	#search-icon-legacy.ytd-searchbox,
 	#masthead-search .search-btn-component, #masthead-search .search-btn-component .start /*account*/,
-	.YtSearchboxComponentSearchButton
+	.YtSearchboxComponentSearchButton, .ytSearchboxComponentSearchButton
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.YtSearchboxComponentSearchButton .yt-spec-icon-shape
+	.YtSearchboxComponentSearchButton .yt-spec-icon-shape,
+	.ytSearchboxComponentSearchButton .yt-spec-icon-shape
 	{
 		color: var(--main-text) !important;
 	}
 	#search-icon-legacy.ytd-searchbox:hover yt-icon.ytd-searchbox,
-	.YtSearchboxComponentSearchButton:hover .yt-spec-icon-shape
+	.YtSearchboxComponentSearchButton:hover .yt-spec-icon-shape,
+	.ytSearchboxComponentSearchButton:hover .yt-spec-icon-shape
 	{
 		color: var(--main-color) !important;
 	}
@@ -2552,9 +2557,15 @@
 	{
 		filter: invert(1);
 	}
+	/* X icon */
+	.YtSearchboxComponentDesktop .YtSearchboxComponentClearButtonIcon,
+	.ytSearchboxComponentDesktop .ytSearchboxComponentClearButtonIcon
+	{
+		color: var(--main-text) !important;
+	}
 	/*left 🔎 icon - shown on focus*/
 	#search-icon.ytd-searchbox,
-	.YtSearchboxComponentInnerSearchIcon
+	.YtSearchboxComponentInnerSearchIcon, .ytSearchboxComponentInnerSearchIcon
 	{
 		color: var(--main-text) !important;
 	}
@@ -2567,27 +2578,29 @@
 	{
 		filter: invert(1);
 	}
-	.YtSuggestionComponentIcon
+	.YtSuggestionComponentIcon, .ytSuggestionComponentIcon
 	{
 		color: var(--main-text) !important;
 	}
 	/*Results backgrounds*/
 	.sbsb_a,.sbdd_b,
-	.YtSearchboxComponentSuggestionsContainer
+	.YtSearchboxComponentSuggestionsContainer, .ytSearchboxComponentSuggestionsContainer
 	{
 		background: var(--second-background) !important;
 		border: none !important;
 	}
 	/*Text color*/
 	.gsfs,
-	.YtSuggestionComponentLeftContainer,
-	.YtSearchboxComponentReportButton
+	.YtSuggestionComponentLeftContainer, .ytSuggestionComponentLeftContainer,
+	.YtSearchboxComponentReportButton, .ytSearchboxComponentReportButton,
+	.ytSuggestionComponentLeftContainer, .ytSuggestionComponentLeftContainer,
+	.ytSearchboxComponentReportButton, .ytSearchboxComponentReportButton
 	{
 		color: var(--dimmer-text) !important;
 	}
 	/*Hover and keyboard select background*/
 	.sbsb_c.gsfs:hover,.sbsb_d,
-	.YtSuggestionComponentSuggestion:hover
+	.YtSuggestionComponentSuggestion:hover, .ytSuggestionComponentSuggestion:hover
 	{
 		background-color: var(--hover-background) !important;
 	}

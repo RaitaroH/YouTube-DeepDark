@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.4.2
+@version 4.4.3
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -941,10 +941,6 @@
 	{
 		color: var(--main-text) !important;
 	}
-	#description:not([class*="yt-music"]), #bio, #right-column > yt-formatted-string
-	{
-		color: var(--dimmer-text) !important;
-	}
 	#right-column > yt-formatted-string,
 	#description-container.ytd-channel-about-metadata-renderer, #bio-container.ytd-channel-about-metadata-renderer,
 	#photos-container.ytd-channel-about-metadata-renderer, #details-container.ytd-channel-about-metadata-renderer,
@@ -1183,6 +1179,31 @@
 	#thumbnail-attribution.ytd-grid-channel-renderer,
 	.ShortsLockupViewModelHostOutsideMetadataSubhead,
 	.shortsLockupViewModelHostOutsideMetadataSubhead
+	{
+		color: var(--dimmer-text) !important;
+	}
+
+	/*video description*/
+	#description:not([class*="yt-music"]), #bio, #right-column > yt-formatted-string
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.ytwHowThisWasMadeSectionViewModelBodyHeader,
+	.YtwHowThisWasMadeSectionViewModelBodyHeader
+	{
+		color: var(--main-color) !important;
+	}
+	.ytwHowThisWasMadeSectionViewModelSectionTitle, 
+	.YtwHowThisWasMadeSectionViewModelSectionTitle,
+	.yt-video-attributes-section-view-model__title,
+	.Yt-video-attributes-section-view-model__title
+	{
+		color: var(--main-text) !important;
+	}
+	.ytwHowThisWasMadeSectionViewModelBodyText,
+	.YtwHowThisWasMadeSectionViewModelBodyText,
+	.yt-video-attributes-section-view-model__subtitle,
+	.Yt-video-attributes-section-view-model__subtitle
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1939,7 +1960,10 @@
 	ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer,
 	/*2024-10-27*/
 	/*on home page hover & shorts*/
-	.YtProgressBarLineProgressBarPlayedRefresh, .ytProgressBarLineProgressBarPlayedRefresh
+	.YtProgressBarLineProgressBarPlayedRefresh,
+	.ytProgressBarLineProgressBarPlayedRefresh,
+	.YtThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern,
+	.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern
 	{
 		background: var(--main-color) !important;
 	}

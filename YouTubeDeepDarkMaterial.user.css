@@ -2219,7 +2219,8 @@
 	#yt-ringo2-svg_yt29 > g:nth-child(1) > path:nth-child(1),
 	#yt-ringo2-svg_yt30 > g:nth-child(1) > path:nth-child(1),
 	#yt-ringo2-svg_yt34 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt35 > g:nth-child(1) > path:nth-child(1)
+	#yt-ringo2-svg_yt35 > g:nth-child(1) > path:nth-child(1),
+	#logo-icon path[fill="#FF0033"]
 	{
 		fill: var(--main-color) !important;
 	}

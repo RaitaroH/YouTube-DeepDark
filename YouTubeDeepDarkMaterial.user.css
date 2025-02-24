@@ -594,9 +594,12 @@
 	}
 
 	/*Backgrounds*/
-	#like-bar.ytd-sentiment-bar-renderer,#progress.ytd-thumbnail-overlay-resume-playback-renderer,#selectionBar.paper-tabs
+	#like-bar.ytd-sentiment-bar-renderer,
+	#progress.ytd-thumbnail-overlay-resume-playback-renderer,
+	#selectionBar.paper-tabs
 	{
-		background-color: var(--main-color) !important;
+		/*overwrite gradients*/
+		background: var(--main-color) !important;
 	}
 
 	/*Sidebar*/
@@ -1534,7 +1537,7 @@
 	/*Progress bar*/
 	#progress
 	{
-		background-color: var(--main-color) !important;
+		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
 	html[refresh]:not(.style-scope) {

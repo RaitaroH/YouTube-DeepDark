@@ -2188,38 +2188,8 @@
 	/*2024-08-02*/
 	#logo-icon > span > div > svg > svg > g:nth-child(1) > path:nth-child(1),
 	/*2024-10-23*/
-	#yt-ringo2-svg_yt1 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt2 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt3 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt4 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt5 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt6 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt7 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt8 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt9 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt10 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt11 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt12 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt13 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt14 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt15 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt16 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt17 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt18 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt19 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt20 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt21 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt22 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt23 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt24 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt25 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt26 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt27 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt28 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt29 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt30 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt34 > g:nth-child(1) > path:nth-child(1),
-	#yt-ringo2-svg_yt35 > g:nth-child(1) > path:nth-child(1)
+	[id^="yt-ringo2-svg_yt"] > g:nth-child(1) > path:nth-child(1),
+	[id^="yt-ringo2-red-svg_yt"] > g:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}

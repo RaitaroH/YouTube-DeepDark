@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.4.4
+@version 4.4.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -391,9 +391,9 @@
 		/*clip icon hover*/
 		--yt-spec-icon-active-other: var(--main-text) !important;
 		--iron-icon-fill-color: var(--main-text) !important;
-		
+
 		--yt-spec-base-background: var(--second-background) !important;
-	
+
 
 		/*unlock special perks and other such dialogs*/
 		--yt-spec-raised-background: var(--hover-background) !important;
@@ -1196,7 +1196,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.ytwHowThisWasMadeSectionViewModelSectionTitle, 
+	.ytwHowThisWasMadeSectionViewModelSectionTitle,
 	.YtwHowThisWasMadeSectionViewModelSectionTitle,
 	.yt-video-attributes-section-view-model__title,
 	.Yt-video-attributes-section-view-model__title
@@ -1642,6 +1642,10 @@
 		color: var(--main-text) !important;
 	}
 	/*Toast notification*/
+	#text.yt-notification-action-renderer, #sub-text.yt-notification-action-renderer
+	{
+		color: var(--main-text) !important;
+	}
 	yt-notification-action-renderer yt-button-renderer.yt-notification-action-renderer .yt-spec-button-shape-next--call-to-action-inverse.yt-spec-button-shape-next--text
 	{
 		color: var(--main-color) !important;

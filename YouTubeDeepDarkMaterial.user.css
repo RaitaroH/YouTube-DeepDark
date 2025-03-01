@@ -3079,6 +3079,10 @@
 	{
 		background: var(--hover-background) !important;
 	}
+	#bumper-content.yt-bumper-user-edu-content-view-model
+	{
+		background: var(--hover-background) !important;
+	}
 	/*dropmenu*/
 	#menu.yt-live-chat-text-message-renderer
 	{

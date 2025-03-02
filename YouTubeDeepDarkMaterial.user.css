@@ -718,7 +718,7 @@
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	yt-chip-cloud-chip-renderer[selected], yt-chip-cloud-chip-renderer:hover
+	yt-chip-cloud-chip-renderer[selected] #chip-container.yt-chip-cloud-chip-container, yt-chip-cloud-chip-renderer:hover #chip-container.yt-chip-cloud-chip-container
 	{
 		background-color: var(--hover-background) !important;
 	}

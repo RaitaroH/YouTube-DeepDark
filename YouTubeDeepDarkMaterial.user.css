@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.4.5
+@version 4.4.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -46,7 +46,8 @@
 
 @var checkbox join-color "Use blue join button" 0
 @var checkbox subscribe-color "Use blue subscribe button" 0
-
+@var checkbox black-bars "Use black bars for video" 1
+ 
 @var text scrollbar_width "Scrollbar width" 8px
 @var color scrollbar_track "Scrollbar background" "rgba(79, 80, 85, 1)"
 
@@ -1975,6 +1976,20 @@
 		background: var(--main-color) !important;
 	}
 
+	if black-bars
+	{
+		#container.ytd-player
+		{
+			background: #000 !important;
+		}
+	}
+	else
+	{
+		#container.ytd-player
+		{
+			background: var(--main-background) !important;
+		}
+	}
 	/* Code takken from https://userstyles.org/styles/95280 */
 	/* scrubber button */
 	.html5-scrubber-button:hover, .ytp-chrome-controls .ytp-button[aria-pressed]::after, .ytp-scrubber-button:hover, .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color, .ytp-swatch-background-color-secondary,

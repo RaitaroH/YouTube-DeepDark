@@ -1190,6 +1190,7 @@
 	/*video description*/
 	#description:not([class*="yt-music"]), #bio, #right-column > yt-formatted-string
 	{
+		background: var(--second-background) !important;
 		color: var(--dimmer-text) !important;
 	}
 	.ytwHowThisWasMadeSectionViewModelBodyHeader,

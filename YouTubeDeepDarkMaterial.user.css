@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.5.2
+@version 4.5.3
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1594,7 +1594,7 @@
 
 	/*2022 Nov changes*/
 	/*subscribe button*/
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled, /*Show more on home page*/
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled, /*Show more on home page; also shorts buttons*/
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--outline, /* as of oct 2023 */
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal,  /*NOTE: this affects other material buttons - I would say desired effect*/
 	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
@@ -1659,7 +1659,7 @@
 		}
 		
 		/*subscribe*/
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label*="Subscribe"],
 		.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
 		.ytp-sb-subscribe, a.ytp-sb-subscribe /*in cards*/
 		{
@@ -1725,7 +1725,7 @@
 	}
 	if subscribe-color /*overwriting the above*/
 	{
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled,
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label*="Subscribe"],
 		.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
 		.ytp-sb-subscribe, a.ytp-sb-subscribe /*in cards*/
 		{

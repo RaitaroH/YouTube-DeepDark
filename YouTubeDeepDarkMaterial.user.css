@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.5.3
+@version 4.5.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2400,12 +2400,26 @@
 		background-color: var(--hover-background) !important;
 	}
 
+	/*queue playlist*/
+	/*
 	.header.ytd-playlist-panel-renderer,.playlist-items.ytd-playlist-panel-renderer,
 	#header.ytd-engagement-panel-title-header-renderer,
 	#content.ytd-engagement-panel-section-list-renderer,
 	ytd-transcript-footer-renderer, ytd-transcript-segment-list-renderer
 	{
 		background-color: var(--second-background) !important;
+		border-bottom: 3px solid var(--hover-background) !important;
+	}
+	*/
+	/* keep brighter header - in line with default dark theme*/
+	.header.ytd-playlist-panel-renderer
+	{
+		background: var(--hover-background) !important;
+	}
+	/*make padding bottom = to top*/
+	ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer
+	{
+		padding-bottom: 12px !important;
 	}
 	.cue.ytd-transcript-body-renderer,
 	.cue-group-start-offset.ytd-transcript-body-renderer
@@ -3118,6 +3132,7 @@
 		color: var(--main-text) !important;
 	}
 	/*header*/
+	/*have this header the same as queue header*/
 	yt-live-chat-header-renderer, #header.yt-live-chat-participant-list-renderer, yt-live-chat-message-renderer, yt-live-chat-ticker-renderer
 	{
 		background: var(--hover-background) !important;
@@ -3127,9 +3142,11 @@
 		background: linear-gradient(var(--hover-background) 0%, var(--second-background) 100%) !important;
 	}
 	/*live replay*/
-	#card.yt-live-chat-viewer-engagement-message-renderer, yt-live-chat-text-message-renderer[is-highlighted]
+	/*view chat replay*/
+	#card.yt-live-chat-viewer-engagement-message-renderer, yt-live-chat-text-message-renderer[is-highlighted],
+	.ytVideoMetadataCarouselViewModelHost
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 	}
 	#chat, #participants, yt-live-chat-renderer
 	{

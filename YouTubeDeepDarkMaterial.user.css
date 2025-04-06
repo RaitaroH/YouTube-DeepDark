@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.5.4
+@version 4.5.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1639,6 +1639,7 @@
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
 	}
 	if lighter-buttons
 	{
@@ -3112,10 +3113,21 @@
 	}
 
 	/*shorts comments background*/
+	ytd-engagement-panel-title-header-renderer[shorts-panel][enable-anchored-panel] #header.ytd-engagement-panel-title-header-renderer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
 	.watch-while-engagement-panel.ytd-reel-video-renderer, /*comment window background*/
 	ytd-item-section-renderer[static-comments-header] #header.ytd-item-section-renderer /*add comment background*/
 	{
 		background-color: var(--second-background) !important;
+	}
+
+	/*Shorts arrows background*/
+	ytd-shorts[enable-anchored-panel][enable-persistent-anchored-panel-arrow] .navigation-container.ytd-shorts
+	{
+		background: transparent !important;
 	}
 
 	/*Fundraiser message*/

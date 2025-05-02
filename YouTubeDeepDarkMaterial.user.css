@@ -3313,6 +3313,33 @@
 	{
 		fill: var(--dimmer-text) !important;
 	}
+	/*Live Chat Poll*/
+	yt-live-chat-banner-renderer
+	{
+		background-color: var(--main-background) !important;
+	}
+	.yt-spec-touch-feedback-shape--toch-response-inverse .yt-spec-touch-feedback-shape__fill
+	{
+		color: var(--main-text) !important;	
+	}
+	#poll-question.yt-live-chat-banner-poll-renderer
+	{
+		color: var(--main-text) !important;	
+	}
+	#label-text.yt-live-chat-banner-poll-choice, #vote-percentage-text.yt-live-chat-banner-poll-choice,
+	.metadata.yt-live-chat-banner-poll-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#vote-percentage-bar.yt-live-chat-banner-poll-choice
+	{
+		background-color: var(--hover-background) !important;	
+	}
+	yt-live-chat-banner-renderer .yt-spec-button-shape-next--mono-inverse > div:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1)
+	{
+		color: var(--main-text) !important;	
+	}
+
 
 	/*Fund raiser*/
 	#header-section.ytd-donation-shelf-renderer,

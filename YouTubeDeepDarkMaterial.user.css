@@ -3125,7 +3125,7 @@
 	}
 
 	/*Shorts arrows background*/
-	ytd-shorts[enable-anchored-panel][enable-persistent-anchored-panel-arrow] .navigation-container.ytd-shorts
+	.navigation-container.ytd-shorts
 	{
 		background: transparent !important;
 	}

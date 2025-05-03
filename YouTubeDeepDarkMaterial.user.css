@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.5.6
+@version 4.5.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2412,10 +2412,9 @@
 		border-bottom: 3px solid var(--hover-background) !important;
 	}
 	*/
-	/* keep brighter header - in line with default dark theme*/
 	.header.ytd-playlist-panel-renderer
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 	}
 	/*make padding bottom = to top*/
 	ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer
@@ -2483,11 +2482,6 @@
 	.badge-style-type-medium-grey.ytd-badge-supported-renderer /*unlisted*/
 	{
 		color: var(--dimmer-text) !important;
-	}
-
-	#container.ytd-playlist-panel-renderer
-	{
-		border-color: var(--second-background) !important;
 	}
 
 	/*Playlist creation*/
@@ -3112,11 +3106,17 @@
 		opacity: 0.5;
 	}
 
+	/*chapters*/
+	#header.ytd-engagement-panel-title-header-renderer,
+	#content.ytd-engagement-panel-section-list-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
 	/*shorts comments background*/
 	ytd-engagement-panel-title-header-renderer[shorts-panel][enable-anchored-panel] #header.ytd-engagement-panel-title-header-renderer
 	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;
+		background-color: var(--second-background) !important;
+		border-color: var(--second-background) !important;
 	}
 	.watch-while-engagement-panel.ytd-reel-video-renderer, /*comment window background*/
 	ytd-item-section-renderer[static-comments-header] #header.ytd-item-section-renderer /*add comment background*/
@@ -3147,7 +3147,7 @@
 	/*have this header the same as queue header*/
 	yt-live-chat-header-renderer, #header.yt-live-chat-participant-list-renderer, yt-live-chat-message-renderer, yt-live-chat-ticker-renderer
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 	}
 	yt-live-chat-banner-manager[has-active-banner]
 	{

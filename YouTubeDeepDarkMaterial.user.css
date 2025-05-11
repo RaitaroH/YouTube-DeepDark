@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.5.7
+@version 4.5.8
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2507,6 +2507,13 @@
 	}
 
 	/*Chapters*/
+	/*2025-05-03*/
+	/*headers*/
+	#header.ytd-engagement-panel-title-header-renderer,
+	#content.ytd-engagement-panel-section-list-renderer
+	{
+		background-color: var(--second-background) !important;
+	}
 	/*2024-10-27*/
 	.YtChipShapeActive /*chip or tab*/
 	.ytChipShapeActive /*nice*/
@@ -3106,12 +3113,6 @@
 		opacity: 0.5;
 	}
 
-	/*chapters*/
-	#header.ytd-engagement-panel-title-header-renderer,
-	#content.ytd-engagement-panel-section-list-renderer
-	{
-		background-color: var(--second-background) !important;
-	}
 	/*shorts comments background*/
 	ytd-engagement-panel-title-header-renderer[shorts-panel][enable-anchored-panel] #header.ytd-engagement-panel-title-header-renderer
 	{
@@ -3314,7 +3315,8 @@
 		fill: var(--dimmer-text) !important;
 	}
 	/*Live Chat Poll*/
-	yt-live-chat-banner-renderer
+	yt-live-chat-banner-renderer,
+	yt-live-chat-action-panel-renderer
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -3322,20 +3324,27 @@
 	{
 		color: var(--main-text) !important;	
 	}
-	#poll-question.yt-live-chat-banner-poll-renderer
+	#poll-question.yt-live-chat-banner-poll-renderer,
+	#poll-question.yt-live-chat-poll-header-renderer
 	{
 		color: var(--main-text) !important;	
 	}
 	#label-text.yt-live-chat-banner-poll-choice, #vote-percentage-text.yt-live-chat-banner-poll-choice,
-	.metadata.yt-live-chat-banner-poll-renderer
+	yt-live-chat-poll-choice:not([has-voted]) #label-text.yt-live-chat-poll-choice,
+	.metadata.yt-live-chat-banner-poll-renderer, .metadata.yt-live-chat-poll-header-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
-	#vote-percentage-bar.yt-live-chat-banner-poll-choice
+	#vote-percentage-bar.yt-live-chat-banner-poll-choice,
+	#endpoint.yt-live-chat-poll-choice
 	{
 		background-color: var(--hover-background) !important;	
 	}
-	yt-live-chat-banner-renderer .yt-spec-button-shape-next--mono-inverse > div:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1)
+	#selected-icon-base.yt-live-chat-poll-choice
+	{
+		border-color: var(--main-text) !important;	
+	}
+	.yt-spec-button-shape-next--mono-inverse > div:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1)
 	{
 		color: var(--main-text) !important;	
 	}

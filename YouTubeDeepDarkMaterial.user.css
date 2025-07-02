@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.5.8
+@version 4.5.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1182,7 +1182,8 @@
 	/*author*/
 	yt-formatted-string[ellipsis-truncate] a.yt-formatted-string:last-child, #byline.ytd-video-meta-block,
 	#channel-title.ytd-channel-renderer span.ytd-channel-renderer,
-	#text.ytd-channel-name
+	#text.ytd-channel-name,
+	.yt-content-metadata-view-model-wiz__metadata-row:first-child .yt-core-attributed-string--link-inherit-color
 	{
 		color: var(--main-color) !important;
 	}
@@ -1194,6 +1195,17 @@
 	.shortsLockupViewModelHostOutsideMetadataSubhead
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*new badge*/
+	.badge-shape-wiz--default
+	{
+		color: var(--accent-color) !important;
+		background: var(--hover-background) !important;
+	}
+	/*check badge*/
+	ytd-author-comment-badge-renderer[enable-modern-comment-badges][creator] #icon.ytd-author-comment-badge-renderer
+	{
+		color: var(--accent-color) !important;
 	}
 
 	/*youtube channel in the watch next sidebar*/
@@ -2030,7 +2042,7 @@
 	.YtProgressBarLineProgressBarPlayedRefresh,
 	.ytProgressBarLineProgressBarPlayedRefresh,
 	.YtThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern,
-	.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern
+	.ytThumbnailOverlayProgressBarHostWatchedProgressBarSegment
 	{
 		background: var(--main-color) !important;
 	}
@@ -2304,8 +2316,8 @@
 	}
 	/*Shorts logo*/
 	/*on home page*/
-	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
-	#rich-shelf-header.ytd-rich-shelf-renderer h2.ytd-rich-shelf-renderer > yt-icon > span > div > svg > g > path:nth-child(1)
+	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer > div > div> div > h2 > yt-icon > span > div > svg > path:nth-child(1),
+	#rich-shelf-header.ytd-rich-shelf-renderer h2.ytd-rich-shelf-renderer > yt-icon > span > div > svg > g > path:nth-child(1),
 	/*on video page*/
 	yt-icon.ytd-reel-shelf-renderer > yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
 	/*2024-08-03*/

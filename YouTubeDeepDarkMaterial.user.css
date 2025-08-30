@@ -2677,6 +2677,11 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*2025-08-30 right search icon*/
+	.ytSearchboxComponentSearchButton > span:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1)
+	{
+		color: var(--main-text) !important;
+	}
 	#masthead-search .search-btn-component .yt-uix-button-content /*account*/
 	{
 		filter: invert(1);

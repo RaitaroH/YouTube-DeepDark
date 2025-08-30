@@ -1762,15 +1762,19 @@
 	}
 
 	/*2024-07 subscribe dropdown*/
-	.yt-contextual-sheet-layout-wiz
+	.yt-contextual-sheet-layout-wiz,
+	/*2025-08-30 also triple dots for videos*/
+	.ytContextualSheetLayoutHost
 	{
 		background-color: var(--second-background) !important;
 	}
-	.yt-list-item-view-model-wiz__title
+	.yt-list-item-view-model-wiz__title,
+	.yt-list-item-view-model__title
 	{
 		color: var(--main-text) !important;
 	}
-	.yt-list-item-view-model-wiz__accessory
+	.yt-list-item-view-model-wiz__accessory,
+	.yt-list-item-view-model__accessory
 	{
 		color: var(--main-text) !important;
 	}

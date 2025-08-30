@@ -2164,24 +2164,33 @@
 
 	/*Miniplayer*/
 	#info-bar.ytd-miniplayer .metadata.ytd-miniplayer,
-	#info-bar.ytd-miniplayer
+	#info-bar.ytd-miniplayer,
+	/*2025-08-30*/
+	.ytdMiniplayerInfoBarHost
 	{
 		background-color: var(--main-background) !important;
 	}
-	#info-bar.ytd-miniplayer .channel.ytd-miniplayer
+	#info-bar.ytd-miniplayer .channel.ytd-miniplayer,
+	.ytdMiniplayerInfoBarTitle
 	{
 		color: var(--main-color) !important;
 	}
+	.ytdMiniplayerInfoBarSubtitle
+	{
+		color: var(--main-text) !important;
+	}		
 	.ytd-miniplayer .ytp-button:not([aria-disabled="true"]):not([disabled]):not([aria-hidden="true"]):hover svg path
 	{
 		fill: var(--main-color) !important;
 	}
 	/*added to queue*/
-	ytd-miniplayer-toast[opened]
+	ytd-miniplayer-toast[opened],
+	.ytdMiniplayerToastOpening
 	{
 		background-color: var(--second-background) !important;
 	}
-	#label.ytd-miniplayer-toast
+	#label.ytd-miniplayer-toast,
+	.ytdMiniplayerToastLabel, .ytdMiniplayerToastTitle
 	{
 		color: var(--main-color) !important;
 	}

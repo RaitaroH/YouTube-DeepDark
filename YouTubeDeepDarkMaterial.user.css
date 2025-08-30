@@ -3374,6 +3374,27 @@
 	{
 		color: var(--main-text) !important;	
 	}
+	/*Top Fans*/
+	/*2025-08-30*/
+	ytd-section-list-renderer[live-chat-engagement-panel][panel-target-id="PAlive_viewer_leaderboard"]:not([hide-bottom-separator]) #contents.ytd-section-list-renderer > ytd-item-section-renderer.ytd-section-list-renderer:not(:last-child)
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.ytvlLiveLeaderboardItemViewModelRankNumber,
+	.ytvlLiveLeaderboardItemChannelContentViewModelChannelName,
+	.ytvlLiveLeaderboardItemViewModelPoints
+	{
+		color: var(--main-text) !important;
+	}
+	/*top fans info*/
+	#inner.yt-live-chat-dialog-renderer
+	{
+		background-color: var(--hover-background) !important;
+	}
+	#live-chat-dialog-body.yt-live-chat-dialog-renderer yt-formatted-string.yt-live-chat-dialog-renderer > span
+	{
+		color: var(--main-text) !important;
+	}
 
 
 	/*Fund raiser*/

@@ -787,11 +787,13 @@
 	tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .progress-bar.ytd-backstage-poll-renderer
 	{
 		background-color: var(--main-color) !important;
+		opacity: 0.9;
 	}
 	/*other bars*/
 	.progress-bar.ytd-backstage-poll-renderer
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--main-color) !important;
+		opacity: 0.2;
 	}
 	ytd-backstage-poll-renderer:not([is-image-poll]) tp-yt-paper-item.ytd-backstage-poll-renderer .choice-info.ytd-backstage-poll-renderer
 	{
@@ -3378,7 +3380,7 @@
 	#vote-percentage-bar.yt-live-chat-banner-poll-choice,
 	#endpoint.yt-live-chat-poll-choice
 	{
-		background-color: var(--hover-background) !important;	
+		background-color: var(--hover-background) !important;
 	}
 	#selected-icon-base.yt-live-chat-poll-choice
 	{

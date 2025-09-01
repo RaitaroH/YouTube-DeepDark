@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.6.1
+@version 4.6.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -816,7 +816,8 @@
 	{
 		background: var(--hover-background) !important;
 	}
-	#channel-title.ytd-c4-tabbed-header-renderer
+	#channel-title.ytd-c4-tabbed-header-renderer,
+	.dynamicTextViewModelH1
 	{
 		color: var(--main-text) !important;
 	}
@@ -824,7 +825,8 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	.truncated-text-wiz
+	.truncated-text-wiz,
+	.yt-truncated-text__truncated-text-content
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -834,13 +836,16 @@
 		color: var(--main-color) !important;
 	}
 	.tab-content.paper-tab, .tab-content.tp-yt-paper-tab,
-	.yt-tab-shape-wiz__tab
+	.yt-tab-shape-wiz__tab,
+	/*2025-08-30*/
+	.yt-tab-shape__tab
 	{
 		color: var(--main-text) !important;
 	}
 	paper-tab:hover .tab-content.paper-tab,
 	tp-yt-paper-tab:hover > .tab-content.tp-yt-paper-tab,
-	.yt-tab-shape-wiz__tab--tab-selected
+	.yt-tab-shape-wiz__tab--tab-selected,
+	.yt-tab-shape__tab--tab-selected
 	{
 		color: var(--main-color) !important;
 	}
@@ -849,8 +854,11 @@
 		--paper-tabs-selection-bar-color: var(--main-color) !important;
 	}
 	/* for tab selected */
-	.yt-tab-group-shape-wiz__slider {
+	.yt-tab-group-shape-wiz__slider,
+ 	.yt-tab-shape__tab-bar--tab-bar-selected
+	{
 		background-color: var(--main-color) !important;
+		height: 2px !important;
 	}
 	/* Join button, Sign In, Show Transcript */
 	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline
@@ -1237,7 +1245,8 @@
 	}
 
 	/*video description*/
-	#description:not([class*="yt-music"]), #bio, #right-column > yt-formatted-string
+	#description:not([class*="yt-music"]):not([class*="ytd-channel-video-player-renderer"]), 
+	#bio, #right-column > yt-formatted-string
 	{
 		background: var(--second-background) !important;
 		color: var(--dimmer-text) !important;

@@ -2197,6 +2197,13 @@
 		{
 			background: transparent !important;
 		}	
+		
+		/*make title more readable*/
+		.ytPlayerOverlayVideoDetailsRendererSingleLineTitle.ytPlayerOverlayVideoDetailsRendererTitle
+		{
+			font-size: 3rem !important;
+			text-shadow: 0 0 4px #000 !important;
+		}
 	}
 
 	/*Keyboard focus*/

@@ -1232,6 +1232,12 @@
 	{
 		color: var(--accent-color) !important;
 	}
+	/*2025-10-15*/
+	/*hover card on home page*/
+	.yt-spec-touch-feedback-shape__hover-effect
+	{
+		background: var(--hover-background) !important;
+	}
 
 	/*youtube channel in the watch next sidebar*/
 	/*ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer #metadata.ytd-channel-renderer*/

@@ -3446,6 +3446,10 @@
 		fill: var(--dimmer-text) !important;
 	}
 	/*Live Chat Poll*/
+	yt-live-chat-renderer[has-action-panel-renderer] #action-panel.yt-live-chat-renderer
+	{
+		background: transparent !important;
+	}
 	yt-live-chat-banner-renderer,
 	yt-live-chat-action-panel-renderer
 	{

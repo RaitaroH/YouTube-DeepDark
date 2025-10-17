@@ -49,6 +49,8 @@
 @var checkbox black-bars "Use black bars for video" 1
 @var checkbox lighter-buttons "Make like/share and other buttons lighter" 1
 @var checkbox video-controls "Add gradient to video controls" 1
+@var checkbox video-controls-transparent-bubbles "Transparent bubbles in video controls" 1
+@var checkbox video-controls-disable-quickactions "Remove like share bubble in fullscreen" 0
  
 @var text scrollbar_width "Scrollbar width" 8px
 @var color scrollbar_track "Scrollbar background" "rgba(79, 80, 85, 1)"
@@ -2112,6 +2114,12 @@
 	{
 		background: var(--main-color) !important;
 	}
+	/*2025-10-16*/
+	/*make bar lighter*/
+	.ytp-delhi-modern .ytp-progress-list
+	{
+		background: rgba(162, 162, 162, 0.57) !important;
+	}
 	.ytp-volume-slider-track, .ytp-volume-slider-handle:before
 	{
 		/*2025-10-14 looks better in white in new design*/
@@ -2190,13 +2198,6 @@
 			background-repeat: repeat-x;
 			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==");
 		}
-		/*remove button backgrounds*/
-		.ytp-chrome-controls .ytp-left-controls > *,
-		.ytp-chrome-controls .ytp-time-wrapper:not(.ytp-miniplayer-ui *),
-		.ytp-chrome-controls .ytp-right-controls
-		{
-			background: transparent !important;
-		}	
 		
 		/*make title more readable*/
 		.ytPlayerOverlayVideoDetailsRendererSingleLineTitle.ytPlayerOverlayVideoDetailsRendererTitle
@@ -2204,6 +2205,38 @@
 			font-size: 3rem !important;
 			text-shadow: 0 0 4px #000 !important;
 		}
+
+	}
+	if video-controls-transparent-bubbles
+	{
+		/*remove button backgrounds*/
+		.ytp-chrome-controls .ytp-left-controls > *,
+		.ytp-chrome-controls .ytp-time-wrapper:not(.ytp-miniplayer-ui *),
+		.ytp-chrome-controls .ytp-right-controls,
+		.ytp-fullscreen-grid-expand-button
+		{
+			background: transparent !important;
+		}
+		.ytp-delhi-modern .ytp-chapter-title.ytp-button
+		{
+			background: transparent !important;
+		}	
+	}
+	if video-controls-disable-quickactions
+	{
+		.ytp-delhi-modern.ytp-big-mode.ytp-fullscreen-grid-peeking .ytp-fullscreen-quick-actions
+		{
+			display: none !important;
+		}
+	}
+
+	/*Chapters*/
+	.ytp-delhi-modern .ytp-chapter-title-content,
+	.sponsorChapterText
+	{
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
 	/*Keyboard focus*/

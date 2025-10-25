@@ -1096,7 +1096,6 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-
 	/*search for people*/
 	#to-field-header.ytd-contact-search-renderer
 	{
@@ -1107,6 +1106,12 @@
 		color: var(--main-text) !important;
 	}
 
+	/*2025-10-25 personalized notification bell icon*/
+	.style-scope.ytd-subscribe-button-renderer ytd-lottie-player > lottie-component > svg > g > g > path
+	{
+		fill: var(--main-text) !important;
+	}
+	
 	/*Make a clip*/
 	#container.yt-clip-creation-renderer
 	{
@@ -1283,6 +1288,16 @@
 	.Yt-video-attributes-section-view-model__subtitle
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*2025-10-25 video description hpver*/
+	ytd-watch-metadata[description-collapsed][enable-color-sampling] #description.ytd-watch-metadata:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	ytd-watch-metadata[description-collapsed][enable-color-sampling] #description.ytd-watch-metadata:hover ytd-watch-info-text.ytd-watch-metadata,
+	ytd-watch-metadata[description-collapsed][enable-color-sampling] #description.ytd-watch-metadata:hover #expand
+	{
+		color: var(--main-text) !important;
 	}
 
 	/*Continue watching*/
@@ -2205,7 +2220,6 @@
 			font-size: 3rem !important;
 			text-shadow: 0 0 4px #000 !important;
 		}
-
 	}
 	if video-controls-transparent-bubbles
 	{

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.6.4
+@version 4.6.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -51,6 +51,8 @@
 @var checkbox video-controls "Add gradient to video controls" 1
 @var checkbox video-controls-transparent-bubbles "Transparent bubbles in video controls" 1
 @var checkbox video-controls-disable-quickactions "Remove like share bubble in fullscreen" 0
+@var checkbox video-recommendations-smaller-thumbnails "Smaller thumbnails in the sidebar" 0
+@var checkbox video-homepage-smaller-thumbnails "Smaller thumbnails on the homepage" 0
  
 @var text scrollbar_width "Scrollbar width" 8px
 @var color scrollbar_track "Scrollbar background" "rgba(79, 80, 85, 1)"
@@ -1173,6 +1175,49 @@
 	}
 
 	/*Video cards*/
+	/*2025-11-15*/
+	if video-recommendations-smaller-thumbnails {
+		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model--vertical
+		{
+			flex-direction: row !important;
+		}
+		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model--vertical.yt-lockup-view-model--rich-grid-legacy-margin .yt-lockup-view-model__content-image
+		{
+			flex: 0 0 155px !important;
+			padding-right: 1rem !important;
+			padding-bottom: 0 !important;
+		}
+		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model__metadata
+		{
+			flex: 1 !important;
+			width: 400px !important
+		}
+		.ytd-watch-next-secondary-results-renderer .yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__avatar
+		{
+			display: none !important;
+		}
+	}
+	if video-homepage-smaller-thumbnails {
+		.yt-lockup-view-model--vertical
+		{
+			flex-direction: row !important;
+		}
+		.yt-lockup-view-model--vertical.yt-lockup-view-model--rich-grid-legacy-margin .yt-lockup-view-model__content-image
+		{
+			flex: 0 0 155px !important;
+			padding-right: 1rem !important;
+			padding-bottom: 0 !important;
+		}
+		.yt-lockup-view-model__metadata
+		{
+			flex: 1 !important;
+			width: 400px !important
+		}
+		.yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__avatar
+		{
+			display: none !important;
+		}
+	}
 	/*ttile*/
 	ytd-grid-video-renderer.use-ellipsis #details.ytd-grid-video-renderer a.ytd-grid-video-renderer,
 	ytd-compact-video-renderer.use-ellipsis #video-title.ytd-compact-video-renderer,

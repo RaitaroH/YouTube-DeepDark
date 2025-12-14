@@ -1273,6 +1273,14 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*collaborators / multiple authors*/
+	.yt-spec-dialog-layout {
+    background-color: var(--hover-background) !important;
+	}
+	.ytDialogHeaderViewModelText,
+	.yt-list-item-view-model__subtitle {
+		color: var(--main-text) !important;
+	}
 	/*metadata*/
 	#metadata-line.ytd-grid-video-renderer, #metadata-line.ytd-video-meta-block span.ytd-video-meta-block,
 	#metadata.ytd-channel-renderer, #description.ytd-channel-renderer,

@@ -781,6 +781,10 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	.ytChipsShelfViewModelGradientButton .ytChipsShelfViewModelRightArrowContainer::before,
+	.ytChipsShelfViewModelGradientButton .ytChipsShelfViewModelRightArrow {
+    	background: var(--hover-background) !important;
+	}
 
 	/*Covid19 big posts aka rich shelves*/
 	/*also other borders*/

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.6.8
+@version 4.6.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1189,7 +1189,7 @@
 		{
 			margin-top: 8px !important;
 		}
-		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model--vertical.yt-lockup-view-model--rich-grid-legacy-margin .yt-lockup-view-model__content-image
+		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model--vertical .yt-lockup-view-model__content-image
 		{
 			flex: 0 0 168px !important;
 			padding-right: 1rem !important;
@@ -2518,17 +2518,8 @@
 	/*Shorts logo*/
 	/*on home page*/
 	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer > div > div> div > h2 > yt-icon > span > div > svg > path:nth-child(1),
-	#rich-shelf-header.ytd-rich-shelf-renderer h2.ytd-rich-shelf-renderer > yt-icon > span > div > svg > g > path:nth-child(1),
 	/*on video page*/
-	yt-icon.ytd-reel-shelf-renderer > yt-icon-shape > icon-shape > div > svg > g > path:nth-child(1),
-	/*2024-08-03*/
-	yt-icon#icon.style-scope.ytd-reel-shelf-renderer span.yt-icon-shape.yt-spec-icon-shape div svg g path,
-	/*2024-10-23*/
-	ytd-reel-shelf-renderer.style-scope:nth-child(3) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
-	ytd-reel-shelf-renderer.style-scope:nth-child(2) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
-	/*on history*/
-	ytd-section-list-renderer.ytd-two-column-browse-results-renderer > div:nth-child(2) > ytd-item-section-renderer:nth-child(1) > div:nth-child(3) > ytd-reel-shelf-renderer:nth-child(1) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
-	ytd-item-section-renderer.ytd-section-list-renderer:nth-child(2) > div:nth-child(3) > ytd-reel-shelf-renderer:nth-child(1) > div:nth-child(1) > h2:nth-child(1) > yt-icon:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
+	yt-icon.ytd-reel-shelf-renderer > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}

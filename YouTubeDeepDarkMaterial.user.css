@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.6.9
+@version 4.7.0
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2520,6 +2520,8 @@
 	ytd-rich-section-renderer.style-scope > div > ytd-rich-shelf-renderer > div > div> div > h2 > yt-icon > span > div > svg > path:nth-child(1),
 	/*on video page*/
 	yt-icon.ytd-reel-shelf-renderer > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
+	/*on searches*/
+	grid-shelf-view-model.ytGridShelfViewModelHost > yt-section-header-view-model > yt-shelf-header-layout > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
 	}
@@ -3032,6 +3034,10 @@
 		color: var(--main-text) !important;
 	}
 	/*show more*/
+	.ytGridShelfViewModelGridShelfBottomButtonContainer
+	{
+		background: none !important;
+	}
 	#more.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer, #all.ytd-vertical-list-renderer yt-formatted-string.ytd-vertical-list-renderer
 	{
 		color: var(--main-text) !important;
@@ -3209,6 +3215,12 @@
 	{
 		border-color: var(--dimmer-text) !important;
 		opacity: 0.3;
+	}
+	ytd-comment-view-model[hovered] .continuation.ytd-comment-view-model,
+	.ytSubThreadHovered > .ytSubThreadThreadline .ytSubThreadConnection,
+	.ytSubThreadHovered > .ytSubThreadThreadline .ytSubThreadContinuation
+	{
+		opacity: 0.8;
 	}
 	/*read more*/
 	.more-button-exp.ytd-comment-renderer, .less-button-exp.ytd-comment-renderer

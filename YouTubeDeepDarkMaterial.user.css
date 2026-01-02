@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.7.1
+@version 4.7.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -53,6 +53,7 @@
 @var checkbox video-controls-disable-quickactions "Remove like share bubble in fullscreen" 0
 @var checkbox video-recommendations-smaller-thumbnails "Smaller thumbnails in the sidebar" 0
 @var checkbox video-homepage-smaller-thumbnails "Smaller thumbnails on the homepage" 0
+@var checkbox hide-shorts "Hide shorts" 0
  
 @var text scrollbar_width "Scrollbar width" 8px
 @var color scrollbar_track "Scrollbar background" "rgba(79, 80, 85, 1)"
@@ -2537,6 +2538,24 @@
 	grid-shelf-view-model.ytGridShelfViewModelHost > yt-section-header-view-model > yt-shelf-header-layout > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
 	{
 		fill: var(--main-color) !important;
+	}
+
+	if hide-shorts {
+		/*sidebar menu*/
+		.ytd-guide-entry-renderer[title="Shorts"]
+		{
+			display: none !important;
+		}
+		/*home page*/
+		ytd-rich-shelf-renderer[is-shorts][is-truncated] #dismissible.ytd-rich-shelf-renderer
+		{
+			display: none !important;
+		}
+		/*on long video page*/
+		ytd-reel-shelf-renderer.style-scope
+		{
+			display: none !important;
+		}
 	}
 
 	/*Playlist page*/

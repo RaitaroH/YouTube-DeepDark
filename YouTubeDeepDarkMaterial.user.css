@@ -1778,7 +1778,7 @@
 	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover,
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover
 	{
-		background-color: var(--yt-spec-10-percent-layer) !important;
+		background-color: var(--yt-spec-10-percent-layer, rgba(0, 0, 0, 0.1)) !important;
 	}
 	/*join button*/
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"],
@@ -1830,7 +1830,7 @@
 	}
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--outline:hover
 	{
-		background-color: var(--yt-spec-10-percent-layer) !important;
+		background-color: var(--yt-spec-10-percent-layer, rgba(0, 0, 0, 0.1)) !important;
 	}
 	/*comment button*/
 	ytd-button-renderer#submit-button.ytd-commentbox .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
@@ -2834,7 +2834,7 @@
 	ytd-expandable-metadata-renderer
 	{
 		/*this is used on hover, might as well*/
-		background-color: var(--yt-spec-badge-chip-background) !important;
+		background-color: var(--yt-spec-badge-chip-background, rgba(255, 255, 255, 0.1)) !important;
 	}
 	/*expanded chapters in search results*/
 	ytd-macro-markers-list-item-renderer[layout="MACRO_MARKERS_LIST_ITEM_RENDERER_LAYOUT_VERTICAL"]
@@ -3286,7 +3286,7 @@
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text:hover
 	{
 		/*background-color: var(--hover-background) !important;*/
-		background-color: var(--yt-spec-10-percent-layer) !important;
+		background-color: var(--yt-spec-10-percent-layer, rgba(0, 0, 0, 0.1)) !important;
 	}
 	/*Show more videos*/
 	yt-next-continuation.ytd-watch-next-secondary-results-renderer

@@ -1353,9 +1353,9 @@
 		background: var(--second-background) !important;
 		color: var(--dimmer-text) !important;
 	}
-	#description-inner .style-scope.yt-formatted-string,
 	#description-inner #expand.ytd-text-inline-expander,
-	#description-inner.ytd-watch-metadata:hover .style-scope.yt-formatted-string
+	#description-inner.ytd-watch-metadata .style-scope.ytd-watch-info-text,
+	#description-inner.ytd-watch-metadata .style-scope.yt-formatted-string
 	{
 		color: var(--main-text) !important;
 	}

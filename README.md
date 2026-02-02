@@ -45,7 +45,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://mechalynx.github.io"><img src="https://avatars1.githubusercontent.com/u/8427257?v=4" width="100px;" alt="MechaLynx"/><br /><sub><b>MechaLynx</b></sub></a><br /><a href="https://github.com/RaitaroH/YouTube-DeepDark/issues?q=author%3AMechaLynx" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/YouTube-DeepDark/commits?author=MechaLynx" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.mrfdev.com"><img src="https://avatars2.githubusercontent.com/u/12028968?v=4" width="100px;" alt="Maxime RF"/><br /><sub><b>Maxime RF</b></sub></a><br /><a href="https://github.com/RaitaroH/YouTube-DeepDark/issues?q=author%3AMaximeRF" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/YouTube-DeepDark/commits?author=MaximeRF" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.mrfdev.com"><img src="https://avatars2.githubusercontent.com/u/12028968?v=4" width="100px;" alt="Max RF"/><br /><sub><b>Max RF</b></sub></a><br /><a href="https://github.com/RaitaroH/YouTube-DeepDark/issues?q=author%3AMaxRFDev" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/YouTube-DeepDark/commits?author=MaxRFDev" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -1190,7 +1190,8 @@
 		{
 			margin-top: 8px !important;
 		}
-		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model--vertical .yt-lockup-view-model__content-image
+		.ytd-watch-next-secondary-results-renderer .yt-lockup-view-model--vertical .yt-lockup-view-model__content-image,
+		.yt-lockup-view-model--horizontal.yt-lockup-view-model--compact .yt-lockup-view-model__content-image
 		{
 			flex: 0 0 168px !important;
 			padding-right: 1rem !important;
@@ -2563,6 +2564,12 @@
 		{
 			display: none !important;
 		}
+	}
+
+	/*shorts background*/
+	#cinematic-container
+	{
+		background: transparent !important;
 	}
 
 	/*Playlist page*/

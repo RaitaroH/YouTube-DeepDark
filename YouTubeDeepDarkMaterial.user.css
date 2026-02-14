@@ -2566,12 +2566,6 @@
 		}
 	}
 
-	/*shorts background*/
-	#cinematic-container
-	{
-		background: transparent !important;
-	}
-
 	/*Playlist page*/
 	/*sidebar*/
 	ytd-playlist-sidebar-renderer

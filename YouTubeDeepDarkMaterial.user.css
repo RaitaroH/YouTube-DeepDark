@@ -1206,6 +1206,10 @@
 		{
 			display: none !important;
 		}
+		ytd-watch-next-secondary-results-renderer[lockup-container-type="2"][contains-lockups][use-dynamic-secondary-columns][secondary-grid-columns="2"] #items.ytd-watch-next-secondary-results-renderer
+		{
+			grid-template-columns: 1fr !important;
+		}
 	}
 	if video-homepage-smaller-thumbnails {
 		.yt-lockup-view-model--vertical
@@ -2564,6 +2568,17 @@
 		{
 			display: none !important;
 		}
+		/*search page*/
+		.ytGridShelfViewModelHost.ytd-item-section-renderer.ytGridShelfViewModelHostHasBottomButton
+		{
+			display: none !important;
+		}
+		/*
+		.style-scope.ytd-item-section-renderer:has(.yt-badge-shape--thumbnail-default[aria-label="Shorts"])
+		{
+			opacity: 0.4 !important;
+		}
+		*/
 	}
 
 	/*Playlist page*/

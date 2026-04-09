@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.7.5
+@version 4.7.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -852,15 +852,16 @@
 	}
 	.tab-content.paper-tab, .tab-content.tp-yt-paper-tab,
 	.yt-tab-shape-wiz__tab,
-	/*2025-08-30*/
-	.yt-tab-shape__tab
+	.yt-tab-shape__tab, /*2025-08-30*/
+	.ytTabShapeTab /*2026-04-09*/
 	{
 		color: var(--main-text) !important;
 	}
 	paper-tab:hover .tab-content.paper-tab,
 	tp-yt-paper-tab:hover > .tab-content.tp-yt-paper-tab,
 	.yt-tab-shape-wiz__tab--tab-selected,
-	.yt-tab-shape__tab--tab-selected
+	.yt-tab-shape__tab--tab-selected,
+	.ytTabShapeTabSelected /*2026-04-09*/
 	{
 		color: var(--main-color) !important;
 	}
@@ -870,7 +871,8 @@
 	}
 	/* for tab selected */
 	.yt-tab-group-shape-wiz__slider,
-	.yt-tab-shape__tab-bar--tab-bar-selected
+	.yt-tab-shape__tab-bar--tab-bar-selected,
+	.ytTabShapeHost:hover .ytTabShapeTabBar /*2026-04-09*/
 	{
 		background-color: var(--main-color) !important;
 		height: 2px !important;
@@ -907,7 +909,8 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.title
+	.title,
+	.yt-core-attributed-string.yt-core-attributed-string--white-space-pre-wrap
 	{
 		color: var(--main-text) !important;
 	}
@@ -1248,7 +1251,9 @@
 	/*home page titles - 2024-11-17*/
 	.yt-lockup-metadata-view-model-wiz__title,
 	/*2025-08-30*/
-	.yt-lockup-metadata-view-model__title
+	.yt-lockup-metadata-view-model__title,
+	/*2026-04-09*/
+	.ytLockupMetadataViewModelTitle
 	{
 		color: var(--main-text) !important;
 	}
@@ -1265,7 +1270,8 @@
 	/*home page titles - 2024-11-17*/
 	.yt-lockup-metadata-view-model-wiz__title:hover,
 	/*2025-08-30*/
-	.yt-lockup-metadata-view-model__title:hover
+	.yt-lockup-metadata-view-model__title:hover,
+	.ytLockupMetadataViewModelTitle:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -1275,7 +1281,9 @@
 	#text.ytd-channel-name,
 	.yt-content-metadata-view-model-wiz__metadata-row:first-child .yt-core-attributed-string--link-inherit-color,
 	/*2025-08-30*/
-	.yt-content-metadata-view-model__metadata-row:nth-child(1) > .yt-core-attributed-string
+	.yt-content-metadata-view-model__metadata-row:nth-child(1) > .yt-core-attributed-string,
+	/*2026-04-09*/
+	.ytContentMetadataViewModelMetadataRow:first-child > span
 	{
 		color: var(--main-color) !important;
 	}
@@ -1307,7 +1315,9 @@
 	/*check badge*/
 	ytd-author-comment-badge-renderer[enable-modern-comment-badges][creator] #icon.ytd-author-comment-badge-renderer,
 	/*2025-08-30*/
-	.yt-content-metadata-view-model__metadata-row:nth-child(1) > .yt-core-attributed-string--link-inherit-color > span
+	.yt-content-metadata-view-model__metadata-row:nth-child(1) > .yt-core-attributed-string--link-inherit-color > span,
+	/*2026-04-09*/
+	.ytContentMetadataViewModelMetadataRow:first-child .yt-core-attributed-string--link-inherit-color
 	{
 		color: var(--main-color) !important;
 	}

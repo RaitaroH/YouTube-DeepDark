@@ -912,7 +912,7 @@
 	.title,
 	.yt-core-attributed-string.yt-core-attributed-string--white-space-pre-wrap
 	{
-		color: var(--main-text) !important;
+		color: var(--main-text);
 	}
 	.title:hover
 	{
@@ -1271,6 +1271,7 @@
 	.yt-lockup-metadata-view-model-wiz__title:hover,
 	/*2025-08-30*/
 	.yt-lockup-metadata-view-model__title:hover,
+	/*2026-04-09*/
 	.ytLockupMetadataViewModelTitle:hover
 	{
 		color: var(--main-color) !important;
@@ -1300,7 +1301,8 @@
 	#metadata.ytd-channel-renderer, #description.ytd-channel-renderer,
 	#thumbnail-attribution.ytd-grid-channel-renderer,
 	.ShortsLockupViewModelHostOutsideMetadataSubhead,
-	.shortsLockupViewModelHostOutsideMetadataSubhead
+	.shortsLockupViewModelHostOutsideMetadataSubhead,
+	.ytContentMetadataViewModelMetadataText
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1321,6 +1323,10 @@
 	{
 		color: var(--main-color) !important;
 	}
+	.ytAttributedStringInlineBlockMod > span > span > div > svg
+	{
+		fill: var(--main-color) !important;
+	}	
 	/*featured badge*/
 	.yt-badge-shape--promoted
 	{

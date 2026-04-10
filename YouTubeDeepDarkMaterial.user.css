@@ -910,11 +910,17 @@
 		color: var(--main-text) !important;
 	}
 	.title,
-	.yt-core-attributed-string.yt-core-attributed-string--white-space-pre-wrap
+	.yt-core-attributed-string.yt-core-attributed-string--white-space-pre-wrap,
+	.ytAttributedStringWhiteSpacePreWrap
 	{
 		color: var(--main-text);
 	}
 	.title:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*author*/
+	.ytAttributedStringLinkInheritColor
 	{
 		color: var(--main-color) !important;
 	}
@@ -1272,7 +1278,8 @@
 	/*2025-08-30*/
 	.yt-lockup-metadata-view-model__title:hover,
 	/*2026-04-09*/
-	.ytLockupMetadataViewModelTitle:hover
+	.ytLockupMetadataViewModelTitle:hover,
+	.ytLockupMetadataViewModelCompact:hover .ytLockupMetadataViewModelTitle .ytAttributedStringWhiteSpacePreWrap
 	{
 		color: var(--main-color) !important;
 	}

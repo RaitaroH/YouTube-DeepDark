@@ -2167,6 +2167,17 @@
 		color: var(--main-color) !important;
 	}
 
+	/*3 dots dropdown for videos*/
+	.ytListItemViewModelAccessory
+	{
+		color: var(--main-text) !important;
+	}
+	.ytListItemViewModelMainContainer:hover .ytListItemViewModelAccessory,
+	.ytListItemViewModelMainContainer:hover .ytListItemViewModelTitle
+	{
+		color: var(--main-color) !important;
+	}
+
 	/*Avatars and thumbnails opacity */
 	img.yt-img-shadow
 	{

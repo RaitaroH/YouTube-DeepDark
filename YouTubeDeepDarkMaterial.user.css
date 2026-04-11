@@ -922,6 +922,11 @@
 	/*author*/
 	.ytAttributedStringLinkInheritColor
 	{
+		color: var(--main-text) !important;
+	}
+	/*affects links in video descriptions*/
+	.ytAttributedStringLinkInheritColor .ytAttributedStringLinkCallToActionColor
+	{
 		color: var(--main-color) !important;
 	}
 	#contents > .ytd-browse-secondary-contents-renderer:not(:first-child)

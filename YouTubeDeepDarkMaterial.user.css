@@ -433,6 +433,8 @@
 		--light-theme-secondary-color: var(--dimmer-text) !important;
 		--light-theme-disabled-color: var(--second-background) !important;
 		--light-theme-divider-color: var(--hover-background) !important;
+		--yt-sys-color-baseline--text-primary: var(--main-text) !important;
+		--yt-sys-color-baseline--text-secondary: var(--dimmer-text) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -2181,6 +2183,7 @@
 	.ytListItemViewModelMainContainer:hover .ytListItemViewModelTitle
 	{
 		color: var(--main-color) !important;
+		fill: var(--main-color) !important;
 	}
 
 	/*Avatars and thumbnails opacity */
@@ -2712,7 +2715,14 @@
 		border-bottom: 3px solid var(--hover-background) !important;
 	}
 	*/
-	.header.ytd-playlist-panel-renderer
+	ytd-playlist-panel-renderer:not([hide-header-text]) .title.ytd-playlist-panel-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.header.ytd-playlist-panel-renderer,
+	/*2026-04-13*/
+	ytd-playlist-panel-video-renderer,
+	.playlist-items.ytd-playlist-panel-renderer
 	{
 		background: var(--second-background) !important;
 	}

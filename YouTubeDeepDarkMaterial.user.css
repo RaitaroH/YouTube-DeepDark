@@ -1329,9 +1329,8 @@
 		color: var(--dimmer-text) !important;
 	}
 	/*new badge*/
-	.badge-shape-wiz--default,
-	/*2025-08-30*/
-	.yt-badge-shape--default
+	.yt-badge-shape--default, /*2025-08-30*/
+	.ytBadgeShapeDefault /*2026-04-13*/
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;

@@ -764,6 +764,14 @@
 	{
 		display: none;
 	}
+	.yt-spec-button-shape-next.yt-spec-button-shape-next--text.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-only-default.yt-spec-button-shape-next--enable-backdrop-filter-experiment
+	{
+		background: var(--hover-background) !important;
+	}
+	.yt-spec-button-shape-next.yt-spec-button-shape-next--text.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-only-default.yt-spec-button-shape-next--enable-backdrop-filter-experiment:hover
+	{
+		color: var(--main-color) !important;
+	}
 	/*new to you filter on video*/
 	#content-wrapper.ytd-feed-nudge-renderer
 	{

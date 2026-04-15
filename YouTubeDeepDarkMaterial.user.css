@@ -412,8 +412,7 @@
 		/*2024-06-12 new layout*/
 		--yt-spec-outline: var(--hover-background) !important;
 		--yt-spec-outline-inverse-medium: var(--second-background) !important;
-	}
-	html:not(.style-scope) {
+
 		--yt-spec-themed-blue: var(--main-color) !important;
 		--primary-text-color: var(--light-theme-text-color) !important;
 		--primary-background-color: var(--light-theme-background-color) !important;

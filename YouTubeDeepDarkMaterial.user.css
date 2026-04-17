@@ -458,7 +458,7 @@
 	}
 
 	/*Background for the entire page*/
-	html, ytd-browse, ytd-watch, ytd-search, ytd-app, ytd-app[is-watch-page], [class*="ytd-watch-flexy"]:not(#engagement-panel-scrim),
+	html, ytd-browse, ytd-watch, ytd-search, ytd-app, ytd-app[is-watch-page], [class*="ytd-watch-flexy"]:not(#engagement-panel-scrim):not(#secondary):not(#secondary-split-scroll-spacer),
 	.style-scope.ytd-page-manager.hide-skeleton,
 	.account-container
 	{

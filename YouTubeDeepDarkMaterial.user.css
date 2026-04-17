@@ -438,6 +438,8 @@
 		--yt-sys-color-baseline--raised-background: var(--second-background) !important;
 		--yt-sys-color-baseline--outline: var(--hover-background) !important;
 		--timestamp-active-color: var(--main-color) !important;
+		--yt-sys-color-baseline--base-background: var(--main-background) !important;
+  		--yt-sys-color-baseline--outline: var(--hover-background) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -458,7 +460,8 @@
 	}
 
 	/*Background for the entire page*/
-	html, ytd-browse, ytd-watch, ytd-search, ytd-app, ytd-app[is-watch-page], [class*="ytd-watch-flexy"]:not(#engagement-panel-scrim):not(#secondary):not(#secondary-split-scroll-spacer),
+	html, ytd-browse, ytd-watch, ytd-search, ytd-app, ytd-app[is-watch-page], 
+	[class*="ytd-watch-flexy"]:not(#engagement-panel-scrim):not(#secondary):not(#secondary-split-scroll-spacer),
 	.style-scope.ytd-page-manager.hide-skeleton,
 	.account-container
 	{
@@ -959,6 +962,10 @@
 		fill: var(--main-color) !important;
 	}
 	/*community*/
+	ytd-backstage-post-dialog-renderer[is-creation-dialog]
+	{
+		background-color: var(--second-background) !important;
+	}
 	#message.ytd-message-renderer, #content-text.ytd-backstage-post-renderer,
 	#repost-content-text.ytd-shared-post-renderer
 	{
@@ -1943,7 +1950,8 @@
 	/*2024-07 subscribe dropdown*/
 	.yt-contextual-sheet-layout-wiz,
 	/*2025-08-30 also triple dots for videos*/
-	.ytContextualSheetLayoutHost
+	.ytContextualSheetLayoutHost,
+	.ytSpecDialogLayoutHost /*2026-04-17*/
 	{
 		background-color: var(--second-background) !important;
 	}

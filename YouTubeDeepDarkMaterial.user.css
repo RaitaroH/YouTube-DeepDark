@@ -1359,14 +1359,16 @@
 		fill: var(--main-color) !important;
 	}	
 	/*featured badge*/
-	.yt-badge-shape--promoted
+	.yt-badge-shape--promoted,
+	.ytBadgeShapePromoted /*2026-04-19*/
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;
 		padding-left: 4px;
 	}
 	/*members only*/
-	.yt-badge-shape--commerce
+	.yt-badge-shape--commerce,
+	.ytBadgeShapeCommerce /*2026-04-19*/
 	{
 		color: var(--main-color) !important;
 		background: var(--hover-background) !important;

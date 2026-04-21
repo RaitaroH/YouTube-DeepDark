@@ -1110,9 +1110,16 @@
 	#scroll-button-forward > button > yt-icon> yt-icon-shape > icon-shape > div,
 	#scroll-button-back > button > yt-icon > span > div,
 	#scroll-button-back > button > yt-icon> yt-icon-shape > icon-shape > div,
-	yt-share-target-renderer.style-scope:nth-child(5) > button > yt-icon > span > div /*email icon*/
+	yt-share-target-renderer.style-scope:nth-child(5) > button > yt-icon > span > div /*email icon*/,
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal, /*2026-04-21*/
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextText
 	{
 		color: var(--main-text) !important;
+	}
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal:hover,
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextText:hover
+	{
+		color: var(--main-color) !important;
 	}
 	/*share embed*/
 	#embed-panel.yt-sharing-embed-renderer

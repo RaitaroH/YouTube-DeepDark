@@ -1121,6 +1121,11 @@
 	{
 		color: var(--main-color) !important;
 	}
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal,
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
 	/*share embed*/
 	#embed-panel.yt-sharing-embed-renderer
 	{

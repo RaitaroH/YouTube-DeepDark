@@ -2618,6 +2618,11 @@
 			opacity: 0.4 !important;
 		}
 		*/
+		/*subscriptions page*/
+		#content.ytd-rich-section-renderer > .ytd-rich-section-renderer[style*="--ytd-rich-grid-items-per-row: 5"]
+		{
+			display: none;
+		}
 	}
 
 	/*Playlist page*/

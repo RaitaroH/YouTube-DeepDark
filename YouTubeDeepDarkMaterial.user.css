@@ -4569,18 +4569,26 @@
 		color: var(--dimmer-text) !important;
 	}
 	/*Music info under videos*/
-	.yt-video-attribute-view-model__title
+	.ytVideoAttributeViewModelTitle /*2026-04-26*/
 	{
 		color: var(--main-text) !important;
 	}
-	.yt-video-attribute-view-model__subtitle,
-	.yt-video-attribute-view-model:hover .yt-video-attribute-view-model__title
+	.ytVideoAttributeViewModelSubtitle
 	{
 		color: var(--main-color) !important;
 	}
 	.yt-video-attribute-view-model__secondary-subtitle
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*music links*/
+	.style-scope.ytd-structured-description-content-renderer .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextOutline
+	{
+		color: var(--main-text) !important;
+	}
+	.style-scope.ytd-structured-description-content-renderer .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextOutline:hover
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Gaming*/

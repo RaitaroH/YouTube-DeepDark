@@ -1762,7 +1762,8 @@
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal,  /*NOTE: this affects other material buttons - I would say desired effect*/
 	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
 	.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--tonal:hover, /*on shorts*/
-	.ytp-sb-subscribe, a.ytp-sb-subscribe /*in cards... why yt why*/
+	.ytp-sb-subscribe, a.ytp-sb-subscribe, /*in cards... why yt why*/
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled[aria-label*="Subscribe"]
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
@@ -1785,12 +1786,14 @@
 		background-color: transparent;
 	}
 	/*unsubscribe confirm dialog*/
-	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text,
+	.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextText
 	{
 		color: var(--main-color) !important;
 	}
 	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover,
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover,
+	.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextText:hover
 	{
 		background-color: var(--yt-spec-10-percent-layer, rgba(0, 0, 0, 0.1)) !important;
 	}
@@ -1798,63 +1801,33 @@
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"],
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label="Join this channel"],
 	yt-button-shape:nth-child(1) > .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--outline,
-	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled /*in window*/
+	.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled, /*in window*/
+	.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextFilled[aria-label*="Join"]
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	if lighter-buttons
+
+	#subscribe-button-shape:hover .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled, /*2026-04-21*/
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled[aria-label*="Subscribe"]:hover,
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal[aria-label*="Join"]:hover, /*2026-04-21*/
+	.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextFilled[aria-label*="Join"]:hover
 	{
-		/*like, dislike, share, download etc*/
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal
-		{
-			background-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
 		}
-
-		/*join*/
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"],
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label="Join this channel"],
-		yt-button-shape:nth-child(1) > .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--outline,
-		.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled, /*in window*/
-		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal[aria-label="Join this channel"] /*2026-04-21*/
-		{
-			background-color: var(--hover-background) !important;
-			border-color: var(--hover-background) !important;
-		}
-
-		/*subscribe*/
-		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label*="Subscribe"],
-		.yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled, .yt-spec-button-shape-next--overlay.yt-spec-button-shape-next--filled:hover, /*on shorts*/
-		.ytp-sb-subscribe, a.ytp-sb-subscribe, /*in cards*/
-		#subscribe-button-shape .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled, /*2026-04-21*/
-		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled[aria-label*="Subscribe"]
-		{
-			background-color: var(--hover-background) !important;
-			border-color: var(--hover-background) !important;
-			color: var(--main-text) !important;
-		}
-		#subscribe-button-shape:hover .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled, /*2026-04-21*/
-		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled[aria-label*="Subscribe"]:hover
-		{
-			color: var(--main-color) !important;
-		}
-	}
 	if join-color /*overwriting the above*/
 	{
 		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal[aria-label="Join this channel"],
 		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled[aria-label="Join this channel"],
 		yt-button-shape:nth-child(1) > .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--outline,
 		.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled, /*in window*/
-		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal[aria-label="Join this channel"] /*2026-04-21*/
+		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal[aria-label="Join this channel"], /*2026-04-21*/
+		.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextFilled[aria-label*="Join"]
 		{
 			background-color: var(--main-color) !important;
 			border-color: var(--main-color) !important;
-		}
-		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextTonal[aria-label="Join this channel"]:hover /*2026-04-21*/
-		{
-			background-color: var(--hover-background) !important;
-			color: var(--main-color) !important;
 		}
 	}
 	if subscribe-color /*overwriting the above*/
@@ -1868,12 +1841,6 @@
 			background-color: var(--main-color) !important;
 			border-color: var(--main-color) !important;
 			color: var(--main-text) !important;
-		}
-		#subscribe-button-shape:hover .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled, /*2026-04-21*/
-		.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled[aria-label*="Subscribe"]:hover
-		{
-			background-color: var(--hover-background) !important;
-			color: var(--main-color) !important;
 		}
 	}
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--outline:hover

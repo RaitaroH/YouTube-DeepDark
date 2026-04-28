@@ -4680,6 +4680,10 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	ytd-item-section-renderer[use-chip-bar-view-model-header][page-subtype="playlist"] #header.ytd-item-section-renderer
+	{
+		background: var(--main-background) !important;
+	}
 
 	/*Premium*/
 	/*video*/

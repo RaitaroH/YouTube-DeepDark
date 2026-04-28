@@ -438,6 +438,7 @@
 		--timestamp-active-color: var(--main-color) !important;
 		--yt-sys-color-baseline--base-background: var(--main-background) !important;
   		--yt-sys-color-baseline--outline: var(--hover-background) !important;
+		--yt-endpoint-color: var(--dimmer-text) !important;
 	}
 	/*Scrollbar fix for chrome*/
 	*:not([hide-scrollbar]) ::-webkit-scrollbar-thumb
@@ -503,7 +504,8 @@
 
 	/*3 dot dropdown menu*/
 	/*2024-06-02*/
-	ytd-menu-renderer .ytd-menu-renderer[style-target="button"] yt-icon
+	ytd-menu-renderer .ytd-menu-renderer[style-target="button"] yt-icon,
+	yt-formatted-string.ytd-menu-service-item-download-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -622,7 +624,8 @@
 	{
 		background: var(--second-background) !important;
 	}
-	#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer, #guide-section-title.ytd-guide-section-renderer
+	#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer, #guide-section-title.ytd-guide-section-renderer,
+	.title.ytd-guide-entry-renderer /*2026-04-28*/
 	{
 		color: var(--main-text) !important;
 	}
@@ -925,7 +928,8 @@
 	}
 	.title,
 	.yt-core-attributed-string.yt-core-attributed-string--white-space-pre-wrap,
-	.ytAttributedStringWhiteSpacePreWrap
+	.ytAttributedStringWhiteSpacePreWrap,
+	.title.ytd-recognition-shelf-renderer /*members on channel page*/
 	{
 		color: var(--main-text);
 	}
@@ -965,7 +969,8 @@
 		background-color: var(--second-background) !important;
 	}
 	#message.ytd-message-renderer, #content-text.ytd-backstage-post-renderer,
-	#repost-content-text.ytd-shared-post-renderer
+	#repost-content-text.ytd-shared-post-renderer,
+	.subtitle.ytd-recognition-shelf-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -1461,6 +1466,10 @@
 		color: var(--main-color) !important;
 	}
 	/*show more / less*/
+	#collapse.ytd-text-inline-expander
+	{
+		color: var(--main-text) !important;
+	}
 	#expand.ytd-text-inline-expander:hover, #collapse.ytd-text-inline-expander:hover
 	{
 		color: var(--main-color) !important;
@@ -1674,7 +1683,7 @@
 	{
 		border-color: transparent transparent transparent var(--second-background) !important;
 	}
-	/*window*/
+	/*join dialog window / join modal*/
 	ytd-sponsorships-offer-renderer[dialog][dialog][dialog]
 	{
 		background-color: var(--main-background) !important;
@@ -1685,17 +1694,42 @@
 		background-color: var(--hover-background) !important;
 	}
 	/*title*/
-	#top-bar.ytd-sponsorships-offer-renderer
+	#top-bar.ytd-sponsorships-offer-renderer,
+	.title-container-without-video-flexible.ytd-sponsorships-offer-renderer, /*2026-04-28*/
+	.offer-overview-item.ytd-sponsorships-offer-renderer yt-formatted-string.title.ytd-sponsorships-offer-renderer
 	{
 		color: var(--main-text) !important;
 	}
+	/*promo*/
+	#icon.ytd-ypc-offer-promo-renderer,
+	.title.ytd-ypc-offer-promo-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.subtitle.ytd-sponsorships-tier-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
 	/*price*/
+	.offer-overview-item.selected.ytd-sponsorships-offer-renderer
+	{
+		Background-color: var(--hover-background) !important;
+	}
 	#above-purchase-button-text.ytd-sponsorships-tier-renderer
 	{
 		color: var(--main-color) !important;
 	}
 	/*fine print*/
 	.disclaimer.ytd-sponsorships-tier-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.offer-overview-item.ytd-sponsorships-offer-renderer yt-formatted-string.subtitle.ytd-sponsorships-offer-renderer
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*perks*/
+	#expansion_call_to_action.ytd-sponsorships-tier-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -2982,7 +3016,8 @@
 	.YtSuggestionComponentLeftContainer, .ytSuggestionComponentLeftContainer,
 	.YtSearchboxComponentReportButton, .ytSearchboxComponentReportButton,
 	.ytSuggestionComponentLeftContainer, .ytSuggestionComponentLeftContainer,
-	.ytSearchboxComponentReportButton, .ytSearchboxComponentReportButton
+	.ytSearchboxComponentReportButton, .ytSearchboxComponentReportButton,
+	.metadata-snippet-text.ytd-video-renderer
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -3014,6 +3049,15 @@
 	#gs_ok50
 	{
 		filter: invert(100%);
+	}
+	/*chapters in search results; also summary*/
+	#prominent-collapsed-label.ytd-expandable-metadata-renderer /*chapters count*/
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-expandable-metadata-renderer[show-prominent-label] #collapsed-title.ytd-expandable-metadata-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Microphone search*/
@@ -3284,7 +3328,8 @@
 		background-color: var(--hover-background) !important;
 	}
 	#content-text.ytd-comment-renderer,
-	ytd-expander[should-use-number-of-lines][collapsed] > #content.ytd-expander
+	ytd-expander[should-use-number-of-lines][collapsed] > #content.ytd-expander,
+	#published-time-text.ytd-comment-view-model /*2026-04-28*/
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -3322,7 +3367,8 @@
 		color: var(--main-color) !important;
 	}
 	/*likes*/
-	#vote-count-middle.ytd-comment-action-buttons-renderer
+	#vote-count-middle.ytd-comment-action-buttons-renderer,
+	#vote-count-middle.ytd-comment-engagement-bar /*2026-04-28*/
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -3393,9 +3439,33 @@
 		color: var(--main-text) !important;
 	}
 	/*ai generated video summary*/
-	.video-summary-content-view-model-wiz
+	.video-summary-content-view-model-wiz,
+	#collapsed-title.ytd-expandable-metadata-renderer, /*2026-04-28*/
+	#collapsed-label.ytd-expandable-metadata-renderer,
+	#expanded-title.ytd-expandable-metadata-renderer,
+	#expanded-label.ytd-expandable-metadata-renderer,
+	ytd-expandable-metadata-renderer[has-video-summary] #expanded-title-icon.ytd-expandable-metadata-renderer
 	{
 		color: var(--main-text) !important;
+	}
+	#expanded-subtitle.ytd-expandable-metadata-renderer .yt-simple-endpoint
+	{
+		color: var(--dimmer-text) !important;
+	}
+
+	/*video transcript*/
+	#sub-header-text.ytd-video-description-transcript-section-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextOutline
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.ytSpecButtonShapeNextCallToAction.ytSpecButtonShapeNextOutline:hover
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Heart icon in comments*/

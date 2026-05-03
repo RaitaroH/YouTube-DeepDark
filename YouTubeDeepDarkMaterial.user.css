@@ -1354,6 +1354,21 @@
 		margin: 10px 10px 10px -20px !important;
 	}
 
+	/*info banner below video, such as "news" or "doctor"*/
+	ytd-info-panel-content-renderer[has-menu],
+	ytd-info-panel-content-renderer .content.ytd-info-panel-content-renderer
+	{
+		background: var(--hover-background) !important;
+	}
+	.paragraphs.ytd-info-panel-content-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	.inline-source.ytd-info-panel-content-renderer /*link*/
+	{
+		color: var(--main-color) !important;
+	}
+
 	/*video AI summary*/
 	.videoSummaryContentViewModelHost {
 		color: var(--main-text) !important;

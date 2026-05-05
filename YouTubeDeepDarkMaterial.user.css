@@ -1454,9 +1454,11 @@
 	/*on shorts - so here is filled by default, thus above I am using main-color instead to keep it consistent*/
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled .style-scope.yt-icon,
 	/*2024-08-03*/
-	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled > .yt-spec-button-shape-next__icon
+	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled > .yt-spec-button-shape-next__icon,
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextFilled
 	{
 		color: var(--main-color) !important;
+		background-color: var(--hover-background) !important;
 	}
 	.yt-spec-button-shape-next--overlay-dark.yt-spec-button-shape-next--filled
 	{
@@ -2233,7 +2235,8 @@
 	}
 
 	/*shorts metadata - on title click*/
-	.YtwFactoidRendererValue, .ytwFactoidRendererValue
+	.YtwFactoidRendererValue, .ytwFactoidRendererValue,
+	ytd-text-inline-expander
 	{
 		color: var(--main-text) !important;
 	}
@@ -2743,7 +2746,8 @@
 	.header.ytd-playlist-panel-renderer,
 	/*2026-04-13*/
 	ytd-playlist-panel-video-renderer,
-	.playlist-items.ytd-playlist-panel-renderer
+	.playlist-items.ytd-playlist-panel-renderer,
+	#subheader.ytd-engagement-panel-title-header-renderer:not(:empty)
 	{
 		background: var(--second-background) !important;
 	}

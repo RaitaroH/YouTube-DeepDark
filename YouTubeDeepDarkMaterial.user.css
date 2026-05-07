@@ -3454,6 +3454,27 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/*Pinned by*/
+	#label.ytd-pinned-comment-badge-renderer,
+	#label.ytd-pinned-comment-badge-renderer > span
+	{
+		color: var(--main-color) !important;
+		opacity: 0.7;
+	}
+	yt-icon.ytd-pinned-comment-badge-renderer
+	{
+		fill: var(--main-color) !important;
+		color: var(--main-color) !important;
+		opacity: 0.7;
+	}
+	.translate-button.ytd-comment-view-model
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.translate-button.ytd-comment-view-model:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*video description text*/
 	.yt-core-attributed-string--link-inherit-color
@@ -3498,18 +3519,6 @@
 	}
 	yt-icon-button#creator-heart-button svg {
 		fill: var(--main-color) !important;
-	}
-
-	/*Pinned by*/
-	#label.ytd-pinned-comment-badge-renderer
-	{
-		color: var(--main-color) !important;
-		opacity: 0.5;
-	}
-	yt-icon.ytd-pinned-comment-badge-renderer
-	{
-		fill: var(--main-color) !important;
-		opacity: 0.5;
 	}
 
 	/*shorts comments background*/

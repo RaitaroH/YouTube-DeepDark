@@ -743,9 +743,12 @@
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	yt-chip-cloud-chip-renderer[selected] #chip-container.yt-chip-cloud-chip-container, yt-chip-cloud-chip-renderer:hover #chip-container.yt-chip-cloud-chip-container
+	yt-chip-cloud-chip-renderer[selected] #chip-container.yt-chip-cloud-chip-container,
+	yt-chip-cloud-chip-renderer:hover #chip-container.yt-chip-cloud-chip-container,
+	.ytChipShapeButtonReset[aria-selected="true"] .ytChipShapeActive
 	{
 		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
 	}
 	yt-chip-cloud-renderer
 	{
@@ -761,7 +764,8 @@
 	}
 	#left-arrow-button.ytd-feed-filter-chip-bar-renderer, #right-arrow-button.ytd-feed-filter-chip-bar-renderer,
 	#left-arrow.yt-chip-cloud-renderer, #right-arrow.yt-chip-cloud-renderer,
-	#left-arrow-button.yt-chip-cloud-renderer, #right-arrow-button.yt-chip-cloud-renderer
+	#left-arrow-button.yt-chip-cloud-renderer, #right-arrow-button.yt-chip-cloud-renderer,
+	ytd-feed-filter-chip-bar-renderer[frosted-glass-mode="with-chipbar"] ytd-button-renderer.ytd-feed-filter-chip-bar-renderer
 	{
 		background: var(--main-background) !important;
 	}
@@ -1356,15 +1360,19 @@
 
 	/*info banner below video, such as "news" or "doctor"*/
 	ytd-info-panel-content-renderer[has-menu],
-	ytd-info-panel-content-renderer .content.ytd-info-panel-content-renderer
+	ytd-info-panel-content-renderer .content.ytd-info-panel-content-renderer,
+	ytd-info-panel-container-renderer[background="BLUE"] .header.ytd-info-panel-container-renderer
 	{
 		background: var(--hover-background) !important;
 	}
-	.paragraphs.ytd-info-panel-content-renderer
+	.paragraphs.ytd-info-panel-content-renderer,
+	.header.ytd-info-panel-container-renderer
 	{
 		color: var(--main-text) !important;
 	}
-	.inline-source.ytd-info-panel-content-renderer /*link*/
+	.inline-source.ytd-info-panel-content-renderer, /*link*/
+	ytd-info-panel-container-renderer[title-style="LINK"] .title.ytd-info-panel-container-renderer,
+	.link-icon.ytd-info-panel-container-renderer
 	{
 		color: var(--main-color) !important;
 	}

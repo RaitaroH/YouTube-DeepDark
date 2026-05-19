@@ -1278,7 +1278,8 @@
 	/*2025-08-30*/
 	.yt-content-metadata-view-model__metadata-row:nth-child(1) > .yt-core-attributed-string,
 	/*2026-04-09*/
-	.ytContentMetadataViewModelMetadataRow:first-child > span
+	.ytContentMetadataViewModelMetadataRow:first-child > span:first-child,
+	.ytContentMetadataViewModelMetadataRow:first-child > span:nth-child(2)
 	{
 		color: var(--main-color) !important;
 	}
@@ -1296,9 +1297,15 @@
 	#thumbnail-attribution.ytd-grid-channel-renderer,
 	.ShortsLockupViewModelHostOutsideMetadataSubhead,
 	.shortsLockupViewModelHostOutsideMetadataSubhead,
-	.ytContentMetadataViewModelMetadataText
+	.ytContentMetadataViewModelMetadataText,
+	#video-info.ytd-video-meta-block
 	{
 		color: var(--dimmer-text) !important;
+	}
+	/*arrow icon for views*/
+	.ytContentMetadataViewModelLeadingIcon svg
+	{
+		fill: var(--dimmer-text) !important;
 	}
 	/*new badge*/
 	.yt-badge-shape--default, /*2025-08-30*/
@@ -4699,6 +4706,10 @@
 		background-color: var(--second-background) !important;
 	}
 	ytd-two-column-browse-results-renderer #primary ytd-text-header-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-compact-link-renderer[compact-link-style="compact-link-style-type-history-my-activity-link"] #primary-text-container.ytd-compact-link-renderer > #label.ytd-compact-link-renderer
 	{
 		color: var(--main-text) !important;
 	}

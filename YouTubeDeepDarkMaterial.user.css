@@ -24,6 +24,7 @@
 	"Gruvbox-Dark",
 	"Gruvbox-Light",
   "Gruvbox-Material-Dark",
+  "Gruvbox-Material-Light",
 	"NierAutomata-Dark",
 	"NierAutomata-Light",
 	"Solarized-Dark",
@@ -327,6 +328,15 @@
 			--main-text: #DDC7A1;
 			--dimmer-text: #D4BE98;
 			--shadow: 0 1px 0.5px  rgba(69, 64, 61, .22);
+		}
+		else if stylus-deepdark-style == "Gruvbox-Material-Light" {
+			--main-color: #c14a4a;
+			--main-background: #fbf1c7;
+			--second-background: #f4e8be;
+			--hover-background: #eee0b7;
+			--main-text: #654735;
+			--dimmer-text: #4f3829;
+			--shadow: 0 1px 0.5px  rgba(238, 224, 183, .33);
 		}
 		else if stylus-deepdark-style == "NierAutomata-Dark" {
 			--main-color: #fe8019;

@@ -23,6 +23,7 @@
 	"Adapta-Breath-Nokto",
 	"Gruvbox-Dark",
 	"Gruvbox-Light",
+  "Gruvbox-Material-Dark",
 	"NierAutomata-Dark",
 	"NierAutomata-Light",
 	"Solarized-Dark",
@@ -68,7 +69,7 @@
 
 @-moz-document regexp('https?:\\/\\/(?!gaming\\.)(?!music\\.)(?!tv\\.)(?!artists\\.)(?!studio\\.)(?!consent\\.).*youtube(?!kids\\.).*\\.com\\/(?!premium|howyoutubeworks).*$') {
 	/* Author     : Theme made by RaitaroH */
-	/* Co-authors : https://github.com/MechaLynx https://github.com/MaxRFDev */
+	/* Co-authors : https://github.com/MechaLynx https://github.com/MaxRFDev https://github.com/nightlyte-dev */
 	/* Home       : https://github.com/RaitaroH/YouTube-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
 
@@ -317,6 +318,15 @@
 			--main-text: #282828;
 			--dimmer-text: #3c3836;
 			--shadow: 0 1px 0.5px  rgba(235, 219, 178, .33);
+		}
+		else if stylus-deepdark-style == "Gruvbox-Material-Dark" {
+			--main-color: #e96962;
+			--main-background: #282828;
+			--second-background: #32302F;
+			--hover-background: #45403D;
+			--main-text: #DDC7A1;
+			--dimmer-text: #D4BE98;
+			--shadow: 0 1px 0.5px  rgba(69, 64, 61, .22);
 		}
 		else if stylus-deepdark-style == "NierAutomata-Dark" {
 			--main-color: #fe8019;

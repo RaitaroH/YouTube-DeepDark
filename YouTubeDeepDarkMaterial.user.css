@@ -2413,7 +2413,7 @@
 	}
 	if video-controls-disable-quickactions
 	{
-		.ytp-delhi-modern.ytp-big-mode.ytp-fullscreen-grid-peeking .ytp-fullscreen-quick-actions
+		.ytp-fullscreen-quick-actions
 		{
 			display: none !important;
 		}

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.7.8
+@version 4.7.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -1319,7 +1319,8 @@
 	/*2025-08-30*/
 	.yt-content-metadata-view-model__metadata-row:nth-child(1) > .yt-core-attributed-string--link-inherit-color > span,
 	/*2026-04-09*/
-	.ytContentMetadataViewModelMetadataRow:first-child .yt-core-attributed-string--link-inherit-color
+	.ytContentMetadataViewModelMetadataRow:first-child .yt-core-attributed-string--link-inherit-color,
+	ytd-author-comment-badge-renderer[standardize-icon-size]:not([creator]) #icon.ytd-author-comment-badge-renderer
 	{
 		color: var(--main-color) !important;
 	}
@@ -1927,10 +1928,17 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.ytSpecButtonShapeNextMono.ytSpecButtonShapeNextOutline
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
 	/*download panel > get trial button*/
 	/*share panel > copy button*/
 	ytd-offline-promo-renderer.ytd-popup-container yt-button-renderer#action-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
-	yt-third-party-network-section-renderer.ytd-unified-share-panel-renderer yt-button-renderer#copy-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled
+	yt-third-party-network-section-renderer.ytd-unified-share-panel-renderer yt-button-renderer#copy-button .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--filled,
+	#copy-button.yt-copy-link-renderer .ytSpecButtonShapeNextMono.ytSpecButtonShapeNextOutline
 	{
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;

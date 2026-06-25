@@ -1467,6 +1467,14 @@
 	{
 		stroke: var(--main-color) !important
 	}
+	/*2026-06-25*/
+	/*hide strange gradient*/
+	[class*="ShapeStaticWashLight"], [class*="ShapeStaticWashLight"]::before,
+	[class*="ShapeStaticRimLight"], [class*="ShapeStaticRimLight"]::before
+	{
+		background: none !important;
+		-webkit-mask: none !important;
+	}
 	/*on shorts - so here is filled by default, thus above I am using main-color instead to keep it consistent*/
 	.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled .style-scope.yt-icon,
 	/*2024-08-03*/

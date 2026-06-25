@@ -3070,9 +3070,14 @@
 	.YtSearchboxComponentReportButton, .ytSearchboxComponentReportButton,
 	.ytSuggestionComponentLeftContainer, .ytSuggestionComponentLeftContainer,
 	.ytSearchboxComponentReportButton, .ytSearchboxComponentReportButton,
-	.metadata-snippet-text.ytd-video-renderer
+	.metadata-snippet-text.ytd-video-renderer,
+	.ytSuggestionComponentEntitySubtitle
 	{
 		color: var(--dimmer-text) !important;
+	}
+	.ytSearchboxComponentSuggestionsContainerFooter
+	{
+		display: none !important;
 	}
 	/*Hover and keyboard select background*/
 	.sbsb_c.gsfs:hover,.sbsb_d,
@@ -3138,6 +3143,14 @@
 	.style-scope.yt-search-query-correction .italic.yt-formatted-string, .style-scope.yt-search-query-correction:hover
 	{
 		color: var(--main-color) !important;
+	}
+	ytd-watch-card-compact-video-renderer[is-condensed] .title.ytd-watch-card-compact-video-renderer
+	{
+		color: var(--main-text) !important;
+	}
+	ytd-watch-card-compact-video-renderer[is-condensed] .subtitle.ytd-watch-card-compact-video-renderer
+	{
+		color: var(--dimmer-text) !important;
 	}
 	/*Similar results*/
 	#title.ytd-exploratory-results-renderer
@@ -4843,7 +4856,8 @@
 	#description.yt-music-pass-small-feature-info-renderer,
 	.container.yt-faq-section-renderer,
 	.answer.yt-generic-faq-question-renderer,
-	.text.ytd-simple-text-section-renderer
+	.text.ytd-simple-text-section-renderer,
+	#description-placeholder.ytd-watch-metadata
 	{
 		color: var(--dimmer-text) !important;
 	}

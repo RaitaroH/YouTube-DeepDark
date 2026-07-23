@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.8.0
+@version 4.8.1
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -512,6 +512,12 @@
 	ytd-menu-renderer .ytd-menu-renderer[style-target="button"] yt-icon:hover
 	{
 		color: var(--main-color) !important;
+	}
+
+	/*user settings dropdown*/
+	#channel-handle.ytd-active-account-header-renderer
+	{
+		color: var(--main-text) !important;
 	}
 
 
@@ -1985,6 +1991,12 @@
 	.ytSpecDialogLayoutHost /*2026-04-17*/
 	{
 		background-color: var(--second-background) !important;
+	}
+	/*2026-07-23*/
+	.ytLockupMetadataViewModelMoveLockupOverflowMenuToBottomRight .ytLockupMetadataViewModelMenuButton::after,
+	.ytLockupMetadataViewModelMoveLockupOverflowMenuToBottomRight .ytLockupMetadataViewModelMenuButton::before
+	{
+		background: transparent !important;
 	}
 	.yt-list-item-view-model-wiz__title,
 	.yt-list-item-view-model__title
@@ -4144,6 +4156,10 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
+	#primary-text-container.ytd-compact-link-renderer
+	{
+		color: var(--main-text) !important;
+	}
 	.yt-ui-menu-item:hover /*account settings*/
 	{
 		color: var(--main-color) !important;
@@ -4152,6 +4168,11 @@
 	.yt-uix-button-icon-icon-account-settings /*account settings*/
 	{
 		filter: brightness(250%) invert(1);
+	}
+	/*special links*/
+	.ytAttributedStringLinkCallToActionColor
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Cards*/

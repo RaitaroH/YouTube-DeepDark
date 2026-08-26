@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.8.3
+@version 4.8.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -850,14 +850,15 @@
 
 	/*Channel page*/
 	/*cover art background*/
-	#page-header-container.ytd-tabbed-page-header, #tabs-container.ytd-tabbed-page-header
+	#page-header-container.ytd-tabbed-page-header
 	{
 		background-color: var(--main-background) !important;
 	}
 	/*header*/
-	#channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer
+	#channel-header.ytd-c4-tabbed-header-renderer, #tabs-inner-container.ytd-c4-tabbed-header-renderer,
+	#page-header.ytd-tabbed-page-header
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
 	}
 	#channel-title.ytd-c4-tabbed-header-renderer,
 	.dynamicTextViewModelH1
@@ -877,6 +878,10 @@
 	.truncated-text-wiz__absolute-button
 	{
 		color: var(--main-color) !important;
+	}
+	#tabs-container.ytd-tabbed-page-header, #tabs-inner-container.ytd-tabbed-page-header
+	{
+		background: var(--second-background) !important;
 	}
 	.tab-content.paper-tab, .tab-content.tp-yt-paper-tab,
 	.yt-tab-shape-wiz__tab,

@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.8.5
+@version 4.8.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -2539,6 +2539,10 @@
 	{
 		color: var(--main-color) !important;
 	}
+	#container.ytd-playlist-panel-renderer
+	{
+		border: none !important;
+	}
 
 	/*download button*/
 	ytd-menu-service-item-download-renderer yt-icon {
@@ -4107,7 +4111,8 @@
 	.text.ytd-notification-renderer,
 	.message.ytd-notification-renderer,
 	#yt-masthead-notifications-title, .yt-lockup-notification .yt-lockup-title a, /*account settings*/
-	h2.yt-multi-page-menu-section-renderer /*comments and notifications headers*/
+	h2.yt-multi-page-menu-section-renderer, /*comments and notifications headers*/
+	.title.ytd-comment-video-thumbnail-header-renderer
 	{
 		color: var(--main-text) !important;
 	}
@@ -4603,10 +4608,17 @@
 	}
 
 	/*Paid membership*/
-	yt-subscription-product-header-renderer.ytd-item-section-renderer
+	yt-subscription-product-header-renderer.ytd-item-section-renderer,
+	.ytwPlayerDisclosureViewModelExtractOverlay .ytwPlayerDisclosureViewModelEndpoint /*shorts paid*/
 	{
 		color: var(--main-text) !important;
 	}
+	yt-subscription-product-header-renderer.ytd-item-section-renderer:hover,
+	.ytwPlayerDisclosureViewModelExtractOverlay .ytwPlayerDisclosureViewModelEndpoint:hover
+	{
+		color: var(--main-color) !important;
+	}
+	
 
 	/*Reporting*/
 	.introduction-header,

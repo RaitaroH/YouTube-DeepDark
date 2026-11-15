@@ -2,7 +2,7 @@
 @name YouTube DeepDark Material
 @namespace github.com/RaitaroH/YouTube-DeepDark
 @homepageURL https://github.com/RaitaroH/YouTube-DeepDark
-@version 4.8.6
+@version 4.8.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/YouTube-DeepDark/master/YouTubeDeepDarkMaterial.user.css
 @description Videos should only be watched in the dark. May the dark be kinder on thine eyes. (YouTube dark theme)
 @author RaitaroH
@@ -501,6 +501,10 @@
 		outline: none !important;
 	}
 
+	#checkboxLabel
+	{
+		color: var(--main-text) !important;
+	}
 
 	/*3 dot dropdown menu*/
 	/*2024-06-02*/
@@ -1182,6 +1186,16 @@
 	.style-scope.ytd-subscribe-button-renderer ytd-lottie-player > lottie-component > svg > g > g > path
 	{
 		fill: var(--main-text) !important;
+	}
+
+	/*Hype video*/
+	.ytHypeBuyFlowViewModelHost, .ytHypeBuyFlowFooterViewModelHost
+	{
+		background-color: var(--main-background) !important;
+	}
+	.animatedRollingNumberHost, .animatedRollingNumberDigits, .animatedRollingCharacterHost, .animatedRollingNumberSuffix
+	{
+		color: var(--main-text) !important;
 	}
 
 	/*Make a clip*/
